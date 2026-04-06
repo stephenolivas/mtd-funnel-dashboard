@@ -1,0 +1,43 @@
+name: Update MTD Funnel Dashboard
+
+# Triggered externally by cron-job.org POSTing to the workflow_dispatch endpoint.
+# Set up a cron-job.org job to hit:
+#   POST https://api.github.com/repos/YOUR_USERNAME/mtd-funnel-dashboard/actions/workflows/update.yml/dispatches
+# with body: {"ref":"main"}
+# and Authorization header: Bearer YOUR_GITHUB_PAT
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run dashboard script
+        env:
+          CLOSE_API_KEY: ${{ secrets.CLOSE_API_KEY }}
+        run: python3 -u fetch_and_build.py
+
+      - name: Commit and push updated dashboard
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || \
+            git commit -m "Update MTD dashboard [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
