@@ -223,7 +223,10 @@ def deduplicate_meetings(meetings):
 def fetch_lead(lead_id):
     """Fetch minimal lead fields needed for dashboard."""
     return close_get(f"lead/{lead_id}", {
-        "_fields": f"id,display_name,status_id,custom.{CF_FUNNEL_NAME}"
+        "_fields": f"id,display_name,status_id,"
+                   f"custom.{CF_FUNNEL_NAME},"
+                   f"custom.{CF_SHOW_UP},"
+                   f"custom.{CF_QUALIFIED}"
     })
 
 
@@ -347,16 +350,9 @@ def build_dashboard_data():
 
         funnel = get_funnel_name(lead)
 
-        # Most recent opportunity
-        opp      = fetch_latest_opportunity(lid)
-        show_up  = False
-        qualified = False
-        if opp:
-            raw_su = opp.get(f"custom.{CF_SHOW_UP}")
-            raw_qu = opp.get(f"custom.{CF_QUALIFIED}")
-            # Close checkbox fields return bool True/False or None
-            show_up   = raw_su is True
-            qualified = raw_qu is True
+        # Show Up and Qualified are lead-level custom fields — read directly
+        show_up   = lead.get(f"custom.{CF_SHOW_UP}")   is True
+        qualified = lead.get(f"custom.{CF_QUALIFIED}") is True
 
         # UTM campaign
         if lid not in utm_cache:
