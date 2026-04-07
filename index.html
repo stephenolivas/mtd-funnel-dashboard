@@ -6,22 +6,22 @@
 <title>MTD Funnel Performance — April 2026</title>
 <style>
   :root {
-    --bg:        #0d0f18;
-    --surface:   #161927;
-    --surface2:  #1d2035;
-    --border:    #272a3d;
-    --border2:   #1e2136;
-    --text:      #e2e8f4;
-    --muted:     #5a607a;
-    --muted2:    #7c849e;
-    --green:     #22c55e;
-    --green-dim: #16a34a40;
-    --red:       #ef4444;
-    --red-dim:   #b91c1c40;
-    --amber:     #f59e0b;
-    --blue:      #60a5fa;
-    --purple:    #c084fc;
-    --accent:    #818cf8;
+    --bg:        #f4f6f9;
+    --surface:   #ffffff;
+    --surface2:  #f0f2f7;
+    --border:    #dde1ea;
+    --border2:   #e8eaf0;
+    --text:      #1a1f36;
+    --muted:     #8792a2;
+    --muted2:    #5c6680;
+    --green:     #0e9f6e;
+    --green-dim: #0e9f6e20;
+    --red:       #e02424;
+    --red-dim:   #e0242420;
+    --amber:     #d97706;
+    --blue:      #2563eb;
+    --purple:    #7c3aed;
+    --accent:    #4f46e5;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,6 +32,16 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
     font-size: 13px;
     min-height: 100vh;
+  }
+
+  /* Light mode card shadow */
+  .kpi {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  }
+  table {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   /* ── Header ── */
@@ -55,7 +65,7 @@
   .header-right {
     text-align: right;
     font-size: 11px;
-    color: var(--muted);
+    color: var(--muted2);
     line-height: 1.6;
   }
   .header-right .snapshot-label {
@@ -154,13 +164,13 @@
     border-top: 1px solid var(--border2);
     transition: background 0.1s;
   }
-  .funnel-row:hover { background: rgba(255,255,255,0.025); }
+  .funnel-row:hover { background: rgba(79,70,229,0.04); }
   .funnel-row td { padding: 11px 12px; }
 
   /* UTM sub-rows */
   .utm-row {
     display: none;
-    background: rgba(255,255,255,0.012);
+    background: rgba(79,70,229,0.025);
   }
   .utm-row.open { display: table-row; }
   .utm-row td { padding: 7px 12px; }
@@ -171,6 +181,7 @@
     border-top: 2px solid var(--border);
     font-weight: 700;
     background: var(--surface2);
+    color: var(--text);
   }
   .total-row td { padding: 12px 12px; }
 
@@ -239,7 +250,7 @@
   </div>
   <div class="header-right">
     <span class="snapshot-label">Snapshot</span>
-    April 07, 2026 at 12:21 PM PT<br>
+    April 07, 2026 at 12:42 PM PT<br>
     Source · Close CRM
   </div>
 </div>
