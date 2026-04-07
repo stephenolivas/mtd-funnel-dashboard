@@ -199,16 +199,27 @@
 
   /* Section header rows */
   .section-header-row td {
-    padding: 14px 12px 5px;
-    font-size: 10px;
+    padding: 16px 12px 6px;
+    font-size: 10.5px;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
-    color: var(--muted);
-    font-weight: 600;
-    border-top: 1px solid var(--border);
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-weight: 700;
+    border-top: 2px solid var(--border);
     background: transparent;
+    cursor: pointer;
+    user-select: none;
   }
+  .section-header-row td:hover { color: #a5b4fc; }
   .section-header-row:first-child td { border-top: none; }
+  .section-chevron {
+    display: inline-block;
+    width: 14px;
+    margin-right: 4px;
+    transition: transform 0.15s ease;
+    opacity: 0.7;
+  }
+  .section-chevron.open { transform: rotate(90deg); }
 
   /* Progress bar mini (optional decoration on booked column) */
   @media (max-width: 960px) {
@@ -228,7 +239,7 @@
   </div>
   <div class="header-right">
     <span class="snapshot-label">Snapshot</span>
-    April 07, 2026 at 09:29 AM PT<br>
+    April 07, 2026 at 10:22 AM PT<br>
     Source · Close CRM
   </div>
 </div>
@@ -237,23 +248,23 @@
 <div class="kpis">
   <div class="kpi" style="--kpi-accent:#818cf8; --kpi-color:#fff;">
     <div class="label">Total Booked</div>
-    <div class="value">138</div>
+    <div class="value">140</div>
     <div class="kpi-sub">new first calls MTD</div>
   </div>
   <div class="kpi" style="--kpi-accent:#60a5fa; --kpi-color:#60a5fa;">
     <div class="label">Showed</div>
-    <div class="value">79</div>
-    <div class="kpi-sub">57.2% show rate</div>
+    <div class="value">81</div>
+    <div class="kpi-sub">57.9% show rate</div>
   </div>
   <div class="kpi" style="--kpi-accent:#c084fc; --kpi-color:#c084fc;">
     <div class="label">Qualified</div>
-    <div class="value">70</div>
-    <div class="kpi-sub">50.7% qual rate</div>
+    <div class="value">73</div>
+    <div class="kpi-sub">52.1% qual rate</div>
   </div>
   <div class="kpi" style="--kpi-accent:#f59e0b; --kpi-color:#f59e0b;">
     <div class="label">Closed Won</div>
     <div class="value">19</div>
-    <div class="kpi-sub">13.8% booked→close</div>
+    <div class="kpi-sub">13.6% booked→close</div>
   </div>
   <div class="kpi" style="--kpi-accent:#22c55e; --kpi-color:#22c55e;">
     <div class="label">Closed Revenue</div>
@@ -283,34 +294,36 @@
     </thead>
     <tbody>
 
-    <tr class="section-header-row">
-      <td colspan="10">FUNNEL BREAKDOWN — EXTERNAL</td>
+    <tr class="section-header-row" onclick="toggleSection('external')">
+      <td colspan="10">
+        <span class="section-chevron open" id="secchev-external">›</span>FUNNEL BREAKDOWN — EXTERNAL
+      </td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('low_ticket_funnel')" data-fid="low_ticket_funnel">
+    <tr class="funnel-row" data-section="external" onclick="toggleUTM('low_ticket_funnel')" data-fid="low_ticket_funnel">
       <td class="col-name">
         <span class="chevron" id="chev-low_ticket_funnel">›</span>Low Ticket Funnel
       </td>
-      <td class="col-num">33</td>
+      <td class="col-num">35</td>
+      <td class="col-num">17</td>
+      <td class="col-pct bad">48.6%</td>
       <td class="col-num">16</td>
-      <td class="col-pct bad">48.5%</td>
-      <td class="col-num">15</td>
-      <td class="col-pct bad">45.5%</td>
+      <td class="col-pct bad">45.7%</td>
       <td class="col-num">3</td>
-      <td class="col-pct mid">9.1%</td>
+      <td class="col-pct mid">8.6%</td>
       <td class="col-rev">$23,991</td>
       <td class="col-num">$7,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale</td>
-      <td class="col-num">27</td>
-      <td class="col-num">14</td>
-      <td class="col-pct mid">51.9%</td>
-      <td class="col-num">12</td>
-      <td class="col-pct bad">44.4%</td>
+      <td class="col-num">29</td>
+      <td class="col-num">15</td>
+      <td class="col-pct mid">51.7%</td>
+      <td class="col-num">13</td>
+      <td class="col-pct bad">44.8%</td>
       <td class="col-num">2</td>
-      <td class="col-pct mid">7.4%</td>
+      <td class="col-pct bad">6.9%</td>
       <td class="col-rev">$14,994</td>
       <td class="col-num">$7,497</td>
     </tr>
@@ -367,28 +380,28 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('instagram')" data-fid="instagram">
+    <tr class="funnel-row" data-section="external" onclick="toggleUTM('instagram')" data-fid="instagram">
       <td class="col-name">
         <span class="chevron" id="chev-instagram">›</span>Instagram
       </td>
-      <td class="col-num">33</td>
+      <td class="col-num">32</td>
       <td class="col-num">21</td>
-      <td class="col-pct mid">63.6%</td>
-      <td class="col-num">19</td>
-      <td class="col-pct mid">57.6%</td>
+      <td class="col-pct mid">65.6%</td>
+      <td class="col-num">20</td>
+      <td class="col-pct mid">62.5%</td>
       <td class="col-num">6</td>
-      <td class="col-pct good">18.2%</td>
+      <td class="col-pct good">18.8%</td>
       <td class="col-rev">$62,982</td>
       <td class="col-num">$10,497</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ vp_setter</td>
-      <td class="col-num">14</td>
-      <td class="col-num">8</td>
-      <td class="col-pct mid">57.1%</td>
+      <td class="col-num">13</td>
+      <td class="col-num">7</td>
+      <td class="col-pct mid">53.8%</td>
       <td class="col-num">5</td>
-      <td class="col-pct bad">35.7%</td>
+      <td class="col-pct bad">38.5%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -461,12 +474,12 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 936262459</td>
+      <td class="col-name col-utm">↳ wescale</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -642,7 +655,7 @@
       <td class="col-num">$10,997</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('x')" data-fid="x">
+    <tr class="funnel-row" data-section="external" onclick="toggleUTM('x')" data-fid="x">
       <td class="col-name">
         <span class="chevron" id="chev-x">›</span>X
       </td>
@@ -670,7 +683,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('linkedin')" data-fid="linkedin">
+    <tr class="funnel-row" data-section="external" onclick="toggleUTM('linkedin')" data-fid="linkedin">
       <td class="col-name">
         <span class="chevron" id="chev-linkedin">›</span>Linkedin
       </td>
@@ -698,7 +711,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('instagram_setter')" data-fid="instagram_setter">
+    <tr class="funnel-row" data-section="external" onclick="toggleUTM('instagram_setter')" data-fid="instagram_setter">
       <td class="col-name">
         <span class="chevron" id="chev-instagram_setter">›</span>Instagram Setter
       </td>
@@ -713,21 +726,23 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="section-header-row">
-      <td colspan="10">FUNNEL BREAKDOWN — IN-HOUSE</td>
+    <tr class="section-header-row" onclick="toggleSection('in_house')">
+      <td colspan="10">
+        <span class="section-chevron open" id="secchev-in_house">›</span>FUNNEL BREAKDOWN — IN-HOUSE
+      </td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('youtube')" data-fid="youtube">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('youtube')" data-fid="youtube">
       <td class="col-name">
         <span class="chevron" id="chev-youtube">›</span>YouTube
       </td>
-      <td class="col-num">28</td>
-      <td class="col-num">19</td>
-      <td class="col-pct mid">67.9%</td>
-      <td class="col-num">17</td>
-      <td class="col-pct mid">60.7%</td>
+      <td class="col-num">29</td>
+      <td class="col-num">20</td>
+      <td class="col-pct mid">69.0%</td>
+      <td class="col-num">18</td>
+      <td class="col-pct mid">62.1%</td>
       <td class="col-num">3</td>
-      <td class="col-pct mid">10.7%</td>
+      <td class="col-pct mid">10.3%</td>
       <td class="col-rev">$23,991</td>
       <td class="col-num">$7,997</td>
     </tr>
@@ -773,11 +788,11 @@
 
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ dont-start-vending</td>
+      <td class="col-num">3</td>
       <td class="col-num">2</td>
+      <td class="col-pct mid">66.7%</td>
       <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pct mid">66.7%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -800,10 +815,10 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ vending-items-20k</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -966,7 +981,7 @@
       <td class="col-num">$5,997</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('meta_ads')" data-fid="meta_ads">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('meta_ads')" data-fid="meta_ads">
       <td class="col-name">
         <span class="chevron" id="chev-meta_ads">›</span>Meta Ads
       </td>
@@ -1020,7 +1035,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('vsl')" data-fid="vsl">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('vsl')" data-fid="vsl">
       <td class="col-name">
         <span class="chevron" id="chev-vsl">›</span>VSL
       </td>
@@ -1035,7 +1050,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('website')" data-fid="website">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('website')" data-fid="website">
       <td class="col-name">
         <span class="chevron" id="chev-website">›</span>Website
       </td>
@@ -1089,7 +1104,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('internal_webinar')" data-fid="internal_webinar">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('internal_webinar')" data-fid="internal_webinar">
       <td class="col-name">
         <span class="chevron" id="chev-internal_webinar">›</span>Internal Webinar
       </td>
@@ -1143,7 +1158,7 @@
       <td class="col-num">$5,997</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('mike_newsletter')" data-fid="mike_newsletter">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('mike_newsletter')" data-fid="mike_newsletter">
       <td class="col-name">
         <span class="chevron" id="chev-mike_newsletter">›</span>Mike Newsletter
       </td>
@@ -1171,7 +1186,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('ak_tiktok_instagram')" data-fid="ak_tiktok_instagram">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('ak_tiktok_instagram')" data-fid="ak_tiktok_instagram">
       <td class="col-name">
         <span class="chevron" id="chev-ak_tiktok_instagram">›</span>AK TikTok/Instagram
       </td>
@@ -1186,7 +1201,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('side_hustle_nation_wwws')" data-fid="side_hustle_nation_wwws">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('side_hustle_nation_wwws')" data-fid="side_hustle_nation_wwws">
       <td class="col-name">
         <span class="chevron" id="chev-side_hustle_nation_wwws">›</span>Side Hustle Nation/WWWS
       </td>
@@ -1201,7 +1216,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('passivepreneurs')" data-fid="passivepreneurs">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('passivepreneurs')" data-fid="passivepreneurs">
       <td class="col-name">
         <span class="chevron" id="chev-passivepreneurs">›</span>Passivepreneurs
       </td>
@@ -1216,7 +1231,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('reactivation_email')" data-fid="reactivation_email">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('reactivation_email')" data-fid="reactivation_email">
       <td class="col-name">
         <span class="chevron" id="chev-reactivation_email">›</span>Reactivation Email
       </td>
@@ -1270,7 +1285,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('reactivation_scrapers')" data-fid="reactivation_scrapers">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('reactivation_scrapers')" data-fid="reactivation_scrapers">
       <td class="col-name">
         <span class="chevron" id="chev-reactivation_scrapers">›</span>Reactivation Scrapers
       </td>
@@ -1324,7 +1339,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('referred')" data-fid="referred">
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('referred')" data-fid="referred">
       <td class="col-name">
         <span class="chevron" id="chev-referred">›</span>Referred
       </td>
@@ -1352,11 +1367,13 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="section-header-row">
-      <td colspan="10">FUNNEL BREAKDOWN — UNCATEGORIZED</td>
+    <tr class="section-header-row" onclick="toggleSection('uncategorized')">
+      <td colspan="10">
+        <span class="section-chevron open" id="secchev-uncategorized">›</span>FUNNEL BREAKDOWN — UNCATEGORIZED
+      </td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('unknown__needs_review_')" data-fid="unknown__needs_review_">
+    <tr class="funnel-row" data-section="uncategorized" onclick="toggleUTM('unknown__needs_review_')" data-fid="unknown__needs_review_">
       <td class="col-name">
         <span class="chevron" id="chev-unknown__needs_review_">›</span>Unknown (Needs Review)
       </td>
@@ -1384,7 +1401,7 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="funnel-row" onclick="toggleUTM('no_attribution')" data-fid="no_attribution">
+    <tr class="funnel-row" data-section="uncategorized" onclick="toggleUTM('no_attribution')" data-fid="no_attribution">
       <td class="col-name">
         <span class="chevron" id="chev-no_attribution">›</span>No Attribution
       </td>
@@ -1401,13 +1418,13 @@
 
     <tr class="total-row">
       <td class="col-name">TOTAL</td>
-      <td class="col-num">138</td>
-      <td class="col-num">79</td>
-      <td class="col-pct mid">57.2%</td>
-      <td class="col-num">70</td>
-      <td class="col-pct mid">50.7%</td>
+      <td class="col-num">140</td>
+      <td class="col-num">81</td>
+      <td class="col-pct mid">57.9%</td>
+      <td class="col-num">73</td>
+      <td class="col-pct mid">52.1%</td>
       <td class="col-num">19</td>
-      <td class="col-pct mid">13.8%</td>
+      <td class="col-pct mid">13.6%</td>
       <td class="col-rev">$161,146</td>
       <td class="col-num">$8,481</td>
     </tr>
@@ -1417,10 +1434,31 @@
 
 <script>
   function toggleUTM(fid) {
-    const utmRows  = document.querySelectorAll(`.utm-row[data-parent="${fid}"]`);
-    const chevron  = document.getElementById("chev-" + fid);
+    const utmRows = document.querySelectorAll(`.utm-row[data-parent="${fid}"]`);
+    const chevron = document.getElementById("chev-" + fid);
+    const isOpen  = chevron.classList.contains("open");
+    utmRows.forEach(r => r.classList.toggle("open", !isOpen));
+    chevron.classList.toggle("open", !isOpen);
+  }
+
+  function toggleSection(grpId) {
+    const chevron  = document.getElementById("secchev-" + grpId);
     const isOpen   = chevron.classList.contains("open");
-    utmRows.forEach(r  => r.classList.toggle("open", !isOpen));
+    // All funnel rows and their utm sub-rows in this section
+    const funnelRows = document.querySelectorAll(`.funnel-row[data-section="${grpId}"]`);
+    funnelRows.forEach(row => {
+      row.style.display = isOpen ? "none" : "";
+      // Also collapse any open UTM sub-rows within this section
+      const fid = row.dataset.fid;
+      if (fid) {
+        const utmRows = document.querySelectorAll(`.utm-row[data-parent="${fid}"]`);
+        if (isOpen) {
+          utmRows.forEach(r => r.classList.remove("open"));
+          const utmChev = document.getElementById("chev-" + fid);
+          if (utmChev) utmChev.classList.remove("open");
+        }
+      }
+    });
     chevron.classList.toggle("open", !isOpen);
   }
 </script>
