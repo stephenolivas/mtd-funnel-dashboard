@@ -210,7 +210,7 @@ def filter_meetings_mtd(meetings):
         # Must be within current month (past meetings only — future bookings are
         # intentionally excluded here; booked = meeting has occurred or is scheduled
         # within the current month window up to now)
-        if dt_pac < mtd_start or dt_pac > now_pac:
+        if dt_pac < mtd_start or dt_pac.date() > now_pac.date():
             continue
 
         if not is_valid_meeting(m):
