@@ -286,11 +286,16 @@ def fetch_won_opps_mtd():
 
 
 def parse_value(raw):
-    """Parse Close opportunity value — handles int, float, or '8187 one-time' strings."""
+    """
+    Parse Close opportunity value.
+    Close stores value in CENTS (integer), so divide by 100 to get dollars.
+    e.g. raw=84970000 => $849,700.00
+    """
     if raw is None:
         return 0.0
     try:
-        return float(str(raw).split()[0].replace(",", "").replace("$", ""))
+        cents = float(str(raw).split()[0].replace(",", "").replace("$", ""))
+        return cents / 100.0
     except Exception:
         return 0.0
 
@@ -351,8 +356,17 @@ def build_dashboard_data():
         funnel = get_funnel_name(lead)
 
         # Show Up and Qualified are lead-level custom fields — read directly
-        show_up   = lead.get(f"custom.{CF_SHOW_UP}")   is True
-        qualified = lead.get(f"custom.{CF_QUALIFIED}") is True
+        # Close can return booleans (True/False) or strings ("Yes"/"No") depending
+        # on how the field was configured, so check both.
+        def _is_yes(val):
+            if val is None or val is False:
+                return False
+            if val is True:
+                return True
+            return str(val).strip().lower() in ("yes", "true", "1")
+
+        show_up   = _is_yes(lead.get(f"custom.{CF_SHOW_UP}"))
+        qualified = _is_yes(lead.get(f"custom.{CF_QUALIFIED}"))
 
         # UTM campaign
         if lid not in utm_cache:
