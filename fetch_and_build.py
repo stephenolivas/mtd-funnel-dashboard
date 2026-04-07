@@ -74,27 +74,38 @@ INCLUDE_STANDARD_RE = re.compile(
     re.IGNORECASE,
 )
 
-# ── Known Funnel Display Order ─────────────────────────────────────────────────
+# ── Known Funnel Display Order (grouped) ──────────────────────────────────────
 
-FUNNEL_ORDER = [
-    "Low Ticket Funnel",
-    "Instagram",
-    "YouTube",
-    "Website",
-    "Internal Webinar",
-    "X",
-    "Linkedin",
-    "VSL",
-    "Instagram Setter",
-    "Mike Newsletter",
-    "AK TikTok/Instagram",
-    "Side Hustle Nation/WWWS",
-    "Passivepreneurs",
-    "Meta Ads",
-    "Reactivation Email",
-    "Reactivation Scrapers",
-    "No Attribution",
+FUNNEL_GROUPS = [
+    ("EXTERNAL", [
+        "Low Ticket Funnel",
+        "Instagram",
+        "X",
+        "Linkedin",
+        "Instagram Setter",
+    ]),
+    ("IN-HOUSE", [
+        "YouTube",
+        "Meta Ads",
+        "VSL",
+        "Website",
+        "Internal Webinar",
+        "Mike Newsletter",
+        "AK TikTok/Instagram",
+        "Side Hustle Nation/WWWS",
+        "Passivepreneurs",
+        "Reactivation Email",
+        "Reactivation Scrapers",
+        "Referred",
+    ]),
+    ("UNCATEGORIZED", [
+        "Unknown (Needs Review)",
+        "No Attribution",
+    ]),
 ]
+
+# Flat ordered list for membership checks
+FUNNEL_ORDER = [f for _, funnels in FUNNEL_GROUPS for f in funnels]
 
 # ── API Helpers ────────────────────────────────────────────────────────────────
 
@@ -232,7 +243,8 @@ def fetch_lead(lead_id):
 
 def get_funnel_name(lead):
     raw = lead.get(f"custom.{CF_FUNNEL_NAME}")
-    return (raw or "No Attribution").strip()
+    val = (raw or "").strip()
+    return val if val else "Unknown (Needs Review)"
 
 
 # ── Step 3: Opportunity Data ───────────────────────────────────────────────────
@@ -495,15 +507,12 @@ def funnel_slug(name):
 # ── HTML Generation ────────────────────────────────────────────────────────────
 
 def build_funnel_rows(funnel_data, funnel_totals):
-    """Build <tr> HTML for each funnel and its UTM sub-rows."""
-    all_funnels = list(funnel_data.keys())
-    ordered     = [f for f in FUNNEL_ORDER if f in all_funnels]
-    extras      = sorted(f for f in all_funnels if f not in ordered)
-    ordered    += extras
+    """Build <tr> HTML for each funnel and its UTM sub-rows, grouped by section."""
+    all_funnels = set(funnel_data.keys())
+    claimed     = set()
+    rows        = []
 
-    rows = []
-
-    for funnel in ordered:
+    def funnel_row_html(funnel):
         t   = funnel_totals.get(funnel, {})
         bo  = t.get("booked", 0)
         sh  = t.get("showed", 0)
@@ -512,8 +521,7 @@ def build_funnel_rows(funnel_data, funnel_totals):
         rev = t.get("revenue", 0.0)
         fid = funnel_slug(funnel)
 
-        # Funnel parent row
-        rows.append(f"""
+        html = [f"""
     <tr class="funnel-row" onclick="toggleUTM('{fid}')" data-fid="{fid}">
       <td class="col-name">
         <span class="chevron" id="chev-{fid}">›</span>{funnel}
@@ -527,19 +535,16 @@ def build_funnel_rows(funnel_data, funnel_totals):
       <td class="col-pct {pct_class(cl, bo, high=0.15, low=0.07)}">{pct(cl, bo)}</td>
       <td class="col-rev">{fmt_currency(rev)}</td>
       <td class="col-num">{rev_per_close(rev, cl)}</td>
-    </tr>""")
+    </tr>"""]
 
-        # UTM sub-rows (hidden by default)
         utms = funnel_data.get(funnel, {})
-        sorted_utms = sorted(utms.items(), key=lambda x: -x[1]["booked"])
-
-        for utm_label, vals in sorted_utms:
+        for utm_label, vals in sorted(utms.items(), key=lambda x: -x[1]["booked"]):
             b  = vals["booked"]
             s  = vals["showed"]
             q  = vals["qualified"]
             c  = vals["closed"]
             r  = vals["revenue"]
-            rows.append(f"""
+            html.append(f"""
     <tr class="utm-row" data-parent="{fid}">
       <td class="col-name col-utm">↳ {utm_label}</td>
       <td class="col-num">{b if b else "—"}</td>
@@ -552,6 +557,31 @@ def build_funnel_rows(funnel_data, funnel_totals):
       <td class="col-rev">{fmt_currency(r)}</td>
       <td class="col-num">{rev_per_close(r, c)}</td>
     </tr>""")
+        return html
+
+    # ── Grouped sections ──────────────────────────────────────────────────────
+    for group_label, group_funnels in FUNNEL_GROUPS:
+        # Only emit a section header if at least one funnel in this group has data
+        # (or is in the defined list — always show defined funnels for consistency)
+        rows.append(f"""
+    <tr class="section-header-row">
+      <td colspan="10">FUNNEL BREAKDOWN — {group_label}</td>
+    </tr>""")
+
+        for funnel in group_funnels:
+            claimed.add(funnel)
+            # Always render the row even if no data (shows — across the board)
+            rows.extend(funnel_row_html(funnel))
+
+    # ── Any funnels not in any group (safety net) ─────────────────────────────
+    extras = sorted(all_funnels - claimed)
+    if extras:
+        rows.append(f"""
+    <tr class="section-header-row">
+      <td colspan="10">FUNNEL BREAKDOWN — OTHER</td>
+    </tr>""")
+        for funnel in extras:
+            rows.extend(funnel_row_html(funnel))
 
     return "\n".join(rows)
 
@@ -764,6 +794,19 @@ def generate_html(data):
     line-height: 1;
   }}
   .chevron.open {{ transform: rotate(90deg); color: var(--accent); }}
+
+  /* Section header rows */
+  .section-header-row td {
+    padding: 14px 12px 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--muted);
+    font-weight: 600;
+    border-top: 1px solid var(--border);
+    background: transparent;
+  }
+  .section-header-row:first-child td { border-top: none; }
 
   /* Progress bar mini (optional decoration on booked column) */
   @media (max-width: 960px) {{
