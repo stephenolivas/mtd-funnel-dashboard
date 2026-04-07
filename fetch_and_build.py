@@ -29,6 +29,10 @@ CF_FUNNEL_NAME  = "cf_xqDQE8fkPsWa0RNEve7hcaxKblCe6489XeZGRDzyPdX"  # Funnel Nam
 CF_SHOW_UP      = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"  # First Call Show Up (opp)
 CF_QUALIFIED    = "cf_ZDx7NBQaDzV1yYrFcBMzt6cIYj81dAcswpNN0CQzCPS"  # Qualified (opp)
 CF_UTM_CAMPAIGN = "cf_jnbd0xzUY3tuxzxiGxBs2hONuExeXMvAoTUM2R64Lq3"  # utm_campaign (contact)
+CF_UTM_CONTENT  = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"   # utm_content (contact)
+
+# Funnels that use utm_content instead of utm_campaign for sub-breakdown
+UTM_CONTENT_FUNNELS = {"Internal Webinar"}
 
 CLOSED_WON_STATUS_ID = "stat_0oW3iRpVp9z5DJq0cuwI1HgR0XhHAhykEPPIq4TFsxd"
 
@@ -82,7 +86,6 @@ FUNNEL_GROUPS = [
         "Instagram",
         "X",
         "Linkedin",
-        "Instagram Setter",
     ]),
     ("IN-HOUSE", [
         "YouTube",
@@ -91,8 +94,10 @@ FUNNEL_GROUPS = [
         "Website",
         "Internal Webinar",
         "Mike Newsletter",
-        "AK TikTok/Instagram",
-        "Side Hustle Nation/WWWS",
+        "Side Hustle Nation",
+        "WWWS",
+        "Tik Tok",
+        "Anthony IG",
         "Passivepreneurs",
         "Reactivation Email",
         "Reactivation Scrapers",
@@ -314,23 +319,28 @@ def parse_value(raw):
 
 # ── Step 4: UTM Campaign Data ──────────────────────────────────────────────────
 
-def fetch_utm_campaign(lead_id):
+def fetch_utm_data(lead_id):
     """
-    Return utm_campaign from the contact with the most UTM data filled in.
-    If multiple contacts, prefer the one that has utm_campaign set.
-    Returns None if no UTM data found on any contact.
+    Return (utm_campaign, utm_content) from the contact with the most UTM data.
+    If multiple contacts, prefer the one with utm_campaign set.
     """
     data = close_get("contact/", {
         "lead_id": lead_id,
-        "_fields": f"id,custom.{CF_UTM_CAMPAIGN}",
+        "_fields": f"id,custom.{CF_UTM_CAMPAIGN},custom.{CF_UTM_CONTENT}",
         "_limit":  10,
     })
     contacts = data.get("data", [])
+    # Prefer contact that has utm_campaign; fall back to first with any UTM data
+    best_campaign = None
+    best_content  = None
     for c in contacts:
-        val = c.get(f"custom.{CF_UTM_CAMPAIGN}")
-        if val:
-            return str(val).strip()
-    return None
+        campaign = c.get(f"custom.{CF_UTM_CAMPAIGN}")
+        content  = c.get(f"custom.{CF_UTM_CONTENT}")
+        if campaign and not best_campaign:
+            best_campaign = str(campaign).strip()
+        if content and not best_content:
+            best_content = str(content).strip()
+    return best_campaign, best_content
 
 
 # ── Main Aggregation ───────────────────────────────────────────────────────────
@@ -380,10 +390,13 @@ def build_dashboard_data():
         show_up   = _is_yes(lead.get(f"custom.{CF_SHOW_UP}"))
         qualified = _is_yes(lead.get(f"custom.{CF_QUALIFIED}"))
 
-        # UTM campaign
+        # UTM data — fetch both campaign and content in one call
         if lid not in utm_cache:
-            utm_cache[lid] = fetch_utm_campaign(lid)
-        utm = utm_cache[lid] or "Unattributed"
+            utm_cache[lid] = fetch_utm_data(lid)
+        utm_campaign, utm_content = utm_cache[lid]
+
+        # Internal Webinar uses utm_content for sub-breakdown; all others use utm_campaign
+        utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
 
         meeting_rows.append({
             "lead_id":      lid,
@@ -411,8 +424,9 @@ def build_dashboard_data():
         value  = parse_value(opp.get("value"))
 
         if lid not in utm_cache:
-            utm_cache[lid] = fetch_utm_campaign(lid)
-        utm = utm_cache[lid] or "Unattributed"
+            utm_cache[lid] = fetch_utm_data(lid)
+        utm_campaign, utm_content = utm_cache[lid]
+        utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
 
         closed_rows.append({
             "lead_id":      lid,
@@ -515,6 +529,9 @@ def build_funnel_rows(funnel_data, funnel_totals):
     def funnel_row_html(funnel):
         t   = funnel_totals.get(funnel, {})
         bo  = t.get("booked", 0)
+        # Zero suppression — hide rows with no activity this month
+        if bo == 0 and t.get("closed", 0) == 0:
+            return []
         sh  = t.get("showed", 0)
         qu  = t.get("qualified", 0)
         cl  = t.get("closed", 0)
