@@ -796,7 +796,7 @@ def generate_html(data):
   .chevron.open {{ transform: rotate(90deg); color: var(--accent); }}
 
   /* Section header rows */
-  .section-header-row td {
+  .section-header-row td {{
     padding: 14px 12px 5px;
     font-size: 10px;
     text-transform: uppercase;
@@ -805,8 +805,8 @@ def generate_html(data):
     font-weight: 600;
     border-top: 1px solid var(--border);
     background: transparent;
-  }
-  .section-header-row:first-child td { border-top: none; }
+  }}
+  .section-header-row:first-child td {{ border-top: none; }}
 
   /* Progress bar mini (optional decoration on booked column) */
   @media (max-width: 960px) {{
