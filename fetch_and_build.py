@@ -476,11 +476,22 @@ def build_dashboard_data():
         for k in grand:
             grand[k] += t[k]
 
+    # Group totals (External / In-House) for KPI sub-breakdown
+    group_totals = {}
+    for group_label, group_funnels in FUNNEL_GROUPS:
+        t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
+        for funnel in group_funnels:
+            ft = funnel_totals.get(funnel, {})
+            for k in t:
+                t[k] += ft.get(k, 0)
+        group_totals[group_label] = t
+
     now_pac = datetime.now(PACIFIC)
     return {
         "funnel_data":   funnel_data,
         "funnel_totals": funnel_totals,
         "grand":         grand,
+        "group_totals":  group_totals,
         "generated_at":  now_pac.strftime("%B %d, %Y at %I:%M %p PT"),
         "month_label":   now_pac.strftime("%B %Y"),
     }
@@ -616,6 +627,9 @@ def build_funnel_rows(funnel_data, funnel_totals):
 
 def generate_html(data):
     grand       = data["grand"]
+    gt          = data["group_totals"]
+    ext         = gt.get("EXTERNAL",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
+    inh         = gt.get("IN-HOUSE",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
     funnel_rows = build_funnel_rows(data["funnel_data"], data["funnel_totals"])
 
     g_bo  = grand["booked"]
@@ -740,6 +754,37 @@ def generate_html(data):
     font-size: 11px;
     color: var(--muted2);
     margin-top: 5px;
+  }}
+  .kpi-split {{
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid var(--border);
+  }}
+  .kpi-split-item {{
+    flex: 1;
+    background: var(--surface2);
+    border-radius: 6px;
+    padding: 6px 8px;
+  }}
+  .kpi-split-item .split-label {{
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }}
+  .kpi-split-item .split-value {{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+  }}
+  .kpi-split-item .split-rate {{
+    font-size: 10px;
+    color: var(--muted2);
+    margin-top: 1px;
   }}
 
   /* ── Section label ── */
@@ -887,26 +932,86 @@ def generate_html(data):
     <div class="label">Total Booked</div>
     <div class="value">{g_bo}</div>
     <div class="kpi-sub">new first calls MTD</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{ext["booked"]}</div>
+        <div class="split-rate">{pct(ext["booked"], g_bo)} of total</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{inh["booked"]}</div>
+        <div class="split-rate">{pct(inh["booked"], g_bo)} of total</div>
+      </div>
+    </div>
   </div>
   <div class="kpi" style="--kpi-accent:#2563eb; --kpi-color:#2563eb;">
     <div class="label">Showed</div>
     <div class="value">{g_sh}</div>
     <div class="kpi-sub">{pct(g_sh, g_bo)} show rate</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{ext["showed"]}</div>
+        <div class="split-rate">{pct(ext["showed"], ext["booked"])} show</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{inh["showed"]}</div>
+        <div class="split-rate">{pct(inh["showed"], inh["booked"])} show</div>
+      </div>
+    </div>
   </div>
   <div class="kpi" style="--kpi-accent:#7c3aed; --kpi-color:#7c3aed;">
     <div class="label">Qualified</div>
     <div class="value">{g_qu}</div>
     <div class="kpi-sub">{pct(g_qu, g_bo)} qual rate</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{ext["qualified"]}</div>
+        <div class="split-rate">{pct(ext["qualified"], ext["booked"])} qual</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{inh["qualified"]}</div>
+        <div class="split-rate">{pct(inh["qualified"], inh["booked"])} qual</div>
+      </div>
+    </div>
   </div>
   <div class="kpi" style="--kpi-accent:#d97706; --kpi-color:#d97706;">
     <div class="label">Closed Won</div>
     <div class="value">{g_cl}</div>
-    <div class="kpi-sub">{pct(g_cl, g_bo)} booked→close</div>
+    <div class="kpi-sub">{pct(g_cl, g_bo)} booked→close · {pct(g_cl, g_qu)} qual→close</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{ext["closed"]}</div>
+        <div class="split-rate">{pct(ext["closed"], ext["booked"])} b→c</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{inh["closed"]}</div>
+        <div class="split-rate">{pct(inh["closed"], inh["booked"])} b→c</div>
+      </div>
+    </div>
   </div>
   <div class="kpi" style="--kpi-accent:#0e9f6e; --kpi-color:#0e9f6e;">
     <div class="label">Closed Revenue</div>
     <div class="value">{fmt_currency(g_rev)}</div>
     <div class="kpi-sub">{rev_per_close(g_rev, g_cl)} avg deal</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{fmt_currency(ext["revenue"])}</div>
+        <div class="split-rate">{rev_per_close(ext["revenue"], ext["closed"])} avg</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{fmt_currency(inh["revenue"])}</div>
+        <div class="split-rate">{rev_per_close(inh["revenue"], inh["closed"])} avg</div>
+      </div>
+    </div>
   </div>
 </div>
 
