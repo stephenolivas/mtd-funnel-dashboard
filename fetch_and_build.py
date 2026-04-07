@@ -563,25 +563,36 @@ def build_funnel_rows(funnel_data, funnel_totals):
     for group_label, group_funnels in FUNNEL_GROUPS:
         # Only emit a section header if at least one funnel in this group has data
         # (or is in the defined list — always show defined funnels for consistency)
+        grp_id = group_label.lower().replace(" ", "_").replace("-", "_")
         rows.append(f"""
-    <tr class="section-header-row">
-      <td colspan="10">FUNNEL BREAKDOWN — {group_label}</td>
+    <tr class="section-header-row" onclick="toggleSection('{grp_id}')">
+      <td colspan="10">
+        <span class="section-chevron open" id="secchev-{grp_id}">›</span>FUNNEL BREAKDOWN — {group_label}
+      </td>
     </tr>""")
 
         for funnel in group_funnels:
             claimed.add(funnel)
             # Always render the row even if no data (shows — across the board)
-            rows.extend(funnel_row_html(funnel))
+            # Tag each row with the section group so we can collapse the whole section
+            section_rows = funnel_row_html(funnel)
+            # Inject data-section attribute into first <tr> of each funnel block
+            section_rows = [r.replace('<tr class="funnel-row"', f'<tr class="funnel-row" data-section="{grp_id}"', 1) for r in section_rows]
+            rows.extend(section_rows)
 
     # ── Any funnels not in any group (safety net) ─────────────────────────────
     extras = sorted(all_funnels - claimed)
     if extras:
         rows.append(f"""
-    <tr class="section-header-row">
-      <td colspan="10">FUNNEL BREAKDOWN — OTHER</td>
+    <tr class="section-header-row" onclick="toggleSection('other')">
+      <td colspan="10">
+        <span class="section-chevron open" id="secchev-other">›</span>FUNNEL BREAKDOWN — OTHER
+      </td>
     </tr>""")
         for funnel in extras:
-            rows.extend(funnel_row_html(funnel))
+            section_rows = funnel_row_html(funnel)
+            section_rows = [r.replace('<tr class="funnel-row"', '<tr class="funnel-row" data-section="other"', 1) for r in section_rows]
+            rows.extend(section_rows)
 
     return "\n".join(rows)
 
@@ -797,16 +808,27 @@ def generate_html(data):
 
   /* Section header rows */
   .section-header-row td {{
-    padding: 14px 12px 5px;
-    font-size: 10px;
+    padding: 16px 12px 6px;
+    font-size: 10.5px;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
-    color: var(--muted);
-    font-weight: 600;
-    border-top: 1px solid var(--border);
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-weight: 700;
+    border-top: 2px solid var(--border);
     background: transparent;
+    cursor: pointer;
+    user-select: none;
   }}
+  .section-header-row td:hover {{ color: #a5b4fc; }}
   .section-header-row:first-child td {{ border-top: none; }}
+  .section-chevron {{
+    display: inline-block;
+    width: 14px;
+    margin-right: 4px;
+    transition: transform 0.15s ease;
+    opacity: 0.7;
+  }}
+  .section-chevron.open {{ transform: rotate(90deg); }}
 
   /* Progress bar mini (optional decoration on booked column) */
   @media (max-width: 960px) {{
@@ -900,10 +922,31 @@ def generate_html(data):
 
 <script>
   function toggleUTM(fid) {{
-    const utmRows  = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
-    const chevron  = document.getElementById("chev-" + fid);
+    const utmRows = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
+    const chevron = document.getElementById("chev-" + fid);
+    const isOpen  = chevron.classList.contains("open");
+    utmRows.forEach(r => r.classList.toggle("open", !isOpen));
+    chevron.classList.toggle("open", !isOpen);
+  }}
+
+  function toggleSection(grpId) {{
+    const chevron  = document.getElementById("secchev-" + grpId);
     const isOpen   = chevron.classList.contains("open");
-    utmRows.forEach(r  => r.classList.toggle("open", !isOpen));
+    // All funnel rows and their utm sub-rows in this section
+    const funnelRows = document.querySelectorAll(`.funnel-row[data-section="${{grpId}}"]`);
+    funnelRows.forEach(row => {{
+      row.style.display = isOpen ? "none" : "";
+      // Also collapse any open UTM sub-rows within this section
+      const fid = row.dataset.fid;
+      if (fid) {{
+        const utmRows = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
+        if (isOpen) {{
+          utmRows.forEach(r => r.classList.remove("open"));
+          const utmChev = document.getElementById("chev-" + fid);
+          if (utmChev) utmChev.classList.remove("open");
+        }}
+      }}
+    }});
     chevron.classList.toggle("open", !isOpen);
   }}
 </script>
