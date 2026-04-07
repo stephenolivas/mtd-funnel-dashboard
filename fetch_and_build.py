@@ -680,7 +680,7 @@ def generate_html(data):
   .header-left h1 {{
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: var(--text);
     letter-spacing: -0.01em;
   }}
   .header-left .sub {{
@@ -734,7 +734,7 @@ def generate_html(data):
     font-size: 34px;
     font-weight: 700;
     line-height: 1;
-    color: var(--kpi-color, #fff);
+    color: var(--kpi-color, var(--text));
   }}
   .kpi .kpi-sub {{
     font-size: 11px;
@@ -883,27 +883,27 @@ def generate_html(data):
 
 <!-- KPI Cards -->
 <div class="kpis">
-  <div class="kpi" style="--kpi-accent:#818cf8; --kpi-color:#fff;">
+  <div class="kpi" style="--kpi-accent:#4f46e5; --kpi-color:var(--text);">
     <div class="label">Total Booked</div>
     <div class="value">{g_bo}</div>
     <div class="kpi-sub">new first calls MTD</div>
   </div>
-  <div class="kpi" style="--kpi-accent:#60a5fa; --kpi-color:#60a5fa;">
+  <div class="kpi" style="--kpi-accent:#2563eb; --kpi-color:#2563eb;">
     <div class="label">Showed</div>
     <div class="value">{g_sh}</div>
     <div class="kpi-sub">{pct(g_sh, g_bo)} show rate</div>
   </div>
-  <div class="kpi" style="--kpi-accent:#c084fc; --kpi-color:#c084fc;">
+  <div class="kpi" style="--kpi-accent:#7c3aed; --kpi-color:#7c3aed;">
     <div class="label">Qualified</div>
     <div class="value">{g_qu}</div>
     <div class="kpi-sub">{pct(g_qu, g_bo)} qual rate</div>
   </div>
-  <div class="kpi" style="--kpi-accent:#f59e0b; --kpi-color:#f59e0b;">
+  <div class="kpi" style="--kpi-accent:#d97706; --kpi-color:#d97706;">
     <div class="label">Closed Won</div>
     <div class="value">{g_cl}</div>
     <div class="kpi-sub">{pct(g_cl, g_bo)} booked→close</div>
   </div>
-  <div class="kpi" style="--kpi-accent:#22c55e; --kpi-color:#22c55e;">
+  <div class="kpi" style="--kpi-accent:#0e9f6e; --kpi-color:#0e9f6e;">
     <div class="label">Closed Revenue</div>
     <div class="value">{fmt_currency(g_rev)}</div>
     <div class="kpi-sub">{rev_per_close(g_rev, g_cl)} avg deal</div>
