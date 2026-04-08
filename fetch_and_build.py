@@ -1182,14 +1182,16 @@ def build_month_picker(current_key, archive_months, is_archive):
 
     select_opts = ""
     for key, label, href in options:
-        selected = 'selected' if key == current_key else ''
-        select_opts += f'<option value="{href}" {selected}>{label}</option>
-      '
+        sel = "selected" if key == current_key else ""
+        select_opts += f"<option value=\"{href}\" {sel}>{label}</option>\n      "
 
-    return f"""{badge}<div class="month-picker">
-      <select onchange="window.location.href=this.value">
-      {select_opts}</select>
-    </div>"""
+    return (
+        badge +
+        '<div class="month-picker">'
+        '<select onchange="window.location.href=this.value">'
+        + select_opts +
+        "</select></div>"
+    )
 
 
 # ── Entry Point ────────────────────────────────────────────────────────────────
