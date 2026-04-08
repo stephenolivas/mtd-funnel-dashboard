@@ -7,9 +7,13 @@ from Close CRM and builds a static HTML dashboard.
 
 import os
 import re
+import sys
 import time
 import json
+import argparse
+import calendar
 from datetime import datetime, date
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
@@ -191,10 +195,22 @@ def fetch_all_meetings():
     return meetings
 
 
-def filter_meetings_mtd(meetings):
-    """Keep only current-month qualifying meetings (Pacific time)."""
-    now_pac  = datetime.now(PACIFIC)
-    mtd_start = now_pac.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+def filter_meetings_mtd(meetings, target_month=None):
+    """
+    Keep qualifying meetings for the target month (Pacific time).
+    target_month: date(YYYY, MM, 1) or None for current month.
+    For the current month, cap at today. For past months, include the full month.
+    """
+    now_pac = datetime.now(PACIFIC)
+    if target_month is None:
+        target_month = now_pac.replace(day=1).date()
+        end_date = now_pac.date()
+    else:
+        last_day = calendar.monthrange(target_month.year, target_month.month)[1]
+        end_date = date(target_month.year, target_month.month, last_day)
+
+    month_start = datetime(target_month.year, target_month.month, 1,
+                           tzinfo=PACIFIC)
 
     valid = []
     for m in meetings:
@@ -207,10 +223,7 @@ def filter_meetings_mtd(meetings):
         except Exception:
             continue
 
-        # Must be within current month (past meetings only — future bookings are
-        # intentionally excluded here; booked = meeting has occurred or is scheduled
-        # within the current month window up to now)
-        if dt_pac < mtd_start or dt_pac.date() > now_pac.date():
+        if dt_pac < month_start or dt_pac.date() > end_date:
             continue
 
         if not is_valid_meeting(m):
@@ -270,24 +283,28 @@ def fetch_latest_opportunity(lead_id):
     return opps[0]
 
 
-def fetch_won_opps_mtd():
+def fetch_won_opps_mtd(target_month=None):
     """
-    Fetch all won opportunities with date_won in the current month (Pacific).
-    Uses opportunity endpoint with status_type=won and date_won filters.
-    Note: Close API date filters work on /opportunity/ — no Python-side filtering needed.
+    Fetch all won opportunities with date_won in the target month.
+    target_month: date(YYYY, MM, 1) or None for current month.
     """
     now_pac = datetime.now(PACIFIC)
-    month_start = now_pac.replace(day=1).strftime("%Y-%m-%d")
-    today       = now_pac.strftime("%Y-%m-%d")
+    if target_month is None:
+        month_start = now_pac.replace(day=1).strftime("%Y-%m-%d")
+        end_date    = now_pac.strftime("%Y-%m-%d")
+    else:
+        last_day    = calendar.monthrange(target_month.year, target_month.month)[1]
+        month_start = target_month.strftime("%Y-%m-%d")
+        end_date    = date(target_month.year, target_month.month, last_day).strftime("%Y-%m-%d")
 
-    print(f"Fetching won opportunities ({month_start} → {today})...", flush=True)
+    print(f"Fetching won opportunities ({month_start} → {end_date})...", flush=True)
 
     opps, skip = [], 0
     while True:
         data = close_get("opportunity/", {
             "status_type":    "won",
             "date_won__gte":  month_start,
-            "date_won__lte":  today,
+            "date_won__lte":  end_date,
             "_fields":        f"id,lead_id,value,date_won",
             "_skip":          skip,
             "_limit":         100,
@@ -345,12 +362,17 @@ def fetch_utm_data(lead_id):
 
 # ── Main Aggregation ───────────────────────────────────────────────────────────
 
-def build_dashboard_data():
+def build_dashboard_data(target_month=None):
+    """
+    target_month: date(YYYY, MM, 1) or None for current month.
+    """
     print("\n=== MTD Funnel Performance — Starting Build ===\n", flush=True)
+    if target_month:
+        print(f"Archive mode: {target_month.strftime('%B %Y')}", flush=True)
 
     # ── Meetings ──────────────────────────────────────────────────────────────
     all_meetings  = fetch_all_meetings()
-    mtd_meetings  = filter_meetings_mtd(all_meetings)
+    mtd_meetings  = filter_meetings_mtd(all_meetings, target_month)
     print(f"MTD qualifying meetings (pre-dedup):  {len(mtd_meetings)}", flush=True)
 
     deduped = deduplicate_meetings(mtd_meetings)
@@ -409,7 +431,7 @@ def build_dashboard_data():
     print(f"\nMeeting rows after all filters: {len(meeting_rows)}", flush=True)
 
     # ── Closed-Won Opportunities ───────────────────────────────────────────────
-    won_opps   = fetch_won_opps_mtd()
+    won_opps   = fetch_won_opps_mtd(target_month)
     closed_rows = []
 
     for i, opp in enumerate(won_opps):
@@ -625,7 +647,7 @@ def build_funnel_rows(funnel_data, funnel_totals):
     return "\n".join(rows)
 
 
-def generate_html(data):
+def generate_html(data, month_picker_html=""):
     grand       = data["grand"]
     gt          = data["group_totals"]
     ext         = gt.get("EXTERNAL",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
@@ -904,6 +926,37 @@ def generate_html(data):
   .section-chevron.open {{ transform: rotate(90deg); }}
 
   /* Progress bar mini (optional decoration on booked column) */
+  /* Month picker */
+  .month-picker {{
+    margin-bottom: 8px;
+  }}
+  .month-picker select {{
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+  }}
+  .month-picker select:hover {{
+    border-color: var(--accent);
+  }}
+  .archive-badge {{
+    display: inline-block;
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }}
+
   @media (max-width: 960px) {{
     .kpis {{ grid-template-columns: repeat(2, 1fr); }}
     .header {{ flex-direction: column; gap: 12px; }}
@@ -920,6 +973,7 @@ def generate_html(data):
     <p class="sub">Vendingpreneurs · All Sales Calls · {data['month_label']}</p>
   </div>
   <div class="header-right">
+    {month_picker_html}
     <span class="snapshot-label">Snapshot</span>
     {data['generated_at']}<br>
     Source · Close CRM
@@ -1088,16 +1142,100 @@ def generate_html(data):
 </html>"""
 
 
+# ── Archive Helpers ────────────────────────────────────────────────────────────
+
+ARCHIVES_DIR = Path("archives")
+
+def scan_archives():
+    """Return sorted list of (YYYY-MM, display_label) for existing archive files."""
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    months = []
+    for p in sorted(ARCHIVES_DIR.glob("*.html"), reverse=True):
+        key = p.stem  # e.g. "2026-03"
+        try:
+            d = datetime.strptime(key, "%Y-%m")
+            months.append((key, d.strftime("%B %Y")))
+        except ValueError:
+            continue
+    return months
+
+def build_month_picker(current_key, archive_months, is_archive):
+    """
+    Build the <select> HTML for switching months.
+    current_key: YYYY-MM string for the page being rendered.
+    archive_months: list of (key, label) from scan_archives().
+    is_archive: True if this page is itself an archive page.
+    """
+    now_pac = datetime.now(PACIFIC)
+    live_key   = now_pac.strftime("%Y-%m")
+    live_label = now_pac.strftime("%B %Y")
+
+    # All options: current live month first, then archives newest→oldest
+    options = [(live_key, live_label, "../index.html")]
+    for key, label in archive_months:
+        if key == live_key:
+            continue  # don't double-list current month if somehow archived
+        href = f"{key}.html" if not is_archive else f"{key}.html"
+        options.append((key, label, href))
+
+    badge = '<span class="archive-badge">Archive</span><br>' if is_archive else ""
+
+    select_opts = ""
+    for key, label, href in options:
+        selected = 'selected' if key == current_key else ''
+        select_opts += f'<option value="{href}" {selected}>{label}</option>
+      '
+
+    return f"""{badge}<div class="month-picker">
+      <select onchange="window.location.href=this.value">
+      {select_opts}</select>
+    </div>"""
+
+
 # ── Entry Point ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("MTD Funnel Performance Dashboard — Build Start", flush=True)
-    data = build_dashboard_data()
+    parser = argparse.ArgumentParser(description="MTD Funnel Performance Dashboard")
+    parser.add_argument(
+        "--month", "-m",
+        help="Archive month to build, format YYYY-MM (omit for current month)",
+        default=None,
+    )
+    args = parser.parse_args()
+
+    # Determine target month
+    target_month = None
+    is_archive   = False
+    now_pac      = datetime.now(PACIFIC)
+
+    if args.month:
+        try:
+            parsed = datetime.strptime(args.month, "%Y-%m")
+            target_month = date(parsed.year, parsed.month, 1)
+            is_archive   = True
+        except ValueError:
+            print(f"ERROR: --month must be YYYY-MM format, got: {args.month}", flush=True)
+            sys.exit(1)
+
+    print(f"MTD Funnel Performance Dashboard — Build Start", flush=True)
+    data = build_dashboard_data(target_month)
+
+    # Determine output path
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    if is_archive:
+        out_path    = ARCHIVES_DIR / f"{args.month}.html"
+        current_key = args.month
+    else:
+        out_path    = Path("index.html")
+        current_key = now_pac.strftime("%Y-%m")
+
+    # Build month picker from existing archives
+    archive_months  = scan_archives()
+    month_picker    = build_month_picker(current_key, archive_months, is_archive)
 
     print("\nGenerating HTML...", flush=True)
-    html = generate_html(data)
+    html = generate_html(data, month_picker_html=month_picker)
 
-    out_path = "index.html"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
 
