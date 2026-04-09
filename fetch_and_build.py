@@ -442,6 +442,11 @@ def build_dashboard_data(target_month=None):
             lead_cache[lid] = fetch_lead(lid)
         lead = lead_cache[lid]
 
+        # Apply same lead status exclusions as meeting pipeline
+        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
+            print(f"    → Skipped closed-won (excluded lead status)", flush=True)
+            continue
+
         funnel = get_funnel_name(lead)
         value  = parse_value(opp.get("value"))
 
@@ -929,7 +934,10 @@ def generate_html(data, month_picker_html=""):
   /* Progress bar mini (optional decoration on booked column) */
   /* Month picker */
   .month-picker {{
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 6px;
   }}
   .month-picker select {{
     background: var(--surface);
@@ -953,9 +961,9 @@ def generate_html(data, month_picker_html=""):
     font-size: 10px;
     font-weight: 600;
     padding: 2px 7px;
-    margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
   }}
 
   @media (max-width: 960px) {{
@@ -1183,19 +1191,17 @@ def build_month_picker(current_key, archive_months, is_archive):
         href = f"{key}.html" if is_archive else f"archives/{key}.html"
         options.append((key, label, href))
 
-    badge = '<span class="archive-badge">Archive</span><br>' if is_archive else ""
-
     select_opts = ""
     for key, label, href in options:
         sel = "selected" if key == current_key else ""
         select_opts += f"<option value=\"{href}\" {sel}>{label}</option>\n      "
 
     return (
-        badge +
         '<div class="month-picker">'
-        '<select onchange="window.location.href=this.value">'
-        + select_opts +
-        "</select></div>"
+        + ('<span class="archive-badge">Archive</span>' if is_archive else "")
+        + '<select onchange="window.location.href=this.value">'
+        + select_opts
+        + "</select></div>"
     )
 
 
