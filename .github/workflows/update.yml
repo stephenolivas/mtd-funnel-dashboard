@@ -12,6 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: write   # ← must be here
 
     env:
       PYTHONUNBUFFERED: "1"
