@@ -508,14 +508,15 @@ def build_dashboard_data(target_month=None):
                 t[k] += ft.get(k, 0)
         group_totals[group_label] = t
 
-    now_pac = datetime.now(PACIFIC)
+    now_pac      = datetime.now(PACIFIC)
+    display_date = datetime(target_month.year, target_month.month, 1, tzinfo=PACIFIC)                    if target_month else now_pac
     return {
         "funnel_data":   funnel_data,
         "funnel_totals": funnel_totals,
         "grand":         grand,
         "group_totals":  group_totals,
         "generated_at":  now_pac.strftime("%B %d, %Y at %I:%M %p PT"),
-        "month_label":   now_pac.strftime("%B %Y"),
+        "month_label":   display_date.strftime("%B %Y"),
     }
 
 
@@ -1171,11 +1172,15 @@ def build_month_picker(current_key, archive_months, is_archive):
     live_label = now_pac.strftime("%B %Y")
 
     # All options: current live month first, then archives newest→oldest
-    options = [(live_key, live_label, "../index.html")]
+    # Paths differ depending on whether the page being rendered is index.html or archives/YYYY-MM.html
+    live_href = "../index.html" if is_archive else "index.html"
+    options = [(live_key, live_label, live_href)]
     for key, label in archive_months:
         if key == live_key:
             continue  # don't double-list current month if somehow archived
-        href = f"{key}.html" if not is_archive else f"{key}.html"
+        # From index.html → archives/YYYY-MM.html (subdirectory prefix needed)
+        # From archives/YYYY-MM.html → YYYY-MM.html (same directory, no prefix)
+        href = f"{key}.html" if is_archive else f"archives/{key}.html"
         options.append((key, label, href))
 
     badge = '<span class="archive-badge">Archive</span><br>' if is_archive else ""
