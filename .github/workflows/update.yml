@@ -12,8 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    permissions:
-      contents: write   # ← must be here
 
     env:
       PYTHONUNBUFFERED: "1"
@@ -42,4 +40,5 @@ jobs:
           git add index.html archives/
           git diff --staged --quiet || \
             git commit -m "Update MTD dashboard [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git pull --rebase
           git push
