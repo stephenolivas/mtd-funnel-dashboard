@@ -266,7 +266,10 @@
   /* Progress bar mini (optional decoration on booked column) */
   /* Month picker */
   .month-picker {
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 6px;
   }
   .month-picker select {
     background: var(--surface);
@@ -290,9 +293,9 @@
     font-size: 10px;
     font-weight: 600;
     padding: 2px 7px;
-    margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
   }
 
   @media (max-width: 960px) {
@@ -315,7 +318,7 @@
       <option value="archives/2026-03.html" >March 2026</option>
       </select></div>
     <span class="snapshot-label">Snapshot</span>
-    April 09, 2026 at 12:05 PM PT<br>
+    April 09, 2026 at 01:05 PM PT<br>
     Source · Close CRM
   </div>
 </div>
@@ -324,25 +327,25 @@
 <div class="kpis">
   <div class="kpi" style="--kpi-accent:#4f46e5; --kpi-color:var(--text);">
     <div class="label">Total Booked</div>
-    <div class="value">267</div>
+    <div class="value">265</div>
     <div class="kpi-sub">new first calls MTD</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
         <div class="split-value">151</div>
-        <div class="split-rate">56.6% of total</div>
+        <div class="split-rate">57.0% of total</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">112</div>
+        <div class="split-value">111</div>
         <div class="split-rate">41.9% of total</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#2563eb; --kpi-color:#2563eb;">
     <div class="label">Showed</div>
-    <div class="value">143</div>
-    <div class="kpi-sub">53.6% show rate</div>
+    <div class="value">144</div>
+    <div class="kpi-sub">54.3% show rate</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -351,15 +354,15 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">56</div>
-        <div class="split-rate">50.0% show</div>
+        <div class="split-value">57</div>
+        <div class="split-rate">51.4% show</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#7c3aed; --kpi-color:#7c3aed;">
     <div class="label">Qualified</div>
-    <div class="value">117</div>
-    <div class="kpi-sub">43.8% qual rate</div>
+    <div class="value">118</div>
+    <div class="kpi-sub">44.5% qual rate</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -368,15 +371,15 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">45</div>
-        <div class="split-rate">40.2% qual</div>
+        <div class="split-value">46</div>
+        <div class="split-rate">41.4% qual</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#d97706; --kpi-color:#d97706;">
     <div class="label">Closed Won</div>
     <div class="value">23</div>
-    <div class="kpi-sub">8.6% booked→close · 19.7% qual→close</div>
+    <div class="kpi-sub">8.7% booked→close · 19.5% qual→close</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -386,7 +389,7 @@
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
         <div class="split-value">13</div>
-        <div class="split-rate">11.6% b→c</div>
+        <div class="split-rate">11.7% b→c</div>
       </div>
     </div>
   </div>
@@ -1066,10 +1069,10 @@
         <span class="chevron" id="chev-youtube">›</span>YouTube
       </td>
       <td class="col-num">44</td>
-      <td class="col-num">26</td>
-      <td class="col-pct mid">59.1%</td>
-      <td class="col-num">23</td>
-      <td class="col-pct mid">52.3%</td>
+      <td class="col-num">27</td>
+      <td class="col-pct mid">61.4%</td>
+      <td class="col-num">24</td>
+      <td class="col-pct mid">54.5%</td>
       <td class="col-num">6</td>
       <td class="col-pct mid">13.6%</td>
       <td class="col-rev">$41,982</td>
@@ -1079,10 +1082,10 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ home</td>
       <td class="col-num">9</td>
-      <td class="col-num">4</td>
-      <td class="col-pct bad">44.4%</td>
-      <td class="col-num">4</td>
-      <td class="col-pct bad">44.4%</td>
+      <td class="col-num">5</td>
+      <td class="col-pct mid">55.6%</td>
+      <td class="col-num">5</td>
+      <td class="col-pct mid">55.6%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1515,13 +1518,13 @@
       <td class="col-name">
         <span class="chevron" id="chev-internal_webinar">›</span>Internal Webinar
       </td>
-      <td class="col-num">32</td>
+      <td class="col-num">31</td>
       <td class="col-num">8</td>
-      <td class="col-pct bad">25.0%</td>
+      <td class="col-pct bad">25.8%</td>
       <td class="col-num">7</td>
-      <td class="col-pct bad">21.9%</td>
+      <td class="col-pct bad">22.6%</td>
       <td class="col-num">3</td>
-      <td class="col-pct mid">9.4%</td>
+      <td class="col-pct mid">9.7%</td>
       <td class="col-rev">$17,691</td>
       <td class="col-num">$5,897</td>
     </tr>
@@ -1541,11 +1544,11 @@
 
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ mar24_end_cta</td>
-      <td class="col-num">9</td>
+      <td class="col-num">8</td>
       <td class="col-num">2</td>
-      <td class="col-pct bad">22.2%</td>
+      <td class="col-pct bad">25.0%</td>
       <td class="col-num">1</td>
-      <td class="col-pct bad">11.1%</td>
+      <td class="col-pct bad">12.5%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1806,7 +1809,7 @@
       <td class="col-name">
         <span class="chevron" id="chev-unknown__needs_review_">›</span>Unknown (Needs Review)
       </td>
-      <td class="col-num">4</td>
+      <td class="col-num">3</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -1819,7 +1822,7 @@
 
     <tr class="utm-row" data-parent="unknown__needs_review_">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">3</td>
+      <td class="col-num">2</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -1845,13 +1848,13 @@
 
     <tr class="total-row">
       <td class="col-name">TOTAL</td>
-      <td class="col-num">267</td>
-      <td class="col-num">143</td>
-      <td class="col-pct mid">53.6%</td>
-      <td class="col-num">117</td>
-      <td class="col-pct bad">43.8%</td>
+      <td class="col-num">265</td>
+      <td class="col-num">144</td>
+      <td class="col-pct mid">54.3%</td>
+      <td class="col-num">118</td>
+      <td class="col-pct bad">44.5%</td>
       <td class="col-num">23</td>
-      <td class="col-pct mid">8.6%</td>
+      <td class="col-pct mid">8.7%</td>
       <td class="col-rev">$188,134</td>
       <td class="col-num">$8,180</td>
     </tr>
