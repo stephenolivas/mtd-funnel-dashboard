@@ -12,7 +12,7 @@ import time
 import json
 import argparse
 import calendar
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -38,7 +38,8 @@ CF_UTM_CONTENT  = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"   # utm_conte
 # Funnels that use utm_content instead of utm_campaign for sub-breakdown
 UTM_CONTENT_FUNNELS = {"Internal Webinar"}
 
-CLOSED_WON_STATUS_ID = "stat_0oW3iRpVp9z5DJq0cuwI1HgR0XhHAhykEPPIq4TFsxd"
+CLOSED_WON_STATUS_ID    = "stat_0oW3iRpVp9z5DJq0cuwI1HgR0XhHAhykEPPIq4TFsxd"
+WEEKLY_FEATURE_START    = "2026-04"  # Weeks only available for this month and later
 
 # ── Filter Constants (identical to Capacity Dashboard) ────────────────────────
 
@@ -195,23 +196,12 @@ def fetch_all_meetings():
     return meetings
 
 
-def filter_meetings_mtd(meetings, target_month=None):
+def filter_meetings_by_range(meetings, start_date, end_date):
     """
-    Keep qualifying meetings for the target month (Pacific time).
-    target_month: date(YYYY, MM, 1) or None for current month.
-    For the current month, cap at today. For past months, include the full month.
+    Keep qualifying meetings within start_date..end_date (Pacific, inclusive).
+    start_date, end_date: date objects.
     """
-    now_pac = datetime.now(PACIFIC)
-    if target_month is None:
-        target_month = now_pac.replace(day=1).date()
-        end_date = now_pac.date()
-    else:
-        last_day = calendar.monthrange(target_month.year, target_month.month)[1]
-        end_date = date(target_month.year, target_month.month, last_day)
-
-    month_start = datetime(target_month.year, target_month.month, 1,
-                           tzinfo=PACIFIC)
-
+    start_dt = datetime(start_date.year, start_date.month, start_date.day, tzinfo=PACIFIC)
     valid = []
     for m in meetings:
         starts_at = m.get("starts_at")
@@ -222,17 +212,37 @@ def filter_meetings_mtd(meetings, target_month=None):
             dt_pac = dt_utc.astimezone(PACIFIC)
         except Exception:
             continue
-
-        if dt_pac < month_start or dt_pac.date() > end_date:
+        if dt_pac < start_dt or dt_pac.date() > end_date:
             continue
-
         if not is_valid_meeting(m):
             continue
-
         m["_date_pac"] = dt_pac.date()
         valid.append(m)
-
     return valid
+
+
+# ── Week helpers ───────────────────────────────────────────────────────────────
+
+def current_week_monday():
+    """Return the Monday of the current week (Pacific)."""
+    today = datetime.now(PACIFIC).date()
+    return today - timedelta(days=today.weekday())
+
+
+def week_bounds(monday):
+    """Return (start, end) dates for the week starting on monday."""
+    sunday = monday + timedelta(days=6)
+    today  = datetime.now(PACIFIC).date()
+    return monday, min(sunday, today)
+
+
+def week_display_label(monday, end_date=None):
+    """e.g. 'Apr 6–12' or 'Apr 27–May 3'"""
+    if end_date is None:
+        end_date = monday + timedelta(days=6)
+    if monday.month == end_date.month:
+        return f"{monday.strftime('%b %-d')}–{end_date.day}"
+    return f"{monday.strftime('%b %-d')}–{end_date.strftime('%b %-d')}"
 
 
 def deduplicate_meetings(meetings):
@@ -283,39 +293,27 @@ def fetch_latest_opportunity(lead_id):
     return opps[0]
 
 
-def fetch_won_opps_mtd(target_month=None):
-    """
-    Fetch all won opportunities with date_won in the target month.
-    target_month: date(YYYY, MM, 1) or None for current month.
-    """
-    now_pac = datetime.now(PACIFIC)
-    if target_month is None:
-        month_start = now_pac.replace(day=1).strftime("%Y-%m-%d")
-        end_date    = now_pac.strftime("%Y-%m-%d")
-    else:
-        last_day    = calendar.monthrange(target_month.year, target_month.month)[1]
-        month_start = target_month.strftime("%Y-%m-%d")
-        end_date    = date(target_month.year, target_month.month, last_day).strftime("%Y-%m-%d")
-
-    print(f"Fetching won opportunities ({month_start} → {end_date})...", flush=True)
-
+def fetch_won_opps_by_range(start_date, end_date):
+    """Fetch all won opportunities with date_won in [start_date, end_date]."""
+    start_str = start_date.strftime("%Y-%m-%d")
+    end_str   = end_date.strftime("%Y-%m-%d")
+    print(f"Fetching won opportunities ({start_str} → {end_str})...", flush=True)
     opps, skip = [], 0
     while True:
         data = close_get("opportunity/", {
-            "status_type":    "won",
-            "date_won__gte":  month_start,
-            "date_won__lte":  end_date,
-            "_fields":        f"id,lead_id,value,date_won",
-            "_skip":          skip,
-            "_limit":         100,
+            "status_type":   "won",
+            "date_won__gte": start_str,
+            "date_won__lte": end_str,
+            "_fields":       "id,lead_id,value,date_won",
+            "_skip":         skip,
+            "_limit":        100,
         })
         batch = data.get("data", [])
         opps.extend(batch)
         if not data.get("has_more"):
             break
         skip += 100
-
-    print(f"  Won opportunities MTD: {len(opps)}", flush=True)
+    print(f"  Won opportunities: {len(opps)}", flush=True)
     return opps
 
 
@@ -362,119 +360,73 @@ def fetch_utm_data(lead_id):
 
 # ── Main Aggregation ───────────────────────────────────────────────────────────
 
-def build_dashboard_data(target_month=None):
+def _is_yes(val):
+    """Robust truthy check for Close checkbox fields (bool or 'Yes'/'No' string)."""
+    if val is None or val is False: return False
+    if val is True: return True
+    return str(val).strip().lower() in ("yes", "true", "1")
+
+
+def aggregate_data(start_date, end_date, month_label,
+                   all_meetings, won_opps,
+                   lead_cache=None, utm_cache=None):
     """
-    target_month: date(YYYY, MM, 1) or None for current month.
+    Aggregate pre-fetched meetings and won opps into dashboard data.
+    Shares lead_cache and utm_cache with caller so regular + week builds
+    reuse API calls. Returns (data_dict, lead_cache, utm_cache).
     """
-    print("\n=== MTD Funnel Performance — Starting Build ===\n", flush=True)
-    if target_month:
-        print(f"Archive mode: {target_month.strftime('%B %Y')}", flush=True)
+    lead_cache = lead_cache if lead_cache is not None else {}
+    utm_cache  = utm_cache  if utm_cache  is not None else {}
 
-    # ── Meetings ──────────────────────────────────────────────────────────────
-    all_meetings  = fetch_all_meetings()
-    mtd_meetings  = filter_meetings_mtd(all_meetings, target_month)
-    print(f"MTD qualifying meetings (pre-dedup):  {len(mtd_meetings)}", flush=True)
+    # Filter meetings to the date range
+    filtered   = filter_meetings_by_range(all_meetings, start_date, end_date)
+    deduped    = deduplicate_meetings(filtered)
+    print(f"  Meetings pre-dedup: {len(filtered)}, post-dedup: {len(deduped)}", flush=True)
 
-    deduped = deduplicate_meetings(mtd_meetings)
-    print(f"MTD qualifying meetings (post-dedup): {len(deduped)}", flush=True)
-
-    # ── Per-meeting lead / opp / UTM lookups ──────────────────────────────────
-    lead_cache = {}
-    utm_cache  = {}
     meeting_rows = []
-
     for i, m in enumerate(deduped):
         lid = m["lead_id"]
-        print(f"  Meeting {i+1}/{len(deduped)} — lead {lid}", flush=True)
-
-        # Lead
         if lid not in lead_cache:
             lead_cache[lid] = fetch_lead(lid)
         lead = lead_cache[lid]
-
-        # Skip excluded lead statuses
         if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
-            print(f"    → Skipped (excluded lead status)", flush=True)
             continue
-
-        funnel = get_funnel_name(lead)
-
-        # Show Up and Qualified are lead-level custom fields — read directly
-        # Close can return booleans (True/False) or strings ("Yes"/"No") depending
-        # on how the field was configured, so check both.
-        def _is_yes(val):
-            if val is None or val is False:
-                return False
-            if val is True:
-                return True
-            return str(val).strip().lower() in ("yes", "true", "1")
-
+        funnel    = get_funnel_name(lead)
         show_up   = _is_yes(lead.get(f"custom.{CF_SHOW_UP}"))
         qualified = _is_yes(lead.get(f"custom.{CF_QUALIFIED}"))
-
-        # UTM data — fetch both campaign and content in one call
         if lid not in utm_cache:
             utm_cache[lid] = fetch_utm_data(lid)
         utm_campaign, utm_content = utm_cache[lid]
-
-        # Internal Webinar uses utm_content for sub-breakdown; all others use utm_campaign
         utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
+        meeting_rows.append({"funnel": funnel, "show_up": show_up,
+                              "qualified": qualified, "utm_campaign": utm})
 
-        meeting_rows.append({
-            "lead_id":      lid,
-            "funnel":       funnel,
-            "show_up":      show_up,
-            "qualified":    qualified,
-            "utm_campaign": utm,
-        })
+    print(f"  Meeting rows after filters: {len(meeting_rows)}", flush=True)
 
-    print(f"\nMeeting rows after all filters: {len(meeting_rows)}", flush=True)
-
-    # ── Closed-Won Opportunities ───────────────────────────────────────────────
-    won_opps   = fetch_won_opps_mtd(target_month)
     closed_rows = []
-
-    for i, opp in enumerate(won_opps):
+    for opp in won_opps:
         lid = opp["lead_id"]
-        print(f"  Won opp {i+1}/{len(won_opps)} — lead {lid}", flush=True)
-
         if lid not in lead_cache:
             lead_cache[lid] = fetch_lead(lid)
         lead = lead_cache[lid]
-
-        # Apply same lead status exclusions as meeting pipeline
         if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
-            print(f"    → Skipped closed-won (excluded lead status)", flush=True)
             continue
-
         funnel = get_funnel_name(lead)
         value  = parse_value(opp.get("value"))
-
         if lid not in utm_cache:
             utm_cache[lid] = fetch_utm_data(lid)
         utm_campaign, utm_content = utm_cache[lid]
         utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
+        closed_rows.append({"funnel": funnel, "value": value, "utm_campaign": utm})
 
-        closed_rows.append({
-            "lead_id":      lid,
-            "funnel":       funnel,
-            "value":        value,
-            "utm_campaign": utm,
-        })
+    print(f"  Closed-won rows: {len(closed_rows)}", flush=True)
 
-    print(f"\nClosed-won rows: {len(closed_rows)}", flush=True)
-
-    # ── Aggregate into funnel × utm structure ─────────────────────────────────
-    # funnel_data[funnel][utm] = {booked, showed, qualified, closed, revenue}
-
+    # Aggregate
     funnel_data = {}
-
     def slot(funnel, utm):
         funnel_data.setdefault(funnel, {})
         funnel_data[funnel].setdefault(utm, {
-            "booked": 0, "showed": 0, "qualified": 0,
-            "closed": 0, "revenue": 0.0
-        })
+            "booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0})
         return funnel_data[funnel][utm]
 
     for row in meeting_rows:
@@ -482,47 +434,42 @@ def build_dashboard_data(target_month=None):
         s["booked"]    += 1
         s["showed"]    += 1 if row["show_up"]   else 0
         s["qualified"] += 1 if row["qualified"] else 0
-
     for row in closed_rows:
         s = slot(row["funnel"], row["utm_campaign"])
         s["closed"]  += 1
         s["revenue"] += row["value"]
 
-    # Roll up per-funnel totals
     funnel_totals = {}
     for funnel, utms in funnel_data.items():
         t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
         for v in utms.values():
-            for k in t:
-                t[k] += v[k]
+            for k in t: t[k] += v[k]
         funnel_totals[funnel] = t
 
-    # Grand totals
     grand = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
     for t in funnel_totals.values():
-        for k in grand:
-            grand[k] += t[k]
+        for k in grand: grand[k] += t[k]
 
-    # Group totals (External / In-House) for KPI sub-breakdown
     group_totals = {}
     for group_label, group_funnels in FUNNEL_GROUPS:
         t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
         for funnel in group_funnels:
             ft = funnel_totals.get(funnel, {})
-            for k in t:
-                t[k] += ft.get(k, 0)
+            for k in t: t[k] += ft.get(k, 0)
         group_totals[group_label] = t
 
-    now_pac      = datetime.now(PACIFIC)
-    display_date = datetime(target_month.year, target_month.month, 1, tzinfo=PACIFIC)                    if target_month else now_pac
-    return {
+    now_pac = datetime.now(PACIFIC)
+    data = {
         "funnel_data":   funnel_data,
         "funnel_totals": funnel_totals,
         "grand":         grand,
         "group_totals":  group_totals,
         "generated_at":  now_pac.strftime("%B %d, %Y at %I:%M %p PT"),
-        "month_label":   display_date.strftime("%B %Y"),
+        "month_label":   month_label,
+        "start_date":    start_date,
+        "end_date":      end_date,
     }
+    return data, lead_cache, utm_cache
 
 
 # ── HTML Helpers ───────────────────────────────────────────────────────────────
@@ -653,7 +600,7 @@ def build_funnel_rows(funnel_data, funnel_totals):
     return "\n".join(rows)
 
 
-def generate_html(data, month_picker_html=""):
+def generate_html(data, month_picker_html="", week_picker_html=""):
     grand       = data["grand"]
     gt          = data["group_totals"]
     ext         = gt.get("EXTERNAL",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
@@ -932,14 +879,22 @@ def generate_html(data, month_picker_html=""):
   .section-chevron.open {{ transform: rotate(90deg); }}
 
   /* Progress bar mini (optional decoration on booked column) */
+  /* Pickers row */
+  .pickers-row {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }}
   /* Month picker */
   .month-picker {{
     display: flex;
     align-items: center;
     gap: 7px;
-    margin-bottom: 6px;
   }}
-  .month-picker select {{
+  .month-picker select, .week-picker select {{
     background: var(--surface);
     color: var(--text);
     border: 1px solid var(--border);
@@ -949,8 +904,20 @@ def generate_html(data, month_picker_html=""):
     cursor: pointer;
     outline: none;
   }}
-  .month-picker select:hover {{
+  .month-picker select:hover, .week-picker select:hover {{
     border-color: var(--accent);
+  }}
+  /* Week picker */
+  .week-picker {{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }}
+  .picker-divider {{
+    color: var(--border);
+    font-size: 16px;
+    line-height: 1;
+    margin: 0 2px;
   }}
   .archive-badge {{
     display: inline-block;
@@ -979,11 +946,13 @@ def generate_html(data, month_picker_html=""):
 <div class="header">
   <div class="header-left">
     <h1>MTD Funnel Performance</h1>
-    <p class="sub">Vendingpreneurs · All Sales Calls · {data['month_label']}</p>
+    <p class="sub">Vendingpreneurs · All Sales Calls · {data['month_label']}{data.get('week_range_label','')}</p>
   </div>
   <div class="header-right">
-    {month_picker_html}
-    <span class="snapshot-label">Snapshot</span>
+    <div class="pickers-row">
+      {month_picker_html}{week_picker_html}
+    </div>
+    <span class="snapshot-label">{data.get("badge_html","") or "Snapshot"}</span>
     {data['generated_at']}<br>
     Source · Close CRM
   </div>
@@ -1155,12 +1124,13 @@ def generate_html(data, month_picker_html=""):
 
 ARCHIVES_DIR = Path("archives")
 
-def scan_archives():
-    """Return sorted list of (YYYY-MM, display_label) for existing archive files."""
+
+def scan_monthly_archives():
+    """Return sorted list of (YYYY-MM, display_label) for existing monthly archive files."""
     ARCHIVES_DIR.mkdir(exist_ok=True)
     months = []
     for p in sorted(ARCHIVES_DIR.glob("*.html"), reverse=True):
-        key = p.stem  # e.g. "2026-03"
+        key = p.stem
         try:
             d = datetime.strptime(key, "%Y-%m")
             months.append((key, d.strftime("%B %Y")))
@@ -1168,96 +1138,242 @@ def scan_archives():
             continue
     return months
 
-def build_month_picker(current_key, archive_months, is_archive):
+
+def scan_weekly_archives(month_key):
     """
-    Build the <select> HTML for switching months.
-    current_key: YYYY-MM string for the page being rendered.
-    archive_months: list of (key, label) from scan_archives().
-    is_archive: True if this page is itself an archive page.
+    Return frozen weekly archives whose Monday falls in month_key (YYYY-MM).
+    Sorted newest first. Returns list of (file_key, label, monday_date).
+    Excludes week-current.html (that's always added separately).
     """
-    now_pac = datetime.now(PACIFIC)
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    weeks = []
+    for p in sorted(ARCHIVES_DIR.glob("week-20*.html"), reverse=True):
+        key = p.stem  # e.g. "week-2026-04-06"
+        try:
+            monday = datetime.strptime(key, "week-%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if monday.strftime("%Y-%m") == month_key:
+            sunday = monday + timedelta(days=6)
+            label  = week_display_label(monday, sunday)
+            weeks.append((key, label, monday))
+    return weeks
+
+
+def build_month_picker(current_month_key, archive_months, is_in_archives):
+    """Build the month <select> HTML."""
+    now_pac    = datetime.now(PACIFIC)
     live_key   = now_pac.strftime("%Y-%m")
     live_label = now_pac.strftime("%B %Y")
 
-    # All options: current live month first, then archives newest→oldest
-    # Paths differ depending on whether the page being rendered is index.html or archives/YYYY-MM.html
-    live_href = "../index.html" if is_archive else "index.html"
+    live_href = "../index.html" if is_in_archives else "index.html"
     options = [(live_key, live_label, live_href)]
     for key, label in archive_months:
         if key == live_key:
-            continue  # don't double-list current month if somehow archived
-        # From index.html → archives/YYYY-MM.html (subdirectory prefix needed)
-        # From archives/YYYY-MM.html → YYYY-MM.html (same directory, no prefix)
-        href = f"{key}.html" if is_archive else f"archives/{key}.html"
+            continue
+        href = f"{key}.html" if is_in_archives else f"archives/{key}.html"
         options.append((key, label, href))
 
     select_opts = ""
     for key, label, href in options:
-        sel = "selected" if key == current_key else ""
-        select_opts += f"<option value=\"{href}\" {sel}>{label}</option>\n      "
+        sel = "selected" if key == current_month_key else ""
+        select_opts += f'<option value="{href}" {sel}>{label}</option>\n      '
 
     return (
         '<div class="month-picker">'
-        + ('<span class="archive-badge">Archive</span>' if is_archive else "")
         + '<select onchange="window.location.href=this.value">'
         + select_opts
         + "</select></div>"
     )
 
 
+def build_week_picker(current_week_key, month_key, weekly_archives,
+                      is_in_archives, is_current_month):
+    """
+    Build the week <select> HTML. Only shown for months >= WEEKLY_FEATURE_START.
+    current_week_key: stem of the current file if it's a week page, else None.
+    monthly_href: href for the "Full Month" option.
+    """
+    if month_key < WEEKLY_FEATURE_START:
+        return ""
+
+    now_pac = datetime.now(PACIFIC)
+    monday  = current_week_monday()
+    sunday  = monday + timedelta(days=6)
+
+    # "Full Month" links back to the monthly page
+    if is_in_archives:
+        full_month_href = f"{month_key}.html" if not is_current_month else "../index.html"
+    else:
+        full_month_href = "index.html"
+
+    options = []
+    # Full Month always first
+    sel = "selected" if current_week_key is None else ""
+    options.append(f'<option value="{full_month_href}" {sel}>Full Month</option>')
+
+    # Frozen week archives (newest first)
+    for key, label, wmonday in weekly_archives:
+        href = f"{key}.html" if is_in_archives else f"archives/{key}.html"
+        sel  = "selected" if current_week_key == key else ""
+        options.append(f'<option value="{href}" {sel}>{label}</option>')
+
+    # Current week (live, always last) — only for current month
+    if is_current_month:
+        cur_label = week_display_label(monday, min(sunday, now_pac.date())) + " ▶"
+        href = "week-current.html" if is_in_archives else "archives/week-current.html"
+        sel  = "selected" if current_week_key == "week-current" else ""
+        options.append(f'<option value="{href}" {sel}>{cur_label}</option>')
+
+    select_opts = "\n      ".join(options)
+    return (
+        '<span class="picker-divider">|</span>'
+        '<div class="week-picker">'
+        '<select onchange="window.location.href=this.value">'
+        + select_opts
+        + "</select></div>"
+    )
+
+
+def write_dashboard(data, out_path, month_picker_html, week_picker_html,
+                    is_archive_page, is_week_page):
+    """Generate HTML and write to out_path."""
+    # Add archive/week badges to data for template
+    badge = ""
+    if is_week_page:
+        badge = '<span class="archive-badge">Week View</span>'
+    elif is_archive_page:
+        badge = '<span class="archive-badge">Archive</span>'
+    data["badge_html"] = badge
+    html = generate_html(data, month_picker_html=month_picker_html,
+                         week_picker_html=week_picker_html)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"Written: {out_path}", flush=True)
+
+
 # ── Entry Point ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="MTD Funnel Performance Dashboard")
-    parser.add_argument(
-        "--month", "-m",
-        help="Archive month to build, format YYYY-MM (omit for current month)",
-        default=None,
-    )
+    parser.add_argument("--month", "-m",
+        help="Archive month YYYY-MM", default=None)
+    parser.add_argument("--week", "-w",
+        help="Archive week YYYY-MM-DD (Monday of the week)", default=None)
     args = parser.parse_args()
 
-    # Determine target month
-    target_month = None
-    is_archive   = False
-    now_pac      = datetime.now(PACIFIC)
+    now_pac     = datetime.now(PACIFIC)
+    live_month  = now_pac.strftime("%Y-%m")
 
+    print("MTD Funnel Performance Dashboard — Build Start", flush=True)
+
+    # ── Shared meeting fetch (always needed) ──────────────────────────────────
+    all_meetings = fetch_all_meetings()
+    lead_cache, utm_cache = {}, {}
+
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    archive_months = scan_monthly_archives()
+
+    # ── MODE: Monthly archive ─────────────────────────────────────────────────
     if args.month:
         try:
             parsed = datetime.strptime(args.month, "%Y-%m")
-            target_month = date(parsed.year, parsed.month, 1)
-            is_archive   = True
+            m_start = date(parsed.year, parsed.month, 1)
+            last_d  = calendar.monthrange(parsed.year, parsed.month)[1]
+            m_end   = date(parsed.year, parsed.month, last_d)
         except ValueError:
-            print(f"ERROR: --month must be YYYY-MM format, got: {args.month}", flush=True)
+            print(f"ERROR: --month must be YYYY-MM, got: {args.month}", flush=True)
             sys.exit(1)
 
-    print(f"MTD Funnel Performance Dashboard — Build Start", flush=True)
-    data = build_dashboard_data(target_month)
+        print(f"\n=== Building monthly archive: {args.month} ===", flush=True)
+        won_opps = fetch_won_opps_by_range(m_start, m_end)
+        data, lead_cache, utm_cache = aggregate_data(
+            m_start, m_end, parsed.strftime("%B %Y"),
+            all_meetings, won_opps, lead_cache, utm_cache)
 
-    # Determine output path
-    ARCHIVES_DIR.mkdir(exist_ok=True)
-    if is_archive:
         out_path    = ARCHIVES_DIR / f"{args.month}.html"
-        current_key = args.month
+        weekly_arcs = scan_weekly_archives(args.month)
+        month_picker = build_month_picker(args.month, archive_months, is_in_archives=True)
+        week_picker  = build_week_picker(None, args.month, weekly_arcs,
+                                         is_in_archives=True,
+                                         is_current_month=(args.month == live_month))
+        write_dashboard(data, out_path, month_picker, week_picker,
+                        is_archive_page=True, is_week_page=False)
+
+    # ── MODE: Weekly archive ──────────────────────────────────────────────────
+    elif args.week:
+        try:
+            w_monday = datetime.strptime(args.week, "%Y-%m-%d").date()
+        except ValueError:
+            print(f"ERROR: --week must be YYYY-MM-DD, got: {args.week}", flush=True)
+            sys.exit(1)
+        w_sunday = w_monday + timedelta(days=6)
+        w_end    = min(w_sunday, now_pac.date())
+        month_key = w_monday.strftime("%Y-%m")
+        label     = f"{w_monday.strftime('%B %Y')} · {week_display_label(w_monday, w_sunday)}"
+
+        print(f"\n=== Building weekly archive: {args.week} ===", flush=True)
+        won_opps = fetch_won_opps_by_range(w_monday, w_end)
+        data, lead_cache, utm_cache = aggregate_data(
+            w_monday, w_end, label,
+            all_meetings, won_opps, lead_cache, utm_cache)
+        data["week_range_label"] = ""  # already in month_label for week pages
+
+        out_path     = ARCHIVES_DIR / f"week-{args.week}.html"
+        weekly_arcs  = scan_weekly_archives(month_key)
+        week_key     = f"week-{args.week}"
+        month_picker = build_month_picker(month_key, archive_months, is_in_archives=True)
+        week_picker  = build_week_picker(week_key, month_key, weekly_arcs,
+                                         is_in_archives=True,
+                                         is_current_month=(month_key == live_month))
+        write_dashboard(data, out_path, month_picker, week_picker,
+                        is_archive_page=True, is_week_page=True)
+
+    # ── MODE: Regular live run — build index.html + week-current.html ─────────
     else:
-        out_path    = Path("index.html")
-        current_key = now_pac.strftime("%Y-%m")
+        m_start   = date(now_pac.year, now_pac.month, 1)
+        m_end     = now_pac.date()
+        m_label   = now_pac.strftime("%B %Y")
+        w_monday  = current_week_monday()
+        w_end     = now_pac.date()
+        w_sunday  = w_monday + timedelta(days=6)
 
-    # Build month picker from existing archives
-    archive_months  = scan_archives()
-    month_picker    = build_month_picker(current_key, archive_months, is_archive)
+        # ── Build full month (index.html) ─────────────────────────────────────
+        print(f"\n=== Building live month: {m_label} ===", flush=True)
+        won_month = fetch_won_opps_by_range(m_start, m_end)
+        data_month, lead_cache, utm_cache = aggregate_data(
+            m_start, m_end, m_label,
+            all_meetings, won_month, lead_cache, utm_cache)
+        data_month["week_range_label"] = ""
 
-    print("\nGenerating HTML...", flush=True)
-    html = generate_html(data, month_picker_html=month_picker)
+        weekly_arcs  = scan_weekly_archives(live_month)
+        month_picker = build_month_picker(live_month, archive_months, is_in_archives=False)
+        week_picker  = build_week_picker(None, live_month, weekly_arcs,
+                                         is_in_archives=False, is_current_month=True)
+        write_dashboard(data_month, Path("index.html"), month_picker, week_picker,
+                        is_archive_page=False, is_week_page=False)
 
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(html)
+        # ── Build current week (archives/week-current.html) ───────────────────
+        print(f"\n=== Building current week: {week_display_label(w_monday, w_end)} ===", flush=True)
+        won_week = fetch_won_opps_by_range(w_monday, w_end)
+        w_label  = f"{m_label} · {week_display_label(w_monday, w_sunday)}"
+        data_week, lead_cache, utm_cache = aggregate_data(
+            w_monday, w_end, w_label,
+            all_meetings, won_week, lead_cache, utm_cache)
+        data_week["week_range_label"] = ""
 
-    print(f"Done — {out_path} written.", flush=True)
+        week_picker_cur = build_week_picker("week-current", live_month, weekly_arcs,
+                                            is_in_archives=True, is_current_month=True)
+        month_picker_cur = build_month_picker(live_month, archive_months, is_in_archives=True)
+        write_dashboard(data_week, ARCHIVES_DIR / "week-current.html",
+                        month_picker_cur, week_picker_cur,
+                        is_archive_page=False, is_week_page=True)
 
-    # Summary
-    g = data["grand"]
+    # ── Summary ───────────────────────────────────────────────────────────────
+    final_data = data_month if not (args.month or args.week) else data
+    g = final_data["grand"]
     print(f"\n=== Build Summary ===", flush=True)
-    print(f"  Month:     {data['month_label']}", flush=True)
+    print(f"  Month:     {final_data['month_label']}", flush=True)
     print(f"  Booked:    {g['booked']}", flush=True)
     print(f"  Showed:    {g['showed']}  ({pct(g['showed'], g['booked'])})", flush=True)
     print(f"  Qualified: {g['qualified']}  ({pct(g['qualified'], g['booked'])})", flush=True)
