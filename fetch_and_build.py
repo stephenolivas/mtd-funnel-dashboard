@@ -55,6 +55,14 @@ EXCLUDED_USER_IDS = {
     "user_4sfuKGMbv0LQZ4hpS8ipASv406kKTSNP5Xx79jOwSqM",  # Spencer Reynolds
 }
 
+# Excluded from closed-won revenue — matches rep dashboard user exclusions
+EXCLUDED_CLOSER_USER_IDS = {
+    "user_yRF070m26JE67J6CJqzkAB3IqY7btNm1K5RisCglKa6",  # Ahmad Bukhari
+    "user_5cZRqXu8kb4O1IeBVA98UMcMEhYZUhx1fnCHfSL0YMV",  # Stephen Olivas
+    "user_4sfuKGMbv0LQZ4hpS8ipASv406kKTSNP5Xx79jOwSqM",  # Spencer Reynolds
+    "user_SGISGe3kE7zhSm7LQgZ0Vrt7DKz5RVZ0JzFkI4S8llS",  # Mallory Kent
+}
+
 # ── Title Classification Regexes (first-match-wins, same order as Capacity Dashboard) ──
 
 INCLUDE_SCRAPER_RE = re.compile(
@@ -304,7 +312,7 @@ def fetch_won_opps_by_range(start_date, end_date):
             "status_type":   "won",
             "date_won__gte": start_str,
             "date_won__lte": end_str,
-            "_fields":       "id,lead_id,value,date_won",
+            "_fields":       "id,lead_id,value,date_won,user_id",
             "_skip":         skip,
             "_limit":        100,
         })
@@ -410,6 +418,8 @@ def aggregate_data(start_date, end_date, month_label,
             lead_cache[lid] = fetch_lead(lid)
         lead = lead_cache[lid]
         if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
+            continue
+        if opp.get("user_id") in EXCLUDED_CLOSER_USER_IDS:
             continue
         funnel = get_funnel_name(lead)
         value  = parse_value(opp.get("value"))
