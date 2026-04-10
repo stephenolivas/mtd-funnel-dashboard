@@ -1,0 +1,59 @@
+name: Save Weekly Snapshot
+
+# Triggered by cron-job.org every Saturday at 5 PM Pacific (= Sunday 00:00 UTC).
+# Set up a second cron-job.org job to hit:
+#   POST https://api.github.com/repos/stephenolivas/mtd-funnel-dashboard/actions/workflows/save_weekly.yml/dispatches
+#   Body: {"ref":"main"}
+#   Headers: Authorization: Bearer YOUR_GITHUB_PAT
+#             Accept: application/vnd.github+json
+#             Content-Type: application/json
+on:
+  workflow_dispatch:
+
+jobs:
+  save-weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+
+    env:
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Detect Monday of current week
+        id: weekdate
+        run: |
+          MONDAY=$(python3 -c "
+          from datetime import date, timedelta
+          d = date.today()
+          print((d - timedelta(days=d.weekday())).strftime('%Y-%m-%d'))
+          ")
+          echo "monday=$MONDAY" >> $GITHUB_OUTPUT
+          echo "Freezing week starting $MONDAY"
+
+      - name: Build frozen weekly snapshot
+        env:
+          CLOSE_API_KEY: ${{ secrets.CLOSE_API_KEY }}
+        run: python3 -u fetch_and_build.py --week ${{ steps.weekdate.outputs.monday }}
+
+      - name: Commit and push weekly archive
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archives/
+          git diff --staged --quiet || \
+            git commit -m "Weekly snapshot: ${{ steps.weekdate.outputs.monday }}"
+          git pull --rebase
+          git push
