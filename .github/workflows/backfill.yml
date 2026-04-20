@@ -2,14 +2,22 @@ name: Backfill Archive Month
 
 # Manually triggered from GitHub Actions UI.
 # Go to: Actions → Backfill Archive Month → Run workflow
-# Enter the month in YYYY-MM format (e.g. 2026-03 for March 2026).
+#
+# To backfill a MONTH: enter YYYY-MM in the month field (e.g. 2026-03), leave week blank.
+# To backfill a WEEK:  enter YYYY-MM-DD (Monday) in the week field (e.g. 2026-04-13), leave month blank.
 on:
   workflow_dispatch:
     inputs:
       month:
-        description: "Month to backfill (YYYY-MM format, e.g. 2026-03)"
-        required: true
+        description: "Month to backfill (YYYY-MM, e.g. 2026-03) — leave blank if backfilling a week"
+        required: false
         type: string
+        default: ""
+      week:
+        description: "Week to backfill — Monday date (YYYY-MM-DD, e.g. 2026-04-13) — leave blank if backfilling a month"
+        required: false
+        type: string
+        default: ""
 
 jobs:
   backfill:
@@ -33,10 +41,28 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run backfill for ${{ github.event.inputs.month }}
+      - name: Validate inputs
+        run: |
+          if [ -z "${{ github.event.inputs.month }}" ] && [ -z "${{ github.event.inputs.week }}" ]; then
+            echo "ERROR: Must provide either a month (YYYY-MM) or a week (YYYY-MM-DD)"
+            exit 1
+          fi
+          if [ -n "${{ github.event.inputs.month }}" ] && [ -n "${{ github.event.inputs.week }}" ]; then
+            echo "ERROR: Provide either month OR week, not both"
+            exit 1
+          fi
+
+      - name: Run backfill
         env:
           CLOSE_API_KEY: ${{ secrets.CLOSE_API_KEY }}
-        run: python3 -u fetch_and_build.py --month ${{ github.event.inputs.month }}
+        run: |
+          if [ -n "${{ github.event.inputs.month }}" ]; then
+            echo "Backfilling month: ${{ github.event.inputs.month }}"
+            python3 -u fetch_and_build.py --month ${{ github.event.inputs.month }}
+          else
+            echo "Backfilling week: ${{ github.event.inputs.week }}"
+            python3 -u fetch_and_build.py --week ${{ github.event.inputs.week }}
+          fi
 
       - name: Commit and push archive snapshot
         run: |
@@ -44,6 +70,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add archives/
           git diff --staged --quiet || \
-            git commit -m "Backfill archive: ${{ github.event.inputs.month }}"
-          git pull --rebase
+            git commit -m "Backfill archive: ${{ github.event.inputs.month }}${{ github.event.inputs.week }}"
+          git pull --rebase --strategy-option=ours
           git push
