@@ -6,6 +6,7 @@ from Close CRM and builds a static HTML dashboard.
 """
 
 import os
+import re
 import sys
 import time
 import json
