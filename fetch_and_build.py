@@ -33,7 +33,8 @@ CF_FUNNEL_NAME  = "cf_xqDQE8fkPsWa0RNEve7hcaxKblCe6489XeZGRDzyPdX"  # Funnel Nam
 CF_SHOW_UP      = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"  # First Call Show Up (opp)
 CF_QUALIFIED    = "cf_ZDx7NBQaDzV1yYrFcBMzt6cIYj81dAcswpNN0CQzCPS"  # Qualified (opp)
 CF_UTM_CAMPAIGN = "cf_jnbd0xzUY3tuxzxiGxBs2hONuExeXMvAoTUM2R64Lq3"  # utm_campaign (contact)
-CF_UTM_CONTENT  = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"   # utm_content (contact)
+CF_UTM_CONTENT    = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"   # utm_content (contact)
+CF_FIRST_SALES    = "cf_LFdYEQ6bsgp49YjZzefypDmdVx8iwuakWDSLPLpVrBq"            # First Sales Call Booked Date (lead)
 
 # Funnels that use utm_content instead of utm_campaign for sub-breakdown
 UTM_CONTENT_FUNNELS = {"Internal Webinar"}
@@ -366,6 +367,31 @@ def fetch_utm_data(lead_id):
     return best_campaign, best_content
 
 
+# ── Field-Based Booked Leads Fetch ────────────────────────────────────────────
+
+def fetch_leads_by_first_sales_call(start_date, end_date):
+    start_str = start_date.strftime("%Y-%m-%d")
+    end_str   = end_date.strftime("%Y-%m-%d")
+    query     = f'custom.{CF_FIRST_SALES} >= "{start_str}" AND custom.{CF_FIRST_SALES} <= "{end_str}"'
+    print(f"Fetching booked leads ({start_str} → {end_str})...", flush=True)
+    leads, skip = [], 0
+    while True:
+        data = close_get("lead/", {
+            "query":   query,
+            "_fields": (f"id,status_id,custom.{CF_FUNNEL_NAME},"
+                        f"custom.{CF_SHOW_UP},custom.{CF_QUALIFIED}"),
+            "_limit":  200, "_skip": skip,
+        })
+        batch = data.get("data", [])
+        leads.extend(batch)
+        print(f"  Fetched {len(leads)} leads so far...", flush=True)
+        if not data.get("has_more"):
+            break
+        skip += 200
+    print(f"  Total booked leads: {len(leads)}", flush=True)
+    return leads
+
+
 # ── Main Aggregation ───────────────────────────────────────────────────────────
 
 def _is_yes(val):
@@ -376,29 +402,18 @@ def _is_yes(val):
 
 
 def aggregate_data(start_date, end_date, month_label,
-                   all_meetings, won_opps,
+                   won_opps,
                    lead_cache=None, utm_cache=None):
-    """
-    Aggregate pre-fetched meetings and won opps into dashboard data.
-    Shares lead_cache and utm_cache with caller so regular + week builds
-    reuse API calls. Returns (data_dict, lead_cache, utm_cache).
-    """
     lead_cache = lead_cache if lead_cache is not None else {}
     utm_cache  = utm_cache  if utm_cache  is not None else {}
 
-    # Filter meetings to the date range
-    filtered   = filter_meetings_by_range(all_meetings, start_date, end_date)
-    deduped    = deduplicate_meetings(filtered)
-    print(f"  Meetings pre-dedup: {len(filtered)}, post-dedup: {len(deduped)}", flush=True)
-
+    booked_leads = fetch_leads_by_first_sales_call(start_date, end_date)
     meeting_rows = []
-    for i, m in enumerate(deduped):
-        lid = m["lead_id"]
-        if lid not in lead_cache:
-            lead_cache[lid] = fetch_lead(lid)
-        lead = lead_cache[lid]
-        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
-            continue
+    for lead in booked_leads:
+        lid = lead.get("id")
+        if not lid: continue
+        lead_cache[lid] = lead
+        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS: continue
         funnel    = get_funnel_name(lead)
         show_up   = _is_yes(lead.get(f"custom.{CF_SHOW_UP}"))
         qualified = _is_yes(lead.get(f"custom.{CF_QUALIFIED}"))
@@ -408,8 +423,7 @@ def aggregate_data(start_date, end_date, month_label,
         utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
         meeting_rows.append({"funnel": funnel, "show_up": show_up,
                               "qualified": qualified, "utm_campaign": utm})
-
-    print(f"  Meeting rows after filters: {len(meeting_rows)}", flush=True)
+    print(f"  Booked rows after status filter: {len(meeting_rows)}", flush=True)
 
     closed_rows = []
     for opp in won_opps:
@@ -468,7 +482,10 @@ def aggregate_data(start_date, end_date, month_label,
             for k in t: t[k] += ft.get(k, 0)
         group_totals[group_label] = t
 
-    now_pac = datetime.now(PACIFIC)
+    now_pac      = datetime.now(PACIFIC)
+    _goals       = load_goals()
+    _days_in_mon = calendar.monthrange(start_date.year, start_date.month)[1]
+    _day_elapsed = end_date.day if end_date.month == start_date.month else _days_in_mon
     data = {
         "funnel_data":   funnel_data,
         "funnel_totals": funnel_totals,
@@ -478,6 +495,9 @@ def aggregate_data(start_date, end_date, month_label,
         "month_label":   month_label,
         "start_date":    start_date,
         "end_date":      end_date,
+        "goals":         _goals,
+        "day_of_month":  _day_elapsed,
+        "days_in_month": _days_in_mon,
     }
     return data, lead_cache, utm_cache
 
@@ -514,9 +534,35 @@ def funnel_slug(name):
     return re.sub(r"[^a-z0-9]", "_", name.lower())
 
 
+# ── Goals ─────────────────────────────────────────────────────────────────────
+
+def load_goals():
+    try:
+        with open("goals.json", "r") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def calc_on_pace(goal, day_of_month, days_in_month):
+    if not goal or not days_in_month: return None
+    return round(goal * day_of_month / days_in_month)
+
+def pace_class(booked, on_pace, goal):
+    if goal and booked >= goal: return "pace-goal"
+    if on_pace and booked >= on_pace: return "pace-on"
+    return "pace-behind"
+
+def pace_label(booked, on_pace, goal):
+    return "—" if on_pace is None else str(on_pace)
+
+def goal_pct_label(booked, goal):
+    if not goal: return "—"
+    return f"{round(booked / goal * 100)}% ({goal})"
+
+
 # ── HTML Generation ────────────────────────────────────────────────────────────
 
-def build_funnel_rows(funnel_data, funnel_totals):
+def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, days_in_month=30):
     """Build <tr> HTML for each funnel and its UTM sub-rows, grouped by section."""
     all_funnels = set(funnel_data.keys())
     claimed     = set()
@@ -534,12 +580,19 @@ def build_funnel_rows(funnel_data, funnel_totals):
         rev = t.get("revenue", 0.0)
         fid = funnel_slug(funnel)
 
+        _goals   = goals or {}
+        _goal    = _goals.get(funnel)
+        _on_pace = calc_on_pace(_goal, day_of_month, days_in_month)
+        _pc      = pace_class(bo, _on_pace, _goal)
+
         html = [f"""
     <tr class="funnel-row" onclick="toggleUTM('{fid}')" data-fid="{fid}">
       <td class="col-name">
         <span class="chevron" id="chev-{fid}">›</span>{funnel}
       </td>
       <td class="col-num">{bo if bo else "—"}</td>
+      <td class="col-pace {_pc}">{pace_label(bo, _on_pace, _goal)}</td>
+      <td class="col-goal">{goal_pct_label(bo, _goal)}</td>
       <td class="col-num">{sh if sh else "—"}</td>
       <td class="col-pct {pct_class(sh, bo)}">{pct(sh, bo)}</td>
       <td class="col-num">{qu if qu else "—"}</td>
@@ -561,6 +614,8 @@ def build_funnel_rows(funnel_data, funnel_totals):
     <tr class="utm-row" data-parent="{fid}">
       <td class="col-name col-utm">↳ {utm_label}</td>
       <td class="col-num">{b if b else "—"}</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">{s if s else "—"}</td>
       <td class="col-pct {pct_class(s, b)}">{pct(s, b)}</td>
       <td class="col-num">{q if q else "—"}</td>
@@ -579,7 +634,7 @@ def build_funnel_rows(funnel_data, funnel_totals):
         grp_id = group_label.lower().replace(" ", "_").replace("-", "_")
         rows.append(f"""
     <tr class="section-header-row" onclick="toggleSection('{grp_id}')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-{grp_id}">›</span>FUNNEL BREAKDOWN — {group_label}
       </td>
     </tr>""")
@@ -598,7 +653,7 @@ def build_funnel_rows(funnel_data, funnel_totals):
     if extras:
         rows.append(f"""
     <tr class="section-header-row" onclick="toggleSection('other')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-other">›</span>FUNNEL BREAKDOWN — OTHER
       </td>
     </tr>""")
@@ -615,7 +670,11 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     gt          = data["group_totals"]
     ext         = gt.get("EXTERNAL",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
     inh         = gt.get("IN-HOUSE",     {"booked":0,"showed":0,"qualified":0,"closed":0,"revenue":0.0})
-    funnel_rows = build_funnel_rows(data["funnel_data"], data["funnel_totals"])
+    goals        = data.get("goals", {})
+    day_of_month = data.get("day_of_month", 1)
+    days_in_month= data.get("days_in_month", 30)
+    funnel_rows  = build_funnel_rows(data["funnel_data"], data["funnel_totals"],
+                                     goals, day_of_month, days_in_month)
 
     g_bo  = grand["booked"]
     g_sh  = grand["showed"]
@@ -852,6 +911,12 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   .col-pct.bad  {{ color: var(--red); }}
   .col-pct.mid  {{ color: var(--amber); }}
 
+  .col-pace  {{ text-align: right; font-size: 12px; color: var(--muted); }}
+  .col-goal  {{ text-align: right; font-size: 12px; color: var(--muted); }}
+  .col-pace.pace-goal   {{ color: var(--green); font-weight: 600; }}
+  .col-pace.pace-on     {{ color: var(--blue);  font-weight: 500; }}
+  .col-pace.pace-behind {{ color: var(--amber); }}
+
   /* Chevron toggle */
   .chevron {{
     display: inline-block;
@@ -1066,6 +1131,8 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
       <tr>
         <th class="col-name">Funnel</th>
         <th class="col-num">Booked</th>
+        <th class="col-pace">On Pace</th>
+        <th class="col-goal">Goal %</th>
         <th class="col-num">Showed</th>
         <th class="col-pct">Show %</th>
         <th class="col-num">Qualified</th>
@@ -1082,6 +1149,8 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     <tr class="total-row">
       <td class="col-name">TOTAL</td>
       <td class="col-num">{g_bo}</td>
+      <td class="col-pace">—</td>
+      <td class="col-goal">—</td>
       <td class="col-num">{g_sh}</td>
       <td class="col-pct {pct_class(g_sh, g_bo)}">{pct(g_sh, g_bo)}</td>
       <td class="col-num">{g_qu}</td>
@@ -1277,8 +1346,6 @@ if __name__ == "__main__":
 
     print("MTD Funnel Performance Dashboard — Build Start", flush=True)
 
-    # ── Shared meeting fetch (always needed) ──────────────────────────────────
-    all_meetings = fetch_all_meetings()
     lead_cache, utm_cache = {}, {}
 
     ARCHIVES_DIR.mkdir(exist_ok=True)
@@ -1299,7 +1366,7 @@ if __name__ == "__main__":
         won_opps = fetch_won_opps_by_range(m_start, m_end)
         data, lead_cache, utm_cache = aggregate_data(
             m_start, m_end, parsed.strftime("%B %Y"),
-            all_meetings, won_opps, lead_cache, utm_cache)
+            won_opps, lead_cache, utm_cache)
 
         out_path    = ARCHIVES_DIR / f"{args.month}.html"
         weekly_arcs = scan_weekly_archives(args.month)
@@ -1326,7 +1393,7 @@ if __name__ == "__main__":
         won_opps = fetch_won_opps_by_range(w_monday, w_end)
         data, lead_cache, utm_cache = aggregate_data(
             w_monday, w_end, label,
-            all_meetings, won_opps, lead_cache, utm_cache)
+            won_opps, lead_cache, utm_cache)
         data["week_range_label"] = ""  # already in month_label for week pages
 
         out_path     = ARCHIVES_DIR / f"week-{args.week}.html"
@@ -1353,7 +1420,7 @@ if __name__ == "__main__":
         won_month = fetch_won_opps_by_range(m_start, m_end)
         data_month, lead_cache, utm_cache = aggregate_data(
             m_start, m_end, m_label,
-            all_meetings, won_month, lead_cache, utm_cache)
+            won_month, lead_cache, utm_cache)
         data_month["week_range_label"] = ""
 
         weekly_arcs  = scan_weekly_archives(live_month)
@@ -1369,7 +1436,7 @@ if __name__ == "__main__":
         w_label  = f"{m_label} · {week_display_label(w_monday, w_sunday)}"
         data_week, lead_cache, utm_cache = aggregate_data(
             w_monday, w_end, w_label,
-            all_meetings, won_week, lead_cache, utm_cache)
+            won_week, lead_cache, utm_cache)
         data_week["week_range_label"] = ""
 
         week_picker_cur = build_week_picker("week-current", live_month, weekly_arcs,
