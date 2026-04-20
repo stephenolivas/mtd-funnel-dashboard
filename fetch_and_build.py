@@ -6,7 +6,6 @@ from Close CRM and builds a static HTML dashboard.
 """
 
 import os
-import re
 import sys
 import time
 import json
@@ -33,7 +32,8 @@ CF_FUNNEL_NAME  = "cf_xqDQE8fkPsWa0RNEve7hcaxKblCe6489XeZGRDzyPdX"  # Funnel Nam
 CF_SHOW_UP      = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"  # First Call Show Up (opp)
 CF_QUALIFIED    = "cf_ZDx7NBQaDzV1yYrFcBMzt6cIYj81dAcswpNN0CQzCPS"  # Qualified (opp)
 CF_UTM_CAMPAIGN = "cf_jnbd0xzUY3tuxzxiGxBs2hONuExeXMvAoTUM2R64Lq3"  # utm_campaign (contact)
-CF_UTM_CONTENT    = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"   # utm_content (contact)
+CF_UTM_CONTENT      = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"  # utm_content (contact)
+CF_FIRST_SALES_CALL = "cf_LFdYEQ6bsgp49YjZzefypDmdVx8iwuakWDSLPLpVrBq"  # First Sales Call Booked Date (lead)
 CF_FIRST_SALES    = "cf_LFdYEQ6bsgp49YjZzefypDmdVx8iwuakWDSLPLpVrBq"            # First Sales Call Booked Date (lead)
 
 # Funnels that use utm_content instead of utm_campaign for sub-breakdown
@@ -42,18 +42,11 @@ UTM_CONTENT_FUNNELS = {"Internal Webinar"}
 CLOSED_WON_STATUS_ID    = "stat_0oW3iRpVp9z5DJq0cuwI1HgR0XhHAhykEPPIq4TFsxd"
 WEEKLY_FEATURE_START    = "2026-04"  # Weeks only available for this month and later
 
-# ── Filter Constants (identical to Capacity Dashboard) ────────────────────────
+# ── Filter Constants ──────────────────────────────────────────────────────────
 
 EXCLUDED_LEAD_STATUS_IDS = {
     "stat_hWIGHjzyNpl4YjIFSFz3VK4fp2ny10SFJLKAihmo4KT",  # Canceled (by Lead)
     "stat_YV4ZngDB4IGjLjlOf0YTFEWuKZJ6fhNxVkzQkvKYfdB",  # Outside the US
-}
-
-EXCLUDED_USER_IDS = {
-    "user_5cZRqXu8kb4O1IeBVA98UMcMEhYZUhx1fnCHfSL0YMV",  # Stephen Olivas
-    "user_yRF070m26JE67J6CJqzkAB3IqY7btNm1K5RisCglKa6",  # Ahmad Bukhari
-    "user_EmhqCmaHERTfgfWnPADiLGEqQw3ENvRYd3u1VEmblIp",  # Kristin Nelson
-    "user_4sfuKGMbv0LQZ4hpS8ipASv406kKTSNP5Xx79jOwSqM",  # Spencer Reynolds
 }
 
 # Excluded from closed-won revenue — matches rep dashboard user exclusions
@@ -64,35 +57,7 @@ EXCLUDED_CLOSER_USER_IDS = {
     "user_SGISGe3kE7zhSm7LQgZ0Vrt7DKz5RVZ0JzFkI4S8llS",  # Mallory Kent
 }
 
-# ── Title Classification Regexes (first-match-wins, same order as Capacity Dashboard) ──
-
-INCLUDE_SCRAPER_RE = re.compile(
-    r"vendingpren[eu]+rs?\s*-?\s*next\s+steps"
-    r"|vendingpreneur\s+next\s+steps",
-    re.IGNORECASE,
-)
-EXCLUDE_DISCOVERY_RE = re.compile(r"vending\s+quick\s+discovery", re.IGNORECASE)
-EXCLUDE_FOLLOWUP_RE  = re.compile(
-    r"follow[-\s]?up|fallow\s+up|\bf/u\b|next\s+steps|rescheduled?",
-    re.IGNORECASE,
-)
-EXCLUDE_ANTHONY_QA_RE = re.compile(r"anthony", re.IGNORECASE)
-EXCLUDE_QA_RE         = re.compile(r"q\s*[&/]\s*a", re.IGNORECASE)
-EXCLUDE_ENROLLMENT_RE = re.compile(
-    r"enrollment|silver\s+start\s*up|bronze\s+enrollment|questions\s+on\s+enrollment",
-    re.IGNORECASE,
-)
-INCLUDE_STANDARD_RE = re.compile(
-    r"vending\s+strategy\s+call"
-    r"|vendingpren[eu]+rs?\s+consultation"
-    r"|vendingpren[eu]+rs?\s+strategy\s+call"
-    r"|new\s+vendingpreneur\s+strategy\s+call"
-    r"|post\s+masterclass\s+strategy\s+call"
-    r"|vending\s+consult",
-    re.IGNORECASE,
-)
-
-# ── Known Funnel Display Order (grouped) ──────────────────────────────────────
+# ── Known Funnel# ── Known Funnel Display Order (grouped) ──────────────────────────────────────
 
 FUNNEL_GROUPS = [
     ("EXTERNAL", [
@@ -144,90 +109,7 @@ def close_get(endpoint, params=None):
     resp.raise_for_status()
 
 
-# ── Meeting Classification ─────────────────────────────────────────────────────
-
-def classify_title(title):
-    """Returns True if title represents a qualifying first sales call."""
-    t = (title or "").strip()
-
-    # 1. Starts with "canceled"
-    if re.match(r"canceled", t, re.IGNORECASE):
-        return False
-    # 2. Discovery
-    if EXCLUDE_DISCOVERY_RE.search(t):
-        return False
-    # 3. Scraper Next Steps — MUST come before generic follow-up check
-    if INCLUDE_SCRAPER_RE.search(t):
-        return True
-    # 4. Follow-up / reschedule / generic Next Steps
-    if EXCLUDE_FOLLOWUP_RE.search(t):
-        return False
-    # 5. Anthony Q&A
-    if EXCLUDE_ANTHONY_QA_RE.search(t) and EXCLUDE_QA_RE.search(t):
-        return False
-    # 6. Enrollment
-    if EXCLUDE_ENROLLMENT_RE.search(t):
-        return False
-    # 7. Standard first-call patterns
-    if INCLUDE_STANDARD_RE.search(t):
-        return True
-    # Default: exclude
-    return False
-
-
-def is_valid_meeting(meeting):
-    """Apply all meeting-level filters."""
-    status = (meeting.get("status") or "").lower()
-    if status.startswith("canceled") or status.startswith("declined"):
-        return False
-    if meeting.get("user_id") in EXCLUDED_USER_IDS:
-        return False
-    if not classify_title(meeting.get("title", "")):
-        return False
-    return True
-
-
-# ── Step 1: Fetch & Filter Meetings ───────────────────────────────────────────
-
-def fetch_all_meetings():
-    """Paginate ALL meetings (~120 API calls for ~12k meetings)."""
-    print("Fetching all meetings from Close API...", flush=True)
-    meetings, skip = [], 0
-    while True:
-        data = close_get("activity/meeting/", {"_skip": skip, "_limit": 100})
-        batch = data.get("data", [])
-        meetings.extend(batch)
-        print(f"  Fetched {len(meetings)} meetings so far...", flush=True)
-        if not data.get("has_more"):
-            break
-        skip += 100
-    print(f"Total raw meetings: {len(meetings)}", flush=True)
-    return meetings
-
-
-def filter_meetings_by_range(meetings, start_date, end_date):
-    """
-    Keep qualifying meetings within start_date..end_date (Pacific, inclusive).
-    start_date, end_date: date objects.
-    """
-    start_dt = datetime(start_date.year, start_date.month, start_date.day, tzinfo=PACIFIC)
-    valid = []
-    for m in meetings:
-        starts_at = m.get("starts_at")
-        if not starts_at:
-            continue
-        try:
-            dt_utc = datetime.fromisoformat(starts_at.replace("Z", "+00:00"))
-            dt_pac = dt_utc.astimezone(PACIFIC)
-        except Exception:
-            continue
-        if dt_pac < start_dt or dt_pac.date() > end_date:
-            continue
-        if not is_valid_meeting(m):
-            continue
-        m["_date_pac"] = dt_pac.date()
-        valid.append(m)
-    return valid
+# ── Step 1: Fetch Booked Leads by Field ──────────────────────────────────────
 
 
 # ── Week helpers ───────────────────────────────────────────────────────────────
@@ -254,17 +136,6 @@ def week_display_label(monday, end_date=None):
     return f"{monday.strftime('%b %-d')}–{end_date.strftime('%b %-d')}"
 
 
-def deduplicate_meetings(meetings):
-    """One count per lead — most recent qualifying meeting in the window wins."""
-    lead_best = {}
-    for m in meetings:
-        lid = m.get("lead_id")
-        if not lid:
-            continue
-        if lid not in lead_best or m["_date_pac"] > lead_best[lid]["_date_pac"]:
-            lead_best[lid] = m
-    return list(lead_best.values())
-
 
 # ── Step 2: Lead Data ──────────────────────────────────────────────────────────
 
@@ -283,23 +154,6 @@ def get_funnel_name(lead):
     val = (raw or "").strip()
     return val if val else "Unknown (Needs Review)"
 
-
-# ── Step 3: Opportunity Data ───────────────────────────────────────────────────
-
-def fetch_latest_opportunity(lead_id):
-    """Return the most recently created opportunity on a lead, or None."""
-    data = close_get("opportunity/", {
-        "lead_id": lead_id,
-        "_fields": f"id,lead_id,created_at,value,status_type,date_won,"
-                   f"custom.{CF_SHOW_UP},custom.{CF_QUALIFIED}",
-        "_limit": 20,
-    })
-    opps = data.get("data", [])
-    if not opps:
-        return None
-    # Sort by created_at descending — most recent first
-    opps.sort(key=lambda o: o.get("created_at") or "", reverse=True)
-    return opps[0]
 
 
 def fetch_won_opps_by_range(start_date, end_date):
@@ -369,18 +223,26 @@ def fetch_utm_data(lead_id):
 
 # ── Field-Based Booked Leads Fetch ────────────────────────────────────────────
 
-def fetch_leads_by_first_sales_call(start_date, end_date):
+def fetch_leads_by_booked_date(start_date, end_date):
+    """
+    Fetch leads where First Sales Call Booked Date falls in [start_date, end_date].
+    Uses Close query syntax for server-side filtering — fast, no pagination of all leads.
+    """
     start_str = start_date.strftime("%Y-%m-%d")
     end_str   = end_date.strftime("%Y-%m-%d")
     query     = f'custom.{CF_FIRST_SALES} >= "{start_str}" AND custom.{CF_FIRST_SALES} <= "{end_str}"'
     print(f"Fetching booked leads ({start_str} → {end_str})...", flush=True)
+
     leads, skip = [], 0
     while True:
         data = close_get("lead/", {
             "query":   query,
-            "_fields": (f"id,status_id,custom.{CF_FUNNEL_NAME},"
-                        f"custom.{CF_SHOW_UP},custom.{CF_QUALIFIED}"),
-            "_limit":  200, "_skip": skip,
+            "_fields": (f"id,status_id,"
+                        f"custom.{CF_FUNNEL_NAME},"
+                        f"custom.{CF_SHOW_UP},"
+                        f"custom.{CF_QUALIFIED}"),
+            "_limit":  200,
+            "_skip":   skip,
         })
         batch = data.get("data", [])
         leads.extend(batch)
@@ -388,6 +250,7 @@ def fetch_leads_by_first_sales_call(start_date, end_date):
         if not data.get("has_more"):
             break
         skip += 200
+
     print(f"  Total booked leads: {len(leads)}", flush=True)
     return leads
 
@@ -404,16 +267,26 @@ def _is_yes(val):
 def aggregate_data(start_date, end_date, month_label,
                    won_opps,
                    lead_cache=None, utm_cache=None):
+    """
+    Aggregate field-based booked leads and won opps into dashboard data.
+    Booked count uses First Sales Call Booked Date field (not meeting title classification).
+    Returns (data_dict, lead_cache, utm_cache).
+    """
     lead_cache = lead_cache if lead_cache is not None else {}
     utm_cache  = utm_cache  if utm_cache  is not None else {}
 
-    booked_leads = fetch_leads_by_first_sales_call(start_date, end_date)
+    # Fetch booked leads via First Sales Call Booked Date field
+    booked_leads = fetch_leads_by_booked_date(start_date, end_date)
+
     meeting_rows = []
     for lead in booked_leads:
         lid = lead.get("id")
-        if not lid: continue
+        if not lid:
+            continue
+        # Cache the lead (already has all fields we need from the fetch)
         lead_cache[lid] = lead
-        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS: continue
+        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
+            continue
         funnel    = get_funnel_name(lead)
         show_up   = _is_yes(lead.get(f"custom.{CF_SHOW_UP}"))
         qualified = _is_yes(lead.get(f"custom.{CF_QUALIFIED}"))
@@ -423,6 +296,7 @@ def aggregate_data(start_date, end_date, month_label,
         utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
         meeting_rows.append({"funnel": funnel, "show_up": show_up,
                               "qualified": qualified, "utm_campaign": utm})
+
     print(f"  Booked rows after status filter: {len(meeting_rows)}", flush=True)
 
     closed_rows = []
@@ -485,6 +359,7 @@ def aggregate_data(start_date, end_date, month_label,
     now_pac      = datetime.now(PACIFIC)
     _goals       = load_goals()
     _days_in_mon = calendar.monthrange(start_date.year, start_date.month)[1]
+    # For archive months use last day of that month; for live use today
     _day_elapsed = end_date.day if end_date.month == start_date.month else _days_in_mon
     data = {
         "funnel_data":   funnel_data,
@@ -537,6 +412,7 @@ def funnel_slug(name):
 # ── Goals ─────────────────────────────────────────────────────────────────────
 
 def load_goals():
+    """Load funnel goals from goals.json. Returns empty dict if file missing."""
     try:
         with open("goals.json", "r") as f:
             return json.load(f)
@@ -544,20 +420,30 @@ def load_goals():
         return {}
 
 def calc_on_pace(goal, day_of_month, days_in_month):
-    if not goal or not days_in_month: return None
+    """Linear calendar-day projection: Goal × (days_elapsed / days_in_month)."""
+    if not goal or not days_in_month:
+        return None
     return round(goal * day_of_month / days_in_month)
 
 def pace_class(booked, on_pace, goal):
-    if goal and booked >= goal: return "pace-goal"
-    if on_pace and booked >= on_pace: return "pace-on"
+    """CSS class for pace status. Green=exceeding, Yellow=on pace, Red=behind."""
+    if on_pace is None:       return "pace-behind"
+    if booked > on_pace:      return "pace-exceed"
+    if booked == on_pace:     return "pace-on"
     return "pace-behind"
 
 def pace_label(booked, on_pace, goal):
-    return "—" if on_pace is None else str(on_pace)
+    """Formatted on-pace cell value."""
+    if on_pace is None:
+        return "—"
+    return str(on_pace)
 
 def goal_pct_label(booked, goal):
-    if not goal: return "—"
-    return f"{round(booked / goal * 100)}% ({goal})"
+    """'42% (300)' format for goal column."""
+    if not goal:
+        return "—"
+    p = round(booked / goal * 100)
+    return f"{p}% ({goal})"
 
 
 # ── HTML Generation ────────────────────────────────────────────────────────────
@@ -580,10 +466,10 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
         rev = t.get("revenue", 0.0)
         fid = funnel_slug(funnel)
 
-        _goals   = goals or {}
-        _goal    = _goals.get(funnel)
-        _on_pace = calc_on_pace(_goal, day_of_month, days_in_month)
-        _pc      = pace_class(bo, _on_pace, _goal)
+        _goals    = goals or {}
+        _goal     = _goals.get(funnel)
+        _on_pace  = calc_on_pace(_goal, day_of_month, days_in_month)
+        _pc       = pace_class(bo, _on_pace, _goal)
 
         html = [f"""
     <tr class="funnel-row" onclick="toggleUTM('{fid}')" data-fid="{fid}">
@@ -913,9 +799,9 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 
   .col-pace  {{ text-align: right; font-size: 12px; color: var(--muted); }}
   .col-goal  {{ text-align: right; font-size: 12px; color: var(--muted); }}
-  .col-pace.pace-goal   {{ color: var(--green); font-weight: 600; }}
-  .col-pace.pace-on     {{ color: var(--blue);  font-weight: 500; }}
-  .col-pace.pace-behind {{ color: var(--amber); }}
+  .col-pace.pace-exceed  {{ color: var(--green); font-weight: 600; }}
+  .col-pace.pace-on      {{ color: #ca8a04;      font-weight: 500; }}
+  .col-pace.pace-behind  {{ color: var(--red);   font-weight: 500; }}
 
   /* Chevron toggle */
   .chevron {{
@@ -1194,6 +1080,18 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     chevron.classList.toggle("open", !isOpen);
   }}
 </script>
+
+<div style="padding: 24px 36px 32px; border-top: 1px solid var(--border); margin-top: 8px;">
+  <p style="font-size: 11px; color: var(--muted); line-height: 1.7; max-width: 640px;">
+    <strong style="color: var(--muted2);">On Pace</strong> — Linear calendar-day projection:
+    <em>Goal × (Days Elapsed ÷ Days in Month)</em>.
+    <span style="color: var(--green); font-weight:600;">Green</span> = exceeding pace &nbsp;·&nbsp;
+    <span style="color: #ca8a04; font-weight:600;">Yellow</span> = on pace &nbsp;·&nbsp;
+    <span style="color: var(--red); font-weight:600;">Red</span> = behind pace.
+    Funnels without a goal show —.
+    Goals are updated monthly in <code style="font-size:10.5px; background:var(--surface2); padding:1px 4px; border-radius:3px;">goals.json</code>.
+  </p>
+</div>
 
 </body>
 </html>"""
