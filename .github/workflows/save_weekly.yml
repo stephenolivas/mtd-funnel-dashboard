@@ -55,5 +55,5 @@ jobs:
           git add archives/
           git diff --staged --quiet || \
             git commit -m "Weekly snapshot: ${{ steps.weekdate.outputs.monday }}"
-          git pull --rebase
+          git pull --rebase --strategy-option=ours
           git push
