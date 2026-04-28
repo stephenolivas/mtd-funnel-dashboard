@@ -6,7 +6,6 @@ from Close CRM and builds a static HTML dashboard.
 """
 
 import os
-import re
 import sys
 import time
 import json
@@ -63,6 +62,7 @@ EXCLUDED_CLOSER_USER_IDS = {
 FUNNEL_GROUPS = [
     ("EXTERNAL", [
         "Low Ticket Funnel",
+        "LTF - Quiz Funnel",
         "Instagram",
         "X",
         "Linkedin",
@@ -82,6 +82,9 @@ FUNNEL_GROUPS = [
         "Reactivation Email",
         "Reactivation Scrapers",
         "Referred",
+        "LinkedIn Ads",
+        "Google Ads",
+        "YouTube Ads",
     ]),
     ("UNCATEGORIZED", [
         "Unknown (Needs Review)",
