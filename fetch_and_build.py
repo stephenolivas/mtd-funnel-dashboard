@@ -21,6 +21,7 @@ import requests
 # ── Config ─────────────────────────────────────────────────────────────────────
 
 PACIFIC = ZoneInfo("America/Los_Angeles")
+BASE_PATH        = "/mtd-funnel-dashboard"  # GitHub Pages repo subpath
 CLOSE_API_KEY = os.environ["CLOSE_API_KEY"]
 
 session = requests.Session()
@@ -1150,11 +1151,11 @@ def build_month_picker(current_month_key, archive_months, is_in_archives):
 
     # Always use absolute paths — relative paths break when navigating between
     # index.html and archives/ subdirectory pages
-    options = [(live_key, live_label, "/index.html")]
+    options = [(live_key, live_label, f"{BASE_PATH}/index.html")]
     for key, label in archive_months:
         if key == live_key:
             continue
-        options.append((key, label, f"/archives/{key}.html"))
+        options.append((key, label, f"{BASE_PATH}/archives/{key}.html"))
 
     select_opts = ""
     for key, label, href in options:
@@ -1185,9 +1186,9 @@ def build_week_picker(current_week_key, month_key, weekly_archives,
 
     # "Full Month" links back to the monthly page
     if is_in_archives:
-        full_month_href = f"/archives/{month_key}.html" if not is_current_month else "/index.html"
+        full_month_href = f"{BASE_PATH}/archives/{month_key}.html" if not is_current_month else f"{BASE_PATH}/index.html"
     else:
-        full_month_href = "/index.html"
+        full_month_href = f"{BASE_PATH}/index.html"
 
     options = []
     # Full Month always first
@@ -1196,14 +1197,14 @@ def build_week_picker(current_week_key, month_key, weekly_archives,
 
     # Frozen week archives (newest first)
     for key, label, wmonday in weekly_archives:
-        href = f"/archives/{key}.html"
+        href = f"{BASE_PATH}/archives/{key}.html"
         sel  = "selected" if current_week_key == key else ""
         options.append(f'<option value="{href}" {sel}>{label}</option>')
 
     # Current week (live, always last) — only for current month
     if is_current_month:
         cur_label = week_display_label(monday, min(sunday, now_pac.date())) + " ▶"
-        href = "/archives/week-current.html"
+        href = f"{BASE_PATH}/archives/week-current.html"
         sel  = "selected" if current_week_key == "week-current" else ""
         options.append(f'<option value="{href}" {sel}>{cur_label}</option>')
 
