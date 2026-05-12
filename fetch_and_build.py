@@ -1059,7 +1059,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   // ── Dynamic nav picker — fetches archives/nav.json so pickers are always
   //    current even on frozen archive pages generated weeks ago ──────────────
   (async function() {{
-    const BASE = '{BASE_PATH}';
+    const BASE = '/mtd-funnel-dashboard';
     try {{
       const r = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
       if (!r.ok) return;
@@ -1069,8 +1069,8 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
       // Determine current page context
       let curMonth = nav.live_month;
       let curWeek  = null;
-      const mMatch = path.match(/archives\/(\d{{4}}-\d{{2}})\.html/);
-      const wMatch = path.match(/archives\/(week-[\d-]+)\.html/);
+      const mMatch = path.match(/archives[/]([0-9]{4}-[0-9]{2})[.]html/);
+      const wMatch = path.match(/archives[/](week-[0-9-]+)[.]html/);
       const wCur   = path.includes('week-current.html');
 
       if (mMatch)      {{ curMonth = mMatch[1]; }}
