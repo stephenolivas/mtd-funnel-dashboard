@@ -1,0 +1,58 @@
+{
+  "live_month": "2026-05",
+  "live_month_label": "May 2026",
+  "months": [
+    {
+      "key": "2026-05",
+      "label": "May 2026",
+      "is_live": true
+    },
+    {
+      "key": "2026-04",
+      "label": "April 2026",
+      "is_live": false
+    },
+    {
+      "key": "2026-03",
+      "label": "March 2026",
+      "is_live": false
+    }
+  ],
+  "weeks": {
+    "2026-05": [
+      {
+        "key": "week-2026-05-04",
+        "label": "May 4\u201310",
+        "is_current": false
+      },
+      {
+        "key": "week-current",
+        "label": "May 11\u201312 \u25b6",
+        "is_current": true
+      }
+    ],
+    "2026-04": [
+      {
+        "key": "week-2026-04-27",
+        "label": "Apr 27\u2013May 3",
+        "is_current": false
+      },
+      {
+        "key": "week-2026-04-20",
+        "label": "Apr 20\u201326",
+        "is_current": false
+      },
+      {
+        "key": "week-2026-04-13",
+        "label": "Apr 13\u201319",
+        "is_current": false
+      },
+      {
+        "key": "week-2026-04-06",
+        "label": "Apr 6\u201312",
+        "is_current": false
+      }
+    ]
+  },
+  "updated_at": "2026-05-12T13:07:18"
+}
