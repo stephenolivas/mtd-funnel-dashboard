@@ -21,7 +21,6 @@ import requests
 # ── Config ─────────────────────────────────────────────────────────────────────
 
 PACIFIC = ZoneInfo("America/Los_Angeles")
-BASE_PATH        = "/mtd-funnel-dashboard"  # GitHub Pages repo subpath
 CLOSE_API_KEY = os.environ["CLOSE_API_KEY"]
 
 session = requests.Session()
@@ -1057,6 +1056,64 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 </div>
 
 <script>
+  // ── Dynamic nav picker — fetches archives/nav.json so pickers are always
+  //    current even on frozen archive pages generated weeks ago ──────────────
+  (async function() {{
+    const BASE = '{BASE_PATH}';
+    try {{
+      const r = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
+      if (!r.ok) return;
+      const nav = await r.json();
+      const path = window.location.pathname;
+
+      // Determine current page context
+      let curMonth = nav.live_month;
+      let curWeek  = null;
+      const mMatch = path.match(/archives\/(\d{{4}}-\d{{2}})\.html/);
+      const wMatch = path.match(/archives\/(week-[\d-]+)\.html/);
+      const wCur   = path.includes('week-current.html');
+
+      if (mMatch)      {{ curMonth = mMatch[1]; }}
+      else if (wMatch) {{ curWeek = wMatch[1]; curMonth = wMatch[1].replace('week-','').substring(0,7); }}
+      else if (wCur)   {{ curWeek = 'week-current'; curMonth = nav.live_month; }}
+
+      // Rebuild month picker
+      const mSel = document.querySelector('.month-picker select');
+      if (mSel) {{
+        mSel.innerHTML = nav.months.map(m => {{
+          const href = m.is_live ? BASE+'/index.html' : BASE+'/archives/'+m.key+'.html';
+          return `<option value="${{href}}" ${{m.key===curMonth?'selected':''}}>${{m.label}}</option>`;
+        }}).join('');
+        mSel.onchange = function(){{ window.location.href = this.value; }};
+      }}
+
+      // Rebuild week picker
+      const wSel = document.querySelector('.week-picker select');
+      if (wSel) {{
+        const weeks = nav.weeks[curMonth] || [];
+        const isLive = curMonth === nav.live_month;
+        const fullHref = isLive ? BASE+'/index.html' : BASE+'/archives/'+curMonth+'.html';
+        const opts = [`<option value="${{fullHref}}" ${{!curWeek?'selected':''}}>Full Month</option>`];
+        weeks.forEach(w => {{
+          const href = BASE+'/archives/'+w.key+'.html';
+          opts.push(`<option value="${{href}}" ${{w.key===curWeek?'selected':''}}>${{w.label}}</option>`);
+        }});
+        wSel.innerHTML = opts.join('');
+        wSel.onchange = function(){{ window.location.href = this.value; }};
+
+        // Hide week picker for months with no weekly archives
+        if (weeks.length === 0) {{
+          const wp = document.querySelector('.week-picker');
+          const div = document.querySelector('.picker-divider');
+          if (wp)  wp.style.display  = 'none';
+          if (div) div.style.display = 'none';
+        }}
+      }}
+    }} catch(e) {{
+      // Silently fail — baked-in picker remains visible as fallback
+    }}
+  }})();
+
   function toggleUTM(fid) {{
     const utmRows = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
     const chevron = document.getElementById("chev-" + fid);
@@ -1143,6 +1200,62 @@ def scan_weekly_archives(month_key):
     return weeks
 
 
+def write_nav_json(live_month, archive_months):
+    """
+    Write archives/nav.json — a dynamic index fetched client-side so every page
+    always shows current month and week picker options, regardless of when the
+    page HTML was generated.
+    """
+    now_pac    = datetime.now(PACIFIC)
+    live_label = now_pac.strftime("%B %Y")
+
+    # Months: live first, then archives newest→oldest
+    months = [{"key": live_month, "label": live_label, "is_live": True}]
+    for key, label in archive_months:
+        if key != live_month:
+            months.append({"key": key, "label": label, "is_live": False})
+
+    # Weeks: scan all frozen weekly archives grouped by month
+    weeks = {}
+    for p in sorted(ARCHIVES_DIR.glob("week-20*.html"), reverse=True):
+        key = p.stem
+        try:
+            monday = datetime.strptime(key, "week-%Y-%m-%d").date()
+        except ValueError:
+            continue
+        month_key = monday.strftime("%Y-%m")
+        sunday    = monday + timedelta(days=6)
+        label     = week_display_label(monday, sunday)
+        weeks.setdefault(month_key, []).append({
+            "key":        key,
+            "label":      label,
+            "is_current": False,
+        })
+
+    # Add current week to live month (always last)
+    monday     = current_week_monday()
+    sunday     = monday + timedelta(days=6)
+    cur_label  = week_display_label(monday, min(sunday, now_pac.date())) + " ▶"
+    weeks.setdefault(live_month, []).append({
+        "key":        "week-current",
+        "label":      cur_label,
+        "is_current": True,
+    })
+
+    nav = {
+        "live_month":       live_month,
+        "live_month_label": live_label,
+        "months":           months,
+        "weeks":            weeks,
+        "updated_at":       now_pac.strftime("%Y-%m-%dT%H:%M:%S"),
+    }
+
+    nav_path = ARCHIVES_DIR / "nav.json"
+    with open(nav_path, "w") as f:
+        json.dump(nav, f, indent=2)
+    print(f"Written: {nav_path}", flush=True)
+
+
 def build_month_picker(current_month_key, archive_months, is_in_archives):
     """Build the month <select> HTML using absolute paths for reliable navigation."""
     now_pac    = datetime.now(PACIFIC)
@@ -1151,11 +1264,11 @@ def build_month_picker(current_month_key, archive_months, is_in_archives):
 
     # Always use absolute paths — relative paths break when navigating between
     # index.html and archives/ subdirectory pages
-    options = [(live_key, live_label, f"{BASE_PATH}/index.html")]
+    options = [(live_key, live_label, "/index.html")]
     for key, label in archive_months:
         if key == live_key:
             continue
-        options.append((key, label, f"{BASE_PATH}/archives/{key}.html"))
+        options.append((key, label, f"/archives/{key}.html"))
 
     select_opts = ""
     for key, label, href in options:
@@ -1186,9 +1299,9 @@ def build_week_picker(current_week_key, month_key, weekly_archives,
 
     # "Full Month" links back to the monthly page
     if is_in_archives:
-        full_month_href = f"{BASE_PATH}/archives/{month_key}.html" if not is_current_month else f"{BASE_PATH}/index.html"
+        full_month_href = f"/archives/{month_key}.html" if not is_current_month else "/index.html"
     else:
-        full_month_href = f"{BASE_PATH}/index.html"
+        full_month_href = "/index.html"
 
     options = []
     # Full Month always first
@@ -1197,14 +1310,14 @@ def build_week_picker(current_week_key, month_key, weekly_archives,
 
     # Frozen week archives (newest first)
     for key, label, wmonday in weekly_archives:
-        href = f"{BASE_PATH}/archives/{key}.html"
+        href = f"/archives/{key}.html"
         sel  = "selected" if current_week_key == key else ""
         options.append(f'<option value="{href}" {sel}>{label}</option>')
 
     # Current week (live, always last) — only for current month
     if is_current_month:
         cur_label = week_display_label(monday, min(sunday, now_pac.date())) + " ▶"
-        href = f"{BASE_PATH}/archives/week-current.html"
+        href = "/archives/week-current.html"
         sel  = "selected" if current_week_key == "week-current" else ""
         options.append(f'<option value="{href}" {sel}>{cur_label}</option>')
 
@@ -1349,6 +1462,10 @@ if __name__ == "__main__":
         write_dashboard(data_week, ARCHIVES_DIR / "week-current.html",
                         month_picker_cur, week_picker_cur,
                         is_archive_page=False, is_week_page=True)
+
+    # ── Always write nav.json so client-side pickers stay current ───────────
+    archive_months = scan_monthly_archives()  # re-scan in case we just wrote a new archive
+    write_nav_json(live_month, archive_months)
 
     # ── Summary ───────────────────────────────────────────────────────────────
     final_data = data_month if not (args.month or args.week) else data
