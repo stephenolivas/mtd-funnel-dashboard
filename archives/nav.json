@@ -27,7 +27,7 @@
       },
       {
         "key": "week-current",
-        "label": "May 11\u201315 \u25b6",
+        "label": "May 11\u201316 \u25b6",
         "is_current": true
       }
     ],
@@ -54,5 +54,5 @@
       }
     ]
   },
-  "updated_at": "2026-05-15T23:52:54"
+  "updated_at": "2026-05-16T00:07:10"
 }
