@@ -63,10 +63,10 @@ EXCLUDED_CLOSER_USER_IDS = {
 FUNNEL_GROUPS = [
     ("EXTERNAL", [
         "Low Ticket Funnel",
-        "LTF - Quiz Funnel",
         "Instagram",
         "X",
         "Linkedin",
+        "LTF - Quiz Funnel",   # excluded from totals — shown grayed at bottom
     ]),
     ("IN-HOUSE", [
         "YouTube",
@@ -95,6 +95,9 @@ FUNNEL_GROUPS = [
 
 # Flat ordered list for membership checks
 FUNNEL_ORDER = [f for _, funnels in FUNNEL_GROUPS for f in funnels]
+
+# Funnels excluded from top-line totals & KPI tiles but still shown as grayed rows
+EXCLUDED_FROM_TOTALS_FUNNELS = {"LTF - Quiz Funnel"}
 
 # ── API Helpers ────────────────────────────────────────────────────────────────
 
@@ -350,13 +353,17 @@ def aggregate_data(start_date, end_date, month_label,
         funnel_totals[funnel] = t
 
     grand = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
-    for t in funnel_totals.values():
+    for funnel, t in funnel_totals.items():
+        if funnel in EXCLUDED_FROM_TOTALS_FUNNELS:
+            continue  # excluded from top-line KPI tiles
         for k in grand: grand[k] += t[k]
 
     group_totals = {}
     for group_label, group_funnels in FUNNEL_GROUPS:
         t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
         for funnel in group_funnels:
+            if funnel in EXCLUDED_FROM_TOTALS_FUNNELS:
+                continue  # excluded from group KPI sub-tiles
             ft = funnel_totals.get(funnel, {})
             for k in t: t[k] += ft.get(k, 0)
         group_totals[group_label] = t
@@ -424,17 +431,22 @@ def load_goals():
     except Exception:
         return {}
 
-def calc_on_pace(goal, day_of_month, days_in_month):
-    """Linear calendar-day projection: Goal × (days_elapsed / days_in_month)."""
-    if not goal or not days_in_month:
+def calc_on_pace(booked, goal, day_of_month, days_in_month):
+    """
+    End-of-month projection based on current daily pace:
+      Projected = round((booked / days_elapsed) × days_in_month)
+    For archive months days_elapsed == days_in_month, so result == booked (actual final).
+    Returns None if no bookings yet or days_elapsed is 0.
+    """
+    if not day_of_month or not booked:
         return None
-    return round(goal * day_of_month / days_in_month)
+    return round((booked / day_of_month) * days_in_month)
 
 def pace_class(booked, on_pace, goal):
-    """CSS class for pace status. Green=exceeding, Yellow=on pace, Red=behind."""
-    if on_pace is None:       return "pace-behind"
-    if booked > on_pace:      return "pace-exceed"
-    if booked == on_pace:     return "pace-on"
+    """CSS class for pace status vs goal. Green=projected>goal, Yellow=equal, Red=below."""
+    if on_pace is None or not goal: return "pace-muted"
+    if on_pace > goal:  return "pace-exceed"
+    if on_pace == goal: return "pace-on"
     return "pace-behind"
 
 def pace_label(booked, on_pace, goal):
@@ -462,8 +474,8 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
     def funnel_row_html(funnel):
         t   = funnel_totals.get(funnel, {})
         bo  = t.get("booked", 0)
-        # Zero suppression — hide rows with no activity this month
-        if bo == 0 and t.get("closed", 0) == 0:
+        # Zero suppression — hide rows with no activity (always show excluded funnels)
+        if bo == 0 and t.get("closed", 0) == 0 and funnel not in EXCLUDED_FROM_TOTALS_FUNNELS:
             return []
         sh  = t.get("showed", 0)
         qu  = t.get("qualified", 0)
@@ -471,15 +483,18 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
         rev = t.get("revenue", 0.0)
         fid = funnel_slug(funnel)
 
-        _goals    = goals or {}
-        _goal     = _goals.get(funnel)
-        _on_pace  = calc_on_pace(_goal, day_of_month, days_in_month)
-        _pc       = pace_class(bo, _on_pace, _goal)
+        _goals      = goals or {}
+        _goal       = _goals.get(funnel)
+        _on_pace    = calc_on_pace(bo, _goal, day_of_month, days_in_month)
+        _pc         = pace_class(bo, _on_pace, _goal)
+        _is_excl    = funnel in EXCLUDED_FROM_TOTALS_FUNNELS
+        _row_class  = "funnel-row funnel-row-excluded" if _is_excl else "funnel-row"
+        _excl_note  = " *" if _is_excl else ""
 
         html = [f"""
-    <tr class="funnel-row" onclick="toggleUTM('{fid}')" data-fid="{fid}">
+    <tr class="{_row_class}" onclick="toggleUTM('{fid}')" data-fid="{fid}">
       <td class="col-name">
-        <span class="chevron" id="chev-{fid}">›</span>{funnel}
+        <span class="chevron" id="chev-{fid}">›</span>{funnel}{_excl_note}
       </td>
       <td class="col-num">{bo if bo else "—"}</td>
       <td class="col-pace {_pc}">{pace_label(bo, _on_pace, _goal)}</td>
@@ -798,6 +813,13 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   .col-pct    {{ text-align: right; font-weight: 500; }}
   .col-rev    {{ text-align: right; color: var(--green); font-weight: 500; }}
 
+  /* Excluded-from-totals funnel rows — grayed out */
+  .funnel-row-excluded td {{ color: var(--muted) !important; }}
+  .funnel-row-excluded .col-rev {{ color: var(--muted) !important; }}
+  .funnel-row-excluded .col-pct {{ color: var(--muted) !important; }}
+  .funnel-row-excluded .col-pace {{ color: var(--muted) !important; }}
+  .funnel-row-excluded .col-goal {{ color: var(--muted) !important; }}
+
   .col-pct.good {{ color: var(--green); }}
   .col-pct.bad  {{ color: var(--red); }}
   .col-pct.mid  {{ color: var(--amber); }}
@@ -1022,7 +1044,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
       <tr>
         <th class="col-name">Funnel</th>
         <th class="col-num">Booked</th>
-        <th class="col-pace">On Pace</th>
+        <th class="col-pace">Projected</th>
         <th class="col-goal">Goal %</th>
         <th class="col-num">Showed</th>
         <th class="col-pct">Show %</th>
@@ -1146,8 +1168,9 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 
 <div style="padding: 24px 36px 32px; border-top: 1px solid var(--border); margin-top: 8px;">
   <p style="font-size: 11px; color: var(--muted); line-height: 1.7; max-width: 640px;">
-    <strong style="color: var(--muted2);">On Pace</strong> — Linear calendar-day projection:
-    <em>Goal × (Days Elapsed ÷ Days in Month)</em>.
+    <strong style="color: var(--muted2);">Projected</strong> — End-of-month estimate based on current daily booking pace:
+    <em>(Booked ÷ Days Elapsed) × Days in Month</em>. Color reflects projected vs goal.
+    &nbsp;&nbsp;<strong style="color: var(--muted2);">*</strong> — Funnel excluded from top-line totals and KPI tiles.
     <span style="color: var(--green); font-weight:600;">Green</span> = exceeding pace &nbsp;·&nbsp;
     <span style="color: #ca8a04; font-weight:600;">Yellow</span> = on pace &nbsp;·&nbsp;
     <span style="color: var(--red); font-weight:600;">Red</span> = behind pace.
