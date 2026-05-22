@@ -3,7 +3,7 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 528,
-    "showed": 309,
+    "showed": 310,
     "qualified": 259,
     "closed": 53,
     "revenue": 401947.0
@@ -18,7 +18,7 @@
     },
     "IN-HOUSE": {
       "booked": 249,
-      "showed": 129,
+      "showed": 130,
       "qualified": 109,
       "closed": 24,
       "revenue": 165531.0
@@ -32,20 +32,10 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 183,
-      "showed": 118,
-      "show_pct": 64.5,
-      "qualified": 104,
-      "qual_pct": 56.8,
-      "closed": 18,
-      "cw_pct": 9.8,
-      "revenue": 150449.0
-    },
     "Website": {
       "booked": 80,
-      "showed": 45,
-      "show_pct": 56.2,
+      "showed": 46,
+      "show_pct": 57.5,
       "qualified": 42,
       "qual_pct": 52.5,
       "closed": 7,
@@ -61,6 +51,16 @@
       "closed": 14,
       "cw_pct": 18.4,
       "revenue": 99958.0
+    },
+    "Instagram": {
+      "booked": 183,
+      "showed": 118,
+      "show_pct": 64.5,
+      "qualified": 104,
+      "qual_pct": 56.8,
+      "closed": 18,
+      "cw_pct": 9.8,
+      "revenue": 150449.0
     },
     "Low Ticket Funnel": {
       "booked": 68,
