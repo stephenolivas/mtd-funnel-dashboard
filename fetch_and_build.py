@@ -933,7 +933,13 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 <!-- Header -->
 <div class="header">
   <div class="header-left">
-    <h1>MTD Funnel Performance</h1>
+    <h1>MTD Funnel Performance
+      <a href="/mtd-funnel-dashboard/archives/mom.html"
+         style="font-size:12px; font-weight:500; color:var(--accent); margin-left:14px;
+                text-decoration:none; vertical-align:middle;">
+        Month over Month →
+      </a>
+    </h1>
     <p class="sub">Vendingpreneurs · All Sales Calls · {data['month_label']}{data.get('week_range_label','')}</p>
   </div>
   <div class="header-right">
@@ -1279,6 +1285,42 @@ def write_nav_json(live_month, archive_months):
     print(f"Written: {nav_path}", flush=True)
 
 
+def save_data_json(data, month_key):
+    """
+    Save funnel data as archives/data-YYYY-MM.json (or data-current.json for live month).
+    Used by the Month-over-Month page to compare months client-side.
+    """
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    export = {
+        "month_key":   month_key,
+        "month_label": data["month_label"],
+        "grand":       data["grand"],
+        "groups":      data["group_totals"],
+        "funnels":     {},
+    }
+    for funnel, totals in data["funnel_totals"].items():
+        bo  = totals.get("booked", 0)
+        sh  = totals.get("showed", 0)
+        qu  = totals.get("qualified", 0)
+        cl  = totals.get("closed", 0)
+        rev = totals.get("revenue", 0.0)
+        export["funnels"][funnel] = {
+            "booked":    bo,
+            "showed":    sh,
+            "show_pct":  round(sh / bo * 100, 1) if bo else 0,
+            "qualified": qu,
+            "qual_pct":  round(qu / bo * 100, 1) if bo else 0,
+            "closed":    cl,
+            "cw_pct":    round(cl / bo * 100, 1) if bo else 0,
+            "revenue":   rev,
+        }
+    fname = f"data-{month_key}.json"
+    path  = ARCHIVES_DIR / fname
+    with open(path, "w") as f:
+        json.dump(export, f, indent=2)
+    print(f"Written: {path}", flush=True)
+
+
 def build_month_picker(current_month_key, archive_months, is_in_archives):
     """Build the month <select> HTML using absolute paths for reliable navigation."""
     now_pac    = datetime.now(PACIFIC)
@@ -1416,6 +1458,7 @@ if __name__ == "__main__":
                                          is_current_month=(args.month == live_month))
         write_dashboard(data, out_path, month_picker, week_picker,
                         is_archive_page=True, is_week_page=False)
+        save_data_json(data, args.month)
 
     # ── MODE: Weekly archive ──────────────────────────────────────────────────
     elif args.week:
@@ -1469,6 +1512,7 @@ if __name__ == "__main__":
                                          is_in_archives=False, is_current_month=True)
         write_dashboard(data_month, Path("index.html"), month_picker, week_picker,
                         is_archive_page=False, is_week_page=False)
+        save_data_json(data_month, live_month)
 
         # ── Build current week (archives/week-current.html) ───────────────────
         print(f"\n=== Building current week: {week_display_label(w_monday, w_end)} ===", flush=True)
