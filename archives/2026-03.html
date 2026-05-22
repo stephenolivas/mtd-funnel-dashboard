@@ -223,9 +223,22 @@
   .col-pct    { text-align: right; font-weight: 500; }
   .col-rev    { text-align: right; color: var(--green); font-weight: 500; }
 
+  /* Excluded-from-totals funnel rows — grayed out */
+  .funnel-row-excluded td { color: var(--muted) !important; }
+  .funnel-row-excluded .col-rev { color: var(--muted) !important; }
+  .funnel-row-excluded .col-pct { color: var(--muted) !important; }
+  .funnel-row-excluded .col-pace { color: var(--muted) !important; }
+  .funnel-row-excluded .col-goal { color: var(--muted) !important; }
+
   .col-pct.good { color: var(--green); }
   .col-pct.bad  { color: var(--red); }
   .col-pct.mid  { color: var(--amber); }
+
+  .col-pace  { text-align: right; font-size: 12px; color: var(--muted); }
+  .col-goal  { text-align: right; font-size: 12px; color: var(--muted); }
+  .col-pace.pace-exceed  { color: var(--green); font-weight: 600; }
+  .col-pace.pace-on      { color: #ca8a04;      font-weight: 500; }
+  .col-pace.pace-behind  { color: var(--red);   font-weight: 500; }
 
   /* Chevron toggle */
   .chevron {
@@ -335,12 +348,13 @@
   </div>
   <div class="header-right">
     <div class="pickers-row">
-      <div class="month-picker"><select onchange="window.location.href=this.value"><option value="../index.html" >April 2026</option>
-      <option value="2026-03.html" selected>March 2026</option>
+      <div class="month-picker"><select onchange="window.location.href=this.value"><option value="/index.html" >May 2026</option>
+      <option value="/archives/2026-04.html" >April 2026</option>
+      <option value="/archives/2026-03.html" selected>March 2026</option>
       </select></div>
     </div>
     <span class="snapshot-label"><span class="archive-badge">Archive</span></span>
-    April 10, 2026 at 01:46 PM PT<br>
+    May 22, 2026 at 08:54 AM PT<br>
     Source · Close CRM
   </div>
 </div>
@@ -349,69 +363,69 @@
 <div class="kpis">
   <div class="kpi" style="--kpi-accent:#4f46e5; --kpi-color:var(--text);">
     <div class="label">Total Booked</div>
-    <div class="value">881</div>
+    <div class="value">853</div>
     <div class="kpi-sub">new first calls MTD</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
-        <div class="split-value">404</div>
-        <div class="split-rate">45.9% of total</div>
+        <div class="split-value">385</div>
+        <div class="split-rate">45.1% of total</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">435</div>
-        <div class="split-rate">49.4% of total</div>
+        <div class="split-value">426</div>
+        <div class="split-rate">49.9% of total</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#2563eb; --kpi-color:#2563eb;">
     <div class="label">Showed</div>
-    <div class="value">591</div>
-    <div class="kpi-sub">67.1% show rate</div>
+    <div class="value">566</div>
+    <div class="kpi-sub">66.4% show rate</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
-        <div class="split-value">290</div>
-        <div class="split-rate">71.8% show</div>
+        <div class="split-value">273</div>
+        <div class="split-rate">70.9% show</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">274</div>
-        <div class="split-rate">63.0% show</div>
+        <div class="split-value">266</div>
+        <div class="split-rate">62.4% show</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#7c3aed; --kpi-color:#7c3aed;">
     <div class="label">Qualified</div>
-    <div class="value">463</div>
-    <div class="kpi-sub">52.6% qual rate</div>
+    <div class="value">442</div>
+    <div class="kpi-sub">51.8% qual rate</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
-        <div class="split-value">230</div>
-        <div class="split-rate">56.9% qual</div>
+        <div class="split-value">218</div>
+        <div class="split-rate">56.6% qual</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">214</div>
-        <div class="split-rate">49.2% qual</div>
+        <div class="split-value">206</div>
+        <div class="split-rate">48.4% qual</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#d97706; --kpi-color:#d97706;">
     <div class="label">Closed Won</div>
     <div class="value">114</div>
-    <div class="kpi-sub">12.9% booked→close · 24.6% qual→close</div>
+    <div class="kpi-sub">13.4% booked→close · 25.8% qual→close</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
-        <div class="split-value">61</div>
-        <div class="split-rate">15.1% b→c</div>
+        <div class="split-value">60</div>
+        <div class="split-rate">15.6% b→c</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">51</div>
-        <div class="split-rate">11.7% b→c</div>
+        <div class="split-value">52</div>
+        <div class="split-rate">12.2% b→c</div>
       </div>
     </div>
   </div>
@@ -422,13 +436,13 @@
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
-        <div class="split-value">$474,635</div>
-        <div class="split-rate">$7,781 avg</div>
+        <div class="split-value">$469,638</div>
+        <div class="split-rate">$7,827 avg</div>
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">$414,920</div>
-        <div class="split-rate">$8,136 avg</div>
+        <div class="split-value">$419,917</div>
+        <div class="split-rate">$8,075 avg</div>
       </div>
     </div>
   </div>
@@ -443,6 +457,8 @@
       <tr>
         <th class="col-name">Funnel</th>
         <th class="col-num">Booked</th>
+        <th class="col-pace">Projected</th>
+        <th class="col-goal">Goal %</th>
         <th class="col-num">Showed</th>
         <th class="col-pct">Show %</th>
         <th class="col-num">Qualified</th>
@@ -456,7 +472,7 @@
     <tbody>
 
     <tr class="section-header-row" onclick="toggleSection('external')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-external">›</span>FUNNEL BREAKDOWN — EXTERNAL
       </td>
     </tr>
@@ -465,39 +481,45 @@
       <td class="col-name">
         <span class="chevron" id="chev-low_ticket_funnel">›</span>Low Ticket Funnel
       </td>
-      <td class="col-num">187</td>
-      <td class="col-num">120</td>
-      <td class="col-pct mid">64.2%</td>
-      <td class="col-num">97</td>
-      <td class="col-pct mid">51.9%</td>
+      <td class="col-num">179</td>
+      <td class="col-pace pace-behind">179</td>
+      <td class="col-goal">90% (200)</td>
+      <td class="col-num">113</td>
+      <td class="col-pct mid">63.1%</td>
+      <td class="col-num">91</td>
+      <td class="col-pct mid">50.8%</td>
       <td class="col-num">26</td>
-      <td class="col-pct mid">13.9%</td>
+      <td class="col-pct mid">14.5%</td>
       <td class="col-rev">$208,634</td>
       <td class="col-num">$8,024</td>
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale</td>
-      <td class="col-num">145</td>
-      <td class="col-num">86</td>
-      <td class="col-pct mid">59.3%</td>
-      <td class="col-num">71</td>
-      <td class="col-pct bad">49.0%</td>
+      <td class="col-num">141</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">82</td>
+      <td class="col-pct mid">58.2%</td>
+      <td class="col-num">68</td>
+      <td class="col-pct bad">48.2%</td>
       <td class="col-num">19</td>
-      <td class="col-pct mid">13.1%</td>
+      <td class="col-pct mid">13.5%</td>
       <td class="col-rev">$145,152</td>
       <td class="col-num">$7,640</td>
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">10</td>
-      <td class="col-num">8</td>
-      <td class="col-pct good">80.0%</td>
       <td class="col-num">7</td>
-      <td class="col-pct good">70.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">6</td>
+      <td class="col-pct good">85.7%</td>
       <td class="col-num">5</td>
-      <td class="col-pct good">50.0%</td>
+      <td class="col-pct good">71.4%</td>
+      <td class="col-num">5</td>
+      <td class="col-pct good">71.4%</td>
       <td class="col-rev">$41,985</td>
       <td class="col-num">$8,397</td>
     </tr>
@@ -505,6 +527,8 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,EMAIL 5 - Friday - BaC Sequence - 3/2/26 (Copy)</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
@@ -518,6 +542,8 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,FIRSTNAME , quick question for you - (Copy-65)</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
@@ -529,8 +555,55 @@
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 4 - Thursday - BaC Sequence - 2/23/26 (Copy)</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,FIRSTNAME , quick update about booking calls - (Copy-61)</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">50.0%</td>
+      <td class="col-rev">$8,997</td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 1 - Monday - BaC Sequence - 3/16/26 (Copy)</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,Ascension Email 2</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">—</td>
@@ -544,23 +617,12 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,EMAIL 4 - Thursday - BaC Sequence - 3/16/26 (Copy)</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 1 - Monday - BaC Sequence - 3/16/26 (Copy)</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct mid">50.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -570,6 +632,8 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,EMAIL 1 - Monday - BaC Sequence - 3/2/26 (Copy)</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
@@ -581,77 +645,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 4 - Thursday - BaC Sequence - 2/23/26 (Copy)</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,EMAIL 4 - Thursday - BaC Sequence - 2/16/26 (Copy)</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,Ascension Email 4</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,Ascension Email 7</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,Ascension Email 1</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 5 - Friday - BaC Sequence - 3/16/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -661,110 +662,8 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ vending-tier-list</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 3/16/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,FIRSTNAME , quick update about booking calls - (Copy-61)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-rev">$8,997</td>
-      <td class="col-num">$8,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/16/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 5 - Friday - BaC Sequence - 3/9/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,Ascension Email 3</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ book_meeting</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 1 - Monday - BaC Sequence - 3/9/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 3/2/26 (Copy)</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -778,6 +677,8 @@
     <tr class="utm-row" data-parent="low_ticket_funnel">
       <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/2/26 (Copy)</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -789,8 +690,145 @@
     </tr>
 
     <tr class="utm-row" data-parent="low_ticket_funnel">
-      <td class="col-name col-utm">↳ wescale,FIRSTNAME , we re taking calls again (limited spots) - (Copy-63)</td>
+      <td class="col-name col-utm">↳ apply-to-book</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,Ascension Email 1</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/16/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,Ascension Email 3</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,Ascension Email 4</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 3/16/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 5 - Friday - BaC Sequence - 3/9/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ book_meeting</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 1 - Monday - BaC Sequence - 3/9/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="low_ticket_funnel">
+      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 3/2/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -805,39 +843,45 @@
       <td class="col-name">
         <span class="chevron" id="chev-instagram">›</span>Instagram
       </td>
-      <td class="col-num">196</td>
-      <td class="col-num">152</td>
-      <td class="col-pct good">77.6%</td>
-      <td class="col-num">119</td>
-      <td class="col-pct mid">60.7%</td>
+      <td class="col-num">188</td>
+      <td class="col-pace pace-behind">188</td>
+      <td class="col-goal">63% (300)</td>
+      <td class="col-num">145</td>
+      <td class="col-pct good">77.1%</td>
+      <td class="col-num">114</td>
+      <td class="col-pct mid">60.6%</td>
       <td class="col-num">26</td>
-      <td class="col-pct mid">13.3%</td>
+      <td class="col-pct mid">13.8%</td>
       <td class="col-rev">$188,128</td>
       <td class="col-num">$7,236</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ vp_setter</td>
-      <td class="col-num">98</td>
-      <td class="col-num">80</td>
-      <td class="col-pct good">81.6%</td>
-      <td class="col-num">67</td>
-      <td class="col-pct mid">68.4%</td>
+      <td class="col-num">95</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">78</td>
+      <td class="col-pct good">82.1%</td>
+      <td class="col-num">66</td>
+      <td class="col-pct mid">69.5%</td>
       <td class="col-num">10</td>
-      <td class="col-pct mid">10.2%</td>
+      <td class="col-pct mid">10.5%</td>
       <td class="col-rev">$68,670</td>
       <td class="col-num">$6,867</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">39</td>
-      <td class="col-num">29</td>
-      <td class="col-pct good">74.4%</td>
-      <td class="col-num">23</td>
-      <td class="col-pct mid">59.0%</td>
+      <td class="col-num">37</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">26</td>
+      <td class="col-pct good">70.3%</td>
+      <td class="col-num">20</td>
+      <td class="col-pct mid">54.1%</td>
       <td class="col-num">8</td>
-      <td class="col-pct good">20.5%</td>
+      <td class="col-pct good">21.6%</td>
       <td class="col-rev">$44,479</td>
       <td class="col-num">$5,560</td>
     </tr>
@@ -845,6 +889,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ wescale</td>
       <td class="col-num">4</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
       <td class="col-pct good">75.0%</td>
       <td class="col-num">2</td>
@@ -858,6 +904,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ book_meeting</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">3</td>
@@ -869,116 +917,29 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1288738401</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-name col-utm">↳ ManichatID</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">50.0%</td>
+      <td class="col-rev">$13,997</td>
+      <td class="col-num">$13,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1598183425</td>
+      <td class="col-name col-utm">↳ 1855262402</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 412767792</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 265437477</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1446589912</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1353490430</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 878725351</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 112242135</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 755610065</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -988,6 +949,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 461570333</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">1</td>
@@ -999,10 +962,12 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1377597043</td>
+      <td class="col-name col-utm">↳ 412767792</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1014,257 +979,12 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 1311749516</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1272358525</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 246790390</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1643128170</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1947465093</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1926724944</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1138687472</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/16/26 (Copy)</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-rev">$9,000</td>
-      <td class="col-num">$9,000</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 364867177</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1804266159</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ @utm_campaign</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">200.0%</td>
-      <td class="col-rev">$27,994</td>
-      <td class="col-num">$13,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 2127901684</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 462037290</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 641801443</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ registrant</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1581441184</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1586062008</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1131115695</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1123503975</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1797852002</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1274,6 +994,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 816747916</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -1285,47 +1007,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 864608302</td>
+      <td class="col-name col-utm">↳ 2127901684</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 2323425</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 119866372</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-rev">$5,997</td>
-      <td class="col-num">$5,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 464317626</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1337,8 +1022,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1855262402</td>
+      <td class="col-name col-utm">↳ 246790390</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1350,34 +1037,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ Best-Vending-Contract</td>
+      <td class="col-name col-utm">↳ 878725351</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-rev">$5,997</td>
-      <td class="col-num">$5,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ VSL Leads campaign</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 434673531</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1391,6 +1054,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 2060835501</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -1402,21 +1067,70 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ ManichatID</td>
+      <td class="col-name col-utm">↳ 364867177</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-rev">$13,997</td>
-      <td class="col-num">$13,997</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1134058316</td>
+      <td class="col-name col-utm">↳ 1123503975</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 2323425</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1132012317</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 464317626</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1430,6 +1144,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 1263465569</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -1441,21 +1157,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 899612743</td>
+      <td class="col-name col-utm">↳ VSL Leads campaign</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1132012317</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -1467,8 +1172,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 937206966</td>
+      <td class="col-name col-utm">↳ 864608302</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -1480,8 +1187,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 782555908</td>
+      <td class="col-name col-utm">↳ 1797852002</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1493,12 +1202,194 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 1821308313</td>
+      <td class="col-name col-utm">↳ 1131115695</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1581441184</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ registrant</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 462037290</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1288738401</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1643128170</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1138687472</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 755610065</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1598183425</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1947465093</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1586062008</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1272358525</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 45030398</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1508,6 +1399,8 @@
     <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 377031518</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -1519,21 +1412,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ 742275124</td>
+      <td class="col-name col-utm">↳ Best-Vending-Contract</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="instagram">
-      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 2/23/26 (Copy)</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -1545,8 +1427,235 @@
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1821308313</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 937206966</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 434673531</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 641801443</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 112242135</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1446589912</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 899612743</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1353490430</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1804266159</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 1134058316</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 782555908</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/16/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-rev">$9,000</td>
+      <td class="col-num">$9,000</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ wescale,EMAIL 3 - Wednesday - BaC Sequence - 2/23/26 (Copy)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-rev">$5,997</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ 119866372</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-rev">$5,997</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
+      <td class="col-name col-utm">↳ @utm_campaign</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct ">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pct ">—</td>
+      <td class="col-num">2</td>
+      <td class="col-pct ">—</td>
+      <td class="col-rev">$27,994</td>
+      <td class="col-num">$13,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="instagram">
       <td class="col-name col-utm">↳ 786812651</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -1561,50 +1670,58 @@
       <td class="col-name">
         <span class="chevron" id="chev-x">›</span>X
       </td>
-      <td class="col-num">12</td>
-      <td class="col-num">11</td>
-      <td class="col-pct good">91.7%</td>
+      <td class="col-num">10</td>
+      <td class="col-pace pace-on">10</td>
+      <td class="col-goal">100% (10)</td>
       <td class="col-num">9</td>
-      <td class="col-pct good">75.0%</td>
-      <td class="col-num">7</td>
-      <td class="col-pct good">58.3%</td>
-      <td class="col-rev">$57,879</td>
-      <td class="col-num">$8,268</td>
+      <td class="col-pct good">90.0%</td>
+      <td class="col-num">8</td>
+      <td class="col-pct good">80.0%</td>
+      <td class="col-num">6</td>
+      <td class="col-pct good">60.0%</td>
+      <td class="col-rev">$52,882</td>
+      <td class="col-num">$8,814</td>
     </tr>
 
     <tr class="utm-row" data-parent="x">
       <td class="col-name col-utm">↳ vp_setter</td>
-      <td class="col-num">6</td>
       <td class="col-num">5</td>
-      <td class="col-pct good">83.3%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">4</td>
-      <td class="col-pct mid">66.7%</td>
+      <td class="col-pct good">80.0%</td>
+      <td class="col-num">4</td>
+      <td class="col-pct good">80.0%</td>
       <td class="col-num">3</td>
-      <td class="col-pct good">50.0%</td>
+      <td class="col-pct good">60.0%</td>
       <td class="col-rev">$28,991</td>
       <td class="col-num">$9,664</td>
     </tr>
 
     <tr class="utm-row" data-parent="x">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">4</td>
-      <td class="col-num">4</td>
+      <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">3</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">4</td>
+      <td class="col-num">3</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
-      <td class="col-pct good">50.0%</td>
+      <td class="col-pct good">66.7%</td>
       <td class="col-rev">$13,994</td>
       <td class="col-num">$6,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="x">
-      <td class="col-name col-utm">↳ book_meeting</td>
+      <td class="col-name col-utm">↳ VSL Leads campaign</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1612,12 +1729,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="x">
-      <td class="col-name col-utm">↳ VSL Leads campaign</td>
+      <td class="col-name col-utm">↳ book_meeting</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1627,6 +1746,8 @@
     <tr class="utm-row" data-parent="x">
       <td class="col-name col-utm">↳ organic</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -1637,30 +1758,19 @@
       <td class="col-num">$9,897</td>
     </tr>
 
-    <tr class="utm-row" data-parent="x">
-      <td class="col-name col-utm">↳ apply_now</td>
-      <td class="col-num">—</td>
-      <td class="col-num">—</td>
-      <td class="col-pct ">—</td>
-      <td class="col-num">—</td>
-      <td class="col-pct ">—</td>
-      <td class="col-num">1</td>
-      <td class="col-pct ">—</td>
-      <td class="col-rev">$4,997</td>
-      <td class="col-num">$4,997</td>
-    </tr>
-
     <tr class="funnel-row" data-section="external" onclick="toggleUTM('linkedin')" data-fid="linkedin">
       <td class="col-name">
         <span class="chevron" id="chev-linkedin">›</span>Linkedin
       </td>
-      <td class="col-num">9</td>
-      <td class="col-num">7</td>
-      <td class="col-pct good">77.8%</td>
+      <td class="col-num">8</td>
+      <td class="col-pace pace-behind">8</td>
+      <td class="col-goal">80% (10)</td>
+      <td class="col-num">6</td>
+      <td class="col-pct good">75.0%</td>
       <td class="col-num">5</td>
-      <td class="col-pct mid">55.6%</td>
+      <td class="col-pct mid">62.5%</td>
       <td class="col-num">2</td>
-      <td class="col-pct good">22.2%</td>
+      <td class="col-pct good">25.0%</td>
       <td class="col-rev">$19,994</td>
       <td class="col-num">$9,997</td>
     </tr>
@@ -1668,6 +1778,8 @@
     <tr class="utm-row" data-parent="linkedin">
       <td class="col-name col-utm">↳ vp_setter</td>
       <td class="col-num">7</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">5</td>
       <td class="col-pct good">71.4%</td>
       <td class="col-num">5</td>
@@ -1681,6 +1793,8 @@
     <tr class="utm-row" data-parent="linkedin">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -1691,11 +1805,30 @@
       <td class="col-num">—</td>
     </tr>
 
-    <tr class="utm-row" data-parent="linkedin">
-      <td class="col-name col-utm">↳ apply-to-book</td>
+    <tr class="funnel-row funnel-row-excluded" onclick="toggleUTM('ltf___quiz_funnel')" data-fid="ltf___quiz_funnel">
+      <td class="col-name">
+        <span class="chevron" id="chev-ltf___quiz_funnel">›</span>LTF - Quiz Funnel *
+      </td>
       <td class="col-num">1</td>
+      <td class="col-pace pace-muted">1</td>
+      <td class="col-goal">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="ltf___quiz_funnel">
+      <td class="col-name col-utm">↳ wescale</td>
       <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -1705,7 +1838,7 @@
     </tr>
 
     <tr class="section-header-row" onclick="toggleSection('in_house')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-in_house">›</span>FUNNEL BREAKDOWN — IN-HOUSE
       </td>
     </tr>
@@ -1714,13 +1847,15 @@
       <td class="col-name">
         <span class="chevron" id="chev-youtube">›</span>YouTube
       </td>
-      <td class="col-num">133</td>
-      <td class="col-num">97</td>
-      <td class="col-pct good">72.9%</td>
-      <td class="col-num">78</td>
+      <td class="col-num">128</td>
+      <td class="col-pace pace-behind">128</td>
+      <td class="col-goal">97% (132)</td>
+      <td class="col-num">94</td>
+      <td class="col-pct good">73.4%</td>
+      <td class="col-num">75</td>
       <td class="col-pct mid">58.6%</td>
       <td class="col-num">21</td>
-      <td class="col-pct good">15.8%</td>
+      <td class="col-pct good">16.4%</td>
       <td class="col-rev">$161,937</td>
       <td class="col-num">$7,711</td>
     </tr>
@@ -1728,6 +1863,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ lc</td>
       <td class="col-num">23</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">19</td>
       <td class="col-pct good">82.6%</td>
       <td class="col-num">17</td>
@@ -1741,6 +1878,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">11</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">8</td>
       <td class="col-pct good">72.7%</td>
       <td class="col-num">7</td>
@@ -1754,8 +1893,10 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ everything-you-need-to-start</td>
       <td class="col-num">10</td>
-      <td class="col-num">8</td>
-      <td class="col-pct good">80.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">7</td>
+      <td class="col-pct good">70.0%</td>
       <td class="col-num">5</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">3</td>
@@ -1767,6 +1908,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ dont-start-vending</td>
       <td class="col-num">8</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">6</td>
       <td class="col-pct good">75.0%</td>
       <td class="col-num">4</td>
@@ -1780,6 +1923,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ first-vending-machine</td>
       <td class="col-num">6</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">4</td>
       <td class="col-pct mid">66.7%</td>
       <td class="col-num">3</td>
@@ -1791,21 +1936,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ dont-start-a-vending-machine-business-until-you-watch-this</td>
-      <td class="col-num">5</td>
-      <td class="col-num">3</td>
-      <td class="col-pct mid">60.0%</td>
-      <td class="col-num">3</td>
-      <td class="col-pct mid">60.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">40.0%</td>
-      <td class="col-rev">$11,994</td>
-      <td class="col-num">$5,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ Best-Vending-Contract</td>
       <td class="col-num">5</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
       <td class="col-pct mid">60.0%</td>
       <td class="col-num">3</td>
@@ -1819,6 +1953,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ 8k-month-location</td>
       <td class="col-num">4</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct bad">25.0%</td>
       <td class="col-num">—</td>
@@ -1830,8 +1966,55 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ dont-start-a-vending-machine-business-until-you-watch-this</td>
+      <td class="col-num">4</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">50.0%</td>
+      <td class="col-rev">$11,994</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ how-to-start-a-vending-machine-business-step-by-step-with-0</td>
+      <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">66.7%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ start-vending-2025</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">66.7%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">66.7%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ start-vending-business</td>
+      <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct mid">66.7%</td>
       <td class="col-num">2</td>
@@ -1845,6 +2028,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ home</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
@@ -1856,64 +2041,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ start-vending-business</td>
-      <td class="col-num">3</td>
-      <td class="col-num">2</td>
-      <td class="col-pct mid">66.7%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct mid">66.7%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ 10-mistakes-vending</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct mid">66.7%</td>
       <td class="col-num">2</td>
       <td class="col-pct mid">66.7%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ wescale</td>
-      <td class="col-num">3</td>
-      <td class="col-num">1</td>
-      <td class="col-pct bad">33.3%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct bad">33.3%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ how-to-start-a-vending-machine-business-step-by-step-with-0</td>
-      <td class="col-num">3</td>
-      <td class="col-num">2</td>
-      <td class="col-pct mid">66.7%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ replace-salary</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1923,49 +2058,12 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ overlooked-10k-business</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ 3k-5k-locations</td>
-      <td class="col-num">2</td>
-      <td class="col-num">1</td>
-      <td class="col-pct mid">50.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct mid">50.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">50.0%</td>
-      <td class="col-rev">$5,997</td>
-      <td class="col-num">$5,997</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ 6-locations-earnings</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct mid">50.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ apply-to-book</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -1975,6 +2073,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ If you have 10000 saved Watch this video</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
@@ -1986,34 +2086,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ How To Replace Your Full Time Salary With Vending Full Guide</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ how-to-buy-vending-machines-online-for-cheap-best-methods</td>
-      <td class="col-num">2</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">2</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ How She Turned One Vending Location Into 25KMonth</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
@@ -2025,12 +2101,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ Buy-Machines-0-Downhttps://</td>
+      <td class="col-name col-utm">↳ replace-salary</td>
       <td class="col-num">2</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2040,6 +2118,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ ranking-every-machine</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
@@ -2051,37 +2131,13 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ best-contract-vending</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
+      <td class="col-name col-utm">↳ How To Replace Your Full Time Salary With Vending Full Guide</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ book_meeting</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ shouldnt-start-vending</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
+      <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
@@ -2090,10 +2146,27 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ illegal-vending-placement</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
+      <td class="col-name col-utm">↳ 6-locations-earnings</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ Buy-Machines-0-Downhttps://</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2103,10 +2176,27 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ 50k-1-year</td>
+      <td class="col-name col-utm">↳ 3k-5k-locations</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">50.0%</td>
+      <td class="col-rev">$5,997</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ wescale</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2116,8 +2206,25 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ mike_newsletter_email</td>
+      <td class="col-name col-utm">↳ how-to-buy-vending-machines-online-for-cheap-best-methods</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ Sandy-Testimonial</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2131,6 +2238,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ first-30-days</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2144,6 +2253,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ Overlooked-Business-Ai</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2155,10 +2266,12 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ The Best Strategy To Buy Your First Vending Machine In 2026</td>
+      <td class="col-name col-utm">↳ best-contract-vending</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2170,6 +2283,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ preventing-theft</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2181,12 +2296,104 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ Sandy-Testimonial</td>
+      <td class="col-name col-utm">↳ Madison-Testimonial</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ 10-huge-mistakes-new-owners-make</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ codie-reaction</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ mike_newsletter_email</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ shouldnt-start-vending</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ illegal-vending-placement</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ 50k-1-year</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2196,6 +2403,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ These Vending Machine Locations Are So Good They Feel Illegal</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2207,34 +2416,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ 10-huge-mistakes-new-owners-make</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ vsl</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ illegal-vending-placements</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2246,21 +2431,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ Madison-Testimonial</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ how-to-start-a-vending-machine-business-in-2025-free-course</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2272,21 +2446,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
-      <td class="col-name col-utm">↳ codie-reaction</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ negotiate-deals</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2300,6 +2463,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ How He Left Corporate Law to Build 7KMonth in Vending Revenue</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2313,6 +2478,8 @@
     <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ How Id Build A Vending Machine Business From 0</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2324,8 +2491,40 @@
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ vsl</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
+      <td class="col-name col-utm">↳ apply-to-book</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="youtube">
       <td class="col-name col-utm">↳ jesse-testimonial</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -2340,24 +2539,28 @@
       <td class="col-name">
         <span class="chevron" id="chev-meta_ads">›</span>Meta Ads
       </td>
-      <td class="col-num">24</td>
-      <td class="col-num">15</td>
-      <td class="col-pct mid">62.5%</td>
-      <td class="col-num">14</td>
-      <td class="col-pct mid">58.3%</td>
+      <td class="col-num">22</td>
+      <td class="col-pace pace-behind">22</td>
+      <td class="col-goal">50% (44)</td>
+      <td class="col-num">12</td>
+      <td class="col-pct mid">54.5%</td>
+      <td class="col-num">11</td>
+      <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
-      <td class="col-pct bad">4.2%</td>
+      <td class="col-pct bad">4.5%</td>
       <td class="col-rev">$12,997</td>
       <td class="col-num">$12,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="meta_ads">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">12</td>
+      <td class="col-num">11</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">9</td>
-      <td class="col-pct good">75.0%</td>
-      <td class="col-num">8</td>
-      <td class="col-pct mid">66.7%</td>
+      <td class="col-pct good">81.8%</td>
+      <td class="col-num">7</td>
+      <td class="col-pct mid">63.6%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2366,11 +2569,28 @@
 
     <tr class="utm-row" data-parent="meta_ads">
       <td class="col-name col-utm">↳ wescale</td>
-      <td class="col-num">5</td>
       <td class="col-num">4</td>
-      <td class="col-pct good">80.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">3</td>
-      <td class="col-pct mid">60.0%</td>
+      <td class="col-pct good">75.0%</td>
+      <td class="col-num">3</td>
+      <td class="col-pct good">75.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="meta_ads">
+      <td class="col-name col-utm">↳ book_meeting</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2380,6 +2600,8 @@
     <tr class="utm-row" data-parent="meta_ads">
       <td class="col-name col-utm">↳ VSL Leads campaign</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">1</td>
@@ -2391,12 +2613,29 @@
     </tr>
 
     <tr class="utm-row" data-parent="meta_ads">
-      <td class="col-name col-utm">↳ 1811355733</td>
+      <td class="col-name col-utm">↳ wescale,Ascension Email 3</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="meta_ads">
+      <td class="col-name col-utm">↳ 120243392595580338</td>
       <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2406,45 +2645,8 @@
     <tr class="utm-row" data-parent="meta_ads">
       <td class="col-name col-utm">↳ 6/23 Call Booking Campaign</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="meta_ads">
-      <td class="col-name col-utm">↳ Anthony Webinar Leads 9/2</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="meta_ads">
-      <td class="col-name col-utm">↳ wescale,Ascension Email 3</td>
-      <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="meta_ads">
-      <td class="col-name col-utm">↳ book_meeting</td>
-      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2458,6 +2660,8 @@
     <tr class="utm-row" data-parent="meta_ads">
       <td class="col-name col-utm">↳ 321417542</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -2472,11 +2676,13 @@
       <td class="col-name">
         <span class="chevron" id="chev-vsl">›</span>VSL
       </td>
-      <td class="col-num">58</td>
-      <td class="col-num">12</td>
-      <td class="col-pct bad">20.7%</td>
+      <td class="col-num">59</td>
+      <td class="col-pace pace-behind">59</td>
+      <td class="col-goal">54% (110)</td>
+      <td class="col-num">13</td>
+      <td class="col-pct bad">22.0%</td>
       <td class="col-num">7</td>
-      <td class="col-pct bad">12.1%</td>
+      <td class="col-pct bad">11.9%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2485,24 +2691,13 @@
 
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ VSL Leads campaign</td>
-      <td class="col-num">48</td>
-      <td class="col-num">8</td>
-      <td class="col-pct bad">16.7%</td>
+      <td class="col-num">50</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">9</td>
+      <td class="col-pct bad">18.0%</td>
       <td class="col-num">7</td>
-      <td class="col-pct bad">14.6%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="vsl">
-      <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">2</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-pct bad">14.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2512,6 +2707,23 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ VSL|| ENTREPRENEUR - Re-targeting|| 14th mar, 2026 - New  landing page</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="vsl">
+      <td class="col-name col-utm">↳ VSL  || Family Business - Re-targeting|| 14th mar, 2026(New)</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2525,6 +2737,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ VSL|| ENTREPRENEUR - Re-targeting|| 14th mar, 2026 - New</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2538,6 +2752,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ VSL  || Family Business - Re-targeting|| 14th mar, 2026 New Landing page</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2551,6 +2767,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ VSL || BLUE COLLAR W2 - New ||14th march 2026</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2562,10 +2780,12 @@
     </tr>
 
     <tr class="utm-row" data-parent="vsl">
-      <td class="col-name col-utm">↳ VSL  || Family Business - Re-targeting|| 14th mar, 2026(New)</td>
+      <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2577,6 +2797,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ vp_setter</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2590,6 +2812,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ apr7_signup</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2603,6 +2827,8 @@
     <tr class="utm-row" data-parent="vsl">
       <td class="col-name col-utm">↳ vsl</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2617,26 +2843,30 @@
       <td class="col-name">
         <span class="chevron" id="chev-website">›</span>Website
       </td>
-      <td class="col-num">90</td>
+      <td class="col-num">93</td>
+      <td class="col-pace pace-behind">93</td>
+      <td class="col-goal">93% (100)</td>
       <td class="col-num">72</td>
-      <td class="col-pct good">80.0%</td>
+      <td class="col-pct good">77.4%</td>
       <td class="col-num">61</td>
-      <td class="col-pct mid">67.8%</td>
+      <td class="col-pct mid">65.6%</td>
       <td class="col-num">18</td>
-      <td class="col-pct good">20.0%</td>
+      <td class="col-pct good">19.4%</td>
       <td class="col-rev">$155,249</td>
       <td class="col-num">$8,625</td>
     </tr>
 
     <tr class="utm-row" data-parent="website">
       <td class="col-name col-utm">↳ apply-to-book</td>
-      <td class="col-num">75</td>
+      <td class="col-num">78</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">61</td>
-      <td class="col-pct good">81.3%</td>
+      <td class="col-pct good">78.2%</td>
       <td class="col-num">53</td>
-      <td class="col-pct good">70.7%</td>
+      <td class="col-pct mid">67.9%</td>
       <td class="col-num">16</td>
-      <td class="col-pct good">21.3%</td>
+      <td class="col-pct good">20.5%</td>
       <td class="col-rev">$143,555</td>
       <td class="col-num">$8,972</td>
     </tr>
@@ -2644,6 +2874,8 @@
     <tr class="utm-row" data-parent="website">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">8</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">6</td>
       <td class="col-pct good">75.0%</td>
       <td class="col-num">6</td>
@@ -2657,6 +2889,8 @@
     <tr class="utm-row" data-parent="website">
       <td class="col-name col-utm">↳ home</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct mid">66.7%</td>
       <td class="col-num">—</td>
@@ -2668,12 +2902,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="website">
-      <td class="col-name col-utm">↳ apply_now</td>
+      <td class="col-name col-utm">↳ wescale,Email 1</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2681,12 +2917,14 @@
     </tr>
 
     <tr class="utm-row" data-parent="website">
-      <td class="col-name col-utm">↳ wescale,Email 1</td>
+      <td class="col-name col-utm">↳ apply_now</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2696,6 +2934,8 @@
     <tr class="utm-row" data-parent="website">
       <td class="col-name col-utm">↳ VSL|| ENTREPRENEUR - New || 14th march,2026</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2709,6 +2949,8 @@
     <tr class="utm-row" data-parent="website">
       <td class="col-name col-utm">↳ book_meeting</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2723,39 +2965,45 @@
       <td class="col-name">
         <span class="chevron" id="chev-internal_webinar">›</span>Internal Webinar
       </td>
-      <td class="col-num">102</td>
-      <td class="col-num">56</td>
-      <td class="col-pct mid">54.9%</td>
+      <td class="col-num">97</td>
+      <td class="col-pace pace-exceed">97</td>
+      <td class="col-goal">139% (70)</td>
+      <td class="col-num">54</td>
+      <td class="col-pct mid">55.7%</td>
       <td class="col-num">38</td>
-      <td class="col-pct bad">37.3%</td>
+      <td class="col-pct bad">39.2%</td>
       <td class="col-num">9</td>
-      <td class="col-pct mid">8.8%</td>
+      <td class="col-pct mid">9.3%</td>
       <td class="col-rev">$69,743</td>
       <td class="col-num">$7,749</td>
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ mar24_end_cta</td>
-      <td class="col-num">57</td>
-      <td class="col-num">34</td>
-      <td class="col-pct mid">59.6%</td>
+      <td class="col-num">54</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">33</td>
+      <td class="col-pct mid">61.1%</td>
       <td class="col-num">26</td>
-      <td class="col-pct bad">45.6%</td>
+      <td class="col-pct bad">48.1%</td>
       <td class="col-num">5</td>
-      <td class="col-pct mid">8.8%</td>
+      <td class="col-pct mid">9.3%</td>
       <td class="col-rev">$43,685</td>
       <td class="col-num">$8,737</td>
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ feb24_end_cta</td>
-      <td class="col-num">37</td>
-      <td class="col-num">17</td>
-      <td class="col-pct bad">45.9%</td>
+      <td class="col-num">34</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">15</td>
+      <td class="col-pct bad">44.1%</td>
       <td class="col-num">8</td>
-      <td class="col-pct bad">21.6%</td>
+      <td class="col-pct bad">23.5%</td>
       <td class="col-num">3</td>
-      <td class="col-pct mid">8.1%</td>
+      <td class="col-pct mid">8.8%</td>
       <td class="col-rev">$20,091</td>
       <td class="col-num">$6,697</td>
     </tr>
@@ -2763,6 +3011,8 @@
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">3</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct mid">66.7%</td>
       <td class="col-num">2</td>
@@ -2776,6 +3026,8 @@
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ will_graves_instagram</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2787,10 +3039,12 @@
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
-      <td class="col-name col-utm">↳ video</td>
+      <td class="col-name col-utm">↳ may19</td>
       <td class="col-num">1</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2800,8 +3054,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
-      <td class="col-name col-utm">↳ apply-now</td>
+      <td class="col-name col-utm">↳ may19_end_cta</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2815,6 +3071,8 @@
     <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ cta-button</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2826,8 +3084,25 @@
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
+      <td class="col-name col-utm">↳ apply-now</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="internal_webinar">
       <td class="col-name col-utm">↳ feb3_end_cta</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
@@ -2842,11 +3117,13 @@
       <td class="col-name">
         <span class="chevron" id="chev-mike_newsletter">›</span>Mike Newsletter
       </td>
-      <td class="col-num">6</td>
-      <td class="col-num">4</td>
-      <td class="col-pct mid">66.7%</td>
       <td class="col-num">5</td>
-      <td class="col-pct good">83.3%</td>
+      <td class="col-pace pace-behind">5</td>
+      <td class="col-goal">50% (10)</td>
+      <td class="col-num">3</td>
+      <td class="col-pct mid">60.0%</td>
+      <td class="col-num">4</td>
+      <td class="col-pct good">80.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2855,11 +3132,13 @@
 
     <tr class="utm-row" data-parent="mike_newsletter">
       <td class="col-name col-utm">↳ mike_newsletter_email</td>
-      <td class="col-num">6</td>
-      <td class="col-num">4</td>
-      <td class="col-pct mid">66.7%</td>
       <td class="col-num">5</td>
-      <td class="col-pct good">83.3%</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">3</td>
+      <td class="col-pct mid">60.0%</td>
+      <td class="col-num">4</td>
+      <td class="col-pct good">80.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2871,6 +3150,8 @@
         <span class="chevron" id="chev-wwws">›</span>WWWS
       </td>
       <td class="col-num">2</td>
+      <td class="col-pace pace-exceed">2</td>
+      <td class="col-goal">200% (1)</td>
       <td class="col-num">1</td>
       <td class="col-pct mid">50.0%</td>
       <td class="col-num">1</td>
@@ -2884,6 +3165,8 @@
     <tr class="utm-row" data-parent="wwws">
       <td class="col-name col-utm">↳ wwws_ditch_wall_street_masterclass</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2895,8 +3178,10 @@
     </tr>
 
     <tr class="utm-row" data-parent="wwws">
-      <td class="col-name col-utm">↳ mike_newsletter_email</td>
+      <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2912,23 +3197,27 @@
         <span class="chevron" id="chev-reactivation_email">›</span>Reactivation Email
       </td>
       <td class="col-num">19</td>
+      <td class="col-pace pace-muted">19</td>
+      <td class="col-goal">—</td>
       <td class="col-num">16</td>
       <td class="col-pct good">84.2%</td>
-      <td class="col-num">9</td>
-      <td class="col-pct bad">47.4%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct bad">5.3%</td>
-      <td class="col-rev">$5,997</td>
-      <td class="col-num">$5,997</td>
+      <td class="col-num">8</td>
+      <td class="col-pct bad">42.1%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">10.5%</td>
+      <td class="col-rev">$10,994</td>
+      <td class="col-num">$5,497</td>
     </tr>
 
     <tr class="utm-row" data-parent="reactivation_email">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">14</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">12</td>
       <td class="col-pct good">85.7%</td>
-      <td class="col-num">6</td>
-      <td class="col-pct bad">42.9%</td>
+      <td class="col-num">5</td>
+      <td class="col-pct bad">35.7%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2938,23 +3227,12 @@
     <tr class="utm-row" data-parent="reactivation_email">
       <td class="col-name col-utm">↳ vp_setter</td>
       <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">2</td>
       <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
-    </tr>
-
-    <tr class="utm-row" data-parent="reactivation_email">
-      <td class="col-name col-utm">↳ wescale</td>
-      <td class="col-num">1</td>
-      <td class="col-num">1</td>
-      <td class="col-pct good">100.0%</td>
-      <td class="col-num">—</td>
-      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -2964,8 +3242,25 @@
     <tr class="utm-row" data-parent="reactivation_email">
       <td class="col-name col-utm">↳ reactivation</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="reactivation_email">
+      <td class="col-name col-utm">↳ wescale</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -2977,6 +3272,8 @@
     <tr class="utm-row" data-parent="reactivation_email">
       <td class="col-name col-utm">↳ wescale,EMAIL 2 - Tuesday - BaC Sequence - 3/9/26 (Copy)</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -2987,11 +3284,28 @@
       <td class="col-num">$5,997</td>
     </tr>
 
+    <tr class="utm-row" data-parent="reactivation_email">
+      <td class="col-name col-utm">↳ matt-dix</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct ">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pct ">—</td>
+      <td class="col-num">1</td>
+      <td class="col-pct ">—</td>
+      <td class="col-rev">$4,997</td>
+      <td class="col-num">$4,997</td>
+    </tr>
+
     <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('reactivation_scrapers')" data-fid="reactivation_scrapers">
       <td class="col-name">
         <span class="chevron" id="chev-reactivation_scrapers">›</span>Reactivation Scrapers
       </td>
       <td class="col-num">1</td>
+      <td class="col-pace pace-muted">1</td>
+      <td class="col-goal">—</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -3005,6 +3319,8 @@
     <tr class="utm-row" data-parent="reactivation_scrapers">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -3020,6 +3336,8 @@
         <span class="chevron" id="chev-referred">›</span>Referred
       </td>
       <td class="col-num">—</td>
+      <td class="col-pace pace-muted">—</td>
+      <td class="col-goal">—</td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -3033,6 +3351,8 @@
     <tr class="utm-row" data-parent="referred">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -3044,7 +3364,7 @@
     </tr>
 
     <tr class="section-header-row" onclick="toggleSection('uncategorized')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-uncategorized">›</span>FUNNEL BREAKDOWN — UNCATEGORIZED
       </td>
     </tr>
@@ -3054,6 +3374,8 @@
         <span class="chevron" id="chev-unknown__needs_review_">›</span>Unknown (Needs Review)
       </td>
       <td class="col-num">31</td>
+      <td class="col-pace pace-muted">31</td>
+      <td class="col-goal">—</td>
       <td class="col-num">20</td>
       <td class="col-pct mid">64.5%</td>
       <td class="col-num">13</td>
@@ -3066,11 +3388,28 @@
 
     <tr class="utm-row" data-parent="unknown__needs_review_">
       <td class="col-name col-utm">↳ Unattributed</td>
-      <td class="col-num">31</td>
-      <td class="col-num">20</td>
-      <td class="col-pct mid">64.5%</td>
-      <td class="col-num">13</td>
-      <td class="col-pct bad">41.9%</td>
+      <td class="col-num">30</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">19</td>
+      <td class="col-pct mid">63.3%</td>
+      <td class="col-num">12</td>
+      <td class="col-pct bad">40.0%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
+      <td class="col-rev">$0</td>
+      <td class="col-num">—</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="unknown__needs_review_">
+      <td class="col-name col-utm">↳ 886788922</td>
+      <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -3082,10 +3421,12 @@
         <span class="chevron" id="chev-no_attribution">›</span>No Attribution
       </td>
       <td class="col-num">9</td>
+      <td class="col-pace pace-muted">9</td>
+      <td class="col-goal">—</td>
       <td class="col-num">6</td>
       <td class="col-pct mid">66.7%</td>
-      <td class="col-num">5</td>
-      <td class="col-pct mid">55.6%</td>
+      <td class="col-num">4</td>
+      <td class="col-pct bad">44.4%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -3095,10 +3436,12 @@
     <tr class="utm-row" data-parent="no_attribution">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">8</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">6</td>
       <td class="col-pct good">75.0%</td>
-      <td class="col-num">5</td>
-      <td class="col-pct mid">62.5%</td>
+      <td class="col-num">4</td>
+      <td class="col-pct mid">50.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -3108,6 +3451,8 @@
     <tr class="utm-row" data-parent="no_attribution">
       <td class="col-name col-utm">↳ wescale,Ascension Email 6</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -3119,7 +3464,7 @@
     </tr>
 
     <tr class="section-header-row" onclick="toggleSection('other')">
-      <td colspan="10">
+      <td colspan="12">
         <span class="section-chevron open" id="secchev-other">›</span>FUNNEL BREAKDOWN — OTHER
       </td>
     </tr>
@@ -3129,6 +3474,8 @@
         <span class="chevron" id="chev-sales_reactivation">›</span>Sales Reactivation
       </td>
       <td class="col-num">1</td>
+      <td class="col-pace pace-muted">1</td>
+      <td class="col-goal">—</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -3142,6 +3489,8 @@
     <tr class="utm-row" data-parent="sales_reactivation">
       <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
@@ -3157,6 +3506,8 @@
         <span class="chevron" id="chev-webinar">›</span>Webinar
       </td>
       <td class="col-num">1</td>
+      <td class="col-pace pace-muted">1</td>
+      <td class="col-goal">—</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -3170,6 +3521,8 @@
     <tr class="utm-row" data-parent="webinar">
       <td class="col-name col-utm">↳ book_meeting</td>
       <td class="col-num">1</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
@@ -3183,6 +3536,8 @@
     <tr class="utm-row" data-parent="webinar">
       <td class="col-name col-utm">↳ lc</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -3196,6 +3551,8 @@
     <tr class="utm-row" data-parent="webinar">
       <td class="col-name col-utm">↳ aw9-2</td>
       <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
@@ -3208,13 +3565,15 @@
 
     <tr class="total-row">
       <td class="col-name">TOTAL</td>
-      <td class="col-num">881</td>
-      <td class="col-num">591</td>
-      <td class="col-pct mid">67.1%</td>
-      <td class="col-num">463</td>
-      <td class="col-pct mid">52.6%</td>
+      <td class="col-num">853</td>
+      <td class="col-pace">—</td>
+      <td class="col-goal">—</td>
+      <td class="col-num">566</td>
+      <td class="col-pct mid">66.4%</td>
+      <td class="col-num">442</td>
+      <td class="col-pct mid">51.8%</td>
       <td class="col-num">114</td>
-      <td class="col-pct mid">12.9%</td>
+      <td class="col-pct mid">13.4%</td>
       <td class="col-rev">$900,549</td>
       <td class="col-num">$7,900</td>
     </tr>
@@ -3223,6 +3582,64 @@
 </div>
 
 <script>
+  // ── Dynamic nav picker — fetches archives/nav.json so pickers are always
+  //    current even on frozen archive pages generated weeks ago ──────────────
+  (async function() {
+    const BASE = '/mtd-funnel-dashboard';
+    try {
+      const r = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
+      if (!r.ok) return;
+      const nav = await r.json();
+      const path = window.location.pathname;
+
+      // Determine current page context
+      let curMonth = nav.live_month;
+      let curWeek  = null;
+      const mMatch = path.match(/archives[/]([0-9]4-[0-9]2)[.]html/);
+      const wMatch = path.match(/archives[/](week-[0-9-]+)[.]html/);
+      const wCur   = path.includes('week-current.html');
+
+      if (mMatch)      { curMonth = mMatch[1]; }
+      else if (wMatch) { curWeek = wMatch[1]; curMonth = wMatch[1].replace('week-','').substring(0,7); }
+      else if (wCur)   { curWeek = 'week-current'; curMonth = nav.live_month; }
+
+      // Rebuild month picker
+      const mSel = document.querySelector('.month-picker select');
+      if (mSel) {
+        mSel.innerHTML = nav.months.map(m => {
+          const href = m.is_live ? BASE+'/index.html' : BASE+'/archives/'+m.key+'.html';
+          return `<option value="${href}" ${m.key===curMonth?'selected':''}>${m.label}</option>`;
+        }).join('');
+        mSel.onchange = function(){ window.location.href = this.value; };
+      }
+
+      // Rebuild week picker
+      const wSel = document.querySelector('.week-picker select');
+      if (wSel) {
+        const weeks = nav.weeks[curMonth] || [];
+        const isLive = curMonth === nav.live_month;
+        const fullHref = isLive ? BASE+'/index.html' : BASE+'/archives/'+curMonth+'.html';
+        const opts = [`<option value="${fullHref}" ${!curWeek?'selected':''}>Full Month</option>`];
+        weeks.forEach(w => {
+          const href = BASE+'/archives/'+w.key+'.html';
+          opts.push(`<option value="${href}" ${w.key===curWeek?'selected':''}>${w.label}</option>`);
+        });
+        wSel.innerHTML = opts.join('');
+        wSel.onchange = function(){ window.location.href = this.value; };
+
+        // Hide week picker for months with no weekly archives
+        if (weeks.length === 0) {
+          const wp = document.querySelector('.week-picker');
+          const div = document.querySelector('.picker-divider');
+          if (wp)  wp.style.display  = 'none';
+          if (div) div.style.display = 'none';
+        }
+      }
+    } catch(e) {
+      // Silently fail — baked-in picker remains visible as fallback
+    }
+  })();
+
   function toggleUTM(fid) {
     const utmRows = document.querySelectorAll(`.utm-row[data-parent="${fid}"]`);
     const chevron = document.getElementById("chev-" + fid);
@@ -3252,6 +3669,19 @@
     chevron.classList.toggle("open", !isOpen);
   }
 </script>
+
+<div style="padding: 24px 36px 32px; border-top: 1px solid var(--border); margin-top: 8px;">
+  <p style="font-size: 11px; color: var(--muted); line-height: 1.7; max-width: 640px;">
+    <strong style="color: var(--muted2);">Projected</strong> — End-of-month estimate based on current daily booking pace:
+    <em>(Booked ÷ Days Elapsed) × Days in Month</em>. Color reflects projected vs goal.
+    &nbsp;&nbsp;<strong style="color: var(--muted2);">*</strong> — Funnel excluded from top-line totals and KPI tiles.
+    <span style="color: var(--green); font-weight:600;">Green</span> = exceeding pace &nbsp;·&nbsp;
+    <span style="color: #ca8a04; font-weight:600;">Yellow</span> = on pace &nbsp;·&nbsp;
+    <span style="color: var(--red); font-weight:600;">Red</span> = behind pace.
+    Funnels without a goal show —.
+    Goals are updated monthly in <code style="font-size:10.5px; background:var(--surface2); padding:1px 4px; border-radius:3px;">goals.json</code>.
+  </p>
+</div>
 
 </body>
 </html>
