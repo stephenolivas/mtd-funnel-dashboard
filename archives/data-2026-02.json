@@ -1,0 +1,246 @@
+{
+  "month_key": "2026-02",
+  "month_label": "February 2026",
+  "grand": {
+    "booked": 763,
+    "showed": 517,
+    "qualified": 428,
+    "closed": 117,
+    "revenue": 902855.3
+  },
+  "groups": {
+    "EXTERNAL": {
+      "booked": 431,
+      "showed": 301,
+      "qualified": 246,
+      "closed": 65,
+      "revenue": 491605.3
+    },
+    "IN-HOUSE": {
+      "booked": 254,
+      "showed": 173,
+      "qualified": 149,
+      "closed": 46,
+      "revenue": 353065.0
+    },
+    "UNCATEGORIZED": {
+      "booked": 69,
+      "showed": 37,
+      "qualified": 27,
+      "closed": 2,
+      "revenue": 22994.0
+    }
+  },
+  "funnels": {
+    "Instagram": {
+      "booked": 198,
+      "showed": 140,
+      "show_pct": 70.7,
+      "qualified": 112,
+      "qual_pct": 56.6,
+      "closed": 33,
+      "cw_pct": 16.7,
+      "revenue": 231701.3
+    },
+    "Unknown (Needs Review)": {
+      "booked": 34,
+      "showed": 17,
+      "show_pct": 50.0,
+      "qualified": 14,
+      "qual_pct": 41.2,
+      "closed": 1,
+      "cw_pct": 2.9,
+      "revenue": 13997.0
+    },
+    "YouTube": {
+      "booked": 83,
+      "showed": 59,
+      "show_pct": 71.1,
+      "qualified": 48,
+      "qual_pct": 57.8,
+      "closed": 19,
+      "cw_pct": 22.9,
+      "revenue": 134946.0
+    },
+    "No Attribution": {
+      "booked": 35,
+      "showed": 20,
+      "show_pct": 57.1,
+      "qualified": 13,
+      "qual_pct": 37.1,
+      "closed": 1,
+      "cw_pct": 2.9,
+      "revenue": 8997.0
+    },
+    "Linkedin": {
+      "booked": 18,
+      "showed": 15,
+      "show_pct": 83.3,
+      "qualified": 13,
+      "qual_pct": 72.2,
+      "closed": 2,
+      "cw_pct": 11.1,
+      "revenue": 11994.0
+    },
+    "X": {
+      "booked": 49,
+      "showed": 41,
+      "show_pct": 83.7,
+      "qualified": 42,
+      "qual_pct": 85.7,
+      "closed": 6,
+      "cw_pct": 12.2,
+      "revenue": 52982.0
+    },
+    "Website": {
+      "booked": 114,
+      "showed": 78,
+      "show_pct": 68.4,
+      "qualified": 72,
+      "qual_pct": 63.2,
+      "closed": 19,
+      "cw_pct": 16.7,
+      "revenue": 146943.0
+    },
+    "Mike Newsletter": {
+      "booked": 4,
+      "showed": 3,
+      "show_pct": 75.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "WWWS": {
+      "booked": 4,
+      "showed": 2,
+      "show_pct": 50.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 13997.0
+    },
+    "Side Hustle Nation": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 166,
+      "showed": 105,
+      "show_pct": 63.3,
+      "qualified": 79,
+      "qual_pct": 47.6,
+      "closed": 24,
+      "cw_pct": 14.5,
+      "revenue": 194928.0
+    },
+    "Internal Webinar": {
+      "booked": 32,
+      "showed": 22,
+      "show_pct": 68.8,
+      "qualified": 16,
+      "qual_pct": 50.0,
+      "closed": 7,
+      "cw_pct": 21.9,
+      "revenue": 57179.0
+    },
+    "Meta Ads": {
+      "booked": 15,
+      "showed": 8,
+      "show_pct": 53.3,
+      "qualified": 6,
+      "qual_pct": 40.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Direct Traffic": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Sales Reactivation": {
+      "booked": 2,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 1,
+      "cw_pct": 50.0,
+      "revenue": 7200.0
+    },
+    "OLD Organic - Misc - Cam": {
+      "booked": 2,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Webinar": {
+      "booked": 3,
+      "showed": 1,
+      "show_pct": 33.3,
+      "qualified": 1,
+      "qual_pct": 33.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Q4 Misc Traffic Cam": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website - OG - Cam": {
+      "booked": 0,
+      "showed": 0,
+      "show_pct": 0,
+      "qualified": 0,
+      "qual_pct": 0,
+      "closed": 2,
+      "cw_pct": 0,
+      "revenue": 21994.0
+    },
+    "Podcast - Paid": {
+      "booked": 0,
+      "showed": 0,
+      "show_pct": 0,
+      "qualified": 0,
+      "qual_pct": 0,
+      "closed": 1,
+      "cw_pct": 0,
+      "revenue": 5997.0
+    }
+  }
+}
