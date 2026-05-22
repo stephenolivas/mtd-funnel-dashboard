@@ -234,8 +234,8 @@ function buildTable(months, allData) {
     monthHead += `<th colspan="5" style="${last ? '' : 'border-right:2px solid var(--border);'}">${m.label}</th>`;
   });
 
-  // Sub-header
-  let subHead = `<th class="col-funnel-sub"></th>`;
+  // Sub-header (no funnel cell — covered by rowspan=2 on the funnel header)
+  let subHead = ``;
   months.forEach((m, i) => {
     const last = i === months.length - 1;
     subHead += `
