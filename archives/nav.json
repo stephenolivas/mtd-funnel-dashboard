@@ -21,6 +21,11 @@
       "key": "2026-02",
       "label": "February 2026",
       "is_live": false
+    },
+    {
+      "key": "2026-01",
+      "label": "January 2026",
+      "is_live": false
     }
   ],
   "weeks": {
@@ -64,5 +69,5 @@
       }
     ]
   },
-  "updated_at": "2026-05-22T10:51:36"
+  "updated_at": "2026-05-22T11:08:03"
 }
