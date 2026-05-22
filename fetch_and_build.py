@@ -1105,14 +1105,17 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
       else if (wMatch) {{ curWeek = wMatch[1]; curMonth = wMatch[1].replace('week-','').substring(0,7); }}
       else if (wCur)   {{ curWeek = 'week-current'; curMonth = nav.live_month; }}
 
-      // Rebuild month picker
+      // Rebuild month picker — use disabled placeholder so clicking any month always fires onchange
       const mSel = document.querySelector('.month-picker select');
       if (mSel) {{
-        mSel.innerHTML = nav.months.map(m => {{
+        const curLabel = (nav.months.find(m => m.key === curMonth) || {{}}).label || 'Select month';
+        let mOpts = `<option value="" disabled selected>${{curLabel}}</option>`;
+        mOpts += nav.months.map(m => {{
           const href = m.is_live ? BASE+'/index.html' : BASE+'/archives/'+m.key+'.html';
-          return `<option value="${{href}}" ${{m.key===curMonth?'selected':''}}>${{m.label}}</option>`;
+          return `<option value="${{href}}">${{m.label}}</option>`;
         }}).join('');
-        mSel.onchange = function(){{ window.location.href = this.value; }};
+        mSel.innerHTML = mOpts;
+        mSel.onchange = function(){{ if (this.value) window.location.href = this.value; }};
       }}
 
       // Rebuild week picker
@@ -1127,7 +1130,12 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
           opts.push(`<option value="${{href}}" ${{w.key===curWeek?'selected':''}}>${{w.label}}</option>`);
         }});
         wSel.innerHTML = opts.join('');
-        wSel.onchange = function(){{ window.location.href = this.value; }};
+        // Add disabled placeholder so re-clicking current week always navigates
+        const curWeekLabel = wSel.querySelector('option[selected]')?.textContent || 'Select week';
+        wSel.insertAdjacentHTML('afterbegin', `<option value="" disabled selected>${{curWeekLabel}}</option>`);
+        // Remove the selected attr from real options so placeholder stays shown
+        wSel.querySelectorAll('option:not([disabled])').forEach(o => o.removeAttribute('selected'));
+        wSel.onchange = function(){{ if (this.value) window.location.href = this.value; }};
 
         // Hide week picker for months with no weekly archives
         if (weeks.length === 0) {{
