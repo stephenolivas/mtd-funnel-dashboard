@@ -42,6 +42,16 @@
       "cw_pct": 3.4,
       "revenue": 5997.0
     },
+    "Internal Webinar": {
+      "booked": 53,
+      "showed": 16,
+      "show_pct": 30.2,
+      "qualified": 7,
+      "qual_pct": 13.2,
+      "closed": 2,
+      "cw_pct": 3.8,
+      "revenue": 7197.0
+    },
     "Instagram": {
       "booked": 184,
       "showed": 119,
@@ -81,16 +91,6 @@
       "closed": 14,
       "cw_pct": 18.4,
       "revenue": 99958.0
-    },
-    "Internal Webinar": {
-      "booked": 53,
-      "showed": 16,
-      "show_pct": 30.2,
-      "qualified": 7,
-      "qual_pct": 13.2,
-      "closed": 2,
-      "cw_pct": 3.8,
-      "revenue": 7197.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
