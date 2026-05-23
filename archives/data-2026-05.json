@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "booked": 29,
+      "showed": 10,
+      "show_pct": 34.5,
+      "qualified": 10,
+      "qual_pct": 34.5,
+      "closed": 1,
+      "cw_pct": 3.4,
+      "revenue": 5997.0
+    },
     "Instagram": {
       "booked": 184,
       "showed": 119,
@@ -41,6 +51,16 @@
       "closed": 18,
       "cw_pct": 9.8,
       "revenue": 150449.0
+    },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Low Ticket Funnel": {
       "booked": 68,
@@ -61,16 +81,6 @@
       "closed": 1,
       "cw_pct": 6.7,
       "revenue": 5997.0
-    },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "YouTube": {
       "booked": 76,
@@ -111,16 +121,6 @@
       "closed": 2,
       "cw_pct": 3.8,
       "revenue": 7197.0
-    },
-    "Meta Ads": {
-      "booked": 29,
-      "showed": 10,
-      "show_pct": 34.5,
-      "qualified": 10,
-      "qual_pct": 34.5,
-      "closed": 1,
-      "cw_pct": 3.4,
-      "revenue": 5997.0
     },
     "Unknown (Needs Review)": {
       "booked": 8,
