@@ -42,6 +42,16 @@
       "cw_pct": 9.8,
       "revenue": 150449.0
     },
+    "Linkedin": {
+      "booked": 5,
+      "showed": 4,
+      "show_pct": 80.0,
+      "qualified": 3,
+      "qual_pct": 60.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -128,16 +138,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Linkedin": {
-      "booked": 5,
-      "showed": 4,
-      "show_pct": 80.0,
-      "qualified": 3,
-      "qual_pct": 60.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
