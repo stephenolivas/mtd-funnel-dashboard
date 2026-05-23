@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 80,
-      "showed": 48,
-      "show_pct": 60.0,
-      "qualified": 44,
-      "qual_pct": 55.0,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
-    },
     "Instagram": {
       "booked": 184,
       "showed": 119,
@@ -61,6 +51,16 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 48,
+      "show_pct": 60.0,
+      "qualified": 44,
+      "qual_pct": 55.0,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
     },
     "Linkedin": {
       "booked": 5,
