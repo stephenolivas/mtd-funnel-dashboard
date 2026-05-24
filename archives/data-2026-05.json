@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 184,
+      "showed": 119,
+      "show_pct": 64.7,
+      "qualified": 105,
+      "qual_pct": 57.1,
+      "closed": 18,
+      "cw_pct": 9.8,
+      "revenue": 150449.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 68,
+      "showed": 43,
+      "show_pct": 63.2,
+      "qualified": 31,
+      "qual_pct": 45.6,
+      "closed": 10,
+      "cw_pct": 14.7,
+      "revenue": 79970.0
+    },
     "Meta Ads": {
       "booked": 29,
       "showed": 10,
@@ -61,26 +81,6 @@
       "closed": 2,
       "cw_pct": 3.8,
       "revenue": 7197.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 68,
-      "showed": 43,
-      "show_pct": 63.2,
-      "qualified": 31,
-      "qual_pct": 45.6,
-      "closed": 10,
-      "cw_pct": 14.7,
-      "revenue": 79970.0
-    },
-    "Instagram": {
-      "booked": 184,
-      "showed": 119,
-      "show_pct": 64.7,
-      "qualified": 105,
-      "qual_pct": 57.1,
-      "closed": 18,
-      "cw_pct": 9.8,
-      "revenue": 150449.0
     },
     "YouTube": {
       "booked": 76,
