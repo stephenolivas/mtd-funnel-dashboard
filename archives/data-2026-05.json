@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "booked": 68,
+      "showed": 43,
+      "show_pct": 63.2,
+      "qualified": 31,
+      "qual_pct": 45.6,
+      "closed": 10,
+      "cw_pct": 14.7,
+      "revenue": 79970.0
+    },
     "Meta Ads": {
       "booked": 29,
       "showed": 10,
@@ -61,16 +71,6 @@
       "closed": 14,
       "cw_pct": 18.4,
       "revenue": 99958.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 68,
-      "showed": 43,
-      "show_pct": 63.2,
-      "qualified": 31,
-      "qual_pct": 45.6,
-      "closed": 10,
-      "cw_pct": 14.7,
-      "revenue": 79970.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
