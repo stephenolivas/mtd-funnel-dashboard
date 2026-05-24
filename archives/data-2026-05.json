@@ -32,14 +32,14 @@
     }
   },
   "funnels": {
-    "X": {
-      "booked": 16,
-      "showed": 11,
-      "show_pct": 68.8,
-      "qualified": 9,
-      "qual_pct": 56.2,
+    "Meta Ads": {
+      "booked": 30,
+      "showed": 10,
+      "show_pct": 33.3,
+      "qualified": 10,
+      "qual_pct": 33.3,
       "closed": 1,
-      "cw_pct": 6.2,
+      "cw_pct": 3.3,
       "revenue": 5997.0
     },
     "Website": {
@@ -51,6 +51,16 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
+    },
+    "X": {
+      "booked": 16,
+      "showed": 11,
+      "show_pct": 68.8,
+      "qualified": 9,
+      "qual_pct": 56.2,
+      "closed": 1,
+      "cw_pct": 6.2,
+      "revenue": 5997.0
     },
     "Low Ticket Funnel": {
       "booked": 69,
@@ -101,16 +111,6 @@
       "closed": 2,
       "cw_pct": 3.8,
       "revenue": 7197.0
-    },
-    "Meta Ads": {
-      "booked": 30,
-      "showed": 10,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 33.3,
-      "closed": 1,
-      "cw_pct": 3.3,
-      "revenue": 5997.0
     },
     "Linkedin": {
       "booked": 5,
