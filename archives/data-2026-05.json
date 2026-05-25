@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 532,
+    "booked": 540,
     "showed": 316,
     "qualified": 265,
     "closed": 53,
@@ -10,14 +10,14 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 274,
+      "booked": 276,
       "showed": 178,
       "qualified": 149,
       "closed": 29,
       "revenue": 236416.0
     },
     "IN-HOUSE": {
-      "booked": 250,
+      "booked": 256,
       "showed": 134,
       "qualified": 113,
       "closed": 24,
@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 186,
+      "showed": 119,
+      "show_pct": 64.0,
+      "qualified": 105,
+      "qual_pct": 56.5,
+      "closed": 18,
+      "cw_pct": 9.7,
+      "revenue": 150449.0
+    },
     "Meta Ads": {
       "booked": 30,
       "showed": 10,
@@ -73,43 +83,33 @@
       "revenue": 0.0
     },
     "YouTube": {
-      "booked": 76,
+      "booked": 80,
       "showed": 56,
-      "show_pct": 73.7,
+      "show_pct": 70.0,
       "qualified": 48,
-      "qual_pct": 63.2,
+      "qual_pct": 60.0,
       "closed": 14,
-      "cw_pct": 18.4,
+      "cw_pct": 17.5,
       "revenue": 99958.0
     },
     "Website": {
-      "booked": 80,
+      "booked": 81,
       "showed": 48,
-      "show_pct": 60.0,
+      "show_pct": 59.3,
       "qualified": 44,
-      "qual_pct": 55.0,
+      "qual_pct": 54.3,
       "closed": 7,
-      "cw_pct": 8.8,
+      "cw_pct": 8.6,
       "revenue": 52379.0
     },
-    "Instagram": {
-      "booked": 184,
-      "showed": 119,
-      "show_pct": 64.7,
-      "qualified": 105,
-      "qual_pct": 57.1,
-      "closed": 18,
-      "cw_pct": 9.8,
-      "revenue": 150449.0
-    },
     "Internal Webinar": {
-      "booked": 53,
+      "booked": 54,
       "showed": 16,
-      "show_pct": 30.2,
+      "show_pct": 29.6,
       "qualified": 7,
-      "qual_pct": 13.2,
+      "qual_pct": 13.0,
       "closed": 2,
-      "cw_pct": 3.8,
+      "cw_pct": 3.7,
       "revenue": 7197.0
     },
     "Linkedin": {
