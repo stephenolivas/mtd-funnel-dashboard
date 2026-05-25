@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "X": {
+      "booked": 16,
+      "showed": 11,
+      "show_pct": 68.8,
+      "qualified": 10,
+      "qual_pct": 62.5,
+      "closed": 1,
+      "cw_pct": 6.2,
+      "revenue": 5997.0
+    },
     "Website": {
       "booked": 80,
       "showed": 48,
@@ -71,26 +91,6 @@
       "closed": 1,
       "cw_pct": 3.3,
       "revenue": 5997.0
-    },
-    "X": {
-      "booked": 16,
-      "showed": 11,
-      "show_pct": 68.8,
-      "qualified": 10,
-      "qual_pct": 62.5,
-      "closed": 1,
-      "cw_pct": 6.2,
-      "revenue": 5997.0
-    },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "YouTube": {
       "booked": 76,
