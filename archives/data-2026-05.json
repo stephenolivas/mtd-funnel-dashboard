@@ -2,9 +2,9 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 543,
-    "showed": 317,
-    "qualified": 267,
+    "booked": 542,
+    "showed": 316,
+    "qualified": 266,
     "closed": 54,
     "revenue": 410944.0
   },
@@ -17,9 +17,9 @@
       "revenue": 236416.0
     },
     "IN-HOUSE": {
-      "booked": 257,
-      "showed": 134,
-      "qualified": 115,
+      "booked": 256,
+      "showed": 133,
+      "qualified": 114,
       "closed": 25,
       "revenue": 174528.0
     },
@@ -33,13 +33,13 @@
   },
   "funnels": {
     "YouTube": {
-      "booked": 82,
-      "showed": 57,
-      "show_pct": 69.5,
-      "qualified": 50,
-      "qual_pct": 61.0,
+      "booked": 81,
+      "showed": 56,
+      "show_pct": 69.1,
+      "qualified": 49,
+      "qual_pct": 60.5,
       "closed": 15,
-      "cw_pct": 18.3,
+      "cw_pct": 18.5,
       "revenue": 108955.0
     },
     "Instagram": {
