@@ -4,7 +4,7 @@
   "grand": {
     "booked": 532,
     "showed": 316,
-    "qualified": 264,
+    "qualified": 265,
     "closed": 53,
     "revenue": 401947.0
   },
@@ -12,7 +12,7 @@
     "EXTERNAL": {
       "booked": 274,
       "showed": 178,
-      "qualified": 148,
+      "qualified": 149,
       "closed": 29,
       "revenue": 236416.0
     },
@@ -56,8 +56,8 @@
       "booked": 16,
       "showed": 11,
       "show_pct": 68.8,
-      "qualified": 9,
-      "qual_pct": 56.2,
+      "qualified": 10,
+      "qual_pct": 62.5,
       "closed": 1,
       "cw_pct": 6.2,
       "revenue": 5997.0
