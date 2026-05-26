@@ -2,17 +2,17 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 562,
-    "showed": 318,
-    "qualified": 267,
+    "booked": 564,
+    "showed": 319,
+    "qualified": 268,
     "closed": 55,
     "revenue": 416941.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 282,
-      "showed": 178,
-      "qualified": 149,
+      "showed": 179,
+      "qualified": 150,
       "closed": 30,
       "revenue": 242413.0
     },
@@ -24,7 +24,7 @@
       "revenue": 174528.0
     },
     "UNCATEGORIZED": {
-      "booked": 9,
+      "booked": 11,
       "showed": 4,
       "qualified": 3,
       "closed": 0,
@@ -34,20 +34,30 @@
   "funnels": {
     "Instagram": {
       "booked": 188,
-      "showed": 119,
-      "show_pct": 63.3,
-      "qualified": 105,
-      "qual_pct": 55.9,
+      "showed": 120,
+      "show_pct": 63.8,
+      "qualified": 106,
+      "qual_pct": 56.4,
       "closed": 18,
       "cw_pct": 9.6,
       "revenue": 150449.0
     },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
+    "Unknown (Needs Review)": {
+      "booked": 9,
+      "showed": 2,
+      "show_pct": 22.2,
+      "qualified": 1,
+      "qual_pct": 11.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "booked": 6,
+      "showed": 2,
+      "show_pct": 33.3,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -61,6 +71,16 @@
       "closed": 7,
       "cw_pct": 8.5,
       "revenue": 52379.0
+    },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "No Attribution": {
       "booked": 2,
@@ -102,16 +122,6 @@
       "cw_pct": 15.5,
       "revenue": 85967.0
     },
-    "Reactivation Email": {
-      "booked": 6,
-      "showed": 2,
-      "show_pct": 33.3,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "YouTube": {
       "booked": 86,
       "showed": 57,
@@ -141,16 +151,6 @@
       "closed": 1,
       "cw_pct": 3.4,
       "revenue": 5997.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 7,
-      "showed": 2,
-      "show_pct": 28.6,
-      "qualified": 1,
-      "qual_pct": 14.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "WWWS": {
       "booked": 1,
