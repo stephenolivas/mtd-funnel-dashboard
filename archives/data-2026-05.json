@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 542,
+    "booked": 565,
     "showed": 316,
     "qualified": 266,
     "closed": 54,
@@ -10,21 +10,21 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 279,
+      "booked": 284,
       "showed": 179,
       "qualified": 149,
       "closed": 29,
       "revenue": 236416.0
     },
     "IN-HOUSE": {
-      "booked": 255,
+      "booked": 272,
       "showed": 133,
       "qualified": 114,
       "closed": 25,
       "revenue": 174528.0
     },
     "UNCATEGORIZED": {
-      "booked": 8,
+      "booked": 9,
       "showed": 4,
       "qualified": 3,
       "closed": 0,
@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 187,
-      "showed": 120,
-      "show_pct": 64.2,
-      "qualified": 105,
-      "qual_pct": 56.1,
-      "closed": 18,
-      "cw_pct": 9.6,
-      "revenue": 150449.0
-    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -52,55 +42,75 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Instagram": {
+      "booked": 189,
+      "showed": 120,
+      "show_pct": 63.5,
+      "qualified": 105,
+      "qual_pct": 55.6,
+      "closed": 18,
+      "cw_pct": 9.5,
+      "revenue": 150449.0
+    },
     "Low Ticket Funnel": {
-      "booked": 70,
+      "booked": 72,
       "showed": 44,
-      "show_pct": 62.9,
+      "show_pct": 61.1,
       "qualified": 31,
-      "qual_pct": 44.3,
+      "qual_pct": 43.1,
       "closed": 10,
-      "cw_pct": 14.3,
+      "cw_pct": 13.9,
       "revenue": 79970.0
     },
     "Internal Webinar": {
-      "booked": 53,
+      "booked": 58,
       "showed": 15,
-      "show_pct": 28.3,
+      "show_pct": 25.9,
       "qualified": 7,
-      "qual_pct": 13.2,
+      "qual_pct": 12.1,
       "closed": 2,
-      "cw_pct": 3.8,
+      "cw_pct": 3.4,
       "revenue": 7197.0
     },
     "Website": {
-      "booked": 81,
+      "booked": 82,
       "showed": 48,
-      "show_pct": 59.3,
+      "show_pct": 58.5,
       "qualified": 44,
-      "qual_pct": 54.3,
+      "qual_pct": 53.7,
       "closed": 7,
-      "cw_pct": 8.6,
+      "cw_pct": 8.5,
       "revenue": 52379.0
     },
     "X": {
-      "booked": 17,
+      "booked": 18,
       "showed": 11,
-      "show_pct": 64.7,
+      "show_pct": 61.1,
       "qualified": 10,
-      "qual_pct": 58.8,
+      "qual_pct": 55.6,
       "closed": 1,
-      "cw_pct": 5.9,
+      "cw_pct": 5.6,
       "revenue": 5997.0
     },
     "YouTube": {
-      "booked": 80,
+      "booked": 88,
       "showed": 56,
-      "show_pct": 70.0,
+      "show_pct": 63.6,
       "qualified": 49,
-      "qual_pct": 61.3,
+      "qual_pct": 55.7,
       "closed": 15,
-      "cw_pct": 18.8,
+      "cw_pct": 17.0,
       "revenue": 108955.0
+    },
+    "Reactivation Email": {
+      "booked": 5,
+      "showed": 1,
+      "show_pct": 20.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Meta Ads": {
       "booked": 30,
@@ -112,6 +122,16 @@
       "cw_pct": 3.3,
       "revenue": 5997.0
     },
+    "Unknown (Needs Review)": {
+      "booked": 9,
+      "showed": 4,
+      "show_pct": 44.4,
+      "qualified": 3,
+      "qual_pct": 33.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Linkedin": {
       "booked": 5,
       "showed": 4,
@@ -122,32 +142,12 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Unknown (Needs Review)": {
-      "booked": 8,
-      "showed": 4,
-      "show_pct": 50.0,
-      "qualified": 3,
-      "qual_pct": 37.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "WWWS": {
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 2,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
