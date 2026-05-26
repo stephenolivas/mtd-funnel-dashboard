@@ -3,23 +3,23 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 564,
-    "showed": 316,
-    "qualified": 266,
+    "showed": 317,
+    "qualified": 267,
     "closed": 54,
     "revenue": 410944.0
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 285,
+      "booked": 284,
       "showed": 179,
       "qualified": 149,
       "closed": 29,
       "revenue": 236416.0
     },
     "IN-HOUSE": {
-      "booked": 270,
-      "showed": 133,
-      "qualified": 114,
+      "booked": 271,
+      "showed": 134,
+      "qualified": 115,
       "closed": 25,
       "revenue": 174528.0
     },
@@ -32,25 +32,25 @@
     }
   },
   "funnels": {
+    "Website": {
+      "booked": 82,
+      "showed": 49,
+      "show_pct": 59.8,
+      "qualified": 45,
+      "qual_pct": 54.9,
+      "closed": 7,
+      "cw_pct": 8.5,
+      "revenue": 52379.0
+    },
     "Instagram": {
-      "booked": 190,
+      "booked": 189,
       "showed": 120,
-      "show_pct": 63.2,
+      "show_pct": 63.5,
       "qualified": 105,
-      "qual_pct": 55.3,
+      "qual_pct": 55.6,
       "closed": 18,
       "cw_pct": 9.5,
       "revenue": 150449.0
-    },
-    "Website": {
-      "booked": 81,
-      "showed": 48,
-      "show_pct": 59.3,
-      "qualified": 44,
-      "qual_pct": 54.3,
-      "closed": 7,
-      "cw_pct": 8.6,
-      "revenue": 52379.0
     },
     "Reactivation Email": {
       "booked": 5,
@@ -62,16 +62,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 87,
-      "showed": 56,
-      "show_pct": 64.4,
-      "qualified": 49,
-      "qual_pct": 56.3,
-      "closed": 15,
-      "cw_pct": 17.2,
-      "revenue": 108955.0
-    },
     "Low Ticket Funnel": {
       "booked": 72,
       "showed": 44,
@@ -81,6 +71,16 @@
       "closed": 10,
       "cw_pct": 13.9,
       "revenue": 79970.0
+    },
+    "YouTube": {
+      "booked": 87,
+      "showed": 56,
+      "show_pct": 64.4,
+      "qualified": 49,
+      "qual_pct": 56.3,
+      "closed": 15,
+      "cw_pct": 17.2,
+      "revenue": 108955.0
     },
     "X": {
       "booked": 18,
