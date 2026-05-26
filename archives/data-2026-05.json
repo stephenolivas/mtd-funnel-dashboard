@@ -32,15 +32,15 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 189,
-      "showed": 120,
-      "show_pct": 63.5,
-      "qualified": 105,
-      "qual_pct": 55.6,
-      "closed": 18,
-      "cw_pct": 9.5,
-      "revenue": 150449.0
+    "YouTube": {
+      "booked": 88,
+      "showed": 56,
+      "show_pct": 63.6,
+      "qualified": 49,
+      "qual_pct": 55.7,
+      "closed": 15,
+      "cw_pct": 17.0,
+      "revenue": 108955.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -51,6 +51,16 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 189,
+      "showed": 120,
+      "show_pct": 63.5,
+      "qualified": 105,
+      "qual_pct": 55.6,
+      "closed": 18,
+      "cw_pct": 9.5,
+      "revenue": 150449.0
     },
     "Low Ticket Funnel": {
       "booked": 72,
@@ -91,16 +101,6 @@
       "closed": 1,
       "cw_pct": 5.6,
       "revenue": 5997.0
-    },
-    "YouTube": {
-      "booked": 88,
-      "showed": 56,
-      "show_pct": 63.6,
-      "qualified": 49,
-      "qual_pct": 55.7,
-      "closed": 15,
-      "cw_pct": 17.0,
-      "revenue": 108955.0
     },
     "Reactivation Email": {
       "booked": 5,
