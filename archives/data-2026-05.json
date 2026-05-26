@@ -5,16 +5,16 @@
     "booked": 562,
     "showed": 321,
     "qualified": 270,
-    "closed": 55,
-    "revenue": 416941.0
+    "closed": 56,
+    "revenue": 430938.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 281,
       "showed": 179,
       "qualified": 150,
-      "closed": 30,
-      "revenue": 242413.0
+      "closed": 31,
+      "revenue": 256410.0
     },
     "IN-HOUSE": {
       "booked": 271,
@@ -42,16 +42,6 @@
       "cw_pct": 8.5,
       "revenue": 52379.0
     },
-    "YouTube": {
-      "booked": 86,
-      "showed": 59,
-      "show_pct": 68.6,
-      "qualified": 51,
-      "qual_pct": 59.3,
-      "closed": 15,
-      "cw_pct": 17.4,
-      "revenue": 108955.0
-    },
     "Instagram": {
       "booked": 187,
       "showed": 120,
@@ -61,6 +51,16 @@
       "closed": 18,
       "cw_pct": 9.6,
       "revenue": 150449.0
+    },
+    "YouTube": {
+      "booked": 86,
+      "showed": 59,
+      "show_pct": 68.6,
+      "qualified": 51,
+      "qual_pct": 59.3,
+      "closed": 15,
+      "cw_pct": 17.4,
+      "revenue": 108955.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -88,9 +88,9 @@
       "show_pct": 62.0,
       "qualified": 31,
       "qual_pct": 43.7,
-      "closed": 11,
-      "cw_pct": 15.5,
-      "revenue": 85967.0
+      "closed": 12,
+      "cw_pct": 16.9,
+      "revenue": 99964.0
     },
     "Linkedin": {
       "booked": 5,
