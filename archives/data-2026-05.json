@@ -32,15 +32,25 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 189,
-      "showed": 120,
-      "show_pct": 63.5,
-      "qualified": 105,
-      "qual_pct": 55.6,
-      "closed": 18,
-      "cw_pct": 9.5,
-      "revenue": 150449.0
+    "YouTube": {
+      "booked": 88,
+      "showed": 56,
+      "show_pct": 63.6,
+      "qualified": 49,
+      "qual_pct": 55.7,
+      "closed": 15,
+      "cw_pct": 17.0,
+      "revenue": 108955.0
+    },
+    "Internal Webinar": {
+      "booked": 58,
+      "showed": 15,
+      "show_pct": 25.9,
+      "qualified": 7,
+      "qual_pct": 12.1,
+      "closed": 2,
+      "cw_pct": 3.4,
+      "revenue": 7197.0
     },
     "Website": {
       "booked": 82,
@@ -52,26 +62,6 @@
       "cw_pct": 8.5,
       "revenue": 52379.0
     },
-    "YouTube": {
-      "booked": 88,
-      "showed": 56,
-      "show_pct": 63.6,
-      "qualified": 49,
-      "qual_pct": 55.7,
-      "closed": 15,
-      "cw_pct": 17.0,
-      "revenue": 108955.0
-    },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 72,
       "showed": 44,
@@ -82,15 +72,25 @@
       "cw_pct": 13.9,
       "revenue": 79970.0
     },
-    "Internal Webinar": {
-      "booked": 58,
-      "showed": 15,
-      "show_pct": 25.9,
-      "qualified": 7,
-      "qual_pct": 12.1,
-      "closed": 2,
-      "cw_pct": 3.4,
-      "revenue": 7197.0
+    "Instagram": {
+      "booked": 189,
+      "showed": 120,
+      "show_pct": 63.5,
+      "qualified": 105,
+      "qual_pct": 55.6,
+      "closed": 18,
+      "cw_pct": 9.5,
+      "revenue": 150449.0
+    },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "X": {
       "booked": 18,
