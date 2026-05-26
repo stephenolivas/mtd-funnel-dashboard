@@ -42,15 +42,15 @@
       "cw_pct": 3.8,
       "revenue": 7197.0
     },
-    "X": {
-      "booked": 17,
-      "showed": 11,
-      "show_pct": 64.7,
-      "qualified": 10,
-      "qual_pct": 58.8,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 5997.0
+    "Instagram": {
+      "booked": 187,
+      "showed": 120,
+      "show_pct": 64.2,
+      "qualified": 105,
+      "qual_pct": 56.1,
+      "closed": 18,
+      "cw_pct": 9.6,
+      "revenue": 150449.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -61,6 +61,16 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "X": {
+      "booked": 17,
+      "showed": 11,
+      "show_pct": 64.7,
+      "qualified": 10,
+      "qual_pct": 58.8,
+      "closed": 1,
+      "cw_pct": 5.9,
+      "revenue": 5997.0
     },
     "Website": {
       "booked": 81,
@@ -81,16 +91,6 @@
       "closed": 15,
       "cw_pct": 18.8,
       "revenue": 108955.0
-    },
-    "Instagram": {
-      "booked": 187,
-      "showed": 120,
-      "show_pct": 64.2,
-      "qualified": 105,
-      "qual_pct": 56.1,
-      "closed": 18,
-      "cw_pct": 9.6,
-      "revenue": 150449.0
     },
     "Low Ticket Funnel": {
       "booked": 70,
