@@ -2,15 +2,15 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 563,
-    "showed": 319,
-    "qualified": 268,
+    "booked": 562,
+    "showed": 320,
+    "qualified": 269,
     "closed": 55,
     "revenue": 416941.0
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 282,
+      "booked": 281,
       "showed": 179,
       "qualified": 150,
       "closed": 30,
@@ -18,8 +18,8 @@
     },
     "IN-HOUSE": {
       "booked": 271,
-      "showed": 136,
-      "qualified": 115,
+      "showed": 137,
+      "qualified": 116,
       "closed": 25,
       "revenue": 174528.0
     },
@@ -32,32 +32,12 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 188,
-      "showed": 120,
-      "show_pct": 63.8,
-      "qualified": 106,
-      "qual_pct": 56.4,
-      "closed": 18,
-      "cw_pct": 9.6,
-      "revenue": 150449.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 71,
-      "showed": 44,
-      "show_pct": 62.0,
-      "qualified": 31,
-      "qual_pct": 43.7,
-      "closed": 11,
-      "cw_pct": 15.5,
-      "revenue": 85967.0
-    },
     "YouTube": {
       "booked": 86,
-      "showed": 58,
-      "show_pct": 67.4,
-      "qualified": 50,
-      "qual_pct": 58.1,
+      "showed": 59,
+      "show_pct": 68.6,
+      "qualified": 51,
+      "qual_pct": 59.3,
       "closed": 15,
       "cw_pct": 17.4,
       "revenue": 108955.0
@@ -81,6 +61,26 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 187,
+      "showed": 120,
+      "show_pct": 64.2,
+      "qualified": 106,
+      "qual_pct": 56.7,
+      "closed": 18,
+      "cw_pct": 9.6,
+      "revenue": 150449.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 71,
+      "showed": 44,
+      "show_pct": 62.0,
+      "qualified": 31,
+      "qual_pct": 43.7,
+      "closed": 11,
+      "cw_pct": 15.5,
+      "revenue": 85967.0
     },
     "Linkedin": {
       "booked": 5,
