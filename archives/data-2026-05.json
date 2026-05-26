@@ -4,7 +4,7 @@
   "grand": {
     "booked": 561,
     "showed": 324,
-    "qualified": 270,
+    "qualified": 271,
     "closed": 57,
     "revenue": 436935.0
   },
@@ -12,19 +12,19 @@
     "EXTERNAL": {
       "booked": 282,
       "showed": 180,
-      "qualified": 151,
+      "qualified": 152,
       "closed": 32,
       "revenue": 262407.0
     },
     "IN-HOUSE": {
-      "booked": 269,
+      "booked": 270,
       "showed": 140,
       "qualified": 116,
       "closed": 25,
       "revenue": 174528.0
     },
     "UNCATEGORIZED": {
-      "booked": 10,
+      "booked": 9,
       "showed": 4,
       "qualified": 3,
       "closed": 0,
@@ -42,16 +42,6 @@
       "cw_pct": 9.6,
       "revenue": 150449.0
     },
-    "Internal Webinar": {
-      "booked": 59,
-      "showed": 17,
-      "show_pct": 28.8,
-      "qualified": 7,
-      "qual_pct": 11.9,
-      "closed": 2,
-      "cw_pct": 3.4,
-      "revenue": 7197.0
-    },
     "Website": {
       "booked": 81,
       "showed": 50,
@@ -62,6 +52,16 @@
       "cw_pct": 8.6,
       "revenue": 52379.0
     },
+    "X": {
+      "booked": 18,
+      "showed": 11,
+      "show_pct": 61.1,
+      "qualified": 11,
+      "qual_pct": 61.1,
+      "closed": 1,
+      "cw_pct": 5.6,
+      "revenue": 5997.0
+    },
     "Reactivation Email": {
       "booked": 5,
       "showed": 2,
@@ -71,6 +71,26 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "booked": 60,
+      "showed": 17,
+      "show_pct": 28.3,
+      "qualified": 7,
+      "qual_pct": 11.7,
+      "closed": 2,
+      "cw_pct": 3.3,
+      "revenue": 7197.0
+    },
+    "YouTube": {
+      "booked": 86,
+      "showed": 59,
+      "show_pct": 68.6,
+      "qualified": 51,
+      "qual_pct": 59.3,
+      "closed": 15,
+      "cw_pct": 17.4,
+      "revenue": 108955.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -92,26 +112,6 @@
       "cw_pct": 18.3,
       "revenue": 105961.0
     },
-    "X": {
-      "booked": 18,
-      "showed": 11,
-      "show_pct": 61.1,
-      "qualified": 10,
-      "qual_pct": 55.6,
-      "closed": 1,
-      "cw_pct": 5.6,
-      "revenue": 5997.0
-    },
-    "YouTube": {
-      "booked": 86,
-      "showed": 59,
-      "show_pct": 68.6,
-      "qualified": 51,
-      "qual_pct": 59.3,
-      "closed": 15,
-      "cw_pct": 17.4,
-      "revenue": 108955.0
-    },
     "Linkedin": {
       "booked": 5,
       "showed": 4,
@@ -123,11 +123,11 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "booked": 8,
+      "booked": 7,
       "showed": 2,
-      "show_pct": 25.0,
+      "show_pct": 28.6,
       "qualified": 1,
-      "qual_pct": 12.5,
+      "qual_pct": 14.3,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
