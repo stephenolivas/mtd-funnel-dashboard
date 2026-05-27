@@ -32,26 +32,6 @@
     }
   },
   "funnels": {
-    "WWWS": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 8,
-      "showed": 5,
-      "show_pct": 62.5,
-      "qualified": 2,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 82,
       "showed": 49,
@@ -62,15 +42,15 @@
       "cw_pct": 17.1,
       "revenue": 111958.0
     },
-    "YouTube": {
-      "booked": 90,
-      "showed": 60,
-      "show_pct": 66.7,
-      "qualified": 52,
-      "qual_pct": 57.8,
-      "closed": 15,
-      "cw_pct": 16.7,
-      "revenue": 108955.0
+    "Meta Ads": {
+      "booked": 31,
+      "showed": 10,
+      "show_pct": 32.3,
+      "qualified": 10,
+      "qual_pct": 32.3,
+      "closed": 1,
+      "cw_pct": 3.2,
+      "revenue": 5997.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -82,24 +62,14 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
-    },
-    "Meta Ads": {
-      "booked": 31,
-      "showed": 10,
-      "show_pct": 32.3,
-      "qualified": 10,
-      "qual_pct": 32.3,
+    "X": {
+      "booked": 18,
+      "showed": 13,
+      "show_pct": 72.2,
+      "qualified": 12,
+      "qual_pct": 66.7,
       "closed": 1,
-      "cw_pct": 3.2,
+      "cw_pct": 5.6,
       "revenue": 5997.0
     },
     "Instagram": {
@@ -122,15 +92,45 @@
       "cw_pct": 3.2,
       "revenue": 7197.0
     },
-    "X": {
-      "booked": 18,
-      "showed": 13,
-      "show_pct": 72.2,
-      "qualified": 12,
-      "qual_pct": 66.7,
-      "closed": 1,
-      "cw_pct": 5.6,
-      "revenue": 5997.0
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
+    "WWWS": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "booked": 8,
+      "showed": 5,
+      "show_pct": 62.5,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "booked": 90,
+      "showed": 60,
+      "show_pct": 66.7,
+      "qualified": 52,
+      "qual_pct": 57.8,
+      "closed": 15,
+      "cw_pct": 16.7,
+      "revenue": 108955.0
     },
     "VSL": {
       "booked": 7,
