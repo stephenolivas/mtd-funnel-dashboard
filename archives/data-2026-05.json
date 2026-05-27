@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 586,
+    "booked": 585,
     "showed": 329,
     "qualified": 275,
     "closed": 57,
@@ -17,7 +17,7 @@
       "revenue": 262407.0
     },
     "IN-HOUSE": {
-      "booked": 281,
+      "booked": 280,
       "showed": 141,
       "qualified": 118,
       "closed": 25,
@@ -41,6 +41,16 @@
       "closed": 13,
       "cw_pct": 16.2,
       "revenue": 105961.0
+    },
+    "Internal Webinar": {
+      "booked": 61,
+      "showed": 17,
+      "show_pct": 27.9,
+      "qualified": 8,
+      "qual_pct": 13.1,
+      "closed": 2,
+      "cw_pct": 3.3,
+      "revenue": 7197.0
     },
     "Instagram": {
       "booked": 192,
@@ -82,16 +92,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "booked": 61,
-      "showed": 17,
-      "show_pct": 27.9,
-      "qualified": 8,
-      "qual_pct": 13.1,
-      "closed": 2,
-      "cw_pct": 3.3,
-      "revenue": 7197.0
-    },
     "Meta Ads": {
       "booked": 30,
       "showed": 9,
@@ -103,11 +103,11 @@
       "revenue": 5997.0
     },
     "Reactivation Email": {
-      "booked": 9,
+      "booked": 8,
       "showed": 3,
-      "show_pct": 33.3,
+      "show_pct": 37.5,
       "qualified": 1,
-      "qual_pct": 11.1,
+      "qual_pct": 12.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
