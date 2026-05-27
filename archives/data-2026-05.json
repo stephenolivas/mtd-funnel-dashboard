@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "booked": 60,
+      "showed": 17,
+      "show_pct": 28.3,
+      "qualified": 8,
+      "qual_pct": 13.3,
+      "closed": 2,
+      "cw_pct": 3.3,
+      "revenue": 7197.0
+    },
+    "Reactivation Email": {
+      "booked": 5,
+      "showed": 3,
+      "show_pct": 60.0,
+      "qualified": 1,
+      "qual_pct": 20.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Low Ticket Funnel": {
       "booked": 72,
       "showed": 46,
@@ -51,26 +71,6 @@
       "closed": 18,
       "cw_pct": 9.6,
       "revenue": 150449.0
-    },
-    "Reactivation Email": {
-      "booked": 5,
-      "showed": 3,
-      "show_pct": 60.0,
-      "qualified": 1,
-      "qual_pct": 20.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "booked": 60,
-      "showed": 17,
-      "show_pct": 28.3,
-      "qualified": 8,
-      "qual_pct": 13.3,
-      "closed": 2,
-      "cw_pct": 3.3,
-      "revenue": 7197.0
     },
     "YouTube": {
       "booked": 86,
