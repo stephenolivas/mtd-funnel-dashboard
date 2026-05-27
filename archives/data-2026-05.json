@@ -3,7 +3,7 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 586,
-    "showed": 336,
+    "showed": 337,
     "qualified": 282,
     "closed": 58,
     "revenue": 442932.0
@@ -11,7 +11,7 @@
   "groups": {
     "EXTERNAL": {
       "booked": 296,
-      "showed": 187,
+      "showed": 188,
       "qualified": 158,
       "closed": 33,
       "revenue": 268404.0
@@ -32,20 +32,10 @@
     }
   },
   "funnels": {
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 81,
-      "showed": 47,
-      "show_pct": 58.0,
+      "showed": 48,
+      "show_pct": 59.3,
       "qualified": 34,
       "qual_pct": 42.0,
       "closed": 14,
@@ -61,6 +51,36 @@
       "closed": 18,
       "cw_pct": 9.4,
       "revenue": 150449.0
+    },
+    "Meta Ads": {
+      "booked": 31,
+      "showed": 10,
+      "show_pct": 32.3,
+      "qualified": 10,
+      "qual_pct": 32.3,
+      "closed": 1,
+      "cw_pct": 3.2,
+      "revenue": 5997.0
+    },
+    "Internal Webinar": {
+      "booked": 62,
+      "showed": 17,
+      "show_pct": 27.4,
+      "qualified": 8,
+      "qual_pct": 12.9,
+      "closed": 2,
+      "cw_pct": 3.2,
+      "revenue": 7197.0
+    },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Reactivation Email": {
       "booked": 8,
@@ -101,26 +121,6 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
-    },
-    "Internal Webinar": {
-      "booked": 62,
-      "showed": 17,
-      "show_pct": 27.4,
-      "qualified": 8,
-      "qual_pct": 12.9,
-      "closed": 2,
-      "cw_pct": 3.2,
-      "revenue": 7197.0
-    },
-    "Meta Ads": {
-      "booked": 31,
-      "showed": 10,
-      "show_pct": 32.3,
-      "qualified": 10,
-      "qual_pct": 32.3,
-      "closed": 1,
-      "cw_pct": 3.2,
-      "revenue": 5997.0
     },
     "WWWS": {
       "booked": 1,
