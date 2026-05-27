@@ -32,15 +32,15 @@
     }
   },
   "funnels": {
-    "Reactivation Email": {
-      "booked": 8,
-      "showed": 5,
-      "show_pct": 62.5,
-      "qualified": 2,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "Meta Ads": {
+      "booked": 31,
+      "showed": 10,
+      "show_pct": 32.3,
+      "qualified": 10,
+      "qual_pct": 32.3,
+      "closed": 1,
+      "cw_pct": 3.2,
+      "revenue": 5997.0
     },
     "YouTube": {
       "booked": 90,
@@ -62,16 +62,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "booked": 62,
-      "showed": 17,
-      "show_pct": 27.4,
-      "qualified": 8,
-      "qual_pct": 12.9,
-      "closed": 2,
-      "cw_pct": 3.2,
-      "revenue": 7197.0
-    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -92,16 +82,6 @@
       "cw_pct": 9.4,
       "revenue": 150449.0
     },
-    "Meta Ads": {
-      "booked": 31,
-      "showed": 10,
-      "show_pct": 32.3,
-      "qualified": 10,
-      "qual_pct": 32.3,
-      "closed": 1,
-      "cw_pct": 3.2,
-      "revenue": 5997.0
-    },
     "Low Ticket Funnel": {
       "booked": 82,
       "showed": 50,
@@ -111,6 +91,36 @@
       "closed": 14,
       "cw_pct": 17.1,
       "revenue": 111958.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
+    "Internal Webinar": {
+      "booked": 62,
+      "showed": 17,
+      "show_pct": 27.4,
+      "qualified": 8,
+      "qual_pct": 12.9,
+      "closed": 2,
+      "cw_pct": 3.2,
+      "revenue": 7197.0
+    },
+    "Reactivation Email": {
+      "booked": 8,
+      "showed": 5,
+      "show_pct": 62.5,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Unknown (Needs Review)": {
       "booked": 8,
@@ -131,16 +141,6 @@
       "closed": 1,
       "cw_pct": 5.6,
       "revenue": 5997.0
-    },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
     },
     "VSL": {
       "booked": 7,
