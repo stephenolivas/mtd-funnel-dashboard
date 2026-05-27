@@ -42,6 +42,16 @@
       "cw_pct": 16.2,
       "revenue": 105961.0
     },
+    "Internal Webinar": {
+      "booked": 61,
+      "showed": 17,
+      "show_pct": 27.9,
+      "qualified": 8,
+      "qual_pct": 13.1,
+      "closed": 2,
+      "cw_pct": 3.3,
+      "revenue": 7197.0
+    },
     "Instagram": {
       "booked": 192,
       "showed": 121,
@@ -71,16 +81,6 @@
       "closed": 1,
       "cw_pct": 3.3,
       "revenue": 5997.0
-    },
-    "Internal Webinar": {
-      "booked": 61,
-      "showed": 17,
-      "show_pct": 27.9,
-      "qualified": 8,
-      "qual_pct": 13.1,
-      "closed": 2,
-      "cw_pct": 3.3,
-      "revenue": 7197.0
     },
     "Reactivation Email": {
       "booked": 9,
