@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 586,
+    "booked": 587,
     "showed": 335,
     "qualified": 281,
     "closed": 58,
@@ -10,7 +10,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 295,
+      "booked": 296,
       "showed": 187,
       "qualified": 158,
       "closed": 33,
@@ -32,6 +32,46 @@
     }
   },
   "funnels": {
+    "Reactivation Email": {
+      "booked": 8,
+      "showed": 4,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 12.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 193,
+      "showed": 123,
+      "show_pct": 63.7,
+      "qualified": 109,
+      "qual_pct": 56.5,
+      "closed": 18,
+      "cw_pct": 9.3,
+      "revenue": 150449.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
+    "YouTube": {
+      "booked": 91,
+      "showed": 60,
+      "show_pct": 65.9,
+      "qualified": 52,
+      "qual_pct": 57.1,
+      "closed": 15,
+      "cw_pct": 16.5,
+      "revenue": 108955.0
+    },
     "Low Ticket Funnel": {
       "booked": 80,
       "showed": 47,
@@ -52,52 +92,12 @@
       "cw_pct": 3.2,
       "revenue": 7197.0
     },
-    "YouTube": {
-      "booked": 91,
-      "showed": 60,
-      "show_pct": 65.9,
-      "qualified": 52,
-      "qual_pct": 57.1,
-      "closed": 15,
-      "cw_pct": 16.5,
-      "revenue": 108955.0
-    },
-    "Instagram": {
-      "booked": 192,
-      "showed": 123,
-      "show_pct": 64.1,
-      "qualified": 109,
-      "qual_pct": 56.8,
-      "closed": 18,
-      "cw_pct": 9.4,
-      "revenue": 150449.0
-    },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
-    },
     "VSL": {
       "booked": 7,
       "showed": 2,
       "show_pct": 28.6,
       "qualified": 2,
       "qual_pct": 28.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 8,
-      "showed": 4,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 12.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
