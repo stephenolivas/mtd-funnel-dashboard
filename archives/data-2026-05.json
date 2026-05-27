@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 586,
+    "booked": 587,
     "showed": 336,
     "qualified": 282,
     "closed": 58,
@@ -10,7 +10,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 295,
+      "booked": 296,
       "showed": 187,
       "qualified": 158,
       "closed": 33,
@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "booked": 81,
+      "showed": 47,
+      "show_pct": 58.0,
+      "qualified": 34,
+      "qual_pct": 42.0,
+      "closed": 14,
+      "cw_pct": 17.3,
+      "revenue": 111958.0
+    },
+    "Instagram": {
+      "booked": 192,
+      "showed": 123,
+      "show_pct": 64.1,
+      "qualified": 109,
+      "qual_pct": 56.8,
+      "closed": 18,
+      "cw_pct": 9.4,
+      "revenue": 150449.0
+    },
     "Reactivation Email": {
       "booked": 8,
       "showed": 5,
@@ -41,36 +61,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "X": {
-      "booked": 18,
-      "showed": 13,
-      "show_pct": 72.2,
-      "qualified": 12,
-      "qual_pct": 66.7,
-      "closed": 1,
-      "cw_pct": 5.6,
-      "revenue": 5997.0
-    },
-    "Meta Ads": {
-      "booked": 31,
-      "showed": 10,
-      "show_pct": 32.3,
-      "qualified": 10,
-      "qual_pct": 32.3,
-      "closed": 1,
-      "cw_pct": 3.2,
-      "revenue": 5997.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 80,
-      "showed": 47,
-      "show_pct": 58.8,
-      "qualified": 34,
-      "qual_pct": 42.5,
-      "closed": 14,
-      "cw_pct": 17.5,
-      "revenue": 111958.0
     },
     "WWWS": {
       "booked": 1,
@@ -82,6 +72,26 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Meta Ads": {
+      "booked": 31,
+      "showed": 10,
+      "show_pct": 32.3,
+      "qualified": 10,
+      "qual_pct": 32.3,
+      "closed": 1,
+      "cw_pct": 3.2,
+      "revenue": 5997.0
+    },
+    "X": {
+      "booked": 18,
+      "showed": 13,
+      "show_pct": 72.2,
+      "qualified": 12,
+      "qual_pct": 66.7,
+      "closed": 1,
+      "cw_pct": 5.6,
+      "revenue": 5997.0
+    },
     "Website": {
       "booked": 80,
       "showed": 50,
@@ -91,16 +101,6 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
-    },
-    "Instagram": {
-      "booked": 192,
-      "showed": 123,
-      "show_pct": 64.1,
-      "qualified": 109,
-      "qual_pct": 56.8,
-      "closed": 18,
-      "cw_pct": 9.4,
-      "revenue": 150449.0
     },
     "YouTube": {
       "booked": 91,
