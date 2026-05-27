@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 86,
+      "showed": 59,
+      "show_pct": 68.6,
+      "qualified": 51,
+      "qual_pct": 59.3,
+      "closed": 15,
+      "cw_pct": 17.4,
+      "revenue": 108955.0
+    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -61,16 +71,6 @@
       "closed": 13,
       "cw_pct": 18.1,
       "revenue": 105961.0
-    },
-    "YouTube": {
-      "booked": 86,
-      "showed": 59,
-      "show_pct": 68.6,
-      "qualified": 51,
-      "qual_pct": 59.3,
-      "closed": 15,
-      "cw_pct": 17.4,
-      "revenue": 108955.0
     },
     "X": {
       "booked": 18,
