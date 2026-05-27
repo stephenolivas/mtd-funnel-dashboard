@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 91,
+      "showed": 59,
+      "show_pct": 64.8,
+      "qualified": 51,
+      "qual_pct": 56.0,
+      "closed": 15,
+      "cw_pct": 16.5,
+      "revenue": 108955.0
+    },
+    "Website": {
+      "booked": 81,
+      "showed": 50,
+      "show_pct": 61.7,
+      "qualified": 45,
+      "qual_pct": 55.6,
+      "closed": 7,
+      "cw_pct": 8.6,
+      "revenue": 52379.0
+    },
     "Internal Webinar": {
       "booked": 61,
       "showed": 17,
@@ -61,26 +81,6 @@
       "closed": 18,
       "cw_pct": 9.4,
       "revenue": 150449.0
-    },
-    "Website": {
-      "booked": 81,
-      "showed": 50,
-      "show_pct": 61.7,
-      "qualified": 45,
-      "qual_pct": 55.6,
-      "closed": 7,
-      "cw_pct": 8.6,
-      "revenue": 52379.0
-    },
-    "YouTube": {
-      "booked": 91,
-      "showed": 59,
-      "show_pct": 64.8,
-      "qualified": 51,
-      "qual_pct": 56.0,
-      "closed": 15,
-      "cw_pct": 16.5,
-      "revenue": 108955.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
