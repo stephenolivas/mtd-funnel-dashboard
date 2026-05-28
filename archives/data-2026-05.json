@@ -3,10 +3,10 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 616,
-    "showed": 346,
+    "showed": 347,
     "qualified": 286,
-    "closed": 60,
-    "revenue": 454926.0
+    "closed": 61,
+    "revenue": 460923.0
   },
   "groups": {
     "EXTERNAL": {
@@ -18,10 +18,10 @@
     },
     "IN-HOUSE": {
       "booked": 288,
-      "showed": 145,
+      "showed": 146,
       "qualified": 122,
-      "closed": 27,
-      "revenue": 186522.0
+      "closed": 28,
+      "revenue": 192519.0
     },
     "UNCATEGORIZED": {
       "booked": 10,
@@ -42,6 +42,36 @@
       "cw_pct": 8.8,
       "revenue": 150449.0
     },
+    "YouTube": {
+      "booked": 97,
+      "showed": 62,
+      "show_pct": 63.9,
+      "qualified": 53,
+      "qual_pct": 54.6,
+      "closed": 16,
+      "cw_pct": 16.5,
+      "revenue": 114952.0
+    },
+    "Reactivation Email": {
+      "booked": 7,
+      "showed": 4,
+      "show_pct": 57.1,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 88,
+      "showed": 54,
+      "show_pct": 61.4,
+      "qualified": 37,
+      "qual_pct": 42.0,
+      "closed": 14,
+      "cw_pct": 15.9,
+      "revenue": 111958.0
+    },
     "Internal Webinar": {
       "booked": 63,
       "showed": 17,
@@ -61,26 +91,6 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
-    },
-    "YouTube": {
-      "booked": 97,
-      "showed": 61,
-      "show_pct": 62.9,
-      "qualified": 53,
-      "qual_pct": 54.6,
-      "closed": 15,
-      "cw_pct": 15.5,
-      "revenue": 108955.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 88,
-      "showed": 54,
-      "show_pct": 61.4,
-      "qualified": 37,
-      "qual_pct": 42.0,
-      "closed": 14,
-      "cw_pct": 15.9,
-      "revenue": 111958.0
     },
     "X": {
       "booked": 19,
@@ -141,16 +151,6 @@
       "closed": 1,
       "cw_pct": 100.0,
       "revenue": 5997.0
-    },
-    "Reactivation Email": {
-      "booked": 7,
-      "showed": 4,
-      "show_pct": 57.1,
-      "qualified": 2,
-      "qual_pct": 28.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "VSL": {
       "booked": 7,
