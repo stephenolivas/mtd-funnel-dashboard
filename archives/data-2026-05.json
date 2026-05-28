@@ -4,7 +4,7 @@
   "grand": {
     "booked": 614,
     "showed": 346,
-    "qualified": 288,
+    "qualified": 289,
     "closed": 61,
     "revenue": 460923.0
   },
@@ -26,7 +26,7 @@
     "UNCATEGORIZED": {
       "booked": 10,
       "showed": 5,
-      "qualified": 3,
+      "qualified": 4,
       "closed": 0,
       "revenue": 0.0
     }
@@ -42,6 +42,26 @@
       "cw_pct": 8.8,
       "revenue": 150449.0
     },
+    "Unknown (Needs Review)": {
+      "booked": 8,
+      "showed": 3,
+      "show_pct": 37.5,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "booked": 97,
       "showed": 62,
@@ -52,16 +72,6 @@
       "cw_pct": 16.5,
       "revenue": 114952.0
     },
-    "Unknown (Needs Review)": {
-      "booked": 8,
-      "showed": 3,
-      "show_pct": 37.5,
-      "qualified": 1,
-      "qual_pct": 12.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 88,
       "showed": 55,
@@ -71,6 +81,16 @@
       "closed": 14,
       "cw_pct": 15.9,
       "revenue": 111958.0
+    },
+    "WWWS": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 100.0,
+      "revenue": 5997.0
     },
     "Reactivation Email": {
       "booked": 7,
@@ -122,16 +142,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Meta Ads": {
       "booked": 32,
       "showed": 10,
@@ -140,16 +150,6 @@
       "qual_pct": 31.2,
       "closed": 1,
       "cw_pct": 3.1,
-      "revenue": 5997.0
-    },
-    "WWWS": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 100.0,
       "revenue": 5997.0
     },
     "VSL": {
