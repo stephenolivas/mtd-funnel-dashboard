@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 97,
+      "showed": 61,
+      "show_pct": 62.9,
+      "qualified": 53,
+      "qual_pct": 54.6,
+      "closed": 15,
+      "cw_pct": 15.5,
+      "revenue": 108955.0
+    },
     "Instagram": {
       "booked": 201,
       "showed": 123,
@@ -51,16 +61,6 @@
       "closed": 14,
       "cw_pct": 16.5,
       "revenue": 111958.0
-    },
-    "YouTube": {
-      "booked": 97,
-      "showed": 61,
-      "show_pct": 62.9,
-      "qualified": 53,
-      "qual_pct": 54.6,
-      "closed": 15,
-      "cw_pct": 15.5,
-      "revenue": 108955.0
     },
     "Unknown (Needs Review)": {
       "booked": 8,
