@@ -2,17 +2,17 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 616,
+    "booked": 615,
     "showed": 347,
-    "qualified": 287,
+    "qualified": 288,
     "closed": 61,
     "revenue": 460923.0
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 318,
+      "booked": 317,
       "showed": 196,
-      "qualified": 161,
+      "qualified": 162,
       "closed": 33,
       "revenue": 268404.0
     },
@@ -32,22 +32,32 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 80,
-      "showed": 50,
+    "Low Ticket Funnel": {
+      "booked": 88,
+      "showed": 55,
       "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
+      "qualified": 38,
+      "qual_pct": 43.2,
+      "closed": 14,
+      "cw_pct": 15.9,
+      "revenue": 111958.0
+    },
+    "Unknown (Needs Review)": {
+      "booked": 8,
+      "showed": 3,
+      "show_pct": 37.5,
+      "qualified": 1,
+      "qual_pct": 12.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Instagram": {
-      "booked": 205,
-      "showed": 124,
-      "show_pct": 60.5,
+      "booked": 204,
+      "showed": 123,
+      "show_pct": 60.3,
       "qualified": 109,
-      "qual_pct": 53.2,
+      "qual_pct": 53.4,
       "closed": 18,
       "cw_pct": 8.8,
       "revenue": 150449.0
@@ -62,15 +72,15 @@
       "cw_pct": 16.5,
       "revenue": 114952.0
     },
-    "Low Ticket Funnel": {
-      "booked": 88,
-      "showed": 54,
-      "show_pct": 61.4,
-      "qualified": 37,
-      "qual_pct": 42.0,
-      "closed": 14,
-      "cw_pct": 15.9,
-      "revenue": 111958.0
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
     },
     "Reactivation Email": {
       "booked": 7,
@@ -118,16 +128,6 @@
       "show_pct": 13.9,
       "qualified": 28,
       "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 8,
-      "showed": 3,
-      "show_pct": 37.5,
-      "qualified": 1,
-      "qual_pct": 12.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
