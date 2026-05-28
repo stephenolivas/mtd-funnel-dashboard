@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
     "Low Ticket Funnel": {
       "booked": 83,
       "showed": 51,
@@ -61,16 +71,6 @@
       "closed": 18,
       "cw_pct": 9.4,
       "revenue": 150449.0
-    },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
     },
     "WWWS": {
       "booked": 1,
