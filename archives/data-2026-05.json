@@ -3,16 +3,16 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 614,
-    "showed": 348,
-    "qualified": 291,
+    "showed": 349,
+    "qualified": 292,
     "closed": 61,
     "revenue": 460923.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 317,
-      "showed": 197,
-      "qualified": 163,
+      "showed": 198,
+      "qualified": 164,
       "closed": 33,
       "revenue": 268404.0
     },
@@ -32,22 +32,12 @@
     }
   },
   "funnels": {
-    "Reactivation Email": {
-      "booked": 7,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 3,
-      "qual_pct": 42.9,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "booked": 204,
-      "showed": 124,
-      "show_pct": 60.8,
-      "qualified": 110,
-      "qual_pct": 53.9,
+      "showed": 125,
+      "show_pct": 61.3,
+      "qualified": 111,
+      "qual_pct": 54.4,
       "closed": 18,
       "cw_pct": 8.8,
       "revenue": 150449.0
@@ -62,16 +52,6 @@
       "cw_pct": 15.9,
       "revenue": 111958.0
     },
-    "X": {
-      "booked": 19,
-      "showed": 13,
-      "show_pct": 68.4,
-      "qualified": 11,
-      "qual_pct": 57.9,
-      "closed": 1,
-      "cw_pct": 5.3,
-      "revenue": 5997.0
-    },
     "YouTube": {
       "booked": 97,
       "showed": 62,
@@ -81,6 +61,26 @@
       "closed": 16,
       "cw_pct": 16.5,
       "revenue": 114952.0
+    },
+    "Reactivation Email": {
+      "booked": 7,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 3,
+      "qual_pct": 42.9,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "X": {
+      "booked": 19,
+      "showed": 13,
+      "show_pct": 68.4,
+      "qualified": 11,
+      "qual_pct": 57.9,
+      "closed": 1,
+      "cw_pct": 5.3,
+      "revenue": 5997.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
