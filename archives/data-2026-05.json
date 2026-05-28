@@ -3,16 +3,16 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 614,
-    "showed": 346,
-    "qualified": 289,
+    "showed": 347,
+    "qualified": 290,
     "closed": 61,
     "revenue": 460923.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 317,
-      "showed": 196,
-      "qualified": 162,
+      "showed": 197,
+      "qualified": 163,
       "closed": 33,
       "revenue": 268404.0
     },
@@ -32,12 +32,52 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 97,
+      "showed": 62,
+      "show_pct": 63.9,
+      "qualified": 54,
+      "qual_pct": 55.7,
+      "closed": 16,
+      "cw_pct": 16.5,
+      "revenue": 114952.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 88,
+      "showed": 55,
+      "show_pct": 62.5,
+      "qualified": 38,
+      "qual_pct": 43.2,
+      "closed": 14,
+      "cw_pct": 15.9,
+      "revenue": 111958.0
+    },
+    "Internal Webinar": {
+      "booked": 63,
+      "showed": 17,
+      "show_pct": 27.0,
+      "qualified": 8,
+      "qual_pct": 12.7,
+      "closed": 3,
+      "cw_pct": 4.8,
+      "revenue": 13194.0
+    },
+    "Reactivation Email": {
+      "booked": 7,
+      "showed": 4,
+      "show_pct": 57.1,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "booked": 204,
-      "showed": 123,
-      "show_pct": 60.3,
-      "qualified": 109,
-      "qual_pct": 53.4,
+      "showed": 124,
+      "show_pct": 60.8,
+      "qualified": 110,
+      "qual_pct": 53.9,
       "closed": 18,
       "cw_pct": 8.8,
       "revenue": 150449.0
@@ -62,26 +102,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 97,
-      "showed": 62,
-      "show_pct": 63.9,
-      "qualified": 54,
-      "qual_pct": 55.7,
-      "closed": 16,
-      "cw_pct": 16.5,
-      "revenue": 114952.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 88,
-      "showed": 55,
-      "show_pct": 62.5,
-      "qualified": 38,
-      "qual_pct": 43.2,
-      "closed": 14,
-      "cw_pct": 15.9,
-      "revenue": 111958.0
-    },
     "WWWS": {
       "booked": 1,
       "showed": 1,
@@ -92,16 +112,6 @@
       "cw_pct": 100.0,
       "revenue": 5997.0
     },
-    "Reactivation Email": {
-      "booked": 7,
-      "showed": 4,
-      "show_pct": 57.1,
-      "qualified": 2,
-      "qual_pct": 28.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Website": {
       "booked": 79,
       "showed": 49,
@@ -111,16 +121,6 @@
       "closed": 7,
       "cw_pct": 8.9,
       "revenue": 52379.0
-    },
-    "Internal Webinar": {
-      "booked": 63,
-      "showed": 17,
-      "show_pct": 27.0,
-      "qualified": 8,
-      "qual_pct": 12.7,
-      "closed": 3,
-      "cw_pct": 4.8,
-      "revenue": 13194.0
     },
     "X": {
       "booked": 19,
