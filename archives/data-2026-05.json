@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 192,
-      "showed": 123,
-      "show_pct": 64.1,
-      "qualified": 109,
-      "qual_pct": 56.8,
-      "closed": 18,
-      "cw_pct": 9.4,
-      "revenue": 150449.0
-    },
     "Low Ticket Funnel": {
       "booked": 83,
       "showed": 53,
@@ -51,6 +41,16 @@
       "closed": 14,
       "cw_pct": 16.9,
       "revenue": 111958.0
+    },
+    "Instagram": {
+      "booked": 192,
+      "showed": 123,
+      "show_pct": 64.1,
+      "qualified": 109,
+      "qual_pct": 56.8,
+      "closed": 18,
+      "cw_pct": 9.4,
+      "revenue": 150449.0
     },
     "Unknown (Needs Review)": {
       "booked": 8,
