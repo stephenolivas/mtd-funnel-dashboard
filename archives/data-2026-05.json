@@ -52,16 +52,6 @@
       "cw_pct": 16.9,
       "revenue": 111958.0
     },
-    "Instagram": {
-      "booked": 192,
-      "showed": 123,
-      "show_pct": 64.1,
-      "qualified": 109,
-      "qual_pct": 56.8,
-      "closed": 18,
-      "cw_pct": 9.4,
-      "revenue": 150449.0
-    },
     "YouTube": {
       "booked": 90,
       "showed": 61,
@@ -71,6 +61,16 @@
       "closed": 15,
       "cw_pct": 16.7,
       "revenue": 108955.0
+    },
+    "Instagram": {
+      "booked": 192,
+      "showed": 123,
+      "show_pct": 64.1,
+      "qualified": 109,
+      "qual_pct": 56.8,
+      "closed": 18,
+      "cw_pct": 9.4,
+      "revenue": 150449.0
     },
     "Reactivation Email": {
       "booked": 8,
