@@ -42,6 +42,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Meta Ads": {
+      "booked": 31,
+      "showed": 10,
+      "show_pct": 32.3,
+      "qualified": 10,
+      "qual_pct": 32.3,
+      "closed": 1,
+      "cw_pct": 3.2,
+      "revenue": 5997.0
+    },
     "Low Ticket Funnel": {
       "booked": 83,
       "showed": 53,
@@ -71,16 +81,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Meta Ads": {
-      "booked": 31,
-      "showed": 10,
-      "show_pct": 32.3,
-      "qualified": 10,
-      "qual_pct": 32.3,
-      "closed": 1,
-      "cw_pct": 3.2,
-      "revenue": 5997.0
     },
     "Website": {
       "booked": 80,
