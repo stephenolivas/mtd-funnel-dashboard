@@ -10,16 +10,16 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 315,
-      "showed": 202,
-      "qualified": 167,
+      "booked": 316,
+      "showed": 203,
+      "qualified": 168,
       "closed": 33,
       "revenue": 268404.0
     },
     "IN-HOUSE": {
-      "booked": 287,
-      "showed": 150,
-      "qualified": 127,
+      "booked": 286,
+      "showed": 149,
+      "qualified": 126,
       "closed": 28,
       "revenue": 192519.0
     },
@@ -32,6 +32,36 @@
     }
   },
   "funnels": {
+    "Website": {
+      "booked": 80,
+      "showed": 49,
+      "show_pct": 61.3,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
+    "YouTube": {
+      "booked": 97,
+      "showed": 64,
+      "show_pct": 66.0,
+      "qualified": 57,
+      "qual_pct": 58.8,
+      "closed": 16,
+      "cw_pct": 16.5,
+      "revenue": 114952.0
+    },
+    "Instagram": {
+      "booked": 204,
+      "showed": 129,
+      "show_pct": 63.2,
+      "qualified": 113,
+      "qual_pct": 55.4,
+      "closed": 18,
+      "cw_pct": 8.8,
+      "revenue": 150449.0
+    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -52,26 +82,6 @@
       "cw_pct": 4.8,
       "revenue": 13194.0
     },
-    "YouTube": {
-      "booked": 97,
-      "showed": 64,
-      "show_pct": 66.0,
-      "qualified": 57,
-      "qual_pct": 58.8,
-      "closed": 16,
-      "cw_pct": 16.5,
-      "revenue": 114952.0
-    },
-    "Instagram": {
-      "booked": 203,
-      "showed": 128,
-      "show_pct": 63.1,
-      "qualified": 112,
-      "qual_pct": 55.2,
-      "closed": 18,
-      "cw_pct": 8.9,
-      "revenue": 150449.0
-    },
     "Low Ticket Funnel": {
       "booked": 87,
       "showed": 55,
@@ -91,26 +101,6 @@
       "closed": 1,
       "cw_pct": 3.1,
       "revenue": 5997.0
-    },
-    "Website": {
-      "booked": 79,
-      "showed": 49,
-      "show_pct": 62.0,
-      "qualified": 45,
-      "qual_pct": 57.0,
-      "closed": 7,
-      "cw_pct": 8.9,
-      "revenue": 52379.0
-    },
-    "Reactivation Email": {
-      "booked": 7,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 3,
-      "qual_pct": 42.9,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "No Attribution": {
       "booked": 2,
@@ -141,6 +131,16 @@
       "closed": 1,
       "cw_pct": 100.0,
       "revenue": 5997.0
+    },
+    "Reactivation Email": {
+      "booked": 5,
+      "showed": 4,
+      "show_pct": 80.0,
+      "qualified": 2,
+      "qual_pct": 40.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Unknown (Needs Review)": {
       "booked": 7,
