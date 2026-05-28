@@ -52,6 +52,16 @@
       "cw_pct": 8.9,
       "revenue": 52379.0
     },
+    "No Attribution": {
+      "booked": 2,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "booked": 97,
       "showed": 64,
@@ -167,16 +177,6 @@
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "No Attribution": {
-      "booked": 2,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
       "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
