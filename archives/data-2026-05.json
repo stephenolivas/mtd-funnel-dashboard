@@ -32,15 +32,15 @@
     }
   },
   "funnels": {
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "Instagram": {
+      "booked": 203,
+      "showed": 125,
+      "show_pct": 61.6,
+      "qualified": 110,
+      "qual_pct": 54.2,
+      "closed": 18,
+      "cw_pct": 8.9,
+      "revenue": 150449.0
     },
     "YouTube": {
       "booked": 97,
@@ -52,6 +52,16 @@
       "cw_pct": 16.5,
       "revenue": 114952.0
     },
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Meta Ads": {
       "booked": 32,
       "showed": 11,
@@ -61,16 +71,6 @@
       "closed": 1,
       "cw_pct": 3.1,
       "revenue": 5997.0
-    },
-    "Instagram": {
-      "booked": 203,
-      "showed": 125,
-      "show_pct": 61.6,
-      "qualified": 110,
-      "qual_pct": 54.2,
-      "closed": 18,
-      "cw_pct": 8.9,
-      "revenue": 150449.0
     },
     "Internal Webinar": {
       "booked": 63,
