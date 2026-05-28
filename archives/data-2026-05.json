@@ -4,7 +4,7 @@
   "grand": {
     "booked": 616,
     "showed": 347,
-    "qualified": 286,
+    "qualified": 287,
     "closed": 61,
     "revenue": 460923.0
   },
@@ -19,7 +19,7 @@
     "IN-HOUSE": {
       "booked": 288,
       "showed": 146,
-      "qualified": 122,
+      "qualified": 123,
       "closed": 28,
       "revenue": 192519.0
     },
@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 45,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
     "Instagram": {
       "booked": 205,
       "showed": 124,
@@ -46,21 +56,11 @@
       "booked": 97,
       "showed": 62,
       "show_pct": 63.9,
-      "qualified": 53,
-      "qual_pct": 54.6,
+      "qualified": 54,
+      "qual_pct": 55.7,
       "closed": 16,
       "cw_pct": 16.5,
       "revenue": 114952.0
-    },
-    "Reactivation Email": {
-      "booked": 7,
-      "showed": 4,
-      "show_pct": 57.1,
-      "qualified": 2,
-      "qual_pct": 28.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Low Ticket Funnel": {
       "booked": 88,
@@ -72,6 +72,16 @@
       "cw_pct": 15.9,
       "revenue": 111958.0
     },
+    "Reactivation Email": {
+      "booked": 7,
+      "showed": 4,
+      "show_pct": 57.1,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Internal Webinar": {
       "booked": 63,
       "showed": 17,
@@ -81,16 +91,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 45,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
     },
     "X": {
       "booked": 19,
