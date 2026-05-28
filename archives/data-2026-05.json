@@ -10,15 +10,15 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 314,
-      "showed": 195,
+      "booked": 318,
+      "showed": 196,
       "qualified": 161,
       "closed": 33,
       "revenue": 268404.0
     },
     "IN-HOUSE": {
-      "booked": 292,
-      "showed": 146,
+      "booked": 288,
+      "showed": 145,
       "qualified": 122,
       "closed": 27,
       "revenue": 186522.0
@@ -32,24 +32,44 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 97,
+      "showed": 61,
+      "show_pct": 62.9,
+      "qualified": 53,
+      "qual_pct": 54.6,
+      "closed": 15,
+      "cw_pct": 15.5,
+      "revenue": 108955.0
+    },
+    "X": {
+      "booked": 19,
+      "showed": 13,
+      "show_pct": 68.4,
+      "qualified": 11,
+      "qual_pct": 57.9,
+      "closed": 1,
+      "cw_pct": 5.3,
+      "revenue": 5997.0
+    },
     "Instagram": {
-      "booked": 203,
-      "showed": 123,
-      "show_pct": 60.6,
+      "booked": 205,
+      "showed": 124,
+      "show_pct": 60.5,
       "qualified": 109,
-      "qual_pct": 53.7,
+      "qual_pct": 53.2,
       "closed": 18,
-      "cw_pct": 8.9,
+      "cw_pct": 8.8,
       "revenue": 150449.0
     },
     "Low Ticket Funnel": {
-      "booked": 87,
+      "booked": 88,
       "showed": 54,
-      "show_pct": 62.1,
+      "show_pct": 61.4,
       "qualified": 37,
-      "qual_pct": 42.5,
+      "qual_pct": 42.0,
       "closed": 14,
-      "cw_pct": 16.1,
+      "cw_pct": 15.9,
       "revenue": 111958.0
     },
     "Website": {
@@ -61,16 +81,6 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
-    },
-    "YouTube": {
-      "booked": 97,
-      "showed": 61,
-      "show_pct": 62.9,
-      "qualified": 53,
-      "qual_pct": 54.6,
-      "closed": 15,
-      "cw_pct": 15.5,
-      "revenue": 108955.0
     },
     "Linkedin": {
       "booked": 6,
@@ -102,16 +112,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "X": {
-      "booked": 18,
-      "showed": 13,
-      "show_pct": 72.2,
-      "qualified": 11,
-      "qual_pct": 61.1,
-      "closed": 1,
-      "cw_pct": 5.6,
-      "revenue": 5997.0
-    },
     "Unknown (Needs Review)": {
       "booked": 8,
       "showed": 3,
@@ -132,16 +132,6 @@
       "cw_pct": 3.1,
       "revenue": 5997.0
     },
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 5,
-      "show_pct": 45.5,
-      "qualified": 2,
-      "qual_pct": 18.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "WWWS": {
       "booked": 1,
       "showed": 1,
@@ -151,6 +141,16 @@
       "closed": 1,
       "cw_pct": 100.0,
       "revenue": 5997.0
+    },
+    "Reactivation Email": {
+      "booked": 7,
+      "showed": 4,
+      "show_pct": 57.1,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "VSL": {
       "booked": 7,
