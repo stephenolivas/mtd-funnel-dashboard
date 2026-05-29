@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 94,
-      "showed": 55,
-      "show_pct": 58.5,
-      "qualified": 40,
-      "qual_pct": 42.6,
-      "closed": 14,
-      "cw_pct": 14.9,
-      "revenue": 111958.0
-    },
     "Reactivation Email": {
       "booked": 11,
       "showed": 5,
@@ -51,6 +41,16 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 94,
+      "showed": 55,
+      "show_pct": 58.5,
+      "qualified": 40,
+      "qual_pct": 42.6,
+      "closed": 14,
+      "cw_pct": 14.9,
+      "revenue": 111958.0
     },
     "Instagram": {
       "booked": 214,
