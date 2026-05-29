@@ -4,7 +4,7 @@
   "grand": {
     "booked": 639,
     "showed": 362,
-    "qualified": 300,
+    "qualified": 301,
     "closed": 61,
     "revenue": 460923.0
   },
@@ -19,7 +19,7 @@
     "IN-HOUSE": {
       "booked": 295,
       "showed": 152,
-      "qualified": 127,
+      "qualified": 128,
       "closed": 28,
       "revenue": 192519.0
     },
@@ -46,31 +46,11 @@
       "booked": 11,
       "showed": 6,
       "show_pct": 54.5,
-      "qualified": 2,
-      "qual_pct": 18.2,
+      "qualified": 3,
+      "qual_pct": 27.3,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "X": {
-      "booked": 21,
-      "showed": 14,
-      "show_pct": 66.7,
-      "qualified": 12,
-      "qual_pct": 57.1,
-      "closed": 1,
-      "cw_pct": 4.8,
-      "revenue": 5997.0
-    },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 46,
-      "qual_pct": 57.5,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
     },
     "YouTube": {
       "booked": 100,
@@ -91,6 +71,26 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
+    },
+    "X": {
+      "booked": 21,
+      "showed": 14,
+      "show_pct": 66.7,
+      "qualified": 12,
+      "qual_pct": 57.1,
+      "closed": 1,
+      "cw_pct": 4.8,
+      "revenue": 5997.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 46,
+      "qual_pct": 57.5,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
     },
     "Instagram": {
       "booked": 214,
