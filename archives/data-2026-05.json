@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "booked": 63,
-      "showed": 18,
-      "show_pct": 28.6,
-      "qualified": 8,
-      "qual_pct": 12.7,
-      "closed": 3,
-      "cw_pct": 4.8,
-      "revenue": 13194.0
-    },
     "YouTube": {
       "booked": 97,
       "showed": 64,
@@ -61,6 +51,16 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
+    },
+    "Internal Webinar": {
+      "booked": 63,
+      "showed": 18,
+      "show_pct": 28.6,
+      "qualified": 8,
+      "qual_pct": 12.7,
+      "closed": 3,
+      "cw_pct": 4.8,
+      "revenue": 13194.0
     },
     "Instagram": {
       "booked": 204,
