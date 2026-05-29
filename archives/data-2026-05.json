@@ -3,7 +3,7 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 639,
-    "showed": 361,
+    "showed": 362,
     "qualified": 300,
     "closed": 61,
     "revenue": 460923.0
@@ -18,7 +18,7 @@
     },
     "IN-HOUSE": {
       "booked": 295,
-      "showed": 151,
+      "showed": 152,
       "qualified": 127,
       "closed": 28,
       "revenue": 192519.0
@@ -32,26 +32,6 @@
     }
   },
   "funnels": {
-    "X": {
-      "booked": 21,
-      "showed": 14,
-      "show_pct": 66.7,
-      "qualified": 12,
-      "qual_pct": 57.1,
-      "closed": 1,
-      "cw_pct": 4.8,
-      "revenue": 5997.0
-    },
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 5,
-      "show_pct": 45.5,
-      "qualified": 2,
-      "qual_pct": 18.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 94,
       "showed": 56,
@@ -61,6 +41,26 @@
       "closed": 14,
       "cw_pct": 14.9,
       "revenue": 111958.0
+    },
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 6,
+      "show_pct": 54.5,
+      "qualified": 2,
+      "qual_pct": 18.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "X": {
+      "booked": 21,
+      "showed": 14,
+      "show_pct": 66.7,
+      "qualified": 12,
+      "qual_pct": 57.1,
+      "closed": 1,
+      "cw_pct": 4.8,
+      "revenue": 5997.0
     },
     "Website": {
       "booked": 80,
