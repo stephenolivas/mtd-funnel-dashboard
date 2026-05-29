@@ -32,6 +32,36 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 213,
+      "showed": 130,
+      "show_pct": 61.0,
+      "qualified": 113,
+      "qual_pct": 53.1,
+      "closed": 18,
+      "cw_pct": 8.5,
+      "revenue": 150449.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 46,
+      "qual_pct": 57.5,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
+    },
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 6,
+      "show_pct": 54.5,
+      "qualified": 3,
+      "qual_pct": 27.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Low Ticket Funnel": {
       "booked": 94,
       "showed": 56,
@@ -41,6 +71,16 @@
       "closed": 14,
       "cw_pct": 14.9,
       "revenue": 111958.0
+    },
+    "Meta Ads": {
+      "booked": 32,
+      "showed": 11,
+      "show_pct": 34.4,
+      "qualified": 10,
+      "qual_pct": 31.2,
+      "closed": 1,
+      "cw_pct": 3.1,
+      "revenue": 5997.0
     },
     "YouTube": {
       "booked": 100,
@@ -62,36 +102,6 @@
       "cw_pct": 4.8,
       "revenue": 5997.0
     },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 46,
-      "qual_pct": 57.5,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
-    },
-    "Instagram": {
-      "booked": 213,
-      "showed": 130,
-      "show_pct": 61.0,
-      "qualified": 113,
-      "qual_pct": 53.1,
-      "closed": 18,
-      "cw_pct": 8.5,
-      "revenue": 150449.0
-    },
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 6,
-      "show_pct": 54.5,
-      "qualified": 3,
-      "qual_pct": 27.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "booked": 63,
       "showed": 18,
@@ -101,16 +111,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Meta Ads": {
-      "booked": 32,
-      "showed": 11,
-      "show_pct": 34.4,
-      "qualified": 10,
-      "qual_pct": 31.2,
-      "closed": 1,
-      "cw_pct": 3.1,
-      "revenue": 5997.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
