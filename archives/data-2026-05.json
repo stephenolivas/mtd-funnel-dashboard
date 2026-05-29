@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 4,
+      "show_pct": 36.4,
+      "qualified": 2,
+      "qual_pct": 18.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 214,
+      "showed": 129,
+      "show_pct": 60.3,
+      "qualified": 113,
+      "qual_pct": 52.8,
+      "closed": 18,
+      "cw_pct": 8.4,
+      "revenue": 150449.0
+    },
     "Website": {
       "booked": 80,
       "showed": 50,
@@ -51,16 +71,6 @@
       "closed": 14,
       "cw_pct": 14.9,
       "revenue": 111958.0
-    },
-    "Instagram": {
-      "booked": 214,
-      "showed": 129,
-      "show_pct": 60.3,
-      "qualified": 113,
-      "qual_pct": 52.8,
-      "closed": 18,
-      "cw_pct": 8.4,
-      "revenue": 150449.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -101,16 +111,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 4,
-      "show_pct": 36.4,
-      "qualified": 2,
-      "qual_pct": 18.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "X": {
       "booked": 21,
