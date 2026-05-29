@@ -32,15 +32,25 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 87,
-      "showed": 55,
-      "show_pct": 63.2,
-      "qualified": 39,
-      "qual_pct": 44.8,
-      "closed": 14,
-      "cw_pct": 16.1,
-      "revenue": 111958.0
+    "Meta Ads": {
+      "booked": 32,
+      "showed": 11,
+      "show_pct": 34.4,
+      "qualified": 10,
+      "qual_pct": 31.2,
+      "closed": 1,
+      "cw_pct": 3.1,
+      "revenue": 5997.0
+    },
+    "Website": {
+      "booked": 80,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 46,
+      "qual_pct": 57.5,
+      "closed": 7,
+      "cw_pct": 8.8,
+      "revenue": 52379.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -52,16 +62,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 97,
-      "showed": 64,
-      "show_pct": 66.0,
-      "qualified": 57,
-      "qual_pct": 58.8,
-      "closed": 16,
-      "cw_pct": 16.5,
-      "revenue": 114952.0
-    },
     "Internal Webinar": {
       "booked": 63,
       "showed": 18,
@@ -72,15 +72,35 @@
       "cw_pct": 4.8,
       "revenue": 13194.0
     },
-    "Website": {
-      "booked": 80,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 46,
-      "qual_pct": 57.5,
-      "closed": 7,
-      "cw_pct": 8.8,
-      "revenue": 52379.0
+    "Low Ticket Funnel": {
+      "booked": 87,
+      "showed": 55,
+      "show_pct": 63.2,
+      "qualified": 39,
+      "qual_pct": 44.8,
+      "closed": 14,
+      "cw_pct": 16.1,
+      "revenue": 111958.0
+    },
+    "YouTube": {
+      "booked": 97,
+      "showed": 64,
+      "show_pct": 66.0,
+      "qualified": 57,
+      "qual_pct": 58.8,
+      "closed": 16,
+      "cw_pct": 16.5,
+      "revenue": 114952.0
+    },
+    "Unknown (Needs Review)": {
+      "booked": 7,
+      "showed": 3,
+      "show_pct": 42.9,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Instagram": {
       "booked": 204,
@@ -100,16 +120,6 @@
       "qual_pct": 63.2,
       "closed": 1,
       "cw_pct": 5.3,
-      "revenue": 5997.0
-    },
-    "Meta Ads": {
-      "booked": 32,
-      "showed": 11,
-      "show_pct": 34.4,
-      "qualified": 10,
-      "qual_pct": 31.2,
-      "closed": 1,
-      "cw_pct": 3.1,
       "revenue": 5997.0
     },
     "No Attribution": {
@@ -138,16 +148,6 @@
       "show_pct": 80.0,
       "qualified": 2,
       "qual_pct": 40.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 7,
-      "showed": 3,
-      "show_pct": 42.9,
-      "qualified": 2,
-      "qual_pct": 28.6,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
