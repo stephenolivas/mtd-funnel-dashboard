@@ -3,7 +3,7 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 639,
-    "showed": 358,
+    "showed": 359,
     "qualified": 300,
     "closed": 61,
     "revenue": 460923.0
@@ -18,7 +18,7 @@
     },
     "IN-HOUSE": {
       "booked": 295,
-      "showed": 150,
+      "showed": 151,
       "qualified": 127,
       "closed": 28,
       "revenue": 192519.0
@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 4,
-      "show_pct": 36.4,
-      "qualified": 2,
-      "qual_pct": 18.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "booked": 214,
       "showed": 129,
@@ -51,6 +41,16 @@
       "closed": 18,
       "cw_pct": 8.4,
       "revenue": 150449.0
+    },
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 5,
+      "show_pct": 45.5,
+      "qualified": 2,
+      "qual_pct": 18.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "booked": 80,
