@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "booked": 87,
+      "showed": 55,
+      "show_pct": 63.2,
+      "qualified": 40,
+      "qual_pct": 46.0,
+      "closed": 14,
+      "cw_pct": 16.1,
+      "revenue": 111958.0
+    },
     "Instagram": {
       "booked": 204,
       "showed": 129,
@@ -71,16 +81,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 87,
-      "showed": 55,
-      "show_pct": 63.2,
-      "qualified": 40,
-      "qual_pct": 46.0,
-      "closed": 14,
-      "cw_pct": 16.1,
-      "revenue": 111958.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
