@@ -3,16 +3,16 @@
   "month_label": "May 2026",
   "grand": {
     "booked": 639,
-    "showed": 369,
-    "qualified": 306,
+    "showed": 370,
+    "qualified": 307,
     "closed": 66,
     "revenue": 510911.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 336,
-      "showed": 209,
-      "qualified": 172,
+      "showed": 210,
+      "qualified": 173,
       "closed": 35,
       "revenue": 284401.0
     },
@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 94,
-      "showed": 56,
-      "show_pct": 59.6,
-      "qualified": 40,
-      "qual_pct": 42.6,
-      "closed": 14,
-      "cw_pct": 14.9,
-      "revenue": 111958.0
-    },
     "Instagram": {
       "booked": 215,
       "showed": 134,
@@ -52,14 +42,34 @@
       "cw_pct": 9.3,
       "revenue": 166446.0
     },
+    "Low Ticket Funnel": {
+      "booked": 94,
+      "showed": 57,
+      "show_pct": 60.6,
+      "qualified": 41,
+      "qual_pct": 43.6,
+      "closed": 14,
+      "cw_pct": 14.9,
+      "revenue": 111958.0
+    },
+    "X": {
+      "booked": 21,
+      "showed": 14,
+      "show_pct": 66.7,
+      "qualified": 12,
+      "qual_pct": 57.1,
+      "closed": 1,
+      "cw_pct": 4.8,
+      "revenue": 5997.0
+    },
     "Website": {
-      "booked": 87,
-      "showed": 56,
-      "show_pct": 64.4,
+      "booked": 89,
+      "showed": 57,
+      "show_pct": 64.0,
       "qualified": 50,
-      "qual_pct": 57.5,
+      "qual_pct": 56.2,
       "closed": 7,
-      "cw_pct": 8.0,
+      "cw_pct": 7.9,
       "revenue": 52379.0
     },
     "YouTube": {
@@ -71,16 +81,6 @@
       "closed": 19,
       "cw_pct": 19.0,
       "revenue": 148943.0
-    },
-    "X": {
-      "booked": 21,
-      "showed": 14,
-      "show_pct": 66.7,
-      "qualified": 12,
-      "qual_pct": 57.1,
-      "closed": 1,
-      "cw_pct": 4.8,
-      "revenue": 5997.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
@@ -173,9 +173,9 @@
       "revenue": 0.0
     },
     "Reactivation Email": {
-      "booked": 3,
-      "showed": 2,
-      "show_pct": 66.7,
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
       "qualified": 0,
       "qual_pct": 0.0,
       "closed": 0,
