@@ -42,16 +42,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "booked": 213,
-      "showed": 132,
-      "show_pct": 62.0,
-      "qualified": 115,
-      "qual_pct": 54.0,
-      "closed": 20,
-      "cw_pct": 9.4,
-      "revenue": 166446.0
-    },
     "Low Ticket Funnel": {
       "booked": 94,
       "showed": 56,
@@ -72,25 +62,15 @@
       "cw_pct": 8.8,
       "revenue": 52379.0
     },
-    "Internal Webinar": {
-      "booked": 63,
-      "showed": 18,
-      "show_pct": 28.6,
-      "qualified": 8,
-      "qual_pct": 12.7,
-      "closed": 3,
-      "cw_pct": 4.8,
-      "revenue": 13194.0
-    },
-    "YouTube": {
-      "booked": 100,
-      "showed": 64,
-      "show_pct": 64.0,
-      "qualified": 57,
-      "qual_pct": 57.0,
-      "closed": 18,
-      "cw_pct": 18.0,
-      "revenue": 142946.0
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "X": {
       "booked": 21,
@@ -102,6 +82,36 @@
       "cw_pct": 4.8,
       "revenue": 5997.0
     },
+    "Instagram": {
+      "booked": 213,
+      "showed": 132,
+      "show_pct": 62.0,
+      "qualified": 115,
+      "qual_pct": 54.0,
+      "closed": 20,
+      "cw_pct": 9.4,
+      "revenue": 166446.0
+    },
+    "YouTube": {
+      "booked": 100,
+      "showed": 64,
+      "show_pct": 64.0,
+      "qualified": 57,
+      "qual_pct": 57.0,
+      "closed": 18,
+      "cw_pct": 18.0,
+      "revenue": 142946.0
+    },
+    "Internal Webinar": {
+      "booked": 63,
+      "showed": 18,
+      "show_pct": 28.6,
+      "qualified": 8,
+      "qual_pct": 12.7,
+      "closed": 3,
+      "cw_pct": 4.8,
+      "revenue": 13194.0
+    },
     "Meta Ads": {
       "booked": 32,
       "showed": 11,
@@ -111,16 +121,6 @@
       "closed": 1,
       "cw_pct": 3.1,
       "revenue": 5997.0
-    },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Unknown (Needs Review)": {
       "booked": 7,
