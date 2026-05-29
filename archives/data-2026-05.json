@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 214,
+      "showed": 129,
+      "show_pct": 60.3,
+      "qualified": 113,
+      "qual_pct": 52.8,
+      "closed": 18,
+      "cw_pct": 8.4,
+      "revenue": 150449.0
+    },
     "YouTube": {
       "booked": 100,
       "showed": 64,
@@ -81,16 +91,6 @@
       "closed": 3,
       "cw_pct": 4.8,
       "revenue": 13194.0
-    },
-    "Instagram": {
-      "booked": 214,
-      "showed": 129,
-      "show_pct": 60.3,
-      "qualified": 113,
-      "qual_pct": 52.8,
-      "closed": 18,
-      "cw_pct": 8.4,
-      "revenue": 150449.0
     },
     "Reactivation Email": {
       "booked": 11,
