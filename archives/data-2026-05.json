@@ -32,15 +32,35 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 89,
-      "showed": 57,
-      "show_pct": 64.0,
-      "qualified": 50,
-      "qual_pct": 56.2,
-      "closed": 7,
-      "cw_pct": 7.9,
-      "revenue": 52379.0
+    "Instagram": {
+      "booked": 215,
+      "showed": 136,
+      "show_pct": 63.3,
+      "qualified": 117,
+      "qual_pct": 54.4,
+      "closed": 20,
+      "cw_pct": 9.3,
+      "revenue": 166446.0
+    },
+    "Internal Webinar": {
+      "booked": 63,
+      "showed": 18,
+      "show_pct": 28.6,
+      "qualified": 8,
+      "qual_pct": 12.7,
+      "closed": 3,
+      "cw_pct": 4.8,
+      "revenue": 13194.0
+    },
+    "YouTube": {
+      "booked": 100,
+      "showed": 66,
+      "show_pct": 66.0,
+      "qualified": 58,
+      "qual_pct": 58.0,
+      "closed": 19,
+      "cw_pct": 19.0,
+      "revenue": 148943.0
     },
     "X": {
       "booked": 21,
@@ -52,25 +72,15 @@
       "cw_pct": 9.5,
       "revenue": 14994.0
     },
-    "Instagram": {
-      "booked": 215,
-      "showed": 136,
-      "show_pct": 63.3,
-      "qualified": 117,
-      "qual_pct": 54.4,
-      "closed": 20,
-      "cw_pct": 9.3,
-      "revenue": 166446.0
-    },
-    "YouTube": {
-      "booked": 100,
-      "showed": 66,
-      "show_pct": 66.0,
-      "qualified": 58,
-      "qual_pct": 58.0,
-      "closed": 19,
-      "cw_pct": 19.0,
-      "revenue": 148943.0
+    "Website": {
+      "booked": 89,
+      "showed": 57,
+      "show_pct": 64.0,
+      "qualified": 50,
+      "qual_pct": 56.2,
+      "closed": 7,
+      "cw_pct": 7.9,
+      "revenue": 52379.0
     },
     "Low Ticket Funnel": {
       "booked": 94,
@@ -91,16 +101,6 @@
       "closed": 1,
       "cw_pct": 3.1,
       "revenue": 5997.0
-    },
-    "Internal Webinar": {
-      "booked": 63,
-      "showed": 18,
-      "show_pct": 28.6,
-      "qualified": 8,
-      "qual_pct": 12.7,
-      "closed": 3,
-      "cw_pct": 4.8,
-      "revenue": 13194.0
     },
     "LTF - Quiz Funnel": {
       "booked": 331,
