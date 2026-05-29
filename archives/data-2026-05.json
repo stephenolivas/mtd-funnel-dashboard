@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 87,
-      "showed": 55,
-      "show_pct": 63.2,
-      "qualified": 40,
-      "qual_pct": 46.0,
-      "closed": 14,
-      "cw_pct": 16.1,
-      "revenue": 111958.0
-    },
     "Instagram": {
       "booked": 204,
       "showed": 129,
@@ -61,6 +51,26 @@
       "closed": 7,
       "cw_pct": 8.8,
       "revenue": 52379.0
+    },
+    "Meta Ads": {
+      "booked": 32,
+      "showed": 11,
+      "show_pct": 34.4,
+      "qualified": 10,
+      "qual_pct": 31.2,
+      "closed": 1,
+      "cw_pct": 3.1,
+      "revenue": 5997.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 87,
+      "showed": 55,
+      "show_pct": 63.2,
+      "qualified": 40,
+      "qual_pct": 46.0,
+      "closed": 14,
+      "cw_pct": 16.1,
+      "revenue": 111958.0
     },
     "YouTube": {
       "booked": 97,
@@ -91,16 +101,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 32,
-      "showed": 11,
-      "show_pct": 34.4,
-      "qualified": 10,
-      "qual_pct": 31.2,
-      "closed": 1,
-      "cw_pct": 3.1,
-      "revenue": 5997.0
     },
     "Unknown (Needs Review)": {
       "booked": 7,
