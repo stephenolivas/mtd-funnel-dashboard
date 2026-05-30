@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 215,
+      "showed": 137,
+      "show_pct": 63.7,
+      "qualified": 118,
+      "qual_pct": 54.9,
+      "closed": 21,
+      "cw_pct": 9.8,
+      "revenue": 173343.0
+    },
+    "YouTube": {
+      "booked": 100,
+      "showed": 68,
+      "show_pct": 68.0,
+      "qualified": 59,
+      "qual_pct": 59.0,
+      "closed": 20,
+      "cw_pct": 20.0,
+      "revenue": 149943.0
+    },
     "Meta Ads": {
       "booked": 33,
       "showed": 11,
@@ -51,26 +71,6 @@
       "closed": 14,
       "cw_pct": 14.9,
       "revenue": 111958.0
-    },
-    "YouTube": {
-      "booked": 100,
-      "showed": 68,
-      "show_pct": 68.0,
-      "qualified": 59,
-      "qual_pct": 59.0,
-      "closed": 20,
-      "cw_pct": 20.0,
-      "revenue": 149943.0
-    },
-    "Instagram": {
-      "booked": 215,
-      "showed": 137,
-      "show_pct": 63.7,
-      "qualified": 118,
-      "qual_pct": 54.9,
-      "closed": 21,
-      "cw_pct": 9.8,
-      "revenue": 173343.0
     },
     "Internal Webinar": {
       "booked": 64,
