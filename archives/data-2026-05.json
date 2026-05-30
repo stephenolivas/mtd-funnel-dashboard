@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "booked": 33,
-      "showed": 11,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
-    },
     "Instagram": {
       "booked": 215,
       "showed": 136,
@@ -51,6 +41,16 @@
       "closed": 21,
       "cw_pct": 9.8,
       "revenue": 173343.0
+    },
+    "Meta Ads": {
+      "booked": 33,
+      "showed": 11,
+      "show_pct": 33.3,
+      "qualified": 10,
+      "qual_pct": 30.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
     },
     "Unknown (Needs Review)": {
       "booked": 7,
