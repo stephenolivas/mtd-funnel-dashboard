@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 639,
+    "booked": 641,
     "showed": 376,
     "qualified": 309,
     "closed": 72,
@@ -10,14 +10,14 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 335,
+      "booked": 336,
       "showed": 213,
       "qualified": 174,
       "closed": 37,
       "revenue": 300295.0
     },
     "IN-HOUSE": {
-      "booked": 295,
+      "booked": 296,
       "showed": 158,
       "qualified": 131,
       "closed": 34,
@@ -33,13 +33,13 @@
   },
   "funnels": {
     "Low Ticket Funnel": {
-      "booked": 93,
+      "booked": 94,
       "showed": 58,
-      "show_pct": 62.4,
+      "show_pct": 61.7,
       "qualified": 41,
-      "qual_pct": 44.1,
+      "qual_pct": 43.6,
       "closed": 14,
-      "cw_pct": 15.1,
+      "cw_pct": 14.9,
       "revenue": 111958.0
     },
     "Unknown (Needs Review)": {
@@ -123,13 +123,13 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "booked": 32,
+      "booked": 33,
       "showed": 11,
-      "show_pct": 34.4,
+      "show_pct": 33.3,
       "qualified": 10,
-      "qual_pct": 31.2,
+      "qual_pct": 30.3,
       "closed": 1,
-      "cw_pct": 3.1,
+      "cw_pct": 3.0,
       "revenue": 5997.0
     },
     "No Attribution": {
