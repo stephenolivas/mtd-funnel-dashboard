@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 641,
+    "booked": 642,
     "showed": 377,
     "qualified": 310,
     "closed": 72,
@@ -10,7 +10,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 336,
+      "booked": 337,
       "showed": 214,
       "qualified": 175,
       "closed": 37,
@@ -73,13 +73,13 @@
       "revenue": 173343.0
     },
     "Low Ticket Funnel": {
-      "booked": 94,
+      "booked": 95,
       "showed": 58,
-      "show_pct": 61.7,
+      "show_pct": 61.1,
       "qualified": 41,
-      "qual_pct": 43.6,
+      "qual_pct": 43.2,
       "closed": 14,
-      "cw_pct": 14.9,
+      "cw_pct": 14.7,
       "revenue": 111958.0
     },
     "Website": {
