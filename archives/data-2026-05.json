@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 100,
+      "showed": 68,
+      "show_pct": 68.0,
+      "qualified": 59,
+      "qual_pct": 59.0,
+      "closed": 20,
+      "cw_pct": 20.0,
+      "revenue": 149943.0
+    },
+    "Meta Ads": {
+      "booked": 33,
+      "showed": 11,
+      "show_pct": 33.3,
+      "qualified": 10,
+      "qual_pct": 30.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
+    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -62,16 +82,6 @@
       "cw_pct": 9.8,
       "revenue": 173343.0
     },
-    "YouTube": {
-      "booked": 100,
-      "showed": 68,
-      "show_pct": 68.0,
-      "qualified": 59,
-      "qual_pct": 59.0,
-      "closed": 20,
-      "cw_pct": 20.0,
-      "revenue": 149943.0
-    },
     "Website": {
       "booked": 89,
       "showed": 57,
@@ -81,16 +91,6 @@
       "closed": 9,
       "cw_pct": 10.1,
       "revenue": 65273.0
-    },
-    "Meta Ads": {
-      "booked": 33,
-      "showed": 11,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
     },
     "Low Ticket Funnel": {
       "booked": 94,
