@@ -2,7 +2,7 @@
   "month_key": "2026-05",
   "month_label": "May 2026",
   "grand": {
-    "booked": 642,
+    "booked": 641,
     "showed": 377,
     "qualified": 310,
     "closed": 73,
@@ -17,7 +17,7 @@
       "revenue": 300295.0
     },
     "IN-HOUSE": {
-      "booked": 296,
+      "booked": 295,
       "showed": 158,
       "qualified": 131,
       "closed": 34,
@@ -32,25 +32,15 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 95,
-      "showed": 58,
-      "show_pct": 61.1,
-      "qualified": 41,
-      "qual_pct": 43.2,
-      "closed": 14,
-      "cw_pct": 14.7,
-      "revenue": 111958.0
-    },
-    "Meta Ads": {
-      "booked": 33,
-      "showed": 11,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
+    "YouTube": {
+      "booked": 100,
+      "showed": 68,
+      "show_pct": 68.0,
+      "qualified": 59,
+      "qual_pct": 59.0,
+      "closed": 20,
+      "cw_pct": 20.0,
+      "revenue": 149943.0
     },
     "Instagram": {
       "booked": 215,
@@ -72,6 +62,16 @@
       "cw_pct": 10.1,
       "revenue": 65273.0
     },
+    "Low Ticket Funnel": {
+      "booked": 95,
+      "showed": 58,
+      "show_pct": 61.1,
+      "qualified": 41,
+      "qual_pct": 43.2,
+      "closed": 14,
+      "cw_pct": 14.7,
+      "revenue": 111958.0
+    },
     "LTF - Quiz Funnel": {
       "booked": 331,
       "showed": 46,
@@ -81,6 +81,16 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Meta Ads": {
+      "booked": 32,
+      "showed": 11,
+      "show_pct": 34.4,
+      "qualified": 10,
+      "qual_pct": 31.2,
+      "closed": 1,
+      "cw_pct": 3.1,
+      "revenue": 5997.0
     },
     "X": {
       "booked": 21,
@@ -92,15 +102,15 @@
       "cw_pct": 9.5,
       "revenue": 14994.0
     },
-    "YouTube": {
-      "booked": 100,
-      "showed": 68,
-      "show_pct": 68.0,
-      "qualified": 59,
-      "qual_pct": 59.0,
-      "closed": 20,
-      "cw_pct": 20.0,
-      "revenue": 149943.0
+    "Internal Webinar": {
+      "booked": 64,
+      "showed": 18,
+      "show_pct": 28.1,
+      "qualified": 8,
+      "qual_pct": 12.5,
+      "closed": 3,
+      "cw_pct": 4.7,
+      "revenue": 13194.0
     },
     "Unknown (Needs Review)": {
       "booked": 7,
@@ -111,16 +121,6 @@
       "closed": 1,
       "cw_pct": 14.3,
       "revenue": 5997.0
-    },
-    "Internal Webinar": {
-      "booked": 64,
-      "showed": 18,
-      "show_pct": 28.1,
-      "qualified": 8,
-      "qual_pct": 12.5,
-      "closed": 3,
-      "cw_pct": 4.7,
-      "revenue": 13194.0
     },
     "WWWS": {
       "booked": 1,
