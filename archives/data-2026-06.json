@@ -32,8 +32,28 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "booked": 3,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Email": {
-      "booked": 8,
+      "booked": 7,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -58,16 +78,6 @@
       "show_pct": 25.0,
       "qualified": 1,
       "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 3,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
