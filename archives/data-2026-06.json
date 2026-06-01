@@ -3,7 +3,7 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 28,
-    "showed": 14,
+    "showed": 15,
     "qualified": 7,
     "closed": 0,
     "revenue": 0.0
@@ -11,7 +11,7 @@
   "groups": {
     "EXTERNAL": {
       "booked": 18,
-      "showed": 11,
+      "showed": 12,
       "qualified": 5,
       "closed": 0,
       "revenue": 0.0
@@ -32,22 +32,22 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 14,
+      "showed": 11,
+      "show_pct": 78.6,
+      "qualified": 4,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "booked": 4,
       "showed": 2,
       "show_pct": 50.0,
       "qualified": 1,
       "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "booked": 14,
-      "showed": 10,
-      "show_pct": 71.4,
-      "qualified": 4,
-      "qual_pct": 28.6,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
