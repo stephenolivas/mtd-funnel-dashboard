@@ -3,16 +3,16 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 28,
-    "showed": 12,
-    "qualified": 5,
+    "showed": 13,
+    "qualified": 6,
     "closed": 0,
     "revenue": 0.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 18,
-      "showed": 9,
-      "qualified": 3,
+      "showed": 10,
+      "qualified": 4,
       "closed": 0,
       "revenue": 0.0
     },
@@ -32,32 +32,12 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 4,
+    "Internal Webinar": {
+      "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
       "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "booked": 14,
-      "showed": 9,
-      "show_pct": 64.3,
-      "qualified": 3,
-      "qual_pct": 21.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 4,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 1,
-      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -72,20 +52,40 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+    "Instagram": {
+      "booked": 14,
+      "showed": 9,
+      "show_pct": 64.3,
+      "qualified": 3,
+      "qual_pct": 21.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "booked": 1,
+    "Low Ticket Funnel": {
+      "booked": 4,
+      "showed": 1,
+      "show_pct": 25.0,
+      "qualified": 1,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "booked": 4,
       "showed": 0,
       "show_pct": 0.0,
+      "qualified": 1,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
       "qualified": 0,
       "qual_pct": 0.0,
       "closed": 0,
