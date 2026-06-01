@@ -1083,73 +1083,8 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   </table>
 </div>
 
+<script src="/mtd-funnel-dashboard/archives/picker.js"></script>
 <script>
-  // ── Dynamic nav picker — fetches archives/nav.json so pickers are always
-  //    current even on frozen archive pages generated weeks ago ──────────────
-  (async function() {{
-    const BASE = '/mtd-funnel-dashboard';
-    try {{
-      const r = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
-      if (!r.ok) return;
-      const nav = await r.json();
-      const path = window.location.pathname;
-
-      // Determine current page context
-      let curMonth = nav.live_month;
-      let curWeek  = null;
-      const mMatch = path.match(/archives[/]([0-9]{4}-[0-9]{2})[.]html/);
-      const wMatch = path.match(/archives[/](week-[0-9-]+)[.]html/);
-      const wCur   = path.includes('week-current.html');
-
-      if (mMatch)      {{ curMonth = mMatch[1]; }}
-      else if (wMatch) {{ curWeek = wMatch[1]; curMonth = wMatch[1].replace('week-','').substring(0,7); }}
-      else if (wCur)   {{ curWeek = 'week-current'; curMonth = nav.live_month; }}
-
-      // Rebuild month picker — use disabled placeholder so clicking any month always fires onchange
-      const mSel = document.querySelector('.month-picker select');
-      if (mSel) {{
-        const curLabel = (nav.months.find(m => m.key === curMonth) || {{}}).label || 'Select month';
-        let mOpts = `<option value="" disabled selected>${{curLabel}}</option>`;
-        mOpts += nav.months.map(m => {{
-          const href = m.is_live ? BASE+'/index.html' : BASE+'/archives/'+m.key+'.html';
-          return `<option value="${{href}}">${{m.label}}</option>`;
-        }}).join('');
-        mSel.innerHTML = mOpts;
-        mSel.onchange = function(){{ if (this.value) window.location.href = this.value; }};
-      }}
-
-      // Rebuild week picker
-      const wSel = document.querySelector('.week-picker select');
-      if (wSel) {{
-        const weeks = nav.weeks[curMonth] || [];
-        const isLive = curMonth === nav.live_month;
-        const fullHref = isLive ? BASE+'/index.html' : BASE+'/archives/'+curMonth+'.html';
-        const opts = [`<option value="${{fullHref}}" ${{!curWeek?'selected':''}}>Full Month</option>`];
-        weeks.forEach(w => {{
-          const href = BASE+'/archives/'+w.key+'.html';
-          opts.push(`<option value="${{href}}" ${{w.key===curWeek?'selected':''}}>${{w.label}}</option>`);
-        }});
-        wSel.innerHTML = opts.join('');
-        // Add disabled placeholder so re-clicking current week always navigates
-        const curWeekLabel = wSel.querySelector('option[selected]')?.textContent || 'Select week';
-        wSel.insertAdjacentHTML('afterbegin', `<option value="" disabled selected>${{curWeekLabel}}</option>`);
-        // Remove the selected attr from real options so placeholder stays shown
-        wSel.querySelectorAll('option:not([disabled])').forEach(o => o.removeAttribute('selected'));
-        wSel.onchange = function(){{ if (this.value) window.location.href = this.value; }};
-
-        // Hide week picker for months with no weekly archives
-        if (weeks.length === 0) {{
-          const wp = document.querySelector('.week-picker');
-          const div = document.querySelector('.picker-divider');
-          if (wp)  wp.style.display  = 'none';
-          if (div) div.style.display = 'none';
-        }}
-      }}
-    }} catch(e) {{
-      // Silently fail — baked-in picker remains visible as fallback
-    }}
-  }})();
-
   function toggleUTM(fid) {{
     const utmRows = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
     const chevron = document.getElementById("chev-" + fid);
@@ -1326,6 +1261,86 @@ def save_data_json(data, month_key):
     path  = ARCHIVES_DIR / fname
     with open(path, "w") as f:
         json.dump(export, f, indent=2)
+    print(f"Written: {path}", flush=True)
+
+
+def write_picker_js():
+    """
+    Write archives/picker.js — loaded by every dashboard page.
+    Since it lives as a separate file, ALL pages (even old archives) always
+    run the latest picker logic without needing backfill regeneration.
+    """
+    ARCHIVES_DIR.mkdir(exist_ok=True)
+    js = r"""
+// Dynamic nav picker v3 — loaded externally so all archive pages stay current
+(async function() {
+  const BASE = '/mtd-funnel-dashboard';
+  try {
+    const r = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
+    if (!r.ok) return;
+    const nav = await r.json();
+    const path = window.location.pathname;
+
+    // Detect page context from URL
+    let curMonth = nav.live_month;
+    let curWeek  = null;
+    const mMatch = path.match(/archives\/(\d{4}-\d{2})\.html/);
+    const wMatch = path.match(/archives\/(week-[\d-]+)\.html/);
+    const wCur   = path.includes('week-current.html');
+
+    if (mMatch)      { curMonth = mMatch[1]; }
+    else if (wMatch) { curWeek = wMatch[1]; curMonth = wMatch[1].replace('week-','').substring(0,7); }
+    else if (wCur)   { curWeek = 'week-current'; curMonth = nav.live_month; }
+
+    // Month picker — disabled placeholder so every click fires onchange
+    const mSel = document.querySelector('.month-picker select');
+    if (mSel) {
+      const curLabel = (nav.months.find(m => m.key === curMonth) || {}).label || 'Select month';
+      let opts = `<option value="" disabled selected>${curLabel}</option>`;
+      opts += nav.months.map(m => {
+        const href = m.is_live ? BASE+'/index.html' : BASE+'/archives/'+m.key+'.html';
+        return `<option value="${href}">${m.label}</option>`;
+      }).join('');
+      mSel.innerHTML = opts;
+      mSel.onchange = function() { if (this.value) window.location.href = this.value; };
+    }
+
+    // Week picker
+    const wSel = document.querySelector('.week-picker select');
+    if (wSel) {
+      const weeks  = nav.weeks[curMonth] || [];
+      const isLive = curMonth === nav.live_month;
+      const fullHref = isLive ? BASE+'/index.html' : BASE+'/archives/'+curMonth+'.html';
+
+      const opts = [`<option value="${fullHref}">Full Month</option>`];
+      weeks.forEach(w => {
+        opts.push(`<option value="${BASE+'/archives/'+w.key+'.html'}">${w.label}</option>`);
+      });
+      wSel.innerHTML = opts.join('');
+
+      // Disabled placeholder showing current view
+      const curWkLabel = curWeek
+        ? (weeks.find(w => w.key === curWeek) || {}).label || 'This week'
+        : 'Full Month';
+      wSel.insertAdjacentHTML('afterbegin', `<option value="" disabled selected>${curWkLabel}</option>`);
+      wSel.querySelectorAll('option:not([disabled])').forEach(o => o.removeAttribute('selected'));
+      wSel.onchange = function() { if (this.value) window.location.href = this.value; };
+
+      if (weeks.length === 0) {
+        const wp  = document.querySelector('.week-picker');
+        const div = document.querySelector('.picker-divider');
+        if (wp)  wp.style.display  = 'none';
+        if (div) div.style.display = 'none';
+      }
+    }
+  } catch(e) {
+    // Silently fail — baked-in picker remains as fallback
+  }
+})();
+"""
+    path = ARCHIVES_DIR / "picker.js"
+    with open(path, "w") as f:
+        f.write(js.strip())
     print(f"Written: {path}", flush=True)
 
 
@@ -1538,9 +1553,10 @@ if __name__ == "__main__":
                         month_picker_cur, week_picker_cur,
                         is_archive_page=False, is_week_page=True)
 
-    # ── Always write nav.json so client-side pickers stay current ───────────
+    # ── Always write nav.json and picker.js so client-side pickers stay current
     archive_months = scan_monthly_archives()  # re-scan in case we just wrote a new archive
     write_nav_json(live_month, archive_months)
+    write_picker_js()
 
     # ── Summary ───────────────────────────────────────────────────────────────
     final_data = data_month if not (args.month or args.week) else data
