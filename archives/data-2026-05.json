@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "LTF - Quiz Funnel": {
+      "booked": 331,
+      "showed": 46,
+      "show_pct": 13.9,
+      "qualified": 28,
+      "qual_pct": 8.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 95,
+      "showed": 58,
+      "show_pct": 61.1,
+      "qualified": 41,
+      "qual_pct": 43.2,
+      "closed": 14,
+      "cw_pct": 14.7,
+      "revenue": 111958.0
+    },
     "Unknown (Needs Review)": {
       "booked": 7,
       "showed": 3,
@@ -62,16 +82,6 @@
       "cw_pct": 9.8,
       "revenue": 173343.0
     },
-    "Low Ticket Funnel": {
-      "booked": 95,
-      "showed": 58,
-      "show_pct": 61.1,
-      "qualified": 41,
-      "qual_pct": 43.2,
-      "closed": 14,
-      "cw_pct": 14.7,
-      "revenue": 111958.0
-    },
     "YouTube": {
       "booked": 100,
       "showed": 68,
@@ -91,16 +101,6 @@
       "closed": 3,
       "cw_pct": 4.7,
       "revenue": 13194.0
-    },
-    "LTF - Quiz Funnel": {
-      "booked": 331,
-      "showed": 46,
-      "show_pct": 13.9,
-      "qualified": 28,
-      "qual_pct": 8.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "X": {
       "booked": 21,
