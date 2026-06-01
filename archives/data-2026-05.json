@@ -32,15 +32,15 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 89,
-      "showed": 57,
-      "show_pct": 64.0,
-      "qualified": 50,
-      "qual_pct": 56.2,
-      "closed": 9,
-      "cw_pct": 10.1,
-      "revenue": 65273.0
+    "Meta Ads": {
+      "booked": 33,
+      "showed": 11,
+      "show_pct": 33.3,
+      "qualified": 10,
+      "qual_pct": 30.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
     },
     "Low Ticket Funnel": {
       "booked": 95,
@@ -51,6 +51,16 @@
       "closed": 14,
       "cw_pct": 14.7,
       "revenue": 111958.0
+    },
+    "Website": {
+      "booked": 89,
+      "showed": 57,
+      "show_pct": 64.0,
+      "qualified": 50,
+      "qual_pct": 56.2,
+      "closed": 9,
+      "cw_pct": 10.1,
+      "revenue": 65273.0
     },
     "YouTube": {
       "booked": 100,
@@ -120,16 +130,6 @@
       "qual_pct": 100.0,
       "closed": 1,
       "cw_pct": 100.0,
-      "revenue": 5997.0
-    },
-    "Meta Ads": {
-      "booked": 33,
-      "showed": 11,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
       "revenue": 5997.0
     },
     "VSL": {
