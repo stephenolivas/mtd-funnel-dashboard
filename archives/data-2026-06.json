@@ -3,16 +3,16 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 29,
-    "showed": 3,
-    "qualified": 3,
+    "showed": 4,
+    "qualified": 4,
     "closed": 0,
     "revenue": 0.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 18,
-      "showed": 2,
-      "qualified": 2,
+      "showed": 3,
+      "qualified": 3,
       "closed": 0,
       "revenue": 0.0
     },
@@ -34,16 +34,16 @@
   "funnels": {
     "Instagram": {
       "booked": 15,
-      "showed": 2,
-      "show_pct": 13.3,
-      "qualified": 2,
-      "qual_pct": 13.3,
+      "showed": 3,
+      "show_pct": 20.0,
+      "qualified": 3,
+      "qual_pct": 20.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Email": {
-      "booked": 5,
+    "Low Ticket Funnel": {
+      "booked": 3,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -52,8 +52,8 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Low Ticket Funnel": {
-      "booked": 3,
+    "Reactivation Email": {
+      "booked": 5,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
