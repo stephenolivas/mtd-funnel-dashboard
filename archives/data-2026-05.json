@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "X": {
+      "booked": 21,
+      "showed": 14,
+      "show_pct": 66.7,
+      "qualified": 12,
+      "qual_pct": 57.1,
+      "closed": 2,
+      "cw_pct": 9.5,
+      "revenue": 14994.0
+    },
     "Meta Ads": {
       "booked": 33,
       "showed": 11,
@@ -111,16 +121,6 @@
       "closed": 3,
       "cw_pct": 4.7,
       "revenue": 13194.0
-    },
-    "X": {
-      "booked": 21,
-      "showed": 14,
-      "show_pct": 66.7,
-      "qualified": 12,
-      "qual_pct": 57.1,
-      "closed": 2,
-      "cw_pct": 9.5,
-      "revenue": 14994.0
     },
     "WWWS": {
       "booked": 1,
