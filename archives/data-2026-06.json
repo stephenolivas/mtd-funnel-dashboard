@@ -3,23 +3,23 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 57,
-    "showed": 35,
-    "qualified": 22,
-    "closed": 2,
-    "revenue": 14994.0
+    "showed": 38,
+    "qualified": 25,
+    "closed": 3,
+    "revenue": 20991.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 34,
-      "showed": 24,
-      "qualified": 13,
-      "closed": 1,
-      "revenue": 5997.0
+      "showed": 26,
+      "qualified": 15,
+      "closed": 2,
+      "revenue": 11994.0
     },
     "IN-HOUSE": {
       "booked": 23,
-      "showed": 11,
-      "qualified": 9,
+      "showed": 12,
+      "qualified": 10,
       "closed": 1,
       "revenue": 8997.0
     },
@@ -32,35 +32,25 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 23,
+      "showed": 20,
+      "show_pct": 87.0,
+      "qualified": 12,
+      "qual_pct": 52.2,
+      "closed": 2,
+      "cw_pct": 8.7,
+      "revenue": 11994.0
+    },
     "YouTube": {
       "booked": 8,
-      "showed": 6,
-      "show_pct": 75.0,
-      "qualified": 5,
-      "qual_pct": 62.5,
+      "showed": 7,
+      "show_pct": 87.5,
+      "qualified": 6,
+      "qual_pct": 75.0,
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 10,
-      "showed": 5,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 20.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "booked": 23,
-      "showed": 18,
-      "show_pct": 78.3,
-      "qualified": 10,
-      "qual_pct": 43.5,
-      "closed": 1,
-      "cw_pct": 4.3,
-      "revenue": 5997.0
     },
     "Website": {
       "booked": 13,
@@ -68,6 +58,16 @@
       "show_pct": 30.8,
       "qualified": 3,
       "qual_pct": 23.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 10,
+      "showed": 5,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 20.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
