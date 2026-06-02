@@ -42,6 +42,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Instagram": {
+      "booked": 24,
+      "showed": 14,
+      "show_pct": 58.3,
+      "qualified": 7,
+      "qual_pct": 29.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Email": {
       "booked": 11,
       "showed": 1,
@@ -52,12 +62,12 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "booked": 24,
-      "showed": 14,
-      "show_pct": 58.3,
-      "qualified": 7,
-      "qual_pct": 29.2,
+    "Meta Ads": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -106,16 +116,6 @@
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
       "qualified": 0,
       "qual_pct": 0.0,
       "closed": 0,
