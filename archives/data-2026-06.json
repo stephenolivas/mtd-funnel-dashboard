@@ -5,8 +5,8 @@
     "booked": 58,
     "showed": 24,
     "qualified": 12,
-    "closed": 0,
-    "revenue": 0.0
+    "closed": 1,
+    "revenue": 8997.0
   },
   "groups": {
     "EXTERNAL": {
@@ -20,8 +20,8 @@
       "booked": 22,
       "showed": 7,
       "qualified": 4,
-      "closed": 0,
-      "revenue": 0.0
+      "closed": 1,
+      "revenue": 8997.0
     },
     "UNCATEGORIZED": {
       "booked": 1,
@@ -32,12 +32,12 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 23,
-      "showed": 14,
-      "show_pct": 60.9,
-      "qualified": 7,
-      "qual_pct": 30.4,
+    "Meta Ads": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -52,15 +52,15 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Unknown (Needs Review)": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "YouTube": {
+      "booked": 8,
+      "showed": 4,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 1,
+      "cw_pct": 12.5,
+      "revenue": 8997.0
     },
     "Low Ticket Funnel": {
       "booked": 11,
@@ -72,27 +72,27 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Linkedin": {
+    "Instagram": {
+      "booked": 23,
+      "showed": 14,
+      "show_pct": 60.9,
+      "qualified": 7,
+      "qual_pct": 30.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
       "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
+      "showed": 1,
+      "show_pct": 100.0,
       "qualified": 0,
       "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 8,
-      "showed": 4,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
+    "Linkedin": {
       "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
