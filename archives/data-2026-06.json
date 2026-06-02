@@ -3,8 +3,8 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 57,
-    "showed": 23,
-    "qualified": 12,
+    "showed": 24,
+    "qualified": 13,
     "closed": 1,
     "revenue": 8997.0
   },
@@ -18,8 +18,8 @@
     },
     "IN-HOUSE": {
       "booked": 22,
-      "showed": 7,
-      "qualified": 4,
+      "showed": 8,
+      "qualified": 5,
       "closed": 1,
       "revenue": 8997.0
     },
@@ -54,20 +54,10 @@
     },
     "Reactivation Email": {
       "booked": 11,
-      "showed": 1,
-      "show_pct": 9.1,
-      "qualified": 1,
-      "qual_pct": 9.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+      "showed": 2,
+      "show_pct": 18.2,
+      "qualified": 2,
+      "qual_pct": 18.2,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -83,6 +73,16 @@
       "revenue": 0.0
     },
     "Linkedin": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
       "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
