@@ -10,14 +10,14 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 37,
+      "booked": 36,
       "showed": 15,
       "qualified": 8,
       "closed": 0,
       "revenue": 0.0
     },
     "IN-HOUSE": {
-      "booked": 21,
+      "booked": 22,
       "showed": 7,
       "qualified": 4,
       "closed": 0,
@@ -32,36 +32,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 25,
-      "showed": 14,
-      "show_pct": 56.0,
-      "qualified": 7,
-      "qual_pct": 28.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "YouTube": {
-      "booked": 8,
-      "showed": 4,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 10,
-      "showed": 1,
-      "show_pct": 10.0,
-      "qualified": 1,
-      "qual_pct": 10.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Low Ticket Funnel": {
       "booked": 11,
       "showed": 1,
@@ -78,6 +48,36 @@
       "show_pct": 100.0,
       "qualified": 0,
       "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 24,
+      "showed": 14,
+      "show_pct": 58.3,
+      "qualified": 7,
+      "qual_pct": 29.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 1,
+      "show_pct": 9.1,
+      "qualified": 1,
+      "qual_pct": 9.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "booked": 8,
+      "showed": 4,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
