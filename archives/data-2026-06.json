@@ -32,22 +32,12 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
+    "Website": {
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 4,
-      "showed": 1,
-      "show_pct": 25.0,
-      "qualified": 1,
-      "qual_pct": 25.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -72,12 +62,22 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
+    "Internal Webinar": {
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "booked": 4,
+      "showed": 1,
+      "show_pct": 25.0,
+      "qualified": 1,
+      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
