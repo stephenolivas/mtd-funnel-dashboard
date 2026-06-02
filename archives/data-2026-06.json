@@ -10,14 +10,14 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 35,
+      "booked": 34,
       "showed": 22,
       "qualified": 12,
       "closed": 0,
       "revenue": 0.0
     },
     "IN-HOUSE": {
-      "booked": 22,
+      "booked": 23,
       "showed": 9,
       "qualified": 6,
       "closed": 1,
@@ -32,12 +32,12 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 11,
-      "showed": 3,
-      "show_pct": 27.3,
-      "qualified": 1,
-      "qual_pct": 9.1,
+    "Reactivation Scrapers": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -52,6 +52,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Low Ticket Funnel": {
+      "booked": 10,
+      "showed": 3,
+      "show_pct": 30.0,
+      "qualified": 1,
+      "qual_pct": 10.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "booked": 7,
       "showed": 5,
@@ -62,22 +72,22 @@
       "cw_pct": 14.3,
       "revenue": 8997.0
     },
-    "Website": {
-      "booked": 13,
-      "showed": 3,
-      "show_pct": 23.1,
-      "qualified": 2,
-      "qual_pct": 15.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Linkedin": {
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 13,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 2,
+      "qual_pct": 15.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
