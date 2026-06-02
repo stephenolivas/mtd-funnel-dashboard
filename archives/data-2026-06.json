@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 57,
+    "booked": 58,
     "showed": 24,
     "qualified": 13,
     "closed": 1,
@@ -17,7 +17,7 @@
       "revenue": 0.0
     },
     "IN-HOUSE": {
-      "booked": 22,
+      "booked": 23,
       "showed": 8,
       "qualified": 5,
       "closed": 1,
@@ -42,6 +42,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Reactivation Email": {
+      "booked": 12,
+      "showed": 2,
+      "show_pct": 16.7,
+      "qualified": 2,
+      "qual_pct": 16.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "booked": 8,
       "showed": 4,
@@ -51,16 +61,6 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
-    },
-    "Reactivation Email": {
-      "booked": 11,
-      "showed": 2,
-      "show_pct": 18.2,
-      "qualified": 2,
-      "qual_pct": 18.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Instagram": {
       "booked": 23,
