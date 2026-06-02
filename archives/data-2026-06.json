@@ -32,12 +32,12 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "booked": 11,
-      "showed": 1,
-      "show_pct": 9.1,
-      "qualified": 1,
-      "qual_pct": 9.1,
+    "Instagram": {
+      "booked": 24,
+      "showed": 14,
+      "show_pct": 58.3,
+      "qualified": 7,
+      "qual_pct": 29.2,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -52,17 +52,17 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "booked": 24,
-      "showed": 14,
-      "show_pct": 58.3,
-      "qualified": 7,
-      "qual_pct": 29.2,
+    "Reactivation Email": {
+      "booked": 11,
+      "showed": 1,
+      "show_pct": 9.1,
+      "qualified": 1,
+      "qual_pct": 9.1,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Email": {
+    "Low Ticket Funnel": {
       "booked": 11,
       "showed": 1,
       "show_pct": 9.1,
