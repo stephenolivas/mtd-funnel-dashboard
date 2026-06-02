@@ -62,16 +62,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Linkedin": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "YouTube": {
       "booked": 8,
       "showed": 6,
@@ -81,6 +71,16 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
+    },
+    "Linkedin": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Reactivation Scrapers": {
       "booked": 1,
