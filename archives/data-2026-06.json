@@ -3,16 +3,16 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 58,
-    "showed": 26,
-    "qualified": 14,
+    "showed": 28,
+    "qualified": 15,
     "closed": 1,
     "revenue": 8997.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 35,
-      "showed": 17,
-      "qualified": 8,
+      "showed": 19,
+      "qualified": 9,
       "closed": 0,
       "revenue": 0.0
     },
@@ -32,12 +32,22 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 12,
-      "showed": 3,
-      "show_pct": 25.0,
-      "qualified": 2,
-      "qual_pct": 16.7,
+    "YouTube": {
+      "booked": 8,
+      "showed": 5,
+      "show_pct": 62.5,
+      "qualified": 3,
+      "qual_pct": 37.5,
+      "closed": 1,
+      "cw_pct": 12.5,
+      "revenue": 8997.0
+    },
+    "Instagram": {
+      "booked": 23,
+      "showed": 16,
+      "show_pct": 69.6,
+      "qualified": 8,
+      "qual_pct": 34.8,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -52,25 +62,15 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "booked": 23,
-      "showed": 14,
-      "show_pct": 60.9,
-      "qualified": 7,
-      "qual_pct": 30.4,
+    "Website": {
+      "booked": 13,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 2,
+      "qual_pct": 15.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "YouTube": {
-      "booked": 8,
-      "showed": 5,
-      "show_pct": 62.5,
-      "qualified": 3,
-      "qual_pct": 37.5,
-      "closed": 1,
-      "cw_pct": 12.5,
-      "revenue": 8997.0
     },
     "Linkedin": {
       "booked": 1,
@@ -98,16 +98,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Email": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
