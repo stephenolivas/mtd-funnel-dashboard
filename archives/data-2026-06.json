@@ -52,6 +52,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Unknown (Needs Review)": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Email": {
       "booked": 11,
       "showed": 1,
@@ -103,16 +113,6 @@
       "revenue": 0.0
     },
     "Website": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
       "booked": 1,
       "showed": 1,
       "show_pct": 100.0,
