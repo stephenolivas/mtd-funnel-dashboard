@@ -42,22 +42,22 @@
       "cw_pct": 14.3,
       "revenue": 8997.0
     },
-    "Website": {
-      "booked": 13,
-      "showed": 3,
-      "show_pct": 23.1,
-      "qualified": 2,
-      "qual_pct": 15.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "booked": 23,
       "showed": 17,
       "show_pct": 73.9,
       "qualified": 9,
       "qual_pct": 39.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 13,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 2,
+      "qual_pct": 15.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
