@@ -3,16 +3,16 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 92,
-    "showed": 47,
-    "qualified": 33,
+    "showed": 48,
+    "qualified": 34,
     "closed": 3,
     "revenue": 20991.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 53,
-      "showed": 30,
-      "qualified": 18,
+      "showed": 31,
+      "qualified": 19,
       "closed": 2,
       "revenue": 11994.0
     },
@@ -34,10 +34,10 @@
   "funnels": {
     "Low Ticket Funnel": {
       "booked": 17,
-      "showed": 8,
-      "show_pct": 47.1,
-      "qualified": 4,
-      "qual_pct": 23.5,
+      "showed": 9,
+      "show_pct": 52.9,
+      "qualified": 5,
+      "qual_pct": 29.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -51,6 +51,16 @@
       "closed": 2,
       "cw_pct": 5.7,
       "revenue": 11994.0
+    },
+    "Reactivation Scrapers": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "booked": 16,
@@ -108,16 +118,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
