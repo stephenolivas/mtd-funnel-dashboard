@@ -2,24 +2,24 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 91,
+    "booked": 90,
     "showed": 49,
     "qualified": 35,
-    "closed": 3,
-    "revenue": 20991.0
+    "closed": 4,
+    "revenue": 29988.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 52,
-      "showed": 32,
-      "qualified": 20,
-      "closed": 2,
-      "revenue": 11994.0
+      "showed": 33,
+      "qualified": 21,
+      "closed": 3,
+      "revenue": 20991.0
     },
     "IN-HOUSE": {
-      "booked": 36,
-      "showed": 17,
-      "qualified": 15,
+      "booked": 35,
+      "showed": 16,
+      "qualified": 14,
       "closed": 1,
       "revenue": 8997.0
     },
@@ -34,13 +34,13 @@
   "funnels": {
     "Instagram": {
       "booked": 34,
-      "showed": 22,
-      "show_pct": 64.7,
-      "qualified": 14,
-      "qual_pct": 41.2,
-      "closed": 2,
-      "cw_pct": 5.9,
-      "revenue": 11994.0
+      "showed": 23,
+      "show_pct": 67.6,
+      "qualified": 15,
+      "qual_pct": 44.1,
+      "closed": 3,
+      "cw_pct": 8.8,
+      "revenue": 20991.0
     },
     "Low Ticket Funnel": {
       "booked": 17,
@@ -48,6 +48,16 @@
       "show_pct": 52.9,
       "qualified": 5,
       "qual_pct": 29.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "booked": 3,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -72,16 +82,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 9,
-      "showed": 8,
-      "show_pct": 88.9,
-      "qualified": 7,
-      "qual_pct": 77.8,
-      "closed": 1,
-      "cw_pct": 11.1,
-      "revenue": 8997.0
-    },
     "Website": {
       "booked": 16,
       "showed": 5,
@@ -92,15 +92,15 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Unknown (Needs Review)": {
-      "booked": 3,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "YouTube": {
+      "booked": 8,
+      "showed": 7,
+      "show_pct": 87.5,
+      "qualified": 6,
+      "qual_pct": 75.0,
+      "closed": 1,
+      "cw_pct": 12.5,
+      "revenue": 8997.0
     },
     "Meta Ads": {
       "booked": 2,
