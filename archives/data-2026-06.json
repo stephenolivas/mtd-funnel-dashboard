@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 62,
+    "booked": 61,
     "showed": 42,
     "qualified": 29,
     "closed": 3,
@@ -17,7 +17,7 @@
       "revenue": 11994.0
     },
     "IN-HOUSE": {
-      "booked": 28,
+      "booked": 27,
       "showed": 15,
       "qualified": 13,
       "closed": 1,
@@ -33,11 +33,11 @@
   },
   "funnels": {
     "Internal Webinar": {
-      "booked": 6,
+      "booked": 5,
       "showed": 3,
-      "show_pct": 50.0,
+      "show_pct": 60.0,
       "qualified": 3,
-      "qual_pct": 50.0,
+      "qual_pct": 60.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
