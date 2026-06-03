@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 88,
+    "booked": 87,
     "showed": 57,
     "qualified": 39,
     "closed": 7,
@@ -10,15 +10,15 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 52,
-      "showed": 38,
+      "booked": 51,
+      "showed": 37,
       "qualified": 24,
       "closed": 3,
       "revenue": 20991.0
     },
     "IN-HOUSE": {
       "booked": 36,
-      "showed": 19,
+      "showed": 20,
       "qualified": 15,
       "closed": 3,
       "revenue": 23991.0
@@ -42,12 +42,22 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Scrapers": {
+    "Instagram": {
+      "booked": 34,
+      "showed": 27,
+      "show_pct": 79.4,
+      "qualified": 18,
+      "qual_pct": 52.9,
+      "closed": 3,
+      "cw_pct": 8.8,
+      "revenue": 20991.0
+    },
+    "Meta Ads": {
       "booked": 2,
       "showed": 1,
       "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -72,12 +82,12 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Meta Ads": {
+    "Reactivation Scrapers": {
       "booked": 2,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -91,16 +101,6 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
-    },
-    "Instagram": {
-      "booked": 35,
-      "showed": 28,
-      "show_pct": 80.0,
-      "qualified": 18,
-      "qual_pct": 51.4,
-      "closed": 3,
-      "cw_pct": 8.6,
-      "revenue": 20991.0
     },
     "YouTube": {
       "booked": 8,
