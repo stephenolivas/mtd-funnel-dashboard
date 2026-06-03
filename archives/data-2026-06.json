@@ -42,16 +42,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
-      "booked": 16,
-      "showed": 5,
-      "show_pct": 31.2,
-      "qualified": 4,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "booked": 35,
       "showed": 20,
@@ -61,6 +51,16 @@
       "closed": 2,
       "cw_pct": 5.7,
       "revenue": 11994.0
+    },
+    "Website": {
+      "booked": 16,
+      "showed": 5,
+      "show_pct": 31.2,
+      "qualified": 4,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Internal Webinar": {
       "booked": 10,
