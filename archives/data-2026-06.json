@@ -2,17 +2,17 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 89,
-    "showed": 51,
-    "qualified": 37,
+    "booked": 88,
+    "showed": 54,
+    "qualified": 38,
     "closed": 6,
     "revenue": 44982.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 53,
-      "showed": 34,
-      "qualified": 23,
+      "showed": 37,
+      "qualified": 24,
       "closed": 3,
       "revenue": 20991.0
     },
@@ -24,7 +24,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "booked": 1,
+      "booked": 0,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -44,10 +44,10 @@
     },
     "Instagram": {
       "booked": 35,
-      "showed": 24,
-      "show_pct": 68.6,
-      "qualified": 17,
-      "qual_pct": 48.6,
+      "showed": 27,
+      "show_pct": 77.1,
+      "qualified": 18,
+      "qual_pct": 51.4,
       "closed": 3,
       "cw_pct": 8.6,
       "revenue": 20991.0
@@ -61,16 +61,6 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "YouTube": {
       "booked": 8,
