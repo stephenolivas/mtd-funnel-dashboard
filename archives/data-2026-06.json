@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 90,
+    "booked": 89,
     "showed": 49,
     "qualified": 35,
     "closed": 5,
@@ -10,7 +10,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 52,
+      "booked": 53,
       "showed": 33,
       "qualified": 21,
       "closed": 3,
@@ -24,7 +24,7 @@
       "revenue": 14994.0
     },
     "UNCATEGORIZED": {
-      "booked": 3,
+      "booked": 1,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "booked": 34,
-      "showed": 23,
-      "show_pct": 67.6,
-      "qualified": 15,
-      "qual_pct": 44.1,
-      "closed": 3,
-      "cw_pct": 8.8,
-      "revenue": 20991.0
-    },
     "Low Ticket Funnel": {
       "booked": 17,
       "showed": 9,
@@ -52,22 +42,42 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Linkedin": {
+      "booked": 1,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "booked": 35,
+      "showed": 23,
+      "show_pct": 65.7,
+      "qualified": 15,
+      "qual_pct": 42.9,
+      "closed": 3,
+      "cw_pct": 8.6,
+      "revenue": 20991.0
+    },
+    "YouTube": {
+      "booked": 8,
+      "showed": 7,
+      "show_pct": 87.5,
+      "qualified": 6,
+      "qual_pct": 75.0,
+      "closed": 2,
+      "cw_pct": 25.0,
+      "revenue": 14994.0
+    },
     "Website": {
       "booked": 16,
       "showed": 5,
       "show_pct": 31.2,
       "qualified": 4,
       "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 3,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -92,18 +102,8 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 8,
-      "showed": 7,
-      "show_pct": 87.5,
-      "qualified": 6,
-      "qual_pct": 75.0,
-      "closed": 2,
-      "cw_pct": 25.0,
-      "revenue": 14994.0
-    },
-    "Meta Ads": {
-      "booked": 2,
+    "Unknown (Needs Review)": {
+      "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -112,12 +112,12 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Linkedin": {
-      "booked": 1,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
