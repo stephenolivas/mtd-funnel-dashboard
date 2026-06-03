@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 95,
+    "booked": 93,
     "showed": 46,
     "qualified": 32,
     "closed": 3,
@@ -17,14 +17,14 @@
       "revenue": 11994.0
     },
     "IN-HOUSE": {
-      "booked": 38,
+      "booked": 37,
       "showed": 16,
       "qualified": 14,
       "closed": 1,
       "revenue": 8997.0
     },
     "UNCATEGORIZED": {
-      "booked": 2,
+      "booked": 1,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -52,12 +52,22 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Internal Webinar": {
-      "booked": 10,
+      "booked": 9,
       "showed": 4,
-      "show_pct": 40.0,
+      "show_pct": 44.4,
       "qualified": 4,
-      "qual_pct": 40.0,
+      "qual_pct": 44.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -83,17 +93,7 @@
       "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
-      "booked": 2,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 2,
+      "booked": 1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
