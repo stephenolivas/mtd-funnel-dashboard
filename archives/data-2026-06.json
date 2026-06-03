@@ -3,16 +3,16 @@
   "month_label": "June 2026",
   "grand": {
     "booked": 91,
-    "showed": 48,
-    "qualified": 34,
+    "showed": 49,
+    "qualified": 35,
     "closed": 3,
     "revenue": 20991.0
   },
   "groups": {
     "EXTERNAL": {
       "booked": 52,
-      "showed": 31,
-      "qualified": 19,
+      "showed": 32,
+      "qualified": 20,
       "closed": 2,
       "revenue": 11994.0
     },
@@ -34,10 +34,10 @@
   "funnels": {
     "Instagram": {
       "booked": 34,
-      "showed": 21,
-      "show_pct": 61.8,
-      "qualified": 13,
-      "qual_pct": 38.2,
+      "showed": 22,
+      "show_pct": 64.7,
+      "qualified": 14,
+      "qual_pct": 41.2,
       "closed": 2,
       "cw_pct": 5.9,
       "revenue": 11994.0
@@ -72,6 +72,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "YouTube": {
+      "booked": 9,
+      "showed": 8,
+      "show_pct": 88.9,
+      "qualified": 7,
+      "qual_pct": 77.8,
+      "closed": 1,
+      "cw_pct": 11.1,
+      "revenue": 8997.0
+    },
     "Website": {
       "booked": 16,
       "showed": 5,
@@ -91,16 +101,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "YouTube": {
-      "booked": 9,
-      "showed": 8,
-      "show_pct": 88.9,
-      "qualified": 7,
-      "qual_pct": 77.8,
-      "closed": 1,
-      "cw_pct": 11.1,
-      "revenue": 8997.0
     },
     "Meta Ads": {
       "booked": 2,
