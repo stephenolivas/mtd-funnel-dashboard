@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 91,
+    "booked": 92,
     "showed": 48,
     "qualified": 34,
     "closed": 3,
@@ -24,7 +24,7 @@
       "revenue": 8997.0
     },
     "UNCATEGORIZED": {
-      "booked": 2,
+      "booked": 3,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -52,6 +52,16 @@
       "cw_pct": 5.9,
       "revenue": 11994.0
     },
+    "Internal Webinar": {
+      "booked": 9,
+      "showed": 4,
+      "show_pct": 44.4,
+      "qualified": 4,
+      "qual_pct": 44.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Scrapers": {
       "booked": 1,
       "showed": 0,
@@ -73,31 +83,11 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "booked": 2,
+      "booked": 3,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
       "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 2,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "booked": 9,
-      "showed": 4,
-      "show_pct": 44.4,
-      "qualified": 4,
-      "qual_pct": 44.4,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -111,6 +101,16 @@
       "closed": 1,
       "cw_pct": 11.1,
       "revenue": 8997.0
+    },
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Linkedin": {
       "booked": 1,
