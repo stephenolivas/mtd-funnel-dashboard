@@ -5,8 +5,8 @@
     "booked": 90,
     "showed": 49,
     "qualified": 35,
-    "closed": 4,
-    "revenue": 29988.0
+    "closed": 5,
+    "revenue": 35985.0
   },
   "groups": {
     "EXTERNAL": {
@@ -20,8 +20,8 @@
       "booked": 35,
       "showed": 16,
       "qualified": 14,
-      "closed": 1,
-      "revenue": 8997.0
+      "closed": 2,
+      "revenue": 14994.0
     },
     "UNCATEGORIZED": {
       "booked": 3,
@@ -48,6 +48,16 @@
       "show_pct": 52.9,
       "qualified": 5,
       "qual_pct": 29.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 16,
+      "showed": 5,
+      "show_pct": 31.2,
+      "qualified": 4,
+      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -82,25 +92,15 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
-      "booked": 16,
-      "showed": 5,
-      "show_pct": 31.2,
-      "qualified": 4,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "YouTube": {
       "booked": 8,
       "showed": 7,
       "show_pct": 87.5,
       "qualified": 6,
       "qual_pct": 75.0,
-      "closed": 1,
-      "cw_pct": 12.5,
-      "revenue": 8997.0
+      "closed": 2,
+      "cw_pct": 25.0,
+      "revenue": 14994.0
     },
     "Meta Ads": {
       "booked": 2,
