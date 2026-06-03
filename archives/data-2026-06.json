@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 61,
+    "booked": 97,
     "showed": 44,
     "qualified": 30,
     "closed": 3,
@@ -10,21 +10,21 @@
   },
   "groups": {
     "EXTERNAL": {
-      "booked": 34,
+      "booked": 56,
       "showed": 28,
       "qualified": 16,
       "closed": 2,
       "revenue": 11994.0
     },
     "IN-HOUSE": {
-      "booked": 27,
+      "booked": 38,
       "showed": 16,
       "qualified": 14,
       "closed": 1,
       "revenue": 8997.0
     },
     "UNCATEGORIZED": {
-      "booked": 0,
+      "booked": 3,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -32,52 +32,72 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "booked": 3,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
-      "booked": 23,
+      "booked": 35,
       "showed": 20,
-      "show_pct": 87.0,
+      "show_pct": 57.1,
       "qualified": 12,
-      "qual_pct": 52.2,
+      "qual_pct": 34.3,
       "closed": 2,
-      "cw_pct": 8.7,
+      "cw_pct": 5.7,
       "revenue": 11994.0
     },
     "Internal Webinar": {
-      "booked": 5,
+      "booked": 10,
       "showed": 4,
-      "show_pct": 80.0,
+      "show_pct": 40.0,
       "qualified": 4,
-      "qual_pct": 80.0,
+      "qual_pct": 40.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 20,
+      "showed": 7,
+      "show_pct": 35.0,
+      "qualified": 3,
+      "qual_pct": 15.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
     "YouTube": {
-      "booked": 8,
+      "booked": 9,
       "showed": 7,
-      "show_pct": 87.5,
+      "show_pct": 77.8,
       "qualified": 6,
-      "qual_pct": 75.0,
+      "qual_pct": 66.7,
       "closed": 1,
-      "cw_pct": 12.5,
+      "cw_pct": 11.1,
       "revenue": 8997.0
     },
-    "Low Ticket Funnel": {
-      "booked": 10,
-      "showed": 7,
-      "show_pct": 70.0,
-      "qualified": 3,
-      "qual_pct": 30.0,
+    "Website": {
+      "booked": 16,
+      "showed": 5,
+      "show_pct": 31.2,
+      "qualified": 4,
+      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Website": {
-      "booked": 13,
-      "showed": 5,
-      "show_pct": 38.5,
-      "qualified": 4,
-      "qual_pct": 30.8,
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
