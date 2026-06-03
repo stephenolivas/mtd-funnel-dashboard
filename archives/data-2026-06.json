@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "booked": 91,
+    "booked": 92,
     "showed": 47,
     "qualified": 33,
     "closed": 3,
@@ -24,7 +24,7 @@
       "revenue": 8997.0
     },
     "UNCATEGORIZED": {
-      "booked": 1,
+      "booked": 2,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -62,6 +62,16 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Unknown (Needs Review)": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Meta Ads": {
       "booked": 2,
       "showed": 0,
@@ -91,16 +101,6 @@
       "closed": 1,
       "cw_pct": 11.1,
       "revenue": 8997.0
-    },
-    "Unknown (Needs Review)": {
-      "booked": 1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "booked": 1,
