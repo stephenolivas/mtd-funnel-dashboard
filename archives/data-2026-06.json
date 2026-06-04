@@ -4,7 +4,7 @@
   "grand": {
     "booked": 87,
     "showed": 59,
-    "qualified": 42,
+    "qualified": 43,
     "closed": 9,
     "revenue": 70973.0
   },
@@ -19,7 +19,7 @@
     "IN-HOUSE": {
       "booked": 36,
       "showed": 20,
-      "qualified": 17,
+      "qualified": 18,
       "closed": 5,
       "revenue": 43985.0
     },
@@ -32,6 +32,26 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "booked": 8,
+      "showed": 7,
+      "show_pct": 87.5,
+      "qualified": 7,
+      "qual_pct": 87.5,
+      "closed": 3,
+      "cw_pct": 37.5,
+      "revenue": 20991.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 16,
+      "showed": 9,
+      "show_pct": 56.2,
+      "qualified": 5,
+      "qual_pct": 31.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "booked": 34,
       "showed": 29,
@@ -41,16 +61,6 @@
       "closed": 3,
       "cw_pct": 8.8,
       "revenue": 20991.0
-    },
-    "Meta Ads": {
-      "booked": 2,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "booked": 16,
@@ -62,22 +72,12 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 8,
-      "showed": 7,
-      "show_pct": 87.5,
-      "qualified": 6,
-      "qual_pct": 75.0,
-      "closed": 3,
-      "cw_pct": 37.5,
-      "revenue": 20991.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 16,
-      "showed": 9,
-      "show_pct": 56.2,
-      "qualified": 5,
-      "qual_pct": 31.2,
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
