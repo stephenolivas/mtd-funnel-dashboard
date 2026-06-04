@@ -32,16 +32,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "booked": 14,
-      "showed": 7,
-      "show_pct": 50.0,
-      "qualified": 7,
-      "qual_pct": 50.0,
-      "closed": 3,
-      "cw_pct": 21.4,
-      "revenue": 20991.0
-    },
     "Low Ticket Funnel": {
       "booked": 25,
       "showed": 9,
@@ -52,16 +42,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "booked": 20,
-      "showed": 5,
-      "show_pct": 25.0,
-      "qualified": 4,
-      "qual_pct": 20.0,
-      "closed": 2,
-      "cw_pct": 10.0,
-      "revenue": 22994.0
-    },
     "Instagram": {
       "booked": 39,
       "showed": 29,
@@ -71,6 +51,26 @@
       "closed": 3,
       "cw_pct": 7.7,
       "revenue": 20991.0
+    },
+    "YouTube": {
+      "booked": 14,
+      "showed": 7,
+      "show_pct": 50.0,
+      "qualified": 7,
+      "qual_pct": 50.0,
+      "closed": 3,
+      "cw_pct": 21.4,
+      "revenue": 20991.0
+    },
+    "Internal Webinar": {
+      "booked": 20,
+      "showed": 5,
+      "show_pct": 25.0,
+      "qualified": 4,
+      "qual_pct": 20.0,
+      "closed": 2,
+      "cw_pct": 10.0,
+      "revenue": 22994.0
     },
     "Meta Ads": {
       "booked": 2,
