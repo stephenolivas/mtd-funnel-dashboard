@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1558,
     "booked": 128,
-    "showed": 81,
+    "showed": 82,
     "qualified": 61,
     "closed": 13,
     "revenue": 94961.0
@@ -13,7 +13,7 @@
     "EXTERNAL": {
       "leads_created": 1040,
       "booked": 67,
-      "showed": 48,
+      "showed": 49,
       "qualified": 33,
       "closed": 3,
       "revenue": 20991.0
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 475,
-      "booked": 20,
-      "book_pct": 4.2,
-      "showed": 8,
-      "show_pct": 40.0,
-      "qualified": 7,
-      "qual_pct": 35.0,
-      "closed": 2,
-      "cw_pct": 10.0,
-      "revenue": 22994.0
-    },
     "Website": {
       "leads_created": 14,
       "booked": 21,
@@ -84,6 +72,30 @@
       "cw_pct": 7.7,
       "revenue": 20991.0
     },
+    "Internal Webinar": {
+      "leads_created": 475,
+      "booked": 20,
+      "book_pct": 4.2,
+      "showed": 8,
+      "show_pct": 40.0,
+      "qualified": 7,
+      "qual_pct": 35.0,
+      "closed": 2,
+      "cw_pct": 10.0,
+      "revenue": 22994.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 1005,
+      "booked": 25,
+      "book_pct": 2.5,
+      "showed": 13,
+      "show_pct": 52.0,
+      "qualified": 8,
+      "qual_pct": 32.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 11,
       "booked": 1,
@@ -104,18 +116,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 25,
-      "book_pct": 2.5,
-      "showed": 12,
-      "show_pct": 48.0,
-      "qualified": 8,
-      "qual_pct": 32.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
