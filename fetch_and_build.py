@@ -12,7 +12,7 @@ import time
 import json
 import argparse
 import calendar
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -263,6 +263,43 @@ def fetch_leads_by_booked_date(start_date, end_date):
     return leads
 
 
+# ── Leads Created Fetch ───────────────────────────────────────────────────────
+
+def fetch_leads_created(start_date, end_date):
+    """
+    Fetch all leads created in [start_date, end_date] (Pacific time).
+    Used for the leads_created funnel metric and Book% calculation.
+    """
+    # Convert Pacific midnight → UTC for the datetime field
+    start_utc = datetime(start_date.year, start_date.month, start_date.day,
+                         0, 0, 0, tzinfo=PACIFIC).astimezone(timezone.utc)
+    end_utc   = datetime(end_date.year, end_date.month, end_date.day,
+                         23, 59, 59, tzinfo=PACIFIC).astimezone(timezone.utc)
+    start_str = start_utc.strftime("%Y-%m-%dT%H:%M:%S.000000Z")
+    end_str   = end_utc.strftime("%Y-%m-%dT%H:%M:%S.000000Z")
+
+    # Use query syntax — direct date_created__ params don't filter server-side
+    query = f'date_created >= "{start_str}" AND date_created <= "{end_str}"'
+    print(f"Fetching leads created ({start_date} → {end_date})...", flush=True)
+    leads, skip = [], 0
+    while True:
+        data = close_get("lead/", {
+            "query":   query,
+            "_fields": f"id,status_id,custom.{CF_FUNNEL_NAME}",
+            "_limit":  200,
+            "_skip":   skip,
+        })
+        batch = data.get("data", [])
+        leads.extend(batch)
+        print(f"  Fetched {len(leads)} leads created so far...", flush=True)
+        if not data.get("has_more"):
+            break
+        skip += 200
+
+    print(f"  Total leads created: {len(leads)}", flush=True)
+    return leads
+
+
 # ── Main Aggregation ───────────────────────────────────────────────────────────
 
 def _is_yes(val):
@@ -282,6 +319,15 @@ def aggregate_data(start_date, end_date, month_label,
     """
     lead_cache = lead_cache if lead_cache is not None else {}
     utm_cache  = utm_cache  if utm_cache  is not None else {}
+
+    # Fetch leads created this period (for leads_created + book% metrics)
+    created_leads = fetch_leads_created(start_date, end_date)
+    leads_created_by_funnel = {}
+    for lead in created_leads:
+        if lead.get("status_id") in EXCLUDED_LEAD_STATUS_IDS:
+            continue
+        funnel = get_funnel_name(lead)
+        leads_created_by_funnel[funnel] = leads_created_by_funnel.get(funnel, 0) + 1
 
     # Fetch booked leads via First Sales Call Booked Date field
     booked_leads = fetch_leads_by_booked_date(start_date, end_date)
@@ -345,22 +391,29 @@ def aggregate_data(start_date, end_date, month_label,
         s["closed"]  += 1
         s["revenue"] += row["value"]
 
+    # Add leads_created funnels into funnel_data if not already present
+    for funnel, count in leads_created_by_funnel.items():
+        if funnel not in funnel_data:
+            funnel_data[funnel] = {}
+
     funnel_totals = {}
     for funnel, utms in funnel_data.items():
-        t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
+        t = {"leads_created": leads_created_by_funnel.get(funnel, 0),
+             "booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
         for v in utms.values():
-            for k in t: t[k] += v[k]
+            for k in ("booked", "showed", "qualified", "closed", "revenue"):
+                t[k] += v[k]
         funnel_totals[funnel] = t
 
-    grand = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
+    grand = {"leads_created": 0, "booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
     for funnel, t in funnel_totals.items():
         if funnel in EXCLUDED_FROM_TOTALS_FUNNELS:
             continue  # excluded from top-line KPI tiles
-        for k in grand: grand[k] += t[k]
+        for k in grand: grand[k] += t.get(k, 0)
 
     group_totals = {}
     for group_label, group_funnels in FUNNEL_GROUPS:
-        t = {"booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
+        t = {"leads_created": 0, "booked": 0, "showed": 0, "qualified": 0, "closed": 0, "revenue": 0.0}
         for funnel in group_funnels:
             if funnel in EXCLUDED_FROM_TOTALS_FUNNELS:
                 continue  # excluded from group KPI sub-tiles
@@ -490,12 +543,16 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
         _is_excl    = funnel in EXCLUDED_FROM_TOTALS_FUNNELS
         _row_class  = "funnel-row funnel-row-excluded" if _is_excl else "funnel-row"
         _excl_note  = " *" if _is_excl else ""
+        lc          = t.get("leads_created", 0)
+        lc_disp     = lc if lc else "—"
+
 
         html = [f"""
     <tr class="{_row_class}" onclick="toggleUTM('{fid}')" data-fid="{fid}">
       <td class="col-name">
         <span class="chevron" id="chev-{fid}">›</span>{funnel}{_excl_note}
       </td>
+      <td class="col-num">{lc_disp}</td>
       <td class="col-num">{bo if bo else "—"}</td>
       <td class="col-pace {_pc}">{pace_label(bo, _on_pace, _goal)}</td>
       <td class="col-goal">{goal_pct_label(bo, _goal)}</td>
@@ -519,6 +576,7 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
             html.append(f"""
     <tr class="utm-row" data-parent="{fid}">
       <td class="col-name col-utm">↳ {utm_label}</td>
+      <td class="col-num">—</td>
       <td class="col-num">{b if b else "—"}</td>
       <td class="col-pace"></td>
       <td class="col-goal"></td>
@@ -540,7 +598,7 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
         grp_id = group_label.lower().replace(" ", "_").replace("-", "_")
         rows.append(f"""
     <tr class="section-header-row" onclick="toggleSection('{grp_id}')">
-      <td colspan="12">
+      <td colspan="13">
         <span class="section-chevron open" id="secchev-{grp_id}">›</span>FUNNEL BREAKDOWN — {group_label}
       </td>
     </tr>""")
@@ -559,7 +617,7 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
     if extras:
         rows.append(f"""
     <tr class="section-header-row" onclick="toggleSection('other')">
-      <td colspan="12">
+      <td colspan="13">
         <span class="section-chevron open" id="secchev-other">›</span>FUNNEL BREAKDOWN — OTHER
       </td>
     </tr>""")
@@ -582,6 +640,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     funnel_rows  = build_funnel_rows(data["funnel_data"], data["funnel_totals"],
                                      goals, day_of_month, days_in_month)
 
+    g_lc  = grand.get("leads_created", 0)
     g_bo  = grand["booked"]
     g_sh  = grand["showed"]
     g_qu  = grand["qualified"]
@@ -667,7 +726,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   /* ── KPI Cards ── */
   .kpis {{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 14px;
     padding: 24px 36px;
   }}
@@ -954,6 +1013,23 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 
 <!-- KPI Cards -->
 <div class="kpis">
+  <div class="kpi" style="--kpi-accent:#6366f1; --kpi-color:#6366f1;">
+    <div class="label">Leads Created</div>
+    <div class="value">{g_lc}</div>
+    <div class="kpi-sub">new leads MTD</div>
+    <div class="kpi-split">
+      <div class="kpi-split-item">
+        <div class="split-label">External</div>
+        <div class="split-value">{ext.get("leads_created", 0)}</div>
+        <div class="split-rate">{pct(ext.get("leads_created",0), g_lc)} of total</div>
+      </div>
+      <div class="kpi-split-item">
+        <div class="split-label">In-House</div>
+        <div class="split-value">{inh.get("leads_created", 0)}</div>
+        <div class="split-rate">{pct(inh.get("leads_created",0), g_lc)} of total</div>
+      </div>
+    </div>
+  </div>
   <div class="kpi" style="--kpi-accent:#4f46e5; --kpi-color:var(--text);">
     <div class="label">Total Booked</div>
     <div class="value">{g_bo}</div>
@@ -1049,6 +1125,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     <thead>
       <tr>
         <th class="col-name">Funnel</th>
+        <th class="col-num">Leads</th>
         <th class="col-num">Booked</th>
         <th class="col-pace">Projected</th>
         <th class="col-goal">Goal %</th>
@@ -1067,6 +1144,7 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 
     <tr class="total-row">
       <td class="col-name">TOTAL</td>
+      <td class="col-num">{g_lc if g_lc else "—"}</td>
       <td class="col-num">{g_bo}</td>
       <td class="col-pace">—</td>
       <td class="col-goal">—</td>
@@ -1247,8 +1325,11 @@ def save_data_json(data, month_key):
         qu  = totals.get("qualified", 0)
         cl  = totals.get("closed", 0)
         rev = totals.get("revenue", 0.0)
+        lc = totals.get("leads_created", 0)
         export["funnels"][funnel] = {
+            "leads_created": lc,
             "booked":    bo,
+            "book_pct":  round(bo / lc * 100, 1) if lc else 0,
             "showed":    sh,
             "show_pct":  round(sh / bo * 100, 1) if bo else 0,
             "qualified": qu,
