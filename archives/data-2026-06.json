@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "booked": 20,
+      "showed": 5,
+      "show_pct": 25.0,
+      "qualified": 4,
+      "qual_pct": 20.0,
+      "closed": 2,
+      "cw_pct": 10.0,
+      "revenue": 22994.0
+    },
     "Instagram": {
       "booked": 39,
       "showed": 29,
@@ -71,16 +81,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "booked": 20,
-      "showed": 5,
-      "show_pct": 25.0,
-      "qualified": 4,
-      "qual_pct": 20.0,
-      "closed": 2,
-      "cw_pct": 10.0,
-      "revenue": 22994.0
     },
     "Low Ticket Funnel": {
       "booked": 25,
