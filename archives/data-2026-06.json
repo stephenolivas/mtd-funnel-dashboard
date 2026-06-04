@@ -5,8 +5,8 @@
     "booked": 87,
     "showed": 58,
     "qualified": 42,
-    "closed": 7,
-    "revenue": 50979.0
+    "closed": 8,
+    "revenue": 56976.0
   },
   "groups": {
     "EXTERNAL": {
@@ -20,8 +20,8 @@
       "booked": 36,
       "showed": 20,
       "qualified": 17,
-      "closed": 3,
-      "revenue": 23991.0
+      "closed": 4,
+      "revenue": 29988.0
     },
     "UNCATEGORIZED": {
       "booked": 0,
@@ -32,15 +32,25 @@
     }
   },
   "funnels": {
-    "Website": {
-      "booked": 16,
-      "showed": 6,
-      "show_pct": 37.5,
-      "qualified": 5,
-      "qual_pct": 31.2,
+    "Reactivation Scrapers": {
+      "booked": 2,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "YouTube": {
+      "booked": 8,
+      "showed": 7,
+      "show_pct": 87.5,
+      "qualified": 6,
+      "qual_pct": 75.0,
+      "closed": 3,
+      "cw_pct": 37.5,
+      "revenue": 20991.0
     },
     "Instagram": {
       "booked": 34,
@@ -51,6 +61,16 @@
       "closed": 3,
       "cw_pct": 8.8,
       "revenue": 20991.0
+    },
+    "Website": {
+      "booked": 16,
+      "showed": 6,
+      "show_pct": 37.5,
+      "qualified": 5,
+      "qual_pct": 31.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Low Ticket Funnel": {
       "booked": 16,
@@ -72,16 +92,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "booked": 8,
-      "showed": 7,
-      "show_pct": 87.5,
-      "qualified": 6,
-      "qual_pct": 75.0,
-      "closed": 2,
-      "cw_pct": 25.0,
-      "revenue": 14994.0
-    },
     "Internal Webinar": {
       "booked": 8,
       "showed": 5,
@@ -98,16 +108,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "booked": 2,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
