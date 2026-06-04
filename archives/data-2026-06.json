@@ -5,8 +5,8 @@
     "booked": 87,
     "showed": 58,
     "qualified": 42,
-    "closed": 8,
-    "revenue": 56976.0
+    "closed": 9,
+    "revenue": 70973.0
   },
   "groups": {
     "EXTERNAL": {
@@ -20,8 +20,8 @@
       "booked": 36,
       "showed": 20,
       "qualified": 17,
-      "closed": 4,
-      "revenue": 29988.0
+      "closed": 5,
+      "revenue": 43985.0
     },
     "UNCATEGORIZED": {
       "booked": 0,
@@ -32,6 +32,46 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "booked": 34,
+      "showed": 28,
+      "show_pct": 82.4,
+      "qualified": 19,
+      "qual_pct": 55.9,
+      "closed": 3,
+      "cw_pct": 8.8,
+      "revenue": 20991.0
+    },
+    "Low Ticket Funnel": {
+      "booked": 16,
+      "showed": 9,
+      "show_pct": 56.2,
+      "qualified": 5,
+      "qual_pct": 31.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "booked": 16,
+      "showed": 6,
+      "show_pct": 37.5,
+      "qualified": 5,
+      "qual_pct": 31.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
+      "booked": 2,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Scrapers": {
       "booked": 2,
       "showed": 1,
@@ -52,55 +92,15 @@
       "cw_pct": 37.5,
       "revenue": 20991.0
     },
-    "Instagram": {
-      "booked": 34,
-      "showed": 28,
-      "show_pct": 82.4,
-      "qualified": 19,
-      "qual_pct": 55.9,
-      "closed": 3,
-      "cw_pct": 8.8,
-      "revenue": 20991.0
-    },
-    "Website": {
-      "booked": 16,
-      "showed": 6,
-      "show_pct": 37.5,
-      "qualified": 5,
-      "qual_pct": 31.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "booked": 16,
-      "showed": 9,
-      "show_pct": 56.2,
-      "qualified": 5,
-      "qual_pct": 31.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "booked": 2,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "booked": 8,
       "showed": 5,
       "show_pct": 62.5,
       "qualified": 4,
       "qual_pct": 50.0,
-      "closed": 1,
-      "cw_pct": 12.5,
-      "revenue": 8997.0
+      "closed": 2,
+      "cw_pct": 25.0,
+      "revenue": 22994.0
     },
     "Linkedin": {
       "booked": 1,
