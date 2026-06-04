@@ -24,7 +24,7 @@
       "revenue": 43985.0
     },
     "UNCATEGORIZED": {
-      "booked": 3,
+      "booked": 2,
       "showed": 0,
       "qualified": 0,
       "closed": 1,
@@ -32,6 +32,16 @@
     }
   },
   "funnels": {
+    "Sales Reactivation": {
+      "booked": 1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "booked": 40,
       "showed": 30,
@@ -42,15 +52,15 @@
       "cw_pct": 7.5,
       "revenue": 20991.0
     },
-    "Unknown (Needs Review)": {
-      "booked": 3,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 1,
-      "cw_pct": 33.3,
-      "revenue": 5997.0
+    "Internal Webinar": {
+      "booked": 20,
+      "showed": 5,
+      "show_pct": 25.0,
+      "qualified": 4,
+      "qual_pct": 20.0,
+      "closed": 2,
+      "cw_pct": 10.0,
+      "revenue": 22994.0
     },
     "Website": {
       "booked": 21,
@@ -82,15 +92,15 @@
       "cw_pct": 21.4,
       "revenue": 20991.0
     },
-    "Internal Webinar": {
-      "booked": 20,
-      "showed": 5,
-      "show_pct": 25.0,
-      "qualified": 4,
-      "qual_pct": 20.0,
-      "closed": 2,
-      "cw_pct": 10.0,
-      "revenue": 22994.0
+    "Unknown (Needs Review)": {
+      "booked": 2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 1,
+      "cw_pct": 50.0,
+      "revenue": 5997.0
     },
     "Meta Ads": {
       "booked": 2,
