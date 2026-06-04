@@ -2,7 +2,7 @@
 
 Live dashboard tracking month-to-date funnel performance across Close CRM — bookings, show-ups, qualified, closed-won, and revenue, broken down by funnel and utm_campaign.
 
-**Live:** `YOUR_USERNAME.github.io/mtd-funnel-dashboard/`
+**Live:** `stephenolivas.github.io/mtd-funnel-dashboard/`
 
 ---
 
