@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1562,
+    "leads_created": 1563,
     "booked": 158,
     "showed": 95,
     "qualified": 74,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1040,
+      "leads_created": 1041,
       "booked": 83,
       "showed": 52,
       "qualified": 37,
@@ -36,22 +36,10 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 17,
-      "booked": 20,
-      "book_pct": 117.6,
-      "showed": 13,
-      "show_pct": 65.0,
-      "qualified": 13,
-      "qual_pct": 65.0,
-      "closed": 6,
-      "cw_pct": 30.0,
-      "revenue": 38982.0
-    },
     "Instagram": {
-      "leads_created": 29,
+      "leads_created": 30,
       "booked": 46,
-      "book_pct": 158.6,
+      "book_pct": 153.3,
       "showed": 33,
       "show_pct": 71.7,
       "qualified": 24,
@@ -72,18 +60,6 @@
       "cw_pct": 3.7,
       "revenue": 5997.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 30,
-      "book_pct": 3.0,
-      "showed": 16,
-      "show_pct": 53.3,
-      "qualified": 10,
-      "qual_pct": 33.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "leads_created": 475,
       "booked": 21,
@@ -95,6 +71,30 @@
       "closed": 2,
       "cw_pct": 9.5,
       "revenue": 22994.0
+    },
+    "YouTube": {
+      "leads_created": 17,
+      "booked": 20,
+      "book_pct": 117.6,
+      "showed": 13,
+      "show_pct": 65.0,
+      "qualified": 13,
+      "qual_pct": 65.0,
+      "closed": 6,
+      "cw_pct": 30.0,
+      "revenue": 38982.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 1005,
+      "booked": 30,
+      "book_pct": 3.0,
+      "showed": 16,
+      "show_pct": 53.3,
+      "qualified": 10,
+      "qual_pct": 33.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
