@@ -211,7 +211,7 @@ def aggregate(start_date, end_date, goals):
     return grand, group_totals, rows
 
 # ── CSV Writer ────────────────────────────────────────────────────────────────
-def write_csv(start_date, end_date, grand, group_totals, rows):
+def write_csv(start_date, end_date, grand, group_totals, rows, end_date_obj=None):
     out_dir = Path("reports")
     out_dir.mkdir(exist_ok=True)
     fname = out_dir / f"report_{start_date}_{end_date}.csv"
@@ -226,7 +226,7 @@ def write_csv(start_date, end_date, grand, group_totals, rows):
         w.writerow(["## REPORT METADATA"])
         w.writerow(["Start Date", str(start_date)])
         w.writerow(["End Date",   str(end_date)])
-        w.writerow(["Week Ending", fmt_ordinal(end_date)])
+        w.writerow(["Week Ending", fmt_ordinal(end_date_obj) if end_date_obj else end_date])
         w.writerow(["Date Range Label",
                     f"{start_date.strftime('%B %-d')} – {end_date.strftime('%B %-d, %Y')}"])
         w.writerow([])
@@ -309,7 +309,7 @@ def main():
 
     print(f"\n=== Generating report: {args.start} → {args.end} ===\n", flush=True)
     grand, group_totals, rows = aggregate(start_date, end_date, goals)
-    write_csv(args.start, args.end, grand, group_totals, rows)
+    write_csv(args.start, args.end, grand, group_totals, rows, end_date)
 
 if __name__ == "__main__":
     main()
