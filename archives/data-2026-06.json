@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1580,
     "booked": 159,
-    "showed": 105,
-    "qualified": 85,
+    "showed": 107,
+    "qualified": 86,
     "closed": 15,
     "revenue": 106955.0
   },
@@ -13,7 +13,7 @@
     "EXTERNAL": {
       "leads_created": 1048,
       "booked": 81,
-      "showed": 58,
+      "showed": 59,
       "qualified": 44,
       "closed": 3,
       "revenue": 20991.0
@@ -21,8 +21,8 @@
     "IN-HOUSE": {
       "leads_created": 512,
       "booked": 75,
-      "showed": 45,
-      "qualified": 39,
+      "showed": 46,
+      "qualified": 40,
       "closed": 9,
       "revenue": 67973.0
     },
@@ -40,25 +40,13 @@
       "leads_created": 36,
       "booked": 48,
       "book_pct": 133.3,
-      "showed": 35,
-      "show_pct": 72.9,
+      "showed": 36,
+      "show_pct": 75.0,
       "qualified": 26,
       "qual_pct": 54.2,
       "closed": 3,
       "cw_pct": 6.2,
       "revenue": 20991.0
-    },
-    "YouTube": {
-      "leads_created": 21,
-      "booked": 22,
-      "book_pct": 104.8,
-      "showed": 17,
-      "show_pct": 77.3,
-      "qualified": 17,
-      "qual_pct": 77.3,
-      "closed": 6,
-      "cw_pct": 27.3,
-      "revenue": 38982.0
     },
     "Internal Webinar": {
       "leads_created": 475,
@@ -71,6 +59,18 @@
       "closed": 2,
       "cw_pct": 9.1,
       "revenue": 22994.0
+    },
+    "YouTube": {
+      "leads_created": 21,
+      "booked": 22,
+      "book_pct": 104.8,
+      "showed": 18,
+      "show_pct": 81.8,
+      "qualified": 18,
+      "qual_pct": 81.8,
+      "closed": 6,
+      "cw_pct": 27.3,
+      "revenue": 38982.0
     },
     "Linkedin": {
       "leads_created": 4,
