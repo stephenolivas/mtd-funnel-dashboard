@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1560,
+    "leads_created": 1561,
     "booked": 158,
     "showed": 92,
     "qualified": 72,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1039,
+      "leads_created": 1040,
       "booked": 83,
       "showed": 52,
       "qualified": 37,
@@ -61,7 +61,7 @@
       "revenue": 38982.0
     },
     "Low Ticket Funnel": {
-      "leads_created": 1004,
+      "leads_created": 1005,
       "booked": 30,
       "book_pct": 3.0,
       "showed": 16,
