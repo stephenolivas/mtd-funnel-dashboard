@@ -228,7 +228,7 @@ def write_csv(start_date, end_date, grand, group_totals, rows, end_date_obj=None
         w.writerow(["End Date",   str(end_date)])
         w.writerow(["Week Ending", fmt_ordinal(end_date_obj) if end_date_obj else end_date])
         w.writerow(["Date Range Label",
-                    f"{start_date.strftime('%B %-d')} – {end_date.strftime('%B %-d, %Y')}"])
+                    f"{date.fromisoformat(start_date).strftime('%B %-d')} – {date.fromisoformat(end_date).strftime('%B %-d, %Y')}"])
         w.writerow([])
 
         # ── Section 2: KPI Summary ────────────────────────────────────────────
