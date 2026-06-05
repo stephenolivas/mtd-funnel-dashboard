@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1573,
+    "leads_created": 1576,
     "booked": 159,
     "showed": 102,
     "qualified": 82,
@@ -27,7 +27,7 @@
       "revenue": 67973.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 17,
+      "leads_created": 20,
       "booked": 2,
       "showed": 1,
       "qualified": 1,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 33,
+      "booked": 48,
+      "book_pct": 145.5,
+      "showed": 35,
+      "show_pct": 72.9,
+      "qualified": 26,
+      "qual_pct": 54.2,
+      "closed": 3,
+      "cw_pct": 6.2,
+      "revenue": 20991.0
+    },
     "Linkedin": {
       "leads_created": 4,
       "booked": 5,
@@ -59,18 +71,6 @@
       "closed": 6,
       "cw_pct": 27.3,
       "revenue": 38982.0
-    },
-    "Instagram": {
-      "leads_created": 33,
-      "booked": 48,
-      "book_pct": 145.5,
-      "showed": 35,
-      "show_pct": 72.9,
-      "qualified": 26,
-      "qual_pct": 54.2,
-      "closed": 3,
-      "cw_pct": 6.2,
-      "revenue": 20991.0
     },
     "Website": {
       "leads_created": 13,
@@ -121,9 +121,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 17,
+      "leads_created": 20,
       "booked": 2,
-      "book_pct": 11.8,
+      "book_pct": 10.0,
       "showed": 1,
       "show_pct": 50.0,
       "qualified": 1,
