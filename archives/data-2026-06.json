@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 33,
+      "booked": 48,
+      "book_pct": 145.5,
+      "showed": 34,
+      "show_pct": 70.8,
+      "qualified": 25,
+      "qual_pct": 52.1,
+      "closed": 3,
+      "cw_pct": 6.2,
+      "revenue": 20991.0
+    },
     "YouTube": {
       "leads_created": 19,
       "booked": 22,
@@ -48,29 +60,17 @@
       "cw_pct": 27.3,
       "revenue": 38982.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 16,
-      "booked": 2,
-      "book_pct": 12.5,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 3,
-      "cw_pct": 150.0,
-      "revenue": 17991.0
-    },
-    "Instagram": {
-      "leads_created": 33,
-      "booked": 48,
-      "book_pct": 145.5,
-      "showed": 34,
-      "show_pct": 70.8,
-      "qualified": 25,
-      "qual_pct": 52.1,
-      "closed": 3,
-      "cw_pct": 6.2,
-      "revenue": 20991.0
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 27,
+      "book_pct": 2.7,
+      "showed": 17,
+      "show_pct": 63.0,
+      "qualified": 12,
+      "qual_pct": 44.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 4,
@@ -84,6 +84,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Unknown (Needs Review)": {
+      "leads_created": 16,
+      "booked": 2,
+      "book_pct": 12.5,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 3,
+      "cw_pct": 150.0,
+      "revenue": 17991.0
+    },
     "Internal Webinar": {
       "leads_created": 475,
       "booked": 22,
@@ -95,18 +107,6 @@
       "closed": 2,
       "cw_pct": 9.1,
       "revenue": 22994.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 27,
-      "book_pct": 2.7,
-      "showed": 17,
-      "show_pct": 63.0,
-      "qualified": 12,
-      "qual_pct": 44.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Reactivation Scrapers": {
       "leads_created": 0,
