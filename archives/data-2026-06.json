@@ -36,29 +36,17 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 33,
-      "booked": 48,
-      "book_pct": 145.5,
-      "showed": 34,
-      "show_pct": 70.8,
-      "qualified": 25,
-      "qual_pct": 52.1,
-      "closed": 3,
-      "cw_pct": 6.2,
-      "revenue": 20991.0
-    },
-    "YouTube": {
-      "leads_created": 19,
-      "booked": 22,
-      "book_pct": 115.8,
-      "showed": 15,
-      "show_pct": 68.2,
-      "qualified": 15,
-      "qual_pct": 68.2,
-      "closed": 6,
-      "cw_pct": 27.3,
-      "revenue": 38982.0
+    "Website": {
+      "leads_created": 13,
+      "booked": 26,
+      "book_pct": 200.0,
+      "showed": 13,
+      "show_pct": 50.0,
+      "qualified": 10,
+      "qual_pct": 38.5,
+      "closed": 1,
+      "cw_pct": 3.8,
+      "revenue": 5997.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1006,
@@ -72,6 +60,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "YouTube": {
+      "leads_created": 19,
+      "booked": 22,
+      "book_pct": 115.8,
+      "showed": 15,
+      "show_pct": 68.2,
+      "qualified": 15,
+      "qual_pct": 68.2,
+      "closed": 6,
+      "cw_pct": 27.3,
+      "revenue": 38982.0
+    },
     "Linkedin": {
       "leads_created": 4,
       "booked": 5,
@@ -83,6 +83,18 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 33,
+      "booked": 48,
+      "book_pct": 145.5,
+      "showed": 34,
+      "show_pct": 70.8,
+      "qualified": 25,
+      "qual_pct": 52.1,
+      "closed": 3,
+      "cw_pct": 6.2,
+      "revenue": 20991.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 16,
@@ -119,18 +131,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 13,
-      "booked": 26,
-      "book_pct": 200.0,
-      "showed": 13,
-      "show_pct": 50.0,
-      "qualified": 10,
-      "qual_pct": 38.5,
-      "closed": 1,
-      "cw_pct": 3.8,
-      "revenue": 5997.0
     },
     "X": {
       "leads_created": 2,
