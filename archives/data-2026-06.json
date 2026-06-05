@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1565,
+    "leads_created": 1567,
     "booked": 159,
     "showed": 96,
     "qualified": 75,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1041,
+      "leads_created": 1042,
       "booked": 82,
       "showed": 52,
       "qualified": 37,
@@ -27,7 +27,7 @@
       "revenue": 67973.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 15,
+      "leads_created": 16,
       "booked": 2,
       "showed": 1,
       "qualified": 1,
@@ -48,18 +48,6 @@
       "cw_pct": 3.7,
       "revenue": 5997.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 28,
-      "book_pct": 2.8,
-      "showed": 16,
-      "show_pct": 57.1,
-      "qualified": 10,
-      "qual_pct": 35.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "leads_created": 30,
       "booked": 47,
@@ -71,6 +59,42 @@
       "closed": 3,
       "cw_pct": 6.4,
       "revenue": 20991.0
+    },
+    "Internal Webinar": {
+      "leads_created": 475,
+      "booked": 22,
+      "book_pct": 4.6,
+      "showed": 13,
+      "show_pct": 59.1,
+      "qualified": 10,
+      "qual_pct": 45.5,
+      "closed": 2,
+      "cw_pct": 9.1,
+      "revenue": 22994.0
+    },
+    "X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 28,
+      "book_pct": 2.8,
+      "showed": 16,
+      "show_pct": 57.1,
+      "qualified": 10,
+      "qual_pct": 35.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 17,
@@ -108,30 +132,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "leads_created": 475,
-      "booked": 22,
-      "book_pct": 4.6,
-      "showed": 13,
-      "show_pct": 59.1,
-      "qualified": 10,
-      "qual_pct": 45.5,
-      "closed": 2,
-      "cw_pct": 9.1,
-      "revenue": 22994.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 0,
       "booked": 3,
@@ -157,9 +157,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 15,
+      "leads_created": 16,
       "booked": 2,
-      "book_pct": 13.3,
+      "book_pct": 12.5,
       "showed": 1,
       "show_pct": 50.0,
       "qualified": 1,
