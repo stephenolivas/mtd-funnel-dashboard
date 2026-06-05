@@ -5,7 +5,7 @@
     "leads_created": 1562,
     "booked": 158,
     "showed": 94,
-    "qualified": 73,
+    "qualified": 74,
     "closed": 15,
     "revenue": 106955.0
   },
@@ -22,7 +22,7 @@
       "leads_created": 509,
       "booked": 72,
       "showed": 40,
-      "qualified": 34,
+      "qualified": 35,
       "closed": 9,
       "revenue": 67973.0
     },
@@ -42,8 +42,8 @@
       "book_pct": 117.6,
       "showed": 13,
       "show_pct": 65.0,
-      "qualified": 12,
-      "qual_pct": 60.0,
+      "qualified": 13,
+      "qual_pct": 65.0,
       "closed": 6,
       "cw_pct": 30.0,
       "revenue": 38982.0
