@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1048,
+      "leads_created": 1049,
       "booked": 80,
       "showed": 59,
       "qualified": 45,
@@ -19,7 +19,7 @@
       "revenue": 32985.0
     },
     "IN-HOUSE": {
-      "leads_created": 513,
+      "leads_created": 514,
       "booked": 76,
       "showed": 47,
       "qualified": 41,
@@ -27,7 +27,7 @@
       "revenue": 85964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 20,
+      "leads_created": 18,
       "booked": 1,
       "showed": 0,
       "qualified": 0,
@@ -48,22 +48,10 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "YouTube": {
-      "leads_created": 21,
-      "booked": 22,
-      "book_pct": 104.8,
-      "showed": 18,
-      "show_pct": 81.8,
-      "qualified": 18,
-      "qual_pct": 81.8,
-      "closed": 7,
-      "cw_pct": 31.8,
-      "revenue": 44979.0
-    },
     "Instagram": {
-      "leads_created": 37,
+      "leads_created": 38,
       "booked": 48,
-      "book_pct": 129.7,
+      "book_pct": 126.3,
       "showed": 37,
       "show_pct": 77.1,
       "qualified": 28,
@@ -71,6 +59,18 @@
       "closed": 5,
       "cw_pct": 10.4,
       "revenue": 32985.0
+    },
+    "YouTube": {
+      "leads_created": 22,
+      "booked": 22,
+      "book_pct": 100.0,
+      "showed": 18,
+      "show_pct": 81.8,
+      "qualified": 18,
+      "qual_pct": 81.8,
+      "closed": 7,
+      "cw_pct": 31.8,
+      "revenue": 44979.0
     },
     "Linkedin": {
       "leads_created": 3,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 20,
+      "leads_created": 18,
       "booked": 1,
-      "book_pct": 5.0,
+      "book_pct": 5.6,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
