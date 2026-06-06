@@ -6,8 +6,8 @@
     "booked": 160,
     "showed": 108,
     "qualified": 87,
-    "closed": 17,
-    "revenue": 118949.0
+    "closed": 18,
+    "revenue": 124946.0
   },
   "groups": {
     "EXTERNAL": {
@@ -23,8 +23,8 @@
       "booked": 76,
       "showed": 47,
       "qualified": 41,
-      "closed": 11,
-      "revenue": 76967.0
+      "closed": 12,
+      "revenue": 82964.0
     },
     "UNCATEGORIZED": {
       "leads_created": 23,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Linkedin": {
-      "leads_created": 3,
-      "booked": 4,
-      "book_pct": 133.3,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "YouTube": {
-      "leads_created": 25,
-      "booked": 22,
-      "book_pct": 88.0,
-      "showed": 18,
-      "show_pct": 81.8,
-      "qualified": 18,
-      "qual_pct": 81.8,
-      "closed": 7,
-      "cw_pct": 31.8,
-      "revenue": 44979.0
-    },
     "Instagram": {
       "leads_created": 38,
       "booked": 49,
@@ -71,6 +47,30 @@
       "closed": 6,
       "cw_pct": 12.2,
       "revenue": 41982.0
+    },
+    "YouTube": {
+      "leads_created": 25,
+      "booked": 22,
+      "book_pct": 88.0,
+      "showed": 18,
+      "show_pct": 81.8,
+      "qualified": 18,
+      "qual_pct": 81.8,
+      "closed": 8,
+      "cw_pct": 36.4,
+      "revenue": 50976.0
+    },
+    "Linkedin": {
+      "leads_created": 3,
+      "booked": 4,
+      "book_pct": 133.3,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 23,
