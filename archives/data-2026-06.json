@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Linkedin": {
-      "leads_created": 3,
-      "booked": 4,
-      "book_pct": 133.3,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 38,
-      "booked": 48,
-      "book_pct": 126.3,
-      "showed": 37,
-      "show_pct": 77.1,
-      "qualified": 28,
-      "qual_pct": 58.3,
-      "closed": 5,
-      "cw_pct": 10.4,
-      "revenue": 32985.0
-    },
     "YouTube": {
       "leads_created": 22,
       "booked": 22,
@@ -80,6 +56,30 @@
       "show_pct": 65.4,
       "qualified": 12,
       "qual_pct": 46.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 38,
+      "booked": 48,
+      "book_pct": 126.3,
+      "showed": 37,
+      "show_pct": 77.1,
+      "qualified": 28,
+      "qual_pct": 58.3,
+      "closed": 5,
+      "cw_pct": 10.4,
+      "revenue": 32985.0
+    },
+    "Linkedin": {
+      "leads_created": 3,
+      "booked": 4,
+      "book_pct": 133.3,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
