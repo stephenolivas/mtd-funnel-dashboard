@@ -6,8 +6,8 @@
     "booked": 158,
     "showed": 107,
     "qualified": 87,
-    "closed": 16,
-    "revenue": 112952.0
+    "closed": 17,
+    "revenue": 118949.0
   },
   "groups": {
     "EXTERNAL": {
@@ -15,8 +15,8 @@
       "booked": 80,
       "showed": 59,
       "qualified": 45,
-      "closed": 4,
-      "revenue": 26988.0
+      "closed": 5,
+      "revenue": 32985.0
     },
     "IN-HOUSE": {
       "leads_created": 513,
@@ -36,26 +36,14 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 37,
-      "booked": 48,
-      "book_pct": 129.7,
-      "showed": 37,
-      "show_pct": 77.1,
-      "qualified": 28,
-      "qual_pct": 58.3,
-      "closed": 4,
-      "cw_pct": 8.3,
-      "revenue": 26988.0
-    },
-    "Linkedin": {
-      "leads_created": 3,
-      "booked": 4,
-      "book_pct": 133.3,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 26,
+      "book_pct": 2.6,
+      "showed": 17,
+      "show_pct": 65.4,
+      "qualified": 12,
+      "qual_pct": 46.2,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -71,6 +59,30 @@
       "closed": 7,
       "cw_pct": 31.8,
       "revenue": 44979.0
+    },
+    "Instagram": {
+      "leads_created": 37,
+      "booked": 48,
+      "book_pct": 129.7,
+      "showed": 37,
+      "show_pct": 77.1,
+      "qualified": 28,
+      "qual_pct": 58.3,
+      "closed": 5,
+      "cw_pct": 10.4,
+      "revenue": 32985.0
+    },
+    "Linkedin": {
+      "leads_created": 3,
+      "booked": 4,
+      "book_pct": 133.3,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 14,
@@ -116,18 +128,6 @@
       "show_pct": 50.0,
       "qualified": 1,
       "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 26,
-      "book_pct": 2.6,
-      "showed": 17,
-      "show_pct": 65.4,
-      "qualified": 12,
-      "qual_pct": 46.2,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
