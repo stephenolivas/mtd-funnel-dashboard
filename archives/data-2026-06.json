@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 40,
+      "booked": 49,
+      "book_pct": 122.5,
+      "showed": 38,
+      "show_pct": 77.6,
+      "qualified": 28,
+      "qual_pct": 57.1,
+      "closed": 6,
+      "cw_pct": 12.2,
+      "revenue": 41982.0
+    },
+    "Linkedin": {
+      "leads_created": 4,
+      "booked": 4,
+      "book_pct": 100.0,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 28,
       "booked": 22,
@@ -59,18 +83,6 @@
       "closed": 1,
       "cw_pct": 4.5,
       "revenue": 13997.0
-    },
-    "Instagram": {
-      "leads_created": 40,
-      "booked": 49,
-      "book_pct": 122.5,
-      "showed": 38,
-      "show_pct": 77.6,
-      "qualified": 28,
-      "qual_pct": 57.1,
-      "closed": 6,
-      "cw_pct": 12.2,
-      "revenue": 41982.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1005,
@@ -116,18 +128,6 @@
       "show_pct": 33.3,
       "qualified": 1,
       "qual_pct": 33.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Linkedin": {
-      "leads_created": 4,
-      "booked": 4,
-      "book_pct": 100.0,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
