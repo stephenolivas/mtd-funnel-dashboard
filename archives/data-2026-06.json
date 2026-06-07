@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1597,
+    "leads_created": 1599,
     "booked": 160,
     "showed": 108,
     "qualified": 87,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1050,
+      "leads_created": 1051,
       "booked": 81,
       "showed": 60,
       "qualified": 45,
@@ -27,7 +27,7 @@
       "revenue": 82964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 28,
+      "leads_created": 29,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -85,9 +85,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 28,
+      "leads_created": 29,
       "booked": 2,
-      "book_pct": 7.1,
+      "book_pct": 6.9,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -121,9 +121,9 @@
       "revenue": 0.0
     },
     "Linkedin": {
-      "leads_created": 3,
+      "leads_created": 4,
       "booked": 4,
-      "book_pct": 133.3,
+      "book_pct": 100.0,
       "showed": 4,
       "show_pct": 100.0,
       "qualified": 4,
