@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 28,
+      "booked": 2,
+      "book_pct": 7.1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Low Ticket Funnel": {
       "leads_created": 1006,
       "booked": 26,
@@ -107,18 +119,6 @@
       "closed": 1,
       "cw_pct": 4.5,
       "revenue": 13997.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 28,
-      "booked": 2,
-      "book_pct": 7.1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 3,
