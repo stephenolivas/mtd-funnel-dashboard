@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1610,
     "booked": 191,
-    "showed": 110,
+    "showed": 111,
     "qualified": 89,
     "closed": 18,
     "revenue": 124946.0
@@ -21,7 +21,7 @@
     "IN-HOUSE": {
       "leads_created": 539,
       "booked": 99,
-      "showed": 47,
+      "showed": 48,
       "qualified": 41,
       "closed": 12,
       "revenue": 82964.0
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 28,
+      "booked": 42,
+      "book_pct": 150.0,
+      "showed": 15,
+      "show_pct": 35.7,
+      "qualified": 11,
+      "qual_pct": 26.2,
+      "closed": 3,
+      "cw_pct": 7.1,
+      "revenue": 17991.0
+    },
     "Instagram": {
       "leads_created": 43,
       "booked": 53,
@@ -47,18 +59,6 @@
       "closed": 6,
       "cw_pct": 11.3,
       "revenue": 41982.0
-    },
-    "Website": {
-      "leads_created": 28,
-      "booked": 42,
-      "book_pct": 150.0,
-      "showed": 14,
-      "show_pct": 33.3,
-      "qualified": 11,
-      "qual_pct": 26.2,
-      "closed": 3,
-      "cw_pct": 7.1,
-      "revenue": 17991.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1005,
