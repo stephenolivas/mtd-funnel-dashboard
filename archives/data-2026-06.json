@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1623,
     "booked": 187,
-    "showed": 119,
+    "showed": 120,
     "qualified": 97,
     "closed": 23,
     "revenue": 159931.0
@@ -13,13 +13,13 @@
     "EXTERNAL": {
       "leads_created": 1055,
       "booked": 88,
-      "showed": 63,
+      "showed": 64,
       "qualified": 48,
       "closed": 6,
       "revenue": 41982.0
     },
     "IN-HOUSE": {
-      "leads_created": 544,
+      "leads_created": 546,
       "booked": 96,
       "showed": 55,
       "qualified": 48,
@@ -27,7 +27,7 @@
       "revenue": 117949.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 24,
+      "leads_created": 22,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 32,
-      "booked": 26,
-      "book_pct": 81.2,
-      "showed": 20,
-      "show_pct": 76.9,
-      "qualified": 20,
-      "qual_pct": 76.9,
-      "closed": 9,
-      "cw_pct": 34.6,
-      "revenue": 58973.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 30,
-      "book_pct": 3.0,
-      "showed": 19,
-      "show_pct": 63.3,
-      "qualified": 14,
-      "qual_pct": 46.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Website": {
       "leads_created": 30,
       "booked": 41,
@@ -71,6 +47,30 @@
       "closed": 5,
       "cw_pct": 12.2,
       "revenue": 29985.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 1005,
+      "booked": 30,
+      "book_pct": 3.0,
+      "showed": 20,
+      "show_pct": 66.7,
+      "qualified": 14,
+      "qual_pct": 46.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "leads_created": 33,
+      "booked": 26,
+      "book_pct": 78.8,
+      "showed": 20,
+      "show_pct": 76.9,
+      "qualified": 20,
+      "qual_pct": 76.9,
+      "closed": 9,
+      "cw_pct": 34.6,
+      "revenue": 58973.0
     },
     "Linkedin": {
       "leads_created": 4,
@@ -97,9 +97,9 @@
       "revenue": 22994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 24,
+      "leads_created": 22,
       "booked": 2,
-      "book_pct": 8.3,
+      "book_pct": 9.1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -145,9 +145,9 @@
       "revenue": 5997.0
     },
     "Meta Ads": {
-      "leads_created": 3,
+      "leads_created": 4,
       "booked": 2,
-      "book_pct": 66.7,
+      "book_pct": 50.0,
       "showed": 1,
       "show_pct": 50.0,
       "qualified": 1,
