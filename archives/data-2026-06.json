@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1052,
+      "leads_created": 1054,
       "booked": 89,
       "showed": 61,
       "qualified": 46,
@@ -19,16 +19,16 @@
       "revenue": 41982.0
     },
     "IN-HOUSE": {
-      "leads_created": 525,
-      "booked": 90,
+      "leads_created": 535,
+      "booked": 94,
       "showed": 47,
       "qualified": 41,
       "closed": 12,
       "revenue": 82964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 33,
-      "booked": 12,
+      "leads_created": 21,
+      "booked": 8,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -37,15 +37,15 @@
   },
   "funnels": {
     "Website": {
-      "leads_created": 16,
-      "booked": 35,
-      "book_pct": 218.8,
+      "leads_created": 25,
+      "booked": 39,
+      "book_pct": 156.0,
       "showed": 14,
-      "show_pct": 40.0,
+      "show_pct": 35.9,
       "qualified": 11,
-      "qual_pct": 31.4,
+      "qual_pct": 28.2,
       "closed": 3,
-      "cw_pct": 8.6,
+      "cw_pct": 7.7,
       "revenue": 17991.0
     },
     "Low Ticket Funnel": {
@@ -71,18 +71,6 @@
       "closed": 8,
       "cw_pct": 29.6,
       "revenue": 50976.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 33,
-      "booked": 12,
-      "book_pct": 36.4,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 4,
@@ -121,9 +109,9 @@
       "revenue": 13997.0
     },
     "Instagram": {
-      "leads_created": 41,
+      "leads_created": 43,
       "booked": 53,
-      "book_pct": 129.3,
+      "book_pct": 123.3,
       "showed": 38,
       "show_pct": 71.7,
       "qualified": 28,
@@ -132,10 +120,22 @@
       "cw_pct": 11.3,
       "revenue": 41982.0
     },
+    "Unknown (Needs Review)": {
+      "leads_created": 21,
+      "booked": 8,
+      "book_pct": 38.1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Meta Ads": {
-      "leads_created": 0,
+      "leads_created": 1,
       "booked": 2,
-      "book_pct": 0,
+      "book_pct": 200.0,
       "showed": 1,
       "show_pct": 50.0,
       "qualified": 1,
