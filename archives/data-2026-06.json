@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1613,
     "booked": 191,
-    "showed": 111,
-    "qualified": 91,
+    "showed": 112,
+    "qualified": 92,
     "closed": 18,
     "revenue": 124946.0
   },
@@ -21,8 +21,8 @@
     "IN-HOUSE": {
       "leads_created": 539,
       "booked": 98,
-      "showed": 48,
-      "qualified": 43,
+      "showed": 49,
+      "qualified": 44,
       "closed": 12,
       "revenue": 82964.0
     },
@@ -48,29 +48,29 @@
       "cw_pct": 29.6,
       "revenue": 50976.0
     },
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 53,
+      "book_pct": 123.3,
+      "showed": 38,
+      "show_pct": 71.7,
+      "qualified": 28,
+      "qual_pct": 52.8,
+      "closed": 6,
+      "cw_pct": 11.3,
+      "revenue": 41982.0
+    },
     "Website": {
       "leads_created": 28,
       "booked": 42,
       "book_pct": 150.0,
-      "showed": 15,
-      "show_pct": 35.7,
-      "qualified": 13,
-      "qual_pct": 31.0,
+      "showed": 16,
+      "show_pct": 38.1,
+      "qualified": 14,
+      "qual_pct": 33.3,
       "closed": 3,
       "cw_pct": 7.1,
       "revenue": 17991.0
-    },
-    "Linkedin": {
-      "leads_created": 4,
-      "booked": 4,
-      "book_pct": 100.0,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Internal Webinar": {
       "leads_created": 476,
@@ -84,17 +84,17 @@
       "cw_pct": 4.2,
       "revenue": 13997.0
     },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 53,
-      "book_pct": 123.3,
-      "showed": 38,
-      "show_pct": 71.7,
-      "qualified": 28,
-      "qual_pct": 52.8,
-      "closed": 6,
-      "cw_pct": 11.3,
-      "revenue": 41982.0
+    "Linkedin": {
+      "leads_created": 4,
+      "booked": 4,
+      "book_pct": 100.0,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1005,
