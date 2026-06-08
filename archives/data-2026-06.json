@@ -19,7 +19,7 @@
       "revenue": 41982.0
     },
     "IN-HOUSE": {
-      "leads_created": 520,
+      "leads_created": 523,
       "booked": 76,
       "showed": 47,
       "qualified": 41,
@@ -27,7 +27,7 @@
       "revenue": 82964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 37,
+      "leads_created": 34,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -37,7 +37,7 @@
   },
   "funnels": {
     "Internal Webinar": {
-      "leads_created": 475,
+      "leads_created": 476,
       "booked": 22,
       "book_pct": 4.6,
       "showed": 13,
@@ -97,9 +97,9 @@
       "revenue": 17991.0
     },
     "YouTube": {
-      "leads_created": 28,
+      "leads_created": 30,
       "booked": 22,
-      "book_pct": 78.6,
+      "book_pct": 73.3,
       "showed": 18,
       "show_pct": 81.8,
       "qualified": 18,
@@ -109,9 +109,9 @@
       "revenue": 50976.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 37,
+      "leads_created": 34,
       "booked": 2,
-      "book_pct": 5.4,
+      "book_pct": 5.9,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
