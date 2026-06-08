@@ -5,7 +5,7 @@
     "leads_created": 1611,
     "booked": 192,
     "showed": 111,
-    "qualified": 90,
+    "qualified": 91,
     "closed": 18,
     "revenue": 124946.0
   },
@@ -22,7 +22,7 @@
       "leads_created": 539,
       "booked": 99,
       "showed": 48,
-      "qualified": 42,
+      "qualified": 43,
       "closed": 12,
       "revenue": 82964.0
     },
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
-      "leads_created": 18,
-      "booked": 3,
-      "book_pct": 16.7,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 28,
-      "booked": 42,
-      "book_pct": 150.0,
-      "showed": 15,
-      "show_pct": 35.7,
-      "qualified": 12,
-      "qual_pct": 28.6,
-      "closed": 3,
-      "cw_pct": 7.1,
-      "revenue": 17991.0
-    },
     "Instagram": {
       "leads_created": 43,
       "booked": 53,
@@ -72,6 +48,18 @@
       "cw_pct": 11.3,
       "revenue": 41982.0
     },
+    "Website": {
+      "leads_created": 28,
+      "booked": 42,
+      "book_pct": 150.0,
+      "showed": 15,
+      "show_pct": 35.7,
+      "qualified": 13,
+      "qual_pct": 31.0,
+      "closed": 3,
+      "cw_pct": 7.1,
+      "revenue": 17991.0
+    },
     "Low Ticket Funnel": {
       "leads_created": 1005,
       "booked": 30,
@@ -80,6 +68,18 @@
       "show_pct": 63.3,
       "qualified": 14,
       "qual_pct": 46.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 18,
+      "booked": 3,
+      "book_pct": 16.7,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
