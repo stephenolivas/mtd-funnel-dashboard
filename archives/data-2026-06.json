@@ -2,8 +2,8 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1637,
-    "booked": 209,
+    "leads_created": 1636,
+    "booked": 208,
     "showed": 130,
     "qualified": 106,
     "closed": 26,
@@ -19,8 +19,8 @@
       "revenue": 56976.0
     },
     "IN-HOUSE": {
-      "leads_created": 549,
-      "booked": 108,
+      "leads_created": 548,
+      "booked": 107,
       "showed": 63,
       "qualified": 55,
       "closed": 18,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 37,
-      "booked": 34,
-      "book_pct": 91.9,
-      "showed": 23,
-      "show_pct": 67.6,
-      "qualified": 22,
-      "qual_pct": 64.7,
-      "closed": 9,
-      "cw_pct": 26.5,
-      "revenue": 58973.0
-    },
-    "Instagram": {
-      "leads_created": 50,
-      "booked": 58,
-      "book_pct": 116.0,
-      "showed": 40,
-      "show_pct": 69.0,
-      "qualified": 30,
-      "qual_pct": 51.7,
-      "closed": 6,
-      "cw_pct": 10.3,
-      "revenue": 38982.0
-    },
     "Low Ticket Funnel": {
       "leads_created": 1005,
       "booked": 34,
@@ -72,17 +48,17 @@
       "cw_pct": 2.9,
       "revenue": 8997.0
     },
-    "Website": {
-      "leads_created": 29,
-      "booked": 44,
-      "book_pct": 151.7,
-      "showed": 24,
-      "show_pct": 54.5,
-      "qualified": 21,
-      "qual_pct": 47.7,
-      "closed": 6,
-      "cw_pct": 13.6,
-      "revenue": 38982.0
+    "YouTube": {
+      "leads_created": 36,
+      "booked": 33,
+      "book_pct": 91.7,
+      "showed": 23,
+      "show_pct": 69.7,
+      "qualified": 22,
+      "qual_pct": 66.7,
+      "closed": 9,
+      "cw_pct": 27.3,
+      "revenue": 58973.0
     },
     "Linkedin": {
       "leads_created": 3,
@@ -96,6 +72,18 @@
       "cw_pct": 25.0,
       "revenue": 8997.0
     },
+    "Instagram": {
+      "leads_created": 50,
+      "booked": 58,
+      "book_pct": 116.0,
+      "showed": 40,
+      "show_pct": 69.0,
+      "qualified": 30,
+      "qual_pct": 51.7,
+      "closed": 6,
+      "cw_pct": 10.3,
+      "revenue": 38982.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 28,
       "booked": 2,
@@ -107,6 +95,18 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Website": {
+      "leads_created": 29,
+      "booked": 44,
+      "book_pct": 151.7,
+      "showed": 24,
+      "show_pct": 54.5,
+      "qualified": 21,
+      "qual_pct": 47.7,
+      "closed": 6,
+      "cw_pct": 13.6,
+      "revenue": 38982.0
     },
     "X": {
       "leads_created": 2,
