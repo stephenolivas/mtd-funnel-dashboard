@@ -11,8 +11,8 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1061,
-      "booked": 98,
+      "leads_created": 1062,
+      "booked": 99,
       "showed": 66,
       "qualified": 50,
       "closed": 8,
@@ -27,8 +27,8 @@
       "revenue": 126946.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 29,
-      "booked": 2,
+      "leads_created": 28,
+      "booked": 1,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -48,6 +48,30 @@
       "cw_pct": 26.5,
       "revenue": 58973.0
     },
+    "Low Ticket Funnel": {
+      "leads_created": 1005,
+      "booked": 34,
+      "book_pct": 3.4,
+      "showed": 21,
+      "show_pct": 61.8,
+      "qualified": 15,
+      "qual_pct": 44.1,
+      "closed": 1,
+      "cw_pct": 2.9,
+      "revenue": 8997.0
+    },
+    "Instagram": {
+      "leads_created": 52,
+      "booked": 59,
+      "book_pct": 113.5,
+      "showed": 40,
+      "show_pct": 67.8,
+      "qualified": 30,
+      "qual_pct": 50.8,
+      "closed": 6,
+      "cw_pct": 10.2,
+      "revenue": 38982.0
+    },
     "Website": {
       "leads_created": 30,
       "booked": 45,
@@ -58,18 +82,6 @@
       "qual_pct": 46.7,
       "closed": 6,
       "cw_pct": 13.3,
-      "revenue": 38982.0
-    },
-    "Instagram": {
-      "leads_created": 51,
-      "booked": 58,
-      "book_pct": 113.7,
-      "showed": 40,
-      "show_pct": 69.0,
-      "qualified": 30,
-      "qual_pct": 51.7,
-      "closed": 6,
-      "cw_pct": 10.3,
       "revenue": 38982.0
     },
     "X": {
@@ -83,18 +95,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 34,
-      "book_pct": 3.4,
-      "showed": 21,
-      "show_pct": 61.8,
-      "qualified": 15,
-      "qual_pct": 44.1,
-      "closed": 1,
-      "cw_pct": 2.9,
-      "revenue": 8997.0
     },
     "Linkedin": {
       "leads_created": 3,
@@ -132,18 +132,6 @@
       "cw_pct": 8.3,
       "revenue": 22994.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 29,
-      "booked": 2,
-      "book_pct": 6.9,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Sales Reactivation": {
       "leads_created": 0,
       "booked": 1,
@@ -167,6 +155,18 @@
       "closed": 1,
       "cw_pct": 33.3,
       "revenue": 5997.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 28,
+      "booked": 1,
+      "book_pct": 3.6,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Meta Ads": {
       "leads_created": 4,
