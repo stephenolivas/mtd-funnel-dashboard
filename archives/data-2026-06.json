@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1060,
+      "leads_created": 1059,
       "booked": 88,
       "showed": 66,
       "qualified": 50,
@@ -27,7 +27,7 @@
       "revenue": 126946.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 27,
+      "leads_created": 28,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Linkedin": {
+      "leads_created": 4,
+      "booked": 4,
+      "book_pct": 100.0,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 8997.0
+    },
     "Instagram": {
       "leads_created": 48,
       "booked": 52,
@@ -49,7 +61,7 @@
       "revenue": 38982.0
     },
     "Low Ticket Funnel": {
-      "leads_created": 1006,
+      "leads_created": 1005,
       "booked": 30,
       "book_pct": 3.0,
       "showed": 21,
@@ -84,18 +96,6 @@
       "cw_pct": 14.6,
       "revenue": 38982.0
     },
-    "Linkedin": {
-      "leads_created": 4,
-      "booked": 4,
-      "book_pct": 100.0,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 25.0,
-      "revenue": 8997.0
-    },
     "Internal Webinar": {
       "leads_created": 476,
       "booked": 24,
@@ -109,9 +109,9 @@
       "revenue": 22994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 27,
+      "leads_created": 28,
       "booked": 2,
-      "book_pct": 7.4,
+      "book_pct": 7.1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
