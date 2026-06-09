@@ -36,29 +36,17 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 48,
-      "booked": 58,
-      "book_pct": 120.8,
-      "showed": 40,
-      "show_pct": 69.0,
-      "qualified": 30,
-      "qual_pct": 51.7,
-      "closed": 6,
-      "cw_pct": 10.3,
-      "revenue": 38982.0
-    },
-    "Website": {
-      "leads_created": 30,
-      "booked": 45,
-      "book_pct": 150.0,
-      "showed": 25,
-      "show_pct": 55.6,
-      "qualified": 22,
-      "qual_pct": 48.9,
-      "closed": 6,
-      "cw_pct": 13.3,
-      "revenue": 38982.0
+    "Low Ticket Funnel": {
+      "leads_created": 1005,
+      "booked": 34,
+      "book_pct": 3.4,
+      "showed": 21,
+      "show_pct": 61.8,
+      "qualified": 15,
+      "qual_pct": 44.1,
+      "closed": 1,
+      "cw_pct": 2.9,
+      "revenue": 8997.0
     },
     "YouTube": {
       "leads_created": 35,
@@ -72,17 +60,29 @@
       "cw_pct": 28.1,
       "revenue": 58973.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1005,
-      "booked": 34,
-      "book_pct": 3.4,
-      "showed": 21,
-      "show_pct": 61.8,
-      "qualified": 15,
-      "qual_pct": 44.1,
-      "closed": 1,
-      "cw_pct": 2.9,
-      "revenue": 8997.0
+    "Website": {
+      "leads_created": 30,
+      "booked": 45,
+      "book_pct": 150.0,
+      "showed": 25,
+      "show_pct": 55.6,
+      "qualified": 22,
+      "qual_pct": 48.9,
+      "closed": 6,
+      "cw_pct": 13.3,
+      "revenue": 38982.0
+    },
+    "Instagram": {
+      "leads_created": 48,
+      "booked": 58,
+      "book_pct": 120.8,
+      "showed": 40,
+      "show_pct": 69.0,
+      "qualified": 30,
+      "qual_pct": 51.7,
+      "closed": 6,
+      "cw_pct": 10.3,
+      "revenue": 38982.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 35,
