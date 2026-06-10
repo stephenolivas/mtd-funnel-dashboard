@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1640,
+    "leads_created": 1641,
     "booked": 209,
     "showed": 147,
     "qualified": 120,
@@ -27,7 +27,7 @@
       "revenue": 138940.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 28,
+      "leads_created": 29,
       "booked": 2,
       "showed": 1,
       "qualified": 1,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 28,
+      "booked": 44,
+      "book_pct": 157.1,
+      "showed": 27,
+      "show_pct": 61.4,
+      "qualified": 24,
+      "qual_pct": 54.5,
+      "closed": 9,
+      "cw_pct": 20.5,
+      "revenue": 56973.0
+    },
     "YouTube": {
       "leads_created": 38,
       "booked": 33,
@@ -85,9 +97,9 @@
       "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 28,
+      "leads_created": 29,
       "booked": 2,
-      "book_pct": 7.1,
+      "book_pct": 6.9,
       "showed": 1,
       "show_pct": 50.0,
       "qualified": 1,
@@ -95,18 +107,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 28,
-      "booked": 44,
-      "book_pct": 157.1,
-      "showed": 27,
-      "show_pct": 61.4,
-      "qualified": 24,
-      "qual_pct": 54.5,
-      "closed": 9,
-      "cw_pct": 20.5,
-      "revenue": 56973.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1005,
