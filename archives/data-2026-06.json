@@ -48,18 +48,6 @@
       "cw_pct": 11.8,
       "revenue": 50976.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 39,
-      "book_pct": 3.9,
-      "showed": 22,
-      "show_pct": 56.4,
-      "qualified": 15,
-      "qual_pct": 38.5,
-      "closed": 1,
-      "cw_pct": 2.6,
-      "revenue": 8997.0
-    },
     "YouTube": {
       "leads_created": 44,
       "booked": 37,
@@ -72,17 +60,17 @@
       "cw_pct": 27.0,
       "revenue": 67970.0
     },
-    "Website": {
-      "leads_created": 32,
-      "booked": 51,
-      "book_pct": 159.4,
-      "showed": 29,
-      "show_pct": 56.9,
-      "qualified": 26,
-      "qual_pct": 51.0,
-      "closed": 9,
-      "cw_pct": 17.6,
-      "revenue": 56973.0
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 39,
+      "book_pct": 3.9,
+      "showed": 22,
+      "show_pct": 56.4,
+      "qualified": 15,
+      "qual_pct": 38.5,
+      "closed": 1,
+      "cw_pct": 2.6,
+      "revenue": 8997.0
     },
     "Internal Webinar": {
       "leads_created": 475,
@@ -95,6 +83,18 @@
       "closed": 2,
       "cw_pct": 8.0,
       "revenue": 22994.0
+    },
+    "Website": {
+      "leads_created": 32,
+      "booked": 51,
+      "book_pct": 159.4,
+      "showed": 29,
+      "show_pct": 56.9,
+      "qualified": 26,
+      "qual_pct": 51.0,
+      "closed": 9,
+      "cw_pct": 17.6,
+      "revenue": 56973.0
     },
     "Meta Ads": {
       "leads_created": 7,
