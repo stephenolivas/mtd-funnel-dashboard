@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1674,
     "booked": 258,
-    "showed": 177,
-    "qualified": 149,
+    "showed": 178,
+    "qualified": 150,
     "closed": 34,
     "revenue": 240898.0
   },
@@ -21,8 +21,8 @@
     "IN-HOUSE": {
       "leads_created": 564,
       "booked": 129,
-      "showed": 88,
-      "qualified": 78,
+      "showed": 89,
+      "qualified": 79,
       "closed": 23,
       "revenue": 165931.0
     },
@@ -36,29 +36,29 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 35,
+      "booked": 4,
+      "book_pct": 11.4,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 45,
       "booked": 43,
       "book_pct": 95.6,
-      "showed": 35,
-      "show_pct": 81.4,
-      "qualified": 32,
-      "qual_pct": 74.4,
+      "showed": 36,
+      "show_pct": 83.7,
+      "qualified": 33,
+      "qual_pct": 76.7,
       "closed": 10,
       "cw_pct": 23.3,
       "revenue": 67970.0
-    },
-    "Reactivation Email": {
-      "leads_created": 3,
-      "booked": 1,
-      "book_pct": 33.3,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 100.0,
-      "revenue": 8997.0
     },
     "Instagram": {
       "leads_created": 62,
@@ -72,17 +72,53 @@
       "cw_pct": 12.5,
       "revenue": 56973.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 35,
+    "Low Ticket Funnel": {
+      "leads_created": 1007,
+      "booked": 45,
+      "book_pct": 4.5,
+      "showed": 29,
+      "show_pct": 64.4,
+      "qualified": 21,
+      "qual_pct": 46.7,
+      "closed": 1,
+      "cw_pct": 2.2,
+      "revenue": 8997.0
+    },
+    "Website": {
+      "leads_created": 32,
+      "booked": 52,
+      "book_pct": 162.5,
+      "showed": 33,
+      "show_pct": 63.5,
+      "qualified": 30,
+      "qual_pct": 57.7,
+      "closed": 9,
+      "cw_pct": 17.3,
+      "revenue": 56973.0
+    },
+    "Meta Ads": {
+      "leads_created": 8,
       "booked": 4,
-      "book_pct": 11.4,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+      "book_pct": 50.0,
+      "showed": 3,
+      "show_pct": 75.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Reactivation Email": {
+      "leads_created": 3,
+      "booked": 1,
+      "book_pct": 33.3,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 100.0,
+      "revenue": 8997.0
     },
     "Linkedin": {
       "leads_created": 4,
@@ -108,30 +144,6 @@
       "cw_pct": 25.0,
       "revenue": 8997.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1007,
-      "booked": 45,
-      "book_pct": 4.5,
-      "showed": 29,
-      "show_pct": 64.4,
-      "qualified": 21,
-      "qual_pct": 46.7,
-      "closed": 1,
-      "cw_pct": 2.2,
-      "revenue": 8997.0
-    },
-    "Meta Ads": {
-      "leads_created": 8,
-      "booked": 4,
-      "book_pct": 50.0,
-      "showed": 3,
-      "show_pct": 75.0,
-      "qualified": 3,
-      "qual_pct": 75.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Sales Reactivation": {
       "leads_created": 0,
       "booked": 2,
@@ -143,18 +155,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 32,
-      "booked": 52,
-      "book_pct": 162.5,
-      "showed": 33,
-      "show_pct": 63.5,
-      "qualified": 30,
-      "qual_pct": 57.7,
-      "closed": 9,
-      "cw_pct": 17.3,
-      "revenue": 56973.0
     },
     "Internal Webinar": {
       "leads_created": 475,
