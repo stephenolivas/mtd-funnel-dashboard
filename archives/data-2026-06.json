@@ -2,10 +2,10 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1671,
-    "booked": 258,
-    "showed": 167,
-    "qualified": 143,
+    "leads_created": 1670,
+    "booked": 257,
+    "showed": 168,
+    "qualified": 142,
     "closed": 32,
     "revenue": 222904.0
   },
@@ -13,16 +13,16 @@
     "EXTERNAL": {
       "leads_created": 1075,
       "booked": 125,
-      "showed": 82,
+      "showed": 83,
       "qualified": 66,
       "closed": 11,
       "revenue": 74967.0
     },
     "IN-HOUSE": {
-      "leads_created": 563,
-      "booked": 128,
+      "leads_created": 562,
+      "booked": 127,
       "showed": 83,
-      "qualified": 75,
+      "qualified": 74,
       "closed": 21,
       "revenue": 147937.0
     },
@@ -37,15 +37,15 @@
   },
   "funnels": {
     "YouTube": {
-      "leads_created": 46,
-      "booked": 44,
-      "book_pct": 95.7,
+      "leads_created": 45,
+      "booked": 43,
+      "book_pct": 95.6,
       "showed": 33,
-      "show_pct": 75.0,
-      "qualified": 32,
-      "qual_pct": 72.7,
+      "show_pct": 76.7,
+      "qualified": 31,
+      "qual_pct": 72.1,
       "closed": 10,
-      "cw_pct": 22.7,
+      "cw_pct": 23.3,
       "revenue": 67970.0
     },
     "Website": {
@@ -59,6 +59,18 @@
       "closed": 9,
       "cw_pct": 17.6,
       "revenue": 56973.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 44,
+      "book_pct": 4.4,
+      "showed": 25,
+      "show_pct": 56.8,
+      "qualified": 18,
+      "qual_pct": 40.9,
+      "closed": 1,
+      "cw_pct": 2.3,
+      "revenue": 8997.0
     },
     "Linkedin": {
       "leads_created": 4,
@@ -83,18 +95,6 @@
       "closed": 9,
       "cw_pct": 12.2,
       "revenue": 56973.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 44,
-      "book_pct": 4.4,
-      "showed": 24,
-      "show_pct": 54.5,
-      "qualified": 18,
-      "qual_pct": 40.9,
-      "closed": 1,
-      "cw_pct": 2.3,
-      "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 33,
