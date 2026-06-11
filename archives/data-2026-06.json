@@ -5,7 +5,7 @@
     "leads_created": 1671,
     "booked": 257,
     "showed": 168,
-    "qualified": 142,
+    "qualified": 143,
     "closed": 32,
     "revenue": 222904.0
   },
@@ -14,7 +14,7 @@
       "leads_created": 1076,
       "booked": 125,
       "showed": 83,
-      "qualified": 66,
+      "qualified": 67,
       "closed": 11,
       "revenue": 74967.0
     },
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 33,
+      "booked": 3,
+      "book_pct": 9.1,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 45,
       "booked": 43,
@@ -66,23 +78,11 @@
       "book_pct": 4.4,
       "showed": 25,
       "show_pct": 56.8,
-      "qualified": 18,
-      "qual_pct": 40.9,
+      "qualified": 19,
+      "qual_pct": 43.2,
       "closed": 1,
       "cw_pct": 2.3,
       "revenue": 8997.0
-    },
-    "Meta Ads": {
-      "leads_created": 7,
-      "booked": 4,
-      "book_pct": 57.1,
-      "showed": 2,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 31,
@@ -96,6 +96,18 @@
       "cw_pct": 17.6,
       "revenue": 56973.0
     },
+    "Meta Ads": {
+      "leads_created": 7,
+      "booked": 4,
+      "book_pct": 57.1,
+      "showed": 2,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Internal Webinar": {
       "leads_created": 475,
       "booked": 25,
@@ -107,18 +119,6 @@
       "closed": 2,
       "cw_pct": 8.0,
       "revenue": 22994.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 33,
-      "booked": 3,
-      "book_pct": 9.1,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 4,
