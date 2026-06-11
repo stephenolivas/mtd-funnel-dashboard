@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 39,
+      "book_pct": 3.9,
+      "showed": 24,
+      "show_pct": 61.5,
+      "qualified": 18,
+      "qual_pct": 46.2,
+      "closed": 1,
+      "cw_pct": 2.6,
+      "revenue": 8997.0
+    },
     "Website": {
       "leads_created": 31,
       "booked": 50,
@@ -70,18 +82,6 @@
       "qual_pct": 100.0,
       "closed": 1,
       "cw_pct": 25.0,
-      "revenue": 8997.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 39,
-      "book_pct": 3.9,
-      "showed": 24,
-      "show_pct": 61.5,
-      "qualified": 18,
-      "qual_pct": 46.2,
-      "closed": 1,
-      "cw_pct": 2.6,
       "revenue": 8997.0
     },
     "Internal Webinar": {
