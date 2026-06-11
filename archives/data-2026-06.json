@@ -48,6 +48,18 @@
       "cw_pct": 13.2,
       "revenue": 56973.0
     },
+    "Internal Webinar": {
+      "leads_created": 475,
+      "booked": 25,
+      "book_pct": 5.3,
+      "showed": 14,
+      "show_pct": 56.0,
+      "qualified": 10,
+      "qual_pct": 40.0,
+      "closed": 2,
+      "cw_pct": 8.0,
+      "revenue": 22994.0
+    },
     "Website": {
       "leads_created": 31,
       "booked": 50,
@@ -95,18 +107,6 @@
       "closed": 1,
       "cw_pct": 25.0,
       "revenue": 8997.0
-    },
-    "Internal Webinar": {
-      "leads_created": 475,
-      "booked": 25,
-      "book_pct": 5.3,
-      "showed": 14,
-      "show_pct": 56.0,
-      "qualified": 10,
-      "qual_pct": 40.0,
-      "closed": 2,
-      "cw_pct": 8.0,
-      "revenue": 22994.0
     },
     "YouTube": {
       "leads_created": 45,
