@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1670,
+    "leads_created": 1671,
     "booked": 256,
     "showed": 167,
     "qualified": 142,
@@ -27,7 +27,7 @@
       "revenue": 147937.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 32,
+      "leads_created": 33,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -48,6 +48,18 @@
       "cw_pct": 12.5,
       "revenue": 56973.0
     },
+    "Low Ticket Funnel": {
+      "leads_created": 1007,
+      "booked": 46,
+      "book_pct": 4.6,
+      "showed": 25,
+      "show_pct": 54.3,
+      "qualified": 19,
+      "qual_pct": 41.3,
+      "closed": 1,
+      "cw_pct": 2.2,
+      "revenue": 8997.0
+    },
     "YouTube": {
       "leads_created": 45,
       "booked": 43,
@@ -60,17 +72,17 @@
       "cw_pct": 23.3,
       "revenue": 67970.0
     },
-    "Low Ticket Funnel": {
-      "leads_created": 1007,
-      "booked": 46,
-      "book_pct": 4.6,
-      "showed": 25,
-      "show_pct": 54.3,
-      "qualified": 19,
-      "qual_pct": 41.3,
-      "closed": 1,
-      "cw_pct": 2.2,
-      "revenue": 8997.0
+    "X": {
+      "leads_created": 3,
+      "booked": 3,
+      "book_pct": 100.0,
+      "showed": 1,
+      "show_pct": 33.3,
+      "qualified": 1,
+      "qual_pct": 33.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Meta Ads": {
       "leads_created": 7,
@@ -132,22 +144,10 @@
       "cw_pct": 25.0,
       "revenue": 8997.0
     },
-    "X": {
-      "leads_created": 3,
-      "booked": 3,
-      "book_pct": 100.0,
-      "showed": 1,
-      "show_pct": 33.3,
-      "qualified": 1,
-      "qual_pct": 33.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 32,
+      "leads_created": 33,
       "booked": 2,
-      "book_pct": 6.2,
+      "book_pct": 6.1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
