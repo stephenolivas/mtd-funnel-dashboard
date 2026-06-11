@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 1670,
+    "leads_created": 1671,
     "booked": 257,
     "showed": 168,
     "qualified": 142,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1075,
+      "leads_created": 1076,
       "booked": 125,
       "showed": 83,
       "qualified": 66,
@@ -60,6 +60,18 @@
       "cw_pct": 12.2,
       "revenue": 56973.0
     },
+    "Low Ticket Funnel": {
+      "leads_created": 1007,
+      "booked": 44,
+      "book_pct": 4.4,
+      "showed": 25,
+      "show_pct": 56.8,
+      "qualified": 18,
+      "qual_pct": 40.9,
+      "closed": 1,
+      "cw_pct": 2.3,
+      "revenue": 8997.0
+    },
     "Meta Ads": {
       "leads_created": 7,
       "booked": 4,
@@ -71,18 +83,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 44,
-      "book_pct": 4.4,
-      "showed": 25,
-      "show_pct": 56.8,
-      "qualified": 18,
-      "qual_pct": 40.9,
-      "closed": 1,
-      "cw_pct": 2.3,
-      "revenue": 8997.0
     },
     "Website": {
       "leads_created": 31,
