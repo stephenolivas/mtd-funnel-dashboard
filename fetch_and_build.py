@@ -32,6 +32,7 @@ session.headers.update({"Content-Type": "application/json"})
 CF_FUNNEL_NAME  = "cf_xqDQE8fkPsWa0RNEve7hcaxKblCe6489XeZGRDzyPdX"  # Funnel Name DEAL (lead)
 CF_SHOW_UP      = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"  # First Call Show Up (opp)
 CF_QUALIFIED    = "cf_ZDx7NBQaDzV1yYrFcBMzt6cIYj81dAcswpNN0CQzCPS"  # Qualified (opp)
+CF_PROGRAM_TIER = "cf_XvdC8hcwyfkoOFn6ElNdGEWbd567Th65m4spLuugYm3"           # Program Tier Purchased (opp)
 CF_UTM_CAMPAIGN = "cf_jnbd0xzUY3tuxzxiGxBs2hONuExeXMvAoTUM2R64Lq3"  # utm_campaign (contact)
 CF_UTM_CONTENT      = "cf_R7o66i0XPycLQHlxOLbIqk6c6j3oB8CzxF3e3apI1hn"  # utm_content (contact)
 CF_FIRST_SALES_CALL = "cf_LFdYEQ6bsgp49YjZzefypDmdVx8iwuakWDSLPLpVrBq"  # First Sales Call Booked Date (lead)
@@ -153,7 +154,8 @@ def fetch_lead(lead_id):
         "_fields": f"id,display_name,status_id,"
                    f"custom.{CF_FUNNEL_NAME},"
                    f"custom.{CF_SHOW_UP},"
-                   f"custom.{CF_QUALIFIED}"
+                   f"custom.{CF_QUALIFIED},"
+                   f"custom.{CF_PROGRAM_TIER}"
     })
 
 
@@ -175,7 +177,7 @@ def fetch_won_opps_by_range(start_date, end_date):
             "status_type":   "won",
             "date_won__gte": start_str,
             "date_won__lte": end_str,
-            "_fields":       "id,lead_id,value,date_won,user_id",
+            "_fields":       f"id,lead_id,value,date_won,user_id,custom.{CF_PROGRAM_TIER}",
             "_skip":         skip,
             "_limit":        100,
         })
@@ -248,7 +250,8 @@ def fetch_leads_by_booked_date(start_date, end_date):
             "_fields": (f"id,status_id,"
                         f"custom.{CF_FUNNEL_NAME},"
                         f"custom.{CF_SHOW_UP},"
-                        f"custom.{CF_QUALIFIED}"),
+                        f"custom.{CF_QUALIFIED},"
+                        f"custom.{CF_PROGRAM_TIER}"),
             "_limit":  200,
             "_skip":   skip,
         })
@@ -353,7 +356,8 @@ def aggregate_data(start_date, end_date, month_label,
 
     print(f"  Booked rows after status filter: {len(meeting_rows)}", flush=True)
 
-    closed_rows = []
+    closed_rows    = []
+    tier_by_funnel = {}
     for opp in won_opps:
         lid = opp["lead_id"]
         if lid not in lead_cache:
@@ -370,6 +374,14 @@ def aggregate_data(start_date, end_date, month_label,
         utm_campaign, utm_content = utm_cache[lid]
         utm = (utm_content or "Unattributed") if funnel in UTM_CONTENT_FUNNELS               else (utm_campaign or "Unattributed")
         closed_rows.append({"funnel": funnel, "value": value, "utm_campaign": utm})
+        # Track program tier breakdown — field is on LEAD, not opportunity
+        tier_raw = lead.get(f"custom.{CF_PROGRAM_TIER}")
+        if isinstance(tier_raw, list): tier_raw = tier_raw[0] if tier_raw else None
+        tier = str(tier_raw).strip() if tier_raw else "Unknown"
+        tier_by_funnel.setdefault(funnel, {})
+        tier_by_funnel[funnel].setdefault(tier, {"count": 0, "revenue": 0.0})
+        tier_by_funnel[funnel][tier]["count"]   += 1
+        tier_by_funnel[funnel][tier]["revenue"] += value
 
     print(f"  Closed-won rows: {len(closed_rows)}", flush=True)
 
@@ -429,6 +441,7 @@ def aggregate_data(start_date, end_date, month_label,
     data = {
         "funnel_data":   funnel_data,
         "funnel_totals": funnel_totals,
+        "tier_by_funnel": tier_by_funnel,
         "grand":         grand,
         "group_totals":  group_totals,
         "generated_at":  now_pac.strftime("%B %d, %Y at %I:%M %p PT"),
@@ -518,7 +531,7 @@ def goal_pct_label(booked, goal):
 
 # ── HTML Generation ────────────────────────────────────────────────────────────
 
-def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, days_in_month=30):
+def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, days_in_month=30, tier_by_funnel=None):
     """Build <tr> HTML for each funnel and its UTM sub-rows, grouped by section."""
     all_funnels = set(funnel_data.keys())
     claimed     = set()
@@ -562,9 +575,31 @@ def build_funnel_rows(funnel_data, funnel_totals, goals=None, day_of_month=1, da
       <td class="col-pct {pct_class(qu, bo)}">{pct(qu, bo)}</td>
       <td class="col-num">{cl if cl else "—"}</td>
       <td class="col-pct {pct_class(cl, bo, high=0.15, low=0.07)}">{pct(cl, bo)}</td>
-      <td class="col-rev">{fmt_currency(rev)}</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('{fid}')" title="Click to see package breakdown">{fmt_currency(rev)} <span class="pkg-chevron" id="pkgchev-{fid}">›</span></td>
       <td class="col-num">{rev_per_close(rev, cl)}</td>
     </tr>"""]
+
+        # Package/tier sub-rows
+        tiers = (tier_by_funnel or {}).get(funnel, {})
+        for tier_name, tvals in sorted(tiers.items(), key=lambda x: -x[1]["revenue"]):
+            tc  = tvals["count"]
+            tr_ = tvals["revenue"]
+            html.append(f"""
+    <tr class="pkg-row" data-parent="{fid}" style="display:none">
+      <td class="col-name col-pkg">↳ {tier_name}</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">{tc}</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">{fmt_currency(tr_)}</td>
+      <td class="col-num">{rev_per_close(tr_, tc)}</td>
+    </tr>""")
 
         utms = funnel_data.get(funnel, {})
         for utm_label, vals in sorted(utms.items(), key=lambda x: -x[1]["booked"]):
@@ -637,8 +672,10 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
     goals        = data.get("goals", {})
     day_of_month = data.get("day_of_month", 1)
     days_in_month= data.get("days_in_month", 30)
+    tier_by_funnel = data.get("tier_by_funnel", {})
     funnel_rows  = build_funnel_rows(data["funnel_data"], data["funnel_totals"],
-                                     goals, day_of_month, days_in_month)
+                                     goals, day_of_month, days_in_month,
+                                     tier_by_funnel)
 
     g_lc  = grand.get("leads_created", 0)
     g_bo  = grand["booked"]
@@ -855,6 +892,29 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
   .utm-row.open {{ display: table-row; }}
   .utm-row td {{ padding: 7px 12px; }}
   .utm-row + .utm-row td {{ border-top: 1px solid var(--border2); }}
+
+  .pkg-row {{ display: none; background: #faf9ff; }}
+  .pkg-row.open {{ display: table-row; }}
+  .pkg-row td {{
+    padding: 10px 12px;
+    color: var(--muted) !important;
+    font-weight: 400 !important;
+  }}
+  .pkg-row + .pkg-row td {{ border-top: 1px solid var(--border2); }}
+  .pkg-row .col-rev  {{ color: #7bc4a0 !important; font-weight: 400 !important; }}
+  .pkg-row .col-num  {{ color: var(--muted) !important; }}
+  .col-pkg {{
+    color: var(--muted2) !important;
+    font-size: 12px;
+    padding-left: 28px !important;
+  }}
+  .pkg-trigger {{ cursor: pointer; user-select: none; }}
+  .pkg-trigger:hover {{ opacity: 0.75; }}
+  .pkg-chevron {{
+    font-size: 11px; color: #c0c8d4; margin-left: 4px;
+    display: inline-block; transition: transform 0.15s;
+  }}
+  .pkg-chevron.open {{ transform: rotate(90deg); color: var(--muted2); }}
 
   /* Total row */
   .total-row {{
@@ -1163,6 +1223,17 @@ def generate_html(data, month_picker_html="", week_picker_html=""):
 
 <script src="/mtd-funnel-dashboard/archives/picker.js"></script>
 <script>
+  function togglePkg(fid) {{
+    const pkgRows = document.querySelectorAll(`.pkg-row[data-parent="${{fid}}"]`);
+    const chevron = document.getElementById("pkgchev-" + fid);
+    const isOpen  = chevron && chevron.classList.contains("open");
+    pkgRows.forEach(r => {{
+      r.style.display = isOpen ? "none" : "table-row";
+      r.classList.toggle("open", !isOpen);
+    }});
+    if (chevron) chevron.classList.toggle("open", !isOpen);
+  }}
+
   function toggleUTM(fid) {{
     const utmRows = document.querySelectorAll(`.utm-row[data-parent="${{fid}}"]`);
     const chevron = document.getElementById("chev-" + fid);
