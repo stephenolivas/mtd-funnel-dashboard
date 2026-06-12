@@ -207,6 +207,29 @@
   .utm-row td { padding: 7px 12px; }
   .utm-row + .utm-row td { border-top: 1px solid var(--border2); }
 
+  .pkg-row { display: none; background: #faf9ff; }
+  .pkg-row.open { display: table-row; }
+  .pkg-row td {
+    padding: 10px 12px;
+    color: var(--muted) !important;
+    font-weight: 400 !important;
+  }
+  .pkg-row + .pkg-row td { border-top: 1px solid var(--border2); }
+  .pkg-row .col-rev  { color: #7bc4a0 !important; font-weight: 400 !important; }
+  .pkg-row .col-num  { color: var(--muted) !important; }
+  .col-pkg {
+    color: var(--muted2) !important;
+    font-size: 12px;
+    padding-left: 28px !important;
+  }
+  .pkg-trigger { cursor: pointer; user-select: none; }
+  .pkg-trigger:hover { opacity: 0.75; }
+  .pkg-chevron {
+    font-size: 11px; color: #c0c8d4; margin-left: 4px;
+    display: inline-block; transition: transform 0.15s;
+  }
+  .pkg-chevron.open { transform: rotate(90deg); color: var(--muted2); }
+
   /* Total row */
   .total-row {
     border-top: 2px solid var(--border);
@@ -365,7 +388,7 @@
       <option value="/archives/week-current.html" >Jun 8–12 ▶</option></select></div>
     </div>
     <span class="snapshot-label">Snapshot</span>
-    June 12, 2026 at 04:33 PM PT<br>
+    June 12, 2026 at 04:48 PM PT<br>
     Source · Close CRM
   </div>
 </div>
@@ -520,6 +543,22 @@
       <td class="col-pct mid">59.1%</td>
       <td class="col-num">1</td>
       <td class="col-pct bad">4.5%</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('low_ticket_funnel')" title="Click to see package breakdown">$8,997 <span class="pkg-chevron" id="pkgchev-low_ticket_funnel">›</span></td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="low_ticket_funnel" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
       <td class="col-rev">$8,997</td>
       <td class="col-num">$8,997</td>
     </tr>
@@ -586,8 +625,40 @@
       <td class="col-pct mid">61.3%</td>
       <td class="col-num">8</td>
       <td class="col-pct mid">10.7%</td>
-      <td class="col-rev">$50,976</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('instagram')" title="Click to see package breakdown">$50,976 <span class="pkg-chevron" id="pkgchev-instagram">›</span></td>
       <td class="col-num">$6,372</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="instagram" style="display:none">
+      <td class="col-name col-pkg">↳ Bronze - $5,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">7</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$41,979</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="instagram" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$8,997</td>
+      <td class="col-num">$8,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="instagram">
@@ -1612,7 +1683,7 @@
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('x')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-x">›</span></td>
       <td class="col-num">—</td>
     </tr>
 
@@ -1646,6 +1717,22 @@
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">25.0%</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('linkedin')" title="Click to see package breakdown">$8,997 <span class="pkg-chevron" id="pkgchev-linkedin">›</span></td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="linkedin" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
       <td class="col-rev">$8,997</td>
       <td class="col-num">$8,997</td>
     </tr>
@@ -1667,7 +1754,7 @@
     </tr>
 
     <tr class="utm-row" data-parent="linkedin">
-      <td class="col-name col-utm">↳ Unattributed</td>
+      <td class="col-name col-utm">↳ organic</td>
       <td class="col-num">—</td>
       <td class="col-num">1</td>
       <td class="col-pace"></td>
@@ -1683,7 +1770,7 @@
     </tr>
 
     <tr class="utm-row" data-parent="linkedin">
-      <td class="col-name col-utm">↳ organic</td>
+      <td class="col-name col-utm">↳ Unattributed</td>
       <td class="col-num">—</td>
       <td class="col-num">1</td>
       <td class="col-pace"></td>
@@ -1712,7 +1799,7 @@
       <td class="col-pct ">—</td>
       <td class="col-num">—</td>
       <td class="col-pct ">—</td>
-      <td class="col-rev">$0</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('ltf___quiz_funnel')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-ltf___quiz_funnel">›</span></td>
       <td class="col-num">—</td>
     </tr>
 
@@ -1736,8 +1823,56 @@
       <td class="col-pct good">76.1%</td>
       <td class="col-num">10</td>
       <td class="col-pct good">21.7%</td>
-      <td class="col-rev">$67,970</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('youtube')" title="Click to see package breakdown">$67,970 <span class="pkg-chevron" id="pkgchev-youtube">›</span></td>
       <td class="col-num">$6,797</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="youtube" style="display:none">
+      <td class="col-name col-pkg">↳ Bronze - $5,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">7</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$41,979</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="youtube" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$17,994</td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="youtube" style="display:none">
+      <td class="col-name col-pkg">↳ Gold - $10,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$7,997</td>
+      <td class="col-num">$7,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="youtube">
@@ -2122,7 +2257,7 @@
       <td class="col-pct good">80.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('meta_ads')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-meta_ads">›</span></td>
       <td class="col-num">—</td>
     </tr>
 
@@ -2188,8 +2323,40 @@
       <td class="col-pct mid">58.9%</td>
       <td class="col-num">9</td>
       <td class="col-pct good">16.1%</td>
-      <td class="col-rev">$56,973</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('website')" title="Click to see package breakdown">$56,973 <span class="pkg-chevron" id="pkgchev-website">›</span></td>
       <td class="col-num">$6,330</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="website" style="display:none">
+      <td class="col-name col-pkg">↳ Bronze - $5,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">8</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$47,976</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="website" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$8,997</td>
+      <td class="col-num">$8,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="website">
@@ -2254,8 +2421,40 @@
       <td class="col-pct bad">43.5%</td>
       <td class="col-num">2</td>
       <td class="col-pct mid">8.7%</td>
-      <td class="col-rev">$22,994</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('internal_webinar')" title="Click to see package breakdown">$22,994 <span class="pkg-chevron" id="pkgchev-internal_webinar">›</span></td>
       <td class="col-num">$11,497</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="internal_webinar" style="display:none">
+      <td class="col-name col-pkg">↳ Platinum - $13,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$13,997</td>
+      <td class="col-num">$13,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="internal_webinar" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$8,997</td>
+      <td class="col-num">$8,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="internal_webinar">
@@ -2368,6 +2567,22 @@
       <td class="col-pct good">100.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct good">100.0%</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('reactivation_email')" title="Click to see package breakdown">$8,997 <span class="pkg-chevron" id="pkgchev-reactivation_email">›</span></td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="reactivation_email" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
       <td class="col-rev">$8,997</td>
       <td class="col-num">$8,997</td>
     </tr>
@@ -2402,8 +2617,40 @@
       <td class="col-pct bad">40.5%</td>
       <td class="col-num">2</td>
       <td class="col-pct bad">4.8%</td>
-      <td class="col-rev">$14,994</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('reactivation_scrapers')" title="Click to see package breakdown">$14,994 <span class="pkg-chevron" id="pkgchev-reactivation_scrapers">›</span></td>
       <td class="col-num">$7,497</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="reactivation_scrapers" style="display:none">
+      <td class="col-name col-pkg">↳ Silver - $8,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$8,997</td>
+      <td class="col-num">$8,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="reactivation_scrapers" style="display:none">
+      <td class="col-name col-pkg">↳ Bronze - $5,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$5,997</td>
+      <td class="col-num">$5,997</td>
     </tr>
 
     <tr class="utm-row" data-parent="reactivation_scrapers">
@@ -2586,7 +2833,7 @@
       <td class="col-pct bad">33.3%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('unknown__needs_review_')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-unknown__needs_review_">›</span></td>
       <td class="col-num">—</td>
     </tr>
 
@@ -2642,7 +2889,7 @@
       <td class="col-pct good">100.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('sales_reactivation')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-sales_reactivation">›</span></td>
       <td class="col-num">—</td>
     </tr>
 
@@ -2683,6 +2930,17 @@
 
 <script src="/mtd-funnel-dashboard/archives/picker.js"></script>
 <script>
+  function togglePkg(fid) {
+    const pkgRows = document.querySelectorAll(`.pkg-row[data-parent="${fid}"]`);
+    const chevron = document.getElementById("pkgchev-" + fid);
+    const isOpen  = chevron && chevron.classList.contains("open");
+    pkgRows.forEach(r => {
+      r.style.display = isOpen ? "none" : "table-row";
+      r.classList.toggle("open", !isOpen);
+    });
+    if (chevron) chevron.classList.toggle("open", !isOpen);
+  }
+
   function toggleUTM(fid) {
     const utmRows = document.querySelectorAll(`.utm-row[data-parent="${fid}"]`);
     const chevron = document.getElementById("chev-" + fid);
