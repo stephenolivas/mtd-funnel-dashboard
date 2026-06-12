@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2441,
     "booked": 279,
-    "showed": 194,
-    "qualified": 165,
+    "showed": 195,
+    "qualified": 166,
     "closed": 34,
     "revenue": 240898.0
   },
@@ -21,8 +21,8 @@
     "IN-HOUSE": {
       "leads_created": 1333,
       "booked": 173,
-      "showed": 114,
-      "qualified": 99,
+      "showed": 115,
+      "qualified": 100,
       "closed": 24,
       "revenue": 171928.0
     },
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 49,
-      "booked": 46,
-      "book_pct": 93.9,
-      "showed": 37,
-      "show_pct": 80.4,
-      "qualified": 34,
-      "qual_pct": 73.9,
-      "closed": 10,
-      "cw_pct": 21.7,
-      "revenue": 67970.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 9,
       "booked": 42,
@@ -59,6 +47,30 @@
       "closed": 2,
       "cw_pct": 4.8,
       "revenue": 14994.0
+    },
+    "YouTube": {
+      "leads_created": 49,
+      "booked": 46,
+      "book_pct": 93.9,
+      "showed": 38,
+      "show_pct": 82.6,
+      "qualified": 35,
+      "qual_pct": 76.1,
+      "closed": 10,
+      "cw_pct": 21.7,
+      "revenue": 67970.0
+    },
+    "Linkedin": {
+      "leads_created": 5,
+      "booked": 4,
+      "book_pct": 80.0,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 8997.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1006,
@@ -143,18 +155,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Linkedin": {
-      "leads_created": 5,
-      "booked": 4,
-      "book_pct": 80.0,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 25.0,
-      "revenue": 8997.0
     },
     "Reactivation Email": {
       "leads_created": 3,
