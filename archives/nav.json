@@ -42,7 +42,7 @@
       },
       {
         "key": "week-current",
-        "label": "Jun 8\u201311 \u25b6",
+        "label": "Jun 8\u201312 \u25b6",
         "is_current": true
       }
     ],
@@ -91,5 +91,5 @@
       }
     ]
   },
-  "updated_at": "2026-06-11T23:48:32"
+  "updated_at": "2026-06-12T00:03:59"
 }
