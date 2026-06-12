@@ -37,9 +37,9 @@
   },
   "funnels": {
     "YouTube": {
-      "leads_created": 48,
+      "leads_created": 47,
       "booked": 45,
-      "book_pct": 93.8,
+      "book_pct": 95.7,
       "showed": 37,
       "show_pct": 82.2,
       "qualified": 34,
@@ -97,9 +97,9 @@
       "revenue": 22994.0
     },
     "Reactivation Scrapers": {
-      "leads_created": 6,
+      "leads_created": 7,
       "booked": 41,
-      "book_pct": 683.3,
+      "book_pct": 585.7,
       "showed": 17,
       "show_pct": 41.5,
       "qualified": 12,
