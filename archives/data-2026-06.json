@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1679,
     "booked": 259,
-    "showed": 183,
+    "showed": 184,
     "qualified": 156,
     "closed": 34,
     "revenue": 240898.0
@@ -21,7 +21,7 @@
     "IN-HOUSE": {
       "leads_created": 571,
       "booked": 156,
-      "showed": 105,
+      "showed": 106,
       "qualified": 91,
       "closed": 24,
       "revenue": 171928.0
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 475,
-      "booked": 23,
-      "book_pct": 4.8,
-      "showed": 14,
-      "show_pct": 60.9,
-      "qualified": 10,
-      "qual_pct": 43.5,
-      "closed": 2,
-      "cw_pct": 8.7,
-      "revenue": 22994.0
-    },
     "Website": {
       "leads_created": 33,
       "booked": 52,
@@ -76,13 +64,25 @@
       "leads_created": 46,
       "booked": 42,
       "book_pct": 91.3,
-      "showed": 36,
-      "show_pct": 85.7,
+      "showed": 37,
+      "show_pct": 88.1,
       "qualified": 34,
       "qual_pct": 81.0,
       "closed": 10,
       "cw_pct": 23.8,
       "revenue": 67970.0
+    },
+    "Instagram": {
+      "leads_created": 61,
+      "booked": 71,
+      "book_pct": 116.4,
+      "showed": 54,
+      "show_pct": 76.1,
+      "qualified": 44,
+      "qual_pct": 62.0,
+      "closed": 8,
+      "cw_pct": 11.3,
+      "revenue": 50976.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 35,
@@ -96,17 +96,17 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "leads_created": 61,
-      "booked": 71,
-      "book_pct": 116.4,
-      "showed": 54,
-      "show_pct": 76.1,
-      "qualified": 44,
-      "qual_pct": 62.0,
-      "closed": 8,
-      "cw_pct": 11.3,
-      "revenue": 50976.0
+    "Internal Webinar": {
+      "leads_created": 475,
+      "booked": 23,
+      "book_pct": 4.8,
+      "showed": 14,
+      "show_pct": 60.9,
+      "qualified": 10,
+      "qual_pct": 43.5,
+      "closed": 2,
+      "cw_pct": 8.7,
+      "revenue": 22994.0
     },
     "Low Ticket Funnel": {
       "leads_created": 1006,
