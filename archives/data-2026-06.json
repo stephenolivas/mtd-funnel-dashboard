@@ -19,7 +19,7 @@
       "revenue": 68970.0
     },
     "IN-HOUSE": {
-      "leads_created": 572,
+      "leads_created": 574,
       "booked": 168,
       "showed": 106,
       "qualified": 91,
@@ -27,7 +27,7 @@
       "revenue": 171928.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 36,
+      "leads_created": 34,
       "booked": 5,
       "showed": 2,
       "qualified": 2,
@@ -97,9 +97,9 @@
       "revenue": 56973.0
     },
     "YouTube": {
-      "leads_created": 46,
+      "leads_created": 48,
       "booked": 45,
-      "book_pct": 97.8,
+      "book_pct": 93.8,
       "showed": 37,
       "show_pct": 82.2,
       "qualified": 34,
@@ -121,9 +121,9 @@
       "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 36,
+      "leads_created": 34,
       "booked": 5,
-      "book_pct": 13.9,
+      "book_pct": 14.7,
       "showed": 2,
       "show_pct": 40.0,
       "qualified": 2,
