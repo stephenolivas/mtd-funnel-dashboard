@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2471,
     "booked": 285,
-    "showed": 196,
-    "qualified": 167,
+    "showed": 197,
+    "qualified": 168,
     "closed": 34,
     "revenue": 240898.0
   },
@@ -19,15 +19,15 @@
       "revenue": 68970.0
     },
     "IN-HOUSE": {
-      "leads_created": 1338,
+      "leads_created": 1339,
       "booked": 177,
-      "showed": 115,
-      "qualified": 100,
+      "showed": 116,
+      "qualified": 101,
       "closed": 24,
       "revenue": 171928.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 50,
+      "leads_created": 49,
       "booked": 4,
       "showed": 1,
       "qualified": 1,
@@ -40,10 +40,10 @@
       "leads_created": 51,
       "booked": 47,
       "book_pct": 92.2,
-      "showed": 38,
-      "show_pct": 80.9,
-      "qualified": 35,
-      "qual_pct": 74.5,
+      "showed": 39,
+      "show_pct": 83.0,
+      "qualified": 36,
+      "qual_pct": 76.6,
       "closed": 10,
       "cw_pct": 21.3,
       "revenue": 67970.0
@@ -121,9 +121,9 @@
       "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 50,
+      "leads_created": 49,
       "booked": 4,
-      "book_pct": 8.0,
+      "book_pct": 8.2,
       "showed": 1,
       "show_pct": 25.0,
       "qualified": 1,
@@ -145,9 +145,9 @@
       "revenue": 8997.0
     },
     "Meta Ads": {
-      "leads_created": 14,
+      "leads_created": 15,
       "booked": 5,
-      "book_pct": 35.7,
+      "book_pct": 33.3,
       "showed": 4,
       "show_pct": 80.0,
       "qualified": 4,
