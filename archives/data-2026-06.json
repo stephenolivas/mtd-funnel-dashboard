@@ -2,8 +2,8 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 2479,
-    "booked": 285,
+    "leads_created": 2478,
+    "booked": 284,
     "showed": 197,
     "qualified": 168,
     "closed": 34,
@@ -19,8 +19,8 @@
       "revenue": 68970.0
     },
     "IN-HOUSE": {
-      "leads_created": 1341,
-      "booked": 177,
+      "leads_created": 1340,
+      "booked": 176,
       "showed": 116,
       "qualified": 101,
       "closed": 24,
@@ -37,28 +37,16 @@
   },
   "funnels": {
     "Website": {
-      "leads_created": 37,
-      "booked": 57,
-      "book_pct": 154.1,
+      "leads_created": 36,
+      "booked": 56,
+      "book_pct": 155.6,
       "showed": 36,
-      "show_pct": 63.2,
+      "show_pct": 64.3,
       "qualified": 33,
-      "qual_pct": 57.9,
+      "qual_pct": 58.9,
       "closed": 9,
-      "cw_pct": 15.8,
+      "cw_pct": 16.1,
       "revenue": 56973.0
-    },
-    "YouTube": {
-      "leads_created": 52,
-      "booked": 47,
-      "book_pct": 90.4,
-      "showed": 39,
-      "show_pct": 83.0,
-      "qualified": 36,
-      "qual_pct": 76.6,
-      "closed": 10,
-      "cw_pct": 21.3,
-      "revenue": 67970.0
     },
     "Instagram": {
       "leads_created": 69,
@@ -72,6 +60,18 @@
       "cw_pct": 10.5,
       "revenue": 50976.0
     },
+    "Low Ticket Funnel": {
+      "leads_created": 1006,
+      "booked": 22,
+      "book_pct": 2.2,
+      "showed": 17,
+      "show_pct": 77.3,
+      "qualified": 13,
+      "qual_pct": 59.1,
+      "closed": 1,
+      "cw_pct": 4.5,
+      "revenue": 8997.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 9,
       "booked": 44,
@@ -84,6 +84,18 @@
       "cw_pct": 4.5,
       "revenue": 14994.0
     },
+    "YouTube": {
+      "leads_created": 52,
+      "booked": 47,
+      "book_pct": 90.4,
+      "showed": 39,
+      "show_pct": 83.0,
+      "qualified": 36,
+      "qual_pct": 76.6,
+      "closed": 10,
+      "cw_pct": 21.3,
+      "revenue": 67970.0
+    },
     "Internal Webinar": {
       "leads_created": 474,
       "booked": 23,
@@ -95,18 +107,6 @@
       "closed": 2,
       "cw_pct": 8.7,
       "revenue": 22994.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 1006,
-      "booked": 22,
-      "book_pct": 2.2,
-      "showed": 17,
-      "show_pct": 77.3,
-      "qualified": 13,
-      "qual_pct": 59.1,
-      "closed": 1,
-      "cw_pct": 4.5,
-      "revenue": 8997.0
     },
     "Linkedin": {
       "leads_created": 5,
