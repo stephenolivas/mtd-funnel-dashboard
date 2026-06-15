@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 51,
+      "booked": 47,
+      "book_pct": 92.2,
+      "showed": 40,
+      "show_pct": 85.1,
+      "qualified": 37,
+      "qual_pct": 78.7,
+      "closed": 10,
+      "cw_pct": 21.3,
+      "revenue": 67970.0
+    },
     "Website": {
       "leads_created": 43,
       "booked": 62,
@@ -71,18 +83,6 @@
       "closed": 1,
       "cw_pct": 4.3,
       "revenue": 8997.0
-    },
-    "YouTube": {
-      "leads_created": 51,
-      "booked": 47,
-      "book_pct": 92.2,
-      "showed": 40,
-      "show_pct": 85.1,
-      "qualified": 37,
-      "qual_pct": 78.7,
-      "closed": 10,
-      "cw_pct": 21.3,
-      "revenue": 67970.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 49,
