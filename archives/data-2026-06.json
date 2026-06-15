@@ -11,7 +11,7 @@
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1089,
+      "leads_created": 1090,
       "booked": 104,
       "showed": 80,
       "qualified": 66,
@@ -19,7 +19,7 @@
       "revenue": 68970.0
     },
     "IN-HOUSE": {
-      "leads_created": 1345,
+      "leads_created": 1346,
       "booked": 175,
       "showed": 117,
       "qualified": 102,
@@ -27,7 +27,7 @@
       "revenue": 171928.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 49,
+      "leads_created": 47,
       "booked": 4,
       "showed": 1,
       "qualified": 1,
@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Instagram": {
-      "leads_created": 74,
+      "leads_created": 75,
       "booked": 77,
-      "book_pct": 104.1,
+      "book_pct": 102.7,
       "showed": 58,
       "show_pct": 75.3,
       "qualified": 48,
@@ -121,9 +121,9 @@
       "revenue": 22994.0
     },
     "Meta Ads": {
-      "leads_created": 16,
+      "leads_created": 17,
       "booked": 5,
-      "book_pct": 31.2,
+      "book_pct": 29.4,
       "showed": 4,
       "show_pct": 80.0,
       "qualified": 4,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 49,
+      "leads_created": 47,
       "booked": 4,
-      "book_pct": 8.2,
+      "book_pct": 8.5,
       "showed": 1,
       "show_pct": 25.0,
       "qualified": 1,
