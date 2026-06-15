@@ -4,14 +4,14 @@
   "grand": {
     "leads_created": 2497,
     "booked": 307,
-    "showed": 212,
+    "showed": 213,
     "qualified": 180,
     "closed": 35,
     "revenue": 240898.0
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1095,
+      "leads_created": 1094,
       "booked": 113,
       "showed": 87,
       "qualified": 71,
@@ -21,13 +21,13 @@
     "IN-HOUSE": {
       "leads_created": 1352,
       "booked": 189,
-      "showed": 123,
+      "showed": 124,
       "qualified": 107,
       "closed": 24,
       "revenue": 171928.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 50,
+      "leads_created": 51,
       "booked": 4,
       "showed": 1,
       "qualified": 1,
@@ -52,8 +52,8 @@
       "leads_created": 54,
       "booked": 48,
       "book_pct": 88.9,
-      "showed": 40,
-      "show_pct": 83.3,
+      "showed": 41,
+      "show_pct": 85.4,
       "qualified": 37,
       "qual_pct": 77.1,
       "closed": 10,
@@ -121,9 +121,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 50,
+      "leads_created": 51,
       "booked": 4,
-      "book_pct": 8.0,
+      "book_pct": 7.8,
       "showed": 1,
       "show_pct": 25.0,
       "qualified": 1,
@@ -133,7 +133,7 @@
       "revenue": 0.0
     },
     "Low Ticket Funnel": {
-      "leads_created": 1007,
+      "leads_created": 1006,
       "booked": 23,
       "book_pct": 2.3,
       "showed": 18,
