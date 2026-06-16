@@ -62,13 +62,6 @@ EXCLUDED_CLOSER_USER_IDS = {
 # ── Known Funnel# ── Known Funnel Display Order (grouped) ──────────────────────────────────────
 
 FUNNEL_GROUPS = [
-    ("EXTERNAL", [
-        "Low Ticket Funnel",
-        "Instagram",
-        "X",
-        "Linkedin",
-        "LTF - Quiz Funnel",   # excluded from totals — shown grayed at bottom
-    ]),
     ("IN-HOUSE", [
         "YouTube",
         "Meta Ads",
@@ -83,10 +76,19 @@ FUNNEL_GROUPS = [
         "Passivepreneurs",
         "Reactivation Email",
         "Reactivation Scrapers",
+        "Sales Reactivation",
         "Referred",
         "LinkedIn Ads",
         "Google Ads",
         "YouTube Ads",
+        "LTF - In-House",
+    ]),
+    ("EXTERNAL", [
+        "Low Ticket Funnel",
+        "Instagram",
+        "X",
+        "Linkedin",
+        "LTF - Quiz Funnel",   # excluded from totals — shown grayed at bottom
     ]),
     ("UNCATEGORIZED", [
         "Unknown (Needs Review)",
