@@ -48,6 +48,30 @@
       "cw_pct": 5.0,
       "revenue": 23991.0
     },
+    "X": {
+      "leads_created": 4,
+      "booked": 2,
+      "book_pct": 50.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 82,
+      "booked": 87,
+      "book_pct": 106.1,
+      "showed": 66,
+      "show_pct": 75.9,
+      "qualified": 56,
+      "qual_pct": 64.4,
+      "closed": 10,
+      "cw_pct": 11.5,
+      "revenue": 60473.0
+    },
     "Low Ticket Funnel": {
       "leads_created": 12,
       "booked": 18,
@@ -84,18 +108,6 @@
       "cw_pct": 8.3,
       "revenue": 22994.0
     },
-    "Instagram": {
-      "leads_created": 82,
-      "booked": 87,
-      "book_pct": 106.1,
-      "showed": 66,
-      "show_pct": 75.9,
-      "qualified": 56,
-      "qual_pct": 64.4,
-      "closed": 10,
-      "cw_pct": 11.5,
-      "revenue": 60473.0
-    },
     "LTF - In-House": {
       "leads_created": 994,
       "booked": 5,
@@ -107,18 +119,6 @@
       "closed": 1,
       "cw_pct": 20.0,
       "revenue": 8997.0
-    },
-    "X": {
-      "leads_created": 4,
-      "booked": 2,
-      "book_pct": 50.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 58,
