@@ -3,7 +3,7 @@
   "month_label": "June 2026",
   "grand": {
     "leads_created": 2509,
-    "booked": 325,
+    "booked": 326,
     "showed": 218,
     "qualified": 189,
     "closed": 37,
@@ -28,7 +28,7 @@
     },
     "UNCATEGORIZED": {
       "leads_created": 55,
-      "booked": 5,
+      "booked": 6,
       "showed": 1,
       "qualified": 1,
       "closed": 0,
@@ -68,6 +68,18 @@
       "show_pct": 71.4,
       "qualified": 5,
       "qual_pct": 71.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 55,
+      "booked": 6,
+      "book_pct": 10.9,
+      "showed": 1,
+      "show_pct": 16.7,
+      "qualified": 1,
+      "qual_pct": 16.7,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -140,18 +152,6 @@
       "show_pct": 75.0,
       "qualified": 3,
       "qual_pct": 75.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 55,
-      "booked": 5,
-      "book_pct": 9.1,
-      "showed": 1,
-      "show_pct": 20.0,
-      "qualified": 1,
-      "qual_pct": 20.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
