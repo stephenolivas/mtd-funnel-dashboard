@@ -2,18 +2,18 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 2504,
-    "booked": 326,
-    "showed": 215,
+    "leads_created": 2503,
+    "booked": 325,
+    "showed": 214,
     "qualified": 183,
     "closed": 37,
     "revenue": 256392.0
   },
   "groups": {
     "EXTERNAL": {
-      "leads_created": 1095,
-      "booked": 116,
-      "showed": 89,
+      "leads_created": 1094,
+      "booked": 115,
+      "showed": 88,
       "qualified": 73,
       "closed": 11,
       "revenue": 69470.0
@@ -49,15 +49,15 @@
       "revenue": 73967.0
     },
     "Instagram": {
-      "leads_created": 79,
-      "booked": 85,
-      "book_pct": 107.6,
-      "showed": 65,
-      "show_pct": 76.5,
+      "leads_created": 78,
+      "booked": 84,
+      "book_pct": 107.7,
+      "showed": 64,
+      "show_pct": 76.2,
       "qualified": 53,
-      "qual_pct": 62.4,
+      "qual_pct": 63.1,
       "closed": 9,
-      "cw_pct": 10.6,
+      "cw_pct": 10.7,
       "revenue": 51476.0
     },
     "Reactivation Scrapers": {
