@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 2520,
+    "leads_created": 2521,
     "booked": 328,
     "showed": 225,
     "qualified": 193,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 2361,
+      "leads_created": 2362,
       "booked": 212,
       "showed": 137,
       "qualified": 120,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 80,
+      "booked": 85,
+      "book_pct": 106.2,
+      "showed": 66,
+      "show_pct": 77.6,
+      "qualified": 55,
+      "qual_pct": 64.7,
+      "closed": 10,
+      "cw_pct": 11.8,
+      "revenue": 60473.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 56,
+      "booked": 5,
+      "book_pct": 8.9,
+      "showed": 1,
+      "show_pct": 20.0,
+      "qualified": 1,
+      "qual_pct": 20.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "X": {
       "leads_created": 4,
       "booked": 2,
@@ -49,9 +73,9 @@
       "revenue": 0.0
     },
     "Website": {
-      "leads_created": 50,
+      "leads_created": 51,
       "booked": 67,
-      "book_pct": 134.0,
+      "book_pct": 131.4,
       "showed": 42,
       "show_pct": 62.7,
       "qualified": 39,
@@ -59,18 +83,6 @@
       "closed": 10,
       "cw_pct": 14.9,
       "revenue": 62970.0
-    },
-    "Instagram": {
-      "leads_created": 80,
-      "booked": 85,
-      "book_pct": 106.2,
-      "showed": 66,
-      "show_pct": 77.6,
-      "qualified": 55,
-      "qual_pct": 64.7,
-      "closed": 10,
-      "cw_pct": 11.8,
-      "revenue": 60473.0
     },
     "Reactivation Scrapers": {
       "leads_created": 13,
@@ -95,18 +107,6 @@
       "closed": 2,
       "cw_pct": 8.7,
       "revenue": 22994.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 56,
-      "booked": 5,
-      "book_pct": 8.9,
-      "showed": 1,
-      "show_pct": 20.0,
-      "qualified": 1,
-      "qual_pct": 20.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Reactivation Email": {
       "leads_created": 3,
