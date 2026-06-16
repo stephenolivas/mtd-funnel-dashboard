@@ -48,18 +48,6 @@
       "cw_pct": 13.8,
       "revenue": 56973.0
     },
-    "Meta Ads": {
-      "leads_created": 18,
-      "booked": 7,
-      "book_pct": 38.9,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 5,
-      "qual_pct": 71.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 11,
       "booked": 59,
@@ -71,6 +59,18 @@
       "closed": 3,
       "cw_pct": 5.1,
       "revenue": 23991.0
+    },
+    "Meta Ads": {
+      "leads_created": 18,
+      "booked": 7,
+      "book_pct": 38.9,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 5,
+      "qual_pct": 71.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 7,
