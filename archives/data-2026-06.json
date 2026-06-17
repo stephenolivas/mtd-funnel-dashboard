@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 2562,
+    "leads_created": 2565,
     "booked": 358,
     "showed": 232,
     "qualified": 199,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 2396,
+      "leads_created": 2397,
       "booked": 235,
       "showed": 142,
       "qualified": 124,
@@ -27,7 +27,7 @@
       "revenue": 69470.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 59,
+      "leads_created": 61,
       "booked": 6,
       "showed": 2,
       "qualified": 1,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 59,
+      "booked": 51,
+      "book_pct": 86.4,
+      "showed": 42,
+      "show_pct": 82.4,
+      "qualified": 39,
+      "qual_pct": 76.5,
+      "closed": 11,
+      "cw_pct": 21.6,
+      "revenue": 73967.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 13,
       "booked": 67,
@@ -47,18 +59,6 @@
       "closed": 3,
       "cw_pct": 4.5,
       "revenue": 23991.0
-    },
-    "Internal Webinar": {
-      "leads_created": 503,
-      "booked": 32,
-      "book_pct": 6.4,
-      "showed": 16,
-      "show_pct": 50.0,
-      "qualified": 12,
-      "qual_pct": 37.5,
-      "closed": 2,
-      "cw_pct": 6.2,
-      "revenue": 22994.0
     },
     "Instagram": {
       "leads_created": 83,
@@ -72,10 +72,22 @@
       "cw_pct": 11.1,
       "revenue": 60473.0
     },
+    "Internal Webinar": {
+      "leads_created": 504,
+      "booked": 32,
+      "book_pct": 6.3,
+      "showed": 16,
+      "show_pct": 50.0,
+      "qualified": 12,
+      "qual_pct": 37.5,
+      "closed": 2,
+      "cw_pct": 6.2,
+      "revenue": 22994.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 59,
+      "leads_created": 61,
       "booked": 6,
-      "book_pct": 10.2,
+      "book_pct": 9.8,
       "showed": 2,
       "show_pct": 33.3,
       "qualified": 1,
@@ -95,18 +107,6 @@
       "closed": 10,
       "cw_pct": 14.3,
       "revenue": 62970.0
-    },
-    "YouTube": {
-      "leads_created": 59,
-      "booked": 51,
-      "book_pct": 86.4,
-      "showed": 42,
-      "show_pct": 82.4,
-      "qualified": 39,
-      "qual_pct": 76.5,
-      "closed": 11,
-      "cw_pct": 21.6,
-      "revenue": 73967.0
     },
     "X": {
       "leads_created": 4,
