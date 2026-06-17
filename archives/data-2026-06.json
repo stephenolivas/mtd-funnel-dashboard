@@ -36,29 +36,17 @@
     }
   },
   "funnels": {
-    "Website": {
-      "leads_created": 53,
-      "booked": 68,
-      "book_pct": 128.3,
-      "showed": 44,
-      "show_pct": 64.7,
-      "qualified": 41,
-      "qual_pct": 60.3,
-      "closed": 10,
-      "cw_pct": 14.7,
-      "revenue": 62970.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 14,
-      "booked": 70,
-      "book_pct": 500.0,
-      "showed": 33,
-      "show_pct": 47.1,
-      "qualified": 25,
-      "qual_pct": 35.7,
+    "Internal Webinar": {
+      "leads_created": 1475,
+      "booked": 39,
+      "book_pct": 2.6,
+      "showed": 19,
+      "show_pct": 48.7,
+      "qualified": 14,
+      "qual_pct": 35.9,
       "closed": 3,
-      "cw_pct": 4.3,
-      "revenue": 23991.0
+      "cw_pct": 7.7,
+      "revenue": 37991.0
     },
     "Instagram": {
       "leads_created": 85,
@@ -72,10 +60,22 @@
       "cw_pct": 12.2,
       "revenue": 66470.0
     },
-    "Linkedin": {
-      "leads_created": 8,
+    "Website": {
+      "leads_created": 53,
+      "booked": 68,
+      "book_pct": 128.3,
+      "showed": 44,
+      "show_pct": 64.7,
+      "qualified": 41,
+      "qual_pct": 60.3,
+      "closed": 10,
+      "cw_pct": 14.7,
+      "revenue": 62970.0
+    },
+    "LTF - In-House": {
+      "leads_created": 994,
       "booked": 7,
-      "book_pct": 87.5,
+      "book_pct": 0.7,
       "showed": 6,
       "show_pct": 85.7,
       "qualified": 6,
@@ -84,22 +84,22 @@
       "cw_pct": 14.3,
       "revenue": 8997.0
     },
-    "Internal Webinar": {
-      "leads_created": 1475,
-      "booked": 39,
-      "book_pct": 2.6,
-      "showed": 19,
-      "show_pct": 48.7,
-      "qualified": 14,
-      "qual_pct": 35.9,
+    "Reactivation Scrapers": {
+      "leads_created": 14,
+      "booked": 70,
+      "book_pct": 500.0,
+      "showed": 33,
+      "show_pct": 47.1,
+      "qualified": 25,
+      "qual_pct": 35.7,
       "closed": 3,
-      "cw_pct": 7.7,
-      "revenue": 37991.0
+      "cw_pct": 4.3,
+      "revenue": 23991.0
     },
-    "LTF - In-House": {
-      "leads_created": 994,
+    "Linkedin": {
+      "leads_created": 8,
       "booked": 7,
-      "book_pct": 0.7,
+      "book_pct": 87.5,
       "showed": 6,
       "show_pct": 85.7,
       "qualified": 6,
