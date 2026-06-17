@@ -48,6 +48,18 @@
       "cw_pct": 14.7,
       "revenue": 62970.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 14,
+      "booked": 70,
+      "book_pct": 500.0,
+      "showed": 33,
+      "show_pct": 47.1,
+      "qualified": 25,
+      "qual_pct": 35.7,
+      "closed": 3,
+      "cw_pct": 4.3,
+      "revenue": 23991.0
+    },
     "Instagram": {
       "leads_created": 85,
       "booked": 90,
@@ -71,18 +83,6 @@
       "closed": 1,
       "cw_pct": 14.3,
       "revenue": 8997.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 14,
-      "booked": 70,
-      "book_pct": 500.0,
-      "showed": 33,
-      "show_pct": 47.1,
-      "qualified": 25,
-      "qual_pct": 35.7,
-      "closed": 3,
-      "cw_pct": 4.3,
-      "revenue": 23991.0
     },
     "Internal Webinar": {
       "leads_created": 1475,
