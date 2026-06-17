@@ -48,18 +48,6 @@
       "cw_pct": 7.7,
       "revenue": 37991.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 14,
-      "booked": 70,
-      "book_pct": 500.0,
-      "showed": 33,
-      "show_pct": 47.1,
-      "qualified": 25,
-      "qual_pct": 35.7,
-      "closed": 3,
-      "cw_pct": 4.3,
-      "revenue": 23991.0
-    },
     "Instagram": {
       "leads_created": 82,
       "booked": 90,
@@ -84,6 +72,30 @@
       "cw_pct": 14.3,
       "revenue": 8997.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 14,
+      "booked": 70,
+      "book_pct": 500.0,
+      "showed": 33,
+      "show_pct": 47.1,
+      "qualified": 25,
+      "qual_pct": 35.7,
+      "closed": 3,
+      "cw_pct": 4.3,
+      "revenue": 23991.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 60,
+      "booked": 8,
+      "book_pct": 13.3,
+      "showed": 2,
+      "show_pct": 25.0,
+      "qualified": 1,
+      "qual_pct": 12.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Website": {
       "leads_created": 53,
       "booked": 69,
@@ -95,6 +107,18 @@
       "closed": 10,
       "cw_pct": 14.5,
       "revenue": 62970.0
+    },
+    "Linkedin": {
+      "leads_created": 8,
+      "booked": 7,
+      "book_pct": 87.5,
+      "showed": 6,
+      "show_pct": 85.7,
+      "qualified": 6,
+      "qual_pct": 85.7,
+      "closed": 1,
+      "cw_pct": 14.3,
+      "revenue": 8997.0
     },
     "YouTube": {
       "leads_created": 59,
@@ -128,30 +152,6 @@
       "show_pct": 85.7,
       "qualified": 5,
       "qual_pct": 71.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Linkedin": {
-      "leads_created": 8,
-      "booked": 7,
-      "book_pct": 87.5,
-      "showed": 6,
-      "show_pct": 85.7,
-      "qualified": 6,
-      "qual_pct": 85.7,
-      "closed": 1,
-      "cw_pct": 14.3,
-      "revenue": 8997.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 60,
-      "booked": 8,
-      "book_pct": 13.3,
-      "showed": 2,
-      "show_pct": 25.0,
-      "qualified": 1,
-      "qual_pct": 12.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
