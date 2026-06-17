@@ -4,19 +4,19 @@
   "grand": {
     "leads_created": 2565,
     "booked": 358,
-    "showed": 232,
-    "qualified": 199,
-    "closed": 39,
-    "revenue": 271386.0
+    "showed": 233,
+    "qualified": 200,
+    "closed": 40,
+    "revenue": 286383.0
   },
   "groups": {
     "IN-HOUSE": {
       "leads_created": 2397,
       "booked": 235,
-      "showed": 142,
-      "qualified": 124,
-      "closed": 28,
-      "revenue": 201916.0
+      "showed": 143,
+      "qualified": 125,
+      "closed": 29,
+      "revenue": 216913.0
     },
     "EXTERNAL": {
       "leads_created": 107,
@@ -48,18 +48,6 @@
       "cw_pct": 11.1,
       "revenue": 60473.0
     },
-    "Website": {
-      "leads_created": 54,
-      "booked": 70,
-      "book_pct": 129.6,
-      "showed": 43,
-      "show_pct": 61.4,
-      "qualified": 40,
-      "qual_pct": 57.1,
-      "closed": 10,
-      "cw_pct": 14.3,
-      "revenue": 62970.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 13,
       "booked": 67,
@@ -72,17 +60,17 @@
       "cw_pct": 4.5,
       "revenue": 23991.0
     },
-    "Internal Webinar": {
-      "leads_created": 504,
-      "booked": 32,
-      "book_pct": 6.3,
-      "showed": 16,
-      "show_pct": 50.0,
-      "qualified": 12,
-      "qual_pct": 37.5,
-      "closed": 2,
-      "cw_pct": 6.2,
-      "revenue": 22994.0
+    "Website": {
+      "leads_created": 54,
+      "booked": 70,
+      "book_pct": 129.6,
+      "showed": 43,
+      "show_pct": 61.4,
+      "qualified": 40,
+      "qual_pct": 57.1,
+      "closed": 10,
+      "cw_pct": 14.3,
+      "revenue": 62970.0
     },
     "YouTube": {
       "leads_created": 59,
@@ -95,6 +83,18 @@
       "closed": 11,
       "cw_pct": 21.6,
       "revenue": 73967.0
+    },
+    "Internal Webinar": {
+      "leads_created": 504,
+      "booked": 32,
+      "book_pct": 6.3,
+      "showed": 17,
+      "show_pct": 53.1,
+      "qualified": 13,
+      "qual_pct": 40.6,
+      "closed": 3,
+      "cw_pct": 9.4,
+      "revenue": 37991.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 61,
