@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2559,
     "booked": 335,
-    "showed": 229,
-    "qualified": 196,
+    "showed": 230,
+    "qualified": 197,
     "closed": 39,
     "revenue": 271386.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 2392,
       "booked": 217,
-      "showed": 139,
-      "qualified": 121,
+      "showed": 140,
+      "qualified": 122,
       "closed": 28,
       "revenue": 201916.0
     },
@@ -40,10 +40,10 @@
       "leads_created": 502,
       "booked": 25,
       "book_pct": 5.0,
-      "showed": 14,
-      "show_pct": 56.0,
-      "qualified": 10,
-      "qual_pct": 40.0,
+      "showed": 15,
+      "show_pct": 60.0,
+      "qualified": 11,
+      "qual_pct": 44.0,
       "closed": 2,
       "cw_pct": 8.0,
       "revenue": 22994.0
