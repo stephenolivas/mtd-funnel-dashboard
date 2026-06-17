@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 2559,
+    "leads_created": 2560,
     "booked": 358,
     "showed": 231,
     "qualified": 198,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 2395,
+      "leads_created": 2396,
       "booked": 235,
       "showed": 141,
       "qualified": 123,
@@ -37,7 +37,7 @@
   },
   "funnels": {
     "Internal Webinar": {
-      "leads_created": 502,
+      "leads_created": 503,
       "booked": 32,
       "book_pct": 6.4,
       "showed": 15,
