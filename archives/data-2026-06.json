@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 3564,
     "booked": 401,
-    "showed": 260,
-    "qualified": 224,
+    "showed": 262,
+    "qualified": 227,
     "closed": 43,
     "revenue": 301877.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 3384,
       "booked": 276,
-      "showed": 168,
-      "qualified": 147,
+      "showed": 170,
+      "qualified": 150,
       "closed": 31,
       "revenue": 226410.0
     },
@@ -36,29 +36,41 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1461,
+      "booked": 54,
+      "book_pct": 3.7,
+      "showed": 30,
+      "show_pct": 55.6,
+      "qualified": 24,
+      "qual_pct": 44.4,
+      "closed": 3,
+      "cw_pct": 5.6,
+      "revenue": 37991.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 30,
       "booked": 81,
       "book_pct": 270.0,
       "showed": 37,
       "show_pct": 45.7,
-      "qualified": 28,
-      "qual_pct": 34.6,
+      "qualified": 29,
+      "qual_pct": 35.8,
       "closed": 5,
       "cw_pct": 6.2,
       "revenue": 33488.0
     },
-    "Internal Webinar": {
-      "leads_created": 1461,
-      "booked": 54,
-      "book_pct": 3.7,
-      "showed": 28,
-      "show_pct": 51.9,
-      "qualified": 22,
-      "qual_pct": 40.7,
-      "closed": 3,
-      "cw_pct": 5.6,
-      "revenue": 37991.0
+    "Low Ticket Funnel": {
+      "leads_created": 12,
+      "booked": 18,
+      "book_pct": 150.0,
+      "showed": 14,
+      "show_pct": 77.8,
+      "qualified": 10,
+      "qual_pct": 55.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 56,
@@ -95,18 +107,6 @@
       "closed": 11,
       "cw_pct": 11.7,
       "revenue": 66470.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 12,
-      "booked": 18,
-      "book_pct": 150.0,
-      "showed": 14,
-      "show_pct": 77.8,
-      "qualified": 10,
-      "qual_pct": 55.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 8,
