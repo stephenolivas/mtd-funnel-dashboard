@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 20,
+      "booked": 79,
+      "book_pct": 395.0,
+      "showed": 34,
+      "show_pct": 43.0,
+      "qualified": 25,
+      "qual_pct": 31.6,
+      "closed": 3,
+      "cw_pct": 3.8,
+      "revenue": 23991.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1471,
+      "booked": 56,
+      "book_pct": 3.8,
+      "showed": 21,
+      "show_pct": 37.5,
+      "qualified": 16,
+      "qual_pct": 28.6,
+      "closed": 3,
+      "cw_pct": 5.4,
+      "revenue": 37991.0
+    },
     "LTF - Quiz Funnel": {
       "leads_created": 0,
       "booked": 1,
@@ -47,30 +71,6 @@
       "closed": 1,
       "cw_pct": 100.0,
       "revenue": 5997.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 18,
-      "booked": 77,
-      "book_pct": 427.8,
-      "showed": 34,
-      "show_pct": 44.2,
-      "qualified": 25,
-      "qual_pct": 32.5,
-      "closed": 3,
-      "cw_pct": 3.9,
-      "revenue": 23991.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1473,
-      "booked": 58,
-      "book_pct": 3.9,
-      "showed": 21,
-      "show_pct": 36.2,
-      "qualified": 16,
-      "qual_pct": 27.6,
-      "closed": 3,
-      "cw_pct": 5.2,
-      "revenue": 37991.0
     },
     "Website": {
       "leads_created": 53,
