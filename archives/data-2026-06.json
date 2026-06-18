@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 20,
-      "booked": 79,
-      "book_pct": 395.0,
-      "showed": 34,
-      "show_pct": 43.0,
-      "qualified": 25,
-      "qual_pct": 31.6,
-      "closed": 3,
-      "cw_pct": 3.8,
-      "revenue": 23991.0
-    },
     "Internal Webinar": {
       "leads_created": 1471,
       "booked": 56,
@@ -59,6 +47,18 @@
       "closed": 3,
       "cw_pct": 5.4,
       "revenue": 37991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 20,
+      "booked": 79,
+      "book_pct": 395.0,
+      "showed": 34,
+      "show_pct": 43.0,
+      "qualified": 25,
+      "qual_pct": 31.6,
+      "closed": 3,
+      "cw_pct": 3.8,
+      "revenue": 23991.0
     },
     "LTF - Quiz Funnel": {
       "leads_created": 0,
