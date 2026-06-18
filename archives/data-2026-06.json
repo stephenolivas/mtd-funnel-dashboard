@@ -48,6 +48,18 @@
       "cw_pct": 4.3,
       "revenue": 23991.0
     },
+    "Meta Ads": {
+      "leads_created": 23,
+      "booked": 9,
+      "book_pct": 39.1,
+      "showed": 7,
+      "show_pct": 77.8,
+      "qualified": 6,
+      "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "leads_created": 87,
       "booked": 90,
@@ -104,18 +116,6 @@
       "show_pct": 25.0,
       "qualified": 1,
       "qual_pct": 12.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 23,
-      "booked": 9,
-      "book_pct": 39.1,
-      "showed": 7,
-      "show_pct": 77.8,
-      "qualified": 6,
-      "qual_pct": 66.7,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
