@@ -192,6 +192,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "LTF - Quiz Funnel": {
+      "leads_created": 0,
+      "booked": 0,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0,
+      "qualified": 0,
+      "qual_pct": 0,
+      "closed": 1,
+      "cw_pct": 0,
+      "revenue": 5997.0
+    },
     "WWWS": {
       "leads_created": 750,
       "booked": 0,
