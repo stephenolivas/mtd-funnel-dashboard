@@ -19,7 +19,7 @@
       "revenue": 216913.0
     },
     "EXTERNAL": {
-      "leads_created": 110,
+      "leads_created": 111,
       "booked": 116,
       "showed": 89,
       "qualified": 75,
@@ -27,7 +27,7 @@
       "revenue": 75467.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 61,
+      "leads_created": 60,
       "booked": 8,
       "showed": 2,
       "qualified": 1,
@@ -73,9 +73,9 @@
       "revenue": 23991.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 61,
+      "leads_created": 60,
       "booked": 8,
-      "book_pct": 13.1,
+      "book_pct": 13.3,
       "showed": 2,
       "show_pct": 25.0,
       "qualified": 1,
@@ -85,9 +85,9 @@
       "revenue": 0.0
     },
     "Instagram": {
-      "leads_created": 86,
+      "leads_created": 87,
       "booked": 90,
-      "book_pct": 104.7,
+      "book_pct": 103.4,
       "showed": 67,
       "show_pct": 74.4,
       "qualified": 57,
