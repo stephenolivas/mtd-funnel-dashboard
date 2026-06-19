@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3585,
+    "leads_created": 3587,
     "booked": 430,
     "showed": 272,
     "qualified": 236,
@@ -27,7 +27,7 @@
       "revenue": 87964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 74,
+      "leads_created": 76,
       "booked": 6,
       "showed": 1,
       "qualified": 1,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 40,
+      "booked": 97,
+      "book_pct": 242.5,
+      "showed": 41,
+      "show_pct": 42.3,
+      "qualified": 33,
+      "qual_pct": 34.0,
+      "closed": 6,
+      "cw_pct": 6.2,
+      "revenue": 48488.0
+    },
     "Internal Webinar": {
       "leads_created": 1455,
       "booked": 58,
@@ -72,6 +84,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "YouTube": {
+      "leads_created": 63,
+      "booked": 52,
+      "book_pct": 82.5,
+      "showed": 43,
+      "show_pct": 82.7,
+      "qualified": 40,
+      "qual_pct": 76.9,
+      "closed": 11,
+      "cw_pct": 21.2,
+      "revenue": 73967.0
+    },
     "Instagram": {
       "leads_created": 93,
       "booked": 98,
@@ -84,22 +108,10 @@
       "cw_pct": 11.2,
       "revenue": 66470.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 40,
-      "booked": 97,
-      "book_pct": 242.5,
-      "showed": 41,
-      "show_pct": 42.3,
-      "qualified": 33,
-      "qual_pct": 34.0,
-      "closed": 6,
-      "cw_pct": 6.2,
-      "revenue": 48488.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 74,
+      "leads_created": 76,
       "booked": 6,
-      "book_pct": 8.1,
+      "book_pct": 7.9,
       "showed": 1,
       "show_pct": 16.7,
       "qualified": 1,
@@ -119,18 +131,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "YouTube": {
-      "leads_created": 63,
-      "booked": 52,
-      "book_pct": 82.5,
-      "showed": 43,
-      "show_pct": 82.7,
-      "qualified": 40,
-      "qual_pct": 76.9,
-      "closed": 11,
-      "cw_pct": 21.2,
-      "revenue": 73967.0
     },
     "LTF - In-House": {
       "leads_created": 994,
