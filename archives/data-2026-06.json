@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 3579,
     "booked": 426,
-    "showed": 271,
+    "showed": 272,
     "qualified": 236,
     "closed": 46,
     "revenue": 335371.0
@@ -13,7 +13,7 @@
     "IN-HOUSE": {
       "leads_created": 3392,
       "booked": 298,
-      "showed": 179,
+      "showed": 180,
       "qualified": 158,
       "closed": 33,
       "revenue": 247407.0
@@ -40,8 +40,8 @@
       "leads_created": 38,
       "booked": 95,
       "book_pct": 250.0,
-      "showed": 40,
-      "show_pct": 42.1,
+      "showed": 41,
+      "show_pct": 43.2,
       "qualified": 33,
       "qual_pct": 34.7,
       "closed": 6,
@@ -59,6 +59,18 @@
       "closed": 3,
       "cw_pct": 5.2,
       "revenue": 37991.0
+    },
+    "Meta Ads": {
+      "leads_created": 33,
+      "booked": 13,
+      "book_pct": 39.4,
+      "showed": 8,
+      "show_pct": 61.5,
+      "qualified": 6,
+      "qual_pct": 46.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 56,
@@ -83,18 +95,6 @@
       "closed": 11,
       "cw_pct": 11.2,
       "revenue": 66470.0
-    },
-    "Meta Ads": {
-      "leads_created": 33,
-      "booked": 13,
-      "book_pct": 39.4,
-      "showed": 8,
-      "show_pct": 61.5,
-      "qualified": 6,
-      "qual_pct": 46.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 63,
