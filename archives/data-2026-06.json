@@ -48,6 +48,18 @@
       "cw_pct": 6.2,
       "revenue": 48488.0
     },
+    "Instagram": {
+      "leads_created": 93,
+      "booked": 98,
+      "book_pct": 105.4,
+      "showed": 71,
+      "show_pct": 72.4,
+      "qualified": 59,
+      "qual_pct": 60.2,
+      "closed": 11,
+      "cw_pct": 11.2,
+      "revenue": 66470.0
+    },
     "YouTube": {
       "leads_created": 67,
       "booked": 54,
@@ -71,18 +83,6 @@
       "closed": 3,
       "cw_pct": 5.2,
       "revenue": 37991.0
-    },
-    "Instagram": {
-      "leads_created": 93,
-      "booked": 98,
-      "book_pct": 105.4,
-      "showed": 71,
-      "show_pct": 72.4,
-      "qualified": 59,
-      "qual_pct": 60.2,
-      "closed": 11,
-      "cw_pct": 11.2,
-      "revenue": 66470.0
     },
     "Website": {
       "leads_created": 56,
