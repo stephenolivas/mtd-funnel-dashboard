@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3387,
+      "leads_created": 3391,
       "booked": 275,
       "showed": 172,
       "qualified": 152,
@@ -19,7 +19,7 @@
       "revenue": 232407.0
     },
     "EXTERNAL": {
-      "leads_created": 116,
+      "leads_created": 117,
       "booked": 119,
       "showed": 91,
       "qualified": 77,
@@ -27,7 +27,7 @@
       "revenue": 75467.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 72,
+      "leads_created": 67,
       "booked": 5,
       "showed": 1,
       "qualified": 1,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 63,
+      "booked": 51,
+      "book_pct": 81.0,
+      "showed": 42,
+      "show_pct": 82.4,
+      "qualified": 40,
+      "qual_pct": 78.4,
+      "closed": 11,
+      "cw_pct": 21.6,
+      "revenue": 73967.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 39,
       "booked": 82,
@@ -73,9 +85,9 @@
       "revenue": 8997.0
     },
     "Instagram": {
-      "leads_created": 92,
+      "leads_created": 93,
       "booked": 94,
-      "book_pct": 102.2,
+      "book_pct": 101.1,
       "showed": 70,
       "show_pct": 74.5,
       "qualified": 59,
@@ -95,18 +107,6 @@
       "closed": 11,
       "cw_pct": 15.5,
       "revenue": 68967.0
-    },
-    "YouTube": {
-      "leads_created": 63,
-      "booked": 51,
-      "book_pct": 81.0,
-      "showed": 42,
-      "show_pct": 82.4,
-      "qualified": 40,
-      "qual_pct": 78.4,
-      "closed": 11,
-      "cw_pct": 21.6,
-      "revenue": 73967.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 72,
+      "leads_created": 67,
       "booked": 5,
-      "book_pct": 6.9,
+      "book_pct": 7.5,
       "showed": 1,
       "show_pct": 20.0,
       "qualified": 1,
@@ -145,9 +145,9 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "leads_created": 27,
+      "leads_created": 31,
       "booked": 10,
-      "book_pct": 37.0,
+      "book_pct": 32.3,
       "showed": 7,
       "show_pct": 70.0,
       "qualified": 6,
