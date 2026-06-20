@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3592,
+    "leads_created": 3593,
     "booked": 429,
     "showed": 280,
     "qualified": 240,
@@ -27,7 +27,7 @@
       "revenue": 87964.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 75,
+      "leads_created": 76,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 47,
-      "booked": 97,
-      "book_pct": 206.4,
-      "showed": 45,
-      "show_pct": 46.4,
-      "qualified": 34,
-      "qual_pct": 35.1,
-      "closed": 6,
-      "cw_pct": 6.2,
-      "revenue": 48488.0
-    },
-    "Instagram": {
-      "leads_created": 93,
-      "booked": 98,
-      "book_pct": 105.4,
-      "showed": 71,
-      "show_pct": 72.4,
-      "qualified": 59,
-      "qual_pct": 60.2,
-      "closed": 11,
-      "cw_pct": 11.2,
-      "revenue": 66470.0
-    },
     "Internal Webinar": {
       "leads_created": 1449,
       "booked": 58,
@@ -72,6 +48,18 @@
       "cw_pct": 5.2,
       "revenue": 37991.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 47,
+      "booked": 97,
+      "book_pct": 206.4,
+      "showed": 45,
+      "show_pct": 46.4,
+      "qualified": 34,
+      "qual_pct": 35.1,
+      "closed": 6,
+      "cw_pct": 6.2,
+      "revenue": 48488.0
+    },
     "YouTube": {
       "leads_created": 67,
       "booked": 54,
@@ -83,6 +71,18 @@
       "closed": 11,
       "cw_pct": 20.4,
       "revenue": 73967.0
+    },
+    "Instagram": {
+      "leads_created": 93,
+      "booked": 98,
+      "book_pct": 105.4,
+      "showed": 71,
+      "show_pct": 72.4,
+      "qualified": 59,
+      "qual_pct": 60.2,
+      "closed": 11,
+      "cw_pct": 11.2,
+      "revenue": 66470.0
     },
     "Website": {
       "leads_created": 56,
@@ -145,9 +145,9 @@
       "revenue": 12497.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 75,
+      "leads_created": 76,
       "booked": 2,
-      "book_pct": 2.7,
+      "book_pct": 2.6,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
