@@ -11,8 +11,8 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3415,
-      "booked": 312,
+      "leads_created": 3417,
+      "booked": 313,
       "showed": 189,
       "qualified": 166,
       "closed": 34,
@@ -27,8 +27,8 @@
       "revenue": 96961.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 91,
-      "booked": 3,
+      "leads_created": 89,
+      "booked": 2,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 40,
+      "booked": 15,
+      "book_pct": 37.5,
+      "showed": 10,
+      "show_pct": 66.7,
+      "qualified": 8,
+      "qual_pct": 53.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 69,
       "booked": 57,
@@ -47,18 +59,6 @@
       "closed": 11,
       "cw_pct": 19.3,
       "revenue": 73967.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 91,
-      "booked": 3,
-      "book_pct": 3.3,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 63,
@@ -120,18 +120,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Meta Ads": {
-      "leads_created": 38,
-      "booked": 14,
-      "book_pct": 36.8,
-      "showed": 10,
-      "show_pct": 71.4,
-      "qualified": 8,
-      "qual_pct": 57.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "X": {
       "leads_created": 4,
       "booked": 2,
@@ -155,6 +143,18 @@
       "closed": 1,
       "cw_pct": 14.3,
       "revenue": 8997.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 89,
+      "booked": 2,
+      "book_pct": 2.2,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 8,
