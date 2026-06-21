@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3620,
+    "leads_created": 3619,
     "booked": 438,
     "showed": 282,
     "qualified": 244,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3414,
+      "leads_created": 3413,
       "booked": 311,
       "showed": 189,
       "qualified": 166,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1448,
+      "booked": 61,
+      "book_pct": 4.2,
+      "showed": 36,
+      "show_pct": 59.0,
+      "qualified": 31,
+      "qual_pct": 50.8,
+      "closed": 3,
+      "cw_pct": 4.9,
+      "revenue": 37991.0
+    },
     "Instagram": {
       "leads_created": 97,
       "booked": 100,
@@ -96,18 +108,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "leads_created": 1448,
-      "booked": 61,
-      "book_pct": 4.2,
-      "showed": 36,
-      "show_pct": 59.0,
-      "qualified": 31,
-      "qual_pct": 50.8,
-      "closed": 3,
-      "cw_pct": 4.9,
-      "revenue": 37991.0
-    },
     "Meta Ads": {
       "leads_created": 36,
       "booked": 14,
@@ -133,7 +133,7 @@
       "revenue": 12497.0
     },
     "LTF - In-House": {
-      "leads_created": 994,
+      "leads_created": 993,
       "booked": 7,
       "book_pct": 0.7,
       "showed": 6,
