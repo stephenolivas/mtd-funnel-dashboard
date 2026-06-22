@@ -31,115 +31,102 @@
     min-height: 100vh;
   }
 
-  /* ── Header ── */
   .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 28px 36px 20px;
   }
-  .header h1 { font-size: 20px; font-weight: 700; color: #fff; color: var(--text); }
+  .header h1 { font-size: 20px; font-weight: 700; color: var(--text); }
   .header .sub { font-size: 11.5px; color: var(--muted2); margin-top: 3px; }
   .back-link {
-    font-size: 12px;
-    color: var(--accent);
-    text-decoration: none;
-    padding: 6px 14px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--surface);
-    white-space: nowrap;
+    font-size: 12px; color: var(--accent); text-decoration: none;
+    padding: 6px 14px; border: 1px solid var(--border);
+    border-radius: 6px; background: var(--surface); white-space: nowrap;
   }
   .back-link:hover { background: var(--surface2); }
 
-  /* ── Loading / Error ── */
-  .state-msg {
-    text-align: center;
-    padding: 60px 36px;
-    color: var(--muted);
-    font-size: 14px;
+  /* ── Month toggle pills ── */
+  .month-toggles {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 36px 20px;
+    flex-wrap: wrap;
   }
-
-  /* ── Table ── */
-  .table-wrap {
-    padding: 0 36px 48px;
-    overflow-x: auto;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--surface);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  }
-
-  /* Month header row */
-  .month-header th {
-    padding: 10px 8px 6px;
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-    border-right: 2px solid var(--border);
-    color: var(--text);
-    background: var(--surface2);
-    white-space: nowrap;
-  }
-  .month-header th:last-child { border-right: none; }
-  .month-header .col-funnel-head {
-    text-align: left;
-    font-size: 10.5px;
+  .toggle-label {
+    font-size: 11px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--muted);
-    font-weight: 500;
-    border-right: 1px solid var(--border);
+    margin-right: 4px;
   }
-
-  /* Sub-header (metric names) */
-  .sub-header th {
-    padding: 5px 8px 8px;
-    font-size: 9.5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--muted);
-    text-align: right;
-    border-bottom: 2px solid var(--border);
+  .month-pill {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 13px;
+    border-radius: 20px;
+    border: 1.5px solid var(--accent);
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s;
     white-space: nowrap;
   }
-  .sub-header .col-funnel-sub {
-    text-align: left;
-    border-right: 1px solid var(--border);
-    padding-left: 12px;
+  .month-pill.off {
+    background: transparent;
+    color: var(--muted);
+    border-color: var(--border);
   }
-  .sub-header .col-rev-sub { color: var(--green); }
+  .month-pill:hover { opacity: 0.8; }
+
+  .state-msg {
+    text-align: center; padding: 60px 36px;
+    color: var(--muted); font-size: 14px;
+  }
+
+  .table-wrap { padding: 0 36px 48px; overflow-x: auto; }
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--surface); border-radius: 10px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .month-header th {
+    padding: 10px 8px 6px; font-size: 12px; font-weight: 700;
+    text-align: center; border-bottom: 1px solid var(--border);
+    border-right: 2px solid var(--border); color: var(--text);
+    background: var(--surface2); white-space: nowrap;
+  }
+  .month-header th:last-child { border-right: none; }
+  .month-header .col-funnel-head {
+    text-align: left; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.07em; color: var(--muted); font-weight: 500;
+    border-right: 1px solid var(--border);
+  }
+
+  .sub-header th {
+    padding: 5px 8px 8px; font-size: 9.5px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
+    text-align: right; border-bottom: 2px solid var(--border); white-space: nowrap;
+  }
   .sub-header .last-in-group { border-right: 2px solid var(--border); }
 
-  /* Section header rows */
   .section-row td {
-    padding: 14px 12px 5px;
-    font-size: 10.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    font-weight: 700;
-    border-top: 2px solid var(--border);
-    background: transparent;
+    padding: 14px 12px 5px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--accent); font-weight: 700;
+    border-top: 2px solid var(--border); background: transparent;
   }
 
-  /* Data rows */
   tr.data-row { border-top: 1px solid var(--border2); }
   tr.data-row:hover { background: rgba(79,70,229,0.02); }
   tr.data-row td { padding: 9px 8px; vertical-align: middle; }
 
   .col-funnel {
-    font-weight: 500;
-    min-width: 160px;
-    border-right: 1px solid var(--border);
-    padding-left: 12px !important;
-    white-space: nowrap;
+    font-weight: 500; min-width: 160px; border-right: 1px solid var(--border);
+    padding-left: 12px !important; white-space: nowrap;
   }
   .col-num   { text-align: right; }
   .col-pct   { text-align: right; font-weight: 500; }
@@ -150,16 +137,17 @@
   .pct-mid   { color: var(--amber); }
   .pct-bad   { color: var(--red); }
 
-  /* Total rows */
   tr.total-row { border-top: 2px solid var(--border); font-weight: 700; background: var(--surface2); }
   tr.total-row td { padding: 11px 8px; }
-
-  /* Excluded funnel row */
   tr.excl-row td { color: var(--muted) !important; }
+
+  /* Hidden month columns */
+  .mc-hidden { display: none !important; }
 
   @media (max-width: 768px) {
     .header { flex-direction: column; gap: 12px; }
     .table-wrap { padding: 0 12px 36px; }
+    .month-toggles { padding: 0 12px 16px; }
   }
 </style>
 </head>
@@ -173,6 +161,8 @@
   <a class="back-link" href="/mtd-funnel-dashboard/index.html">← Live Dashboard</a>
 </div>
 
+<div class="month-toggles" id="toggles"></div>
+
 <div id="content">
   <div class="state-msg">Loading month data...</div>
 </div>
@@ -181,72 +171,110 @@
 const BASE         = '/mtd-funnel-dashboard';
 const EXCLUDED     = new Set(['LTF - Quiz Funnel']);
 const FUNNEL_ORDER = [
-  // External
-  'Low Ticket Funnel', 'Instagram', 'X', 'Linkedin',
-  // In-House
   'YouTube', 'Meta Ads', 'VSL', 'Website', 'Internal Webinar',
   'Mike Newsletter', 'Side Hustle Nation', 'WWWS', 'Tik Tok',
   'Anthony IG', 'Passivepreneurs', 'Reactivation Email',
-  'Reactivation Scrapers', 'Referred', 'LinkedIn Ads', 'Google Ads', 'YouTube Ads',
+  'Reactivation Scrapers', 'Sales Reactivation', 'Referred',
+  'LinkedIn Ads', 'Google Ads', 'YouTube Ads', 'LTF - In-House',
+  'Low Ticket Funnel', 'Instagram', 'X', 'Linkedin',
 ];
 const GROUPS = {
-  'EXTERNAL':     ['Low Ticket Funnel', 'Instagram', 'X', 'Linkedin'],
-  'IN-HOUSE':     ['YouTube', 'Meta Ads', 'VSL', 'Website', 'Internal Webinar',
-                   'Mike Newsletter', 'Side Hustle Nation', 'WWWS', 'Tik Tok',
-                   'Anthony IG', 'Passivepreneurs', 'Reactivation Email',
-                   'Reactivation Scrapers', 'Referred', 'LinkedIn Ads', 'Google Ads', 'YouTube Ads'],
+  'IN-HOUSE': ['YouTube', 'Meta Ads', 'VSL', 'Website', 'Internal Webinar',
+               'Mike Newsletter', 'Side Hustle Nation', 'WWWS', 'Tik Tok',
+               'Anthony IG', 'Passivepreneurs', 'Reactivation Email',
+               'Reactivation Scrapers', 'Sales Reactivation', 'Referred',
+               'LinkedIn Ads', 'Google Ads', 'YouTube Ads', 'LTF - In-House'],
+  'EXTERNAL': ['Low Ticket Funnel', 'Instagram', 'X', 'Linkedin'],
   'UNCATEGORIZED': ['Unknown (Needs Review)', 'No Attribution'],
 };
 
-function fmt(n)    { return n == null ? '—' : n.toLocaleString(); }
-function fmtR(n)   { return n ? '$' + Math.round(n).toLocaleString() : '$0'; }
-function fmtP(p)   { return p == null ? '—' : p.toFixed(1) + '%'; }
+// Track which months are visible
+const hiddenMonths = new Set();
+
+function mcClass(key) { return 'mc-' + key.replace(/-/g, '_'); }
+
+function toggleMonth(key) {
+  const cls = mcClass(key);
+  const pill = document.getElementById('pill-' + key);
+  if (hiddenMonths.has(key)) {
+    hiddenMonths.delete(key);
+    document.querySelectorAll('.' + cls).forEach(el => el.classList.remove('mc-hidden'));
+    if (pill) pill.classList.remove('off');
+  } else {
+    hiddenMonths.add(key);
+    document.querySelectorAll('.' + cls).forEach(el => el.classList.add('mc-hidden'));
+    if (pill) pill.classList.add('off');
+  }
+}
+
+function renderToggles(months) {
+  const wrap = document.getElementById('toggles');
+  const label = document.createElement('span');
+  label.className = 'toggle-label';
+  label.textContent = 'Show months:';
+  wrap.appendChild(label);
+  months.forEach(m => {
+    const pill = document.createElement('button');
+    pill.className = 'month-pill';
+    pill.id = 'pill-' + m.month_key;
+    pill.textContent = m.label;
+    pill.onclick = () => toggleMonth(m.month_key);
+    wrap.appendChild(pill);
+  });
+}
+
+function fmt(n)  { return n == null ? '—' : n.toLocaleString(); }
+function fmtR(n) { return n ? '$' + Math.round(n).toLocaleString() : '$0'; }
+function fmtP(p) { return p == null ? '—' : p.toFixed(1) + '%'; }
 function pClass(p, high, low) {
   if (p == null) return '';
   return p >= high ? 'pct-good' : p < low ? 'pct-bad' : 'pct-mid';
 }
 
-function funnelCells(fdata, months, isLast) {
+function funnelCells(fdata, months) {
   return months.map((m, mi) => {
-    const f = fdata && fdata[m.month_key] ? fdata[m.month_key] : null;
+    const f    = fdata && fdata[m.month_key] ? fdata[m.month_key] : null;
     const last = mi === months.length - 1;
-    const bo   = f ? f.booked    : null;
-    const sh   = f ? f.show_pct  : null;
-    const qu   = f ? f.qual_pct  : null;
-    const cw   = f ? f.cw_pct    : null;
-    const rev  = f ? f.revenue   : null;
+    const cls  = mcClass(m.month_key);
+    const bo   = f ? f.booked   : null;
+    const sh   = f ? f.show_pct : null;
+    const qu   = f ? f.qual_pct : null;
+    const cw   = f ? f.cw_pct   : null;
+    const rev  = f ? f.revenue  : null;
     return `
-      <td class="col-num">${fmt(bo)}</td>
-      <td class="col-pct ${pClass(sh,65,50)}">${fmtP(sh)}</td>
-      <td class="col-pct ${pClass(qu,50,35)}">${fmtP(qu)}</td>
-      <td class="col-pct ${pClass(cw,12,7)}">${fmtP(cw)}</td>
-      <td class="col-rev${last ? '' : ' col-last'}">${fmtR(rev)}</td>`;
+      <td class="col-num ${cls}">${fmt(bo)}</td>
+      <td class="col-pct ${pClass(sh,65,50)} ${cls}">${fmtP(sh)}</td>
+      <td class="col-pct ${pClass(qu,50,35)} ${cls}">${fmtP(qu)}</td>
+      <td class="col-pct ${pClass(cw,12,7)} ${cls}">${fmtP(cw)}</td>
+      <td class="col-rev${last ? '' : ' col-last'} ${cls}">${fmtR(rev)}</td>`;
   }).join('');
 }
 
 function buildTable(months, allData) {
   const nMonths = months.length;
 
-  // Month header
+  // Month header — each th gets the mc class for hiding
   let monthHead = `<th class="col-funnel-head" rowspan="2">Funnel</th>`;
   months.forEach((m, i) => {
     const last = i === months.length - 1;
-    monthHead += `<th colspan="5" style="${last ? '' : 'border-right:2px solid var(--border);'}">${m.label}</th>`;
+    const cls  = mcClass(m.month_key);
+    monthHead += `<th colspan="5" class="${cls}" style="${last ? '' : 'border-right:2px solid var(--border);'}">${m.label}</th>`;
   });
 
-  // Sub-header (no funnel cell — covered by rowspan=2 on the funnel header)
-  let subHead = ``;
+  // Sub-header
+  let subHead = '';
   months.forEach((m, i) => {
     const last = i === months.length - 1;
+    const cls  = mcClass(m.month_key);
     subHead += `
-      <th class="col-num">Booked</th>
-      <th class="col-pct">Show %</th>
-      <th class="col-pct">Qual %</th>
-      <th class="col-pct">CW %</th>
-      <th class="col-rev${last ? '' : ' last-in-group'}">Revenue</th>`;
+      <th class="col-num ${cls}">Booked</th>
+      <th class="col-pct ${cls}">Show %</th>
+      <th class="col-pct ${cls}">Qual %</th>
+      <th class="col-pct ${cls}">CW %</th>
+      <th class="col-rev${last ? '' : ' last-in-group'} ${cls}">Revenue</th>`;
   });
 
-  // Build funnel lookup: funnel_name → { month_key: metrics }
+  // Build funnel lookup
   const funnelData = {};
   months.forEach(m => {
     const d = allData[m.month_key];
@@ -257,15 +285,11 @@ function buildTable(months, allData) {
     });
   });
 
-  // Collect all funnels in order
   const allFunnels = new Set([...FUNNEL_ORDER, ...Object.keys(funnelData)]);
-
-  // Build rows
   let rows = '';
   let claimedFunnels = new Set();
 
   Object.entries(GROUPS).forEach(([groupName, groupFunnels]) => {
-    // Only show group if it has any data
     const activeInGroup = groupFunnels.filter(fn =>
       Object.values(funnelData[fn] || {}).some(v => v.booked > 0 || v.closed > 0)
     );
@@ -277,17 +301,15 @@ function buildTable(months, allData) {
       claimedFunnels.add(fn);
       const hasData = Object.values(funnelData[fn] || {}).some(v => v && (v.booked > 0 || v.closed > 0));
       if (!hasData && !EXCLUDED.has(fn)) return;
-
       const isExcl = EXCLUDED.has(fn);
-      const label  = isExcl ? fn + ' *' : fn;
       rows += `<tr class="data-row${isExcl ? ' excl-row' : ''}">
-        <td class="col-funnel">${label}</td>
+        <td class="col-funnel">${isExcl ? fn + ' *' : fn}</td>
         ${funnelCells(funnelData[fn], months)}
       </tr>`;
     });
   });
 
-  // Uncategorized — anything not claimed
+  // Other
   const extras = [...allFunnels].filter(fn => !claimedFunnels.has(fn) && !EXCLUDED.has(fn));
   const activeExtras = extras.filter(fn =>
     Object.values(funnelData[fn] || {}).some(v => v && (v.booked > 0 || v.closed > 0))
@@ -295,35 +317,30 @@ function buildTable(months, allData) {
   if (activeExtras.length > 0) {
     rows += `<tr class="section-row"><td colspan="${1 + nMonths * 5}">Funnel Breakdown — Other</td></tr>`;
     activeExtras.forEach(fn => {
-      rows += `<tr class="data-row">
-        <td class="col-funnel">${fn}</td>
-        ${funnelCells(funnelData[fn], months)}
-      </tr>`;
+      rows += `<tr class="data-row"><td class="col-funnel">${fn}</td>${funnelCells(funnelData[fn], months)}</tr>`;
     });
   }
 
-  // Totals row
+  // Totals
   const totalCells = months.map((m, i) => {
-    const d  = allData[m.month_key];
-    const g  = d ? d.grand : null;
+    const d   = allData[m.month_key];
+    const g   = d ? d.grand : null;
     const last = i === months.length - 1;
-    const bo = g ? g.booked    : null;
-    const sh = g && bo ? g.showed / bo * 100    : null;
-    const qu = g && bo ? g.qualified / bo * 100 : null;
-    const cw = g && bo ? g.closed / bo * 100    : null;
-    const rv = g ? g.revenue : null;
+    const cls  = mcClass(m.month_key);
+    const bo  = g ? g.booked : null;
+    const sh  = g && bo ? g.showed / bo * 100    : null;
+    const qu  = g && bo ? g.qualified / bo * 100 : null;
+    const cw  = g && bo ? g.closed / bo * 100    : null;
+    const rv  = g ? g.revenue : null;
     return `
-      <td class="col-num">${fmt(bo)}</td>
-      <td class="col-pct ${pClass(sh,65,50)}">${fmtP(sh)}</td>
-      <td class="col-pct ${pClass(qu,50,35)}">${fmtP(qu)}</td>
-      <td class="col-pct ${pClass(cw,12,7)}">${fmtP(cw)}</td>
-      <td class="col-rev${last ? '' : ' col-last'}">${fmtR(rv)}</td>`;
+      <td class="col-num ${cls}">${fmt(bo)}</td>
+      <td class="col-pct ${pClass(sh,65,50)} ${cls}">${fmtP(sh)}</td>
+      <td class="col-pct ${pClass(qu,50,35)} ${cls}">${fmtP(qu)}</td>
+      <td class="col-pct ${pClass(cw,12,7)} ${cls}">${fmtP(cw)}</td>
+      <td class="col-rev${last ? '' : ' col-last'} ${cls}">${fmtR(rv)}</td>`;
   }).join('');
 
-  rows += `<tr class="total-row">
-    <td class="col-funnel">TOTAL</td>
-    ${totalCells}
-  </tr>`;
+  rows += `<tr class="total-row"><td class="col-funnel">TOTAL</td>${totalCells}</tr>`;
 
   return `
   <div class="table-wrap">
@@ -334,8 +351,8 @@ function buildTable(months, allData) {
       </thead>
       <tbody>${rows}</tbody>
     </table>
-    <p style="font-size:11px; color:var(--muted); margin-top:16px; padding: 0 4px;">
-      * Funnel excluded from top-line totals. Totals row reflects same exclusions as the live dashboard.
+    <p style="font-size:11px; color:var(--muted); margin-top:16px; padding:0 4px;">
+      * Funnel excluded from top-line totals. Totals reflect same exclusions as the live dashboard.
     </p>
   </div>`;
 }
@@ -343,41 +360,30 @@ function buildTable(months, allData) {
 async function init() {
   const content = document.getElementById('content');
   try {
-    // Load nav.json to get available months
     const navResp = await fetch(BASE + '/archives/nav.json?t=' + Date.now());
     if (!navResp.ok) throw new Error('Could not load nav.json');
     const nav = await navResp.json();
 
-    // Build month list: archives + current live month
     const months = [];
-
-    // Monthly archives (newest first → reverse for oldest-first display)
     const archiveMonths = (nav.months || []).filter(m => !m.is_live);
-    [...archiveMonths].reverse().forEach(m => {
-      months.push({ month_key: m.key, label: m.label });
-    });
-
-    // Live month last
+    [...archiveMonths].reverse().forEach(m => months.push({ month_key: m.key, label: m.label }));
     months.push({ month_key: nav.live_month, label: nav.live_month_label + ' (MTD)' });
 
-    // Fetch all data files in parallel
     const fetches = months.map(m => {
       const fname = m.month_key === nav.live_month
         ? `data-${nav.live_month}.json`
         : `data-${m.month_key}.json`;
       return fetch(`${BASE}/archives/${fname}?t=` + Date.now())
-        .then(r => r.ok ? r.json() : null)
-        .catch(() => null);
+        .then(r => r.ok ? r.json() : null).catch(() => null);
     });
 
-    const results  = await Promise.all(fetches);
-    const allData  = {};
+    const results = await Promise.all(fetches);
+    const allData = {};
     months.forEach((m, i) => { if (results[i]) allData[m.month_key] = results[i]; });
 
-    // Only show months that have data
     const validMonths = months.filter(m => allData[m.month_key]);
     if (validMonths.length === 0) {
-      content.innerHTML = '<div class="state-msg">No monthly data files found yet. Run a monthly archive or regular update first.</div>';
+      content.innerHTML = '<div class="state-msg">No monthly data files found yet.</div>';
       return;
     }
 
@@ -385,6 +391,7 @@ async function init() {
       `Vendingpreneurs · ${validMonths.map(m => m.label).join(' · ')}`;
 
     content.innerHTML = buildTable(validMonths, allData);
+    renderToggles(validMonths);
 
   } catch(e) {
     content.innerHTML = `<div class="state-msg">Error loading data: ${e.message}</div>`;
