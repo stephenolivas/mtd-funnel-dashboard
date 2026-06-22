@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 103,
+      "booked": 100,
+      "book_pct": 97.1,
+      "showed": 72,
+      "show_pct": 72.0,
+      "qualified": 60,
+      "qual_pct": 60.0,
+      "closed": 12,
+      "cw_pct": 12.0,
+      "revenue": 75467.0
+    },
     "YouTube": {
       "leads_created": 70,
       "booked": 57,
@@ -83,18 +95,6 @@
       "closed": 12,
       "cw_pct": 16.4,
       "revenue": 83964.0
-    },
-    "Instagram": {
-      "leads_created": 103,
-      "booked": 100,
-      "book_pct": 97.1,
-      "showed": 72,
-      "show_pct": 72.0,
-      "qualified": 60,
-      "qual_pct": 60.0,
-      "closed": 12,
-      "cw_pct": 12.0,
-      "revenue": 75467.0
     },
     "LTF - In-House": {
       "leads_created": 994,
