@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 63,
+      "booked": 73,
+      "book_pct": 115.9,
+      "showed": 46,
+      "show_pct": 63.0,
+      "qualified": 44,
+      "qual_pct": 60.3,
+      "closed": 12,
+      "cw_pct": 16.4,
+      "revenue": 83964.0
+    },
     "Internal Webinar": {
       "leads_created": 1448,
       "booked": 61,
@@ -95,18 +107,6 @@
       "closed": 11,
       "cw_pct": 19.3,
       "revenue": 73967.0
-    },
-    "Website": {
-      "leads_created": 63,
-      "booked": 73,
-      "book_pct": 115.9,
-      "showed": 46,
-      "show_pct": 63.0,
-      "qualified": 44,
-      "qual_pct": 60.3,
-      "closed": 12,
-      "cw_pct": 16.4,
-      "revenue": 83964.0
     },
     "LTF - In-House": {
       "leads_created": 994,
