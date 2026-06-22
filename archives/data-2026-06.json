@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3679,
+    "leads_created": 3678,
     "booked": 475,
     "showed": 299,
     "qualified": 262,
@@ -19,7 +19,7 @@
       "revenue": 268401.0
     },
     "EXTERNAL": {
-      "leads_created": 135,
+      "leads_created": 134,
       "booked": 130,
       "showed": 94,
       "qualified": 79,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Low Ticket Funnel": {
-      "leads_created": 12,
-      "booked": 17,
-      "book_pct": 141.7,
-      "showed": 13,
-      "show_pct": 76.5,
-      "qualified": 10,
-      "qual_pct": 58.8,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 5997.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 55,
       "booked": 116,
@@ -84,10 +72,22 @@
       "cw_pct": 15.6,
       "revenue": 83964.0
     },
+    "Low Ticket Funnel": {
+      "leads_created": 12,
+      "booked": 17,
+      "book_pct": 141.7,
+      "showed": 13,
+      "show_pct": 76.5,
+      "qualified": 10,
+      "qual_pct": 58.8,
+      "closed": 1,
+      "cw_pct": 5.9,
+      "revenue": 5997.0
+    },
     "Instagram": {
-      "leads_created": 109,
+      "leads_created": 108,
       "booked": 104,
-      "book_pct": 95.4,
+      "book_pct": 96.3,
       "showed": 73,
       "show_pct": 70.2,
       "qualified": 61,
