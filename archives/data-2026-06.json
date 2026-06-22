@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3654,
+    "leads_created": 3655,
     "booked": 441,
     "showed": 285,
     "qualified": 246,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3419,
+      "leads_created": 3420,
       "booked": 314,
       "showed": 192,
       "qualified": 168,
@@ -121,9 +121,9 @@
       "revenue": 8997.0
     },
     "Meta Ads": {
-      "leads_created": 39,
+      "leads_created": 40,
       "booked": 15,
-      "book_pct": 38.5,
+      "book_pct": 37.5,
       "showed": 11,
       "show_pct": 73.3,
       "qualified": 9,
