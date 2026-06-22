@@ -3,18 +3,18 @@
   "month_label": "June 2026",
   "grand": {
     "leads_created": 3662,
-    "booked": 472,
-    "showed": 285,
-    "qualified": 246,
+    "booked": 471,
+    "showed": 284,
+    "qualified": 245,
     "closed": 50,
     "revenue": 371359.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3437,
-      "booked": 341,
-      "showed": 192,
-      "qualified": 168,
+      "leads_created": 3439,
+      "booked": 340,
+      "showed": 191,
+      "qualified": 167,
       "closed": 35,
       "revenue": 268401.0
     },
@@ -27,7 +27,7 @@
       "revenue": 102958.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 99,
+      "leads_created": 97,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -36,10 +36,22 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1448,
+      "booked": 64,
+      "book_pct": 4.4,
+      "showed": 36,
+      "show_pct": 56.2,
+      "qualified": 31,
+      "qual_pct": 48.4,
+      "closed": 3,
+      "cw_pct": 4.7,
+      "revenue": 37991.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 99,
+      "leads_created": 97,
       "booked": 3,
-      "book_pct": 3.0,
+      "book_pct": 3.1,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -49,9 +61,9 @@
       "revenue": 0.0
     },
     "Website": {
-      "leads_created": 77,
+      "leads_created": 79,
       "booked": 77,
-      "book_pct": 100.0,
+      "book_pct": 97.5,
       "showed": 46,
       "show_pct": 59.7,
       "qualified": 44,
@@ -108,18 +120,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "leads_created": 1448,
-      "booked": 64,
-      "book_pct": 4.4,
-      "showed": 36,
-      "show_pct": 56.2,
-      "qualified": 31,
-      "qual_pct": 48.4,
-      "closed": 3,
-      "cw_pct": 4.7,
-      "revenue": 37991.0
-    },
     "Low Ticket Funnel": {
       "leads_created": 12,
       "booked": 17,
@@ -134,14 +134,14 @@
     },
     "LTF - In-House": {
       "leads_created": 994,
-      "booked": 7,
-      "book_pct": 0.7,
-      "showed": 6,
-      "show_pct": 85.7,
-      "qualified": 6,
-      "qual_pct": 85.7,
+      "booked": 6,
+      "book_pct": 0.6,
+      "showed": 5,
+      "show_pct": 83.3,
+      "qualified": 5,
+      "qual_pct": 83.3,
       "closed": 1,
-      "cw_pct": 14.3,
+      "cw_pct": 16.7,
       "revenue": 8997.0
     },
     "X": {
