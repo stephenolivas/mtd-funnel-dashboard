@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 102,
+      "booked": 103,
+      "book_pct": 101.0,
+      "showed": 72,
+      "show_pct": 69.9,
+      "qualified": 60,
+      "qual_pct": 58.3,
+      "closed": 12,
+      "cw_pct": 11.7,
+      "revenue": 75467.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 98,
       "booked": 3,
@@ -83,18 +95,6 @@
       "closed": 7,
       "cw_pct": 6.0,
       "revenue": 54485.0
-    },
-    "Instagram": {
-      "leads_created": 102,
-      "booked": 103,
-      "book_pct": 101.0,
-      "showed": 72,
-      "show_pct": 69.9,
-      "qualified": 60,
-      "qual_pct": 58.3,
-      "closed": 12,
-      "cw_pct": 11.7,
-      "revenue": 75467.0
     },
     "YouTube": {
       "leads_created": 72,
