@@ -2,9 +2,9 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3689,
+    "leads_created": 3690,
     "booked": 478,
-    "showed": 304,
+    "showed": 305,
     "qualified": 267,
     "closed": 52,
     "revenue": 386353.0
@@ -13,7 +13,7 @@
     "IN-HOUSE": {
       "leads_created": 3443,
       "booked": 345,
-      "showed": 208,
+      "showed": 209,
       "qualified": 186,
       "closed": 36,
       "revenue": 277398.0
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 112,
+      "leads_created": 113,
       "booked": 3,
       "showed": 1,
       "qualified": 1,
@@ -40,8 +40,8 @@
       "leads_created": 62,
       "booked": 117,
       "book_pct": 188.7,
-      "showed": 54,
-      "show_pct": 46.2,
+      "showed": 55,
+      "show_pct": 47.0,
       "qualified": 41,
       "qual_pct": 35.0,
       "closed": 7,
@@ -121,7 +121,7 @@
       "revenue": 73967.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 112,
+      "leads_created": 113,
       "booked": 3,
       "book_pct": 2.7,
       "showed": 1,
