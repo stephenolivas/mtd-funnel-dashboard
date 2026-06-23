@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1441,
+      "booked": 71,
+      "book_pct": 4.9,
+      "showed": 40,
+      "show_pct": 56.3,
+      "qualified": 37,
+      "qual_pct": 52.1,
+      "closed": 3,
+      "cw_pct": 4.2,
+      "revenue": 37991.0
+    },
     "Meta Ads": {
       "leads_created": 49,
       "booked": 16,
@@ -83,18 +95,6 @@
       "closed": 7,
       "cw_pct": 5.3,
       "revenue": 54485.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1441,
-      "booked": 71,
-      "book_pct": 4.9,
-      "showed": 40,
-      "show_pct": 56.3,
-      "qualified": 37,
-      "qual_pct": 52.1,
-      "closed": 3,
-      "cw_pct": 4.2,
-      "revenue": 37991.0
     },
     "LTF - In-House": {
       "leads_created": 994,
