@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3716,
+    "leads_created": 3718,
     "booked": 509,
     "showed": 309,
     "qualified": 271,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 119,
+      "leads_created": 121,
       "booked": 9,
       "showed": 1,
       "qualified": 1,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 52,
-      "booked": 15,
-      "book_pct": 28.8,
-      "showed": 12,
-      "show_pct": 80.0,
-      "qualified": 10,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 65,
       "booked": 131,
@@ -56,21 +44,21 @@
       "show_pct": 43.5,
       "qualified": 43,
       "qual_pct": 32.8,
-      "closed": 7,
-      "cw_pct": 5.3,
-      "revenue": 54485.0
+      "closed": 8,
+      "cw_pct": 6.1,
+      "revenue": 60482.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 119,
-      "booked": 9,
-      "book_pct": 7.6,
-      "showed": 1,
-      "show_pct": 11.1,
-      "qualified": 1,
-      "qual_pct": 11.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "Linkedin": {
+      "leads_created": 9,
+      "booked": 7,
+      "book_pct": 77.8,
+      "showed": 7,
+      "show_pct": 100.0,
+      "qualified": 7,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 14.3,
+      "revenue": 8997.0
     },
     "Internal Webinar": {
       "leads_created": 1441,
@@ -84,17 +72,53 @@
       "cw_pct": 4.2,
       "revenue": 37991.0
     },
-    "Linkedin": {
-      "leads_created": 9,
-      "booked": 7,
-      "book_pct": 77.8,
-      "showed": 7,
-      "show_pct": 100.0,
-      "qualified": 7,
-      "qual_pct": 100.0,
+    "Unknown (Needs Review)": {
+      "leads_created": 121,
+      "booked": 9,
+      "book_pct": 7.4,
+      "showed": 1,
+      "show_pct": 11.1,
+      "qualified": 1,
+      "qual_pct": 11.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "X": {
+      "leads_created": 6,
+      "booked": 3,
+      "book_pct": 50.0,
+      "showed": 2,
+      "show_pct": 66.7,
+      "qualified": 2,
+      "qual_pct": 66.7,
       "closed": 1,
-      "cw_pct": 14.3,
+      "cw_pct": 33.3,
+      "revenue": 12497.0
+    },
+    "LTF - In-House": {
+      "leads_created": 994,
+      "booked": 8,
+      "book_pct": 0.8,
+      "showed": 5,
+      "show_pct": 62.5,
+      "qualified": 5,
+      "qual_pct": 62.5,
+      "closed": 1,
+      "cw_pct": 12.5,
       "revenue": 8997.0
+    },
+    "Meta Ads": {
+      "leads_created": 52,
+      "booked": 15,
+      "book_pct": 28.8,
+      "showed": 12,
+      "show_pct": 80.0,
+      "qualified": 10,
+      "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Instagram": {
       "leads_created": 112,
@@ -128,9 +152,9 @@
       "show_pct": 78.3,
       "qualified": 45,
       "qual_pct": 75.0,
-      "closed": 11,
-      "cw_pct": 18.3,
-      "revenue": 73967.0
+      "closed": 10,
+      "cw_pct": 16.7,
+      "revenue": 67970.0
     },
     "Google Ads": {
       "leads_created": 1,
@@ -144,18 +168,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "LTF - In-House": {
-      "leads_created": 994,
-      "booked": 8,
-      "book_pct": 0.8,
-      "showed": 5,
-      "show_pct": 62.5,
-      "qualified": 5,
-      "qual_pct": 62.5,
-      "closed": 1,
-      "cw_pct": 12.5,
-      "revenue": 8997.0
-    },
     "Low Ticket Funnel": {
       "leads_created": 12,
       "booked": 17,
@@ -167,18 +179,6 @@
       "closed": 1,
       "cw_pct": 5.9,
       "revenue": 5997.0
-    },
-    "X": {
-      "leads_created": 6,
-      "booked": 3,
-      "book_pct": 50.0,
-      "showed": 2,
-      "show_pct": 66.7,
-      "qualified": 2,
-      "qual_pct": 66.7,
-      "closed": 1,
-      "cw_pct": 33.3,
-      "revenue": 12497.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
