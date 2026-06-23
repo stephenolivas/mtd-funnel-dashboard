@@ -2,8 +2,8 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3692,
-    "booked": 478,
+    "leads_created": 3694,
+    "booked": 477,
     "showed": 305,
     "qualified": 268,
     "closed": 52,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3444,
+      "leads_created": 3447,
       "booked": 345,
       "showed": 209,
       "qualified": 187,
@@ -19,15 +19,15 @@
       "revenue": 277398.0
     },
     "EXTERNAL": {
-      "leads_created": 133,
-      "booked": 130,
+      "leads_created": 135,
+      "booked": 129,
       "showed": 95,
       "qualified": 80,
       "closed": 16,
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 115,
+      "leads_created": 112,
       "booked": 3,
       "showed": 1,
       "qualified": 1,
@@ -37,15 +37,15 @@
   },
   "funnels": {
     "Instagram": {
-      "leads_created": 106,
-      "booked": 105,
-      "book_pct": 99.1,
+      "leads_created": 108,
+      "booked": 104,
+      "book_pct": 96.3,
       "showed": 74,
-      "show_pct": 70.5,
+      "show_pct": 71.2,
       "qualified": 62,
-      "qual_pct": 59.0,
+      "qual_pct": 59.6,
       "closed": 13,
-      "cw_pct": 12.4,
+      "cw_pct": 12.5,
       "revenue": 81464.0
     },
     "Reactivation Scrapers": {
@@ -97,9 +97,9 @@
       "revenue": 92961.0
     },
     "Meta Ads": {
-      "leads_created": 43,
+      "leads_created": 46,
       "booked": 16,
-      "book_pct": 37.2,
+      "book_pct": 34.8,
       "showed": 12,
       "show_pct": 75.0,
       "qualified": 10,
@@ -121,9 +121,9 @@
       "revenue": 5997.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 115,
+      "leads_created": 112,
       "booked": 3,
-      "book_pct": 2.6,
+      "book_pct": 2.7,
       "showed": 1,
       "show_pct": 33.3,
       "qualified": 1,
