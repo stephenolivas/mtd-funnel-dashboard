@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 126,
+      "booked": 8,
+      "book_pct": 6.3,
+      "showed": 2,
+      "show_pct": 25.0,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 72,
       "booked": 132,
@@ -59,18 +71,6 @@
       "closed": 3,
       "cw_pct": 4.1,
       "revenue": 37991.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 126,
-      "booked": 8,
-      "book_pct": 6.3,
-      "showed": 2,
-      "show_pct": 25.0,
-      "qualified": 2,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Instagram": {
       "leads_created": 111,
