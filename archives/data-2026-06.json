@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 77,
+      "booked": 79,
+      "book_pct": 102.6,
+      "showed": 49,
+      "show_pct": 62.0,
+      "qualified": 47,
+      "qual_pct": 59.5,
+      "closed": 13,
+      "cw_pct": 16.5,
+      "revenue": 92961.0
+    },
     "Internal Webinar": {
       "leads_created": 1441,
       "booked": 71,
@@ -107,18 +119,6 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 8997.0
-    },
-    "Website": {
-      "leads_created": 77,
-      "booked": 79,
-      "book_pct": 102.6,
-      "showed": 49,
-      "show_pct": 62.0,
-      "qualified": 47,
-      "qual_pct": 59.5,
-      "closed": 13,
-      "cw_pct": 16.5,
-      "revenue": 92961.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 115,
