@@ -36,14 +36,14 @@
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
-      "leads_created": 119,
-      "booked": 8,
-      "book_pct": 6.7,
-      "showed": 2,
-      "show_pct": 25.0,
-      "qualified": 2,
-      "qual_pct": 25.0,
+    "Meta Ads": {
+      "leads_created": 51,
+      "booked": 15,
+      "book_pct": 29.4,
+      "showed": 12,
+      "show_pct": 80.0,
+      "qualified": 10,
+      "qual_pct": 66.7,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -60,6 +60,18 @@
       "cw_pct": 6.8,
       "revenue": 66479.0
     },
+    "LTF - In-House": {
+      "leads_created": 994,
+      "booked": 7,
+      "book_pct": 0.7,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 5,
+      "qual_pct": 71.4,
+      "closed": 1,
+      "cw_pct": 14.3,
+      "revenue": 8997.0
+    },
     "Internal Webinar": {
       "leads_created": 1440,
       "booked": 74,
@@ -71,6 +83,18 @@
       "closed": 3,
       "cw_pct": 4.1,
       "revenue": 37991.0
+    },
+    "X": {
+      "leads_created": 6,
+      "booked": 3,
+      "book_pct": 50.0,
+      "showed": 2,
+      "show_pct": 66.7,
+      "qualified": 2,
+      "qual_pct": 66.7,
+      "closed": 1,
+      "cw_pct": 33.3,
+      "revenue": 12497.0
     },
     "Instagram": {
       "leads_created": 113,
@@ -84,18 +108,6 @@
       "cw_pct": 12.4,
       "revenue": 81464.0
     },
-    "LTF - In-House": {
-      "leads_created": 994,
-      "booked": 7,
-      "book_pct": 0.7,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 5,
-      "qual_pct": 71.4,
-      "closed": 1,
-      "cw_pct": 14.3,
-      "revenue": 8997.0
-    },
     "Website": {
       "leads_created": 78,
       "booked": 78,
@@ -107,6 +119,30 @@
       "closed": 13,
       "cw_pct": 16.7,
       "revenue": 92961.0
+    },
+    "Google Ads": {
+      "leads_created": 2,
+      "booked": 1,
+      "book_pct": 50.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 119,
+      "booked": 8,
+      "book_pct": 6.7,
+      "showed": 2,
+      "show_pct": 25.0,
+      "qualified": 2,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 74,
@@ -131,42 +167,6 @@
       "closed": 1,
       "cw_pct": 14.3,
       "revenue": 8997.0
-    },
-    "X": {
-      "leads_created": 6,
-      "booked": 3,
-      "book_pct": 50.0,
-      "showed": 2,
-      "show_pct": 66.7,
-      "qualified": 2,
-      "qual_pct": 66.7,
-      "closed": 1,
-      "cw_pct": 33.3,
-      "revenue": 12497.0
-    },
-    "Meta Ads": {
-      "leads_created": 51,
-      "booked": 15,
-      "book_pct": 29.4,
-      "showed": 12,
-      "show_pct": 80.0,
-      "qualified": 10,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Google Ads": {
-      "leads_created": 2,
-      "booked": 1,
-      "book_pct": 50.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
