@@ -2,19 +2,19 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3742,
-    "booked": 505,
-    "showed": 315,
-    "qualified": 277,
+    "leads_created": 3741,
+    "booked": 504,
+    "showed": 314,
+    "qualified": 276,
     "closed": 53,
     "revenue": 392350.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3487,
-      "booked": 371,
-      "showed": 216,
-      "qualified": 193,
+      "leads_created": 3486,
+      "booked": 370,
+      "showed": 215,
+      "qualified": 192,
       "closed": 37,
       "revenue": 283395.0
     },
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1435,
+      "booked": 74,
+      "book_pct": 5.2,
+      "showed": 40,
+      "show_pct": 54.1,
+      "qualified": 38,
+      "qual_pct": 51.4,
+      "closed": 3,
+      "cw_pct": 4.1,
+      "revenue": 37991.0
+    },
+    "Website": {
+      "leads_created": 85,
+      "booked": 81,
+      "book_pct": 95.3,
+      "showed": 49,
+      "show_pct": 60.5,
+      "qualified": 47,
+      "qual_pct": 58.0,
+      "closed": 13,
+      "cw_pct": 16.0,
+      "revenue": 92961.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 78,
       "booked": 132,
@@ -47,18 +71,6 @@
       "closed": 9,
       "cw_pct": 6.8,
       "revenue": 66479.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1436,
-      "booked": 75,
-      "book_pct": 5.2,
-      "showed": 41,
-      "show_pct": 54.7,
-      "qualified": 39,
-      "qual_pct": 52.0,
-      "closed": 3,
-      "cw_pct": 4.0,
-      "revenue": 37991.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
@@ -95,18 +107,6 @@
       "closed": 13,
       "cw_pct": 12.4,
       "revenue": 81464.0
-    },
-    "Website": {
-      "leads_created": 85,
-      "booked": 81,
-      "book_pct": 95.3,
-      "showed": 49,
-      "show_pct": 60.5,
-      "qualified": 47,
-      "qual_pct": 58.0,
-      "closed": 13,
-      "cw_pct": 16.0,
-      "revenue": 92961.0
     },
     "Meta Ads": {
       "leads_created": 56,
