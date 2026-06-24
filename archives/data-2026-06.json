@@ -48,6 +48,18 @@
       "cw_pct": 12.4,
       "revenue": 81464.0
     },
+    "Website": {
+      "leads_created": 84,
+      "booked": 80,
+      "book_pct": 95.2,
+      "showed": 49,
+      "show_pct": 61.3,
+      "qualified": 47,
+      "qual_pct": 58.8,
+      "closed": 13,
+      "cw_pct": 16.2,
+      "revenue": 92961.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 79,
       "booked": 132,
@@ -71,18 +83,6 @@
       "closed": 3,
       "cw_pct": 4.1,
       "revenue": 37991.0
-    },
-    "Website": {
-      "leads_created": 84,
-      "booked": 80,
-      "book_pct": 95.2,
-      "showed": 49,
-      "show_pct": 61.3,
-      "qualified": 47,
-      "qual_pct": 58.8,
-      "closed": 13,
-      "cw_pct": 16.2,
-      "revenue": 92961.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
