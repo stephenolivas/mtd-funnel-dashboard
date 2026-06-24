@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1435,
+      "booked": 74,
+      "book_pct": 5.2,
+      "showed": 40,
+      "show_pct": 54.1,
+      "qualified": 38,
+      "qual_pct": 51.4,
+      "closed": 3,
+      "cw_pct": 4.1,
+      "revenue": 37991.0
+    },
     "YouTube": {
       "leads_created": 75,
       "booked": 58,
@@ -59,18 +71,6 @@
       "closed": 9,
       "cw_pct": 6.1,
       "revenue": 66479.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1435,
-      "booked": 74,
-      "book_pct": 5.2,
-      "showed": 40,
-      "show_pct": 54.1,
-      "qualified": 38,
-      "qual_pct": 51.4,
-      "closed": 3,
-      "cw_pct": 4.1,
-      "revenue": 37991.0
     },
     "Instagram": {
       "leads_created": 110,
