@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Low Ticket Funnel": {
+      "leads_created": 12,
+      "booked": 17,
+      "book_pct": 141.7,
+      "showed": 13,
+      "show_pct": 76.5,
+      "qualified": 10,
+      "qual_pct": 58.8,
+      "closed": 1,
+      "cw_pct": 5.9,
+      "revenue": 5997.0
+    },
     "Linkedin": {
       "leads_created": 9,
       "booked": 7,
@@ -107,18 +119,6 @@
       "closed": 13,
       "cw_pct": 16.2,
       "revenue": 92961.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 12,
-      "booked": 17,
-      "book_pct": 141.7,
-      "showed": 13,
-      "show_pct": 76.5,
-      "qualified": 10,
-      "qual_pct": 58.8,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 5997.0
     },
     "Meta Ads": {
       "leads_created": 56,
