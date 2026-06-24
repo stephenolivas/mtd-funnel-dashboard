@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3741,
+    "leads_created": 3742,
     "booked": 504,
     "showed": 314,
     "qualified": 276,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 118,
+      "leads_created": 119,
       "booked": 2,
       "showed": 0,
       "qualified": 0,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 79,
+      "booked": 132,
+      "book_pct": 167.1,
+      "showed": 60,
+      "show_pct": 45.5,
+      "qualified": 46,
+      "qual_pct": 34.8,
+      "closed": 9,
+      "cw_pct": 6.8,
+      "revenue": 66479.0
+    },
     "Internal Webinar": {
       "leads_created": 1435,
       "booked": 74,
@@ -59,18 +71,6 @@
       "closed": 13,
       "cw_pct": 16.0,
       "revenue": 92961.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 78,
-      "booked": 132,
-      "book_pct": 169.2,
-      "showed": 60,
-      "show_pct": 45.5,
-      "qualified": 46,
-      "qual_pct": 34.8,
-      "closed": 9,
-      "cw_pct": 6.8,
-      "revenue": 66479.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
@@ -157,7 +157,7 @@
       "revenue": 8997.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 118,
+      "leads_created": 119,
       "booked": 2,
       "book_pct": 1.7,
       "showed": 0,
@@ -193,7 +193,7 @@
       "revenue": 8997.0
     },
     "VSL": {
-      "leads_created": 8,
+      "leads_created": 7,
       "booked": 0,
       "book_pct": 0.0,
       "showed": 0,
