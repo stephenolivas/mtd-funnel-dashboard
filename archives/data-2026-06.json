@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 3751,
     "booked": 528,
-    "showed": 319,
+    "showed": 320,
     "qualified": 278,
     "closed": 53,
     "revenue": 392350.0
@@ -13,7 +13,7 @@
     "IN-HOUSE": {
       "leads_created": 3496,
       "booked": 391,
-      "showed": 219,
+      "showed": 220,
       "qualified": 193,
       "closed": 37,
       "revenue": 283395.0
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 79,
+      "booked": 148,
+      "book_pct": 187.3,
+      "showed": 64,
+      "show_pct": 43.2,
+      "qualified": 47,
+      "qual_pct": 31.8,
+      "closed": 9,
+      "cw_pct": 6.1,
+      "revenue": 66479.0
+    },
     "X": {
       "leads_created": 6,
       "booked": 4,
@@ -107,18 +119,6 @@
       "closed": 13,
       "cw_pct": 15.5,
       "revenue": 92961.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 79,
-      "booked": 148,
-      "book_pct": 187.3,
-      "showed": 63,
-      "show_pct": 42.6,
-      "qualified": 47,
-      "qual_pct": 31.8,
-      "closed": 9,
-      "cw_pct": 6.1,
-      "revenue": 66479.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
