@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 1436,
-      "booked": 75,
-      "book_pct": 5.2,
-      "showed": 41,
-      "show_pct": 54.7,
-      "qualified": 39,
-      "qual_pct": 52.0,
-      "closed": 3,
-      "cw_pct": 4.0,
-      "revenue": 37991.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 78,
       "booked": 132,
@@ -59,6 +47,18 @@
       "closed": 9,
       "cw_pct": 6.8,
       "revenue": 66479.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1436,
+      "booked": 75,
+      "book_pct": 5.2,
+      "showed": 41,
+      "show_pct": 54.7,
+      "qualified": 39,
+      "qual_pct": 52.0,
+      "closed": 3,
+      "cw_pct": 4.0,
+      "revenue": 37991.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
