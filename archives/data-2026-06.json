@@ -2,16 +2,16 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3834,
+    "leads_created": 3835,
     "booked": 550,
     "showed": 330,
-    "qualified": 288,
+    "qualified": 289,
     "closed": 55,
     "revenue": 407344.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3518,
+      "leads_created": 3521,
       "booked": 412,
       "showed": 231,
       "qualified": 204,
@@ -22,12 +22,12 @@
       "leads_created": 144,
       "booked": 134,
       "showed": 99,
-      "qualified": 84,
+      "qualified": 85,
       "closed": 16,
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 172,
+      "leads_created": 170,
       "booked": 4,
       "showed": 0,
       "qualified": 0,
@@ -36,26 +36,14 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 82,
-      "booked": 161,
-      "book_pct": 196.3,
-      "showed": 70,
-      "show_pct": 43.5,
-      "qualified": 53,
-      "qual_pct": 32.9,
-      "closed": 9,
-      "cw_pct": 5.6,
-      "revenue": 66479.0
-    },
     "Instagram": {
       "leads_created": 116,
       "booked": 105,
       "book_pct": 90.5,
       "showed": 74,
       "show_pct": 70.5,
-      "qualified": 62,
-      "qual_pct": 59.0,
+      "qualified": 63,
+      "qual_pct": 60.0,
       "closed": 13,
       "cw_pct": 12.4,
       "revenue": 81464.0
@@ -72,10 +60,22 @@
       "cw_pct": 3.8,
       "revenue": 37991.0
     },
-    "Meta Ads": {
+    "Reactivation Scrapers": {
       "leads_created": 82,
+      "booked": 161,
+      "book_pct": 196.3,
+      "showed": 70,
+      "show_pct": 43.5,
+      "qualified": 53,
+      "qual_pct": 32.9,
+      "closed": 9,
+      "cw_pct": 5.6,
+      "revenue": 66479.0
+    },
+    "Meta Ads": {
+      "leads_created": 85,
       "booked": 17,
-      "book_pct": 20.7,
+      "book_pct": 20.0,
       "showed": 14,
       "show_pct": 82.4,
       "qualified": 12,
@@ -109,9 +109,9 @@
       "revenue": 92961.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 172,
+      "leads_created": 170,
       "booked": 4,
-      "book_pct": 2.3,
+      "book_pct": 2.4,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
