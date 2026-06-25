@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3822,
+    "leads_created": 3823,
     "booked": 529,
     "showed": 330,
     "qualified": 289,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 167,
+      "leads_created": 168,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 76,
-      "booked": 58,
-      "book_pct": 76.3,
-      "showed": 47,
-      "show_pct": 81.0,
-      "qualified": 43,
-      "qual_pct": 74.1,
-      "closed": 10,
-      "cw_pct": 17.2,
-      "revenue": 67970.0
-    },
     "Internal Webinar": {
       "leads_created": 1435,
       "booked": 77,
@@ -59,6 +47,18 @@
       "closed": 3,
       "cw_pct": 3.9,
       "revenue": 37991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 82,
+      "booked": 147,
+      "book_pct": 179.3,
+      "showed": 69,
+      "show_pct": 46.9,
+      "qualified": 53,
+      "qual_pct": 36.1,
+      "closed": 9,
+      "cw_pct": 6.1,
+      "revenue": 66479.0
     },
     "Website": {
       "leads_created": 84,
@@ -72,17 +72,17 @@
       "cw_pct": 15.3,
       "revenue": 92961.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 82,
-      "booked": 147,
-      "book_pct": 179.3,
-      "showed": 69,
-      "show_pct": 46.9,
-      "qualified": 53,
-      "qual_pct": 36.1,
-      "closed": 9,
-      "cw_pct": 6.1,
-      "revenue": 66479.0
+    "YouTube": {
+      "leads_created": 76,
+      "booked": 58,
+      "book_pct": 76.3,
+      "showed": 47,
+      "show_pct": 81.0,
+      "qualified": 43,
+      "qual_pct": 74.1,
+      "closed": 10,
+      "cw_pct": 17.2,
+      "revenue": 67970.0
     },
     "Linkedin": {
       "leads_created": 9,
@@ -133,7 +133,7 @@
       "revenue": 23991.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 167,
+      "leads_created": 168,
       "booked": 3,
       "book_pct": 1.8,
       "showed": 0,
