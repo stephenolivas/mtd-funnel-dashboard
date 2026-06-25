@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 78,
-      "booked": 58,
-      "book_pct": 74.4,
-      "showed": 47,
-      "show_pct": 81.0,
-      "qualified": 43,
-      "qual_pct": 74.1,
-      "closed": 10,
-      "cw_pct": 17.2,
-      "revenue": 67970.0
-    },
     "Unknown (Needs Review)": {
       "leads_created": 169,
       "booked": 4,
@@ -59,6 +47,18 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "YouTube": {
+      "leads_created": 78,
+      "booked": 58,
+      "book_pct": 74.4,
+      "showed": 47,
+      "show_pct": 81.0,
+      "qualified": 43,
+      "qual_pct": 74.1,
+      "closed": 10,
+      "cw_pct": 17.2,
+      "revenue": 67970.0
     },
     "Reactivation Scrapers": {
       "leads_created": 82,
