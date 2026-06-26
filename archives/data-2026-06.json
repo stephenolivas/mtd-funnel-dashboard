@@ -5,7 +5,7 @@
     "leads_created": 3904,
     "booked": 573,
     "showed": 348,
-    "qualified": 316,
+    "qualified": 315,
     "closed": 59,
     "revenue": 448079.0
   },
@@ -22,7 +22,7 @@
       "leads_created": 143,
       "booked": 134,
       "showed": 101,
-      "qualified": 88,
+      "qualified": 87,
       "closed": 16,
       "revenue": 108955.0
     },
@@ -54,11 +54,23 @@
       "book_pct": 92.2,
       "showed": 77,
       "show_pct": 72.6,
-      "qualified": 66,
-      "qual_pct": 62.3,
+      "qualified": 65,
+      "qual_pct": 61.3,
       "closed": 13,
       "cw_pct": 12.3,
       "revenue": 81464.0
+    },
+    "YouTube": {
+      "leads_created": 75,
+      "booked": 59,
+      "book_pct": 78.7,
+      "showed": 48,
+      "show_pct": 81.4,
+      "qualified": 44,
+      "qual_pct": 74.6,
+      "closed": 12,
+      "cw_pct": 20.3,
+      "revenue": 88214.0
     },
     "Meta Ads": {
       "leads_created": 124,
@@ -95,18 +107,6 @@
       "closed": 13,
       "cw_pct": 14.6,
       "revenue": 92961.0
-    },
-    "YouTube": {
-      "leads_created": 75,
-      "booked": 59,
-      "book_pct": 78.7,
-      "showed": 48,
-      "show_pct": 81.4,
-      "qualified": 44,
-      "qual_pct": 74.6,
-      "closed": 12,
-      "cw_pct": 20.3,
-      "revenue": 88214.0
     },
     "Google Ads": {
       "leads_created": 2,
