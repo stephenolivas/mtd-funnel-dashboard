@@ -48,6 +48,18 @@
       "cw_pct": 5.1,
       "revenue": 65979.0
     },
+    "YouTube": {
+      "leads_created": 75,
+      "booked": 58,
+      "book_pct": 77.3,
+      "showed": 47,
+      "show_pct": 81.0,
+      "qualified": 43,
+      "qual_pct": 74.1,
+      "closed": 11,
+      "cw_pct": 19.0,
+      "revenue": 73967.0
+    },
     "Website": {
       "leads_created": 85,
       "booked": 86,
@@ -119,18 +131,6 @@
       "closed": 13,
       "cw_pct": 12.4,
       "revenue": 81464.0
-    },
-    "YouTube": {
-      "leads_created": 75,
-      "booked": 58,
-      "book_pct": 77.3,
-      "showed": 47,
-      "show_pct": 81.0,
-      "qualified": 43,
-      "qual_pct": 74.1,
-      "closed": 11,
-      "cw_pct": 19.0,
-      "revenue": 73967.0
     },
     "LTF - In-House": {
       "leads_created": 993,
