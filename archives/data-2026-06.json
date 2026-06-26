@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3877,
+    "leads_created": 3878,
     "booked": 547,
     "showed": 338,
     "qualified": 303,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3538,
+      "leads_created": 3539,
       "booked": 410,
       "showed": 238,
       "qualified": 216,
@@ -133,7 +133,7 @@
       "revenue": 5997.0
     },
     "LTF - In-House": {
-      "leads_created": 993,
+      "leads_created": 994,
       "booked": 7,
       "book_pct": 0.7,
       "showed": 5,
