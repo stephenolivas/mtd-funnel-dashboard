@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 91,
+      "booked": 177,
+      "book_pct": 194.5,
+      "showed": 74,
+      "show_pct": 41.8,
+      "qualified": 59,
+      "qual_pct": 33.3,
+      "closed": 8,
+      "cw_pct": 4.5,
+      "revenue": 65979.0
+    },
+    "Instagram": {
+      "leads_created": 117,
+      "booked": 106,
+      "book_pct": 90.6,
+      "showed": 76,
+      "show_pct": 71.7,
+      "qualified": 65,
+      "qual_pct": 61.3,
+      "closed": 13,
+      "cw_pct": 12.3,
+      "revenue": 81464.0
+    },
     "Google Ads": {
       "leads_created": 2,
       "booked": 2,
@@ -72,18 +96,6 @@
       "cw_pct": 14.4,
       "revenue": 92961.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 91,
-      "booked": 177,
-      "book_pct": 194.5,
-      "showed": 74,
-      "show_pct": 41.8,
-      "qualified": 59,
-      "qual_pct": 33.3,
-      "closed": 8,
-      "cw_pct": 4.5,
-      "revenue": 65979.0
-    },
     "Meta Ads": {
       "leads_created": 114,
       "booked": 18,
@@ -95,18 +107,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 117,
-      "booked": 106,
-      "book_pct": 90.6,
-      "showed": 76,
-      "show_pct": 71.7,
-      "qualified": 65,
-      "qual_pct": 61.3,
-      "closed": 13,
-      "cw_pct": 12.3,
-      "revenue": 81464.0
     },
     "YouTube": {
       "leads_created": 75,
