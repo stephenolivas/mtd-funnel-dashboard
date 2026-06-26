@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "Website": {
-      "leads_created": 85,
-      "booked": 90,
-      "book_pct": 105.9,
-      "showed": 51,
-      "show_pct": 56.7,
-      "qualified": 51,
-      "qual_pct": 56.7,
-      "closed": 13,
-      "cw_pct": 14.4,
-      "revenue": 92961.0
+    "Internal Webinar": {
+      "leads_created": 1431,
+      "booked": 81,
+      "book_pct": 5.7,
+      "showed": 43,
+      "show_pct": 53.1,
+      "qualified": 42,
+      "qual_pct": 51.9,
+      "closed": 3,
+      "cw_pct": 3.7,
+      "revenue": 37991.0
     },
     "Reactivation Scrapers": {
       "leads_created": 91,
@@ -72,17 +72,17 @@
       "cw_pct": 12.3,
       "revenue": 81464.0
     },
-    "Internal Webinar": {
-      "leads_created": 1431,
-      "booked": 81,
-      "book_pct": 5.7,
-      "showed": 43,
-      "show_pct": 53.1,
-      "qualified": 42,
-      "qual_pct": 51.9,
-      "closed": 3,
-      "cw_pct": 3.7,
-      "revenue": 37991.0
+    "Website": {
+      "leads_created": 85,
+      "booked": 90,
+      "book_pct": 105.9,
+      "showed": 51,
+      "show_pct": 56.7,
+      "qualified": 51,
+      "qual_pct": 56.7,
+      "closed": 13,
+      "cw_pct": 14.4,
+      "revenue": 92961.0
     },
     "LTF - In-House": {
       "leads_created": 993,
