@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3537,
+      "leads_created": 3538,
       "booked": 410,
       "showed": 237,
       "qualified": 215,
@@ -19,7 +19,7 @@
       "revenue": 312883.0
     },
     "EXTERNAL": {
-      "leads_created": 145,
+      "leads_created": 146,
       "booked": 134,
       "showed": 100,
       "qualified": 87,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 187,
+      "leads_created": 185,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -48,18 +48,6 @@
       "cw_pct": 5.1,
       "revenue": 65979.0
     },
-    "Instagram": {
-      "leads_created": 117,
-      "booked": 105,
-      "book_pct": 89.7,
-      "showed": 75,
-      "show_pct": 71.4,
-      "qualified": 64,
-      "qual_pct": 61.0,
-      "closed": 13,
-      "cw_pct": 12.4,
-      "revenue": 81464.0
-    },
     "Low Ticket Funnel": {
       "leads_created": 12,
       "booked": 17,
@@ -72,10 +60,34 @@
       "cw_pct": 5.9,
       "revenue": 5997.0
     },
+    "Instagram": {
+      "leads_created": 118,
+      "booked": 105,
+      "book_pct": 89.0,
+      "showed": 75,
+      "show_pct": 71.4,
+      "qualified": 64,
+      "qual_pct": 61.0,
+      "closed": 13,
+      "cw_pct": 12.4,
+      "revenue": 81464.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1430,
+      "booked": 80,
+      "book_pct": 5.6,
+      "showed": 43,
+      "show_pct": 53.8,
+      "qualified": 42,
+      "qual_pct": 52.5,
+      "closed": 3,
+      "cw_pct": 3.8,
+      "revenue": 37991.0
+    },
     "Meta Ads": {
-      "leads_created": 100,
+      "leads_created": 101,
       "booked": 17,
-      "book_pct": 17.0,
+      "book_pct": 16.8,
       "showed": 14,
       "show_pct": 82.4,
       "qualified": 12,
@@ -95,18 +107,6 @@
       "closed": 3,
       "cw_pct": 42.9,
       "revenue": 23991.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1430,
-      "booked": 80,
-      "book_pct": 5.6,
-      "showed": 43,
-      "show_pct": 53.8,
-      "qualified": 42,
-      "qual_pct": 52.5,
-      "closed": 3,
-      "cw_pct": 3.8,
-      "revenue": 37991.0
     },
     "Website": {
       "leads_created": 85,
@@ -181,7 +181,7 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 187,
+      "leads_created": 185,
       "booked": 3,
       "book_pct": 1.6,
       "showed": 0,
