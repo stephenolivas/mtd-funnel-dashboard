@@ -1,0 +1,31 @@
+## REPORT METADATA
+Start Date,2026-06-19
+End Date,2026-06-25
+Week Ending,"June 25th, 2026"
+Date Range Label,"June 19 – June 25, 2026"
+
+## KPI SUMMARY
+Metric,Total,External,Ext %,In-House,IH %
+Total Booked,151,13,8.6%,137,90.7%
+Show Rate,49.0%,69.2%,,47.4%,
+Showed,74,9,12.2%,65,87.8%
+Qualified,73,9,12.3%,64,87.7%
+Closed Won,13,3,23.1%,8,61.5%
+Close Rate (b→c),8.6%,23.1%,,5.8%,
+Revenue,"$114,464","$24,491",21.4%,"$74,979",65.5%
+Avg Deal,"$8,805","$8,164",,"$9,372",
+
+## FUNNEL BREAKDOWN
+Group,Funnel,Excluded From Totals,Booked,On Pace,Goal %,Showed,Show %,Qualified,Qual %,Closed,CW %,Revenue,Rev/Close
+EXTERNAL,Low Ticket Funnel,,0,,0% (200),0,0.0%,0,0.0%,1,0.0%,"$5,997","$5,997"
+EXTERNAL,Instagram,,9,9,3% (300),5,55.6%,5,55.6%,1,11.1%,"$5,997","$5,997"
+EXTERNAL,X,,2,2,20% (10),2,100.0%,2,100.0%,1,50.0%,"$12,497","$12,497"
+EXTERNAL,Linkedin,,2,2,20% (10),2,100.0%,2,100.0%,,0.0%,$0,
+IN-HOUSE,YouTube,,8,8,6% (132),6,75.0%,5,62.5%,1,12.5%,"$5,997","$5,997"
+IN-HOUSE,Meta Ads,,7,7,16% (44),6,85.7%,5,71.4%,,0.0%,$0,
+IN-HOUSE,Website,,13,13,13% (100),5,38.5%,7,53.8%,2,15.4%,"$23,994","$11,997"
+IN-HOUSE,Internal Webinar,,29,29,41% (70),12,41.4%,17,58.6%,1,3.4%,"$8,997","$8,997"
+IN-HOUSE,Reactivation Scrapers,,78,78,,34,43.6%,28,35.9%,3,3.8%,"$26,994","$8,998"
+IN-HOUSE,Google Ads,,2,2,,2,100.0%,2,100.0%,1,50.0%,"$8,997","$8,997"
+UNCATEGORIZED,LTF - In-House,,1,1,,0,0.0%,0,0.0%,2,200.0%,"$14,994","$7,497"
+TOTAL,TOTAL,,151,,,74,49.0%,73,48.3%,13,8.6%,"$114,464","$8,805"
