@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 102,
+      "booked": 177,
+      "book_pct": 173.5,
+      "showed": 79,
+      "show_pct": 44.6,
+      "qualified": 67,
+      "qual_pct": 37.9,
+      "closed": 9,
+      "cw_pct": 5.1,
+      "revenue": 71976.0
+    },
     "Website": {
       "leads_created": 91,
       "booked": 89,
@@ -83,18 +95,6 @@
       "closed": 1,
       "cw_pct": 5.9,
       "revenue": 5997.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 102,
-      "booked": 177,
-      "book_pct": 173.5,
-      "showed": 79,
-      "show_pct": 44.6,
-      "qualified": 67,
-      "qual_pct": 37.9,
-      "closed": 9,
-      "cw_pct": 5.1,
-      "revenue": 71976.0
     },
     "Linkedin": {
       "leads_created": 10,
