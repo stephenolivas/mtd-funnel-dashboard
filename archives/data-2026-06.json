@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3913,
+    "leads_created": 3914,
     "booked": 574,
     "showed": 349,
     "qualified": 317,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3579,
+      "leads_created": 3580,
       "booked": 436,
       "showed": 247,
       "qualified": 228,
@@ -73,9 +73,9 @@
       "revenue": 92961.0
     },
     "YouTube": {
-      "leads_created": 76,
+      "leads_created": 77,
       "booked": 59,
-      "book_pct": 77.6,
+      "book_pct": 76.6,
       "showed": 48,
       "show_pct": 81.4,
       "qualified": 44,
