@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3932,
+    "leads_created": 3934,
     "booked": 574,
     "showed": 350,
     "qualified": 317,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 194,
+      "leads_created": 196,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 140,
+      "booked": 18,
+      "book_pct": 12.9,
+      "showed": 14,
+      "show_pct": 77.8,
+      "qualified": 12,
+      "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Internal Webinar": {
       "leads_created": 1428,
       "booked": 81,
@@ -95,18 +107,6 @@
       "closed": 9,
       "cw_pct": 5.1,
       "revenue": 71976.0
-    },
-    "Meta Ads": {
-      "leads_created": 140,
-      "booked": 18,
-      "book_pct": 12.9,
-      "showed": 14,
-      "show_pct": 77.8,
-      "qualified": 12,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 91,
@@ -181,7 +181,7 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 194,
+      "leads_created": 196,
       "booked": 3,
       "book_pct": 1.5,
       "showed": 0,
