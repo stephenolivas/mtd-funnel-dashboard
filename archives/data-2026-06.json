@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3580,
+      "leads_created": 3584,
       "booked": 436,
       "showed": 248,
       "qualified": 228,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 196,
+      "leads_created": 192,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -97,9 +97,9 @@
       "revenue": 14994.0
     },
     "YouTube": {
-      "leads_created": 77,
+      "leads_created": 78,
       "booked": 59,
-      "book_pct": 76.6,
+      "book_pct": 75.6,
       "showed": 48,
       "show_pct": 81.4,
       "qualified": 44,
@@ -121,9 +121,9 @@
       "revenue": 12497.0
     },
     "Meta Ads": {
-      "leads_created": 128,
+      "leads_created": 131,
       "booked": 18,
-      "book_pct": 14.1,
+      "book_pct": 13.7,
       "showed": 14,
       "show_pct": 77.8,
       "qualified": 12,
@@ -181,9 +181,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 196,
+      "leads_created": 192,
       "booked": 3,
-      "book_pct": 1.5,
+      "book_pct": 1.6,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
