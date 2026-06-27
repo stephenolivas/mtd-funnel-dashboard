@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3934,
+    "leads_created": 3935,
     "booked": 574,
     "showed": 350,
     "qualified": 317,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 196,
+      "leads_created": 197,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 1428,
-      "booked": 81,
-      "book_pct": 5.7,
-      "showed": 44,
-      "show_pct": 54.3,
-      "qualified": 43,
-      "qual_pct": 53.1,
-      "closed": 3,
-      "cw_pct": 3.7,
-      "revenue": 37991.0
-    },
     "Instagram": {
       "leads_created": 115,
       "booked": 107,
@@ -60,18 +48,6 @@
       "cw_pct": 12.1,
       "revenue": 81464.0
     },
-    "Website": {
-      "leads_created": 91,
-      "booked": 89,
-      "book_pct": 97.8,
-      "showed": 53,
-      "show_pct": 59.6,
-      "qualified": 52,
-      "qual_pct": 58.4,
-      "closed": 13,
-      "cw_pct": 14.6,
-      "revenue": 92961.0
-    },
     "Meta Ads": {
       "leads_created": 140,
       "booked": 18,
@@ -83,6 +59,30 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1428,
+      "booked": 81,
+      "book_pct": 5.7,
+      "showed": 44,
+      "show_pct": 54.3,
+      "qualified": 43,
+      "qual_pct": 53.1,
+      "closed": 3,
+      "cw_pct": 3.7,
+      "revenue": 37991.0
+    },
+    "Website": {
+      "leads_created": 91,
+      "booked": 89,
+      "book_pct": 97.8,
+      "showed": 53,
+      "show_pct": 59.6,
+      "qualified": 52,
+      "qual_pct": 58.4,
+      "closed": 13,
+      "cw_pct": 14.6,
+      "revenue": 92961.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
@@ -181,7 +181,7 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 196,
+      "leads_created": 197,
       "booked": 3,
       "book_pct": 1.5,
       "showed": 0,
