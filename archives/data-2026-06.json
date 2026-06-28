@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3968,
+    "leads_created": 3967,
     "booked": 574,
     "showed": 351,
     "qualified": 319,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3622,
+      "leads_created": 3621,
       "booked": 436,
       "showed": 249,
       "qualified": 230,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 80,
+      "booked": 59,
+      "book_pct": 73.8,
+      "showed": 48,
+      "show_pct": 81.4,
+      "qualified": 44,
+      "qual_pct": 74.6,
+      "closed": 13,
+      "cw_pct": 22.0,
+      "revenue": 94211.0
+    },
+    "Website": {
+      "leads_created": 88,
+      "booked": 89,
+      "book_pct": 101.1,
+      "showed": 53,
+      "show_pct": 59.6,
+      "qualified": 52,
+      "qual_pct": 58.4,
+      "closed": 13,
+      "cw_pct": 14.6,
+      "revenue": 92961.0
+    },
     "Instagram": {
       "leads_created": 113,
       "booked": 107,
@@ -72,18 +96,6 @@
       "cw_pct": 3.7,
       "revenue": 37991.0
     },
-    "Website": {
-      "leads_created": 89,
-      "booked": 89,
-      "book_pct": 100.0,
-      "showed": 53,
-      "show_pct": 59.6,
-      "qualified": 52,
-      "qual_pct": 58.4,
-      "closed": 13,
-      "cw_pct": 14.6,
-      "revenue": 92961.0
-    },
     "Meta Ads": {
       "leads_created": 167,
       "booked": 18,
@@ -107,18 +119,6 @@
       "closed": 2,
       "cw_pct": 100.0,
       "revenue": 14994.0
-    },
-    "YouTube": {
-      "leads_created": 80,
-      "booked": 59,
-      "book_pct": 73.8,
-      "showed": 48,
-      "show_pct": 81.4,
-      "qualified": 44,
-      "qual_pct": 74.6,
-      "closed": 13,
-      "cw_pct": 22.0,
-      "revenue": 94211.0
     },
     "Linkedin": {
       "leads_created": 10,
