@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 3952,
+    "leads_created": 3951,
     "booked": 574,
     "showed": 350,
     "qualified": 318,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3607,
+      "leads_created": 3606,
       "booked": 436,
       "showed": 248,
       "qualified": 229,
@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Reactivation Scrapers": {
-      "leads_created": 104,
+      "leads_created": 103,
       "booked": 177,
-      "book_pct": 170.2,
+      "book_pct": 171.8,
       "showed": 79,
       "show_pct": 44.6,
       "qualified": 68,
