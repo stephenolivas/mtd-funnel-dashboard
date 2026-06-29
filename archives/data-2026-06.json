@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3668,
+      "leads_created": 3670,
       "booked": 473,
       "showed": 261,
       "qualified": 238,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 208,
+      "leads_created": 206,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -48,17 +48,17 @@
       "cw_pct": 5.1,
       "revenue": 80973.0
     },
-    "Linkedin": {
-      "leads_created": 10,
-      "booked": 9,
-      "book_pct": 90.0,
-      "showed": 9,
-      "show_pct": 100.0,
-      "qualified": 9,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 11.1,
-      "revenue": 8997.0
+    "YouTube": {
+      "leads_created": 81,
+      "booked": 61,
+      "book_pct": 75.3,
+      "showed": 49,
+      "show_pct": 80.3,
+      "qualified": 45,
+      "qual_pct": 73.8,
+      "closed": 13,
+      "cw_pct": 21.3,
+      "revenue": 94211.0
     },
     "Website": {
       "leads_created": 101,
@@ -71,6 +71,18 @@
       "closed": 14,
       "cw_pct": 14.4,
       "revenue": 98958.0
+    },
+    "Linkedin": {
+      "leads_created": 10,
+      "booked": 9,
+      "book_pct": 90.0,
+      "showed": 9,
+      "show_pct": 100.0,
+      "qualified": 9,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 11.1,
+      "revenue": 8997.0
     },
     "Instagram": {
       "leads_created": 115,
@@ -97,9 +109,9 @@
       "revenue": 12497.0
     },
     "Meta Ads": {
-      "leads_created": 195,
+      "leads_created": 197,
       "booked": 19,
-      "book_pct": 9.7,
+      "book_pct": 9.6,
       "showed": 14,
       "show_pct": 73.7,
       "qualified": 12,
@@ -119,18 +131,6 @@
       "closed": 3,
       "cw_pct": 37.5,
       "revenue": 23991.0
-    },
-    "YouTube": {
-      "leads_created": 81,
-      "booked": 61,
-      "book_pct": 75.3,
-      "showed": 49,
-      "show_pct": 80.3,
-      "qualified": 45,
-      "qual_pct": 73.8,
-      "closed": 13,
-      "cw_pct": 21.3,
-      "revenue": 94211.0
     },
     "Low Ticket Funnel": {
       "leads_created": 12,
@@ -193,9 +193,9 @@
       "revenue": 14994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 208,
+      "leads_created": 206,
       "booked": 3,
-      "book_pct": 1.4,
+      "book_pct": 1.5,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
