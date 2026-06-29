@@ -2,10 +2,10 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 4002,
-    "booked": 615,
+    "leads_created": 4005,
+    "booked": 614,
     "showed": 356,
-    "qualified": 323,
+    "qualified": 324,
     "closed": 60,
     "revenue": 454076.0
   },
@@ -20,17 +20,17 @@
     },
     "EXTERNAL": {
       "leads_created": 145,
-      "booked": 140,
-      "showed": 103,
+      "booked": 139,
+      "showed": 102,
       "qualified": 89,
       "closed": 16,
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 213,
+      "leads_created": 216,
       "booked": 8,
-      "showed": 0,
-      "qualified": 0,
+      "showed": 1,
+      "qualified": 1,
       "closed": 0,
       "revenue": 0.0
     }
@@ -48,6 +48,18 @@
       "cw_pct": 4.6,
       "revenue": 71976.0
     },
+    "Unknown (Needs Review)": {
+      "leads_created": 216,
+      "booked": 8,
+      "book_pct": 3.7,
+      "showed": 1,
+      "show_pct": 12.5,
+      "qualified": 1,
+      "qual_pct": 12.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 81,
       "booked": 61,
@@ -59,18 +71,6 @@
       "closed": 13,
       "cw_pct": 21.3,
       "revenue": 94211.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 213,
-      "booked": 8,
-      "book_pct": 3.8,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 10,
@@ -110,14 +110,14 @@
     },
     "Instagram": {
       "leads_created": 116,
-      "booked": 111,
-      "book_pct": 95.7,
-      "showed": 79,
-      "show_pct": 71.2,
+      "booked": 110,
+      "book_pct": 94.8,
+      "showed": 78,
+      "show_pct": 70.9,
       "qualified": 67,
-      "qual_pct": 60.4,
+      "qual_pct": 60.9,
       "closed": 13,
-      "cw_pct": 11.7,
+      "cw_pct": 11.8,
       "revenue": 81464.0
     },
     "Meta Ads": {
