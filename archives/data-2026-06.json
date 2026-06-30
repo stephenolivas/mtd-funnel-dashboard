@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3674,
+      "leads_created": 3675,
       "booked": 473,
       "showed": 266,
       "qualified": 241,
@@ -27,7 +27,7 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 217,
+      "leads_created": 216,
       "booked": 3,
       "showed": 0,
       "qualified": 0,
@@ -193,7 +193,7 @@
       "revenue": 14994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 217,
+      "leads_created": 216,
       "booked": 3,
       "book_pct": 1.4,
       "showed": 0,
@@ -217,7 +217,7 @@
       "revenue": 8997.0
     },
     "VSL": {
-      "leads_created": 6,
+      "leads_created": 7,
       "booked": 0,
       "book_pct": 0.0,
       "showed": 0,
