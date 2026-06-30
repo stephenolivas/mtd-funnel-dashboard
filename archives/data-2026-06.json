@@ -2,16 +2,16 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 4048,
+    "leads_created": 4053,
     "booked": 641,
-    "showed": 377,
+    "showed": 378,
     "qualified": 341,
     "closed": 66,
     "revenue": 493058.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3684,
+      "leads_created": 3683,
       "booked": 495,
       "showed": 272,
       "qualified": 248,
@@ -27,27 +27,15 @@
       "revenue": 108955.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 218,
+      "leads_created": 224,
       "booked": 7,
-      "showed": 0,
+      "showed": 1,
       "qualified": 0,
       "closed": 0,
       "revenue": 0.0
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 113,
-      "booked": 210,
-      "book_pct": 185.8,
-      "showed": 90,
-      "show_pct": 42.9,
-      "qualified": 75,
-      "qual_pct": 35.7,
-      "closed": 11,
-      "cw_pct": 5.2,
-      "revenue": 86970.0
-    },
     "Instagram": {
       "leads_created": 118,
       "booked": 110,
@@ -72,29 +60,17 @@
       "cw_pct": 13.6,
       "revenue": 98958.0
     },
-    "LTF - In-House": {
-      "leads_created": 993,
-      "booked": 9,
-      "book_pct": 0.9,
-      "showed": 7,
-      "show_pct": 77.8,
-      "qualified": 7,
-      "qual_pct": 77.8,
-      "closed": 3,
-      "cw_pct": 33.3,
-      "revenue": 23991.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1427,
-      "booked": 85,
-      "book_pct": 6.0,
-      "showed": 45,
-      "show_pct": 52.9,
-      "qualified": 43,
-      "qual_pct": 50.6,
-      "closed": 3,
-      "cw_pct": 3.5,
-      "revenue": 37991.0
+    "Reactivation Scrapers": {
+      "leads_created": 113,
+      "booked": 210,
+      "book_pct": 185.8,
+      "showed": 90,
+      "show_pct": 42.9,
+      "qualified": 75,
+      "qual_pct": 35.7,
+      "closed": 11,
+      "cw_pct": 5.2,
+      "revenue": 86970.0
     },
     "YouTube": {
       "leads_created": 81,
@@ -108,38 +84,14 @@
       "cw_pct": 22.6,
       "revenue": 100208.0
     },
-    "X": {
-      "leads_created": 6,
-      "booked": 3,
-      "book_pct": 50.0,
-      "showed": 3,
-      "show_pct": 100.0,
-      "qualified": 3,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 33.3,
-      "revenue": 12497.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 218,
+      "leads_created": 224,
       "booked": 7,
-      "book_pct": 3.2,
-      "showed": 0,
-      "show_pct": 0.0,
+      "book_pct": 3.1,
+      "showed": 1,
+      "show_pct": 14.3,
       "qualified": 0,
       "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 208,
-      "booked": 22,
-      "book_pct": 10.6,
-      "showed": 15,
-      "show_pct": 68.2,
-      "qualified": 13,
-      "qual_pct": 59.1,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -155,6 +107,54 @@
       "closed": 1,
       "cw_pct": 5.9,
       "revenue": 5997.0
+    },
+    "LTF - In-House": {
+      "leads_created": 993,
+      "booked": 9,
+      "book_pct": 0.9,
+      "showed": 7,
+      "show_pct": 77.8,
+      "qualified": 7,
+      "qual_pct": 77.8,
+      "closed": 3,
+      "cw_pct": 33.3,
+      "revenue": 23991.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1426,
+      "booked": 85,
+      "book_pct": 6.0,
+      "showed": 45,
+      "show_pct": 52.9,
+      "qualified": 43,
+      "qual_pct": 50.6,
+      "closed": 3,
+      "cw_pct": 3.5,
+      "revenue": 37991.0
+    },
+    "X": {
+      "leads_created": 6,
+      "booked": 3,
+      "book_pct": 50.0,
+      "showed": 3,
+      "show_pct": 100.0,
+      "qualified": 3,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 33.3,
+      "revenue": 12497.0
+    },
+    "Meta Ads": {
+      "leads_created": 208,
+      "booked": 22,
+      "book_pct": 10.6,
+      "showed": 15,
+      "show_pct": 68.2,
+      "qualified": 13,
+      "qual_pct": 59.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
