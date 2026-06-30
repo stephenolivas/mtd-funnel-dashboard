@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 4031,
+    "leads_created": 4030,
     "booked": 615,
     "showed": 371,
     "qualified": 333,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 3675,
+      "leads_created": 3674,
       "booked": 473,
       "showed": 266,
       "qualified": 241,
@@ -217,7 +217,7 @@
       "revenue": 8997.0
     },
     "VSL": {
-      "leads_created": 7,
+      "leads_created": 6,
       "booked": 0,
       "book_pct": 0.0,
       "showed": 0,
