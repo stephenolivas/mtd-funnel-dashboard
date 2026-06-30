@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 4059,
+    "leads_created": 4060,
     "booked": 643,
     "showed": 384,
     "qualified": 350,
@@ -27,7 +27,7 @@
       "revenue": 123952.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 228,
+      "leads_created": 229,
       "booked": 8,
       "showed": 2,
       "qualified": 2,
@@ -48,18 +48,6 @@
       "cw_pct": 5.2,
       "revenue": 86970.0
     },
-    "YouTube": {
-      "leads_created": 82,
-      "booked": 62,
-      "book_pct": 75.6,
-      "showed": 50,
-      "show_pct": 80.6,
-      "qualified": 46,
-      "qual_pct": 74.2,
-      "closed": 14,
-      "cw_pct": 22.6,
-      "revenue": 100208.0
-    },
     "Meta Ads": {
       "leads_created": 210,
       "booked": 21,
@@ -73,7 +61,7 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 228,
+      "leads_created": 229,
       "booked": 8,
       "book_pct": 3.5,
       "showed": 2,
@@ -83,18 +71,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1426,
-      "booked": 85,
-      "book_pct": 6.0,
-      "showed": 45,
-      "show_pct": 52.9,
-      "qualified": 43,
-      "qual_pct": 50.6,
-      "closed": 3,
-      "cw_pct": 3.5,
-      "revenue": 37991.0
     },
     "Website": {
       "leads_created": 100,
@@ -107,6 +83,30 @@
       "closed": 14,
       "cw_pct": 13.7,
       "revenue": 98958.0
+    },
+    "YouTube": {
+      "leads_created": 82,
+      "booked": 62,
+      "book_pct": 75.6,
+      "showed": 50,
+      "show_pct": 80.6,
+      "qualified": 46,
+      "qual_pct": 74.2,
+      "closed": 14,
+      "cw_pct": 22.6,
+      "revenue": 100208.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1426,
+      "booked": 85,
+      "book_pct": 6.0,
+      "showed": 45,
+      "show_pct": 52.9,
+      "qualified": 43,
+      "qual_pct": 50.6,
+      "closed": 3,
+      "cw_pct": 3.5,
+      "revenue": 37991.0
     },
     "X": {
       "leads_created": 6,
