@@ -1,10 +1,10 @@
 {
-  "live_month": "2026-06",
-  "live_month_label": "June 2026",
+  "live_month": "2026-07",
+  "live_month_label": "July 2026",
   "months": [
     {
-      "key": "2026-06",
-      "label": "June 2026",
+      "key": "2026-07",
+      "label": "July 2026",
       "is_live": true
     },
     {
@@ -54,11 +54,6 @@
         "key": "week-2026-06-01",
         "label": "Jun 1\u20137",
         "is_current": false
-      },
-      {
-        "key": "week-current",
-        "label": "Jun 29\u201330 \u25b6",
-        "is_current": true
       }
     ],
     "2026-05": [
@@ -104,7 +99,14 @@
         "label": "Apr 6\u201312",
         "is_current": false
       }
+    ],
+    "2026-07": [
+      {
+        "key": "week-current",
+        "label": "Jun 29\u2013Jul 1 \u25b6",
+        "is_current": true
+      }
     ]
   },
-  "updated_at": "2026-06-30T23:52:45"
+  "updated_at": "2026-07-01T00:01:34"
 }

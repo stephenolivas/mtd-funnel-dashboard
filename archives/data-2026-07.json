@@ -1,0 +1,100 @@
+{
+  "month_key": "2026-07",
+  "month_label": "July 2026",
+  "grand": {
+    "leads_created": 0,
+    "booked": 21,
+    "showed": 0,
+    "qualified": 0,
+    "closed": 0,
+    "revenue": 0.0
+  },
+  "groups": {
+    "IN-HOUSE": {
+      "leads_created": 0,
+      "booked": 18,
+      "showed": 0,
+      "qualified": 0,
+      "closed": 0,
+      "revenue": 0.0
+    },
+    "EXTERNAL": {
+      "leads_created": 0,
+      "booked": 0,
+      "showed": 0,
+      "qualified": 0,
+      "closed": 0,
+      "revenue": 0.0
+    },
+    "UNCATEGORIZED": {
+      "leads_created": 0,
+      "booked": 3,
+      "showed": 0,
+      "qualified": 0,
+      "closed": 0,
+      "revenue": 0.0
+    }
+  },
+  "funnels": {
+    "Internal Webinar": {
+      "leads_created": 0,
+      "booked": 8,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 0,
+      "booked": 6,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 0,
+      "booked": 3,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "leads_created": 0,
+      "booked": 3,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
+      "leads_created": 0,
+      "booked": 1,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    }
+  }
+}
