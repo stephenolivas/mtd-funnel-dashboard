@@ -36,9 +36,9 @@
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
+    "Internal Webinar": {
       "leads_created": 0,
-      "booked": 3,
+      "booked": 8,
       "book_pct": 0,
       "showed": 0,
       "show_pct": 0.0,
@@ -48,9 +48,9 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
+    "Unknown (Needs Review)": {
       "leads_created": 0,
-      "booked": 8,
+      "booked": 3,
       "book_pct": 0,
       "showed": 0,
       "show_pct": 0.0,
