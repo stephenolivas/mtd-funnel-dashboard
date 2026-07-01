@@ -3,8 +3,8 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 18,
-    "booked": 20,
-    "showed": 3,
+    "booked": 21,
+    "showed": 4,
     "qualified": 2,
     "closed": 1,
     "revenue": 5997.0
@@ -12,8 +12,8 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 6,
-      "booked": 16,
-      "showed": 2,
+      "booked": 17,
+      "showed": 3,
       "qualified": 2,
       "closed": 1,
       "revenue": 5997.0
@@ -42,7 +42,19 @@
       "book_pct": 0,
       "showed": 2,
       "show_pct": 33.3,
-      "qualified": 2,
+      "qualified": 1,
+      "qual_pct": 16.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "leads_created": 0,
+      "booked": 3,
+      "book_pct": 0,
+      "showed": 1,
+      "show_pct": 33.3,
+      "qualified": 1,
       "qual_pct": 33.3,
       "closed": 0,
       "cw_pct": 0.0,
@@ -95,18 +107,6 @@
       "closed": 1,
       "cw_pct": 16.7,
       "revenue": 5997.0
-    },
-    "Website": {
-      "leads_created": 0,
-      "booked": 2,
-      "book_pct": 0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Meta Ads": {
       "leads_created": 5,
