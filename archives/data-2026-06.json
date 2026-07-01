@@ -2,7 +2,7 @@
   "month_key": "2026-06",
   "month_label": "June 2026",
   "grand": {
-    "leads_created": 4060,
+    "leads_created": 4064,
     "booked": 643,
     "showed": 386,
     "qualified": 352,
@@ -27,7 +27,7 @@
       "revenue": 123952.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 229,
+      "leads_created": 233,
       "booked": 8,
       "showed": 3,
       "qualified": 3,
@@ -49,9 +49,9 @@
       "revenue": 86970.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 229,
+      "leads_created": 233,
       "booked": 8,
-      "book_pct": 3.5,
+      "book_pct": 3.4,
       "showed": 3,
       "show_pct": 37.5,
       "qualified": 3,
@@ -59,18 +59,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1426,
-      "booked": 85,
-      "book_pct": 6.0,
-      "showed": 45,
-      "show_pct": 52.9,
-      "qualified": 43,
-      "qual_pct": 50.6,
-      "closed": 3,
-      "cw_pct": 3.5,
-      "revenue": 37991.0
     },
     "Website": {
       "leads_created": 100,
@@ -83,6 +71,30 @@
       "closed": 14,
       "cw_pct": 13.7,
       "revenue": 98958.0
+    },
+    "Low Ticket Funnel": {
+      "leads_created": 12,
+      "booked": 17,
+      "book_pct": 141.7,
+      "showed": 13,
+      "show_pct": 76.5,
+      "qualified": 11,
+      "qual_pct": 64.7,
+      "closed": 1,
+      "cw_pct": 5.9,
+      "revenue": 5997.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1426,
+      "booked": 85,
+      "book_pct": 6.0,
+      "showed": 45,
+      "show_pct": 52.9,
+      "qualified": 43,
+      "qual_pct": 50.6,
+      "closed": 3,
+      "cw_pct": 3.5,
+      "revenue": 37991.0
     },
     "Meta Ads": {
       "leads_created": 210,
@@ -143,18 +155,6 @@
       "closed": 2,
       "cw_pct": 25.0,
       "revenue": 23994.0
-    },
-    "Low Ticket Funnel": {
-      "leads_created": 12,
-      "booked": 17,
-      "book_pct": 141.7,
-      "showed": 13,
-      "show_pct": 76.5,
-      "qualified": 11,
-      "qual_pct": 64.7,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 5997.0
     },
     "VSL": {
       "leads_created": 6,
