@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1307,
+    "leads_created": 1310,
     "booked": 22,
     "showed": 4,
     "qualified": 2,
@@ -27,7 +27,7 @@
       "revenue": 0.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 12,
+      "leads_created": 15,
       "booked": 3,
       "showed": 1,
       "qualified": 0,
@@ -36,14 +36,26 @@
     }
   },
   "funnels": {
-    "VSL": {
+    "Website": {
       "leads_created": 0,
-      "booked": 1,
+      "booked": 3,
       "book_pct": 0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+      "showed": 1,
+      "show_pct": 33.3,
+      "qualified": 1,
+      "qual_pct": 33.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1287,
+      "booked": 6,
+      "book_pct": 0.5,
+      "showed": 2,
+      "show_pct": 33.3,
+      "qualified": 1,
+      "qual_pct": 16.7,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -60,26 +72,14 @@
       "cw_pct": 14.3,
       "revenue": 5997.0
     },
-    "Internal Webinar": {
-      "leads_created": 1287,
-      "booked": 6,
-      "book_pct": 0.5,
-      "showed": 2,
-      "show_pct": 33.3,
-      "qualified": 1,
-      "qual_pct": 16.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Website": {
+    "VSL": {
       "leads_created": 0,
-      "booked": 3,
+      "booked": 1,
       "book_pct": 0,
-      "showed": 1,
-      "show_pct": 33.3,
-      "qualified": 1,
-      "qual_pct": 33.3,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -97,9 +97,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 12,
+      "leads_created": 15,
       "booked": 3,
-      "book_pct": 25.0,
+      "book_pct": 20.0,
       "showed": 1,
       "show_pct": 33.3,
       "qualified": 0,
