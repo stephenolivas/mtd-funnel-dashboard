@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 4060,
     "booked": 643,
-    "showed": 384,
-    "qualified": 350,
+    "showed": 386,
+    "qualified": 352,
     "closed": 67,
     "revenue": 508055.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 3685,
       "booked": 495,
-      "showed": 276,
-      "qualified": 254,
+      "showed": 277,
+      "qualified": 255,
       "closed": 49,
       "revenue": 378106.0
     },
@@ -29,8 +29,8 @@
     "UNCATEGORIZED": {
       "leads_created": 229,
       "booked": 8,
-      "showed": 2,
-      "qualified": 2,
+      "showed": 3,
+      "qualified": 3,
       "closed": 0,
       "revenue": 0.0
     }
@@ -40,37 +40,37 @@
       "leads_created": 113,
       "booked": 210,
       "book_pct": 185.8,
-      "showed": 92,
-      "show_pct": 43.8,
-      "qualified": 78,
-      "qual_pct": 37.1,
+      "showed": 93,
+      "show_pct": 44.3,
+      "qualified": 79,
+      "qual_pct": 37.6,
       "closed": 11,
       "cw_pct": 5.2,
       "revenue": 86970.0
-    },
-    "Meta Ads": {
-      "leads_created": 210,
-      "booked": 21,
-      "book_pct": 10.0,
-      "showed": 15,
-      "show_pct": 71.4,
-      "qualified": 14,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 229,
       "booked": 8,
       "book_pct": 3.5,
-      "showed": 2,
-      "show_pct": 25.0,
-      "qualified": 2,
-      "qual_pct": 25.0,
+      "showed": 3,
+      "show_pct": 37.5,
+      "qualified": 3,
+      "qual_pct": 37.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1426,
+      "booked": 85,
+      "book_pct": 6.0,
+      "showed": 45,
+      "show_pct": 52.9,
+      "qualified": 43,
+      "qual_pct": 50.6,
+      "closed": 3,
+      "cw_pct": 3.5,
+      "revenue": 37991.0
     },
     "Website": {
       "leads_created": 100,
@@ -84,6 +84,18 @@
       "cw_pct": 13.7,
       "revenue": 98958.0
     },
+    "Meta Ads": {
+      "leads_created": 210,
+      "booked": 21,
+      "book_pct": 10.0,
+      "showed": 15,
+      "show_pct": 71.4,
+      "qualified": 14,
+      "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 82,
       "booked": 62,
@@ -95,18 +107,6 @@
       "closed": 14,
       "cw_pct": 22.6,
       "revenue": 100208.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1426,
-      "booked": 85,
-      "book_pct": 6.0,
-      "showed": 45,
-      "show_pct": 52.9,
-      "qualified": 43,
-      "qual_pct": 50.6,
-      "closed": 3,
-      "cw_pct": 3.5,
-      "revenue": 37991.0
     },
     "X": {
       "leads_created": 6,
