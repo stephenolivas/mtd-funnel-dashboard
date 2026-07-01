@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1293,
+      "leads_created": 1296,
       "booked": 18,
       "showed": 3,
       "qualified": 2,
@@ -19,7 +19,7 @@
       "revenue": 5997.0
     },
     "EXTERNAL": {
-      "leads_created": 2,
+      "leads_created": 5,
       "booked": 1,
       "showed": 0,
       "qualified": 0,
@@ -27,7 +27,7 @@
       "revenue": 0.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 15,
+      "leads_created": 9,
       "booked": 3,
       "showed": 1,
       "qualified": 0,
@@ -85,30 +85,6 @@
       "revenue": 0.0
     },
     "Instagram": {
-      "leads_created": 2,
-      "booked": 1,
-      "book_pct": 50.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 15,
-      "booked": 3,
-      "book_pct": 20.0,
-      "showed": 1,
-      "show_pct": 33.3,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
       "leads_created": 4,
       "booked": 1,
       "book_pct": 25.0,
@@ -118,6 +94,42 @@
       "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 9,
+      "booked": 3,
+      "book_pct": 33.3,
+      "showed": 1,
+      "show_pct": 33.3,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
+      "leads_created": 7,
+      "booked": 1,
+      "book_pct": 14.3,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Linkedin": {
+      "leads_created": 1,
+      "booked": 0,
+      "book_pct": 0.0,
+      "showed": 0,
+      "show_pct": 0,
+      "qualified": 0,
+      "qual_pct": 0,
+      "closed": 0,
+      "cw_pct": 0,
       "revenue": 0.0
     },
     "Referred": {
