@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1310,
-    "booked": 22,
+    "booked": 23,
     "showed": 5,
     "qualified": 3,
     "closed": 1,
@@ -12,7 +12,7 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1297,
-      "booked": 18,
+      "booked": 19,
       "showed": 4,
       "qualified": 3,
       "closed": 1,
@@ -36,14 +36,14 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 4,
-      "booked": 1,
-      "book_pct": 25.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
+    "Internal Webinar": {
+      "leads_created": 1287,
+      "booked": 7,
+      "book_pct": 0.5,
+      "showed": 3,
+      "show_pct": 42.9,
+      "qualified": 2,
+      "qual_pct": 28.6,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -60,14 +60,26 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "leads_created": 1287,
-      "booked": 6,
-      "book_pct": 0.5,
-      "showed": 3,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 33.3,
+    "Reactivation Scrapers": {
+      "leads_created": 2,
+      "booked": 7,
+      "book_pct": 350.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 1,
+      "cw_pct": 14.3,
+      "revenue": 5997.0
+    },
+    "Instagram": {
+      "leads_created": 4,
+      "booked": 1,
+      "book_pct": 25.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -83,18 +95,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 2,
-      "booked": 7,
-      "book_pct": 350.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 1,
-      "cw_pct": 14.3,
-      "revenue": 5997.0
     },
     "VSL": {
       "leads_created": 0,
@@ -120,7 +120,7 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Linkedin": {
+    "Referred": {
       "leads_created": 1,
       "booked": 0,
       "book_pct": 0.0,
@@ -132,7 +132,7 @@
       "cw_pct": 0,
       "revenue": 0.0
     },
-    "Referred": {
+    "Linkedin": {
       "leads_created": 1,
       "booked": 0,
       "book_pct": 0.0,
