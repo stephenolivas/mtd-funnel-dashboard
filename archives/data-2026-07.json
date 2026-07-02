@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1326,
-    "booked": 25,
+    "leads_created": 1327,
+    "booked": 26,
     "showed": 8,
     "qualified": 8,
     "closed": 2,
@@ -19,8 +19,8 @@
       "revenue": 11994.0
     },
     "EXTERNAL": {
-      "leads_created": 6,
-      "booked": 1,
+      "leads_created": 7,
+      "booked": 2,
       "showed": 0,
       "qualified": 0,
       "closed": 0,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
-      "leads_created": 19,
-      "booked": 6,
-      "book_pct": 31.6,
-      "showed": 1,
-      "show_pct": 16.7,
-      "qualified": 1,
-      "qual_pct": 16.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 7,
-      "booked": 7,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 28.6,
-      "qualified": 2,
-      "qual_pct": 28.6,
-      "closed": 1,
-      "cw_pct": 14.3,
-      "revenue": 5997.0
-    },
     "Website": {
       "leads_created": 1,
       "booked": 3,
@@ -84,10 +60,10 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Meta Ads": {
-      "leads_created": 8,
-      "booked": 1,
-      "book_pct": 12.5,
+    "Instagram": {
+      "leads_created": 6,
+      "booked": 2,
+      "book_pct": 33.3,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -96,10 +72,34 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "leads_created": 5,
+    "Unknown (Needs Review)": {
+      "leads_created": 19,
+      "booked": 6,
+      "book_pct": 31.6,
+      "showed": 1,
+      "show_pct": 16.7,
+      "qualified": 1,
+      "qual_pct": 16.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 7,
+      "booked": 7,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 28.6,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 1,
+      "cw_pct": 14.3,
+      "revenue": 5997.0
+    },
+    "Meta Ads": {
+      "leads_created": 8,
       "booked": 1,
-      "book_pct": 20.0,
+      "book_pct": 12.5,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
