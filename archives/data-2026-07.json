@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1333,
+      "leads_created": 1332,
       "booked": 50,
       "showed": 11,
       "qualified": 14,
@@ -27,7 +27,7 @@
       "revenue": 17994.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 45,
+      "leads_created": 46,
       "booked": 8,
       "showed": 0,
       "qualified": 2,
@@ -49,9 +49,9 @@
       "revenue": 5997.0
     },
     "Website": {
-      "leads_created": 11,
+      "leads_created": 10,
       "booked": 9,
-      "book_pct": 81.8,
+      "book_pct": 90.0,
       "showed": 2,
       "show_pct": 22.2,
       "qualified": 2,
@@ -97,9 +97,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 45,
+      "leads_created": 46,
       "booked": 8,
-      "book_pct": 17.8,
+      "book_pct": 17.4,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 2,
