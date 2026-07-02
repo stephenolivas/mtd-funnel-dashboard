@@ -6,8 +6,8 @@
     "booked": 25,
     "showed": 9,
     "qualified": 10,
-    "closed": 2,
-    "revenue": 11994.0
+    "closed": 3,
+    "revenue": 20991.0
   },
   "groups": {
     "IN-HOUSE": {
@@ -31,8 +31,8 @@
       "booked": 5,
       "showed": 1,
       "qualified": 1,
-      "closed": 0,
-      "revenue": 0.0
+      "closed": 1,
+      "revenue": 8997.0
     }
   },
   "funnels": {
@@ -44,9 +44,9 @@
       "show_pct": 20.0,
       "qualified": 1,
       "qual_pct": 20.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+      "closed": 1,
+      "cw_pct": 20.0,
+      "revenue": 8997.0
     },
     "Website": {
       "leads_created": 1,
