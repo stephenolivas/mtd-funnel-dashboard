@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1355,
-    "booked": 61,
+    "leads_created": 1356,
+    "booked": 64,
     "showed": 9,
     "qualified": 12,
     "closed": 3,
@@ -27,8 +27,8 @@
       "revenue": 0.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 29,
-      "booked": 10,
+      "leads_created": 30,
+      "booked": 13,
       "showed": 1,
       "qualified": 2,
       "closed": 1,
@@ -36,16 +36,28 @@
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
-      "leads_created": 29,
-      "booked": 10,
-      "book_pct": 34.5,
-      "showed": 1,
-      "show_pct": 10.0,
+    "Website": {
+      "leads_created": 1,
+      "booked": 4,
+      "book_pct": 400.0,
+      "showed": 2,
+      "show_pct": 50.0,
       "qualified": 2,
-      "qual_pct": 20.0,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 30,
+      "booked": 13,
+      "book_pct": 43.3,
+      "showed": 1,
+      "show_pct": 7.7,
+      "qualified": 2,
+      "qual_pct": 15.4,
       "closed": 1,
-      "cw_pct": 10.0,
+      "cw_pct": 7.7,
       "revenue": 8997.0
     },
     "X": {
@@ -83,18 +95,6 @@
       "closed": 1,
       "cw_pct": 5.6,
       "revenue": 5997.0
-    },
-    "Website": {
-      "leads_created": 1,
-      "booked": 4,
-      "book_pct": 400.0,
-      "showed": 2,
-      "show_pct": 50.0,
-      "qualified": 2,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Meta Ads": {
       "leads_created": 16,
