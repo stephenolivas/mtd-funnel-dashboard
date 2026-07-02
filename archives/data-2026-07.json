@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Website": {
-      "leads_created": 10,
-      "booked": 9,
-      "book_pct": 90.0,
-      "showed": 2,
-      "show_pct": 22.2,
-      "qualified": 2,
-      "qual_pct": 22.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 15,
       "booked": 20,
@@ -59,6 +47,18 @@
       "closed": 1,
       "cw_pct": 5.0,
       "revenue": 5997.0
+    },
+    "Website": {
+      "leads_created": 10,
+      "booked": 9,
+      "book_pct": 90.0,
+      "showed": 2,
+      "show_pct": 22.2,
+      "qualified": 2,
+      "qual_pct": 22.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 5,
@@ -121,9 +121,9 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "leads_created": 26,
+      "leads_created": 25,
       "booked": 4,
-      "book_pct": 15.4,
+      "book_pct": 16.0,
       "showed": 1,
       "show_pct": 25.0,
       "qualified": 1,
@@ -145,9 +145,9 @@
       "revenue": 0.0
     },
     "VSL": {
-      "leads_created": 2,
+      "leads_created": 3,
       "booked": 1,
-      "book_pct": 50.0,
+      "book_pct": 33.3,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 1,
