@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1384,
     "booked": 68,
-    "showed": 15,
-    "qualified": 19,
+    "showed": 16,
+    "qualified": 20,
     "closed": 4,
     "revenue": 29988.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1330,
       "booked": 49,
-      "showed": 9,
-      "qualified": 12,
+      "showed": 10,
+      "qualified": 13,
       "closed": 2,
       "revenue": 11994.0
     },
@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 22,
+      "booked": 4,
+      "book_pct": 18.2,
+      "showed": 1,
+      "show_pct": 25.0,
+      "qualified": 1,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1278,
+      "booked": 14,
+      "book_pct": 1.1,
+      "showed": 4,
+      "show_pct": 28.6,
+      "qualified": 7,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 13,
+      "booked": 19,
+      "book_pct": 146.2,
+      "showed": 3,
+      "show_pct": 15.8,
+      "qualified": 2,
+      "qual_pct": 10.5,
+      "closed": 1,
+      "cw_pct": 5.3,
+      "revenue": 5997.0
+    },
     "Instagram": {
       "leads_created": 11,
       "booked": 6,
@@ -48,54 +84,6 @@
       "cw_pct": 33.3,
       "revenue": 17994.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 13,
-      "booked": 19,
-      "book_pct": 146.2,
-      "showed": 2,
-      "show_pct": 10.5,
-      "qualified": 2,
-      "qual_pct": 10.5,
-      "closed": 1,
-      "cw_pct": 5.3,
-      "revenue": 5997.0
-    },
-    "Website": {
-      "leads_created": 11,
-      "booked": 9,
-      "book_pct": 81.8,
-      "showed": 2,
-      "show_pct": 22.2,
-      "qualified": 2,
-      "qual_pct": 22.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1278,
-      "booked": 14,
-      "book_pct": 1.1,
-      "showed": 4,
-      "show_pct": 28.6,
-      "qualified": 6,
-      "qual_pct": 42.9,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Linkedin": {
       "leads_created": 2,
       "booked": 3,
@@ -104,6 +92,18 @@
       "show_pct": 66.7,
       "qualified": 2,
       "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "VSL": {
+      "leads_created": 0,
+      "booked": 1,
+      "book_pct": 0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -120,14 +120,26 @@
       "cw_pct": 50.0,
       "revenue": 5997.0
     },
-    "Meta Ads": {
-      "leads_created": 22,
-      "booked": 4,
-      "book_pct": 18.2,
-      "showed": 1,
-      "show_pct": 25.0,
-      "qualified": 1,
-      "qual_pct": 25.0,
+    "X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "leads_created": 11,
+      "booked": 9,
+      "book_pct": 81.8,
+      "showed": 2,
+      "show_pct": 22.2,
+      "qualified": 2,
+      "qual_pct": 22.2,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -140,18 +152,6 @@
       "show_pct": 0.0,
       "qualified": 2,
       "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "VSL": {
-      "leads_created": 0,
-      "booked": 1,
-      "book_pct": 0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
