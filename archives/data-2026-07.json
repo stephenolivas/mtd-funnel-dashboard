@@ -36,20 +36,8 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 22,
-      "booked": 4,
-      "book_pct": 18.2,
-      "showed": 1,
-      "show_pct": 25.0,
-      "qualified": 1,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
-      "leads_created": 1278,
+      "leads_created": 1277,
       "booked": 14,
       "book_pct": 1.1,
       "showed": 4,
@@ -59,18 +47,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 12,
-      "booked": 7,
-      "book_pct": 58.3,
-      "showed": 4,
-      "show_pct": 57.1,
-      "qualified": 3,
-      "qual_pct": 42.9,
-      "closed": 2,
-      "cw_pct": 28.6,
-      "revenue": 17994.0
     },
     "Website": {
       "leads_created": 11,
@@ -84,10 +60,22 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "YouTube": {
+      "leads_created": 5,
+      "booked": 2,
+      "book_pct": 40.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 1,
+      "cw_pct": 50.0,
+      "revenue": 5997.0
+    },
     "Reactivation Scrapers": {
-      "leads_created": 13,
+      "leads_created": 14,
       "booked": 19,
-      "book_pct": 146.2,
+      "book_pct": 135.7,
       "showed": 3,
       "show_pct": 15.8,
       "qualified": 2,
@@ -95,6 +83,30 @@
       "closed": 1,
       "cw_pct": 5.3,
       "revenue": 5997.0
+    },
+    "Instagram": {
+      "leads_created": 12,
+      "booked": 7,
+      "book_pct": 58.3,
+      "showed": 4,
+      "show_pct": 57.1,
+      "qualified": 3,
+      "qual_pct": 42.9,
+      "closed": 2,
+      "cw_pct": 28.6,
+      "revenue": 17994.0
+    },
+    "Meta Ads": {
+      "leads_created": 22,
+      "booked": 4,
+      "book_pct": 18.2,
+      "showed": 1,
+      "show_pct": 25.0,
+      "qualified": 1,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 2,
@@ -143,18 +155,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "YouTube": {
-      "leads_created": 5,
-      "booked": 2,
-      "book_pct": 40.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 1,
-      "cw_pct": 50.0,
-      "revenue": 5997.0
     },
     "Referred": {
       "leads_created": 1,
