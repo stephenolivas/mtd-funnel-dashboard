@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1441,
+    "leads_created": 1442,
     "booked": 107,
     "showed": 33,
     "qualified": 38,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1360,
+      "leads_created": 1359,
       "booked": 78,
       "showed": 23,
       "qualified": 26,
@@ -27,7 +27,7 @@
       "revenue": 17994.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 57,
+      "leads_created": 59,
       "booked": 11,
       "showed": 2,
       "qualified": 4,
@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 1274,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 9,
-      "show_pct": 39.1,
-      "qualified": 10,
-      "qual_pct": 43.5,
+    "Website": {
+      "leads_created": 11,
+      "booked": 17,
+      "book_pct": 154.5,
+      "showed": 5,
+      "show_pct": 29.4,
+      "qualified": 5,
+      "qual_pct": 29.4,
       "closed": 1,
-      "cw_pct": 4.3,
-      "revenue": 14997.0
+      "cw_pct": 5.9,
+      "revenue": 8997.0
     },
     "LTF - In-House": {
       "leads_created": 0,
@@ -60,6 +60,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Internal Webinar": {
+      "leads_created": 1273,
+      "booked": 23,
+      "book_pct": 1.8,
+      "showed": 9,
+      "show_pct": 39.1,
+      "qualified": 10,
+      "qual_pct": 43.5,
+      "closed": 1,
+      "cw_pct": 4.3,
+      "revenue": 14997.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 21,
       "booked": 30,
@@ -71,18 +83,6 @@
       "closed": 1,
       "cw_pct": 3.3,
       "revenue": 5997.0
-    },
-    "Website": {
-      "leads_created": 11,
-      "booked": 17,
-      "book_pct": 154.5,
-      "showed": 5,
-      "show_pct": 29.4,
-      "qualified": 5,
-      "qual_pct": 29.4,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 8997.0
     },
     "Linkedin": {
       "leads_created": 2,
@@ -121,9 +121,9 @@
       "revenue": 17994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 57,
+      "leads_created": 59,
       "booked": 11,
-      "book_pct": 19.3,
+      "book_pct": 18.6,
       "showed": 2,
       "show_pct": 18.2,
       "qualified": 4,
