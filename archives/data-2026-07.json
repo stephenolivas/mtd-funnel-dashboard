@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1401,
     "booked": 67,
-    "showed": 22,
-    "qualified": 26,
+    "showed": 23,
+    "qualified": 27,
     "closed": 4,
     "revenue": 29988.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1337,
       "booked": 47,
-      "showed": 14,
-      "qualified": 17,
+      "showed": 15,
+      "qualified": 18,
       "closed": 2,
       "revenue": 11994.0
     },
@@ -40,10 +40,22 @@
       "leads_created": 11,
       "booked": 8,
       "book_pct": 72.7,
-      "showed": 3,
-      "show_pct": 37.5,
+      "showed": 4,
+      "show_pct": 50.0,
+      "qualified": 3,
+      "qual_pct": 37.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
       "qualified": 2,
-      "qual_pct": 25.0,
+      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -128,18 +140,6 @@
       "show_pct": 66.7,
       "qualified": 2,
       "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
