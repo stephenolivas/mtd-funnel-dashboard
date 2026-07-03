@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1409,
+    "leads_created": 1408,
     "booked": 67,
     "showed": 23,
     "qualified": 27,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1346,
+      "leads_created": 1345,
       "booked": 47,
       "showed": 15,
       "qualified": 18,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 6,
+      "booked": 2,
+      "book_pct": 33.3,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 1,
+      "cw_pct": 50.0,
+      "revenue": 5997.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 18,
       "booked": 19,
@@ -46,18 +58,6 @@
       "qual_pct": 21.1,
       "closed": 1,
       "cw_pct": 5.3,
-      "revenue": 5997.0
-    },
-    "YouTube": {
-      "leads_created": 7,
-      "booked": 2,
-      "book_pct": 28.6,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 1,
-      "cw_pct": 50.0,
       "revenue": 5997.0
     },
     "VSL": {
