@@ -36,14 +36,14 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 1276,
-      "booked": 26,
-      "book_pct": 2.0,
-      "showed": 6,
-      "show_pct": 23.1,
-      "qualified": 8,
-      "qual_pct": 30.8,
+    "Website": {
+      "leads_created": 11,
+      "booked": 17,
+      "book_pct": 154.5,
+      "showed": 4,
+      "show_pct": 23.5,
+      "qualified": 3,
+      "qual_pct": 17.6,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -60,6 +60,18 @@
       "cw_pct": 15.4,
       "revenue": 17994.0
     },
+    "Internal Webinar": {
+      "leads_created": 1276,
+      "booked": 26,
+      "book_pct": 2.0,
+      "showed": 6,
+      "show_pct": 23.1,
+      "qualified": 8,
+      "qual_pct": 30.8,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 51,
       "booked": 14,
@@ -68,18 +80,6 @@
       "show_pct": 0.0,
       "qualified": 2,
       "qual_pct": 14.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 11,
-      "booked": 17,
-      "book_pct": 154.5,
-      "showed": 4,
-      "show_pct": 23.5,
-      "qualified": 3,
-      "qual_pct": 17.6,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
