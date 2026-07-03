@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1408,
+    "leads_created": 1411,
     "booked": 67,
     "showed": 23,
     "qualified": 27,
@@ -27,7 +27,7 @@
       "revenue": 17994.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 47,
+      "leads_created": 50,
       "booked": 8,
       "showed": 0,
       "qualified": 2,
@@ -97,9 +97,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 47,
+      "leads_created": 50,
       "booked": 8,
-      "book_pct": 17.0,
+      "book_pct": 16.0,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 2,
