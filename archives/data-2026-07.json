@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1469,
     "booked": 112,
-    "showed": 35,
-    "qualified": 41,
+    "showed": 36,
+    "qualified": 42,
     "closed": 6,
     "revenue": 53982.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1379,
       "booked": 78,
-      "showed": 24,
-      "qualified": 27,
+      "showed": 25,
+      "qualified": 28,
       "closed": 4,
       "revenue": 35988.0
     },
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 53,
-      "booked": 4,
-      "book_pct": 7.5,
-      "showed": 1,
-      "show_pct": 25.0,
-      "qualified": 1,
-      "qual_pct": 25.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "leads_created": 1273,
       "booked": 22,
@@ -59,6 +47,18 @@
       "closed": 1,
       "cw_pct": 4.5,
       "revenue": 14997.0
+    },
+    "Meta Ads": {
+      "leads_created": 53,
+      "booked": 4,
+      "book_pct": 7.5,
+      "showed": 2,
+      "show_pct": 50.0,
+      "qualified": 2,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Reactivation Scrapers": {
       "leads_created": 23,
