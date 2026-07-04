@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1456,
+    "leads_created": 1458,
     "booked": 105,
     "showed": 35,
     "qualified": 40,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1372,
+      "leads_created": 1373,
       "booked": 78,
       "showed": 24,
       "qualified": 27,
@@ -27,7 +27,7 @@
       "revenue": 17994.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 60,
+      "leads_created": 61,
       "booked": 10,
       "showed": 2,
       "qualified": 4,
@@ -109,9 +109,9 @@
       "revenue": 0.0
     },
     "LTF - In-House": {
-      "leads_created": 1,
+      "leads_created": 2,
       "booked": 1,
-      "book_pct": 100.0,
+      "book_pct": 50.0,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 60,
+      "leads_created": 61,
       "booked": 10,
-      "book_pct": 16.7,
+      "book_pct": 16.4,
       "showed": 2,
       "show_pct": 20.0,
       "qualified": 4,
