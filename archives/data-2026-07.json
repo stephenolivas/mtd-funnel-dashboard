@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1402,
+      "leads_created": 1401,
       "booked": 85,
       "showed": 25,
       "qualified": 30,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 67,
+      "leads_created": 68,
       "booked": 27,
       "showed": 3,
       "qualified": 6,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Google Ads": {
-      "leads_created": 1,
-      "booked": 1,
-      "book_pct": 100.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 67,
-      "booked": 27,
-      "book_pct": 40.3,
-      "showed": 3,
-      "show_pct": 11.1,
-      "qualified": 6,
-      "qual_pct": 22.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "leads_created": 26,
       "booked": 14,
@@ -72,14 +48,14 @@
       "cw_pct": 21.4,
       "revenue": 23991.0
     },
-    "Meta Ads": {
-      "leads_created": 73,
-      "booked": 7,
-      "book_pct": 9.6,
-      "showed": 2,
-      "show_pct": 28.6,
-      "qualified": 2,
-      "qual_pct": 28.6,
+    "Google Ads": {
+      "leads_created": 1,
+      "booked": 1,
+      "book_pct": 100.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -95,6 +71,30 @@
       "closed": 1,
       "cw_pct": 5.9,
       "revenue": 8997.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 68,
+      "booked": 27,
+      "book_pct": 39.7,
+      "showed": 3,
+      "show_pct": 11.1,
+      "qualified": 6,
+      "qual_pct": 22.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
+      "leads_created": 73,
+      "booked": 7,
+      "book_pct": 9.6,
+      "showed": 2,
+      "show_pct": 28.6,
+      "qualified": 2,
+      "qual_pct": 28.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "X": {
       "leads_created": 2,
@@ -145,9 +145,9 @@
       "revenue": 0.0
     },
     "VSL": {
-      "leads_created": 6,
+      "leads_created": 5,
       "booked": 1,
-      "book_pct": 16.7,
+      "book_pct": 20.0,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 1,
