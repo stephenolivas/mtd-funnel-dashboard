@@ -2,10 +2,10 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1499,
+    "leads_created": 1500,
     "booked": 132,
     "showed": 41,
-    "qualified": 51,
+    "qualified": 52,
     "closed": 7,
     "revenue": 59979.0
   },
@@ -14,7 +14,7 @@
       "leads_created": 1404,
       "booked": 85,
       "showed": 26,
-      "qualified": 31,
+      "qualified": 32,
       "closed": 4,
       "revenue": 35988.0
     },
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 67,
+      "leads_created": 68,
       "booked": 27,
       "showed": 3,
       "qualified": 7,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 23,
+      "booked": 33,
+      "book_pct": 143.5,
+      "showed": 7,
+      "show_pct": 21.2,
+      "qualified": 11,
+      "qual_pct": 33.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
+    },
+    "VSL": {
+      "leads_created": 5,
+      "booked": 1,
+      "book_pct": 20.0,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "X": {
       "leads_created": 2,
       "booked": 3,
@@ -72,22 +96,10 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 23,
-      "booked": 33,
-      "book_pct": 143.5,
-      "showed": 7,
-      "show_pct": 21.2,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 67,
+      "leads_created": 68,
       "booked": 27,
-      "book_pct": 40.3,
+      "book_pct": 39.7,
       "showed": 3,
       "show_pct": 11.1,
       "qualified": 7,
@@ -140,18 +152,6 @@
       "show_pct": 0.0,
       "qualified": 0,
       "qual_pct": 0.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "VSL": {
-      "leads_created": 5,
-      "booked": 1,
-      "book_pct": 20.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
