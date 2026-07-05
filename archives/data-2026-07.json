@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1499,
     "booked": 132,
-    "showed": 39,
-    "qualified": 48,
+    "showed": 40,
+    "qualified": 49,
     "closed": 7,
     "revenue": 59979.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1402,
       "booked": 85,
-      "showed": 25,
-      "qualified": 30,
+      "showed": 26,
+      "qualified": 31,
       "closed": 4,
       "revenue": 35988.0
     },
@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 23,
+      "booked": 33,
+      "book_pct": 143.5,
+      "showed": 7,
+      "show_pct": 21.2,
+      "qualified": 10,
+      "qual_pct": 30.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
+    },
+    "Google Ads": {
+      "leads_created": 1,
+      "booked": 1,
+      "book_pct": 100.0,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 26,
+      "booked": 14,
+      "book_pct": 53.8,
+      "showed": 7,
+      "show_pct": 50.0,
+      "qualified": 7,
+      "qual_pct": 50.0,
+      "closed": 3,
+      "cw_pct": 21.4,
+      "revenue": 23991.0
+    },
     "X": {
       "leads_created": 2,
       "booked": 3,
@@ -44,18 +80,6 @@
       "show_pct": 66.7,
       "qualified": 2,
       "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Google Ads": {
-      "leads_created": 1,
-      "booked": 1,
-      "book_pct": 100.0,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -71,18 +95,6 @@
       "closed": 1,
       "cw_pct": 5.9,
       "revenue": 8997.0
-    },
-    "Instagram": {
-      "leads_created": 26,
-      "booked": 14,
-      "book_pct": 53.8,
-      "showed": 7,
-      "show_pct": 50.0,
-      "qualified": 7,
-      "qual_pct": 50.0,
-      "closed": 3,
-      "cw_pct": 21.4,
-      "revenue": 23991.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 67,
@@ -119,18 +131,6 @@
       "closed": 1,
       "cw_pct": 4.5,
       "revenue": 14997.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 23,
-      "booked": 33,
-      "book_pct": 143.5,
-      "showed": 7,
-      "show_pct": 21.2,
-      "qualified": 10,
-      "qual_pct": 30.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
     },
     "LTF - In-House": {
       "leads_created": 3,
