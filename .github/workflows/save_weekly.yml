@@ -1,7 +1,7 @@
 name: Save Weekly Snapshot
 
-# Triggered by cron-job.org every Saturday at 5 PM Pacific (= Sunday 00:00 UTC).
-# Set up a second cron-job.org job to hit:
+# Triggered by cron-job.org every Sunday at 11 PM Pacific (= Monday 07:00 UTC).
+# Update your cron-job.org job to hit:
 #   POST https://api.github.com/repos/stephenolivas/mtd-funnel-dashboard/actions/workflows/save_weekly.yml/dispatches
 #   Body: {"ref":"main"}
 #   Headers: Authorization: Bearer YOUR_GITHUB_PAT
@@ -32,13 +32,20 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Detect Monday of current week
+      - name: Detect Monday of the week just ended
         id: weekdate
         run: |
           MONDAY=$(python3 -c "
           from datetime import date, timedelta
           d = date.today()
-          print((d - timedelta(days=d.weekday())).strftime('%Y-%m-%d'))
+          # When this runs Sunday night PT (Monday UTC), we want the Monday
+          # that started the week just ending — i.e. 6 days ago.
+          # d.weekday() == 0 means it's Monday UTC = Sunday night PT
+          if d.weekday() == 0:
+              monday = d - timedelta(days=6)
+          else:
+              monday = d - timedelta(days=d.weekday())
+          print(monday.strftime('%Y-%m-%d'))
           ")
           echo "monday=$MONDAY" >> $GITHUB_OUTPUT
           echo "Freezing week starting $MONDAY"
