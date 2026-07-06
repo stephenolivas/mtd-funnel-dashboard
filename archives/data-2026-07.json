@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1533,
+    "leads_created": 1535,
     "booked": 164,
     "showed": 47,
     "qualified": 56,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 76,
+      "leads_created": 78,
       "booked": 29,
       "showed": 3,
       "qualified": 7,
@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 30,
-      "booked": 20,
-      "book_pct": 66.7,
-      "showed": 7,
-      "show_pct": 35.0,
-      "qualified": 7,
-      "qual_pct": 35.0,
-      "closed": 3,
-      "cw_pct": 15.0,
-      "revenue": 23991.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 29,
-      "booked": 47,
-      "book_pct": 162.1,
-      "showed": 8,
-      "show_pct": 17.0,
-      "qualified": 11,
-      "qual_pct": 23.4,
-      "closed": 2,
-      "cw_pct": 4.3,
-      "revenue": 11994.0
-    },
     "YouTube": {
       "leads_created": 16,
       "booked": 9,
@@ -72,8 +48,32 @@
       "cw_pct": 11.1,
       "revenue": 5997.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 30,
+      "booked": 47,
+      "book_pct": 156.7,
+      "showed": 8,
+      "show_pct": 17.0,
+      "qualified": 11,
+      "qual_pct": 23.4,
+      "closed": 2,
+      "cw_pct": 4.3,
+      "revenue": 11994.0
+    },
+    "Instagram": {
+      "leads_created": 30,
+      "booked": 20,
+      "book_pct": 66.7,
+      "showed": 7,
+      "show_pct": 35.0,
+      "qualified": 7,
+      "qual_pct": 35.0,
+      "closed": 3,
+      "cw_pct": 15.0,
+      "revenue": 23991.0
+    },
     "Internal Webinar": {
-      "leads_created": 1269,
+      "leads_created": 1268,
       "booked": 21,
       "book_pct": 1.7,
       "showed": 8,
@@ -109,9 +109,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 76,
+      "leads_created": 78,
       "booked": 29,
-      "book_pct": 38.2,
+      "book_pct": 37.2,
       "showed": 3,
       "show_pct": 10.3,
       "qualified": 7,
