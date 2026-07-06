@@ -3,20 +3,20 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1535,
-    "booked": 164,
-    "showed": 47,
-    "qualified": 56,
-    "closed": 10,
-    "revenue": 77970.0
+    "booked": 165,
+    "showed": 48,
+    "qualified": 58,
+    "closed": 12,
+    "revenue": 92064.0
   },
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1423,
-      "booked": 109,
-      "showed": 32,
-      "qualified": 36,
-      "closed": 7,
-      "revenue": 53979.0
+      "booked": 110,
+      "showed": 33,
+      "qualified": 38,
+      "closed": 9,
+      "revenue": 68073.0
     },
     "EXTERNAL": {
       "leads_created": 33,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 30,
-      "booked": 47,
-      "book_pct": 156.7,
-      "showed": 8,
-      "show_pct": 17.0,
-      "qualified": 11,
-      "qual_pct": 23.4,
-      "closed": 2,
-      "cw_pct": 4.3,
-      "revenue": 11994.0
-    },
     "Unknown (Needs Review)": {
       "leads_created": 78,
       "booked": 29,
@@ -71,6 +59,30 @@
       "closed": 3,
       "cw_pct": 15.0,
       "revenue": 23991.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 2,
+      "book_pct": 66.7,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 30,
+      "booked": 48,
+      "book_pct": 160.0,
+      "showed": 9,
+      "show_pct": 18.8,
+      "qualified": 13,
+      "qual_pct": 27.1,
+      "closed": 4,
+      "cw_pct": 8.3,
+      "revenue": 26088.0
     },
     "Website": {
       "leads_created": 12,
@@ -116,18 +128,6 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 2,
-      "book_pct": 66.7,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 0,
-      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
