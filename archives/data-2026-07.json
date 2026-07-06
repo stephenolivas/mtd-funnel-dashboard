@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1525,
     "booked": 163,
-    "showed": 46,
+    "showed": 48,
     "qualified": 57,
     "closed": 9,
     "revenue": 71973.0
@@ -13,7 +13,7 @@
     "IN-HOUSE": {
       "leads_created": 1420,
       "booked": 109,
-      "showed": 31,
+      "showed": 33,
       "qualified": 37,
       "closed": 6,
       "revenue": 47982.0
@@ -40,25 +40,13 @@
       "leads_created": 27,
       "booked": 47,
       "book_pct": 174.1,
-      "showed": 7,
-      "show_pct": 14.9,
+      "showed": 8,
+      "show_pct": 17.0,
       "qualified": 11,
       "qual_pct": 23.4,
       "closed": 2,
       "cw_pct": 4.3,
       "revenue": 11994.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1271,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 10,
-      "show_pct": 43.5,
-      "qualified": 11,
-      "qual_pct": 47.8,
-      "closed": 2,
-      "cw_pct": 8.7,
-      "revenue": 20994.0
     },
     "YouTube": {
       "leads_created": 14,
@@ -71,6 +59,30 @@
       "closed": 1,
       "cw_pct": 12.5,
       "revenue": 5997.0
+    },
+    "Website": {
+      "leads_created": 12,
+      "booked": 20,
+      "book_pct": 166.7,
+      "showed": 9,
+      "show_pct": 45.0,
+      "qualified": 7,
+      "qual_pct": 35.0,
+      "closed": 1,
+      "cw_pct": 5.0,
+      "revenue": 8997.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1271,
+      "booked": 23,
+      "book_pct": 1.8,
+      "showed": 10,
+      "show_pct": 43.5,
+      "qualified": 11,
+      "qual_pct": 47.8,
+      "closed": 2,
+      "cw_pct": 8.7,
+      "revenue": 20994.0
     },
     "Instagram": {
       "leads_created": 26,
@@ -95,18 +107,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 12,
-      "booked": 20,
-      "book_pct": 166.7,
-      "showed": 8,
-      "show_pct": 40.0,
-      "qualified": 7,
-      "qual_pct": 35.0,
-      "closed": 1,
-      "cw_pct": 5.0,
-      "revenue": 8997.0
     },
     "Anthony X": {
       "leads_created": 1,
