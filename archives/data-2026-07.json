@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 23,
+      "booked": 33,
+      "book_pct": 143.5,
+      "showed": 7,
+      "show_pct": 21.2,
+      "qualified": 11,
+      "qual_pct": 33.3,
+      "closed": 1,
+      "cw_pct": 3.0,
+      "revenue": 5997.0
+    },
+    "Website": {
+      "leads_created": 11,
+      "booked": 17,
+      "book_pct": 154.5,
+      "showed": 6,
+      "show_pct": 35.3,
+      "qualified": 6,
+      "qual_pct": 35.3,
+      "closed": 1,
+      "cw_pct": 5.9,
+      "revenue": 8997.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 67,
       "booked": 27,
@@ -72,18 +96,6 @@
       "cw_pct": 33.3,
       "revenue": 5997.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 23,
-      "booked": 33,
-      "book_pct": 143.5,
-      "showed": 7,
-      "show_pct": 21.2,
-      "qualified": 11,
-      "qual_pct": 33.3,
-      "closed": 1,
-      "cw_pct": 3.0,
-      "revenue": 5997.0
-    },
     "Google Ads": {
       "leads_created": 1,
       "booked": 1,
@@ -107,18 +119,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 11,
-      "booked": 17,
-      "book_pct": 154.5,
-      "showed": 6,
-      "show_pct": 35.3,
-      "qualified": 6,
-      "qual_pct": 35.3,
-      "closed": 1,
-      "cw_pct": 5.9,
-      "revenue": 8997.0
     },
     "VSL": {
       "leads_created": 5,
