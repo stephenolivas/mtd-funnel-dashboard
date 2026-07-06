@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1412,
+      "leads_created": 1415,
       "booked": 109,
       "showed": 28,
       "qualified": 35,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 72,
+      "leads_created": 69,
       "booked": 29,
       "showed": 4,
       "qualified": 8,
@@ -36,10 +36,22 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 24,
+      "booked": 47,
+      "book_pct": 195.8,
+      "showed": 7,
+      "show_pct": 14.9,
+      "qualified": 12,
+      "qual_pct": 25.5,
+      "closed": 1,
+      "cw_pct": 2.1,
+      "revenue": 5997.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 72,
+      "leads_created": 69,
       "booked": 29,
-      "book_pct": 40.3,
+      "book_pct": 42.0,
       "showed": 4,
       "show_pct": 13.8,
       "qualified": 8,
@@ -61,9 +73,9 @@
       "revenue": 23991.0
     },
     "YouTube": {
-      "leads_created": 13,
+      "leads_created": 15,
       "booked": 8,
-      "book_pct": 61.5,
+      "book_pct": 53.3,
       "showed": 1,
       "show_pct": 12.5,
       "qualified": 2,
@@ -120,18 +132,6 @@
       "cw_pct": 5.6,
       "revenue": 8997.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 24,
-      "booked": 47,
-      "book_pct": 195.8,
-      "showed": 7,
-      "show_pct": 14.9,
-      "qualified": 12,
-      "qual_pct": 25.5,
-      "closed": 1,
-      "cw_pct": 2.1,
-      "revenue": 5997.0
-    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 1,
@@ -157,9 +157,9 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "leads_created": 82,
+      "leads_created": 83,
       "booked": 8,
-      "book_pct": 9.8,
+      "book_pct": 9.6,
       "showed": 2,
       "show_pct": 25.0,
       "qualified": 2,
