@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1516,
-    "booked": 160,
+    "booked": 161,
     "showed": 44,
     "qualified": 56,
     "closed": 7,
@@ -28,7 +28,7 @@
     },
     "UNCATEGORIZED": {
       "leads_created": 71,
-      "booked": 29,
+      "booked": 30,
       "showed": 4,
       "qualified": 8,
       "closed": 0,
@@ -36,17 +36,29 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 24,
-      "booked": 46,
-      "book_pct": 191.7,
+    "Instagram": {
+      "leads_created": 25,
+      "booked": 19,
+      "book_pct": 76.0,
       "showed": 7,
-      "show_pct": 15.2,
-      "qualified": 12,
-      "qual_pct": 26.1,
-      "closed": 1,
-      "cw_pct": 2.2,
-      "revenue": 5997.0
+      "show_pct": 36.8,
+      "qualified": 7,
+      "qual_pct": 36.8,
+      "closed": 3,
+      "cw_pct": 15.8,
+      "revenue": 23991.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 71,
+      "booked": 30,
+      "book_pct": 42.3,
+      "showed": 4,
+      "show_pct": 13.3,
+      "qualified": 8,
+      "qual_pct": 26.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 11,
@@ -60,30 +72,6 @@
       "cw_pct": 5.6,
       "revenue": 8997.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 71,
-      "booked": 29,
-      "book_pct": 40.8,
-      "showed": 4,
-      "show_pct": 13.8,
-      "qualified": 8,
-      "qual_pct": 27.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 25,
-      "booked": 19,
-      "book_pct": 76.0,
-      "showed": 7,
-      "show_pct": 36.8,
-      "qualified": 7,
-      "qual_pct": 36.8,
-      "closed": 3,
-      "cw_pct": 15.8,
-      "revenue": 23991.0
-    },
     "Internal Webinar": {
       "leads_created": 1272,
       "booked": 23,
@@ -95,6 +83,18 @@
       "closed": 1,
       "cw_pct": 4.3,
       "revenue": 14997.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 24,
+      "booked": 46,
+      "book_pct": 191.7,
+      "showed": 7,
+      "show_pct": 15.2,
+      "qualified": 12,
+      "qual_pct": 26.1,
+      "closed": 1,
+      "cw_pct": 2.2,
+      "revenue": 5997.0
     },
     "Meta Ads": {
       "leads_created": 83,
