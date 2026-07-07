@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1565,
-    "booked": 180,
+    "leads_created": 1568,
+    "booked": 181,
     "showed": 59,
     "qualified": 72,
     "closed": 13,
@@ -11,8 +11,8 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1460,
-      "booked": 136,
+      "leads_created": 1461,
+      "booked": 137,
       "showed": 40,
       "qualified": 50,
       "closed": 10,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 69,
+      "leads_created": 71,
       "booked": 16,
       "showed": 3,
       "qualified": 5,
@@ -37,15 +37,15 @@
   },
   "funnels": {
     "Reactivation Scrapers": {
-      "leads_created": 35,
-      "booked": 54,
-      "book_pct": 154.3,
+      "leads_created": 36,
+      "booked": 55,
+      "book_pct": 152.8,
       "showed": 10,
-      "show_pct": 18.5,
+      "show_pct": 18.2,
       "qualified": 16,
-      "qual_pct": 29.6,
+      "qual_pct": 29.1,
       "closed": 4,
-      "cw_pct": 7.4,
+      "cw_pct": 7.3,
       "revenue": 26088.0
     },
     "Website": {
@@ -59,6 +59,18 @@
       "closed": 2,
       "cw_pct": 7.1,
       "revenue": 14994.0
+    },
+    "YouTube": {
+      "leads_created": 22,
+      "booked": 13,
+      "book_pct": 59.1,
+      "showed": 4,
+      "show_pct": 30.8,
+      "qualified": 5,
+      "qual_pct": 38.5,
+      "closed": 1,
+      "cw_pct": 7.7,
+      "revenue": 5997.0
     },
     "Instagram": {
       "leads_created": 32,
@@ -96,18 +108,6 @@
       "cw_pct": 25.0,
       "revenue": 6897.0
     },
-    "YouTube": {
-      "leads_created": 22,
-      "booked": 13,
-      "book_pct": 59.1,
-      "showed": 4,
-      "show_pct": 30.8,
-      "qualified": 5,
-      "qual_pct": 38.5,
-      "closed": 1,
-      "cw_pct": 7.7,
-      "revenue": 5997.0
-    },
     "Internal Webinar": {
       "leads_created": 1265,
       "booked": 23,
@@ -121,9 +121,9 @@
       "revenue": 20994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 69,
+      "leads_created": 71,
       "booked": 16,
-      "book_pct": 23.2,
+      "book_pct": 22.5,
       "showed": 3,
       "show_pct": 18.8,
       "qualified": 5,
