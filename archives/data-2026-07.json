@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 31,
-      "booked": 48,
-      "book_pct": 154.8,
-      "showed": 10,
-      "show_pct": 20.8,
-      "qualified": 15,
-      "qual_pct": 31.2,
-      "closed": 4,
-      "cw_pct": 8.3,
-      "revenue": 26088.0
-    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 2,
@@ -71,6 +59,18 @@
       "closed": 3,
       "cw_pct": 15.8,
       "revenue": 23991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 31,
+      "booked": 48,
+      "book_pct": 154.8,
+      "showed": 10,
+      "show_pct": 20.8,
+      "qualified": 15,
+      "qual_pct": 31.2,
+      "closed": 4,
+      "cw_pct": 8.3,
+      "revenue": 26088.0
     },
     "YouTube": {
       "leads_created": 18,
