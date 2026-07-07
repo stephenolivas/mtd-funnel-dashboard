@@ -36,30 +36,6 @@
     }
   },
   "funnels": {
-    "VSL": {
-      "leads_created": 7,
-      "booked": 2,
-      "book_pct": 28.6,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 31,
-      "booked": 55,
-      "book_pct": 177.4,
-      "showed": 10,
-      "show_pct": 18.2,
-      "qualified": 16,
-      "qual_pct": 29.1,
-      "closed": 4,
-      "cw_pct": 7.3,
-      "revenue": 26088.0
-    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 5,
@@ -71,6 +47,18 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 31,
+      "booked": 23,
+      "book_pct": 74.2,
+      "showed": 10,
+      "show_pct": 43.5,
+      "qualified": 10,
+      "qual_pct": 43.5,
+      "closed": 3,
+      "cw_pct": 13.0,
+      "revenue": 23991.0
     },
     "YouTube": {
       "leads_created": 20,
@@ -84,6 +72,18 @@
       "cw_pct": 7.7,
       "revenue": 5997.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 31,
+      "booked": 55,
+      "book_pct": 177.4,
+      "showed": 10,
+      "show_pct": 18.2,
+      "qualified": 16,
+      "qual_pct": 29.1,
+      "closed": 4,
+      "cw_pct": 7.3,
+      "revenue": 26088.0
+    },
     "Website": {
       "leads_created": 22,
       "booked": 28,
@@ -96,17 +96,17 @@
       "cw_pct": 7.1,
       "revenue": 14994.0
     },
-    "Instagram": {
-      "leads_created": 31,
-      "booked": 23,
-      "book_pct": 74.2,
-      "showed": 10,
-      "show_pct": 43.5,
-      "qualified": 10,
-      "qual_pct": 43.5,
-      "closed": 3,
-      "cw_pct": 13.0,
-      "revenue": 23991.0
+    "VSL": {
+      "leads_created": 7,
+      "booked": 2,
+      "book_pct": 28.6,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Internal Webinar": {
       "leads_created": 1269,
