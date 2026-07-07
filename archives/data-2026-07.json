@@ -48,6 +48,30 @@
       "cw_pct": 7.4,
       "revenue": 14994.0
     },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 2,
+      "book_pct": 66.7,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 29,
+      "booked": 19,
+      "book_pct": 65.5,
+      "showed": 10,
+      "show_pct": 52.6,
+      "qualified": 10,
+      "qual_pct": 52.6,
+      "closed": 3,
+      "cw_pct": 15.8,
+      "revenue": 23991.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 30,
       "booked": 47,
@@ -95,30 +119,6 @@
       "closed": 1,
       "cw_pct": 11.1,
       "revenue": 5997.0
-    },
-    "Instagram": {
-      "leads_created": 29,
-      "booked": 19,
-      "book_pct": 65.5,
-      "showed": 10,
-      "show_pct": 52.6,
-      "qualified": 10,
-      "qual_pct": 52.6,
-      "closed": 3,
-      "cw_pct": 15.8,
-      "revenue": 23991.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 2,
-      "book_pct": 66.7,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 2,
