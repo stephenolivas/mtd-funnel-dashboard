@@ -48,18 +48,6 @@
       "cw_pct": 7.7,
       "revenue": 5997.0
     },
-    "Meta Ads": {
-      "leads_created": 91,
-      "booked": 13,
-      "book_pct": 14.3,
-      "showed": 3,
-      "show_pct": 23.1,
-      "qualified": 3,
-      "qual_pct": 23.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "leads_created": 31,
       "booked": 23,
@@ -71,6 +59,18 @@
       "closed": 3,
       "cw_pct": 13.0,
       "revenue": 23991.0
+    },
+    "Meta Ads": {
+      "leads_created": 91,
+      "booked": 13,
+      "book_pct": 14.3,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 3,
+      "qual_pct": 23.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "LTF - In-House": {
       "leads_created": 3,
