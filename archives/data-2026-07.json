@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 90,
+      "booked": 13,
+      "book_pct": 14.4,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 3,
+      "qual_pct": 23.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "YouTube": {
       "leads_created": 20,
       "booked": 13,
@@ -116,18 +128,6 @@
       "show_pct": 18.8,
       "qualified": 5,
       "qual_pct": 31.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 90,
-      "booked": 13,
-      "book_pct": 14.4,
-      "showed": 3,
-      "show_pct": 23.1,
-      "qualified": 3,
-      "qual_pct": 23.1,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
