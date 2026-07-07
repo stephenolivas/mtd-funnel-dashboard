@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1442,
+      "leads_created": 1441,
       "booked": 118,
       "showed": 38,
       "qualified": 47,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 61,
+      "leads_created": 62,
       "booked": 16,
       "showed": 3,
       "qualified": 5,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 18,
+      "booked": 9,
+      "book_pct": 50.0,
+      "showed": 3,
+      "show_pct": 33.3,
+      "qualified": 4,
+      "qual_pct": 44.4,
+      "closed": 1,
+      "cw_pct": 11.1,
+      "revenue": 5997.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 31,
+      "booked": 48,
+      "book_pct": 154.8,
+      "showed": 10,
+      "show_pct": 20.8,
+      "qualified": 15,
+      "qual_pct": 31.2,
+      "closed": 4,
+      "cw_pct": 8.3,
+      "revenue": 26088.0
+    },
     "Website": {
       "leads_created": 22,
       "booked": 27,
@@ -72,32 +96,8 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 31,
-      "booked": 48,
-      "book_pct": 154.8,
-      "showed": 10,
-      "show_pct": 20.8,
-      "qualified": 15,
-      "qual_pct": 31.2,
-      "closed": 4,
-      "cw_pct": 8.3,
-      "revenue": 26088.0
-    },
-    "YouTube": {
-      "leads_created": 18,
-      "booked": 9,
-      "book_pct": 50.0,
-      "showed": 3,
-      "show_pct": 33.3,
-      "qualified": 4,
-      "qual_pct": 44.4,
-      "closed": 1,
-      "cw_pct": 11.1,
-      "revenue": 5997.0
-    },
     "Internal Webinar": {
-      "leads_created": 1270,
+      "leads_created": 1269,
       "booked": 23,
       "book_pct": 1.8,
       "showed": 10,
@@ -109,9 +109,9 @@
       "revenue": 20994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 61,
+      "leads_created": 62,
       "booked": 16,
-      "book_pct": 26.2,
+      "book_pct": 25.8,
       "showed": 3,
       "show_pct": 18.8,
       "qualified": 5,
