@@ -2,19 +2,19 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1527,
-    "booked": 157,
+    "leads_created": 1528,
+    "booked": 156,
     "showed": 54,
-    "qualified": 67,
+    "qualified": 66,
     "closed": 12,
     "revenue": 92064.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1435,
-      "booked": 116,
+      "leads_created": 1436,
+      "booked": 115,
       "showed": 36,
-      "qualified": 46,
+      "qualified": 45,
       "closed": 9,
       "revenue": 68073.0
     },
@@ -38,27 +38,27 @@
   "funnels": {
     "Reactivation Scrapers": {
       "leads_created": 30,
-      "booked": 48,
-      "book_pct": 160.0,
+      "booked": 47,
+      "book_pct": 156.7,
       "showed": 10,
-      "show_pct": 20.8,
-      "qualified": 16,
-      "qual_pct": 33.3,
+      "show_pct": 21.3,
+      "qualified": 15,
+      "qual_pct": 31.9,
       "closed": 4,
-      "cw_pct": 8.3,
+      "cw_pct": 8.5,
       "revenue": 26088.0
     },
-    "Website": {
-      "leads_created": 22,
-      "booked": 27,
-      "book_pct": 122.7,
-      "showed": 10,
-      "show_pct": 37.0,
-      "qualified": 11,
-      "qual_pct": 40.7,
-      "closed": 2,
-      "cw_pct": 7.4,
-      "revenue": 14994.0
+    "YouTube": {
+      "leads_created": 18,
+      "booked": 9,
+      "book_pct": 50.0,
+      "showed": 3,
+      "show_pct": 33.3,
+      "qualified": 4,
+      "qual_pct": 44.4,
+      "closed": 1,
+      "cw_pct": 11.1,
+      "revenue": 5997.0
     },
     "Instagram": {
       "leads_created": 29,
@@ -84,6 +84,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Website": {
+      "leads_created": 22,
+      "booked": 27,
+      "book_pct": 122.7,
+      "showed": 10,
+      "show_pct": 37.0,
+      "qualified": 11,
+      "qual_pct": 40.7,
+      "closed": 2,
+      "cw_pct": 7.4,
+      "revenue": 14994.0
+    },
     "Linkedin": {
       "leads_created": 2,
       "booked": 3,
@@ -97,9 +109,9 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "leads_created": 85,
+      "leads_created": 86,
       "booked": 8,
-      "book_pct": 9.4,
+      "book_pct": 9.3,
       "showed": 3,
       "show_pct": 37.5,
       "qualified": 3,
@@ -119,18 +131,6 @@
       "closed": 2,
       "cw_pct": 10.0,
       "revenue": 20994.0
-    },
-    "YouTube": {
-      "leads_created": 18,
-      "booked": 9,
-      "book_pct": 50.0,
-      "showed": 3,
-      "show_pct": 33.3,
-      "qualified": 4,
-      "qual_pct": 44.4,
-      "closed": 1,
-      "cw_pct": 11.1,
-      "revenue": 5997.0
     },
     "Anthony X": {
       "leads_created": 1,
