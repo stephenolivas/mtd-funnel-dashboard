@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 116,
-      "booked": 17,
-      "book_pct": 14.7,
-      "showed": 4,
-      "show_pct": 23.5,
-      "qualified": 4,
-      "qual_pct": 23.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "leads_created": 1264,
       "booked": 23,
@@ -60,17 +48,17 @@
       "cw_pct": 8.7,
       "revenue": 20994.0
     },
-    "YouTube": {
-      "leads_created": 26,
-      "booked": 16,
-      "book_pct": 61.5,
-      "showed": 4,
-      "show_pct": 25.0,
-      "qualified": 7,
-      "qual_pct": 43.8,
-      "closed": 1,
-      "cw_pct": 6.2,
-      "revenue": 5997.0
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 5,
+      "book_pct": 166.7,
+      "showed": 3,
+      "show_pct": 60.0,
+      "qualified": 3,
+      "qual_pct": 60.0,
+      "closed": 2,
+      "cw_pct": 40.0,
+      "revenue": 12894.0
     },
     "Reactivation Scrapers": {
       "leads_created": 36,
@@ -83,6 +71,30 @@
       "closed": 4,
       "cw_pct": 5.8,
       "revenue": 26088.0
+    },
+    "Meta Ads": {
+      "leads_created": 116,
+      "booked": 17,
+      "book_pct": 14.7,
+      "showed": 4,
+      "show_pct": 23.5,
+      "qualified": 4,
+      "qual_pct": 23.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "leads_created": 26,
+      "booked": 16,
+      "book_pct": 61.5,
+      "showed": 4,
+      "show_pct": 25.0,
+      "qualified": 7,
+      "qual_pct": 43.8,
+      "closed": 1,
+      "cw_pct": 6.2,
+      "revenue": 5997.0
     },
     "Instagram": {
       "leads_created": 35,
@@ -107,18 +119,6 @@
       "closed": 2,
       "cw_pct": 6.5,
       "revenue": 14994.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 5,
-      "book_pct": 166.7,
-      "showed": 3,
-      "show_pct": 60.0,
-      "qualified": 3,
-      "qual_pct": 60.0,
-      "closed": 2,
-      "cw_pct": 40.0,
-      "revenue": 12894.0
     },
     "Linkedin": {
       "leads_created": 2,
