@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 114,
+      "booked": 13,
+      "book_pct": 11.4,
+      "showed": 4,
+      "show_pct": 30.8,
+      "qualified": 4,
+      "qual_pct": 30.8,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 36,
       "booked": 54,
@@ -71,18 +83,6 @@
       "closed": 2,
       "cw_pct": 8.7,
       "revenue": 20994.0
-    },
-    "Meta Ads": {
-      "leads_created": 114,
-      "booked": 13,
-      "book_pct": 11.4,
-      "showed": 4,
-      "show_pct": 30.8,
-      "qualified": 4,
-      "qual_pct": 30.8,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "LTF - In-House": {
       "leads_created": 3,
