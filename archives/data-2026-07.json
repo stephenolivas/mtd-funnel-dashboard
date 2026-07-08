@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1586,
-    "booked": 221,
+    "booked": 220,
     "showed": 63,
     "qualified": 76,
     "closed": 14,
@@ -28,7 +28,7 @@
     },
     "UNCATEGORIZED": {
       "leads_created": 69,
-      "booked": 23,
+      "booked": 22,
       "showed": 3,
       "qualified": 5,
       "closed": 0,
@@ -47,18 +47,6 @@
       "closed": 1,
       "cw_pct": 6.2,
       "revenue": 5997.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 69,
-      "booked": 23,
-      "book_pct": 33.3,
-      "showed": 3,
-      "show_pct": 13.0,
-      "qualified": 5,
-      "qual_pct": 21.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Reactivation Scrapers": {
       "leads_created": 36,
@@ -140,6 +128,18 @@
       "show_pct": 66.7,
       "qualified": 3,
       "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 69,
+      "booked": 22,
+      "book_pct": 31.9,
+      "showed": 3,
+      "show_pct": 13.6,
+      "qualified": 5,
+      "qual_pct": 22.7,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
