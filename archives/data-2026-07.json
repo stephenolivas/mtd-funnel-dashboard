@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 4,
-      "book_pct": 133.3,
-      "showed": 3,
-      "show_pct": 75.0,
-      "qualified": 3,
-      "qual_pct": 75.0,
-      "closed": 1,
-      "cw_pct": 25.0,
-      "revenue": 6897.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 36,
       "booked": 54,
@@ -60,18 +48,6 @@
       "cw_pct": 7.4,
       "revenue": 26088.0
     },
-    "Meta Ads": {
-      "leads_created": 109,
-      "booked": 13,
-      "book_pct": 11.9,
-      "showed": 3,
-      "show_pct": 23.1,
-      "qualified": 3,
-      "qual_pct": 23.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "YouTube": {
       "leads_created": 23,
       "booked": 12,
@@ -83,6 +59,30 @@
       "closed": 1,
       "cw_pct": 8.3,
       "revenue": 5997.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 4,
+      "book_pct": 133.3,
+      "showed": 3,
+      "show_pct": 75.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 6897.0
+    },
+    "Meta Ads": {
+      "leads_created": 109,
+      "booked": 13,
+      "book_pct": 11.9,
+      "showed": 3,
+      "show_pct": 23.1,
+      "qualified": 3,
+      "qual_pct": 23.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Anthony X": {
       "leads_created": 1,
