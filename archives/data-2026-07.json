@@ -48,6 +48,18 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Website": {
+      "leads_created": 24,
+      "booked": 27,
+      "book_pct": 112.5,
+      "showed": 10,
+      "show_pct": 37.0,
+      "qualified": 11,
+      "qual_pct": 40.7,
+      "closed": 2,
+      "cw_pct": 7.4,
+      "revenue": 14994.0
+    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 4,
@@ -83,18 +95,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 24,
-      "booked": 27,
-      "book_pct": 112.5,
-      "showed": 10,
-      "show_pct": 37.0,
-      "qualified": 11,
-      "qual_pct": 40.7,
-      "closed": 2,
-      "cw_pct": 7.4,
-      "revenue": 14994.0
     },
     "Reactivation Scrapers": {
       "leads_created": 36,
