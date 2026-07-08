@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 35,
+      "booked": 29,
+      "book_pct": 82.9,
+      "showed": 11,
+      "show_pct": 37.9,
+      "qualified": 11,
+      "qual_pct": 37.9,
+      "closed": 3,
+      "cw_pct": 10.3,
+      "revenue": 23991.0
+    },
     "Website": {
       "leads_created": 24,
       "booked": 31,
@@ -131,18 +143,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 35,
-      "booked": 29,
-      "book_pct": 82.9,
-      "showed": 11,
-      "show_pct": 37.9,
-      "qualified": 11,
-      "qual_pct": 37.9,
-      "closed": 3,
-      "cw_pct": 10.3,
-      "revenue": 23991.0
     },
     "Anthony X": {
       "leads_created": 1,
