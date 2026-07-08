@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1575,
+    "leads_created": 1579,
     "booked": 179,
     "showed": 61,
     "qualified": 76,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1468,
+      "leads_created": 1471,
       "booked": 135,
       "showed": 42,
       "qualified": 54,
@@ -27,7 +27,7 @@
       "revenue": 23991.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 69,
+      "leads_created": 70,
       "booked": 16,
       "showed": 3,
       "qualified": 5,
@@ -49,9 +49,9 @@
       "revenue": 12894.0
     },
     "YouTube": {
-      "leads_created": 23,
+      "leads_created": 24,
       "booked": 12,
-      "book_pct": 52.2,
+      "book_pct": 50.0,
       "showed": 4,
       "show_pct": 33.3,
       "qualified": 7,
@@ -85,9 +85,9 @@
       "revenue": 0.0
     },
     "Meta Ads": {
-      "leads_created": 109,
+      "leads_created": 111,
       "booked": 13,
-      "book_pct": 11.9,
+      "book_pct": 11.7,
       "showed": 4,
       "show_pct": 30.8,
       "qualified": 4,
@@ -109,9 +109,9 @@
       "revenue": 14994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 69,
+      "leads_created": 70,
       "booked": 16,
-      "book_pct": 23.2,
+      "book_pct": 22.9,
       "showed": 3,
       "show_pct": 18.8,
       "qualified": 5,
