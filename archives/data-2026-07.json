@@ -48,30 +48,6 @@
       "cw_pct": 18.2,
       "revenue": 29988.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 78,
-      "booked": 27,
-      "book_pct": 34.6,
-      "showed": 6,
-      "show_pct": 22.2,
-      "qualified": 8,
-      "qual_pct": 29.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 42,
-      "booked": 31,
-      "book_pct": 73.8,
-      "showed": 16,
-      "show_pct": 51.6,
-      "qualified": 16,
-      "qual_pct": 51.6,
-      "closed": 3,
-      "cw_pct": 9.7,
-      "revenue": 23991.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 40,
       "booked": 76,
@@ -96,6 +72,42 @@
       "cw_pct": 6.5,
       "revenue": 14994.0
     },
+    "Meta Ads": {
+      "leads_created": 134,
+      "booked": 20,
+      "book_pct": 14.9,
+      "showed": 5,
+      "show_pct": 25.0,
+      "qualified": 5,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 78,
+      "booked": 27,
+      "book_pct": 34.6,
+      "showed": 6,
+      "show_pct": 22.2,
+      "qualified": 8,
+      "qual_pct": 29.6,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 42,
+      "booked": 31,
+      "book_pct": 73.8,
+      "showed": 16,
+      "show_pct": 51.6,
+      "qualified": 16,
+      "qual_pct": 51.6,
+      "closed": 3,
+      "cw_pct": 9.7,
+      "revenue": 23991.0
+    },
     "Internal Webinar": {
       "leads_created": 1263,
       "booked": 23,
@@ -116,18 +128,6 @@
       "show_pct": 100.0,
       "qualified": 2,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 134,
-      "booked": 20,
-      "book_pct": 14.9,
-      "showed": 5,
-      "show_pct": 25.0,
-      "qualified": 5,
-      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
