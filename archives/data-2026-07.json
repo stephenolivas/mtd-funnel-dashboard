@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1492,
+      "leads_created": 1494,
       "booked": 165,
       "showed": 57,
       "qualified": 66,
@@ -19,7 +19,7 @@
       "revenue": 98961.0
     },
     "EXTERNAL": {
-      "leads_created": 43,
+      "leads_created": 44,
       "booked": 33,
       "showed": 19,
       "qualified": 20,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 76,
+      "leads_created": 73,
       "booked": 22,
       "showed": 6,
       "qualified": 8,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Internal Webinar": {
-      "leads_created": 1264,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 9,
-      "show_pct": 39.1,
-      "qualified": 11,
-      "qual_pct": 47.8,
-      "closed": 2,
-      "cw_pct": 8.7,
-      "revenue": 20994.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 39,
       "booked": 71,
@@ -60,10 +48,22 @@
       "cw_pct": 5.6,
       "revenue": 26088.0
     },
+    "Internal Webinar": {
+      "leads_created": 1264,
+      "booked": 23,
+      "book_pct": 1.8,
+      "showed": 9,
+      "show_pct": 39.1,
+      "qualified": 11,
+      "qual_pct": 47.8,
+      "closed": 2,
+      "cw_pct": 8.7,
+      "revenue": 20994.0
+    },
     "Instagram": {
-      "leads_created": 40,
+      "leads_created": 41,
       "booked": 28,
-      "book_pct": 70.0,
+      "book_pct": 68.3,
       "showed": 15,
       "show_pct": 53.6,
       "qualified": 15,
@@ -97,9 +97,9 @@
       "revenue": 14994.0
     },
     "Meta Ads": {
-      "leads_created": 126,
+      "leads_created": 128,
       "booked": 17,
-      "book_pct": 13.5,
+      "book_pct": 13.3,
       "showed": 5,
       "show_pct": 29.4,
       "qualified": 5,
@@ -109,9 +109,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 76,
+      "leads_created": 73,
       "booked": 22,
-      "book_pct": 28.9,
+      "book_pct": 30.1,
       "showed": 6,
       "show_pct": 27.3,
       "qualified": 8,
