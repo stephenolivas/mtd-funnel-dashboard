@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1610,
-    "booked": 220,
+    "leads_created": 1611,
+    "booked": 221,
     "showed": 83,
     "qualified": 95,
     "closed": 17,
@@ -11,8 +11,8 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1490,
-      "booked": 164,
+      "leads_created": 1491,
+      "booked": 165,
       "showed": 57,
       "qualified": 66,
       "closed": 13,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 39,
+      "booked": 71,
+      "book_pct": 182.1,
+      "showed": 16,
+      "show_pct": 22.5,
+      "qualified": 22,
+      "qual_pct": 31.0,
+      "closed": 4,
+      "cw_pct": 5.6,
+      "revenue": 26088.0
+    },
     "Instagram": {
       "leads_created": 40,
       "booked": 28,
@@ -46,6 +58,18 @@
       "qual_pct": 53.6,
       "closed": 3,
       "cw_pct": 10.7,
+      "revenue": 23991.0
+    },
+    "YouTube": {
+      "leads_created": 27,
+      "booked": 16,
+      "book_pct": 59.3,
+      "showed": 7,
+      "show_pct": 43.8,
+      "qualified": 10,
+      "qual_pct": 62.5,
+      "closed": 3,
+      "cw_pct": 18.8,
       "revenue": 23991.0
     },
     "Website": {
@@ -60,18 +84,6 @@
       "cw_pct": 6.5,
       "revenue": 14994.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 38,
-      "booked": 70,
-      "book_pct": 184.2,
-      "showed": 16,
-      "show_pct": 22.9,
-      "qualified": 22,
-      "qual_pct": 31.4,
-      "closed": 4,
-      "cw_pct": 5.7,
-      "revenue": 26088.0
-    },
     "Meta Ads": {
       "leads_created": 125,
       "booked": 17,
@@ -83,18 +95,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "YouTube": {
-      "leads_created": 27,
-      "booked": 16,
-      "book_pct": 59.3,
-      "showed": 7,
-      "show_pct": 43.8,
-      "qualified": 10,
-      "qual_pct": 62.5,
-      "closed": 3,
-      "cw_pct": 18.8,
-      "revenue": 23991.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 75,
