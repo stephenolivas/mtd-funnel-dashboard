@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1639,
+    "leads_created": 1640,
     "booked": 249,
     "showed": 103,
     "qualified": 109,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 73,
+      "leads_created": 74,
       "booked": 19,
       "showed": 3,
       "qualified": 5,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 46,
+      "booked": 77,
+      "book_pct": 167.4,
+      "showed": 25,
+      "show_pct": 32.5,
+      "qualified": 25,
+      "qual_pct": 32.5,
+      "closed": 6,
+      "cw_pct": 7.8,
+      "revenue": 38082.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1259,
+      "booked": 23,
+      "book_pct": 1.8,
+      "showed": 9,
+      "show_pct": 39.1,
+      "qualified": 11,
+      "qual_pct": 47.8,
+      "closed": 3,
+      "cw_pct": 13.0,
+      "revenue": 28994.0
+    },
     "YouTube": {
       "leads_created": 29,
       "booked": 23,
@@ -60,22 +84,10 @@
       "cw_pct": 8.6,
       "revenue": 23991.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 46,
-      "booked": 77,
-      "book_pct": 167.4,
-      "showed": 25,
-      "show_pct": 32.5,
-      "qualified": 25,
-      "qual_pct": 32.5,
-      "closed": 6,
-      "cw_pct": 7.8,
-      "revenue": 38082.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 73,
+      "leads_created": 74,
       "booked": 19,
-      "book_pct": 26.0,
+      "book_pct": 25.7,
       "showed": 3,
       "show_pct": 15.8,
       "qualified": 5,
@@ -95,18 +107,6 @@
       "closed": 2,
       "cw_pct": 5.4,
       "revenue": 14994.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1259,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 9,
-      "show_pct": 39.1,
-      "qualified": 11,
-      "qual_pct": 47.8,
-      "closed": 3,
-      "cw_pct": 13.0,
-      "revenue": 28994.0
     },
     "Meta Ads": {
       "leads_created": 142,
