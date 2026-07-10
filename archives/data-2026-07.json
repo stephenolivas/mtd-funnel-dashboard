@@ -15,16 +15,16 @@
       "booked": 188,
       "showed": 77,
       "qualified": 81,
-      "closed": 16,
-      "revenue": 119855.0
+      "closed": 18,
+      "revenue": 133949.0
     },
     "EXTERNAL": {
       "leads_created": 47,
       "booked": 41,
       "showed": 24,
       "qualified": 26,
-      "closed": 6,
-      "revenue": 43782.0
+      "closed": 4,
+      "revenue": 29688.0
     },
     "UNCATEGORIZED": {
       "leads_created": 78,
@@ -44,9 +44,9 @@
       "show_pct": 55.6,
       "qualified": 21,
       "qual_pct": 58.3,
-      "closed": 5,
-      "cw_pct": 13.9,
-      "revenue": 38085.0
+      "closed": 3,
+      "cw_pct": 8.3,
+      "revenue": 23991.0
     },
     "YouTube": {
       "leads_created": 30,
@@ -68,9 +68,9 @@
       "show_pct": 32.5,
       "qualified": 26,
       "qual_pct": 33.8,
-      "closed": 4,
-      "cw_pct": 5.2,
-      "revenue": 23988.0
+      "closed": 6,
+      "cw_pct": 7.8,
+      "revenue": 38082.0
     },
     "Website": {
       "leads_created": 29,
