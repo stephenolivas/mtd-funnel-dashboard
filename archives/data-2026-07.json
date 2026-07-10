@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1656,
+    "leads_created": 1659,
     "booked": 269,
     "showed": 110,
     "qualified": 118,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 79,
+      "leads_created": 82,
       "booked": 19,
       "showed": 3,
       "qualified": 5,
@@ -48,6 +48,18 @@
       "cw_pct": 12.5,
       "revenue": 28994.0
     },
+    "YouTube": {
+      "leads_created": 30,
+      "booked": 27,
+      "book_pct": 90.0,
+      "showed": 14,
+      "show_pct": 51.9,
+      "qualified": 15,
+      "qual_pct": 55.6,
+      "closed": 5,
+      "cw_pct": 18.5,
+      "revenue": 38985.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 49,
       "booked": 82,
@@ -60,6 +72,18 @@
       "cw_pct": 7.3,
       "revenue": 38082.0
     },
+    "Unknown (Needs Review)": {
+      "leads_created": 82,
+      "booked": 19,
+      "book_pct": 23.2,
+      "showed": 3,
+      "show_pct": 15.8,
+      "qualified": 5,
+      "qual_pct": 26.3,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "leads_created": 45,
       "booked": 41,
@@ -71,18 +95,6 @@
       "closed": 3,
       "cw_pct": 7.3,
       "revenue": 23991.0
-    },
-    "YouTube": {
-      "leads_created": 30,
-      "booked": 27,
-      "book_pct": 90.0,
-      "showed": 14,
-      "show_pct": 51.9,
-      "qualified": 15,
-      "qual_pct": 55.6,
-      "closed": 5,
-      "cw_pct": 18.5,
-      "revenue": 38985.0
     },
     "Meta Ads": {
       "leads_created": 149,
@@ -131,18 +143,6 @@
       "closed": 2,
       "cw_pct": 28.6,
       "revenue": 12894.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 79,
-      "booked": 19,
-      "book_pct": 24.1,
-      "showed": 3,
-      "show_pct": 15.8,
-      "qualified": 5,
-      "qual_pct": 26.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Google Ads": {
       "leads_created": 1,
