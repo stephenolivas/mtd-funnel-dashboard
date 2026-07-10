@@ -3,17 +3,17 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1660,
-    "booked": 266,
-    "showed": 135,
+    "booked": 265,
+    "showed": 136,
     "qualified": 127,
     "closed": 24,
     "revenue": 181231.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1530,
-      "booked": 200,
-      "showed": 100,
+      "leads_created": 1529,
+      "booked": 199,
+      "showed": 101,
       "qualified": 90,
       "closed": 20,
       "revenue": 151543.0
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 80,
+      "leads_created": 81,
       "booked": 20,
       "showed": 4,
       "qualified": 5,
@@ -49,76 +49,28 @@
       "revenue": 38082.0
     },
     "YouTube": {
-      "leads_created": 29,
-      "booked": 26,
-      "book_pct": 89.7,
+      "leads_created": 28,
+      "booked": 25,
+      "book_pct": 89.3,
       "showed": 18,
-      "show_pct": 69.2,
+      "show_pct": 72.0,
       "qualified": 16,
-      "qual_pct": 61.5,
+      "qual_pct": 64.0,
       "closed": 6,
-      "cw_pct": 23.1,
+      "cw_pct": 24.0,
       "revenue": 48482.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 7,
-      "book_pct": 233.3,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 5,
-      "qual_pct": 71.4,
-      "closed": 2,
-      "cw_pct": 28.6,
-      "revenue": 12894.0
-    },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 39,
-      "book_pct": 90.7,
-      "showed": 25,
-      "show_pct": 64.1,
-      "qualified": 25,
-      "qual_pct": 64.1,
-      "closed": 3,
-      "cw_pct": 7.7,
-      "revenue": 23991.0
-    },
-    "Anthony X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 29,
       "booked": 36,
       "book_pct": 124.1,
-      "showed": 20,
-      "show_pct": 55.6,
+      "showed": 21,
+      "show_pct": 58.3,
       "qualified": 17,
       "qual_pct": 47.2,
       "closed": 2,
       "cw_pct": 5.6,
       "revenue": 14994.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1255,
-      "booked": 22,
-      "book_pct": 1.8,
-      "showed": 8,
-      "show_pct": 36.4,
-      "qualified": 11,
-      "qual_pct": 50.0,
-      "closed": 4,
-      "cw_pct": 18.2,
-      "revenue": 37091.0
     },
     "Meta Ads": {
       "leads_created": 152,
@@ -132,10 +84,58 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Internal Webinar": {
+      "leads_created": 1255,
+      "booked": 22,
+      "book_pct": 1.8,
+      "showed": 8,
+      "show_pct": 36.4,
+      "qualified": 11,
+      "qual_pct": 50.0,
+      "closed": 4,
+      "cw_pct": 18.2,
+      "revenue": 37091.0
+    },
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 39,
+      "book_pct": 90.7,
+      "showed": 25,
+      "show_pct": 64.1,
+      "qualified": 25,
+      "qual_pct": 64.1,
+      "closed": 3,
+      "cw_pct": 7.7,
+      "revenue": 23991.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 7,
+      "book_pct": 233.3,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 5,
+      "qual_pct": 71.4,
+      "closed": 2,
+      "cw_pct": 28.6,
+      "revenue": 12894.0
+    },
+    "Anthony X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 80,
+      "leads_created": 81,
       "booked": 20,
-      "book_pct": 25.0,
+      "book_pct": 24.7,
       "showed": 4,
       "show_pct": 20.0,
       "qualified": 5,
