@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 44,
+      "booked": 36,
+      "book_pct": 81.8,
+      "showed": 20,
+      "show_pct": 55.6,
+      "qualified": 20,
+      "qual_pct": 55.6,
+      "closed": 3,
+      "cw_pct": 8.3,
+      "revenue": 23991.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 48,
       "booked": 77,
@@ -83,18 +95,6 @@
       "closed": 3,
       "cw_pct": 13.0,
       "revenue": 28994.0
-    },
-    "Instagram": {
-      "leads_created": 44,
-      "booked": 36,
-      "book_pct": 81.8,
-      "showed": 20,
-      "show_pct": 55.6,
-      "qualified": 20,
-      "qual_pct": 55.6,
-      "closed": 3,
-      "cw_pct": 8.3,
-      "revenue": 23991.0
     },
     "LTF - In-House": {
       "leads_created": 3,
