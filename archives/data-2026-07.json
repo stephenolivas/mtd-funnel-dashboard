@@ -3,24 +3,24 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1650,
-    "booked": 249,
-    "showed": 105,
-    "qualified": 113,
+    "booked": 268,
+    "showed": 108,
+    "qualified": 117,
     "closed": 22,
     "revenue": 163637.0
   },
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1522,
-      "booked": 188,
-      "showed": 77,
-      "qualified": 81,
+      "booked": 202,
+      "showed": 80,
+      "qualified": 85,
       "closed": 18,
       "revenue": 133949.0
     },
     "EXTERNAL": {
       "leads_created": 47,
-      "booked": 41,
+      "booked": 45,
       "showed": 24,
       "qualified": 26,
       "closed": 4,
@@ -36,28 +36,52 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 145,
+      "booked": 24,
+      "book_pct": 16.6,
+      "showed": 6,
+      "show_pct": 25.0,
+      "qualified": 6,
+      "qual_pct": 25.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1257,
+      "booked": 24,
+      "book_pct": 1.9,
+      "showed": 10,
+      "show_pct": 41.7,
+      "qualified": 12,
+      "qual_pct": 50.0,
+      "closed": 3,
+      "cw_pct": 12.5,
+      "revenue": 28994.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 49,
-      "booked": 77,
-      "book_pct": 157.1,
-      "showed": 25,
-      "show_pct": 32.5,
-      "qualified": 26,
-      "qual_pct": 33.8,
+      "booked": 82,
+      "book_pct": 167.3,
+      "showed": 27,
+      "show_pct": 32.9,
+      "qualified": 29,
+      "qual_pct": 35.4,
       "closed": 6,
-      "cw_pct": 7.8,
+      "cw_pct": 7.3,
       "revenue": 38082.0
     },
     "YouTube": {
       "leads_created": 30,
-      "booked": 23,
-      "book_pct": 76.7,
+      "booked": 27,
+      "book_pct": 90.0,
       "showed": 14,
-      "show_pct": 60.9,
+      "show_pct": 51.9,
       "qualified": 15,
-      "qual_pct": 65.2,
+      "qual_pct": 55.6,
       "closed": 5,
-      "cw_pct": 21.7,
+      "cw_pct": 18.5,
       "revenue": 38985.0
     },
     "Website": {
@@ -74,26 +98,26 @@
     },
     "Instagram": {
       "leads_created": 43,
-      "booked": 36,
-      "book_pct": 83.7,
+      "booked": 40,
+      "book_pct": 93.0,
       "showed": 20,
-      "show_pct": 55.6,
+      "show_pct": 50.0,
       "qualified": 21,
-      "qual_pct": 58.3,
+      "qual_pct": 52.5,
       "closed": 3,
-      "cw_pct": 8.3,
+      "cw_pct": 7.5,
       "revenue": 23991.0
     },
     "LTF - In-House": {
       "leads_created": 3,
-      "booked": 6,
-      "book_pct": 200.0,
+      "booked": 7,
+      "book_pct": 233.3,
       "showed": 5,
-      "show_pct": 83.3,
+      "show_pct": 71.4,
       "qualified": 5,
-      "qual_pct": 83.3,
+      "qual_pct": 71.4,
       "closed": 2,
-      "cw_pct": 33.3,
+      "cw_pct": 28.6,
       "revenue": 12894.0
     },
     "Unknown (Needs Review)": {
@@ -108,30 +132,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Internal Webinar": {
-      "leads_created": 1257,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 9,
-      "show_pct": 39.1,
-      "qualified": 11,
-      "qual_pct": 47.8,
-      "closed": 3,
-      "cw_pct": 13.0,
-      "revenue": 28994.0
-    },
-    "Meta Ads": {
-      "leads_created": 145,
-      "booked": 21,
-      "book_pct": 14.5,
-      "showed": 6,
-      "show_pct": 28.6,
-      "qualified": 6,
-      "qual_pct": 28.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Google Ads": {
       "leads_created": 1,
       "booked": 1,
@@ -140,6 +140,18 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Anthony X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 1,
+      "show_pct": 50.0,
+      "qualified": 1,
+      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -167,18 +179,6 @@
       "closed": 1,
       "cw_pct": 33.3,
       "revenue": 5697.0
-    },
-    "Anthony X": {
-      "leads_created": 2,
-      "booked": 1,
-      "book_pct": 50.0,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "VSL": {
       "leads_created": 7,
