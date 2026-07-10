@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1652,
-    "booked": 268,
+    "booked": 267,
     "showed": 108,
     "qualified": 117,
     "closed": 22,
@@ -12,7 +12,7 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1523,
-      "booked": 202,
+      "booked": 201,
       "showed": 80,
       "qualified": 85,
       "closed": 18,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 49,
+      "booked": 82,
+      "book_pct": 167.3,
+      "showed": 27,
+      "show_pct": 32.9,
+      "qualified": 29,
+      "qual_pct": 35.4,
+      "closed": 6,
+      "cw_pct": 7.3,
+      "revenue": 38082.0
+    },
     "Anthony X": {
       "leads_created": 2,
       "booked": 2,
@@ -44,18 +56,6 @@
       "show_pct": 50.0,
       "qualified": 1,
       "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 146,
-      "booked": 24,
-      "book_pct": 16.4,
-      "showed": 6,
-      "show_pct": 25.0,
-      "qualified": 6,
-      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -71,18 +71,6 @@
       "closed": 5,
       "cw_pct": 18.5,
       "revenue": 38985.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 49,
-      "booked": 82,
-      "book_pct": 167.3,
-      "showed": 27,
-      "show_pct": 32.9,
-      "qualified": 29,
-      "qual_pct": 35.4,
-      "closed": 6,
-      "cw_pct": 7.3,
-      "revenue": 38082.0
     },
     "Instagram": {
       "leads_created": 44,
@@ -119,6 +107,18 @@
       "closed": 2,
       "cw_pct": 5.6,
       "revenue": 14994.0
+    },
+    "Meta Ads": {
+      "leads_created": 146,
+      "booked": 23,
+      "book_pct": 15.8,
+      "showed": 6,
+      "show_pct": 26.1,
+      "qualified": 6,
+      "qual_pct": 26.1,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "LTF - In-House": {
       "leads_created": 3,
