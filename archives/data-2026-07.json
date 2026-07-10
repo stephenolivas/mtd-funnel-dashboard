@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1656,
-    "booked": 262,
+    "booked": 263,
     "showed": 146,
     "qualified": 129,
     "closed": 24,
@@ -28,7 +28,7 @@
     },
     "UNCATEGORIZED": {
       "leads_created": 78,
-      "booked": 18,
+      "booked": 19,
       "showed": 5,
       "qualified": 5,
       "closed": 0,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 7,
-      "book_pct": 233.3,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 5,
-      "qual_pct": 71.4,
-      "closed": 2,
-      "cw_pct": 28.6,
-      "revenue": 12894.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 53,
       "booked": 85,
@@ -60,18 +48,6 @@
       "cw_pct": 7.1,
       "revenue": 38082.0
     },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 39,
-      "book_pct": 90.7,
-      "showed": 26,
-      "show_pct": 66.7,
-      "qualified": 26,
-      "qual_pct": 66.7,
-      "closed": 3,
-      "cw_pct": 7.7,
-      "revenue": 23991.0
-    },
     "YouTube": {
       "leads_created": 28,
       "booked": 25,
@@ -83,6 +59,18 @@
       "closed": 6,
       "cw_pct": 24.0,
       "revenue": 48482.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 7,
+      "book_pct": 233.3,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 5,
+      "qual_pct": 71.4,
+      "closed": 2,
+      "cw_pct": 28.6,
+      "revenue": 12894.0
     },
     "Meta Ads": {
       "leads_created": 152,
@@ -98,15 +86,27 @@
     },
     "Unknown (Needs Review)": {
       "leads_created": 78,
-      "booked": 18,
-      "book_pct": 23.1,
+      "booked": 19,
+      "book_pct": 24.4,
       "showed": 5,
-      "show_pct": 27.8,
+      "show_pct": 26.3,
       "qualified": 5,
-      "qual_pct": 27.8,
+      "qual_pct": 26.3,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 39,
+      "book_pct": 90.7,
+      "showed": 26,
+      "show_pct": 66.7,
+      "qualified": 26,
+      "qual_pct": 66.7,
+      "closed": 3,
+      "cw_pct": 7.7,
+      "revenue": 23991.0
     },
     "Website": {
       "leads_created": 28,
