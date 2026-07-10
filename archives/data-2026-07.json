@@ -3,16 +3,16 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1660,
-    "booked": 265,
-    "showed": 132,
-    "qualified": 125,
+    "booked": 266,
+    "showed": 135,
+    "qualified": 127,
     "closed": 24,
     "revenue": 181231.0
   },
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1530,
-      "booked": 199,
+      "booked": 200,
       "showed": 100,
       "qualified": 90,
       "closed": 20,
@@ -21,8 +21,8 @@
     "EXTERNAL": {
       "leads_created": 48,
       "booked": 44,
-      "showed": 27,
-      "qualified": 29,
+      "showed": 29,
+      "qualified": 30,
       "closed": 4,
       "revenue": 29688.0
     },
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 53,
+      "booked": 85,
+      "book_pct": 160.4,
+      "showed": 41,
+      "show_pct": 48.2,
+      "qualified": 33,
+      "qual_pct": 38.8,
+      "closed": 6,
+      "cw_pct": 7.1,
+      "revenue": 38082.0
+    },
     "YouTube": {
       "leads_created": 29,
       "booked": 26,
@@ -48,29 +60,65 @@
       "cw_pct": 23.1,
       "revenue": 48482.0
     },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 7,
+      "book_pct": 233.3,
+      "showed": 5,
+      "show_pct": 71.4,
+      "qualified": 5,
+      "qual_pct": 71.4,
+      "closed": 2,
+      "cw_pct": 28.6,
+      "revenue": 12894.0
+    },
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 39,
+      "book_pct": 90.7,
+      "showed": 25,
+      "show_pct": 64.1,
+      "qualified": 25,
+      "qual_pct": 64.1,
+      "closed": 3,
+      "cw_pct": 7.7,
+      "revenue": 23991.0
+    },
+    "Anthony X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Website": {
       "leads_created": 29,
       "booked": 36,
       "book_pct": 124.1,
-      "showed": 19,
-      "show_pct": 52.8,
+      "showed": 20,
+      "show_pct": 55.6,
       "qualified": 17,
       "qual_pct": 47.2,
       "closed": 2,
       "cw_pct": 5.6,
       "revenue": 14994.0
     },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 39,
-      "book_pct": 90.7,
-      "showed": 23,
-      "show_pct": 59.0,
-      "qualified": 24,
-      "qual_pct": 61.5,
-      "closed": 3,
-      "cw_pct": 7.7,
-      "revenue": 23991.0
+    "Internal Webinar": {
+      "leads_created": 1255,
+      "booked": 22,
+      "book_pct": 1.8,
+      "showed": 8,
+      "show_pct": 36.4,
+      "qualified": 11,
+      "qual_pct": 50.0,
+      "closed": 4,
+      "cw_pct": 18.2,
+      "revenue": 37091.0
     },
     "Meta Ads": {
       "leads_created": 152,
@@ -80,42 +128,6 @@
       "show_pct": 31.8,
       "qualified": 7,
       "qual_pct": 31.8,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 52,
-      "booked": 84,
-      "book_pct": 161.5,
-      "showed": 41,
-      "show_pct": 48.8,
-      "qualified": 33,
-      "qual_pct": 39.3,
-      "closed": 5,
-      "cw_pct": 6.0,
-      "revenue": 29985.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1256,
-      "booked": 22,
-      "book_pct": 1.8,
-      "showed": 9,
-      "show_pct": 40.9,
-      "qualified": 11,
-      "qual_pct": 50.0,
-      "closed": 5,
-      "cw_pct": 22.7,
-      "revenue": 45188.0
-    },
-    "Anthony X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 1,
-      "show_pct": 50.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -155,18 +167,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 7,
-      "book_pct": 233.3,
-      "showed": 5,
-      "show_pct": 71.4,
-      "qualified": 5,
-      "qual_pct": 71.4,
-      "closed": 2,
-      "cw_pct": 28.6,
-      "revenue": 12894.0
     },
     "Linkedin": {
       "leads_created": 4,
