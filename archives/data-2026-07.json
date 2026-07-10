@@ -2,21 +2,21 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1651,
+    "leads_created": 1650,
     "booked": 251,
     "showed": 148,
     "qualified": 131,
-    "closed": 24,
-    "revenue": 181231.0
+    "closed": 25,
+    "revenue": 181731.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1528,
+      "leads_created": 1527,
       "booked": 195,
       "showed": 112,
       "qualified": 93,
-      "closed": 20,
-      "revenue": 151543.0
+      "closed": 21,
+      "revenue": 152043.0
     },
     "EXTERNAL": {
       "leads_created": 50,
@@ -36,6 +36,54 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 45,
+      "booked": 40,
+      "book_pct": 88.9,
+      "showed": 26,
+      "show_pct": 65.0,
+      "qualified": 26,
+      "qual_pct": 65.0,
+      "closed": 3,
+      "cw_pct": 7.5,
+      "revenue": 23991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 54,
+      "booked": 84,
+      "book_pct": 155.6,
+      "showed": 47,
+      "show_pct": 56.0,
+      "qualified": 35,
+      "qual_pct": 41.7,
+      "closed": 7,
+      "cw_pct": 8.3,
+      "revenue": 38582.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1253,
+      "booked": 22,
+      "book_pct": 1.8,
+      "showed": 8,
+      "show_pct": 36.4,
+      "qualified": 10,
+      "qual_pct": 45.5,
+      "closed": 4,
+      "cw_pct": 18.2,
+      "revenue": 37091.0
+    },
+    "Anthony X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Meta Ads": {
       "leads_created": 151,
       "booked": 19,
@@ -47,42 +95,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1254,
-      "booked": 22,
-      "book_pct": 1.8,
-      "showed": 8,
-      "show_pct": 36.4,
-      "qualified": 10,
-      "qual_pct": 45.5,
-      "closed": 4,
-      "cw_pct": 18.2,
-      "revenue": 37091.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 53,
-      "booked": 84,
-      "book_pct": 158.5,
-      "showed": 47,
-      "show_pct": 56.0,
-      "qualified": 35,
-      "qual_pct": 41.7,
-      "closed": 6,
-      "cw_pct": 7.1,
-      "revenue": 38082.0
-    },
-    "YouTube": {
-      "leads_created": 28,
-      "booked": 25,
-      "book_pct": 89.3,
-      "showed": 21,
-      "show_pct": 84.0,
-      "qualified": 18,
-      "qual_pct": 72.0,
-      "closed": 6,
-      "cw_pct": 24.0,
-      "revenue": 48482.0
     },
     "Website": {
       "leads_created": 30,
@@ -96,17 +108,17 @@
       "cw_pct": 5.4,
       "revenue": 14994.0
     },
-    "Instagram": {
-      "leads_created": 45,
-      "booked": 40,
-      "book_pct": 88.9,
-      "showed": 26,
-      "show_pct": 65.0,
-      "qualified": 26,
-      "qual_pct": 65.0,
-      "closed": 3,
-      "cw_pct": 7.5,
-      "revenue": 23991.0
+    "YouTube": {
+      "leads_created": 28,
+      "booked": 25,
+      "book_pct": 89.3,
+      "showed": 21,
+      "show_pct": 84.0,
+      "qualified": 18,
+      "qual_pct": 72.0,
+      "closed": 6,
+      "cw_pct": 24.0,
+      "revenue": 48482.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 71,
@@ -116,18 +128,6 @@
       "show_pct": 44.4,
       "qualified": 5,
       "qual_pct": 55.6,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Anthony X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -181,9 +181,9 @@
       "revenue": 12894.0
     },
     "VSL": {
-      "leads_created": 7,
+      "leads_created": 6,
       "booked": 1,
-      "book_pct": 14.3,
+      "book_pct": 16.7,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
