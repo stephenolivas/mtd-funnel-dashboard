@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 6,
+      "book_pct": 200.0,
+      "showed": 5,
+      "show_pct": 83.3,
+      "qualified": 5,
+      "qual_pct": 83.3,
+      "closed": 2,
+      "cw_pct": 33.3,
+      "revenue": 12894.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 77,
       "booked": 19,
@@ -119,18 +131,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 6,
-      "book_pct": 200.0,
-      "showed": 5,
-      "show_pct": 83.3,
-      "qualified": 5,
-      "qual_pct": 83.3,
-      "closed": 2,
-      "cw_pct": 33.3,
-      "revenue": 12894.0
     },
     "Google Ads": {
       "leads_created": 1,
