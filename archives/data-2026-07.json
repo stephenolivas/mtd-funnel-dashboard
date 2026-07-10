@@ -2,10 +2,10 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1662,
+    "leads_created": 1663,
     "booked": 270,
-    "showed": 117,
-    "qualified": 122,
+    "showed": 123,
+    "qualified": 126,
     "closed": 23,
     "revenue": 173134.0
   },
@@ -13,21 +13,21 @@
     "IN-HOUSE": {
       "leads_created": 1530,
       "booked": 203,
-      "showed": 87,
-      "qualified": 89,
+      "showed": 91,
+      "qualified": 91,
       "closed": 19,
       "revenue": 143446.0
     },
     "EXTERNAL": {
       "leads_created": 48,
       "booked": 46,
-      "showed": 25,
-      "qualified": 27,
+      "showed": 27,
+      "qualified": 29,
       "closed": 4,
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 82,
+      "leads_created": 83,
       "booked": 19,
       "showed": 4,
       "qualified": 5,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 50,
-      "booked": 83,
-      "book_pct": 166.0,
-      "showed": 31,
-      "show_pct": 37.3,
-      "qualified": 31,
-      "qual_pct": 37.3,
-      "closed": 6,
-      "cw_pct": 7.2,
-      "revenue": 38082.0
-    },
     "YouTube": {
       "leads_created": 30,
       "booked": 27,
@@ -60,6 +48,30 @@
       "cw_pct": 22.2,
       "revenue": 48482.0
     },
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 41,
+      "book_pct": 95.3,
+      "showed": 23,
+      "show_pct": 56.1,
+      "qualified": 24,
+      "qual_pct": 58.5,
+      "closed": 3,
+      "cw_pct": 7.3,
+      "revenue": 23991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 50,
+      "booked": 83,
+      "book_pct": 166.0,
+      "showed": 35,
+      "show_pct": 42.2,
+      "qualified": 33,
+      "qual_pct": 39.8,
+      "closed": 6,
+      "cw_pct": 7.2,
+      "revenue": 38082.0
+    },
     "X": {
       "leads_created": 1,
       "booked": 2,
@@ -71,18 +83,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 41,
-      "book_pct": 95.3,
-      "showed": 21,
-      "show_pct": 51.2,
-      "qualified": 22,
-      "qual_pct": 53.7,
-      "closed": 3,
-      "cw_pct": 7.3,
-      "revenue": 23991.0
     },
     "Anthony X": {
       "leads_created": 2,
@@ -109,9 +109,9 @@
       "revenue": 28994.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 82,
+      "leads_created": 83,
       "booked": 19,
-      "book_pct": 23.2,
+      "book_pct": 22.9,
       "showed": 4,
       "show_pct": 21.1,
       "qualified": 5,
