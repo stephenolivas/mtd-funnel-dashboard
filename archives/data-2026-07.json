@@ -3,8 +3,8 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 1660,
-    "booked": 265,
-    "showed": 136,
+    "booked": 266,
+    "showed": 137,
     "qualified": 127,
     "closed": 24,
     "revenue": 181231.0
@@ -21,14 +21,14 @@
     "EXTERNAL": {
       "leads_created": 48,
       "booked": 44,
-      "showed": 29,
+      "showed": 30,
       "qualified": 30,
       "closed": 4,
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
       "leads_created": 81,
-      "booked": 20,
+      "booked": 21,
       "showed": 4,
       "qualified": 5,
       "closed": 0,
@@ -48,17 +48,17 @@
       "cw_pct": 7.1,
       "revenue": 38082.0
     },
-    "YouTube": {
-      "leads_created": 28,
-      "booked": 25,
-      "book_pct": 89.3,
-      "showed": 18,
-      "show_pct": 72.0,
-      "qualified": 16,
-      "qual_pct": 64.0,
-      "closed": 6,
-      "cw_pct": 24.0,
-      "revenue": 48482.0
+    "Instagram": {
+      "leads_created": 43,
+      "booked": 39,
+      "book_pct": 90.7,
+      "showed": 26,
+      "show_pct": 66.7,
+      "qualified": 25,
+      "qual_pct": 64.1,
+      "closed": 3,
+      "cw_pct": 7.7,
+      "revenue": 23991.0
     },
     "Website": {
       "leads_created": 29,
@@ -71,6 +71,30 @@
       "closed": 2,
       "cw_pct": 5.6,
       "revenue": 14994.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 81,
+      "booked": 21,
+      "book_pct": 25.9,
+      "showed": 4,
+      "show_pct": 19.0,
+      "qualified": 5,
+      "qual_pct": 23.8,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "leads_created": 28,
+      "booked": 25,
+      "book_pct": 89.3,
+      "showed": 18,
+      "show_pct": 72.0,
+      "qualified": 16,
+      "qual_pct": 64.0,
+      "closed": 6,
+      "cw_pct": 24.0,
+      "revenue": 48482.0
     },
     "Meta Ads": {
       "leads_created": 152,
@@ -96,18 +120,6 @@
       "cw_pct": 18.2,
       "revenue": 37091.0
     },
-    "Instagram": {
-      "leads_created": 43,
-      "booked": 39,
-      "book_pct": 90.7,
-      "showed": 25,
-      "show_pct": 64.1,
-      "qualified": 25,
-      "qual_pct": 64.1,
-      "closed": 3,
-      "cw_pct": 7.7,
-      "revenue": 23991.0
-    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 7,
@@ -128,18 +140,6 @@
       "show_pct": 100.0,
       "qualified": 2,
       "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 81,
-      "booked": 20,
-      "book_pct": 24.7,
-      "showed": 4,
-      "show_pct": 20.0,
-      "qualified": 5,
-      "qual_pct": 25.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
