@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 58,
-      "booked": 87,
-      "book_pct": 150.0,
-      "showed": 47,
-      "show_pct": 54.0,
-      "qualified": 36,
-      "qual_pct": 41.4,
-      "closed": 8,
-      "cw_pct": 9.2,
-      "revenue": 44579.0
-    },
     "Website": {
       "leads_created": 30,
       "booked": 37,
@@ -59,6 +47,18 @@
       "closed": 2,
       "cw_pct": 5.4,
       "revenue": 14994.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 58,
+      "booked": 87,
+      "book_pct": 150.0,
+      "showed": 47,
+      "show_pct": 54.0,
+      "qualified": 36,
+      "qual_pct": 41.4,
+      "closed": 8,
+      "cw_pct": 9.2,
+      "revenue": 44579.0
     },
     "Meta Ads": {
       "leads_created": 151,
@@ -72,18 +72,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "leads_created": 48,
-      "booked": 40,
-      "book_pct": 83.3,
-      "showed": 27,
-      "show_pct": 67.5,
-      "qualified": 29,
-      "qual_pct": 72.5,
-      "closed": 3,
-      "cw_pct": 7.5,
-      "revenue": 23991.0
-    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 6,
@@ -95,6 +83,18 @@
       "closed": 2,
       "cw_pct": 33.3,
       "revenue": 12894.0
+    },
+    "Instagram": {
+      "leads_created": 48,
+      "booked": 40,
+      "book_pct": 83.3,
+      "showed": 27,
+      "show_pct": 67.5,
+      "qualified": 29,
+      "qual_pct": 72.5,
+      "closed": 3,
+      "cw_pct": 7.5,
+      "revenue": 23991.0
     },
     "Anthony X": {
       "leads_created": 2,
