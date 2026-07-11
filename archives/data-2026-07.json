@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 30,
+      "booked": 37,
+      "book_pct": 123.3,
+      "showed": 21,
+      "show_pct": 56.8,
+      "qualified": 17,
+      "qual_pct": 45.9,
+      "closed": 2,
+      "cw_pct": 5.4,
+      "revenue": 14994.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 77,
       "booked": 10,
@@ -71,18 +83,6 @@
       "closed": 3,
       "cw_pct": 7.3,
       "revenue": 23991.0
-    },
-    "Website": {
-      "leads_created": 30,
-      "booked": 37,
-      "book_pct": 123.3,
-      "showed": 21,
-      "show_pct": 56.8,
-      "qualified": 17,
-      "qual_pct": 45.9,
-      "closed": 2,
-      "cw_pct": 5.4,
-      "revenue": 14994.0
     },
     "Meta Ads": {
       "leads_created": 164,
