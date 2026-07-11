@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 151,
-      "booked": 18,
-      "book_pct": 11.9,
-      "showed": 9,
-      "show_pct": 50.0,
-      "qualified": 8,
-      "qual_pct": 44.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 58,
       "booked": 87,
@@ -60,17 +48,17 @@
       "cw_pct": 9.2,
       "revenue": 44579.0
     },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 6,
-      "book_pct": 200.0,
-      "showed": 5,
-      "show_pct": 83.3,
-      "qualified": 5,
-      "qual_pct": 83.3,
+    "Website": {
+      "leads_created": 30,
+      "booked": 37,
+      "book_pct": 123.3,
+      "showed": 21,
+      "show_pct": 56.8,
+      "qualified": 17,
+      "qual_pct": 45.9,
       "closed": 2,
-      "cw_pct": 33.3,
-      "revenue": 12894.0
+      "cw_pct": 5.4,
+      "revenue": 14994.0
     },
     "Instagram": {
       "leads_created": 48,
@@ -84,6 +72,30 @@
       "cw_pct": 7.5,
       "revenue": 23991.0
     },
+    "Meta Ads": {
+      "leads_created": 151,
+      "booked": 18,
+      "book_pct": 11.9,
+      "showed": 9,
+      "show_pct": 50.0,
+      "qualified": 8,
+      "qual_pct": 44.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 6,
+      "book_pct": 200.0,
+      "showed": 5,
+      "show_pct": 83.3,
+      "qualified": 5,
+      "qual_pct": 83.3,
+      "closed": 2,
+      "cw_pct": 33.3,
+      "revenue": 12894.0
+    },
     "Anthony X": {
       "leads_created": 2,
       "booked": 2,
@@ -95,18 +107,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 30,
-      "booked": 37,
-      "book_pct": 123.3,
-      "showed": 21,
-      "show_pct": 56.8,
-      "qualified": 17,
-      "qual_pct": 45.9,
-      "closed": 2,
-      "cw_pct": 5.4,
-      "revenue": 14994.0
     },
     "YouTube": {
       "leads_created": 29,
