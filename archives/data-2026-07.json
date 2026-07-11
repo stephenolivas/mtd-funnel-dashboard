@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 49,
+      "booked": 41,
+      "book_pct": 83.7,
+      "showed": 27,
+      "show_pct": 65.9,
+      "qualified": 29,
+      "qual_pct": 70.7,
+      "closed": 3,
+      "cw_pct": 7.3,
+      "revenue": 23991.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 59,
       "booked": 91,
@@ -59,18 +71,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Instagram": {
-      "leads_created": 49,
-      "booked": 41,
-      "book_pct": 83.7,
-      "showed": 27,
-      "show_pct": 65.9,
-      "qualified": 29,
-      "qual_pct": 70.7,
-      "closed": 3,
-      "cw_pct": 7.3,
-      "revenue": 23991.0
     },
     "YouTube": {
       "leads_created": 30,
