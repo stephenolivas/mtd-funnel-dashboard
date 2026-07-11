@@ -19,7 +19,7 @@
       "revenue": 158040.0
     },
     "EXTERNAL": {
-      "leads_created": 55,
+      "leads_created": 57,
       "booked": 46,
       "showed": 31,
       "qualified": 34,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 78,
+      "leads_created": 76,
       "booked": 10,
       "showed": 4,
       "qualified": 5,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 52,
+      "booked": 41,
+      "book_pct": 78.8,
+      "showed": 27,
+      "show_pct": 65.9,
+      "qualified": 29,
+      "qual_pct": 70.7,
+      "closed": 3,
+      "cw_pct": 7.3,
+      "revenue": 23991.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 59,
       "booked": 91,
@@ -47,18 +59,6 @@
       "closed": 8,
       "cw_pct": 8.8,
       "revenue": 44579.0
-    },
-    "Instagram": {
-      "leads_created": 50,
-      "booked": 41,
-      "book_pct": 82.0,
-      "showed": 27,
-      "show_pct": 65.9,
-      "qualified": 29,
-      "qual_pct": 70.7,
-      "closed": 3,
-      "cw_pct": 7.3,
-      "revenue": 23991.0
     },
     "YouTube": {
       "leads_created": 30,
@@ -121,9 +121,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 78,
+      "leads_created": 76,
       "booked": 10,
-      "book_pct": 12.8,
+      "book_pct": 13.2,
       "showed": 4,
       "show_pct": 40.0,
       "qualified": 5,
