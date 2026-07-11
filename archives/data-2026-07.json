@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1667,
+    "leads_created": 1668,
     "booked": 264,
     "showed": 149,
     "qualified": 138,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1535,
+      "leads_created": 1536,
       "booked": 206,
       "showed": 112,
       "qualified": 97,
@@ -19,7 +19,7 @@
       "revenue": 158040.0
     },
     "EXTERNAL": {
-      "leads_created": 55,
+      "leads_created": 56,
       "booked": 46,
       "showed": 31,
       "qualified": 34,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 75,
+      "leads_created": 74,
       "booked": 10,
       "showed": 4,
       "qualified": 5,
@@ -61,9 +61,9 @@
       "revenue": 14994.0
     },
     "Meta Ads": {
-      "leads_created": 156,
+      "leads_created": 157,
       "booked": 20,
-      "book_pct": 12.8,
+      "book_pct": 12.7,
       "showed": 9,
       "show_pct": 45.0,
       "qualified": 8,
@@ -73,9 +73,9 @@
       "revenue": 0.0
     },
     "Instagram": {
-      "leads_created": 50,
+      "leads_created": 51,
       "booked": 41,
-      "book_pct": 82.0,
+      "book_pct": 80.4,
       "showed": 27,
       "show_pct": 65.9,
       "qualified": 29,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 75,
+      "leads_created": 74,
       "booked": 10,
-      "book_pct": 13.3,
+      "book_pct": 13.5,
       "showed": 4,
       "show_pct": 40.0,
       "qualified": 5,
