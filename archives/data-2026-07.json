@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1669,
+    "leads_created": 1670,
     "booked": 263,
     "showed": 149,
     "qualified": 138,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1535,
+      "leads_created": 1537,
       "booked": 205,
       "showed": 112,
       "qualified": 97,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 76,
+      "leads_created": 75,
       "booked": 10,
       "showed": 4,
       "qualified": 5,
@@ -48,10 +48,22 @@
       "cw_pct": 17.4,
       "revenue": 37091.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 59,
+      "booked": 91,
+      "book_pct": 154.2,
+      "showed": 47,
+      "show_pct": 51.6,
+      "qualified": 37,
+      "qual_pct": 40.7,
+      "closed": 8,
+      "cw_pct": 8.8,
+      "revenue": 44579.0
+    },
     "YouTube": {
-      "leads_created": 29,
+      "leads_created": 30,
       "booked": 26,
-      "book_pct": 89.7,
+      "book_pct": 86.7,
       "showed": 21,
       "show_pct": 80.8,
       "qualified": 18,
@@ -72,18 +84,6 @@
       "cw_pct": 7.3,
       "revenue": 23991.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 59,
-      "booked": 91,
-      "book_pct": 154.2,
-      "showed": 47,
-      "show_pct": 51.6,
-      "qualified": 37,
-      "qual_pct": 40.7,
-      "closed": 8,
-      "cw_pct": 8.8,
-      "revenue": 44579.0
-    },
     "Website": {
       "leads_created": 30,
       "booked": 37,
@@ -97,7 +97,7 @@
       "revenue": 14994.0
     },
     "Meta Ads": {
-      "leads_created": 157,
+      "leads_created": 158,
       "booked": 20,
       "book_pct": 12.7,
       "showed": 9,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 76,
+      "leads_created": 75,
       "booked": 10,
-      "book_pct": 13.2,
+      "book_pct": 13.3,
       "showed": 4,
       "show_pct": 40.0,
       "qualified": 5,
