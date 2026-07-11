@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1249,
+      "booked": 23,
+      "book_pct": 1.8,
+      "showed": 8,
+      "show_pct": 34.8,
+      "qualified": 11,
+      "qual_pct": 47.8,
+      "closed": 4,
+      "cw_pct": 17.4,
+      "revenue": 37091.0
+    },
     "YouTube": {
       "leads_created": 29,
       "booked": 26,
@@ -59,18 +71,6 @@
       "closed": 3,
       "cw_pct": 7.3,
       "revenue": 23991.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1249,
-      "booked": 23,
-      "book_pct": 1.8,
-      "showed": 8,
-      "show_pct": 34.8,
-      "qualified": 11,
-      "qual_pct": 47.8,
-      "closed": 4,
-      "cw_pct": 17.4,
-      "revenue": 37091.0
     },
     "Reactivation Scrapers": {
       "leads_created": 59,
