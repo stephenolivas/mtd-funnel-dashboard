@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1655,
+    "leads_created": 1656,
     "booked": 256,
     "showed": 148,
     "qualified": 136,
@@ -11,8 +11,8 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1528,
-      "booked": 199,
+      "leads_created": 1529,
+      "booked": 200,
       "showed": 112,
       "qualified": 96,
       "closed": 22,
@@ -20,7 +20,7 @@
     },
     "EXTERNAL": {
       "leads_created": 53,
-      "booked": 46,
+      "booked": 45,
       "showed": 30,
       "qualified": 33,
       "closed": 4,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 48,
+      "booked": 40,
+      "book_pct": 83.3,
+      "showed": 26,
+      "show_pct": 65.0,
+      "qualified": 28,
+      "qual_pct": 70.0,
+      "closed": 3,
+      "cw_pct": 7.5,
+      "revenue": 23991.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 58,
+      "booked": 87,
+      "book_pct": 150.0,
+      "showed": 47,
+      "show_pct": 54.0,
+      "qualified": 36,
+      "qual_pct": 41.4,
+      "closed": 8,
+      "cw_pct": 9.2,
+      "revenue": 44579.0
+    },
     "LTF - In-House": {
       "leads_created": 3,
       "booked": 6,
@@ -47,30 +71,6 @@
       "closed": 2,
       "cw_pct": 33.3,
       "revenue": 12894.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 57,
-      "booked": 86,
-      "book_pct": 150.9,
-      "showed": 47,
-      "show_pct": 54.7,
-      "qualified": 36,
-      "qual_pct": 41.9,
-      "closed": 8,
-      "cw_pct": 9.3,
-      "revenue": 44579.0
-    },
-    "Instagram": {
-      "leads_created": 48,
-      "booked": 41,
-      "book_pct": 85.4,
-      "showed": 26,
-      "show_pct": 63.4,
-      "qualified": 28,
-      "qual_pct": 68.3,
-      "closed": 3,
-      "cw_pct": 7.3,
-      "revenue": 23991.0
     },
     "Website": {
       "leads_created": 30,
