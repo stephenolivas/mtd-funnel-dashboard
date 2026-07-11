@@ -2,24 +2,24 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1682,
-    "booked": 263,
+    "leads_created": 1685,
+    "booked": 262,
     "showed": 152,
-    "qualified": 143,
+    "qualified": 142,
     "closed": 27,
     "revenue": 196725.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1542,
-      "booked": 205,
+      "leads_created": 1544,
+      "booked": 204,
       "showed": 114,
-      "qualified": 101,
+      "qualified": 100,
       "closed": 23,
       "revenue": 167037.0
     },
     "EXTERNAL": {
-      "leads_created": 61,
+      "leads_created": 62,
       "booked": 46,
       "showed": 32,
       "qualified": 35,
@@ -36,22 +36,10 @@
     }
   },
   "funnels": {
-    "VSL": {
-      "leads_created": 7,
-      "booked": 2,
-      "book_pct": 28.6,
-      "showed": 0,
-      "show_pct": 0.0,
-      "qualified": 1,
-      "qual_pct": 50.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
-      "leads_created": 55,
+      "leads_created": 56,
       "booked": 41,
-      "book_pct": 74.5,
+      "book_pct": 73.2,
       "showed": 28,
       "show_pct": 68.3,
       "qualified": 30,
@@ -61,9 +49,9 @@
       "revenue": 23991.0
     },
     "Meta Ads": {
-      "leads_created": 161,
+      "leads_created": 163,
       "booked": 20,
-      "book_pct": 12.4,
+      "book_pct": 12.3,
       "showed": 9,
       "show_pct": 45.0,
       "qualified": 8,
@@ -73,9 +61,9 @@
       "revenue": 0.0
     },
     "Reactivation Scrapers": {
-      "leads_created": 60,
+      "leads_created": 61,
       "booked": 91,
-      "book_pct": 151.7,
+      "book_pct": 149.2,
       "showed": 49,
       "show_pct": 53.8,
       "qualified": 40,
@@ -188,6 +176,18 @@
       "show_pct": 100.0,
       "qualified": 1,
       "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "VSL": {
+      "leads_created": 6,
+      "booked": 1,
+      "book_pct": 16.7,
+      "showed": 0,
+      "show_pct": 0.0,
+      "qualified": 0,
+      "qual_pct": 0.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
