@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 58,
+      "booked": 43,
+      "book_pct": 74.1,
+      "showed": 28,
+      "show_pct": 65.1,
+      "qualified": 30,
+      "qual_pct": 69.8,
+      "closed": 3,
+      "cw_pct": 7.0,
+      "revenue": 23991.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 77,
       "booked": 10,
@@ -83,18 +95,6 @@
       "closed": 2,
       "cw_pct": 5.4,
       "revenue": 14994.0
-    },
-    "Instagram": {
-      "leads_created": 58,
-      "booked": 43,
-      "book_pct": 74.1,
-      "showed": 28,
-      "show_pct": 65.1,
-      "qualified": 30,
-      "qual_pct": 69.8,
-      "closed": 3,
-      "cw_pct": 7.0,
-      "revenue": 23991.0
     },
     "Meta Ads": {
       "leads_created": 170,
