@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1550,
+      "leads_created": 1551,
       "booked": 209,
       "showed": 115,
       "qualified": 100,
@@ -27,7 +27,7 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 78,
+      "leads_created": 77,
       "booked": 10,
       "showed": 5,
       "qualified": 5,
@@ -73,9 +73,9 @@
       "revenue": 23991.0
     },
     "Meta Ads": {
-      "leads_created": 167,
+      "leads_created": 168,
       "booked": 21,
-      "book_pct": 12.6,
+      "book_pct": 12.5,
       "showed": 9,
       "show_pct": 42.9,
       "qualified": 8,
@@ -109,9 +109,9 @@
       "revenue": 0.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 78,
+      "leads_created": 77,
       "booked": 10,
-      "book_pct": 12.8,
+      "book_pct": 13.0,
       "showed": 5,
       "show_pct": 50.0,
       "qualified": 5,
