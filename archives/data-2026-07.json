@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1566,
+      "leads_created": 1567,
       "booked": 209,
       "showed": 117,
       "qualified": 101,
@@ -19,7 +19,7 @@
       "revenue": 173034.0
     },
     "EXTERNAL": {
-      "leads_created": 70,
+      "leads_created": 69,
       "booked": 48,
       "showed": 33,
       "qualified": 36,
@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Reactivation Scrapers": {
-      "leads_created": 62,
+      "leads_created": 63,
       "booked": 95,
-      "book_pct": 153.2,
+      "book_pct": 150.8,
       "showed": 52,
       "show_pct": 54.7,
       "qualified": 41,
@@ -49,9 +49,9 @@
       "revenue": 50576.0
     },
     "Instagram": {
-      "leads_created": 63,
+      "leads_created": 62,
       "booked": 43,
-      "book_pct": 68.3,
+      "book_pct": 69.4,
       "showed": 29,
       "show_pct": 67.4,
       "qualified": 31,
