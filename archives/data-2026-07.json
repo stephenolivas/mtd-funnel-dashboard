@@ -5,13 +5,13 @@
     "leads_created": 1741,
     "booked": 303,
     "showed": 162,
-    "qualified": 149,
+    "qualified": 150,
     "closed": 31,
     "revenue": 224516.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1581,
+      "leads_created": 1582,
       "booked": 227,
       "showed": 120,
       "qualified": 105,
@@ -19,10 +19,10 @@
       "revenue": 188831.0
     },
     "EXTERNAL": {
-      "leads_created": 69,
+      "leads_created": 68,
       "booked": 58,
       "showed": 35,
-      "qualified": 37,
+      "qualified": 38,
       "closed": 5,
       "revenue": 35685.0
     },
@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "YouTube": {
-      "leads_created": 34,
-      "booked": 31,
-      "book_pct": 91.2,
-      "showed": 22,
-      "show_pct": 71.0,
-      "qualified": 19,
-      "qual_pct": 61.3,
-      "closed": 7,
-      "cw_pct": 22.6,
-      "revenue": 57479.0
+    "Instagram": {
+      "leads_created": 62,
+      "booked": 49,
+      "book_pct": 79.0,
+      "showed": 29,
+      "show_pct": 59.2,
+      "qualified": 31,
+      "qual_pct": 63.3,
+      "closed": 3,
+      "cw_pct": 6.1,
+      "revenue": 23991.0
     },
     "Meta Ads": {
       "leads_created": 194,
@@ -60,26 +60,26 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Instagram": {
-      "leads_created": 62,
-      "booked": 49,
-      "book_pct": 79.0,
-      "showed": 29,
-      "show_pct": 59.2,
-      "qualified": 31,
-      "qual_pct": 63.3,
-      "closed": 3,
-      "cw_pct": 6.1,
-      "revenue": 23991.0
+    "YouTube": {
+      "leads_created": 35,
+      "booked": 31,
+      "book_pct": 88.6,
+      "showed": 22,
+      "show_pct": 71.0,
+      "qualified": 19,
+      "qual_pct": 61.3,
+      "closed": 7,
+      "cw_pct": 22.6,
+      "revenue": 57479.0
     },
     "Linkedin": {
-      "leads_created": 5,
+      "leads_created": 4,
       "booked": 5,
-      "book_pct": 100.0,
+      "book_pct": 125.0,
       "showed": 3,
       "show_pct": 60.0,
-      "qualified": 3,
-      "qual_pct": 60.0,
+      "qualified": 4,
+      "qual_pct": 80.0,
       "closed": 1,
       "cw_pct": 20.0,
       "revenue": 5697.0
