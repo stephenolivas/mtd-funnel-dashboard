@@ -2,10 +2,10 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1734,
+    "leads_created": 1735,
     "booked": 304,
     "showed": 160,
-    "qualified": 147,
+    "qualified": 148,
     "closed": 29,
     "revenue": 209522.0
   },
@@ -27,10 +27,10 @@
       "revenue": 29688.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 87,
+      "leads_created": 88,
       "booked": 17,
       "showed": 6,
-      "qualified": 5,
+      "qualified": 6,
       "closed": 0,
       "revenue": 0.0
     }
@@ -61,13 +61,13 @@
       "revenue": 48482.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 87,
+      "leads_created": 88,
       "booked": 17,
-      "book_pct": 19.5,
+      "book_pct": 19.3,
       "showed": 6,
       "show_pct": 35.3,
-      "qualified": 5,
-      "qual_pct": 29.4,
+      "qualified": 6,
+      "qual_pct": 35.3,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
