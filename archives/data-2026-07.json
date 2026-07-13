@@ -12,17 +12,17 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1594,
-      "booked": 233,
-      "showed": 127,
-      "qualified": 111,
+      "booked": 234,
+      "showed": 128,
+      "qualified": 112,
       "closed": 28,
       "revenue": 211925.0
     },
     "EXTERNAL": {
       "leads_created": 70,
-      "booked": 57,
-      "showed": 38,
-      "qualified": 40,
+      "booked": 56,
+      "showed": 37,
+      "qualified": 39,
       "closed": 5,
       "revenue": 35685.0
     },
@@ -36,29 +36,41 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 85,
+      "booked": 11,
+      "book_pct": 12.9,
+      "showed": 5,
+      "show_pct": 45.5,
+      "qualified": 5,
+      "qual_pct": 45.5,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "leads_created": 63,
-      "booked": 48,
-      "book_pct": 76.2,
-      "showed": 31,
-      "show_pct": 64.6,
-      "qualified": 32,
-      "qual_pct": 66.7,
+      "booked": 47,
+      "book_pct": 74.6,
+      "showed": 30,
+      "show_pct": 63.8,
+      "qualified": 31,
+      "qual_pct": 66.0,
       "closed": 3,
-      "cw_pct": 6.2,
+      "cw_pct": 6.4,
       "revenue": 23991.0
     },
-    "YouTube": {
-      "leads_created": 36,
-      "booked": 31,
-      "book_pct": 86.1,
-      "showed": 24,
-      "show_pct": 77.4,
-      "qualified": 20,
-      "qual_pct": 64.5,
-      "closed": 7,
-      "cw_pct": 22.6,
-      "revenue": 57479.0
+    "Sales Reactivation": {
+      "leads_created": 0,
+      "booked": 2,
+      "book_pct": 0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 35,
@@ -71,6 +83,18 @@
       "closed": 2,
       "cw_pct": 4.8,
       "revenue": 14994.0
+    },
+    "YouTube": {
+      "leads_created": 36,
+      "booked": 30,
+      "book_pct": 83.3,
+      "showed": 23,
+      "show_pct": 76.7,
+      "qualified": 19,
+      "qual_pct": 63.3,
+      "closed": 7,
+      "cw_pct": 23.3,
+      "revenue": 57479.0
     },
     "Internal Webinar": {
       "leads_created": 1248,
@@ -116,18 +140,6 @@
       "show_pct": 35.7,
       "qualified": 9,
       "qual_pct": 32.1,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 85,
-      "booked": 11,
-      "book_pct": 12.9,
-      "showed": 5,
-      "show_pct": 45.5,
-      "qualified": 5,
-      "qual_pct": 45.5,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
