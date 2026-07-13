@@ -4,7 +4,7 @@
   "grand": {
     "leads_created": 1734,
     "booked": 304,
-    "showed": 159,
+    "showed": 160,
     "qualified": 147,
     "closed": 29,
     "revenue": 209522.0
@@ -29,25 +29,13 @@
     "UNCATEGORIZED": {
       "leads_created": 87,
       "booked": 17,
-      "showed": 5,
+      "showed": 6,
       "qualified": 5,
       "closed": 0,
       "revenue": 0.0
     }
   },
   "funnels": {
-    "Unknown (Needs Review)": {
-      "leads_created": 87,
-      "booked": 17,
-      "book_pct": 19.5,
-      "showed": 5,
-      "show_pct": 29.4,
-      "qualified": 5,
-      "qual_pct": 29.4,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Instagram": {
       "leads_created": 62,
       "booked": 49,
@@ -71,6 +59,18 @@
       "closed": 6,
       "cw_pct": 18.8,
       "revenue": 48482.0
+    },
+    "Unknown (Needs Review)": {
+      "leads_created": 87,
+      "booked": 17,
+      "book_pct": 19.5,
+      "showed": 6,
+      "show_pct": 35.3,
+      "qualified": 5,
+      "qual_pct": 29.4,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Website": {
       "leads_created": 30,
