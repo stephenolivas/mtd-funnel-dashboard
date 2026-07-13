@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 1722,
     "booked": 269,
-    "showed": 157,
-    "qualified": 144,
+    "showed": 158,
+    "qualified": 145,
     "closed": 28,
     "revenue": 202722.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1567,
       "booked": 209,
-      "showed": 117,
-      "qualified": 101,
+      "showed": 118,
+      "qualified": 102,
       "closed": 24,
       "revenue": 173034.0
     },
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 63,
+      "booked": 95,
+      "book_pct": 150.8,
+      "showed": 53,
+      "show_pct": 55.8,
+      "qualified": 42,
+      "qual_pct": 44.2,
+      "closed": 9,
+      "cw_pct": 9.5,
+      "revenue": 50576.0
+    },
     "Meta Ads": {
       "leads_created": 181,
       "booked": 21,
@@ -59,18 +71,6 @@
       "closed": 1,
       "cw_pct": 33.3,
       "revenue": 5697.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 63,
-      "booked": 95,
-      "book_pct": 150.8,
-      "showed": 52,
-      "show_pct": 54.7,
-      "qualified": 41,
-      "qual_pct": 43.2,
-      "closed": 9,
-      "cw_pct": 9.5,
-      "revenue": 50576.0
     },
     "Instagram": {
       "leads_created": 62,
