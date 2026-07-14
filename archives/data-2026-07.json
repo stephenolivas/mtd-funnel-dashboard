@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 66,
+      "booked": 50,
+      "book_pct": 75.8,
+      "showed": 33,
+      "show_pct": 66.0,
+      "qualified": 35,
+      "qual_pct": 70.0,
+      "closed": 4,
+      "cw_pct": 8.0,
+      "revenue": 29988.0
+    },
+    "Meta Ads": {
+      "leads_created": 203,
+      "booked": 27,
+      "book_pct": 13.3,
+      "showed": 10,
+      "show_pct": 37.0,
+      "qualified": 10,
+      "qual_pct": 37.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Sales Reactivation": {
+      "leads_created": 0,
+      "booked": 2,
+      "book_pct": 0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Mike Newsletter": {
       "leads_created": 0,
       "booked": 1,
@@ -72,18 +108,6 @@
       "cw_pct": 23.1,
       "revenue": 54185.0
     },
-    "Instagram": {
-      "leads_created": 66,
-      "booked": 50,
-      "book_pct": 75.8,
-      "showed": 33,
-      "show_pct": 66.0,
-      "qualified": 35,
-      "qual_pct": 70.0,
-      "closed": 4,
-      "cw_pct": 8.0,
-      "revenue": 29988.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 74,
       "booked": 100,
@@ -104,18 +128,6 @@
       "show_pct": 54.5,
       "qualified": 6,
       "qual_pct": 54.5,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 203,
-      "booked": 27,
-      "book_pct": 13.3,
-      "showed": 10,
-      "show_pct": 37.0,
-      "qualified": 10,
-      "qual_pct": 37.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -143,18 +155,6 @@
       "closed": 1,
       "cw_pct": 20.0,
       "revenue": 5697.0
-    },
-    "Sales Reactivation": {
-      "leads_created": 0,
-      "booked": 2,
-      "book_pct": 0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "X": {
       "leads_created": 2,
