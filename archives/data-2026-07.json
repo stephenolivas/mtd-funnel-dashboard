@@ -2,10 +2,10 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1801,
+    "leads_created": 1803,
     "booked": 336,
-    "showed": 197,
-    "qualified": 179,
+    "showed": 198,
+    "qualified": 180,
     "closed": 37,
     "revenue": 274598.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1636,
       "booked": 263,
-      "showed": 147,
-      "qualified": 127,
+      "showed": 148,
+      "qualified": 128,
       "closed": 31,
       "revenue": 232916.0
     },
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 93,
+      "leads_created": 95,
       "booked": 10,
       "showed": 5,
       "qualified": 5,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 64,
-      "booked": 52,
-      "book_pct": 81.2,
-      "showed": 36,
-      "show_pct": 69.2,
-      "qualified": 37,
-      "qual_pct": 71.2,
-      "closed": 4,
-      "cw_pct": 7.7,
-      "revenue": 29988.0
-    },
     "Website": {
       "leads_created": 48,
       "booked": 47,
@@ -76,18 +64,30 @@
       "leads_created": 38,
       "booked": 33,
       "book_pct": 86.8,
-      "showed": 25,
-      "show_pct": 75.8,
-      "qualified": 21,
-      "qual_pct": 63.6,
+      "showed": 26,
+      "show_pct": 78.8,
+      "qualified": 22,
+      "qual_pct": 66.7,
       "closed": 9,
       "cw_pct": 27.3,
       "revenue": 72473.0
     },
+    "Instagram": {
+      "leads_created": 64,
+      "booked": 52,
+      "book_pct": 81.2,
+      "showed": 36,
+      "show_pct": 69.2,
+      "qualified": 37,
+      "qual_pct": 71.2,
+      "closed": 4,
+      "cw_pct": 7.7,
+      "revenue": 29988.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 93,
+      "leads_created": 95,
       "booked": 10,
-      "book_pct": 10.8,
+      "book_pct": 10.5,
       "showed": 5,
       "show_pct": 50.0,
       "qualified": 5,
