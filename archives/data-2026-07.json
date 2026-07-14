@@ -36,14 +36,38 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 74,
+      "booked": 100,
+      "book_pct": 135.1,
+      "showed": 54,
+      "show_pct": 54.0,
+      "qualified": 44,
+      "qual_pct": 44.0,
+      "closed": 12,
+      "cw_pct": 12.0,
+      "revenue": 78370.0
+    },
     "Meta Ads": {
-      "leads_created": 203,
+      "leads_created": 204,
       "booked": 27,
-      "book_pct": 13.3,
+      "book_pct": 13.2,
       "showed": 10,
       "show_pct": 37.0,
       "qualified": 10,
       "qual_pct": 37.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Sales Reactivation": {
+      "leads_created": 0,
+      "booked": 2,
+      "book_pct": 0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
@@ -60,18 +84,6 @@
       "cw_pct": 4.7,
       "revenue": 14994.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 74,
-      "booked": 100,
-      "book_pct": 135.1,
-      "showed": 54,
-      "show_pct": 54.0,
-      "qualified": 44,
-      "qual_pct": 44.0,
-      "closed": 12,
-      "cw_pct": 12.0,
-      "revenue": 78370.0
-    },
     "Instagram": {
       "leads_created": 66,
       "booked": 50,
@@ -85,7 +97,7 @@
       "revenue": 29988.0
     },
     "Internal Webinar": {
-      "leads_created": 1240,
+      "leads_created": 1239,
       "booked": 26,
       "book_pct": 2.1,
       "showed": 11,
@@ -103,18 +115,6 @@
       "showed": 1,
       "show_pct": 100.0,
       "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Sales Reactivation": {
-      "leads_created": 0,
-      "booked": 2,
-      "book_pct": 0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
       "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
