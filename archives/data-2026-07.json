@@ -5,7 +5,7 @@
     "leads_created": 1792,
     "booked": 339,
     "showed": 189,
-    "qualified": 174,
+    "qualified": 175,
     "closed": 36,
     "revenue": 265601.0
   },
@@ -14,7 +14,7 @@
       "leads_created": 1629,
       "booked": 266,
       "showed": 142,
-      "qualified": 124,
+      "qualified": 125,
       "closed": 30,
       "revenue": 223919.0
     },
@@ -42,11 +42,23 @@
       "book_pct": 148.1,
       "showed": 56,
       "show_pct": 47.9,
-      "qualified": 45,
-      "qual_pct": 38.5,
+      "qualified": 46,
+      "qual_pct": 39.3,
       "closed": 12,
       "cw_pct": 10.3,
       "revenue": 78370.0
+    },
+    "Website": {
+      "leads_created": 48,
+      "booked": 47,
+      "book_pct": 97.9,
+      "showed": 27,
+      "show_pct": 57.4,
+      "qualified": 22,
+      "qual_pct": 46.8,
+      "closed": 2,
+      "cw_pct": 4.3,
+      "revenue": 14994.0
     },
     "Instagram": {
       "leads_created": 65,
@@ -59,6 +71,30 @@
       "closed": 4,
       "cw_pct": 7.7,
       "revenue": 29988.0
+    },
+    "Anthony X": {
+      "leads_created": 2,
+      "booked": 2,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 100.0,
+      "qualified": 2,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Meta Ads": {
+      "leads_created": 214,
+      "booked": 32,
+      "book_pct": 15.0,
+      "showed": 14,
+      "show_pct": 43.8,
+      "qualified": 14,
+      "qual_pct": 43.8,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
@@ -83,30 +119,6 @@
       "closed": 8,
       "cw_pct": 24.2,
       "revenue": 63476.0
-    },
-    "Website": {
-      "leads_created": 48,
-      "booked": 47,
-      "book_pct": 97.9,
-      "showed": 27,
-      "show_pct": 57.4,
-      "qualified": 22,
-      "qual_pct": 46.8,
-      "closed": 2,
-      "cw_pct": 4.3,
-      "revenue": 14994.0
-    },
-    "Meta Ads": {
-      "leads_created": 214,
-      "booked": 32,
-      "book_pct": 15.0,
-      "showed": 14,
-      "show_pct": 43.8,
-      "qualified": 14,
-      "qual_pct": 43.8,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "X": {
       "leads_created": 2,
@@ -163,18 +175,6 @@
       "showed": 1,
       "show_pct": 100.0,
       "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Anthony X": {
-      "leads_created": 2,
-      "booked": 2,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 100.0,
-      "qualified": 2,
       "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
