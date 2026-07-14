@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 66,
+      "booked": 50,
+      "book_pct": 75.8,
+      "showed": 33,
+      "show_pct": 66.0,
+      "qualified": 35,
+      "qual_pct": 70.0,
+      "closed": 4,
+      "cw_pct": 8.0,
+      "revenue": 29988.0
+    },
     "Website": {
       "leads_created": 36,
       "booked": 43,
@@ -71,18 +83,6 @@
       "closed": 12,
       "cw_pct": 12.0,
       "revenue": 78370.0
-    },
-    "Instagram": {
-      "leads_created": 66,
-      "booked": 50,
-      "book_pct": 75.8,
-      "showed": 33,
-      "show_pct": 66.0,
-      "qualified": 35,
-      "qual_pct": 70.0,
-      "closed": 4,
-      "cw_pct": 8.0,
-      "revenue": 29988.0
     },
     "X": {
       "leads_created": 2,
