@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "Mike Newsletter": {
+      "leads_created": 0,
+      "booked": 1,
+      "book_pct": 0,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "YouTube": {
+      "leads_created": 36,
+      "booked": 30,
+      "book_pct": 83.3,
+      "showed": 24,
+      "show_pct": 80.0,
+      "qualified": 21,
+      "qual_pct": 70.0,
+      "closed": 7,
+      "cw_pct": 23.3,
+      "revenue": 57479.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1240,
+      "booked": 26,
+      "book_pct": 2.1,
+      "showed": 11,
+      "show_pct": 42.3,
+      "qualified": 13,
+      "qual_pct": 50.0,
+      "closed": 6,
+      "cw_pct": 23.1,
+      "revenue": 54185.0
+    },
     "Instagram": {
       "leads_created": 66,
       "booked": 50,
@@ -48,22 +84,10 @@
       "cw_pct": 8.0,
       "revenue": 29988.0
     },
-    "Internal Webinar": {
-      "leads_created": 1241,
-      "booked": 26,
-      "book_pct": 2.1,
-      "showed": 11,
-      "show_pct": 42.3,
-      "qualified": 13,
-      "qual_pct": 50.0,
-      "closed": 6,
-      "cw_pct": 23.1,
-      "revenue": 54185.0
-    },
     "Reactivation Scrapers": {
-      "leads_created": 73,
+      "leads_created": 74,
       "booked": 100,
-      "book_pct": 137.0,
+      "book_pct": 135.1,
       "showed": 54,
       "show_pct": 54.0,
       "qualified": 44,
@@ -107,30 +131,6 @@
       "closed": 2,
       "cw_pct": 4.7,
       "revenue": 14994.0
-    },
-    "YouTube": {
-      "leads_created": 36,
-      "booked": 30,
-      "book_pct": 83.3,
-      "showed": 24,
-      "show_pct": 80.0,
-      "qualified": 21,
-      "qual_pct": 70.0,
-      "closed": 7,
-      "cw_pct": 23.3,
-      "revenue": 57479.0
-    },
-    "Mike Newsletter": {
-      "leads_created": 0,
-      "booked": 1,
-      "book_pct": 0,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 5,
