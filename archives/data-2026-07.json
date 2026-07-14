@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1772,
-    "booked": 337,
+    "leads_created": 1771,
+    "booked": 336,
     "showed": 185,
     "qualified": 171,
     "closed": 35,
@@ -19,8 +19,8 @@
       "revenue": 217922.0
     },
     "EXTERNAL": {
-      "leads_created": 73,
-      "booked": 63,
+      "leads_created": 72,
+      "booked": 62,
       "showed": 40,
       "qualified": 43,
       "closed": 6,
@@ -48,18 +48,6 @@
       "cw_pct": 21.9,
       "revenue": 57479.0
     },
-    "Instagram": {
-      "leads_created": 66,
-      "booked": 54,
-      "book_pct": 81.8,
-      "showed": 33,
-      "show_pct": 61.1,
-      "qualified": 35,
-      "qual_pct": 64.8,
-      "closed": 4,
-      "cw_pct": 7.4,
-      "revenue": 29988.0
-    },
     "Meta Ads": {
       "leads_created": 207,
       "booked": 31,
@@ -83,6 +71,18 @@
       "closed": 1,
       "cw_pct": 20.0,
       "revenue": 5697.0
+    },
+    "Instagram": {
+      "leads_created": 65,
+      "booked": 53,
+      "book_pct": 81.5,
+      "showed": 33,
+      "show_pct": 62.3,
+      "qualified": 35,
+      "qual_pct": 66.0,
+      "closed": 4,
+      "cw_pct": 7.5,
+      "revenue": 29988.0
     },
     "Website": {
       "leads_created": 36,
