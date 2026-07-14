@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 1766,
+    "leads_created": 1767,
     "booked": 309,
     "showed": 181,
     "qualified": 168,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1603,
+      "leads_created": 1604,
       "booked": 237,
       "showed": 133,
       "qualified": 117,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 36,
+      "booked": 43,
+      "book_pct": 119.4,
+      "showed": 25,
+      "show_pct": 58.1,
+      "qualified": 20,
+      "qual_pct": 46.5,
+      "closed": 2,
+      "cw_pct": 4.7,
+      "revenue": 14994.0
+    },
     "Meta Ads": {
       "leads_created": 206,
       "booked": 27,
@@ -107,18 +119,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Website": {
-      "leads_created": 36,
-      "booked": 43,
-      "book_pct": 119.4,
-      "showed": 25,
-      "show_pct": 58.1,
-      "qualified": 20,
-      "qual_pct": 46.5,
-      "closed": 2,
-      "cw_pct": 4.7,
-      "revenue": 14994.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
@@ -205,9 +205,9 @@
       "revenue": 12894.0
     },
     "VSL": {
-      "leads_created": 6,
+      "leads_created": 7,
       "booked": 1,
-      "book_pct": 16.7,
+      "book_pct": 14.3,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
