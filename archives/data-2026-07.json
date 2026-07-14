@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "X": {
+      "leads_created": 2,
+      "booked": 4,
+      "book_pct": 200.0,
+      "showed": 3,
+      "show_pct": 75.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 5997.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 74,
+      "booked": 100,
+      "book_pct": 135.1,
+      "showed": 54,
+      "show_pct": 54.0,
+      "qualified": 44,
+      "qual_pct": 44.0,
+      "closed": 12,
+      "cw_pct": 12.0,
+      "revenue": 78370.0
+    },
+    "Instagram": {
+      "leads_created": 66,
+      "booked": 50,
+      "book_pct": 75.8,
+      "showed": 33,
+      "show_pct": 66.0,
+      "qualified": 35,
+      "qual_pct": 70.0,
+      "closed": 4,
+      "cw_pct": 8.0,
+      "revenue": 29988.0
+    },
     "Website": {
       "leads_created": 36,
       "booked": 43,
@@ -60,18 +96,6 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 74,
-      "booked": 100,
-      "book_pct": 135.1,
-      "showed": 54,
-      "show_pct": 54.0,
-      "qualified": 44,
-      "qual_pct": 44.0,
-      "closed": 12,
-      "cw_pct": 12.0,
-      "revenue": 78370.0
-    },
     "YouTube": {
       "leads_created": 36,
       "booked": 30,
@@ -83,18 +107,6 @@
       "closed": 7,
       "cw_pct": 23.3,
       "revenue": 57479.0
-    },
-    "Instagram": {
-      "leads_created": 66,
-      "booked": 50,
-      "book_pct": 75.8,
-      "showed": 33,
-      "show_pct": 66.0,
-      "qualified": 35,
-      "qual_pct": 70.0,
-      "closed": 4,
-      "cw_pct": 8.0,
-      "revenue": 29988.0
     },
     "Internal Webinar": {
       "leads_created": 1240,
@@ -155,18 +167,6 @@
       "closed": 1,
       "cw_pct": 20.0,
       "revenue": 5697.0
-    },
-    "X": {
-      "leads_created": 2,
-      "booked": 4,
-      "book_pct": 200.0,
-      "showed": 3,
-      "show_pct": 75.0,
-      "qualified": 3,
-      "qual_pct": 75.0,
-      "closed": 1,
-      "cw_pct": 25.0,
-      "revenue": 5997.0
     },
     "Google Ads": {
       "leads_created": 1,
