@@ -4,19 +4,19 @@
   "grand": {
     "leads_created": 1844,
     "booked": 373,
-    "showed": 217,
-    "qualified": 191,
-    "closed": 37,
-    "revenue": 274598.0
+    "showed": 218,
+    "qualified": 192,
+    "closed": 39,
+    "revenue": 283595.0
   },
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1665,
       "booked": 293,
-      "showed": 166,
-      "qualified": 138,
-      "closed": 31,
-      "revenue": 232916.0
+      "showed": 167,
+      "qualified": 139,
+      "closed": 33,
+      "revenue": 241913.0
     },
     "EXTERNAL": {
       "leads_created": 73,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Internal Webinar": {
+      "leads_created": 1245,
+      "booked": 34,
+      "book_pct": 2.7,
+      "showed": 15,
+      "show_pct": 44.1,
+      "qualified": 17,
+      "qual_pct": 50.0,
+      "closed": 6,
+      "cw_pct": 17.6,
+      "revenue": 54185.0
+    },
     "Unknown (Needs Review)": {
       "leads_created": 104,
       "booked": 15,
@@ -48,6 +60,42 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
+    "Reactivation Scrapers": {
+      "leads_created": 86,
+      "booked": 128,
+      "book_pct": 148.8,
+      "showed": 63,
+      "show_pct": 49.2,
+      "qualified": 48,
+      "qual_pct": 37.5,
+      "closed": 13,
+      "cw_pct": 10.2,
+      "revenue": 81370.0
+    },
+    "YouTube": {
+      "leads_created": 43,
+      "booked": 35,
+      "book_pct": 81.4,
+      "showed": 29,
+      "show_pct": 82.9,
+      "qualified": 24,
+      "qual_pct": 68.6,
+      "closed": 10,
+      "cw_pct": 28.6,
+      "revenue": 78470.0
+    },
+    "Website": {
+      "leads_created": 47,
+      "booked": 50,
+      "book_pct": 106.4,
+      "showed": 34,
+      "show_pct": 68.0,
+      "qualified": 27,
+      "qual_pct": 54.0,
+      "closed": 2,
+      "cw_pct": 4.0,
+      "revenue": 14994.0
+    },
     "Meta Ads": {
       "leads_created": 231,
       "booked": 34,
@@ -59,30 +107,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 86,
-      "booked": 128,
-      "book_pct": 148.8,
-      "showed": 63,
-      "show_pct": 49.2,
-      "qualified": 48,
-      "qual_pct": 37.5,
-      "closed": 12,
-      "cw_pct": 9.4,
-      "revenue": 78370.0
-    },
-    "Website": {
-      "leads_created": 47,
-      "booked": 50,
-      "book_pct": 106.4,
-      "showed": 33,
-      "show_pct": 66.0,
-      "qualified": 26,
-      "qual_pct": 52.0,
-      "closed": 2,
-      "cw_pct": 4.0,
-      "revenue": 14994.0
     },
     "Google Ads": {
       "leads_created": 1,
@@ -107,30 +131,6 @@
       "closed": 4,
       "cw_pct": 7.4,
       "revenue": 29988.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1245,
-      "booked": 34,
-      "book_pct": 2.7,
-      "showed": 15,
-      "show_pct": 44.1,
-      "qualified": 17,
-      "qual_pct": 50.0,
-      "closed": 6,
-      "cw_pct": 17.6,
-      "revenue": 54185.0
-    },
-    "YouTube": {
-      "leads_created": 43,
-      "booked": 35,
-      "book_pct": 81.4,
-      "showed": 29,
-      "show_pct": 82.9,
-      "qualified": 24,
-      "qual_pct": 68.6,
-      "closed": 9,
-      "cw_pct": 25.7,
-      "revenue": 72473.0
     },
     "VSL": {
       "leads_created": 8,
