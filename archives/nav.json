@@ -47,7 +47,7 @@
       },
       {
         "key": "week-current",
-        "label": "Jul 13\u201314 \u25b6",
+        "label": "Jul 13\u201315 \u25b6",
         "is_current": true
       }
     ],
@@ -123,5 +123,5 @@
       }
     ]
   },
-  "updated_at": "2026-07-14T23:49:12"
+  "updated_at": "2026-07-15T00:05:08"
 }
