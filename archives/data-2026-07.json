@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2695,
     "booked": 432,
-    "showed": 237,
-    "qualified": 208,
+    "showed": 238,
+    "qualified": 209,
     "closed": 41,
     "revenue": 293780.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1716,
       "booked": 345,
-      "showed": 186,
-      "qualified": 155,
+      "showed": 187,
+      "qualified": 156,
       "closed": 35,
       "revenue": 252098.0
     },
@@ -40,13 +40,37 @@
       "leads_created": 55,
       "booked": 61,
       "book_pct": 110.9,
-      "showed": 40,
-      "show_pct": 65.6,
-      "qualified": 33,
-      "qual_pct": 54.1,
+      "showed": 41,
+      "show_pct": 67.2,
+      "qualified": 34,
+      "qual_pct": 55.7,
       "closed": 3,
       "cw_pct": 4.9,
       "revenue": 23991.0
+    },
+    "YouTube": {
+      "leads_created": 47,
+      "booked": 39,
+      "book_pct": 83.0,
+      "showed": 29,
+      "show_pct": 74.4,
+      "qualified": 24,
+      "qual_pct": 61.5,
+      "closed": 10,
+      "cw_pct": 25.6,
+      "revenue": 78470.0
+    },
+    "Instagram": {
+      "leads_created": 70,
+      "booked": 61,
+      "book_pct": 87.1,
+      "showed": 37,
+      "show_pct": 60.7,
+      "qualified": 38,
+      "qual_pct": 62.3,
+      "closed": 4,
+      "cw_pct": 6.6,
+      "revenue": 29988.0
     },
     "Reactivation Scrapers": {
       "leads_created": 102,
@@ -71,30 +95,6 @@
       "closed": 6,
       "cw_pct": 14.0,
       "revenue": 54185.0
-    },
-    "Instagram": {
-      "leads_created": 70,
-      "booked": 61,
-      "book_pct": 87.1,
-      "showed": 37,
-      "show_pct": 60.7,
-      "qualified": 38,
-      "qual_pct": 62.3,
-      "closed": 4,
-      "cw_pct": 6.6,
-      "revenue": 29988.0
-    },
-    "YouTube": {
-      "leads_created": 47,
-      "booked": 39,
-      "book_pct": 83.0,
-      "showed": 29,
-      "show_pct": 74.4,
-      "qualified": 24,
-      "qual_pct": 61.5,
-      "closed": 10,
-      "cw_pct": 25.6,
-      "revenue": 78470.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 901,
