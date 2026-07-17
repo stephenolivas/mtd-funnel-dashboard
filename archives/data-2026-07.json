@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "Website": {
-      "leads_created": 54,
-      "booked": 60,
-      "book_pct": 111.1,
-      "showed": 39,
-      "show_pct": 65.0,
-      "qualified": 32,
-      "qual_pct": 53.3,
-      "closed": 3,
-      "cw_pct": 5.0,
-      "revenue": 23991.0
+    "Linkedin": {
+      "leads_created": 4,
+      "booked": 5,
+      "book_pct": 125.0,
+      "showed": 4,
+      "show_pct": 80.0,
+      "qualified": 5,
+      "qual_pct": 100.0,
+      "closed": 1,
+      "cw_pct": 20.0,
+      "revenue": 5697.0
     },
     "Reactivation Scrapers": {
       "leads_created": 102,
@@ -59,6 +59,30 @@
       "closed": 13,
       "cw_pct": 8.6,
       "revenue": 81370.0
+    },
+    "Instagram": {
+      "leads_created": 70,
+      "booked": 61,
+      "book_pct": 87.1,
+      "showed": 37,
+      "show_pct": 60.7,
+      "qualified": 38,
+      "qual_pct": 62.3,
+      "closed": 4,
+      "cw_pct": 6.6,
+      "revenue": 29988.0
+    },
+    "Website": {
+      "leads_created": 54,
+      "booked": 60,
+      "book_pct": 111.1,
+      "showed": 39,
+      "show_pct": 65.0,
+      "qualified": 32,
+      "qual_pct": 53.3,
+      "closed": 3,
+      "cw_pct": 5.0,
+      "revenue": 23991.0
     },
     "Meta Ads": {
       "leads_created": 251,
@@ -95,18 +119,6 @@
       "closed": 1,
       "cw_pct": 25.0,
       "revenue": 5997.0
-    },
-    "Instagram": {
-      "leads_created": 70,
-      "booked": 61,
-      "book_pct": 87.1,
-      "showed": 37,
-      "show_pct": 60.7,
-      "qualified": 38,
-      "qual_pct": 62.3,
-      "closed": 4,
-      "cw_pct": 6.6,
-      "revenue": 29988.0
     },
     "YouTube": {
       "leads_created": 47,
@@ -155,18 +167,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Linkedin": {
-      "leads_created": 4,
-      "booked": 5,
-      "book_pct": 125.0,
-      "showed": 4,
-      "show_pct": 80.0,
-      "qualified": 5,
-      "qual_pct": 100.0,
-      "closed": 1,
-      "cw_pct": 20.0,
-      "revenue": 5697.0
     },
     "LTF - In-House": {
       "leads_created": 3,
