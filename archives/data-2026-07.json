@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2713,
     "booked": 433,
-    "showed": 246,
-    "qualified": 215,
+    "showed": 247,
+    "qualified": 216,
     "closed": 42,
     "revenue": 300330.0
   },
@@ -29,13 +29,25 @@
     "UNCATEGORIZED": {
       "leads_created": 904,
       "booked": 17,
-      "showed": 6,
-      "qualified": 6,
+      "showed": 7,
+      "qualified": 7,
       "closed": 0,
       "revenue": 0.0
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 904,
+      "booked": 17,
+      "book_pct": 1.9,
+      "showed": 7,
+      "show_pct": 41.2,
+      "qualified": 7,
+      "qual_pct": 41.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 109,
       "booked": 151,
@@ -48,6 +60,18 @@
       "cw_pct": 8.6,
       "revenue": 81370.0
     },
+    "Meta Ads": {
+      "leads_created": 261,
+      "booked": 36,
+      "book_pct": 13.8,
+      "showed": 17,
+      "show_pct": 47.2,
+      "qualified": 14,
+      "qual_pct": 38.9,
+      "closed": 1,
+      "cw_pct": 2.8,
+      "revenue": 1188.0
+    },
     "YouTube": {
       "leads_created": 47,
       "booked": 39,
@@ -59,18 +83,6 @@
       "closed": 10,
       "cw_pct": 25.6,
       "revenue": 78470.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 904,
-      "booked": 17,
-      "book_pct": 1.9,
-      "showed": 6,
-      "show_pct": 35.3,
-      "qualified": 6,
-      "qual_pct": 35.3,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 55,
@@ -119,18 +131,6 @@
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
-    },
-    "Meta Ads": {
-      "leads_created": 261,
-      "booked": 36,
-      "book_pct": 13.8,
-      "showed": 17,
-      "show_pct": 47.2,
-      "qualified": 14,
-      "qual_pct": 38.9,
-      "closed": 1,
-      "cw_pct": 2.8,
-      "revenue": 1188.0
     },
     "LTF - In-House": {
       "leads_created": 3,
