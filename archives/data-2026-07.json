@@ -2,8 +2,8 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 2682,
-    "booked": 406,
+    "leads_created": 2684,
+    "booked": 407,
     "showed": 233,
     "qualified": 205,
     "closed": 41,
@@ -11,8 +11,8 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1708,
-      "booked": 325,
+      "leads_created": 1709,
+      "booked": 326,
       "showed": 182,
       "qualified": 152,
       "closed": 35,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 896,
+      "leads_created": 897,
       "booked": 10,
       "showed": 5,
       "qualified": 5,
@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "X": {
+      "leads_created": 2,
+      "booked": 4,
+      "book_pct": 200.0,
+      "showed": 3,
+      "show_pct": 75.0,
+      "qualified": 3,
+      "qual_pct": 75.0,
+      "closed": 1,
+      "cw_pct": 25.0,
+      "revenue": 5997.0
+    },
+    "Meta Ads": {
+      "leads_created": 250,
+      "booked": 35,
+      "book_pct": 14.0,
+      "showed": 17,
+      "show_pct": 48.6,
+      "qualified": 14,
+      "qual_pct": 40.0,
+      "closed": 1,
+      "cw_pct": 2.9,
+      "revenue": 1188.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 102,
       "booked": 141,
@@ -83,18 +107,6 @@
       "closed": 4,
       "cw_pct": 6.7,
       "revenue": 29988.0
-    },
-    "Meta Ads": {
-      "leads_created": 249,
-      "booked": 34,
-      "book_pct": 13.7,
-      "showed": 17,
-      "show_pct": 50.0,
-      "qualified": 14,
-      "qual_pct": 41.2,
-      "closed": 1,
-      "cw_pct": 2.9,
-      "revenue": 1188.0
     },
     "YouTube": {
       "leads_created": 47,
@@ -192,20 +204,8 @@
       "cw_pct": 0.0,
       "revenue": 0.0
     },
-    "X": {
-      "leads_created": 2,
-      "booked": 4,
-      "book_pct": 200.0,
-      "showed": 3,
-      "show_pct": 75.0,
-      "qualified": 3,
-      "qual_pct": 75.0,
-      "closed": 1,
-      "cw_pct": 25.0,
-      "revenue": 5997.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 896,
+      "leads_created": 897,
       "booked": 10,
       "book_pct": 1.1,
       "showed": 5,
