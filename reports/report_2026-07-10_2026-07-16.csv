@@ -1,0 +1,33 @@
+## REPORT METADATA
+Start Date,2026-07-10
+End Date,2026-07-16
+Week Ending,"July 16th, 2026"
+Date Range Label,"July 10 – July 16, 2026"
+
+## KPI SUMMARY
+Metric,Total,External,Ext %,In-House,IH %
+Total Booked,169,27,16.0%,137,81.1%
+Show Rate,54.4%,51.9%,,53.3%,
+Showed,92,14,15.2%,73,79.3%
+Qualified,78,16,20.5%,58,74.4%
+Closed Won,18,2,11.1%,16,88.9%
+Close Rate (b→c),10.7%,7.4%,,11.7%,
+Revenue,"$129,643","$11,994",9.3%,"$117,649",90.7%
+Avg Deal,"$7,202","$5,997",,"$7,353",
+
+## FUNNEL BREAKDOWN
+Group,Funnel,Excluded From Totals,Booked,On Pace,Goal %,Showed,Show %,Qualified,Qual %,Closed,CW %,Revenue,Rev/Close
+EXTERNAL,Instagram,,23,23,8% (300),11,47.8%,13,56.5%,1,4.3%,"$5,997","$5,997"
+EXTERNAL,X,,2,2,20% (10),1,50.0%,1,50.0%,1,50.0%,"$5,997","$5,997"
+EXTERNAL,Linkedin,,2,2,20% (10),2,100.0%,2,100.0%,,0.0%,$0,
+IN-HOUSE,YouTube,,16,16,12% (132),12,75.0%,9,56.2%,5,31.2%,"$39,485","$7,897"
+IN-HOUSE,Meta Ads,,18,18,41% (44),8,44.4%,7,38.9%,1,5.6%,"$1,188","$1,188"
+IN-HOUSE,Website,,21,21,21% (100),16,76.2%,14,66.7%,1,4.8%,"$8,997","$8,997"
+IN-HOUSE,Internal Webinar,,19,19,27% (70),10,52.6%,9,47.4%,3,15.8%,"$25,191","$8,397"
+IN-HOUSE,Mike Newsletter,,1,1,10% (10),1,100.0%,1,100.0%,,0.0%,$0,
+IN-HOUSE,Reactivation Scrapers,,62,62,,26,41.9%,18,29.0%,6,9.7%,"$42,788","$7,131"
+UNCATEGORIZED,Sales Reactivation,,2,2,,2,100.0%,2,100.0%,,0.0%,$0,
+UNCATEGORIZED,LTF - In-House,,1,1,,1,100.0%,1,100.0%,,0.0%,$0,
+UNCATEGORIZED,Anthony X,,1,1,,1,100.0%,1,100.0%,,0.0%,$0,
+UNCATEGORIZED,No Attribution,,1,1,,1,100.0%,0,0.0%,,0.0%,$0,
+TOTAL,TOTAL,,169,,,92,54.4%,78,46.2%,18,10.7%,"$129,643","$7,202"
