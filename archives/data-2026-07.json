@@ -6,8 +6,8 @@
     "booked": 431,
     "showed": 240,
     "qualified": 211,
-    "closed": 41,
-    "revenue": 293780.0
+    "closed": 42,
+    "revenue": 300330.0
   },
   "groups": {
     "IN-HOUSE": {
@@ -15,8 +15,8 @@
       "booked": 344,
       "showed": 188,
       "qualified": 156,
-      "closed": 35,
-      "revenue": 252098.0
+      "closed": 36,
+      "revenue": 258648.0
     },
     "EXTERNAL": {
       "leads_created": 76,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Instagram": {
-      "leads_created": 70,
-      "booked": 61,
-      "book_pct": 87.1,
-      "showed": 37,
-      "show_pct": 60.7,
-      "qualified": 39,
-      "qual_pct": 63.9,
-      "closed": 4,
-      "cw_pct": 6.6,
-      "revenue": 29988.0
-    },
     "Meta Ads": {
       "leads_created": 256,
       "booked": 36,
@@ -71,6 +59,30 @@
       "closed": 13,
       "cw_pct": 8.6,
       "revenue": 81370.0
+    },
+    "Instagram": {
+      "leads_created": 70,
+      "booked": 61,
+      "book_pct": 87.1,
+      "showed": 37,
+      "show_pct": 60.7,
+      "qualified": 39,
+      "qual_pct": 63.9,
+      "closed": 4,
+      "cw_pct": 6.6,
+      "revenue": 29988.0
+    },
+    "Sales Reactivation": {
+      "leads_created": 0,
+      "booked": 3,
+      "book_pct": 0,
+      "showed": 3,
+      "show_pct": 100.0,
+      "qualified": 3,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 47,
@@ -116,9 +128,9 @@
       "show_pct": 44.2,
       "qualified": 20,
       "qual_pct": 46.5,
-      "closed": 6,
-      "cw_pct": 14.0,
-      "revenue": 54185.0
+      "closed": 7,
+      "cw_pct": 16.3,
+      "revenue": 60735.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 904,
@@ -128,18 +140,6 @@
       "show_pct": 40.0,
       "qualified": 6,
       "qual_pct": 40.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Sales Reactivation": {
-      "leads_created": 0,
-      "booked": 3,
-      "book_pct": 0,
-      "showed": 3,
-      "show_pct": 100.0,
-      "qualified": 3,
-      "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
       "revenue": 0.0
