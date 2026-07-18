@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 2728,
     "booked": 443,
-    "showed": 250,
-    "qualified": 217,
+    "showed": 251,
+    "qualified": 218,
     "closed": 43,
     "revenue": 309327.0
   },
@@ -13,8 +13,8 @@
     "IN-HOUSE": {
       "leads_created": 1740,
       "booked": 352,
-      "showed": 192,
-      "qualified": 158,
+      "showed": 193,
+      "qualified": 159,
       "closed": 36,
       "revenue": 258648.0
     },
@@ -36,29 +36,29 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 269,
+      "booked": 37,
+      "book_pct": 13.8,
+      "showed": 17,
+      "show_pct": 45.9,
+      "qualified": 14,
+      "qual_pct": 37.8,
+      "closed": 1,
+      "cw_pct": 2.7,
+      "revenue": 1188.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 111,
       "booked": 154,
       "book_pct": 138.7,
-      "showed": 74,
-      "show_pct": 48.1,
-      "qualified": 55,
-      "qual_pct": 35.7,
+      "showed": 75,
+      "show_pct": 48.7,
+      "qualified": 56,
+      "qual_pct": 36.4,
       "closed": 13,
       "cw_pct": 8.4,
       "revenue": 81370.0
-    },
-    "Webinar": {
-      "leads_created": 0,
-      "booked": 1,
-      "book_pct": 0,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Website": {
       "leads_created": 54,
@@ -72,17 +72,17 @@
       "cw_pct": 4.7,
       "revenue": 23991.0
     },
-    "Meta Ads": {
-      "leads_created": 269,
-      "booked": 37,
-      "book_pct": 13.8,
-      "showed": 17,
-      "show_pct": 45.9,
-      "qualified": 14,
-      "qual_pct": 37.8,
-      "closed": 1,
-      "cw_pct": 2.7,
-      "revenue": 1188.0
+    "Webinar": {
+      "leads_created": 0,
+      "booked": 1,
+      "book_pct": 0,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "YouTube": {
       "leads_created": 48,
