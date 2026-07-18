@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 2727,
+    "leads_created": 2728,
     "booked": 443,
     "showed": 250,
     "qualified": 217,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 909,
+      "leads_created": 910,
       "booked": 18,
       "showed": 9,
       "qualified": 8,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Website": {
-      "leads_created": 54,
-      "booked": 64,
-      "book_pct": 118.5,
-      "showed": 41,
-      "show_pct": 64.1,
-      "qualified": 34,
-      "qual_pct": 53.1,
-      "closed": 3,
-      "cw_pct": 4.7,
-      "revenue": 23991.0
-    },
     "Reactivation Scrapers": {
       "leads_created": 111,
       "booked": 154,
@@ -59,6 +47,30 @@
       "closed": 13,
       "cw_pct": 8.4,
       "revenue": 81370.0
+    },
+    "Webinar": {
+      "leads_created": 0,
+      "booked": 1,
+      "book_pct": 0,
+      "showed": 1,
+      "show_pct": 100.0,
+      "qualified": 1,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Website": {
+      "leads_created": 54,
+      "booked": 64,
+      "book_pct": 118.5,
+      "showed": 41,
+      "show_pct": 64.1,
+      "qualified": 34,
+      "qual_pct": 53.1,
+      "closed": 3,
+      "cw_pct": 4.7,
+      "revenue": 23991.0
     },
     "Meta Ads": {
       "leads_created": 269,
@@ -84,18 +96,6 @@
       "cw_pct": 25.0,
       "revenue": 78470.0
     },
-    "Webinar": {
-      "leads_created": 0,
-      "booked": 1,
-      "book_pct": 0,
-      "showed": 1,
-      "show_pct": 100.0,
-      "qualified": 1,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "leads_created": 1243,
       "booked": 43,
@@ -109,7 +109,7 @@
       "revenue": 60735.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 909,
+      "leads_created": 910,
       "booked": 18,
       "book_pct": 2.0,
       "showed": 9,
