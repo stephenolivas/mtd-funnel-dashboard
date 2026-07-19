@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Meta Ads": {
+      "leads_created": 283,
+      "booked": 37,
+      "book_pct": 13.1,
+      "showed": 18,
+      "show_pct": 48.6,
+      "qualified": 15,
+      "qual_pct": 40.5,
+      "closed": 1,
+      "cw_pct": 2.7,
+      "revenue": 1188.0
+    },
     "Instagram": {
       "leads_created": 71,
       "booked": 63,
@@ -59,18 +71,6 @@
       "closed": 13,
       "cw_pct": 8.3,
       "revenue": 81370.0
-    },
-    "Meta Ads": {
-      "leads_created": 283,
-      "booked": 37,
-      "book_pct": 13.1,
-      "showed": 18,
-      "show_pct": 48.6,
-      "qualified": 15,
-      "qual_pct": 40.5,
-      "closed": 1,
-      "cw_pct": 2.7,
-      "revenue": 1188.0
     },
     "Website": {
       "leads_created": 56,
