@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1767,
+      "leads_created": 1769,
       "booked": 356,
       "showed": 199,
       "qualified": 167,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 921,
+      "leads_created": 919,
       "booked": 21,
       "showed": 9,
       "qualified": 8,
@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 113,
-      "booked": 157,
-      "book_pct": 138.9,
-      "showed": 77,
-      "show_pct": 49.0,
-      "qualified": 59,
-      "qual_pct": 37.6,
-      "closed": 13,
-      "cw_pct": 8.3,
-      "revenue": 81370.0
+    "Unknown (Needs Review)": {
+      "leads_created": 919,
+      "booked": 21,
+      "book_pct": 2.3,
+      "showed": 9,
+      "show_pct": 42.9,
+      "qualified": 8,
+      "qual_pct": 38.1,
+      "closed": 1,
+      "cw_pct": 4.8,
+      "revenue": 8997.0
     },
     "Instagram": {
       "leads_created": 71,
@@ -59,6 +59,18 @@
       "closed": 4,
       "cw_pct": 6.3,
       "revenue": 29988.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 113,
+      "booked": 157,
+      "book_pct": 138.9,
+      "showed": 77,
+      "show_pct": 49.0,
+      "qualified": 59,
+      "qual_pct": 37.6,
+      "closed": 13,
+      "cw_pct": 8.3,
+      "revenue": 81370.0
     },
     "Website": {
       "leads_created": 57,
@@ -83,18 +95,6 @@
       "closed": 7,
       "cw_pct": 16.3,
       "revenue": 60735.0
-    },
-    "Unknown (Needs Review)": {
-      "leads_created": 921,
-      "booked": 21,
-      "book_pct": 2.3,
-      "showed": 9,
-      "show_pct": 42.9,
-      "qualified": 8,
-      "qual_pct": 38.1,
-      "closed": 1,
-      "cw_pct": 4.8,
-      "revenue": 8997.0
     },
     "Sales Reactivation": {
       "leads_created": 0,
@@ -121,9 +121,9 @@
       "revenue": 78470.0
     },
     "Meta Ads": {
-      "leads_created": 290,
+      "leads_created": 291,
       "booked": 37,
-      "book_pct": 12.8,
+      "book_pct": 12.7,
       "showed": 18,
       "show_pct": 48.6,
       "qualified": 15,
@@ -217,9 +217,9 @@
       "revenue": 0.0
     },
     "VSL": {
-      "leads_created": 9,
+      "leads_created": 10,
       "booked": 2,
-      "book_pct": 22.2,
+      "book_pct": 20.0,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
