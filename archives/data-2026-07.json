@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 2754,
-    "booked": 445,
+    "booked": 452,
     "showed": 255,
     "qualified": 224,
     "closed": 43,
@@ -12,7 +12,7 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 1757,
-      "booked": 353,
+      "booked": 356,
       "showed": 196,
       "qualified": 165,
       "closed": 36,
@@ -20,7 +20,7 @@
     },
     "EXTERNAL": {
       "leads_created": 77,
-      "booked": 71,
+      "booked": 72,
       "showed": 47,
       "qualified": 48,
       "closed": 6,
@@ -28,7 +28,7 @@
     },
     "UNCATEGORIZED": {
       "leads_created": 918,
-      "booked": 18,
+      "booked": 21,
       "showed": 9,
       "qualified": 8,
       "closed": 1,
@@ -38,14 +38,14 @@
   "funnels": {
     "Reactivation Scrapers": {
       "leads_created": 112,
-      "booked": 154,
-      "book_pct": 137.5,
+      "booked": 157,
+      "book_pct": 140.2,
       "showed": 75,
-      "show_pct": 48.7,
+      "show_pct": 47.8,
       "qualified": 57,
-      "qual_pct": 37.0,
+      "qual_pct": 36.3,
       "closed": 13,
-      "cw_pct": 8.4,
+      "cw_pct": 8.3,
       "revenue": 81370.0
     },
     "Meta Ads": {
@@ -74,14 +74,14 @@
     },
     "Instagram": {
       "leads_created": 71,
-      "booked": 62,
-      "book_pct": 87.3,
+      "booked": 63,
+      "book_pct": 88.7,
       "showed": 40,
-      "show_pct": 64.5,
+      "show_pct": 63.5,
       "qualified": 40,
-      "qual_pct": 64.5,
+      "qual_pct": 63.5,
       "closed": 4,
-      "cw_pct": 6.5,
+      "cw_pct": 6.3,
       "revenue": 29988.0
     },
     "Internal Webinar": {
@@ -122,14 +122,14 @@
     },
     "Unknown (Needs Review)": {
       "leads_created": 918,
-      "booked": 18,
-      "book_pct": 2.0,
+      "booked": 21,
+      "book_pct": 2.3,
       "showed": 9,
-      "show_pct": 50.0,
+      "show_pct": 42.9,
       "qualified": 8,
-      "qual_pct": 44.4,
+      "qual_pct": 38.1,
       "closed": 1,
-      "cw_pct": 5.6,
+      "cw_pct": 4.8,
       "revenue": 8997.0
     },
     "Google Ads": {
