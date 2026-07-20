@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 2786,
-    "booked": 482,
+    "booked": 481,
     "showed": 261,
     "qualified": 230,
     "closed": 43,
@@ -19,15 +19,15 @@
       "revenue": 258648.0
     },
     "EXTERNAL": {
-      "leads_created": 77,
-      "booked": 74,
+      "leads_created": 76,
+      "booked": 73,
       "showed": 48,
       "qualified": 49,
       "closed": 6,
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 924,
+      "leads_created": 925,
       "booked": 30,
       "showed": 10,
       "qualified": 10,
@@ -61,7 +61,7 @@
       "revenue": 81370.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 924,
+      "leads_created": 925,
       "booked": 30,
       "book_pct": 3.2,
       "showed": 10,
@@ -85,13 +85,13 @@
       "revenue": 23991.0
     },
     "Instagram": {
-      "leads_created": 71,
-      "booked": 65,
-      "book_pct": 91.5,
+      "leads_created": 70,
+      "booked": 64,
+      "book_pct": 91.4,
       "showed": 41,
-      "show_pct": 63.1,
+      "show_pct": 64.1,
       "qualified": 41,
-      "qual_pct": 63.1,
+      "qual_pct": 64.1,
       "closed": 4,
       "cw_pct": 6.2,
       "revenue": 29988.0
