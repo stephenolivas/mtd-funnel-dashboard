@@ -5,7 +5,7 @@
     "leads_created": 2796,
     "booked": 483,
     "showed": 265,
-    "qualified": 233,
+    "qualified": 234,
     "closed": 45,
     "revenue": 321321.0
   },
@@ -22,7 +22,7 @@
       "leads_created": 84,
       "booked": 75,
       "showed": 49,
-      "qualified": 49,
+      "qualified": 50,
       "closed": 6,
       "revenue": 41682.0
     },
@@ -139,18 +139,6 @@
       "showed": 2,
       "show_pct": 100.0,
       "qualified": 2,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
-    "Sales Reactivation": {
-      "leads_created": 0,
-      "booked": 3,
-      "book_pct": 0,
-      "showed": 3,
-      "show_pct": 100.0,
-      "qualified": 3,
       "qual_pct": 100.0,
       "closed": 0,
       "cw_pct": 0.0,
