@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 2786,
+    "leads_created": 2787,
     "booked": 481,
     "showed": 261,
     "qualified": 230,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 925,
+      "leads_created": 926,
       "booked": 30,
       "showed": 10,
       "qualified": 10,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Unknown (Needs Review)": {
+      "leads_created": 926,
+      "booked": 30,
+      "book_pct": 3.2,
+      "showed": 10,
+      "show_pct": 33.3,
+      "qualified": 10,
+      "qual_pct": 33.3,
+      "closed": 1,
+      "cw_pct": 3.3,
+      "revenue": 8997.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 112,
       "booked": 167,
@@ -47,6 +59,18 @@
       "closed": 13,
       "cw_pct": 7.8,
       "revenue": 81370.0
+    },
+    "Instagram": {
+      "leads_created": 70,
+      "booked": 64,
+      "book_pct": 91.4,
+      "showed": 41,
+      "show_pct": 64.1,
+      "qualified": 41,
+      "qual_pct": 64.1,
+      "closed": 4,
+      "cw_pct": 6.2,
+      "revenue": 29988.0
     },
     "Internal Webinar": {
       "leads_created": 1243,
@@ -60,18 +84,6 @@
       "cw_pct": 15.9,
       "revenue": 60735.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 925,
-      "booked": 30,
-      "book_pct": 3.2,
-      "showed": 10,
-      "show_pct": 33.3,
-      "qualified": 10,
-      "qual_pct": 33.3,
-      "closed": 1,
-      "cw_pct": 3.3,
-      "revenue": 8997.0
-    },
     "Website": {
       "leads_created": 57,
       "booked": 65,
@@ -83,18 +95,6 @@
       "closed": 3,
       "cw_pct": 4.6,
       "revenue": 23991.0
-    },
-    "Instagram": {
-      "leads_created": 70,
-      "booked": 64,
-      "book_pct": 91.4,
-      "showed": 41,
-      "show_pct": 64.1,
-      "qualified": 41,
-      "qual_pct": 64.1,
-      "closed": 4,
-      "cw_pct": 6.2,
-      "revenue": 29988.0
     },
     "Meta Ads": {
       "leads_created": 306,
