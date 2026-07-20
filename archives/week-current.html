@@ -390,7 +390,7 @@
       <option value="/archives/week-current.html" selected>Jul 20–20 ▶</option></select></div>
     </div>
     <span class="snapshot-label"><span class="archive-badge">Week View</span></span>
-    July 20, 2026 at 07:51 AM PT<br>
+    July 20, 2026 at 08:07 AM PT<br>
     Source · Close CRM
   </div>
 </div>
@@ -426,15 +426,15 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">17</div>
-        <div class="split-rate">63.0% of total</div>
+        <div class="split-value">19</div>
+        <div class="split-rate">70.4% of total</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#2563eb; --kpi-color:#2563eb;">
     <div class="label">Showed</div>
-    <div class="value">0</div>
-    <div class="kpi-sub">0.0% show rate</div>
+    <div class="value">1</div>
+    <div class="kpi-sub">3.7% show rate</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -443,8 +443,8 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">0</div>
-        <div class="split-rate">0.0% show</div>
+        <div class="split-value">1</div>
+        <div class="split-rate">5.3% show</div>
       </div>
     </div>
   </div>
@@ -460,15 +460,15 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">0</div>
-        <div class="split-rate">0.0% qual</div>
+        <div class="split-value">1</div>
+        <div class="split-rate">5.3% qual</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#d97706; --kpi-color:#d97706;">
     <div class="label">Closed Won</div>
-    <div class="value">0</div>
-    <div class="kpi-sub">0.0% booked→close · 0.0% qual→close</div>
+    <div class="value">2</div>
+    <div class="kpi-sub">7.4% booked→close · 200.0% qual→close</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -477,15 +477,15 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">0</div>
-        <div class="split-rate">0.0% b→c</div>
+        <div class="split-value">2</div>
+        <div class="split-rate">10.5% b→c</div>
       </div>
     </div>
   </div>
   <div class="kpi" style="--kpi-accent:#0e9f6e; --kpi-color:#0e9f6e;">
     <div class="label">Closed Revenue</div>
-    <div class="value">$0</div>
-    <div class="kpi-sub">— avg deal</div>
+    <div class="value">$11,994</div>
+    <div class="kpi-sub">$5,997 avg deal</div>
     <div class="kpi-split">
       <div class="kpi-split-item">
         <div class="split-label">External</div>
@@ -494,8 +494,8 @@
       </div>
       <div class="kpi-split-item">
         <div class="split-label">In-House</div>
-        <div class="split-value">$0</div>
-        <div class="split-rate">— avg</div>
+        <div class="split-value">$11,994</div>
+        <div class="split-rate">$5,997 avg</div>
       </div>
     </div>
   </div>
@@ -629,6 +629,56 @@
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
       <td class="col-num">—</td>
+    </tr>
+
+    <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('website')" data-fid="website">
+      <td class="col-name">
+        <span class="chevron" id="chev-website">›</span>Website
+      </td>
+      <td class="col-num">—</td>
+      <td class="col-num">2</td>
+      <td class="col-pace pace-behind">3</td>
+      <td class="col-goal">2% (100)</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('website')" title="Click to see package breakdown">$11,994 <span class="pkg-chevron" id="pkgchev-website">›</span></td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="pkg-row" data-parent="website" style="display:none">
+      <td class="col-name col-pkg">↳ Bronze - $5,997</td>
+      <td class="col-num">—</td>
+      <td class="col-num">—</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">—</td>
+      <td class="col-pct"></td>
+      <td class="col-num">2</td>
+      <td class="col-pct"></td>
+      <td class="col-rev">$11,994</td>
+      <td class="col-num">$5,997</td>
+    </tr>
+
+    <tr class="utm-row" data-parent="website">
+      <td class="col-name col-utm">↳ _____</td>
+      <td class="col-num">—</td>
+      <td class="col-num">2</td>
+      <td class="col-pace"></td>
+      <td class="col-goal"></td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">1</td>
+      <td class="col-pct mid">50.0%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct good">100.0%</td>
+      <td class="col-rev">$11,994</td>
+      <td class="col-num">$5,997</td>
     </tr>
 
     <tr class="funnel-row" data-section="in_house" onclick="toggleUTM('reactivation_scrapers')" data-fid="reactivation_scrapers">
@@ -766,13 +816,13 @@
         <span class="chevron" id="chev-unknown__needs_review_">›</span>Unknown (Needs Review)
       </td>
       <td class="col-num">4</td>
-      <td class="col-num">9</td>
-      <td class="col-pace pace-muted">14</td>
+      <td class="col-num">7</td>
+      <td class="col-pace pace-muted">11</td>
       <td class="col-goal">—</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct bad">11.1%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev pkg-trigger" onclick="event.stopPropagation();togglePkg('unknown__needs_review_')" title="Click to see package breakdown">$0 <span class="pkg-chevron" id="pkgchev-unknown__needs_review_">›</span></td>
@@ -782,13 +832,13 @@
     <tr class="utm-row" data-parent="unknown__needs_review_">
       <td class="col-name col-utm">↳ _____</td>
       <td class="col-num">—</td>
-      <td class="col-num">6</td>
+      <td class="col-num">4</td>
       <td class="col-pace"></td>
       <td class="col-goal"></td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
-      <td class="col-num">1</td>
-      <td class="col-pct bad">16.7%</td>
+      <td class="col-num">—</td>
+      <td class="col-pct bad">0.0%</td>
       <td class="col-num">—</td>
       <td class="col-pct bad">0.0%</td>
       <td class="col-rev">$0</td>
@@ -833,14 +883,14 @@
       <td class="col-num">27</td>
       <td class="col-pace">—</td>
       <td class="col-goal">—</td>
-      <td class="col-num">0</td>
-      <td class="col-pct bad">0.0%</td>
       <td class="col-num">1</td>
       <td class="col-pct bad">3.7%</td>
-      <td class="col-num">0</td>
-      <td class="col-pct bad">0.0%</td>
-      <td class="col-rev">$0</td>
-      <td class="col-num">—</td>
+      <td class="col-num">1</td>
+      <td class="col-pct bad">3.7%</td>
+      <td class="col-num">2</td>
+      <td class="col-pct mid">7.4%</td>
+      <td class="col-rev">$11,994</td>
+      <td class="col-num">$5,997</td>
     </tr>
     </tbody>
   </table>
