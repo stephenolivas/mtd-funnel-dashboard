@@ -41,11 +41,6 @@
   "weeks": {
     "2026-07": [
       {
-        "key": "week-2026-07-14",
-        "label": "Jul 14\u201320",
-        "is_current": false
-      },
-      {
         "key": "week-2026-07-13",
         "label": "Jul 13\u201319",
         "is_current": false
@@ -133,5 +128,5 @@
       }
     ]
   },
-  "updated_at": "2026-07-20T10:20:53"
+  "updated_at": "2026-07-20T10:30:47"
 }
