@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1816,
+      "leads_created": 1817,
       "booked": 387,
       "showed": 217,
       "qualified": 178,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 973,
+      "leads_created": 972,
       "booked": 18,
       "showed": 8,
       "qualified": 7,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 75,
+      "booked": 73,
+      "book_pct": 97.3,
+      "showed": 44,
+      "show_pct": 60.3,
+      "qualified": 38,
+      "qual_pct": 52.1,
+      "closed": 5,
+      "cw_pct": 6.8,
+      "revenue": 35985.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 115,
       "booked": 168,
@@ -60,17 +72,17 @@
       "cw_pct": 23.8,
       "revenue": 78470.0
     },
-    "Website": {
-      "leads_created": 75,
-      "booked": 73,
-      "book_pct": 97.3,
-      "showed": 44,
-      "show_pct": 60.3,
-      "qualified": 38,
-      "qual_pct": 52.1,
-      "closed": 5,
-      "cw_pct": 6.8,
-      "revenue": 35985.0
+    "Internal Webinar": {
+      "leads_created": 1243,
+      "booked": 45,
+      "book_pct": 3.6,
+      "showed": 20,
+      "show_pct": 44.4,
+      "qualified": 21,
+      "qual_pct": 46.7,
+      "closed": 7,
+      "cw_pct": 15.6,
+      "revenue": 60735.0
     },
     "Instagram": {
       "leads_created": 78,
@@ -109,9 +121,9 @@
       "revenue": 1188.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 973,
+      "leads_created": 972,
       "booked": 18,
-      "book_pct": 1.8,
+      "book_pct": 1.9,
       "showed": 8,
       "show_pct": 44.4,
       "qualified": 7,
@@ -131,18 +143,6 @@
       "closed": 1,
       "cw_pct": 16.7,
       "revenue": 5697.0
-    },
-    "Internal Webinar": {
-      "leads_created": 1243,
-      "booked": 45,
-      "book_pct": 3.6,
-      "showed": 20,
-      "show_pct": 44.4,
-      "qualified": 21,
-      "qual_pct": 46.7,
-      "closed": 7,
-      "cw_pct": 15.6,
-      "revenue": 60735.0
     },
     "Anthony X": {
       "leads_created": 2,
@@ -205,9 +205,9 @@
       "revenue": 0.0
     },
     "VSL": {
-      "leads_created": 10,
+      "leads_created": 11,
       "booked": 2,
-      "book_pct": 20.0,
+      "book_pct": 18.2,
       "showed": 0,
       "show_pct": 0.0,
       "qualified": 0,
