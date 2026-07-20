@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 2776,
+    "leads_created": 2775,
     "booked": 454,
     "showed": 261,
     "qualified": 230,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1776,
+      "leads_created": 1775,
       "booked": 358,
       "showed": 200,
       "qualified": 168,
@@ -169,9 +169,9 @@
       "revenue": 5697.0
     },
     "Google Ads": {
-      "leads_created": 2,
+      "leads_created": 1,
       "booked": 1,
-      "book_pct": 50.0,
+      "book_pct": 100.0,
       "showed": 1,
       "show_pct": 100.0,
       "qualified": 1,
