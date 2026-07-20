@@ -4,17 +4,17 @@
   "grand": {
     "leads_created": 2876,
     "booked": 484,
-    "showed": 270,
-    "qualified": 236,
+    "showed": 273,
+    "qualified": 237,
     "closed": 45,
     "revenue": 321321.0
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1812,
+      "leads_created": 1813,
       "booked": 388,
-      "showed": 210,
-      "qualified": 176,
+      "showed": 213,
+      "qualified": 177,
       "closed": 38,
       "revenue": 270642.0
     },
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 978,
+      "leads_created": 977,
       "booked": 19,
       "showed": 8,
       "qualified": 7,
@@ -36,6 +36,42 @@
     }
   },
   "funnels": {
+    "Website": {
+      "leads_created": 73,
+      "booked": 73,
+      "book_pct": 100.0,
+      "showed": 44,
+      "show_pct": 60.3,
+      "qualified": 38,
+      "qual_pct": 52.1,
+      "closed": 5,
+      "cw_pct": 6.8,
+      "revenue": 35985.0
+    },
+    "Sales Reactivation": {
+      "leads_created": 1,
+      "booked": 4,
+      "book_pct": 400.0,
+      "showed": 4,
+      "show_pct": 100.0,
+      "qualified": 4,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 115,
+      "booked": 168,
+      "book_pct": 146.1,
+      "showed": 84,
+      "show_pct": 50.0,
+      "qualified": 63,
+      "qual_pct": 37.5,
+      "closed": 13,
+      "cw_pct": 7.7,
+      "revenue": 81370.0
+    },
     "Instagram": {
       "leads_created": 76,
       "booked": 65,
@@ -47,6 +83,18 @@
       "closed": 4,
       "cw_pct": 6.2,
       "revenue": 29988.0
+    },
+    "Internal Webinar": {
+      "leads_created": 1243,
+      "booked": 45,
+      "book_pct": 3.6,
+      "showed": 20,
+      "show_pct": 44.4,
+      "qualified": 21,
+      "qual_pct": 46.7,
+      "closed": 7,
+      "cw_pct": 15.6,
+      "revenue": 60735.0
     },
     "Meta Ads": {
       "leads_created": 315,
@@ -61,7 +109,7 @@
       "revenue": 1188.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 978,
+      "leads_created": 977,
       "booked": 19,
       "book_pct": 1.9,
       "showed": 8,
@@ -71,54 +119,6 @@
       "closed": 1,
       "cw_pct": 5.3,
       "revenue": 8997.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 114,
-      "booked": 168,
-      "book_pct": 147.4,
-      "showed": 81,
-      "show_pct": 48.2,
-      "qualified": 62,
-      "qual_pct": 36.9,
-      "closed": 13,
-      "cw_pct": 7.7,
-      "revenue": 81370.0
-    },
-    "Website": {
-      "leads_created": 73,
-      "booked": 73,
-      "book_pct": 100.0,
-      "showed": 44,
-      "show_pct": 60.3,
-      "qualified": 38,
-      "qual_pct": 52.1,
-      "closed": 5,
-      "cw_pct": 6.8,
-      "revenue": 35985.0
-    },
-    "YouTube": {
-      "leads_created": 51,
-      "booked": 42,
-      "book_pct": 82.4,
-      "showed": 34,
-      "show_pct": 81.0,
-      "qualified": 27,
-      "qual_pct": 64.3,
-      "closed": 10,
-      "cw_pct": 23.8,
-      "revenue": 78470.0
-    },
-    "Sales Reactivation": {
-      "leads_created": 1,
-      "booked": 4,
-      "book_pct": 400.0,
-      "showed": 4,
-      "show_pct": 100.0,
-      "qualified": 4,
-      "qual_pct": 100.0,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Linkedin": {
       "leads_created": 6,
@@ -132,17 +132,17 @@
       "cw_pct": 16.7,
       "revenue": 5697.0
     },
-    "Internal Webinar": {
-      "leads_created": 1243,
-      "booked": 45,
-      "book_pct": 3.6,
-      "showed": 20,
-      "show_pct": 44.4,
-      "qualified": 21,
-      "qual_pct": 46.7,
-      "closed": 7,
-      "cw_pct": 15.6,
-      "revenue": 60735.0
+    "YouTube": {
+      "leads_created": 51,
+      "booked": 42,
+      "book_pct": 82.4,
+      "showed": 34,
+      "show_pct": 81.0,
+      "qualified": 27,
+      "qual_pct": 64.3,
+      "closed": 10,
+      "cw_pct": 23.8,
+      "revenue": 78470.0
     },
     "Anthony X": {
       "leads_created": 2,
