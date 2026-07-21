@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 2889,
+    "leads_created": 2891,
     "booked": 484,
     "showed": 279,
     "qualified": 240,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1829,
+      "leads_created": 1830,
       "booked": 390,
       "showed": 219,
       "qualified": 180,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 973,
+      "leads_created": 974,
       "booked": 18,
       "showed": 8,
       "qualified": 7,
@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Reactivation Scrapers": {
-      "leads_created": 120,
+      "leads_created": 121,
       "booked": 170,
-      "book_pct": 141.7,
+      "book_pct": 140.5,
       "showed": 90,
       "show_pct": 52.9,
       "qualified": 66,
@@ -109,7 +109,7 @@
       "revenue": 29988.0
     },
     "Unknown (Needs Review)": {
-      "leads_created": 973,
+      "leads_created": 974,
       "booked": 18,
       "book_pct": 1.8,
       "showed": 8,
