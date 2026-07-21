@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 1826,
+      "leads_created": 1829,
       "booked": 390,
       "showed": 219,
       "qualified": 180,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 975,
+      "leads_created": 972,
       "booked": 18,
       "showed": 8,
       "qualified": 7,
@@ -48,10 +48,22 @@
       "cw_pct": 6.8,
       "revenue": 35985.0
     },
+    "Instagram": {
+      "leads_created": 77,
+      "booked": 64,
+      "book_pct": 83.1,
+      "showed": 42,
+      "show_pct": 65.6,
+      "qualified": 42,
+      "qual_pct": 65.6,
+      "closed": 4,
+      "cw_pct": 6.2,
+      "revenue": 29988.0
+    },
     "Reactivation Scrapers": {
-      "leads_created": 119,
+      "leads_created": 120,
       "booked": 170,
-      "book_pct": 142.9,
+      "book_pct": 141.7,
       "showed": 90,
       "show_pct": 52.9,
       "qualified": 66,
@@ -73,9 +85,9 @@
       "revenue": 78470.0
     },
     "Meta Ads": {
-      "leads_created": 318,
+      "leads_created": 319,
       "booked": 45,
-      "book_pct": 14.2,
+      "book_pct": 14.1,
       "showed": 19,
       "show_pct": 42.2,
       "qualified": 16,
@@ -84,22 +96,10 @@
       "cw_pct": 2.2,
       "revenue": 1188.0
     },
-    "Instagram": {
-      "leads_created": 77,
-      "booked": 64,
-      "book_pct": 83.1,
-      "showed": 42,
-      "show_pct": 65.6,
-      "qualified": 42,
-      "qual_pct": 65.6,
-      "closed": 4,
-      "cw_pct": 6.2,
-      "revenue": 29988.0
-    },
     "Unknown (Needs Review)": {
-      "leads_created": 975,
+      "leads_created": 972,
       "booked": 18,
-      "book_pct": 1.8,
+      "book_pct": 1.9,
       "showed": 8,
       "show_pct": 44.4,
       "qualified": 7,
@@ -109,7 +109,7 @@
       "revenue": 8997.0
     },
     "Internal Webinar": {
-      "leads_created": 1244,
+      "leads_created": 1245,
       "booked": 45,
       "book_pct": 3.6,
       "showed": 20,
