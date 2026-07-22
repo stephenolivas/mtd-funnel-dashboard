@@ -36,17 +36,17 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 133,
-      "booked": 195,
-      "book_pct": 146.6,
-      "showed": 96,
-      "show_pct": 49.2,
-      "qualified": 71,
-      "qual_pct": 36.4,
-      "closed": 13,
-      "cw_pct": 6.7,
-      "revenue": 81370.0
+    "Website": {
+      "leads_created": 84,
+      "booked": 86,
+      "book_pct": 102.4,
+      "showed": 50,
+      "show_pct": 58.1,
+      "qualified": 44,
+      "qual_pct": 51.2,
+      "closed": 7,
+      "cw_pct": 8.1,
+      "revenue": 50979.0
     },
     "Instagram": {
       "leads_created": 87,
@@ -60,6 +60,30 @@
       "cw_pct": 5.4,
       "revenue": 29988.0
     },
+    "YouTube": {
+      "leads_created": 62,
+      "booked": 47,
+      "book_pct": 75.8,
+      "showed": 37,
+      "show_pct": 78.7,
+      "qualified": 28,
+      "qual_pct": 59.6,
+      "closed": 11,
+      "cw_pct": 23.4,
+      "revenue": 85270.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 133,
+      "booked": 195,
+      "book_pct": 146.6,
+      "showed": 96,
+      "show_pct": 49.2,
+      "qualified": 71,
+      "qual_pct": 36.4,
+      "closed": 13,
+      "cw_pct": 6.7,
+      "revenue": 81370.0
+    },
     "Meta Ads": {
       "leads_created": 344,
       "booked": 52,
@@ -72,18 +96,6 @@
       "cw_pct": 1.9,
       "revenue": 1188.0
     },
-    "Website": {
-      "leads_created": 84,
-      "booked": 86,
-      "book_pct": 102.4,
-      "showed": 50,
-      "show_pct": 58.1,
-      "qualified": 44,
-      "qual_pct": 51.2,
-      "closed": 7,
-      "cw_pct": 8.1,
-      "revenue": 50979.0
-    },
     "Internal Webinar": {
       "leads_created": 1243,
       "booked": 47,
@@ -95,18 +107,6 @@
       "closed": 8,
       "cw_pct": 17.0,
       "revenue": 70047.0
-    },
-    "YouTube": {
-      "leads_created": 62,
-      "booked": 47,
-      "book_pct": 75.8,
-      "showed": 37,
-      "show_pct": 78.7,
-      "qualified": 28,
-      "qual_pct": 59.6,
-      "closed": 11,
-      "cw_pct": 23.4,
-      "revenue": 85270.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 972,
