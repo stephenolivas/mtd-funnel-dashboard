@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Reactivation Scrapers": {
-      "leads_created": 131,
+      "leads_created": 132,
       "booked": 181,
-      "book_pct": 138.2,
+      "book_pct": 137.1,
       "showed": 96,
       "show_pct": 53.0,
       "qualified": 71,
@@ -97,7 +97,7 @@
       "revenue": 29988.0
     },
     "Meta Ads": {
-      "leads_created": 334,
+      "leads_created": 333,
       "booked": 49,
       "book_pct": 14.7,
       "showed": 21,
