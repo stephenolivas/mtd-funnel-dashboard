@@ -19,7 +19,7 @@
       "revenue": 292436.0
     },
     "EXTERNAL": {
-      "leads_created": 90,
+      "leads_created": 91,
       "booked": 83,
       "showed": 55,
       "qualified": 57,
@@ -27,7 +27,7 @@
       "revenue": 41682.0
     },
     "UNCATEGORIZED": {
-      "leads_created": 978,
+      "leads_created": 977,
       "booked": 18,
       "showed": 6,
       "qualified": 6,
@@ -36,8 +36,32 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 82,
+      "booked": 72,
+      "book_pct": 87.8,
+      "showed": 46,
+      "show_pct": 63.9,
+      "qualified": 48,
+      "qual_pct": 66.7,
+      "closed": 4,
+      "cw_pct": 5.6,
+      "revenue": 29988.0
+    },
+    "Website": {
+      "leads_created": 82,
+      "booked": 85,
+      "book_pct": 103.7,
+      "showed": 49,
+      "show_pct": 57.6,
+      "qualified": 43,
+      "qual_pct": 50.6,
+      "closed": 7,
+      "cw_pct": 8.2,
+      "revenue": 50979.0
+    },
     "Unknown (Needs Review)": {
-      "leads_created": 978,
+      "leads_created": 977,
       "booked": 18,
       "book_pct": 1.8,
       "showed": 6,
@@ -59,30 +83,6 @@
       "closed": 13,
       "cw_pct": 6.7,
       "revenue": 81370.0
-    },
-    "Website": {
-      "leads_created": 82,
-      "booked": 85,
-      "book_pct": 103.7,
-      "showed": 49,
-      "show_pct": 57.6,
-      "qualified": 43,
-      "qual_pct": 50.6,
-      "closed": 7,
-      "cw_pct": 8.2,
-      "revenue": 50979.0
-    },
-    "Instagram": {
-      "leads_created": 82,
-      "booked": 72,
-      "book_pct": 87.8,
-      "showed": 46,
-      "show_pct": 63.9,
-      "qualified": 48,
-      "qual_pct": 66.7,
-      "closed": 4,
-      "cw_pct": 5.6,
-      "revenue": 29988.0
     },
     "YouTube": {
       "leads_created": 61,
@@ -133,9 +133,9 @@
       "revenue": 0.0
     },
     "Linkedin": {
-      "leads_created": 6,
+      "leads_created": 7,
       "booked": 7,
-      "book_pct": 116.7,
+      "book_pct": 100.0,
       "showed": 6,
       "show_pct": 85.7,
       "qualified": 6,
