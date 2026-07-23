@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "YouTube": {
+      "leads_created": 68,
+      "booked": 51,
+      "book_pct": 75.0,
+      "showed": 38,
+      "show_pct": 74.5,
+      "qualified": 29,
+      "qual_pct": 56.9,
+      "closed": 11,
+      "cw_pct": 21.6,
+      "revenue": 85270.0
+    },
     "Reactivation Scrapers": {
       "leads_created": 138,
       "booked": 199,
@@ -48,30 +60,6 @@
       "cw_pct": 6.5,
       "revenue": 81370.0
     },
-    "Instagram": {
-      "leads_created": 87,
-      "booked": 80,
-      "book_pct": 92.0,
-      "showed": 50,
-      "show_pct": 62.5,
-      "qualified": 52,
-      "qual_pct": 65.0,
-      "closed": 4,
-      "cw_pct": 5.0,
-      "revenue": 29988.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 9,
-      "book_pct": 300.0,
-      "showed": 6,
-      "show_pct": 66.7,
-      "qualified": 6,
-      "qual_pct": 66.7,
-      "closed": 3,
-      "cw_pct": 33.3,
-      "revenue": 18891.0
-    },
     "Meta Ads": {
       "leads_created": 360,
       "booked": 54,
@@ -83,18 +71,6 @@
       "closed": 1,
       "cw_pct": 1.9,
       "revenue": 1188.0
-    },
-    "YouTube": {
-      "leads_created": 68,
-      "booked": 51,
-      "book_pct": 75.0,
-      "showed": 38,
-      "show_pct": 74.5,
-      "qualified": 29,
-      "qual_pct": 56.9,
-      "closed": 11,
-      "cw_pct": 21.6,
-      "revenue": 85270.0
     },
     "Unknown (Needs Review)": {
       "leads_created": 210,
@@ -131,6 +107,30 @@
       "closed": 8,
       "cw_pct": 16.7,
       "revenue": 70047.0
+    },
+    "Instagram": {
+      "leads_created": 87,
+      "booked": 80,
+      "book_pct": 92.0,
+      "showed": 50,
+      "show_pct": 62.5,
+      "qualified": 52,
+      "qual_pct": 65.0,
+      "closed": 4,
+      "cw_pct": 5.0,
+      "revenue": 29988.0
+    },
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 9,
+      "book_pct": 300.0,
+      "showed": 6,
+      "show_pct": 66.7,
+      "qualified": 6,
+      "qual_pct": 66.7,
+      "closed": 3,
+      "cw_pct": 33.3,
+      "revenue": 18891.0
     },
     "Linkedin": {
       "leads_created": 6,
