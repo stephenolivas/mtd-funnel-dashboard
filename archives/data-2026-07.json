@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 3009,
+    "leads_created": 3010,
     "booked": 569,
     "showed": 318,
     "qualified": 276,
@@ -19,7 +19,7 @@
       "revenue": 340336.0
     },
     "EXTERNAL": {
-      "leads_created": 100,
+      "leads_created": 101,
       "booked": 91,
       "showed": 62,
       "qualified": 62,
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Meta Ads": {
-      "leads_created": 363,
-      "booked": 54,
-      "book_pct": 14.9,
-      "showed": 21,
-      "show_pct": 38.9,
-      "qualified": 18,
-      "qual_pct": 33.3,
-      "closed": 1,
-      "cw_pct": 1.9,
-      "revenue": 1188.0
-    },
     "Anthony X": {
       "leads_created": 3,
       "booked": 3,
@@ -71,6 +59,30 @@
       "closed": 8,
       "cw_pct": 15.7,
       "revenue": 70047.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 137,
+      "booked": 199,
+      "book_pct": 145.3,
+      "showed": 99,
+      "show_pct": 49.7,
+      "qualified": 76,
+      "qual_pct": 38.2,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
+    },
+    "Instagram": {
+      "leads_created": 90,
+      "booked": 79,
+      "book_pct": 87.8,
+      "showed": 52,
+      "show_pct": 65.8,
+      "qualified": 53,
+      "qual_pct": 67.1,
+      "closed": 4,
+      "cw_pct": 5.1,
+      "revenue": 29988.0
     },
     "YouTube": {
       "leads_created": 67,
@@ -96,29 +108,17 @@
       "cw_pct": 10.2,
       "revenue": 74973.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 137,
-      "booked": 199,
-      "book_pct": 145.3,
-      "showed": 99,
-      "show_pct": 49.7,
-      "qualified": 76,
-      "qual_pct": 38.2,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
-    },
-    "Instagram": {
-      "leads_created": 89,
-      "booked": 79,
-      "book_pct": 88.8,
-      "showed": 52,
-      "show_pct": 65.8,
-      "qualified": 53,
-      "qual_pct": 67.1,
-      "closed": 4,
-      "cw_pct": 5.1,
-      "revenue": 29988.0
+    "Meta Ads": {
+      "leads_created": 363,
+      "booked": 54,
+      "book_pct": 14.9,
+      "showed": 21,
+      "show_pct": 38.9,
+      "qualified": 18,
+      "qual_pct": 33.3,
+      "closed": 1,
+      "cw_pct": 1.9,
+      "revenue": 1188.0
     },
     "Reactivation Email": {
       "leads_created": 0,
