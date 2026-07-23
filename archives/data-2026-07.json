@@ -5,7 +5,7 @@
     "leads_created": 2989,
     "booked": 569,
     "showed": 312,
-    "qualified": 270,
+    "qualified": 271,
     "closed": 50,
     "revenue": 364424.0
   },
@@ -14,7 +14,7 @@
       "leads_created": 2676,
       "booked": 458,
       "showed": 245,
-      "qualified": 201,
+      "qualified": 202,
       "closed": 44,
       "revenue": 322742.0
     },
@@ -37,9 +37,9 @@
   },
   "funnels": {
     "Website": {
-      "leads_created": 84,
+      "leads_created": 85,
       "booked": 88,
-      "book_pct": 104.8,
+      "book_pct": 103.5,
       "showed": 54,
       "show_pct": 61.4,
       "qualified": 47,
@@ -47,6 +47,18 @@
       "closed": 8,
       "cw_pct": 9.1,
       "revenue": 65976.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 137,
+      "booked": 199,
+      "book_pct": 145.3,
+      "showed": 98,
+      "show_pct": 49.2,
+      "qualified": 74,
+      "qual_pct": 37.2,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
     },
     "YouTube": {
       "leads_created": 67,
@@ -71,18 +83,6 @@
       "closed": 4,
       "cw_pct": 5.0,
       "revenue": 29988.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 138,
-      "booked": 199,
-      "book_pct": 144.2,
-      "showed": 98,
-      "show_pct": 49.2,
-      "qualified": 73,
-      "qual_pct": 36.7,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
     },
     "Sales Reactivation": {
       "leads_created": 1,
