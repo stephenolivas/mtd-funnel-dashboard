@@ -48,17 +48,29 @@
       "cw_pct": 8.0,
       "revenue": 50979.0
     },
-    "Unknown (Needs Review)": {
-      "leads_created": 210,
-      "booked": 17,
-      "book_pct": 8.1,
-      "showed": 6,
-      "show_pct": 35.3,
-      "qualified": 7,
-      "qual_pct": 41.2,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
+    "Reactivation Scrapers": {
+      "leads_created": 137,
+      "booked": 199,
+      "book_pct": 145.3,
+      "showed": 98,
+      "show_pct": 49.2,
+      "qualified": 73,
+      "qual_pct": 36.7,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
+    },
+    "Meta Ads": {
+      "leads_created": 356,
+      "booked": 53,
+      "book_pct": 14.9,
+      "showed": 21,
+      "show_pct": 39.6,
+      "qualified": 18,
+      "qual_pct": 34.0,
+      "closed": 1,
+      "cw_pct": 1.9,
+      "revenue": 1188.0
     },
     "YouTube": {
       "leads_created": 67,
@@ -84,6 +96,18 @@
       "cw_pct": 14.3,
       "revenue": 5697.0
     },
+    "Anthony X": {
+      "leads_created": 3,
+      "booked": 3,
+      "book_pct": 100.0,
+      "showed": 2,
+      "show_pct": 66.7,
+      "qualified": 2,
+      "qual_pct": 66.7,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
     "Instagram": {
       "leads_created": 87,
       "booked": 80,
@@ -96,17 +120,17 @@
       "cw_pct": 5.0,
       "revenue": 29988.0
     },
-    "Reactivation Scrapers": {
-      "leads_created": 137,
-      "booked": 199,
-      "book_pct": 145.3,
-      "showed": 98,
-      "show_pct": 49.2,
-      "qualified": 73,
-      "qual_pct": 36.7,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
+    "Unknown (Needs Review)": {
+      "leads_created": 210,
+      "booked": 17,
+      "book_pct": 8.1,
+      "showed": 6,
+      "show_pct": 35.3,
+      "qualified": 7,
+      "qual_pct": 41.2,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
     },
     "LTF - In-House": {
       "leads_created": 3,
@@ -132,18 +156,6 @@
       "cw_pct": 20.0,
       "revenue": 5997.0
     },
-    "Meta Ads": {
-      "leads_created": 356,
-      "booked": 53,
-      "book_pct": 14.9,
-      "showed": 21,
-      "show_pct": 39.6,
-      "qualified": 18,
-      "qual_pct": 34.0,
-      "closed": 1,
-      "cw_pct": 1.9,
-      "revenue": 1188.0
-    },
     "Internal Webinar": {
       "leads_created": 2009,
       "booked": 47,
@@ -155,18 +167,6 @@
       "closed": 8,
       "cw_pct": 17.0,
       "revenue": 70047.0
-    },
-    "Anthony X": {
-      "leads_created": 3,
-      "booked": 3,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 66.7,
-      "qualified": 2,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
     },
     "Sales Reactivation": {
       "leads_created": 1,
