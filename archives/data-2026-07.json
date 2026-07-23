@@ -4,8 +4,8 @@
   "grand": {
     "leads_created": 3010,
     "booked": 569,
-    "showed": 318,
-    "qualified": 276,
+    "showed": 319,
+    "qualified": 277,
     "closed": 52,
     "revenue": 382018.0
   },
@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Anthony X": {
-      "leads_created": 3,
-      "booked": 3,
-      "book_pct": 100.0,
-      "showed": 2,
-      "show_pct": 66.7,
-      "qualified": 2,
-      "qual_pct": 66.7,
-      "closed": 0,
-      "cw_pct": 0.0,
-      "revenue": 0.0
-    },
     "Internal Webinar": {
       "leads_created": 2021,
       "booked": 51,
@@ -59,30 +47,6 @@
       "closed": 8,
       "cw_pct": 15.7,
       "revenue": 70047.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 137,
-      "booked": 199,
-      "book_pct": 145.3,
-      "showed": 99,
-      "show_pct": 49.7,
-      "qualified": 76,
-      "qual_pct": 38.2,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
-    },
-    "Instagram": {
-      "leads_created": 90,
-      "booked": 79,
-      "book_pct": 87.8,
-      "showed": 52,
-      "show_pct": 65.8,
-      "qualified": 53,
-      "qual_pct": 67.1,
-      "closed": 4,
-      "cw_pct": 5.1,
-      "revenue": 29988.0
     },
     "YouTube": {
       "leads_created": 67,
@@ -96,17 +60,17 @@
       "cw_pct": 24.0,
       "revenue": 93867.0
     },
-    "Website": {
-      "leads_created": 87,
-      "booked": 88,
-      "book_pct": 101.1,
-      "showed": 54,
-      "show_pct": 61.4,
-      "qualified": 48,
-      "qual_pct": 54.5,
-      "closed": 9,
-      "cw_pct": 10.2,
-      "revenue": 74973.0
+    "Reactivation Scrapers": {
+      "leads_created": 137,
+      "booked": 199,
+      "book_pct": 145.3,
+      "showed": 99,
+      "show_pct": 49.7,
+      "qualified": 76,
+      "qual_pct": 38.2,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
     },
     "Meta Ads": {
       "leads_created": 363,
@@ -119,6 +83,42 @@
       "closed": 1,
       "cw_pct": 1.9,
       "revenue": 1188.0
+    },
+    "Anthony X": {
+      "leads_created": 3,
+      "booked": 3,
+      "book_pct": 100.0,
+      "showed": 3,
+      "show_pct": 100.0,
+      "qualified": 3,
+      "qual_pct": 100.0,
+      "closed": 0,
+      "cw_pct": 0.0,
+      "revenue": 0.0
+    },
+    "Instagram": {
+      "leads_created": 90,
+      "booked": 79,
+      "book_pct": 87.8,
+      "showed": 52,
+      "show_pct": 65.8,
+      "qualified": 53,
+      "qual_pct": 67.1,
+      "closed": 4,
+      "cw_pct": 5.1,
+      "revenue": 29988.0
+    },
+    "Website": {
+      "leads_created": 87,
+      "booked": 88,
+      "book_pct": 101.1,
+      "showed": 54,
+      "show_pct": 61.4,
+      "qualified": 48,
+      "qual_pct": 54.5,
+      "closed": 9,
+      "cw_pct": 10.2,
+      "revenue": 74973.0
     },
     "Reactivation Email": {
       "leads_created": 0,
