@@ -36,6 +36,30 @@
     }
   },
   "funnels": {
+    "LTF - In-House": {
+      "leads_created": 3,
+      "booked": 9,
+      "book_pct": 300.0,
+      "showed": 6,
+      "show_pct": 66.7,
+      "qualified": 6,
+      "qual_pct": 66.7,
+      "closed": 3,
+      "cw_pct": 33.3,
+      "revenue": 18891.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 137,
+      "booked": 199,
+      "book_pct": 145.3,
+      "showed": 98,
+      "show_pct": 49.2,
+      "qualified": 73,
+      "qual_pct": 36.7,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
+    },
     "YouTube": {
       "leads_created": 67,
       "booked": 51,
@@ -59,18 +83,6 @@
       "closed": 4,
       "cw_pct": 5.0,
       "revenue": 29988.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 137,
-      "booked": 199,
-      "book_pct": 145.3,
-      "showed": 98,
-      "show_pct": 49.2,
-      "qualified": 73,
-      "qual_pct": 36.7,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
     },
     "Website": {
       "leads_created": 85,
@@ -143,18 +155,6 @@
       "closed": 8,
       "cw_pct": 17.0,
       "revenue": 70047.0
-    },
-    "LTF - In-House": {
-      "leads_created": 3,
-      "booked": 9,
-      "book_pct": 300.0,
-      "showed": 6,
-      "show_pct": 66.7,
-      "qualified": 6,
-      "qual_pct": 66.7,
-      "closed": 3,
-      "cw_pct": 33.3,
-      "revenue": 18891.0
     },
     "Anthony X": {
       "leads_created": 3,
