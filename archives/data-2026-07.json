@@ -36,18 +36,6 @@
     }
   },
   "funnels": {
-    "Reactivation Scrapers": {
-      "leads_created": 140,
-      "booked": 205,
-      "book_pct": 146.4,
-      "showed": 99,
-      "show_pct": 48.3,
-      "qualified": 77,
-      "qual_pct": 37.6,
-      "closed": 13,
-      "cw_pct": 6.3,
-      "revenue": 81370.0
-    },
     "Internal Webinar": {
       "leads_created": 2021,
       "booked": 60,
@@ -59,6 +47,42 @@
       "closed": 8,
       "cw_pct": 13.3,
       "revenue": 70047.0
+    },
+    "YouTube": {
+      "leads_created": 68,
+      "booked": 53,
+      "book_pct": 77.9,
+      "showed": 40,
+      "show_pct": 75.5,
+      "qualified": 31,
+      "qual_pct": 58.5,
+      "closed": 12,
+      "cw_pct": 22.6,
+      "revenue": 93867.0
+    },
+    "Instagram": {
+      "leads_created": 91,
+      "booked": 84,
+      "book_pct": 92.3,
+      "showed": 54,
+      "show_pct": 64.3,
+      "qualified": 54,
+      "qual_pct": 64.3,
+      "closed": 4,
+      "cw_pct": 4.8,
+      "revenue": 29988.0
+    },
+    "Reactivation Scrapers": {
+      "leads_created": 140,
+      "booked": 205,
+      "book_pct": 146.4,
+      "showed": 99,
+      "show_pct": 48.3,
+      "qualified": 77,
+      "qual_pct": 37.6,
+      "closed": 13,
+      "cw_pct": 6.3,
+      "revenue": 81370.0
     },
     "Anthony X": {
       "leads_created": 3,
@@ -83,30 +107,6 @@
       "closed": 9,
       "cw_pct": 9.8,
       "revenue": 74973.0
-    },
-    "Instagram": {
-      "leads_created": 91,
-      "booked": 84,
-      "book_pct": 92.3,
-      "showed": 54,
-      "show_pct": 64.3,
-      "qualified": 54,
-      "qual_pct": 64.3,
-      "closed": 4,
-      "cw_pct": 4.8,
-      "revenue": 29988.0
-    },
-    "YouTube": {
-      "leads_created": 68,
-      "booked": 53,
-      "book_pct": 77.9,
-      "showed": 40,
-      "show_pct": 75.5,
-      "qualified": 31,
-      "qual_pct": 58.5,
-      "closed": 12,
-      "cw_pct": 22.6,
-      "revenue": 93867.0
     },
     "LTF - In-House": {
       "leads_created": 3,
