@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 3032,
+    "leads_created": 3031,
     "booked": 571,
     "showed": 324,
     "qualified": 281,
@@ -11,7 +11,7 @@
   },
   "groups": {
     "IN-HOUSE": {
-      "leads_created": 2704,
+      "leads_created": 2703,
       "booked": 462,
       "showed": 251,
       "qualified": 209,
@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Instagram": {
+      "leads_created": 91,
+      "booked": 79,
+      "book_pct": 86.8,
+      "showed": 54,
+      "show_pct": 68.4,
+      "qualified": 54,
+      "qual_pct": 68.4,
+      "closed": 4,
+      "cw_pct": 5.1,
+      "revenue": 29988.0
+    },
     "Meta Ads": {
       "leads_created": 370,
       "booked": 54,
@@ -61,9 +73,9 @@
       "revenue": 81370.0
     },
     "YouTube": {
-      "leads_created": 68,
+      "leads_created": 67,
       "booked": 50,
-      "book_pct": 73.5,
+      "book_pct": 74.6,
       "showed": 40,
       "show_pct": 80.0,
       "qualified": 31,
@@ -95,18 +107,6 @@
       "closed": 9,
       "cw_pct": 10.2,
       "revenue": 74973.0
-    },
-    "Instagram": {
-      "leads_created": 91,
-      "booked": 79,
-      "book_pct": 86.8,
-      "showed": 54,
-      "show_pct": 68.4,
-      "qualified": 54,
-      "qual_pct": 68.4,
-      "closed": 4,
-      "cw_pct": 5.1,
-      "revenue": 29988.0
     },
     "Anthony X": {
       "leads_created": 3,
