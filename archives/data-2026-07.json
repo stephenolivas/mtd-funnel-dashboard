@@ -36,6 +36,18 @@
     }
   },
   "funnels": {
+    "Reactivation Scrapers": {
+      "leads_created": 140,
+      "booked": 200,
+      "book_pct": 142.9,
+      "showed": 99,
+      "show_pct": 49.5,
+      "qualified": 76,
+      "qual_pct": 38.0,
+      "closed": 13,
+      "cw_pct": 6.5,
+      "revenue": 81370.0
+    },
     "Internal Webinar": {
       "leads_created": 2021,
       "booked": 51,
@@ -71,18 +83,6 @@
       "closed": 1,
       "cw_pct": 1.9,
       "revenue": 1188.0
-    },
-    "Reactivation Scrapers": {
-      "leads_created": 140,
-      "booked": 200,
-      "book_pct": 142.9,
-      "showed": 99,
-      "show_pct": 49.5,
-      "qualified": 76,
-      "qual_pct": 38.0,
-      "closed": 13,
-      "cw_pct": 6.5,
-      "revenue": 81370.0
     },
     "Anthony X": {
       "leads_created": 3,
