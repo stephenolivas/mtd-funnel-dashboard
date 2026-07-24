@@ -3,7 +3,7 @@
   "month_label": "July 2026",
   "grand": {
     "leads_created": 3043,
-    "booked": 602,
+    "booked": 601,
     "showed": 325,
     "qualified": 282,
     "closed": 53,
@@ -12,7 +12,7 @@
   "groups": {
     "IN-HOUSE": {
       "leads_created": 2711,
-      "booked": 484,
+      "booked": 483,
       "showed": 252,
       "qualified": 210,
       "closed": 47,
@@ -62,14 +62,14 @@
     },
     "Reactivation Scrapers": {
       "leads_created": 140,
-      "booked": 205,
-      "book_pct": 146.4,
+      "booked": 204,
+      "book_pct": 145.7,
       "showed": 99,
-      "show_pct": 48.3,
+      "show_pct": 48.5,
       "qualified": 77,
-      "qual_pct": 37.6,
+      "qual_pct": 37.7,
       "closed": 13,
-      "cw_pct": 6.3,
+      "cw_pct": 6.4,
       "revenue": 81370.0
     },
     "Website": {
