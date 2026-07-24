@@ -2,7 +2,7 @@
   "month_key": "2026-07",
   "month_label": "July 2026",
   "grand": {
-    "leads_created": 3040,
+    "leads_created": 3041,
     "booked": 601,
     "showed": 324,
     "qualified": 282,
@@ -19,7 +19,7 @@
       "revenue": 346333.0
     },
     "EXTERNAL": {
-      "leads_created": 103,
+      "leads_created": 104,
       "booked": 96,
       "showed": 64,
       "qualified": 63,
@@ -61,9 +61,9 @@
       "revenue": 81370.0
     },
     "Instagram": {
-      "leads_created": 92,
+      "leads_created": 93,
       "booked": 84,
-      "book_pct": 91.3,
+      "book_pct": 90.3,
       "showed": 54,
       "show_pct": 64.3,
       "qualified": 54,
